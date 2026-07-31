@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-07-31T18:13:12.586224+00:00",
+  "fetched_at_utc": "2026-07-31T22:43:48.803227+00:00",
   "fatigue": {
     "Seattle Mariners": {
       "fatigue_score": 0.55,
@@ -86,9 +86,9 @@
       "doubleheader_games": 2
     },
     "New York Yankees": {
-      "fatigue_score": 0.75,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
+      "fatigue_score": 0.8,
+      "games_played_lookback": 5,
+      "unique_game_dates": 5,
       "extra_inning_games": 2,
       "doubleheader_games": 0
     },
@@ -100,9 +100,9 @@
       "doubleheader_games": 0
     },
     "Chicago Cubs": {
-      "fatigue_score": 0.75,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
+      "fatigue_score": 0.8,
+      "games_played_lookback": 5,
+      "unique_game_dates": 5,
       "extra_inning_games": 2,
       "doubleheader_games": 0
     },

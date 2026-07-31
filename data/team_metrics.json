@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-07-31T18:13:12.586224+00:00",
+  "fetched_at_utc": "2026-07-31T22:43:48.803227+00:00",
   "metrics": {
     "San Francisco Giants": {
       "runs_per_game": 0.47959183673469385,
@@ -13,7 +13,7 @@
       "runs_per_game": 0.6851851851851852
     },
     "Pittsburgh Pirates": {
-      "runs_per_game": 0.5684210526315789,
+      "runs_per_game": 0.5625,
       "team_pitching_era": 4.05
     },
     "Tampa Bay Rays": {
@@ -51,10 +51,6 @@
       "runs_per_game": 0.5,
       "team_pitching_era": 3.38
     },
-    "Chicago Cubs": {
-      "runs_per_game": 0.6344086021505376,
-      "team_pitching_era": 3.72
-    },
     "Detroit Tigers": {
       "runs_per_game": 0.5370370370370371,
       "team_pitching_era": 3.34
@@ -70,6 +66,10 @@
     "Seattle Mariners": {
       "runs_per_game": 0.6568627450980392,
       "team_pitching_era": 3.98
+    },
+    "Chicago Cubs": {
+      "runs_per_game": 0.6344086021505376,
+      "team_pitching_era": 3.67
     },
     "St. Louis Cardinals": {
       "runs_per_game": 0.6261682242990654,
@@ -92,7 +92,7 @@
       "team_pitching_era": 3.6
     },
     "Cincinnati Reds": {
-      "runs_per_game": 0.6853932584269663,
+      "runs_per_game": 0.6777777777777778,
       "team_pitching_era": 3.85
     },
     "Arizona Diamondbacks": {
@@ -104,7 +104,7 @@
       "team_pitching_era": 1.58
     },
     "New York Yankees": {
-      "runs_per_game": 0.6730769230769231,
+      "runs_per_game": 0.6666666666666666,
       "team_pitching_era": 3.99
     },
     "Athletics": {
