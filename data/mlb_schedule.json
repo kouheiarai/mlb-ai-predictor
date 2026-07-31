@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-07-31T11:48:49.528272+00:00",
+  "fetched_at_utc": "2026-07-31T11:54:46.314422+00:00",
   "games": [
     {
       "game_pk": 824651,
@@ -32,7 +32,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "L"
     },
     {
       "game_pk": 824486,
@@ -65,7 +67,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824809,
@@ -98,7 +102,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 822782,
@@ -131,7 +137,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824407,
@@ -164,7 +172,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 822945,
@@ -197,7 +207,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823593,
@@ -230,7 +242,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824892,
@@ -263,7 +277,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824164,
@@ -296,7 +312,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824325,
@@ -329,7 +347,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823999,
@@ -362,7 +382,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824975,
@@ -395,7 +417,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "L"
     },
     {
       "game_pk": 823272,
@@ -428,7 +452,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823922,
@@ -461,7 +487,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823111,
@@ -494,7 +522,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 822781,
@@ -527,7 +557,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823109,
@@ -560,7 +592,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 822944,
@@ -593,7 +627,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823594,
@@ -626,7 +662,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "L"
     },
     {
       "game_pk": 824485,
@@ -659,7 +697,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "L"
     },
     {
       "game_pk": 824808,
@@ -692,7 +732,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824162,
@@ -725,7 +767,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824405,
@@ -758,7 +802,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "L"
     },
     {
       "game_pk": 824890,
@@ -791,7 +837,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824649,
@@ -824,7 +872,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "L"
     },
     {
       "game_pk": 824326,
@@ -857,7 +907,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823269,
@@ -890,7 +942,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823920,
@@ -923,7 +977,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824000,
@@ -956,7 +1012,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824972,
@@ -989,7 +1047,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824807,
@@ -1022,7 +1082,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824891,
@@ -1055,7 +1117,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "L"
     },
     {
       "game_pk": 822783,
@@ -1088,7 +1152,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824404,
@@ -1121,7 +1187,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824483,
@@ -1154,7 +1222,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 822943,
@@ -1187,7 +1257,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823592,
@@ -1220,7 +1292,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": null
     },
     {
       "game_pk": 824163,
@@ -1253,7 +1327,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": null
     },
     {
       "game_pk": 824648,
@@ -1286,7 +1362,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824323,
@@ -1319,7 +1397,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "L"
     },
     {
       "game_pk": 823996,
@@ -1352,7 +1432,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 824971,
@@ -1385,7 +1467,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "L"
     },
     {
       "game_pk": 823270,
@@ -1418,7 +1502,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823107,
@@ -1451,7 +1537,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823919,
@@ -1484,7 +1572,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "R"
     },
     {
       "game_pk": 823431,
@@ -1517,7 +1607,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": null
     },
     {
       "game_pk": 823520,
@@ -1550,7 +1642,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": null
     },
     {
       "game_pk": 823757,
@@ -1583,7 +1677,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": null
     },
     {
       "game_pk": 824647,
@@ -1616,7 +1712,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": null
     },
     {
       "game_pk": 822867,
@@ -1649,7 +1747,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": null
     },
     {
       "game_pk": 824160,
@@ -1682,7 +1782,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": null
     },
     {
       "game_pk": 824324,
@@ -1715,7 +1817,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": null
     },
     {
       "game_pk": 825095,
@@ -1748,7 +1852,9 @@
         "home_announced": false,
         "away_batting_order": [],
         "home_batting_order": []
-      }
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": null
     }
   ]
 }

@@ -1,7 +1,7 @@
-# MLB Ver.20 Prediction Report
+# MLB Ver.21 Prediction Report
 
-- Updated: 2026-07-31T11:48:49.528272+00:00
-- API requests remaining: 458
+- Updated: 2026-07-31T11:54:46.314422+00:00
+- API requests remaining: 456
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
@@ -14,6 +14,7 @@
 - 1/4 Kelly: 7.7%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.80
 - Expected score: Pittsburgh Pirates 2.38 - Cincinnati Reds 3.35
 
@@ -25,6 +26,7 @@
 - 1/4 Kelly: 6.7%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.75
 - Expected score: New York Yankees 3.17 - Chicago Cubs 2.49
 
@@ -36,6 +38,7 @@
 - 1/4 Kelly: 3.0%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.45
 - Expected score: Minnesota Twins 2.46 - Seattle Mariners 2.60
 
@@ -47,17 +50,19 @@
 - 1/4 Kelly: 4.0%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.45
 - Expected score: Kansas City Royals 3.93 - Colorado Rockies 3.20
 
 ### 5. Los Angeles Angels
 - Game: Milwaukee Brewers @ Los Angeles Angels
-- Odds: 2.52
-- AI probability: 44.0%
-- EV: 10.9%
+- Odds: 2.51
+- AI probability: 44.1%
+- EV: 10.6%
 - 1/4 Kelly: 1.8%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.45
 - Expected score: Milwaukee Brewers 2.58 - Los Angeles Angels 2.29
 
@@ -69,6 +74,7 @@
 - 1/4 Kelly: 1.7%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.75
 - Expected score: St. Louis Cardinals 2.67 - Toronto Blue Jays 2.89
 
@@ -80,6 +86,7 @@
 - 1/4 Kelly: 1.8%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.55
 - Expected score: San Francisco Giants 2.52 - San Diego Padres 2.59
 
@@ -91,10 +98,23 @@
 - 1/4 Kelly: 1.6%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.55
 - Expected score: Texas Rangers 3.27 - Houston Astros 3.21
 
-### 9. Athletics
+### 9. Boston Red Sox
+- Game: Boston Red Sox @ Los Angeles Dodgers
+- Odds: 2.07
+- AI probability: 51.5%
+- EV: 6.7%
+- 1/4 Kelly: 1.6%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Bullpen fatigue proxy: 0.65
+- Expected score: Boston Red Sox 2.61 - Los Angeles Dodgers 2.46
+
+### 10. Athletics
 - Game: Detroit Tigers @ Athletics
 - Odds: 2.4
 - AI probability: 44.2%
@@ -102,6 +122,7 @@
 - 1/4 Kelly: 1.1%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.65
 - Expected score: Detroit Tigers 2.81 - Athletics 2.49
 
@@ -115,6 +136,7 @@
 - 1/4 Kelly: 16.2%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.80
 - Expected score: Pittsburgh Pirates 2.38 - Cincinnati Reds 3.35
 
@@ -126,6 +148,7 @@
 - 1/4 Kelly: 10.5%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.45
 - Expected score: Milwaukee Brewers 2.58 - Los Angeles Angels 2.29
 
@@ -137,6 +160,7 @@
 - 1/4 Kelly: 14.3%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.75
 - Expected score: New York Yankees 3.17 - Chicago Cubs 2.49
 
@@ -148,6 +172,7 @@
 - 1/4 Kelly: 9.5%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.65
 - Expected score: Detroit Tigers 2.81 - Athletics 2.49
 
@@ -159,6 +184,7 @@
 - 1/4 Kelly: 9.6%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.45
 - Expected score: Minnesota Twins 2.46 - Seattle Mariners 2.60
 
@@ -170,6 +196,7 @@
 - 1/4 Kelly: 8.4%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.55
 - Expected score: San Francisco Giants 2.52 - San Diego Padres 2.59
 
@@ -181,10 +208,23 @@
 - 1/4 Kelly: 7.4%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.75
 - Expected score: St. Louis Cardinals 2.67 - Toronto Blue Jays 2.89
 
-### 8. Miami Marlins +1.5
+### 8. Boston Red Sox +1.5
+- Game: Boston Red Sox @ Los Angeles Dodgers
+- Odds: 1.51
+- Cover probability: 78.0%
+- EV: 17.7%
+- 1/4 Kelly: 8.7%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Bullpen fatigue proxy: 0.65
+- Expected score: Boston Red Sox 2.61 - Los Angeles Dodgers 2.46
+
+### 9. Miami Marlins +1.5
 - Game: Miami Marlins @ New York Mets
 - Odds: 1.53
 - Cover probability: 76.2%
@@ -192,10 +232,11 @@
 - 1/4 Kelly: 7.8%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.55
 - Expected score: Miami Marlins 2.58 - New York Mets 2.56
 
-### 9. Washington Nationals +1.5
+### 10. Washington Nationals +1.5
 - Game: Washington Nationals @ Atlanta Braves
 - Odds: 1.51
 - Cover probability: 75.5%
@@ -203,10 +244,11 @@
 - 1/4 Kelly: 6.8%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.55
 - Expected score: Washington Nationals 2.56 - Atlanta Braves 2.58
 
-### 10. Texas Rangers +1.5
+### 11. Texas Rangers +1.5
 - Game: Texas Rangers @ Houston Astros
 - Odds: 1.52
 - Cover probability: 73.9%
@@ -214,10 +256,11 @@
 - 1/4 Kelly: 5.9%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.55
 - Expected score: Texas Rangers 3.27 - Houston Astros 3.21
 
-### 11. Arizona Diamondbacks +1.5
+### 12. Arizona Diamondbacks +1.5
 - Game: Arizona Diamondbacks @ Cleveland Guardians
 - Odds: 1.56
 - Cover probability: 71.1%
@@ -225,10 +268,11 @@
 - 1/4 Kelly: 4.9%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.65
 - Expected score: Arizona Diamondbacks 2.43 - Cleveland Guardians 2.74
 
-### 12. Chicago White Sox +1.5
+### 13. Chicago White Sox +1.5
 - Game: Chicago White Sox @ Tampa Bay Rays
 - Odds: 1.61
 - Cover probability: 68.8%
@@ -236,227 +280,14 @@
 - 1/4 Kelly: 4.4%
 - Lineup: 未発表
 - Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Bullpen fatigue proxy: 0.75
 - Expected score: Chicago White Sox 2.38 - Tampa Bay Rays 2.83
 
-## Lineup Status
-
-### New York Yankees @ Chicago Cubs
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Pittsburgh Pirates @ Cincinnati Reds
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Philadelphia Phillies @ Baltimore Orioles
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### St. Louis Cardinals @ Toronto Blue Jays
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Arizona Diamondbacks @ Cleveland Guardians
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Chicago White Sox @ Tampa Bay Rays
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Miami Marlins @ New York Mets
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Washington Nationals @ Atlanta Braves
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Texas Rangers @ Houston Astros
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Kansas City Royals @ Colorado Rockies
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Milwaukee Brewers @ Los Angeles Angels
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Detroit Tigers @ Athletics
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### San Francisco Giants @ San Diego Padres
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Boston Red Sox @ Los Angeles Dodgers
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Minnesota Twins @ Seattle Mariners
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### St. Louis Cardinals @ Toronto Blue Jays
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Minnesota Twins @ Seattle Mariners
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Chicago White Sox @ Tampa Bay Rays
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Miami Marlins @ New York Mets
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Pittsburgh Pirates @ Cincinnati Reds
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Philadelphia Phillies @ Baltimore Orioles
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Texas Rangers @ Houston Astros
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Arizona Diamondbacks @ Cleveland Guardians
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Washington Nationals @ Atlanta Braves
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### New York Yankees @ Chicago Cubs
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Kansas City Royals @ Colorado Rockies
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### San Francisco Giants @ San Diego Padres
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Boston Red Sox @ Los Angeles Dodgers
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Milwaukee Brewers @ Los Angeles Angels
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Detroit Tigers @ Athletics
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Philadelphia Phillies @ Baltimore Orioles
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Washington Nationals @ Atlanta Braves
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### St. Louis Cardinals @ Toronto Blue Jays
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Arizona Diamondbacks @ Cleveland Guardians
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Pittsburgh Pirates @ Cincinnati Reds
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Chicago White Sox @ Tampa Bay Rays
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Miami Marlins @ New York Mets
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Texas Rangers @ Houston Astros
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### New York Yankees @ Chicago Cubs
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Kansas City Royals @ Colorado Rockies
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Milwaukee Brewers @ Los Angeles Angels
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Detroit Tigers @ Athletics
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### San Francisco Giants @ San Diego Padres
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Minnesota Twins @ Seattle Mariners
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Boston Red Sox @ Los Angeles Dodgers
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Washington Nationals @ Philadelphia Phillies
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### St. Louis Cardinals @ New York Yankees
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Pittsburgh Pirates @ Milwaukee Brewers
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Los Angeles Dodgers @ Chicago Cubs
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### San Francisco Giants @ Texas Rangers
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Toronto Blue Jays @ Houston Astros
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### Tampa Bay Rays @ Colorado Rockies
-- Away lineup: 未発表
-- Home lineup: 未発表
-
-### San Diego Padres @ Arizona Diamondbacks
-- Away lineup: 未発表
-- Home lineup: 未発表
-
 ## Model Notes
 
-- Confirmed batting orders are read from the MLB live game feed when available.
-- Lineup quality uses batting-order-weighted season OPS. Before announcement, lineup adjustment is neutral.
+- Platoon proxy uses each hitter's batting side versus the probable starter's throwing hand.
+- It is a conservative proxy, not a true split-stat model.
 - Moneyline and Run Line probabilities come from 100,000 simulated scores per game.
 - BUY threshold is EV 5% or higher.
-- Weather and handedness splits are not included yet.
+- Weather is the final major input not yet included.
