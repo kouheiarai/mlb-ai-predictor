@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-07-31T11:54:46.314422+00:00",
+  "fetched_at_utc": "2026-07-31T12:05:36.188976+00:00",
   "games": [
     {
       "game_pk": 824651,
@@ -34,7 +34,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "L"
+      "home_probable_pitcher_hand": "L",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 25.8,
+        "precipitation_probability": 6,
+        "wind_speed_kmh": 21.6,
+        "wind_direction_deg": 120,
+        "weather_run_factor": 1.0292
+      }
     },
     {
       "game_pk": 824486,
@@ -69,7 +78,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 32.2,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 7.8,
+        "wind_direction_deg": 158,
+        "weather_run_factor": 1.0244
+      }
     },
     {
       "game_pk": 824809,
@@ -104,7 +122,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 30.4,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 5.4,
+        "wind_direction_deg": 262,
+        "weather_run_factor": 1.0208
+      }
     },
     {
       "game_pk": 822782,
@@ -139,7 +166,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 824407,
@@ -174,7 +210,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 28.0,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 6.6,
+        "wind_direction_deg": 347,
+        "weather_run_factor": 1.016
+      }
     },
     {
       "game_pk": 822945,
@@ -209,7 +254,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 823593,
@@ -244,7 +298,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 28.2,
+        "precipitation_probability": 3,
+        "wind_speed_kmh": 6.5,
+        "wind_direction_deg": 109,
+        "weather_run_factor": 1.0164
+      }
     },
     {
       "game_pk": 824892,
@@ -279,7 +342,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 32.0,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 7.7,
+        "wind_direction_deg": 259,
+        "weather_run_factor": 1.024
+      }
     },
     {
       "game_pk": 824164,
@@ -314,7 +386,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 824325,
@@ -349,7 +430,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 32.6,
+        "precipitation_probability": 17,
+        "wind_speed_kmh": 12.6,
+        "wind_direction_deg": 77,
+        "weather_run_factor": 1.0292
+      }
     },
     {
       "game_pk": 823999,
@@ -384,7 +474,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 30.8,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 12.0,
+        "wind_direction_deg": 249,
+        "weather_run_factor": 1.0247
+      }
     },
     {
       "game_pk": 824975,
@@ -419,7 +518,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "L"
+      "home_probable_pitcher_hand": "L",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 28.1,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 16.6,
+        "wind_direction_deg": 236,
+        "weather_run_factor": 1.0263
+      }
     },
     {
       "game_pk": 823272,
@@ -454,7 +562,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 23.3,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 9.3,
+        "wind_direction_deg": 306,
+        "weather_run_factor": 1.0066
+      }
     },
     {
       "game_pk": 823922,
@@ -489,7 +606,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 24.8,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 9.8,
+        "wind_direction_deg": 253,
+        "weather_run_factor": 1.0096
+      }
     },
     {
       "game_pk": 823111,
@@ -524,7 +650,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 822781,
@@ -559,7 +694,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 823109,
@@ -594,7 +738,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 822944,
@@ -629,7 +782,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 823594,
@@ -664,7 +826,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "L"
+      "home_probable_pitcher_hand": "L",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 28.3,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 23.2,
+        "wind_direction_deg": 164,
+        "weather_run_factor": 1.0367
+      }
     },
     {
       "game_pk": 824485,
@@ -699,7 +870,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "L"
+      "home_probable_pitcher_hand": "L",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 24.9,
+        "precipitation_probability": 55,
+        "wind_speed_kmh": 5.2,
+        "wind_direction_deg": 326,
+        "weather_run_factor": 0.9947
+      }
     },
     {
       "game_pk": 824808,
@@ -734,7 +914,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 29.2,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 17.4,
+        "wind_direction_deg": 150,
+        "weather_run_factor": 1.0297
+      }
     },
     {
       "game_pk": 824162,
@@ -769,7 +958,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 824405,
@@ -804,7 +1002,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "L"
+      "home_probable_pitcher_hand": "L",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 31.2,
+        "precipitation_probability": 20,
+        "wind_speed_kmh": 9.7,
+        "wind_direction_deg": 180,
+        "weather_run_factor": 1.0224
+      }
     },
     {
       "game_pk": 824890,
@@ -839,7 +1046,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 24.3,
+        "precipitation_probability": 83,
+        "wind_speed_kmh": 9.0,
+        "wind_direction_deg": 180,
+        "weather_run_factor": 0.9935
+      }
     },
     {
       "game_pk": 824649,
@@ -874,7 +1090,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "L"
+      "home_probable_pitcher_hand": "L",
+      "weather": {
+        "available": false,
+        "indoor_or_retractable": false,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 824326,
@@ -909,7 +1134,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": false,
+        "indoor_or_retractable": false,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 823269,
@@ -944,7 +1178,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": false,
+        "indoor_or_retractable": false,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 823920,
@@ -979,7 +1222,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 28.2,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 11.6,
+        "wind_direction_deg": 254,
+        "weather_run_factor": 1.0188
+      }
     },
     {
       "game_pk": 824000,
@@ -1014,7 +1266,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": false,
+        "indoor_or_retractable": false,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 824972,
@@ -1049,7 +1310,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 30.3,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 17.5,
+        "wind_direction_deg": 233,
+        "weather_run_factor": 1.0321
+      }
     },
     {
       "game_pk": 824807,
@@ -1084,7 +1354,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 30.5,
+        "precipitation_probability": 4,
+        "wind_speed_kmh": 19.2,
+        "wind_direction_deg": 152,
+        "weather_run_factor": 1.0351
+      }
     },
     {
       "game_pk": 824891,
@@ -1119,7 +1398,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "L"
+      "home_probable_pitcher_hand": "L",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 26.4,
+        "precipitation_probability": 17,
+        "wind_speed_kmh": 8.2,
+        "wind_direction_deg": 229,
+        "weather_run_factor": 1.0128
+      }
     },
     {
       "game_pk": 822783,
@@ -1154,7 +1442,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 824404,
@@ -1189,7 +1486,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 22.9,
+        "precipitation_probability": 66,
+        "wind_speed_kmh": 16.4,
+        "wind_direction_deg": 171,
+        "weather_run_factor": 1.0002
+      }
     },
     {
       "game_pk": 824483,
@@ -1224,7 +1530,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 19.6,
+        "precipitation_probability": 35,
+        "wind_speed_kmh": 8.0,
+        "wind_direction_deg": 207,
+        "weather_run_factor": 0.9992
+      }
     },
     {
       "game_pk": 822943,
@@ -1259,7 +1574,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 823592,
@@ -1294,7 +1618,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": null
+      "home_probable_pitcher_hand": null,
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 28.4,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 23.5,
+        "wind_direction_deg": 165,
+        "weather_run_factor": 1.0374
+      }
     },
     {
       "game_pk": 824163,
@@ -1329,7 +1662,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": null
+      "home_probable_pitcher_hand": null,
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 824648,
@@ -1364,7 +1706,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 21.4,
+        "precipitation_probability": 5,
+        "wind_speed_kmh": 31.2,
+        "wind_direction_deg": 7,
+        "weather_run_factor": 1.0347
+      }
     },
     {
       "game_pk": 824323,
@@ -1399,7 +1750,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "L"
+      "home_probable_pitcher_hand": "L",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 37.6,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 5.0,
+        "wind_direction_deg": 90,
+        "weather_run_factor": 1.0352
+      }
     },
     {
       "game_pk": 823996,
@@ -1434,7 +1794,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": false,
+        "indoor_or_retractable": false,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 824971,
@@ -1469,7 +1838,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "L"
+      "home_probable_pitcher_hand": "L",
+      "weather": {
+        "available": false,
+        "indoor_or_retractable": false,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 823270,
@@ -1504,7 +1882,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": false,
+        "indoor_or_retractable": false,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 823107,
@@ -1539,7 +1926,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 823919,
@@ -1574,7 +1970,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "R"
+      "home_probable_pitcher_hand": "R",
+      "weather": {
+        "available": false,
+        "indoor_or_retractable": false,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 823431,
@@ -1609,7 +2014,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null
+      "home_probable_pitcher_hand": null,
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 24.6,
+        "precipitation_probability": 66,
+        "wind_speed_kmh": 13.6,
+        "wind_direction_deg": 202,
+        "weather_run_factor": 0.9994
+      }
     },
     {
       "game_pk": 823520,
@@ -1644,7 +2058,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null
+      "home_probable_pitcher_hand": null,
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 25.1,
+        "precipitation_probability": 61,
+        "wind_speed_kmh": 15.1,
+        "wind_direction_deg": 205,
+        "weather_run_factor": 1.0027
+      }
     },
     {
       "game_pk": 823757,
@@ -1679,7 +2102,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null
+      "home_probable_pitcher_hand": null,
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 824647,
@@ -1714,7 +2146,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null
+      "home_probable_pitcher_hand": null,
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 22.5,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 8.9,
+        "wind_direction_deg": 32,
+        "weather_run_factor": 1.005
+      }
     },
     {
       "game_pk": 822867,
@@ -1749,7 +2190,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null
+      "home_probable_pitcher_hand": null,
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 824160,
@@ -1784,7 +2234,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null
+      "home_probable_pitcher_hand": null,
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     },
     {
       "game_pk": 824324,
@@ -1819,7 +2278,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null
+      "home_probable_pitcher_hand": null,
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": false,
+        "temperature_c": 36.8,
+        "precipitation_probability": 6,
+        "wind_speed_kmh": 13.4,
+        "wind_direction_deg": 256,
+        "weather_run_factor": 1.0389
+      }
     },
     {
       "game_pk": 825095,
@@ -1854,7 +2322,16 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null
+      "home_probable_pitcher_hand": null,
+      "weather": {
+        "available": true,
+        "indoor_or_retractable": true,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
+      }
     }
   ]
 }
