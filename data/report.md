@@ -1,7 +1,7 @@
-# MLB Ver.18 Prediction Report
+# MLB Ver.19 Prediction Report
 
-- Updated: 2026-07-31T11:07:39.162286+00:00
-- API requests remaining: 464
+- Updated: 2026-07-31T11:26:50.835741+00:00
+- API requests remaining: 460
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
@@ -9,172 +9,193 @@
 ### 1. New York Yankees
 - Game: New York Yankees @ Chicago Cubs
 - Odds: 2.33
-- AI probability: 57.9%
-- EV: 35.0%
-- 1/4 Kelly: 6.6%
-- Expected score: New York Yankees 2.93 - Chicago Cubs 2.29
+- AI probability: 58.2%
+- EV: 35.6%
+- 1/4 Kelly: 6.7%
+- Bullpen fatigue proxy: 0.75
+- Expected score: New York Yankees 3.17 - Chicago Cubs 2.49
 
 ### 2. Cincinnati Reds
 - Game: Pittsburgh Pirates @ Cincinnati Reds
-- Odds: 2.14
-- AI probability: 60.9%
-- EV: 30.4%
-- 1/4 Kelly: 6.7%
-- Expected score: Pittsburgh Pirates 2.28 - Cincinnati Reds 3.08
+- Odds: 2.16
+- AI probability: 62.6%
+- EV: 35.2%
+- 1/4 Kelly: 7.6%
+- Bullpen fatigue proxy: 0.80
+- Expected score: Pittsburgh Pirates 2.38 - Cincinnati Reds 3.35
 
 ### 3. Minnesota Twins
 - Game: Minnesota Twins @ Seattle Mariners
 - Odds: 2.6
-- AI probability: 45.5%
-- EV: 18.2%
-- 1/4 Kelly: 2.8%
-- Expected score: Minnesota Twins 2.31 - Seattle Mariners 2.47
+- AI probability: 45.8%
+- EV: 19.0%
+- 1/4 Kelly: 3.0%
+- Bullpen fatigue proxy: 0.45
+- Expected score: Minnesota Twins 2.46 - Seattle Mariners 2.60
 
 ### 4. Kansas City Royals
 - Game: Kansas City Royals @ Colorado Rockies
 - Odds: 1.96
-- AI probability: 60.0%
-- EV: 17.6%
-- 1/4 Kelly: 4.6%
-- Expected score: Kansas City Royals 3.84 - Colorado Rockies 3.04
+- AI probability: 58.9%
+- EV: 15.5%
+- 1/4 Kelly: 4.0%
+- Bullpen fatigue proxy: 0.45
+- Expected score: Kansas City Royals 3.93 - Colorado Rockies 3.20
 
 ### 5. Los Angeles Angels
 - Game: Milwaukee Brewers @ Los Angeles Angels
-- Odds: 2.47
-- AI probability: 46.1%
-- EV: 13.8%
-- 1/4 Kelly: 2.3%
-- Expected score: Milwaukee Brewers 2.46 - Los Angeles Angels 2.29
+- Odds: 2.52
+- AI probability: 44.0%
+- EV: 10.9%
+- 1/4 Kelly: 1.8%
+- Bullpen fatigue proxy: 0.45
+- Expected score: Milwaukee Brewers 2.58 - Los Angeles Angels 2.29
 
 ### 6. St. Louis Cardinals
 - Game: St. Louis Cardinals @ Toronto Blue Jays
 - Odds: 2.43
-- AI probability: 46.6%
-- EV: 13.1%
-- 1/4 Kelly: 2.3%
-- Expected score: St. Louis Cardinals 2.54 - Toronto Blue Jays 2.66
+- AI probability: 45.1%
+- EV: 9.6%
+- 1/4 Kelly: 1.7%
+- Bullpen fatigue proxy: 0.75
+- Expected score: St. Louis Cardinals 2.67 - Toronto Blue Jays 2.89
 
 ### 7. San Francisco Giants
 - Game: San Francisco Giants @ San Diego Padres
 - Odds: 2.29
-- AI probability: 47.9%
-- EV: 9.7%
-- 1/4 Kelly: 1.9%
-- Expected score: San Francisco Giants 2.40 - San Diego Padres 2.44
+- AI probability: 47.7%
+- EV: 9.3%
+- 1/4 Kelly: 1.8%
+- Bullpen fatigue proxy: 0.55
+- Expected score: San Francisco Giants 2.52 - San Diego Padres 2.59
 
 ### 8. Texas Rangers
 - Game: Texas Rangers @ Houston Astros
 - Odds: 2.15
-- AI probability: 50.7%
-- EV: 9.0%
-- 1/4 Kelly: 1.9%
-- Expected score: Texas Rangers 3.12 - Houston Astros 3.01
+- AI probability: 49.9%
+- EV: 7.3%
+- 1/4 Kelly: 1.6%
+- Bullpen fatigue proxy: 0.55
+- Expected score: Texas Rangers 3.27 - Houston Astros 3.21
 
 ### 9. Athletics
 - Game: Detroit Tigers @ Athletics
 - Odds: 2.4
-- AI probability: 45.0%
-- EV: 8.1%
-- 1/4 Kelly: 1.4%
-- Expected score: Detroit Tigers 2.61 - Athletics 2.35
+- AI probability: 44.3%
+- EV: 6.3%
+- 1/4 Kelly: 1.1%
+- Bullpen fatigue proxy: 0.65
+- Expected score: Detroit Tigers 2.81 - Athletics 2.49
 
 ## Run Line Buy Ranking
 
 ### 1. Cincinnati Reds +1.5
 - Game: Pittsburgh Pirates @ Cincinnati Reds
 - Odds: 1.67
-- Cover probability: 84.9%
-- EV: 41.8%
-- 1/4 Kelly: 15.6%
-- Expected score: Pittsburgh Pirates 2.28 - Cincinnati Reds 3.08
+- Cover probability: 85.7%
+- EV: 43.1%
+- 1/4 Kelly: 16.1%
+- Bullpen fatigue proxy: 0.80
+- Expected score: Pittsburgh Pirates 2.38 - Cincinnati Reds 3.35
 
 ### 2. Los Angeles Angels +1.5
 - Game: Milwaukee Brewers @ Los Angeles Angels
-- Odds: 1.89
-- Cover probability: 74.2%
-- EV: 40.3%
-- 1/4 Kelly: 11.3%
-- Expected score: Milwaukee Brewers 2.46 - Los Angeles Angels 2.29
+- Odds: 1.93
+- Cover probability: 72.0%
+- EV: 39.0%
+- 1/4 Kelly: 10.5%
+- Bullpen fatigue proxy: 0.45
+- Expected score: Milwaukee Brewers 2.58 - Los Angeles Angels 2.29
 
 ### 3. New York Yankees +1.5
 - Game: New York Yankees @ Chicago Cubs
 - Odds: 1.65
-- Cover probability: 83.7%
-- EV: 38.1%
-- 1/4 Kelly: 14.7%
-- Expected score: New York Yankees 2.93 - Chicago Cubs 2.29
+- Cover probability: 83.1%
+- EV: 37.2%
+- 1/4 Kelly: 14.3%
+- Bullpen fatigue proxy: 0.75
+- Expected score: New York Yankees 3.17 - Chicago Cubs 2.49
 
 ### 4. Athletics +1.5
 - Game: Detroit Tigers @ Athletics
 - Odds: 1.9
-- Cover probability: 72.3%
-- EV: 37.4%
-- 1/4 Kelly: 10.4%
-- Expected score: Detroit Tigers 2.61 - Athletics 2.35
+- Cover probability: 70.5%
+- EV: 34.0%
+- 1/4 Kelly: 9.4%
+- Bullpen fatigue proxy: 0.65
+- Expected score: Detroit Tigers 2.81 - Athletics 2.49
 
 ### 5. Minnesota Twins +1.5
 - Game: Minnesota Twins @ Seattle Mariners
 - Odds: 1.74
-- Cover probability: 74.4%
-- EV: 29.4%
-- 1/4 Kelly: 9.9%
-- Expected score: Minnesota Twins 2.31 - Seattle Mariners 2.47
+- Cover probability: 73.8%
+- EV: 28.4%
+- 1/4 Kelly: 9.6%
+- Bullpen fatigue proxy: 0.45
+- Expected score: Minnesota Twins 2.46 - Seattle Mariners 2.60
 
-### 6. St. Louis Cardinals +1.5
-- Game: St. Louis Cardinals @ Toronto Blue Jays
-- Odds: 1.66
-- Cover probability: 73.9%
-- EV: 22.7%
-- 1/4 Kelly: 8.6%
-- Expected score: St. Louis Cardinals 2.54 - Toronto Blue Jays 2.66
-
-### 7. San Francisco Giants +1.5
+### 6. San Francisco Giants +1.5
 - Game: San Francisco Giants @ San Diego Padres
 - Odds: 1.61
-- Cover probability: 76.0%
-- EV: 22.3%
-- 1/4 Kelly: 9.1%
-- Expected score: San Francisco Giants 2.40 - San Diego Padres 2.44
+- Cover probability: 74.9%
+- EV: 20.6%
+- 1/4 Kelly: 8.4%
+- Bullpen fatigue proxy: 0.55
+- Expected score: San Francisco Giants 2.52 - San Diego Padres 2.59
+
+### 7. St. Louis Cardinals +1.5
+- Game: St. Louis Cardinals @ Toronto Blue Jays
+- Odds: 1.66
+- Cover probability: 71.7%
+- EV: 19.1%
+- 1/4 Kelly: 7.2%
+- Bullpen fatigue proxy: 0.75
+- Expected score: St. Louis Cardinals 2.67 - Toronto Blue Jays 2.89
 
 ### 8. Miami Marlins +1.5
 - Game: Miami Marlins @ New York Mets
 - Odds: 1.53
-- Cover probability: 76.1%
-- EV: 16.4%
-- 1/4 Kelly: 7.7%
-- Expected score: Miami Marlins 2.37 - New York Mets 2.41
+- Cover probability: 76.2%
+- EV: 16.5%
+- 1/4 Kelly: 7.8%
+- Bullpen fatigue proxy: 0.55
+- Expected score: Miami Marlins 2.58 - New York Mets 2.56
 
-### 9. Chicago White Sox +1.5
-- Game: Chicago White Sox @ Tampa Bay Rays
-- Odds: 1.62
-- Cover probability: 71.5%
-- EV: 15.9%
-- 1/4 Kelly: 6.4%
-- Expected score: Chicago White Sox 2.29 - Tampa Bay Rays 2.61
-
-### 10. Texas Rangers +1.5
-- Game: Texas Rangers @ Houston Astros
-- Odds: 1.52
-- Cover probability: 75.0%
-- EV: 14.0%
-- 1/4 Kelly: 6.7%
-- Expected score: Texas Rangers 3.12 - Houston Astros 3.01
-
-### 11. Washington Nationals +1.5
+### 9. Washington Nationals +1.5
 - Game: Washington Nationals @ Atlanta Braves
 - Odds: 1.51
 - Cover probability: 75.5%
 - EV: 14.0%
 - 1/4 Kelly: 6.8%
-- Expected score: Washington Nationals 2.35 - Atlanta Braves 2.44
+- Bullpen fatigue proxy: 0.55
+- Expected score: Washington Nationals 2.56 - Atlanta Braves 2.58
+
+### 10. Texas Rangers +1.5
+- Game: Texas Rangers @ Houston Astros
+- Odds: 1.52
+- Cover probability: 73.9%
+- EV: 12.4%
+- 1/4 Kelly: 5.9%
+- Bullpen fatigue proxy: 0.55
+- Expected score: Texas Rangers 3.27 - Houston Astros 3.21
+
+### 11. Chicago White Sox +1.5
+- Game: Chicago White Sox @ Tampa Bay Rays
+- Odds: 1.62
+- Cover probability: 68.8%
+- EV: 11.4%
+- 1/4 Kelly: 4.6%
+- Bullpen fatigue proxy: 0.75
+- Expected score: Chicago White Sox 2.38 - Tampa Bay Rays 2.83
 
 ### 12. Arizona Diamondbacks +1.5
 - Game: Arizona Diamondbacks @ Cleveland Guardians
 - Odds: 1.56
-- Cover probability: 72.5%
-- EV: 13.1%
-- 1/4 Kelly: 5.9%
-- Expected score: Arizona Diamondbacks 2.29 - Cleveland Guardians 2.55
+- Cover probability: 71.1%
+- EV: 10.9%
+- 1/4 Kelly: 4.9%
+- Bullpen fatigue proxy: 0.65
+- Expected score: Arizona Diamondbacks 2.43 - Cleveland Guardians 2.74
 
 ## Probable Pitchers
 
@@ -392,8 +413,9 @@
 
 ## Model Notes
 
-- Expected runs use offense, opponent team pitching, probable starter, recent form, park factor and home edge.
+- Expected runs include offense, opponent team pitching, probable starter, recent form, park factor, home edge and a recent-schedule bullpen fatigue proxy.
+- Bullpen fatigue is a workload proxy, not pitcher-level pitch-count fatigue.
 - Moneyline and Run Line probabilities come from 100,000 simulated scores per game.
 - Moneyline is blended 85% model / 15% Pinnacle no-vig market.
 - BUY threshold is EV 5% or higher.
-- Confirmed lineup, true bullpen fatigue, weather and handedness splits are not included yet.
+- Confirmed lineup, weather and handedness splits are not included yet.
