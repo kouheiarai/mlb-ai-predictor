@@ -10,7 +10,6 @@ from typing import Any
 import numpy as np
 import requests
 
-
 MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
 DEFAULT_ELO = 1500.0
 K_FACTOR = 20.0
@@ -20,9 +19,7 @@ SIMULATIONS = 100_000
 
 TEAM_ALIASES = {
     "athletics": "oakland athletics",
-    "los angeles angels": "los angeles angels",
     "la angels": "los angeles angels",
-    "arizona diamondbacks": "arizona diamondbacks",
     "d backs": "arizona diamondbacks",
 }
 
@@ -49,18 +46,12 @@ def fetch_completed_games(season: int | None = None) -> list[dict[str, Any]]:
     season = season or date.today().year
     response = requests.get(
         MLB_SCHEDULE_URL,
-        params={
-            "sportId": 1,
-            "season": season,
-            "gameType": "R",
-            "hydrate": "team",
-        },
+        params={"sportId": 1, "season": season, "gameType": "R", "hydrate": "team"},
         timeout=60,
     )
     response.raise_for_status()
 
     games: list[dict[str, Any]] = []
-
     for date_block in response.json().get("dates", []):
         for game in date_block.get("games", []):
             if game.get("status", {}).get("abstractGameState") != "Final":
@@ -70,7 +61,6 @@ def fetch_completed_games(season: int | None = None) -> list[dict[str, Any]]:
             home = game.get("teams", {}).get("home", {})
             away_score = away.get("score")
             home_score = home.get("score")
-
             if away_score is None or home_score is None:
                 continue
 
@@ -89,32 +79,28 @@ def fetch_completed_games(season: int | None = None) -> list[dict[str, Any]]:
 
 
 def expected_home_win_probability(home_elo: float, away_elo: float) -> float:
-    adjusted_home_elo = home_elo + HOME_FIELD_ELO
-    return 1.0 / (1.0 + 10 ** ((away_elo - adjusted_home_elo) / 400.0))
+    return 1.0 / (
+        1.0 + 10 ** ((away_elo - (home_elo + HOME_FIELD_ELO)) / 400.0)
+    )
 
 
 def build_elo_ratings(completed_games: list[dict[str, Any]]) -> dict[str, float]:
     ratings: defaultdict[str, float] = defaultdict(lambda: DEFAULT_ELO)
 
     for game in completed_games:
-        away_team = normalize_team(game["away_team"])
-        home_team = normalize_team(game["home_team"])
-        away_score = game["away_score"]
-        home_score = game["home_score"]
-
-        away_elo = ratings[away_team]
-        home_elo = ratings[home_team]
+        away = normalize_team(game["away_team"])
+        home = normalize_team(game["home_team"])
+        away_elo = ratings[away]
+        home_elo = ratings[home]
         expected_home = expected_home_win_probability(home_elo, away_elo)
-        actual_home = 1.0 if home_score > away_score else 0.0
-
-        margin = abs(home_score - away_score)
+        actual_home = 1.0 if game["home_score"] > game["away_score"] else 0.0
+        margin = abs(game["home_score"] - game["away_score"])
         multiplier = math.log(max(margin, 1) + 1) * (
             2.2 / ((abs(home_elo - away_elo) * 0.001) + 2.2)
         )
         change = K_FACTOR * multiplier * (actual_home - expected_home)
-
-        ratings[home_team] += change
-        ratings[away_team] -= change
+        ratings[home] += change
+        ratings[away] -= change
 
     return dict(ratings)
 
@@ -183,12 +169,9 @@ def starter_quality(stats: dict[str, Any] | None) -> float:
     return max(-1.0, min(1.0, sum(parts) / len(parts))) if parts else 0.0
 
 
-def _lookup_metrics(
-    team_name: str,
-    team_metrics: dict[str, dict[str, Any]],
-) -> dict[str, Any]:
+def _lookup(team_name: str, source: dict[str, dict[str, Any]]) -> dict[str, Any]:
     wanted = normalize_team(team_name)
-    for name, values in team_metrics.items():
+    for name, values in source.items():
         if normalize_team(name) == wanted:
             return values
     return {}
@@ -210,6 +193,7 @@ def expected_runs(
     offense_metrics: dict[str, Any],
     opponent_pitching_metrics: dict[str, Any],
     opponent_starter_quality: float,
+    opponent_bullpen_fatigue: float,
     recent_form: float,
     park_factor: float,
     home: bool,
@@ -224,8 +208,18 @@ def expected_runs(
 
     offense_factor = max(0.70, min(1.30, offense_rpg / LEAGUE_RUNS_PER_TEAM))
     pitching_factor = max(0.75, min(1.30, opponent_era / 4.20))
-    starter_factor = max(0.80, min(1.20, 1.0 - opponent_starter_quality * 0.12))
-    form_factor = max(0.90, min(1.10, 1.0 + (recent_form - 0.5) * 0.20))
+    starter_factor = max(
+        0.80,
+        min(1.20, 1.0 - opponent_starter_quality * 0.12),
+    )
+    bullpen_factor = max(
+        1.0,
+        min(1.18, 1.0 + opponent_bullpen_fatigue * 0.12),
+    )
+    form_factor = max(
+        0.90,
+        min(1.10, 1.0 + (recent_form - 0.5) * 0.20),
+    )
     home_factor = 1.025 if home else 0.985
 
     lam = (
@@ -233,11 +227,12 @@ def expected_runs(
         * offense_factor
         * pitching_factor
         * starter_factor
+        * bullpen_factor
         * form_factor
         * park_factor
         * home_factor
     )
-    return max(2.2, min(7.5, lam))
+    return max(2.2, min(7.8, lam))
 
 
 def deterministic_seed(event_id: str) -> int:
@@ -264,10 +259,8 @@ def simulate_game(
         ties = away_runs == home_runs
 
     home_ml = float(np.mean(home_runs > away_runs))
-    away_ml = 1.0 - home_ml
-
     return {
-        "away_ml": away_ml,
+        "away_ml": 1.0 - home_ml,
         "home_ml": home_ml,
         "away_minus_1_5": float(np.mean((away_runs - home_runs) >= 2)),
         "away_plus_1_5": float(np.mean((away_runs - home_runs) >= -1)),
@@ -284,6 +277,7 @@ def make_predictions(
     completed_games: list[dict[str, Any]],
     schedule: list[dict[str, Any]],
     team_metrics: dict[str, dict[str, Any]],
+    bullpen_fatigue: dict[str, dict[str, Any]],
     market_weight: float = 0.15,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     by_event: dict[str, list[dict[str, Any]]] = defaultdict(list)
@@ -296,9 +290,6 @@ def make_predictions(
     rl_predictions: list[dict[str, Any]] = []
 
     for event_id, rows in by_event.items():
-        if not rows:
-            continue
-
         first = rows[0]
         away_team = first["away_team"]
         home_team = first["home_team"]
@@ -309,8 +300,14 @@ def make_predictions(
         away_starter = starter_quality(game.get("away_starter_stats"))
         home_starter = starter_quality(game.get("home_starter_stats"))
 
-        away_metrics = _lookup_metrics(away_team, team_metrics)
-        home_metrics = _lookup_metrics(home_team, team_metrics)
+        away_metrics = _lookup(away_team, team_metrics)
+        home_metrics = _lookup(home_team, team_metrics)
+        away_bullpen = _lookup(away_team, bullpen_fatigue)
+        home_bullpen = _lookup(home_team, bullpen_fatigue)
+
+        away_fatigue = float(away_bullpen.get("fatigue_score") or 0.0)
+        home_fatigue = float(home_bullpen.get("fatigue_score") or 0.0)
+
         away_form = recent_form.get(away_key, 0.5)
         home_form = recent_form.get(home_key, 0.5)
         park = PARK_FACTORS.get(home_key, 1.0)
@@ -319,6 +316,7 @@ def make_predictions(
             away_metrics,
             home_metrics,
             home_starter,
+            home_fatigue,
             away_form,
             park,
             home=False,
@@ -327,6 +325,7 @@ def make_predictions(
             home_metrics,
             away_metrics,
             away_starter,
+            away_fatigue,
             home_form,
             park,
             home=True,
@@ -347,16 +346,15 @@ def make_predictions(
                     away_price,
                     home_price,
                 )
-
                 model_away = (
                     (1.0 - market_weight) * sim["away_ml"]
                     + market_weight * market_away
                 )
                 model_home = 1.0 - model_away
 
-                for team, price, probability, market_probability in [
-                    (away_team, away_price, model_away, market_away),
-                    (home_team, home_price, model_home, market_home),
+                for team, price, probability, market_probability, fatigue in [
+                    (away_team, away_price, model_away, market_away, away_fatigue),
+                    (home_team, home_price, model_home, market_home, home_fatigue),
                 ]:
                     ev = expected_value(probability, price)
                     ml_predictions.append(
@@ -376,14 +374,9 @@ def make_predictions(
                                 quarter_kelly(probability, price),
                                 6,
                             ),
-                            "away_expected_runs": round(
-                                sim["away_expected_runs"],
-                                3,
-                            ),
-                            "home_expected_runs": round(
-                                sim["home_expected_runs"],
-                                3,
-                            ),
+                            "bullpen_fatigue": round(fatigue, 4),
+                            "away_expected_runs": round(sim["away_expected_runs"], 3),
+                            "home_expected_runs": round(sim["home_expected_runs"], 3),
                             "simulations": SIMULATIONS,
                             "recommendation": (
                                 "BUY"
@@ -405,12 +398,14 @@ def make_predictions(
                     if point <= -1.5
                     else sim["away_plus_1_5"]
                 )
+                fatigue = away_fatigue
             elif team == home_team:
                 probability = (
                     sim["home_minus_1_5"]
                     if point <= -1.5
                     else sim["home_plus_1_5"]
                 )
+                fatigue = home_fatigue
             else:
                 continue
 
@@ -431,14 +426,9 @@ def make_predictions(
                         quarter_kelly(probability, price),
                         6,
                     ),
-                    "away_expected_runs": round(
-                        sim["away_expected_runs"],
-                        3,
-                    ),
-                    "home_expected_runs": round(
-                        sim["home_expected_runs"],
-                        3,
-                    ),
+                    "bullpen_fatigue": round(fatigue, 4),
+                    "away_expected_runs": round(sim["away_expected_runs"], 3),
+                    "home_expected_runs": round(sim["home_expected_runs"], 3),
                     "simulations": SIMULATIONS,
                     "recommendation": (
                         "BUY"

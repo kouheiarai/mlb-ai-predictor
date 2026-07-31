@@ -10,12 +10,9 @@ from typing import Any
 
 import requests
 
+from bullpen import fetch_bullpen_fatigue_proxy
 from mlb_api import attach_probable_pitcher_stats, fetch_mlb_schedule
-from predictor import (
-    build_elo_ratings,
-    fetch_completed_games,
-    make_predictions,
-)
+from predictor import build_elo_ratings, fetch_completed_games, make_predictions
 from team_metrics import fetch_team_metrics
 
 API_URL = "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/"
@@ -132,7 +129,7 @@ def write_report(
     path: Path,
 ) -> None:
     lines = [
-        "# MLB Ver.18 Prediction Report",
+        "# MLB Ver.19 Prediction Report",
         "",
         f"- Updated: {fetched_at}",
         f"- API requests remaining: {quota.get('requests_remaining') or 'unknown'}",
@@ -155,6 +152,7 @@ def write_report(
                     f"- AI probability: {pct(row['model_probability'])}",
                     f"- EV: {pct(row['ev'])}",
                     f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
+                    f"- Bullpen fatigue proxy: {row['bullpen_fatigue']:.2f}",
                     f"- Expected score: "
                     f"{row['away_team']} {row['away_expected_runs']:.2f} - "
                     f"{row['home_team']} {row['home_expected_runs']:.2f}",
@@ -176,6 +174,7 @@ def write_report(
                     f"- Cover probability: {pct(row['model_probability'])}",
                     f"- EV: {pct(row['ev'])}",
                     f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
+                    f"- Bullpen fatigue proxy: {row['bullpen_fatigue']:.2f}",
                     f"- Expected score: "
                     f"{row['away_team']} {row['away_expected_runs']:.2f} - "
                     f"{row['home_team']} {row['home_expected_runs']:.2f}",
@@ -202,11 +201,12 @@ def write_report(
         [
             "## Model Notes",
             "",
-            "- Expected runs use offense, opponent team pitching, probable starter, recent form, park factor and home edge.",
+            "- Expected runs include offense, opponent team pitching, probable starter, recent form, park factor, home edge and a recent-schedule bullpen fatigue proxy.",
+            "- Bullpen fatigue is a workload proxy, not pitcher-level pitch-count fatigue.",
             "- Moneyline and Run Line probabilities come from 100,000 simulated scores per game.",
             "- Moneyline is blended 85% model / 15% Pinnacle no-vig market.",
             "- BUY threshold is EV 5% or higher.",
-            "- Confirmed lineup, true bullpen fatigue, weather and handedness splits are not included yet.",
+            "- Confirmed lineup, weather and handedness splits are not included yet.",
         ]
     )
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -219,15 +219,14 @@ def main() -> int:
 
         odds_events, quota = fetch_odds(api_key)
         odds_rows = flatten_odds(odds_events)
-
         schedule = attach_probable_pitcher_stats(
             fetch_mlb_schedule(days=3),
             season,
         )
-
         completed_games = fetch_completed_games(season)
         elo_ratings = build_elo_ratings(completed_games)
         team_metrics = fetch_team_metrics(season)
+        bullpen_fatigue = fetch_bullpen_fatigue_proxy()
 
         ml_predictions, rl_predictions = make_predictions(
             odds_rows,
@@ -235,6 +234,7 @@ def main() -> int:
             completed_games,
             schedule,
             team_metrics,
+            bullpen_fatigue,
         )
 
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -247,6 +247,10 @@ def main() -> int:
             "team_metrics.json": {
                 "fetched_at_utc": fetched_at,
                 "metrics": team_metrics,
+            },
+            "bullpen_fatigue.json": {
+                "fetched_at_utc": fetched_at,
+                "fatigue": bullpen_fatigue,
             },
             "predictions.json": {
                 "fetched_at_utc": fetched_at,
