@@ -11,6 +11,7 @@ from typing import Any
 import requests
 
 from bullpen import fetch_bullpen_fatigue_proxy
+from lineup import attach_lineups
 from mlb_api import attach_probable_pitcher_stats, fetch_mlb_schedule
 from predictor import build_elo_ratings, fetch_completed_games, make_predictions
 from team_metrics import fetch_team_metrics
@@ -120,6 +121,10 @@ def pct(value: Any) -> str:
         return ""
 
 
+def lineup_label(value: Any) -> str:
+    return "発表済み" if value else "未発表"
+
+
 def write_report(
     ml_predictions: list[dict[str, Any]],
     rl_predictions: list[dict[str, Any]],
@@ -129,7 +134,7 @@ def write_report(
     path: Path,
 ) -> None:
     lines = [
-        "# MLB Ver.19 Prediction Report",
+        "# MLB Ver.20 Prediction Report",
         "",
         f"- Updated: {fetched_at}",
         f"- API requests remaining: {quota.get('requests_remaining') or 'unknown'}",
@@ -152,6 +157,8 @@ def write_report(
                     f"- AI probability: {pct(row['model_probability'])}",
                     f"- EV: {pct(row['ev'])}",
                     f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
+                    f"- Lineup: {lineup_label(row['lineup_announced'])}",
+                    f"- Lineup quality: {row['lineup_quality']:+.2f}",
                     f"- Bullpen fatigue proxy: {row['bullpen_fatigue']:.2f}",
                     f"- Expected score: "
                     f"{row['away_team']} {row['away_expected_runs']:.2f} - "
@@ -174,6 +181,8 @@ def write_report(
                     f"- Cover probability: {pct(row['model_probability'])}",
                     f"- EV: {pct(row['ev'])}",
                     f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
+                    f"- Lineup: {lineup_label(row['lineup_announced'])}",
+                    f"- Lineup quality: {row['lineup_quality']:+.2f}",
                     f"- Bullpen fatigue proxy: {row['bullpen_fatigue']:.2f}",
                     f"- Expected score: "
                     f"{row['away_team']} {row['away_expected_runs']:.2f} - "
@@ -182,17 +191,14 @@ def write_report(
                 ]
             )
 
-    lines.extend(["## Probable Pitchers", ""])
+    lines.extend(["## Lineup Status", ""])
     for game in schedule:
-        away_stats = game.get("away_starter_stats", {})
-        home_stats = game.get("home_starter_stats", {})
+        lineups = game.get("lineups", {})
         lines.extend(
             [
                 f"### {game['away_team']} @ {game['home_team']}",
-                f"- Away: {game['away_probable_pitcher']} "
-                f"(ERA {away_stats.get('era')}, WHIP {away_stats.get('whip')})",
-                f"- Home: {game['home_probable_pitcher']} "
-                f"(ERA {home_stats.get('era')}, WHIP {home_stats.get('whip')})",
+                f"- Away lineup: {lineup_label(lineups.get('away_announced'))}",
+                f"- Home lineup: {lineup_label(lineups.get('home_announced'))}",
                 "",
             ]
         )
@@ -201,12 +207,11 @@ def write_report(
         [
             "## Model Notes",
             "",
-            "- Expected runs include offense, opponent team pitching, probable starter, recent form, park factor, home edge and a recent-schedule bullpen fatigue proxy.",
-            "- Bullpen fatigue is a workload proxy, not pitcher-level pitch-count fatigue.",
+            "- Confirmed batting orders are read from the MLB live game feed when available.",
+            "- Lineup quality uses batting-order-weighted season OPS. Before announcement, lineup adjustment is neutral.",
             "- Moneyline and Run Line probabilities come from 100,000 simulated scores per game.",
-            "- Moneyline is blended 85% model / 15% Pinnacle no-vig market.",
             "- BUY threshold is EV 5% or higher.",
-            "- Confirmed lineup, weather and handedness splits are not included yet.",
+            "- Weather and handedness splits are not included yet.",
         ]
     )
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -219,10 +224,13 @@ def main() -> int:
 
         odds_events, quota = fetch_odds(api_key)
         odds_rows = flatten_odds(odds_events)
+
         schedule = attach_probable_pitcher_stats(
             fetch_mlb_schedule(days=3),
             season,
         )
+        schedule = attach_lineups(schedule, season)
+
         completed_games = fetch_completed_games(season)
         elo_ratings = build_elo_ratings(completed_games)
         team_metrics = fetch_team_metrics(season)
