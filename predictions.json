@@ -138,7 +138,7 @@ def write_report(
     path: Path,
 ) -> None:
     lines = [
-        "# MLB Ver.22 Final Prediction Report",
+        "# MLB AI Predictor Ver.23.1 Prediction Report",
         "",
         f"- Updated: {fetched_at}",
         f"- API requests remaining: {quota.get('requests_remaining') or 'unknown'}",
