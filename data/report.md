@@ -1,123 +1,154 @@
-# MLB Ver.16.2 Prediction Report
+# MLB Ver.17 Prediction Report
 
-- Updated: 2026-07-31T07:56:28.633254+00:00
-- API requests remaining: 474
+- Updated: 2026-07-31T09:22:20.360066+00:00
+- API requests remaining: 470
 
 ## Moneyline Buy Ranking
 
 ### 1. Minnesota Twins
 - Game: Minnesota Twins @ Seattle Mariners
 - Odds: 2.6
-- AI probability: 48.9%
-- EV: 27.2%
-- 1/4 Kelly: 4.2%
+- AI probability: 49.2%
+- EV: 27.8%
+- 1/4 Kelly: 4.3%
+- Starter: +0.21
+- Offense: -0.88
+- Team pitching proxy: +0.66
 
-### 2. St. Louis Cardinals
-- Game: St. Louis Cardinals @ Toronto Blue Jays
-- Odds: 2.42
-- AI probability: 47.1%
-- EV: 14.0%
-- 1/4 Kelly: 2.5%
-
-### 3. Houston Astros
+### 2. Houston Astros
 - Game: Texas Rangers @ Houston Astros
-- Odds: 1.83
-- AI probability: 62.1%
-- EV: 13.7%
-- 1/4 Kelly: 4.1%
+- Odds: 1.81
+- AI probability: 64.0%
+- EV: 15.8%
+- 1/4 Kelly: 4.9%
+- Starter: +0.00
+- Offense: +0.27
+- Team pitching proxy: +0.00
 
-### 4. Milwaukee Brewers
+### 3. Milwaukee Brewers
 - Game: Milwaukee Brewers @ Los Angeles Angels
 - Odds: 1.61
-- AI probability: 70.5%
-- EV: 13.5%
-- 1/4 Kelly: 5.5%
+- AI probability: 71.5%
+- EV: 15.1%
+- 1/4 Kelly: 6.2%
+- Starter: +1.00
+- Offense: -1.00
+- Team pitching proxy: +1.00
 
-### 5. Cincinnati Reds
+### 4. Cincinnati Reds
 - Game: Pittsburgh Pirates @ Cincinnati Reds
-- Odds: 2.19
-- AI probability: 50.8%
-- EV: 11.2%
-- 1/4 Kelly: 2.4%
+- Odds: 2.24
+- AI probability: 51.2%
+- EV: 14.6%
+- 1/4 Kelly: 2.9%
+- Starter: +0.62
+- Offense: -0.92
+- Team pitching proxy: +1.00
+
+### 5. St. Louis Cardinals
+- Game: St. Louis Cardinals @ Toronto Blue Jays
+- Odds: 2.43
+- AI probability: 45.9%
+- EV: 11.6%
+- 1/4 Kelly: 2.0%
+- Starter: +0.21
+- Offense: -1.00
+- Team pitching proxy: +0.46
 
 ### 6. Kansas City Royals
 - Game: Kansas City Royals @ Colorado Rockies
 - Odds: 1.96
-- AI probability: 54.7%
-- EV: 7.3%
-- 1/4 Kelly: 1.9%
+- AI probability: 54.9%
+- EV: 7.6%
+- 1/4 Kelly: 2.0%
+- Starter: -0.14
+- Offense: -1.00
+- Team pitching proxy: +0.51
 
 ### 7. Arizona Diamondbacks
 - Game: Arizona Diamondbacks @ Cleveland Guardians
 - Odds: 2.18
-- AI probability: 48.9%
-- EV: 6.7%
-- 1/4 Kelly: 1.4%
+- AI probability: 49.2%
+- EV: 7.2%
+- 1/4 Kelly: 1.5%
+- Starter: -0.47
+- Offense: -1.00
+- Team pitching proxy: +0.90
 
-### 8. Chicago Cubs
-- Game: New York Yankees @ Chicago Cubs
-- Odds: 1.69
-- AI probability: 62.2%
-- EV: 5.1%
+### 8. New York Mets
+- Game: Miami Marlins @ New York Mets
+- Odds: 1.81
+- AI probability: 58.4%
+- EV: 5.7%
 - 1/4 Kelly: 1.8%
+- Starter: +0.00
+- Offense: -0.49
+- Team pitching proxy: +0.74
 
 ## Run Line Buy Ranking
 
 ### 1. Houston Astros -1.5
 - Game: Texas Rangers @ Houston Astros
-- Odds: 2.71
-- AI probability: 50.2%
-- EV: 36.2%
-- 1/4 Kelly: 5.3%
+- Odds: 2.7
+- AI probability: 51.5%
+- EV: 39.1%
+- 1/4 Kelly: 5.7%
 
 ### 2. New York Mets -1.5
 - Game: Miami Marlins @ New York Mets
 - Odds: 2.64
-- AI probability: 47.2%
-- EV: 24.5%
-- 1/4 Kelly: 3.7%
+- AI probability: 47.7%
+- EV: 26.0%
+- 1/4 Kelly: 4.0%
 
-### 3. Tampa Bay Rays -1.5
-- Game: Chicago White Sox @ Tampa Bay Rays
-- Odds: 2.46
-- AI probability: 49.5%
-- EV: 21.7%
-- 1/4 Kelly: 3.7%
-
-### 4. Atlanta Braves -1.5
+### 3. Atlanta Braves -1.5
 - Game: Washington Nationals @ Atlanta Braves
-- Odds: 2.67
-- AI probability: 45.3%
-- EV: 20.9%
-- 1/4 Kelly: 3.1%
+- Odds: 2.69
+- AI probability: 44.7%
+- EV: 20.1%
+- 1/4 Kelly: 3.0%
+
+### 4. Tampa Bay Rays -1.5
+- Game: Chicago White Sox @ Tampa Bay Rays
+- Odds: 2.42
+- AI probability: 49.5%
+- EV: 19.7%
+- 1/4 Kelly: 3.5%
 
 ### 5. Chicago Cubs -1.5
 - Game: New York Yankees @ Chicago Cubs
-- Odds: 2.38
-- AI probability: 50.3%
-- EV: 19.7%
-- 1/4 Kelly: 3.6%
+- Odds: 2.37
+- AI probability: 50.1%
+- EV: 18.7%
+- 1/4 Kelly: 3.4%
 
 ### 6. Milwaukee Brewers -1.5
 - Game: Milwaukee Brewers @ Los Angeles Angels
 - Odds: 1.99
-- AI probability: 55.9%
-- EV: 11.3%
-- 1/4 Kelly: 2.9%
+- AI probability: 56.6%
+- EV: 12.6%
+- 1/4 Kelly: 3.2%
 
-### 7. Cleveland Guardians -1.5
-- Game: Arizona Diamondbacks @ Cleveland Guardians
-- Odds: 2.56
-- AI probability: 42.7%
-- EV: 9.4%
-- 1/4 Kelly: 1.5%
-
-### 8. Kansas City Royals -1.5
+### 7. Kansas City Royals -1.5
 - Game: Kansas City Royals @ Colorado Rockies
 - Odds: 2.41
-- AI probability: 45.2%
-- EV: 9.0%
+- AI probability: 45.3%
+- EV: 9.2%
 - 1/4 Kelly: 1.6%
+
+### 8. Cleveland Guardians -1.5
+- Game: Arizona Diamondbacks @ Cleveland Guardians
+- Odds: 2.56
+- AI probability: 42.6%
+- EV: 9.0%
+- 1/4 Kelly: 1.4%
+
+### 9. Cincinnati Reds +1.5
+- Game: Pittsburgh Pirates @ Cincinnati Reds
+- Odds: 1.71
+- AI probability: 61.9%
+- EV: 5.9%
+- 1/4 Kelly: 2.1%
 
 ## Probable Pitchers
 
@@ -335,7 +366,7 @@
 
 ## Model Notes
 
-- Moneyline: Elo + recent 10-game form + probable starter stats + Pinnacle no-vig market.
-- Run Line: heuristic conversion from Moneyline probability and spread.
+- Moneyline: Elo + recent form + probable starter + team offense + team pitching proxy + park factor + Pinnacle no-vig market.
+- Team pitching proxy is not yet a true bullpen-only metric.
+- Run Line remains a heuristic conversion and is not yet a run-distribution simulation.
 - BUY threshold is EV 5% or higher.
-- Bullpen, confirmed lineup, park and weather are not included yet.
