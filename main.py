@@ -13,6 +13,7 @@ import requests
 from bullpen import fetch_bullpen_fatigue_proxy
 from lineup import attach_lineups
 from mlb_api import attach_probable_pitcher_stats, fetch_mlb_schedule
+from platoon import attach_handedness
 from predictor import build_elo_ratings, fetch_completed_games, make_predictions
 from team_metrics import fetch_team_metrics
 
@@ -134,7 +135,7 @@ def write_report(
     path: Path,
 ) -> None:
     lines = [
-        "# MLB Ver.20 Prediction Report",
+        "# MLB Ver.21 Prediction Report",
         "",
         f"- Updated: {fetched_at}",
         f"- API requests remaining: {quota.get('requests_remaining') or 'unknown'}",
@@ -159,6 +160,7 @@ def write_report(
                     f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
                     f"- Lineup: {lineup_label(row['lineup_announced'])}",
                     f"- Lineup quality: {row['lineup_quality']:+.2f}",
+                    f"- Platoon proxy: {row['platoon_proxy']:+.2f}",
                     f"- Bullpen fatigue proxy: {row['bullpen_fatigue']:.2f}",
                     f"- Expected score: "
                     f"{row['away_team']} {row['away_expected_runs']:.2f} - "
@@ -183,6 +185,7 @@ def write_report(
                     f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
                     f"- Lineup: {lineup_label(row['lineup_announced'])}",
                     f"- Lineup quality: {row['lineup_quality']:+.2f}",
+                    f"- Platoon proxy: {row['platoon_proxy']:+.2f}",
                     f"- Bullpen fatigue proxy: {row['bullpen_fatigue']:.2f}",
                     f"- Expected score: "
                     f"{row['away_team']} {row['away_expected_runs']:.2f} - "
@@ -191,27 +194,15 @@ def write_report(
                 ]
             )
 
-    lines.extend(["## Lineup Status", ""])
-    for game in schedule:
-        lineups = game.get("lineups", {})
-        lines.extend(
-            [
-                f"### {game['away_team']} @ {game['home_team']}",
-                f"- Away lineup: {lineup_label(lineups.get('away_announced'))}",
-                f"- Home lineup: {lineup_label(lineups.get('home_announced'))}",
-                "",
-            ]
-        )
-
     lines.extend(
         [
             "## Model Notes",
             "",
-            "- Confirmed batting orders are read from the MLB live game feed when available.",
-            "- Lineup quality uses batting-order-weighted season OPS. Before announcement, lineup adjustment is neutral.",
+            "- Platoon proxy uses each hitter's batting side versus the probable starter's throwing hand.",
+            "- It is a conservative proxy, not a true split-stat model.",
             "- Moneyline and Run Line probabilities come from 100,000 simulated scores per game.",
             "- BUY threshold is EV 5% or higher.",
-            "- Weather and handedness splits are not included yet.",
+            "- Weather is the final major input not yet included.",
         ]
     )
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -230,6 +221,7 @@ def main() -> int:
             season,
         )
         schedule = attach_lineups(schedule, season)
+        schedule = attach_handedness(schedule)
 
         completed_games = fetch_completed_games(season)
         elo_ratings = build_elo_ratings(completed_games)

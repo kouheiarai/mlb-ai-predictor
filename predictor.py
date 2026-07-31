@@ -175,10 +175,6 @@ def lineup_quality(
     lineup: list[dict[str, Any]],
     announced: bool,
 ) -> float:
-    """
-    発表済みスタメンのOPSを打順重み付きで-1〜+1へ変換。
-    未発表時は0（補正なし）。
-    """
     if not announced or len(lineup) < 8:
         return 0.0
 
@@ -203,11 +199,48 @@ def lineup_quality(
         weighted_scores.append(score * weight)
         used_weights.append(weight)
 
-    if not weighted_scores or not used_weights:
+    if not weighted_scores:
         return 0.0
 
-    quality = sum(weighted_scores) / sum(used_weights)
-    return max(-1.0, min(1.0, quality))
+    return max(
+        -1.0,
+        min(1.0, sum(weighted_scores) / sum(used_weights)),
+    )
+
+
+def platoon_proxy(
+    lineup: list[dict[str, Any]],
+    pitcher_hand: str | None,
+    announced: bool,
+) -> float:
+    """
+    打者の打席側と先発の投球側から-1〜+1の代理補正を作る。
+
+    S打者は小幅プラス、逆側打者はプラス、同側打者はマイナス。
+    左右別実績そのものではないため、補正幅は小さく制限する。
+    """
+    if not announced or not pitcher_hand or len(lineup) < 8:
+        return 0.0
+
+    weights = [1.10, 1.08, 1.15, 1.18, 1.05, 0.95, 0.90, 0.85, 0.80]
+    values = []
+
+    for index, hitter in enumerate(lineup[:9]):
+        bat_side = hitter.get("bat_side")
+
+        if bat_side == "S":
+            value = 0.35
+        elif bat_side and bat_side != pitcher_hand:
+            value = 0.25
+        elif bat_side and bat_side == pitcher_hand:
+            value = -0.20
+        else:
+            value = 0.0
+
+        values.append(value * weights[index])
+
+    score = sum(values) / sum(weights[: len(values)])
+    return max(-1.0, min(1.0, score))
 
 
 def _lookup(team_name: str, source: dict[str, dict[str, Any]]) -> dict[str, Any]:
@@ -237,6 +270,7 @@ def expected_runs(
     opponent_bullpen_fatigue: float,
     recent_form: float,
     lineup_adjustment: float,
+    platoon_adjustment: float,
     park_factor: float,
     home: bool,
 ) -> float:
@@ -250,22 +284,11 @@ def expected_runs(
 
     offense_factor = max(0.70, min(1.30, offense_rpg / LEAGUE_RUNS_PER_TEAM))
     pitching_factor = max(0.75, min(1.30, opponent_era / 4.20))
-    starter_factor = max(
-        0.80,
-        min(1.20, 1.0 - opponent_starter_quality * 0.12),
-    )
-    bullpen_factor = max(
-        1.0,
-        min(1.18, 1.0 + opponent_bullpen_fatigue * 0.12),
-    )
-    form_factor = max(
-        0.90,
-        min(1.10, 1.0 + (recent_form - 0.5) * 0.20),
-    )
-    lineup_factor = max(
-        0.88,
-        min(1.12, 1.0 + lineup_adjustment * 0.10),
-    )
+    starter_factor = max(0.80, min(1.20, 1.0 - opponent_starter_quality * 0.12))
+    bullpen_factor = max(1.0, min(1.18, 1.0 + opponent_bullpen_fatigue * 0.12))
+    form_factor = max(0.90, min(1.10, 1.0 + (recent_form - 0.5) * 0.20))
+    lineup_factor = max(0.88, min(1.12, 1.0 + lineup_adjustment * 0.10))
+    platoon_factor = max(0.96, min(1.04, 1.0 + platoon_adjustment * 0.04))
     home_factor = 1.025 if home else 0.985
 
     lam = (
@@ -276,6 +299,7 @@ def expected_runs(
         * bullpen_factor
         * form_factor
         * lineup_factor
+        * platoon_factor
         * park_factor
         * home_factor
     )
@@ -348,15 +372,23 @@ def make_predictions(
         home_starter = starter_quality(game.get("home_starter_stats"))
 
         lineups = game.get("lineups", {})
-        away_lineup_announced = bool(lineups.get("away_announced"))
-        home_lineup_announced = bool(lineups.get("home_announced"))
-        away_lineup_quality = lineup_quality(
-            lineups.get("away_batting_order", []),
-            away_lineup_announced,
+        away_announced = bool(lineups.get("away_announced"))
+        home_announced = bool(lineups.get("home_announced"))
+        away_lineup = lineups.get("away_batting_order", [])
+        home_lineup = lineups.get("home_batting_order", [])
+
+        away_lineup_quality = lineup_quality(away_lineup, away_announced)
+        home_lineup_quality = lineup_quality(home_lineup, home_announced)
+
+        away_platoon = platoon_proxy(
+            away_lineup,
+            game.get("home_probable_pitcher_hand"),
+            away_announced,
         )
-        home_lineup_quality = lineup_quality(
-            lineups.get("home_batting_order", []),
-            home_lineup_announced,
+        home_platoon = platoon_proxy(
+            home_lineup,
+            game.get("away_probable_pitcher_hand"),
+            home_announced,
         )
 
         away_metrics = _lookup(away_team, team_metrics)
@@ -377,6 +409,7 @@ def make_predictions(
             home_fatigue,
             away_form,
             away_lineup_quality,
+            away_platoon,
             park,
             home=False,
         )
@@ -387,6 +420,7 @@ def make_predictions(
             away_fatigue,
             home_form,
             home_lineup_quality,
+            home_platoon,
             park,
             home=True,
         )
@@ -412,6 +446,29 @@ def make_predictions(
                 )
                 model_home = 1.0 - model_away
 
+                selections = [
+                    (
+                        away_team,
+                        away_price,
+                        model_away,
+                        market_away,
+                        away_fatigue,
+                        away_announced,
+                        away_lineup_quality,
+                        away_platoon,
+                    ),
+                    (
+                        home_team,
+                        home_price,
+                        model_home,
+                        market_home,
+                        home_fatigue,
+                        home_announced,
+                        home_lineup_quality,
+                        home_platoon,
+                    ),
+                ]
+
                 for (
                     team,
                     price,
@@ -420,26 +477,8 @@ def make_predictions(
                     fatigue,
                     lineup_announced,
                     lineup_score,
-                ) in [
-                    (
-                        away_team,
-                        away_price,
-                        model_away,
-                        market_away,
-                        away_fatigue,
-                        away_lineup_announced,
-                        away_lineup_quality,
-                    ),
-                    (
-                        home_team,
-                        home_price,
-                        model_home,
-                        market_home,
-                        home_fatigue,
-                        home_lineup_announced,
-                        home_lineup_quality,
-                    ),
-                ]:
+                    platoon_score,
+                ) in selections:
                     ev = expected_value(probability, price)
                     ml_predictions.append(
                         {
@@ -451,10 +490,7 @@ def make_predictions(
                             "selection": team,
                             "point": "",
                             "decimal_odds": round(price, 3),
-                            "market_no_vig_probability": round(
-                                market_probability,
-                                6,
-                            ),
+                            "market_no_vig_probability": round(market_probability, 6),
                             "model_probability": round(probability, 6),
                             "ev": round(ev, 6),
                             "quarter_kelly": round(
@@ -464,14 +500,9 @@ def make_predictions(
                             "bullpen_fatigue": round(fatigue, 4),
                             "lineup_announced": lineup_announced,
                             "lineup_quality": round(lineup_score, 4),
-                            "away_expected_runs": round(
-                                sim["away_expected_runs"],
-                                3,
-                            ),
-                            "home_expected_runs": round(
-                                sim["home_expected_runs"],
-                                3,
-                            ),
+                            "platoon_proxy": round(platoon_score, 4),
+                            "away_expected_runs": round(sim["away_expected_runs"], 3),
+                            "home_expected_runs": round(sim["home_expected_runs"], 3),
                             "simulations": SIMULATIONS,
                             "recommendation": (
                                 "BUY"
@@ -494,8 +525,9 @@ def make_predictions(
                     else sim["away_plus_1_5"]
                 )
                 fatigue = away_fatigue
-                lineup_announced = away_lineup_announced
+                announced = away_announced
                 lineup_score = away_lineup_quality
+                platoon_score = away_platoon
             elif team == home_team:
                 probability = (
                     sim["home_minus_1_5"]
@@ -503,8 +535,9 @@ def make_predictions(
                     else sim["home_plus_1_5"]
                 )
                 fatigue = home_fatigue
-                lineup_announced = home_lineup_announced
+                announced = home_announced
                 lineup_score = home_lineup_quality
+                platoon_score = home_platoon
             else:
                 continue
 
@@ -526,16 +559,11 @@ def make_predictions(
                         6,
                     ),
                     "bullpen_fatigue": round(fatigue, 4),
-                    "lineup_announced": lineup_announced,
+                    "lineup_announced": announced,
                     "lineup_quality": round(lineup_score, 4),
-                    "away_expected_runs": round(
-                        sim["away_expected_runs"],
-                        3,
-                    ),
-                    "home_expected_runs": round(
-                        sim["home_expected_runs"],
-                        3,
-                    ),
+                    "platoon_proxy": round(platoon_score, 4),
+                    "away_expected_runs": round(sim["away_expected_runs"], 3),
+                    "home_expected_runs": round(sim["home_expected_runs"], 3),
                     "simulations": SIMULATIONS,
                     "recommendation": (
                         "BUY"
