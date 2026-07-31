@@ -272,6 +272,7 @@ def expected_runs(
     lineup_adjustment: float,
     platoon_adjustment: float,
     park_factor: float,
+    weather_run_factor: float,
     home: bool,
 ) -> float:
     offense_rpg = offense_metrics.get("runs_per_game")
@@ -301,6 +302,7 @@ def expected_runs(
         * lineup_factor
         * platoon_factor
         * park_factor
+        * weather_run_factor
         * home_factor
     )
     return max(2.2, min(8.0, lam))
@@ -401,6 +403,8 @@ def make_predictions(
         away_form = recent_form.get(away_key, 0.5)
         home_form = recent_form.get(home_key, 0.5)
         park = PARK_FACTORS.get(home_key, 1.0)
+        weather = game.get("weather") or {}
+        weather_run_factor = float(weather.get("weather_run_factor") or 1.0)
 
         away_lambda = expected_runs(
             away_metrics,
@@ -411,6 +415,7 @@ def make_predictions(
             away_lineup_quality,
             away_platoon,
             park,
+            weather_run_factor,
             home=False,
         )
         home_lambda = expected_runs(
@@ -422,6 +427,7 @@ def make_predictions(
             home_lineup_quality,
             home_platoon,
             park,
+            weather_run_factor,
             home=True,
         )
 
@@ -501,6 +507,13 @@ def make_predictions(
                             "lineup_announced": lineup_announced,
                             "lineup_quality": round(lineup_score, 4),
                             "platoon_proxy": round(platoon_score, 4),
+                            "weather_run_factor": round(weather_run_factor, 4),
+                            "temperature_c": weather.get("temperature_c"),
+                            "precipitation_probability": weather.get(
+                                "precipitation_probability"
+                            ),
+                            "wind_speed_kmh": weather.get("wind_speed_kmh"),
+                            "wind_direction_deg": weather.get("wind_direction_deg"),
                             "away_expected_runs": round(sim["away_expected_runs"], 3),
                             "home_expected_runs": round(sim["home_expected_runs"], 3),
                             "simulations": SIMULATIONS,
@@ -562,6 +575,13 @@ def make_predictions(
                     "lineup_announced": announced,
                     "lineup_quality": round(lineup_score, 4),
                     "platoon_proxy": round(platoon_score, 4),
+                    "weather_run_factor": round(weather_run_factor, 4),
+                    "temperature_c": weather.get("temperature_c"),
+                    "precipitation_probability": weather.get(
+                        "precipitation_probability"
+                    ),
+                    "wind_speed_kmh": weather.get("wind_speed_kmh"),
+                    "wind_direction_deg": weather.get("wind_direction_deg"),
                     "away_expected_runs": round(sim["away_expected_runs"], 3),
                     "home_expected_runs": round(sim["home_expected_runs"], 3),
                     "simulations": SIMULATIONS,

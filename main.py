@@ -15,6 +15,7 @@ from lineup import attach_lineups
 from mlb_api import attach_probable_pitcher_stats, fetch_mlb_schedule
 from platoon import attach_handedness
 from predictor import build_elo_ratings, fetch_completed_games, make_predictions
+from weather_data import attach_weather
 from team_metrics import fetch_team_metrics
 
 API_URL = "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/"
@@ -135,7 +136,7 @@ def write_report(
     path: Path,
 ) -> None:
     lines = [
-        "# MLB Ver.21 Prediction Report",
+        "# MLB Ver.22 Final Prediction Report",
         "",
         f"- Updated: {fetched_at}",
         f"- API requests remaining: {quota.get('requests_remaining') or 'unknown'}",
@@ -161,6 +162,11 @@ def write_report(
                     f"- Lineup: {lineup_label(row['lineup_announced'])}",
                     f"- Lineup quality: {row['lineup_quality']:+.2f}",
                     f"- Platoon proxy: {row['platoon_proxy']:+.2f}",
+                    f"- Weather run factor: {row['weather_run_factor']:.3f}",
+                    f"- Temperature: {row.get('temperature_c')} C",
+                    f"- Rain probability: {row.get('precipitation_probability')}%",
+                    f"- Wind: {row.get('wind_speed_kmh')} km/h "
+                    f"({row.get('wind_direction_deg')} deg)",
                     f"- Bullpen fatigue proxy: {row['bullpen_fatigue']:.2f}",
                     f"- Expected score: "
                     f"{row['away_team']} {row['away_expected_runs']:.2f} - "
@@ -186,6 +192,11 @@ def write_report(
                     f"- Lineup: {lineup_label(row['lineup_announced'])}",
                     f"- Lineup quality: {row['lineup_quality']:+.2f}",
                     f"- Platoon proxy: {row['platoon_proxy']:+.2f}",
+                    f"- Weather run factor: {row['weather_run_factor']:.3f}",
+                    f"- Temperature: {row.get('temperature_c')} C",
+                    f"- Rain probability: {row.get('precipitation_probability')}%",
+                    f"- Wind: {row.get('wind_speed_kmh')} km/h "
+                    f"({row.get('wind_direction_deg')} deg)",
                     f"- Bullpen fatigue proxy: {row['bullpen_fatigue']:.2f}",
                     f"- Expected score: "
                     f"{row['away_team']} {row['away_expected_runs']:.2f} - "
@@ -202,7 +213,10 @@ def write_report(
             "- It is a conservative proxy, not a true split-stat model.",
             "- Moneyline and Run Line probabilities come from 100,000 simulated scores per game.",
             "- BUY threshold is EV 5% or higher.",
-            "- Weather is the final major input not yet included.",
+            "- Outdoor-game weather is fetched from Open-Meteo at the scheduled game hour.",
+            "- Temperature, rain probability and wind speed affect expected runs conservatively.",
+            "- Wind direction is reported, but a park-axis model is not yet used; retractable-roof games are treated as neutral.",
+            "- BUY threshold is EV 5% or higher.",
         ]
     )
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -222,6 +236,7 @@ def main() -> int:
         )
         schedule = attach_lineups(schedule, season)
         schedule = attach_handedness(schedule)
+        schedule = attach_weather(schedule)
 
         completed_games = fetch_completed_games(season)
         elo_ratings = build_elo_ratings(completed_games)
@@ -251,6 +266,19 @@ def main() -> int:
             "bullpen_fatigue.json": {
                 "fetched_at_utc": fetched_at,
                 "fatigue": bullpen_fatigue,
+            },
+            "weather.json": {
+                "fetched_at_utc": fetched_at,
+                "games": [
+                    {
+                        "game_pk": game.get("game_pk"),
+                        "away_team": game.get("away_team"),
+                        "home_team": game.get("home_team"),
+                        "game_date_utc": game.get("game_date_utc"),
+                        "weather": game.get("weather"),
+                    }
+                    for game in schedule
+                ],
             },
             "predictions.json": {
                 "fetched_at_utc": fetched_at,
