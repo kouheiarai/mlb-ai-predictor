@@ -10,6 +10,8 @@ from typing import Any
 
 import requests
 
+from mlb_api import fetch_mlb_schedule
+
 API_URL = "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/"
 OUTPUT_DIR = Path("data")
 
@@ -32,12 +34,15 @@ def fetch_odds(api_key: str) -> tuple[list[dict[str, Any]], dict[str, str]]:
         "oddsFormat": "decimal",
         "dateFormat": "iso",
     }
+
     response = requests.get(API_URL, params=params, timeout=30)
+
     if response.status_code != 200:
         raise RuntimeError(
             f"The Odds API returned HTTP {response.status_code}: "
             f"{response.text[:1000]}"
         )
+
     headers = {
         "requests_remaining": response.headers.get("x-requests-remaining", ""),
         "requests_used": response.headers.get("x-requests-used", ""),
@@ -49,8 +54,10 @@ def fetch_odds(api_key: str) -> tuple[list[dict[str, Any]], dict[str, str]]:
 def american_odds(decimal_price: float | None) -> str:
     if decimal_price is None or decimal_price <= 1:
         return ""
+
     if decimal_price >= 2:
         return f"+{round((decimal_price - 1) * 100)}"
+
     return str(round(-100 / (decimal_price - 1)))
 
 
@@ -60,15 +67,13 @@ def implied_probability(decimal_price: float | None) -> float | None:
     return 1 / decimal_price
 
 
-def flatten(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
+def flatten_odds(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
+
     for event in events:
+        bookmakers = event.get("bookmakers") or []
         pinnacle = next(
-            (
-                book
-                for book in (event.get("bookmakers") or [])
-                if book.get("key") == "pinnacle"
-            ),
+            (book for book in bookmakers if book.get("key") == "pinnacle"),
             None,
         )
         if not pinnacle:
@@ -84,18 +89,23 @@ def flatten(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
         }
 
         for market in pinnacle.get("markets") or []:
+            market_key = market.get("key", "")
+
             for outcome in market.get("outcomes") or []:
-                price = outcome.get("price")
-                implied = implied_probability(price)
+                decimal_price = outcome.get("price")
+                implied = implied_probability(decimal_price)
+
                 rows.append(
                     {
                         **common,
-                        "market": market.get("key", ""),
+                        "market": market_key,
                         "selection": outcome.get("name", ""),
                         "point": outcome.get("point", ""),
-                        "decimal_odds": price,
-                        "american_odds": american_odds(price),
-                        "implied_probability": round(implied, 6) if implied else "",
+                        "decimal_odds": decimal_price,
+                        "american_odds": american_odds(decimal_price),
+                        "implied_probability": (
+                            round(implied, 6) if implied is not None else ""
+                        ),
                     }
                 )
 
@@ -125,61 +135,137 @@ def write_csv(rows: list[dict[str, Any]], path: Path) -> None:
         "american_odds",
         "implied_probability",
     ]
+
     with path.open("w", newline="", encoding="utf-8-sig") as file:
         writer = csv.DictWriter(file, fieldnames=fields)
         writer.writeheader()
         writer.writerows(rows)
 
 
-def write_report(rows: list[dict[str, Any]], fetched_at: str, quota: dict[str, str], path: Path) -> None:
-    games: dict[tuple[str, str, str], list[dict[str, Any]]] = {}
-    for row in rows:
-        key = (row["commence_time_utc"], row["away_team"], row["home_team"])
-        games.setdefault(key, []).append(row)
-
+def write_report(
+    odds_rows: list[dict[str, Any]],
+    schedule: list[dict[str, Any]],
+    fetched_at: str,
+    quota: dict[str, str],
+    path: Path,
+) -> None:
     lines = [
-        "# MLB Pinnacle Odds",
+        "# MLB Daily Data",
         "",
         f"- Updated: {fetched_at}",
-        f"- API requests remaining: {quota.get('requests_remaining') or 'unknown'}",
-        f"- Games: {len(games)}",
+        f"- API requests remaining: "
+        f"{quota.get('requests_remaining') or 'unknown'}",
+        f"- Odds rows: {len(odds_rows)}",
+        f"- MLB schedule games: {len(schedule)}",
+        "",
+        "## Probable Pitchers",
         "",
     ]
 
-    if not games:
+    if not schedule:
+        lines.append("No MLB schedule data was returned.")
+    else:
+        for game in schedule:
+            lines.extend(
+                [
+                    f"### {game['away_team']} @ {game['home_team']}",
+                    f"- Start (UTC): {game['game_date_utc']}",
+                    f"- Status: {game['status']}",
+                    f"- Away starter: {game['away_probable_pitcher']}",
+                    f"- Home starter: {game['home_probable_pitcher']}",
+                    "",
+                ]
+            )
+
+    lines.extend(["## Pinnacle Odds", ""])
+
+    if not odds_rows:
         lines.append("No Pinnacle MLB odds were returned.")
     else:
-        for (start, away, home), game_rows in games.items():
-            lines.extend([f"## {away} @ {home}", f"- Start (UTC): {start}"])
-            for row in game_rows:
-                point = row["point"]
-                point_text = f" {point:+g}" if isinstance(point, (int, float)) else ""
-                lines.append(
-                    f"- {row['market']}: {row['selection']}{point_text} "
-                    f"@ {row['decimal_odds']} ({row['american_odds']})"
+        current_game: tuple[str, str, str] | None = None
+
+        for row in odds_rows:
+            game_key = (
+                row["commence_time_utc"],
+                row["away_team"],
+                row["home_team"],
+            )
+
+            if game_key != current_game:
+                current_game = game_key
+                lines.extend(
+                    [
+                        f"### {row['away_team']} @ {row['home_team']}",
+                        f"- Start (UTC): {row['commence_time_utc']}",
+                    ]
                 )
-            lines.append("")
+
+            point = ""
+            if isinstance(row["point"], (int, float)):
+                point = f" {row['point']:+g}"
+
+            lines.append(
+                f"- {row['market']}: {row['selection']}{point} "
+                f"@ {row['decimal_odds']} ({row['american_odds']})"
+            )
 
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
 def main() -> int:
     try:
-        events, quota = fetch_odds(require_api_key())
-        rows = flatten(events)
+        api_key = require_api_key()
+
+        odds_events, quota = fetch_odds(api_key)
+        odds_rows = flatten_odds(odds_events)
+        schedule = fetch_mlb_schedule(days=3)
+
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
         fetched_at = datetime.now(timezone.utc).isoformat()
 
-        payload = {"fetched_at_utc": fetched_at, "quota": quota, "events": events}
-        (OUTPUT_DIR / "latest_odds.json").write_text(
-            json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
-        )
-        write_csv(rows, OUTPUT_DIR / "latest_odds.csv")
-        write_report(rows, fetched_at, quota, OUTPUT_DIR / "report.md")
+        odds_payload = {
+            "fetched_at_utc": fetched_at,
+            "quota": quota,
+            "events": odds_events,
+        }
 
-        print(f"Fetched {len(events)} events and wrote {len(rows)} odds rows.")
-        print(f"Requests remaining: {quota.get('requests_remaining') or 'unknown'}")
+        (OUTPUT_DIR / "latest_odds.json").write_text(
+            json.dumps(odds_payload, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+
+        (OUTPUT_DIR / "mlb_schedule.json").write_text(
+            json.dumps(
+                {
+                    "fetched_at_utc": fetched_at,
+                    "games": schedule,
+                },
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+
+        write_csv(odds_rows, OUTPUT_DIR / "latest_odds.csv")
+        write_report(
+            odds_rows,
+            schedule,
+            fetched_at,
+            quota,
+            OUTPUT_DIR / "report.md",
+        )
+
+        print(
+            f"Fetched {len(odds_events)} odds events, "
+            f"{len(odds_rows)} odds rows, "
+            f"and {len(schedule)} MLB games."
+        )
+        print(
+            f"Requests remaining: "
+            f"{quota.get('requests_remaining') or 'unknown'}"
+        )
         return 0
+
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
