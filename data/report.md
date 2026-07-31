@@ -1,9 +1,9 @@
-# MLB Ver.16.1 Prediction Report
+# MLB Ver.16.2 Prediction Report
 
-- Updated: 2026-07-31T07:34:52.240528+00:00
-- API requests remaining: 476
+- Updated: 2026-07-31T07:56:28.633254+00:00
+- API requests remaining: 474
 
-## Buy Ranking
+## Moneyline Buy Ranking
 
 ### 1. Minnesota Twins
 - Game: Minnesota Twins @ Seattle Mariners
@@ -11,8 +11,6 @@
 - AI probability: 48.9%
 - EV: 27.2%
 - 1/4 Kelly: 4.2%
-- Recent 10: 60.0%
-- Starter quality: +0.21
 
 ### 2. St. Louis Cardinals
 - Game: St. Louis Cardinals @ Toronto Blue Jays
@@ -20,8 +18,6 @@
 - AI probability: 47.1%
 - EV: 14.0%
 - 1/4 Kelly: 2.5%
-- Recent 10: 30.0%
-- Starter quality: +0.21
 
 ### 3. Houston Astros
 - Game: Texas Rangers @ Houston Astros
@@ -29,8 +25,6 @@
 - AI probability: 62.1%
 - EV: 13.7%
 - 1/4 Kelly: 4.1%
-- Recent 10: 80.0%
-- Starter quality: +0.00
 
 ### 4. Milwaukee Brewers
 - Game: Milwaukee Brewers @ Los Angeles Angels
@@ -38,8 +32,6 @@
 - AI probability: 70.5%
 - EV: 13.5%
 - 1/4 Kelly: 5.5%
-- Recent 10: 60.0%
-- Starter quality: +1.00
 
 ### 5. Cincinnati Reds
 - Game: Pittsburgh Pirates @ Cincinnati Reds
@@ -47,17 +39,13 @@
 - AI probability: 50.8%
 - EV: 11.2%
 - 1/4 Kelly: 2.4%
-- Recent 10: 60.0%
-- Starter quality: +0.62
 
 ### 6. Kansas City Royals
 - Game: Kansas City Royals @ Colorado Rockies
-- Odds: 1.95
-- AI probability: 54.8%
-- EV: 6.8%
-- 1/4 Kelly: 1.8%
-- Recent 10: 60.0%
-- Starter quality: -0.14
+- Odds: 1.96
+- AI probability: 54.7%
+- EV: 7.3%
+- 1/4 Kelly: 1.9%
 
 ### 7. Arizona Diamondbacks
 - Game: Arizona Diamondbacks @ Cleveland Guardians
@@ -65,8 +53,6 @@
 - AI probability: 48.9%
 - EV: 6.7%
 - 1/4 Kelly: 1.4%
-- Recent 10: 60.0%
-- Starter quality: -0.47
 
 ### 8. Chicago Cubs
 - Game: New York Yankees @ Chicago Cubs
@@ -74,33 +60,64 @@
 - AI probability: 62.2%
 - EV: 5.1%
 - 1/4 Kelly: 1.8%
-- Recent 10: 60.0%
-- Starter quality: -0.32
 
-## All Predictions
+## Run Line Buy Ranking
 
-- Minnesota Twins | AI 48.9% | EV 27.2% | Kelly 4.2% | BUY
-- St. Louis Cardinals | AI 47.1% | EV 14.0% | Kelly 2.5% | BUY
-- Houston Astros | AI 62.1% | EV 13.7% | Kelly 4.1% | BUY
-- Milwaukee Brewers | AI 70.5% | EV 13.5% | Kelly 5.5% | BUY
-- Cincinnati Reds | AI 50.8% | EV 11.2% | Kelly 2.4% | BUY
-- Kansas City Royals | AI 54.8% | EV 6.8% | Kelly 1.8% | BUY
-- Arizona Diamondbacks | AI 48.9% | EV 6.7% | Kelly 1.4% | BUY
-- Chicago Cubs | AI 62.2% | EV 5.1% | Kelly 1.8% | BUY
-- New York Mets | AI 57.6% | EV 4.2% | Kelly 1.3% | LEAN
-- Tampa Bay Rays | AI 60.8% | EV 3.4% | Kelly 1.2% | LEAN
-- Atlanta Braves | AI 54.8% | EV 0.9% | Kelly 0.3% | LEAN
-- Washington Nationals | AI 45.2% | EV -6.0% | Kelly 0.0% | PASS
-- Cleveland Guardians | AI 51.1% | EV -9.6% | Kelly 0.0% | PASS
-- Miami Marlins | AI 42.4% | EV -10.1% | Kelly 0.0% | PASS
-- Chicago White Sox | AI 39.2% | EV -10.3% | Kelly 0.0% | PASS
-- Colorado Rockies | AI 45.2% | EV -11.8% | Kelly 0.0% | PASS
-- New York Yankees | AI 37.8% | EV -13.0% | Kelly 0.0% | PASS
-- Pittsburgh Pirates | AI 49.2% | EV -13.4% | Kelly 0.0% | PASS
-- Toronto Blue Jays | AI 52.9% | EV -13.8% | Kelly 0.0% | PASS
-- Seattle Mariners | AI 51.1% | EV -20.3% | Kelly 0.0% | PASS
-- Texas Rangers | AI 37.9% | EV -20.5% | Kelly 0.0% | PASS
-- Los Angeles Angels | AI 29.5% | EV -27.4% | Kelly 0.0% | PASS
+### 1. Houston Astros -1.5
+- Game: Texas Rangers @ Houston Astros
+- Odds: 2.71
+- AI probability: 50.2%
+- EV: 36.2%
+- 1/4 Kelly: 5.3%
+
+### 2. New York Mets -1.5
+- Game: Miami Marlins @ New York Mets
+- Odds: 2.64
+- AI probability: 47.2%
+- EV: 24.5%
+- 1/4 Kelly: 3.7%
+
+### 3. Tampa Bay Rays -1.5
+- Game: Chicago White Sox @ Tampa Bay Rays
+- Odds: 2.46
+- AI probability: 49.5%
+- EV: 21.7%
+- 1/4 Kelly: 3.7%
+
+### 4. Atlanta Braves -1.5
+- Game: Washington Nationals @ Atlanta Braves
+- Odds: 2.67
+- AI probability: 45.3%
+- EV: 20.9%
+- 1/4 Kelly: 3.1%
+
+### 5. Chicago Cubs -1.5
+- Game: New York Yankees @ Chicago Cubs
+- Odds: 2.38
+- AI probability: 50.3%
+- EV: 19.7%
+- 1/4 Kelly: 3.6%
+
+### 6. Milwaukee Brewers -1.5
+- Game: Milwaukee Brewers @ Los Angeles Angels
+- Odds: 1.99
+- AI probability: 55.9%
+- EV: 11.3%
+- 1/4 Kelly: 2.9%
+
+### 7. Cleveland Guardians -1.5
+- Game: Arizona Diamondbacks @ Cleveland Guardians
+- Odds: 2.56
+- AI probability: 42.7%
+- EV: 9.4%
+- 1/4 Kelly: 1.5%
+
+### 8. Kansas City Royals -1.5
+- Game: Kansas City Royals @ Colorado Rockies
+- Odds: 2.41
+- AI probability: 45.2%
+- EV: 9.0%
+- 1/4 Kelly: 1.6%
 
 ## Probable Pitchers
 
@@ -318,6 +335,7 @@
 
 ## Model Notes
 
-- Elo + recent 10-game form + probable starter ERA/WHIP/K-BB + Pinnacle no-vig market.
+- Moneyline: Elo + recent 10-game form + probable starter stats + Pinnacle no-vig market.
+- Run Line: heuristic conversion from Moneyline probability and spread.
 - BUY threshold is EV 5% or higher.
 - Bullpen, confirmed lineup, park and weather are not included yet.
