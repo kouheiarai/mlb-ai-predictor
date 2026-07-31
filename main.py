@@ -11,6 +11,11 @@ from typing import Any
 import requests
 
 from mlb_api import fetch_mlb_schedule
+from predictor import (
+    build_elo_ratings,
+    fetch_completed_games,
+    make_moneyline_predictions,
+)
 
 API_URL = "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/"
 OUTPUT_DIR = Path("data")
@@ -120,7 +125,18 @@ def flatten_odds(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return rows
 
 
-def write_csv(rows: list[dict[str, Any]], path: Path) -> None:
+def write_csv(
+    rows: list[dict[str, Any]],
+    path: Path,
+    fields: list[str],
+) -> None:
+    with path.open("w", newline="", encoding="utf-8-sig") as file:
+        writer = csv.DictWriter(file, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def write_odds_csv(rows: list[dict[str, Any]], path: Path) -> None:
     fields = [
         "event_id",
         "commence_time_utc",
@@ -135,32 +151,96 @@ def write_csv(rows: list[dict[str, Any]], path: Path) -> None:
         "american_odds",
         "implied_probability",
     ]
+    write_csv(rows, path, fields)
 
-    with path.open("w", newline="", encoding="utf-8-sig") as file:
-        writer = csv.DictWriter(file, fieldnames=fields)
-        writer.writeheader()
-        writer.writerows(rows)
+
+def write_predictions_csv(
+    rows: list[dict[str, Any]],
+    path: Path,
+) -> None:
+    fields = [
+        "event_id",
+        "commence_time_utc",
+        "away_team",
+        "home_team",
+        "selection",
+        "decimal_odds",
+        "market_no_vig_probability",
+        "elo_rating",
+        "model_probability",
+        "ev",
+        "quarter_kelly",
+        "recommendation",
+    ]
+    write_csv(rows, path, fields)
+
+
+def pct(value: float | int | str) -> str:
+    try:
+        return f"{float(value) * 100:.1f}%"
+    except (TypeError, ValueError):
+        return ""
 
 
 def write_report(
     odds_rows: list[dict[str, Any]],
     schedule: list[dict[str, Any]],
+    predictions: list[dict[str, Any]],
     fetched_at: str,
     quota: dict[str, str],
     path: Path,
 ) -> None:
     lines = [
-        "# MLB Daily Data",
+        "# MLB Daily Prediction Report",
         "",
         f"- Updated: {fetched_at}",
         f"- API requests remaining: "
         f"{quota.get('requests_remaining') or 'unknown'}",
         f"- Odds rows: {len(odds_rows)}",
         f"- MLB schedule games: {len(schedule)}",
+        f"- Predictions: {len(predictions)}",
         "",
-        "## Probable Pitchers",
+        "## Buy Ranking",
         "",
     ]
+
+    buy_rows = [
+        row for row in predictions if row["recommendation"] == "BUY"
+    ]
+
+    if not buy_rows:
+        lines.append("No EV 5%+ Moneyline bets.")
+    else:
+        for index, row in enumerate(buy_rows, start=1):
+            lines.extend(
+                [
+                    f"### {index}. {row['selection']}",
+                    f"- Game: {row['away_team']} @ {row['home_team']}",
+                    f"- Odds: {row['decimal_odds']}",
+                    f"- AI probability: {pct(row['model_probability'])}",
+                    f"- Market no-vig: "
+                    f"{pct(row['market_no_vig_probability'])}",
+                    f"- EV: {pct(row['ev'])}",
+                    f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
+                    "",
+                ]
+            )
+
+    lines.extend(["## All Moneyline Predictions", ""])
+
+    if not predictions:
+        lines.append("No Moneyline predictions were generated.")
+    else:
+        for row in predictions:
+            lines.append(
+                f"- {row['selection']} | "
+                f"AI {pct(row['model_probability'])} | "
+                f"EV {pct(row['ev'])} | "
+                f"Kelly {pct(row['quarter_kelly'])} | "
+                f"{row['recommendation']}"
+            )
+
+    lines.extend(["", "## Probable Pitchers", ""])
 
     if not schedule:
         lines.append("No MLB schedule data was returned.")
@@ -209,6 +289,17 @@ def write_report(
                 f"@ {row['decimal_odds']} ({row['american_odds']})"
             )
 
+    lines.extend(
+        [
+            "",
+            "## Model Notes",
+            "",
+            "- Current AI probability = season Elo + Pinnacle no-vig market blend.",
+            "- BUY threshold = EV 5% or higher.",
+            "- This version does not yet include starter, bullpen, lineup, or park adjustments.",
+        ]
+    )
+
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -219,6 +310,13 @@ def main() -> int:
         odds_events, quota = fetch_odds(api_key)
         odds_rows = flatten_odds(odds_events)
         schedule = fetch_mlb_schedule(days=3)
+
+        completed_games = fetch_completed_games()
+        elo_ratings = build_elo_ratings(completed_games)
+        predictions = make_moneyline_predictions(
+            odds_rows,
+            elo_ratings,
+        )
 
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
         fetched_at = datetime.now(timezone.utc).isoformat()
@@ -246,10 +344,42 @@ def main() -> int:
             encoding="utf-8",
         )
 
-        write_csv(odds_rows, OUTPUT_DIR / "latest_odds.csv")
+        (OUTPUT_DIR / "elo_ratings.json").write_text(
+            json.dumps(
+                {
+                    "fetched_at_utc": fetched_at,
+                    "ratings": elo_ratings,
+                },
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+
+        (OUTPUT_DIR / "predictions.json").write_text(
+            json.dumps(
+                {
+                    "fetched_at_utc": fetched_at,
+                    "predictions": predictions,
+                },
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+
+        write_odds_csv(
+            odds_rows,
+            OUTPUT_DIR / "latest_odds.csv",
+        )
+        write_predictions_csv(
+            predictions,
+            OUTPUT_DIR / "predictions.csv",
+        )
         write_report(
             odds_rows,
             schedule,
+            predictions,
             fetched_at,
             quota,
             OUTPUT_DIR / "report.md",
@@ -258,7 +388,8 @@ def main() -> int:
         print(
             f"Fetched {len(odds_events)} odds events, "
             f"{len(odds_rows)} odds rows, "
-            f"and {len(schedule)} MLB games."
+            f"{len(schedule)} MLB games, "
+            f"and generated {len(predictions)} predictions."
         )
         print(
             f"Requests remaining: "
