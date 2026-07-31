@@ -1,154 +1,180 @@
-# MLB Ver.17 Prediction Report
+# MLB Ver.18 Prediction Report
 
-- Updated: 2026-07-31T09:22:20.360066+00:00
-- API requests remaining: 470
+- Updated: 2026-07-31T11:07:39.162286+00:00
+- API requests remaining: 464
+- Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-### 1. Minnesota Twins
+### 1. New York Yankees
+- Game: New York Yankees @ Chicago Cubs
+- Odds: 2.33
+- AI probability: 57.9%
+- EV: 35.0%
+- 1/4 Kelly: 6.6%
+- Expected score: New York Yankees 2.93 - Chicago Cubs 2.29
+
+### 2. Cincinnati Reds
+- Game: Pittsburgh Pirates @ Cincinnati Reds
+- Odds: 2.14
+- AI probability: 60.9%
+- EV: 30.4%
+- 1/4 Kelly: 6.7%
+- Expected score: Pittsburgh Pirates 2.28 - Cincinnati Reds 3.08
+
+### 3. Minnesota Twins
 - Game: Minnesota Twins @ Seattle Mariners
 - Odds: 2.6
-- AI probability: 49.2%
-- EV: 27.8%
-- 1/4 Kelly: 4.3%
-- Starter: +0.21
-- Offense: -0.88
-- Team pitching proxy: +0.66
+- AI probability: 45.5%
+- EV: 18.2%
+- 1/4 Kelly: 2.8%
+- Expected score: Minnesota Twins 2.31 - Seattle Mariners 2.47
 
-### 2. Houston Astros
-- Game: Texas Rangers @ Houston Astros
-- Odds: 1.81
-- AI probability: 64.0%
-- EV: 15.8%
-- 1/4 Kelly: 4.9%
-- Starter: +0.00
-- Offense: +0.27
-- Team pitching proxy: +0.00
-
-### 3. Milwaukee Brewers
-- Game: Milwaukee Brewers @ Los Angeles Angels
-- Odds: 1.61
-- AI probability: 71.5%
-- EV: 15.1%
-- 1/4 Kelly: 6.2%
-- Starter: +1.00
-- Offense: -1.00
-- Team pitching proxy: +1.00
-
-### 4. Cincinnati Reds
-- Game: Pittsburgh Pirates @ Cincinnati Reds
-- Odds: 2.24
-- AI probability: 51.2%
-- EV: 14.6%
-- 1/4 Kelly: 2.9%
-- Starter: +0.62
-- Offense: -0.92
-- Team pitching proxy: +1.00
-
-### 5. St. Louis Cardinals
-- Game: St. Louis Cardinals @ Toronto Blue Jays
-- Odds: 2.43
-- AI probability: 45.9%
-- EV: 11.6%
-- 1/4 Kelly: 2.0%
-- Starter: +0.21
-- Offense: -1.00
-- Team pitching proxy: +0.46
-
-### 6. Kansas City Royals
+### 4. Kansas City Royals
 - Game: Kansas City Royals @ Colorado Rockies
 - Odds: 1.96
-- AI probability: 54.9%
-- EV: 7.6%
-- 1/4 Kelly: 2.0%
-- Starter: -0.14
-- Offense: -1.00
-- Team pitching proxy: +0.51
+- AI probability: 60.0%
+- EV: 17.6%
+- 1/4 Kelly: 4.6%
+- Expected score: Kansas City Royals 3.84 - Colorado Rockies 3.04
 
-### 7. Arizona Diamondbacks
-- Game: Arizona Diamondbacks @ Cleveland Guardians
-- Odds: 2.18
-- AI probability: 49.2%
-- EV: 7.2%
-- 1/4 Kelly: 1.5%
-- Starter: -0.47
-- Offense: -1.00
-- Team pitching proxy: +0.90
+### 5. Los Angeles Angels
+- Game: Milwaukee Brewers @ Los Angeles Angels
+- Odds: 2.47
+- AI probability: 46.1%
+- EV: 13.8%
+- 1/4 Kelly: 2.3%
+- Expected score: Milwaukee Brewers 2.46 - Los Angeles Angels 2.29
 
-### 8. New York Mets
-- Game: Miami Marlins @ New York Mets
-- Odds: 1.81
-- AI probability: 58.4%
-- EV: 5.7%
-- 1/4 Kelly: 1.8%
-- Starter: +0.00
-- Offense: -0.49
-- Team pitching proxy: +0.74
+### 6. St. Louis Cardinals
+- Game: St. Louis Cardinals @ Toronto Blue Jays
+- Odds: 2.43
+- AI probability: 46.6%
+- EV: 13.1%
+- 1/4 Kelly: 2.3%
+- Expected score: St. Louis Cardinals 2.54 - Toronto Blue Jays 2.66
+
+### 7. San Francisco Giants
+- Game: San Francisco Giants @ San Diego Padres
+- Odds: 2.29
+- AI probability: 47.9%
+- EV: 9.7%
+- 1/4 Kelly: 1.9%
+- Expected score: San Francisco Giants 2.40 - San Diego Padres 2.44
+
+### 8. Texas Rangers
+- Game: Texas Rangers @ Houston Astros
+- Odds: 2.15
+- AI probability: 50.7%
+- EV: 9.0%
+- 1/4 Kelly: 1.9%
+- Expected score: Texas Rangers 3.12 - Houston Astros 3.01
+
+### 9. Athletics
+- Game: Detroit Tigers @ Athletics
+- Odds: 2.4
+- AI probability: 45.0%
+- EV: 8.1%
+- 1/4 Kelly: 1.4%
+- Expected score: Detroit Tigers 2.61 - Athletics 2.35
 
 ## Run Line Buy Ranking
 
-### 1. Houston Astros -1.5
-- Game: Texas Rangers @ Houston Astros
-- Odds: 2.7
-- AI probability: 51.5%
-- EV: 39.1%
-- 1/4 Kelly: 5.7%
-
-### 2. New York Mets -1.5
-- Game: Miami Marlins @ New York Mets
-- Odds: 2.64
-- AI probability: 47.7%
-- EV: 26.0%
-- 1/4 Kelly: 4.0%
-
-### 3. Atlanta Braves -1.5
-- Game: Washington Nationals @ Atlanta Braves
-- Odds: 2.69
-- AI probability: 44.7%
-- EV: 20.1%
-- 1/4 Kelly: 3.0%
-
-### 4. Tampa Bay Rays -1.5
-- Game: Chicago White Sox @ Tampa Bay Rays
-- Odds: 2.42
-- AI probability: 49.5%
-- EV: 19.7%
-- 1/4 Kelly: 3.5%
-
-### 5. Chicago Cubs -1.5
-- Game: New York Yankees @ Chicago Cubs
-- Odds: 2.37
-- AI probability: 50.1%
-- EV: 18.7%
-- 1/4 Kelly: 3.4%
-
-### 6. Milwaukee Brewers -1.5
-- Game: Milwaukee Brewers @ Los Angeles Angels
-- Odds: 1.99
-- AI probability: 56.6%
-- EV: 12.6%
-- 1/4 Kelly: 3.2%
-
-### 7. Kansas City Royals -1.5
-- Game: Kansas City Royals @ Colorado Rockies
-- Odds: 2.41
-- AI probability: 45.3%
-- EV: 9.2%
-- 1/4 Kelly: 1.6%
-
-### 8. Cleveland Guardians -1.5
-- Game: Arizona Diamondbacks @ Cleveland Guardians
-- Odds: 2.56
-- AI probability: 42.6%
-- EV: 9.0%
-- 1/4 Kelly: 1.4%
-
-### 9. Cincinnati Reds +1.5
+### 1. Cincinnati Reds +1.5
 - Game: Pittsburgh Pirates @ Cincinnati Reds
-- Odds: 1.71
-- AI probability: 61.9%
-- EV: 5.9%
-- 1/4 Kelly: 2.1%
+- Odds: 1.67
+- Cover probability: 84.9%
+- EV: 41.8%
+- 1/4 Kelly: 15.6%
+- Expected score: Pittsburgh Pirates 2.28 - Cincinnati Reds 3.08
+
+### 2. Los Angeles Angels +1.5
+- Game: Milwaukee Brewers @ Los Angeles Angels
+- Odds: 1.89
+- Cover probability: 74.2%
+- EV: 40.3%
+- 1/4 Kelly: 11.3%
+- Expected score: Milwaukee Brewers 2.46 - Los Angeles Angels 2.29
+
+### 3. New York Yankees +1.5
+- Game: New York Yankees @ Chicago Cubs
+- Odds: 1.65
+- Cover probability: 83.7%
+- EV: 38.1%
+- 1/4 Kelly: 14.7%
+- Expected score: New York Yankees 2.93 - Chicago Cubs 2.29
+
+### 4. Athletics +1.5
+- Game: Detroit Tigers @ Athletics
+- Odds: 1.9
+- Cover probability: 72.3%
+- EV: 37.4%
+- 1/4 Kelly: 10.4%
+- Expected score: Detroit Tigers 2.61 - Athletics 2.35
+
+### 5. Minnesota Twins +1.5
+- Game: Minnesota Twins @ Seattle Mariners
+- Odds: 1.74
+- Cover probability: 74.4%
+- EV: 29.4%
+- 1/4 Kelly: 9.9%
+- Expected score: Minnesota Twins 2.31 - Seattle Mariners 2.47
+
+### 6. St. Louis Cardinals +1.5
+- Game: St. Louis Cardinals @ Toronto Blue Jays
+- Odds: 1.66
+- Cover probability: 73.9%
+- EV: 22.7%
+- 1/4 Kelly: 8.6%
+- Expected score: St. Louis Cardinals 2.54 - Toronto Blue Jays 2.66
+
+### 7. San Francisco Giants +1.5
+- Game: San Francisco Giants @ San Diego Padres
+- Odds: 1.61
+- Cover probability: 76.0%
+- EV: 22.3%
+- 1/4 Kelly: 9.1%
+- Expected score: San Francisco Giants 2.40 - San Diego Padres 2.44
+
+### 8. Miami Marlins +1.5
+- Game: Miami Marlins @ New York Mets
+- Odds: 1.53
+- Cover probability: 76.1%
+- EV: 16.4%
+- 1/4 Kelly: 7.7%
+- Expected score: Miami Marlins 2.37 - New York Mets 2.41
+
+### 9. Chicago White Sox +1.5
+- Game: Chicago White Sox @ Tampa Bay Rays
+- Odds: 1.62
+- Cover probability: 71.5%
+- EV: 15.9%
+- 1/4 Kelly: 6.4%
+- Expected score: Chicago White Sox 2.29 - Tampa Bay Rays 2.61
+
+### 10. Texas Rangers +1.5
+- Game: Texas Rangers @ Houston Astros
+- Odds: 1.52
+- Cover probability: 75.0%
+- EV: 14.0%
+- 1/4 Kelly: 6.7%
+- Expected score: Texas Rangers 3.12 - Houston Astros 3.01
+
+### 11. Washington Nationals +1.5
+- Game: Washington Nationals @ Atlanta Braves
+- Odds: 1.51
+- Cover probability: 75.5%
+- EV: 14.0%
+- 1/4 Kelly: 6.8%
+- Expected score: Washington Nationals 2.35 - Atlanta Braves 2.44
+
+### 12. Arizona Diamondbacks +1.5
+- Game: Arizona Diamondbacks @ Cleveland Guardians
+- Odds: 1.56
+- Cover probability: 72.5%
+- EV: 13.1%
+- 1/4 Kelly: 5.9%
+- Expected score: Arizona Diamondbacks 2.29 - Cleveland Guardians 2.55
 
 ## Probable Pitchers
 
@@ -366,7 +392,8 @@
 
 ## Model Notes
 
-- Moneyline: Elo + recent form + probable starter + team offense + team pitching proxy + park factor + Pinnacle no-vig market.
-- Team pitching proxy is not yet a true bullpen-only metric.
-- Run Line remains a heuristic conversion and is not yet a run-distribution simulation.
+- Expected runs use offense, opponent team pitching, probable starter, recent form, park factor and home edge.
+- Moneyline and Run Line probabilities come from 100,000 simulated scores per game.
+- Moneyline is blended 85% model / 15% Pinnacle no-vig market.
 - BUY threshold is EV 5% or higher.
+- Confirmed lineup, true bullpen fatigue, weather and handedness splits are not included yet.
