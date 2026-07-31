@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-07-31T12:05:36.188976+00:00",
+  "fetched_at_utc": "2026-07-31T12:31:08.531527+00:00",
   "games": [
     {
       "game_pk": 824651,
@@ -10,7 +10,7 @@
         "available": true,
         "indoor_or_retractable": false,
         "temperature_c": 25.8,
-        "precipitation_probability": 6,
+        "precipitation_probability": 7,
         "wind_speed_kmh": 21.6,
         "wind_direction_deg": 120,
         "weather_run_factor": 1.0292
@@ -100,7 +100,7 @@
         "available": true,
         "indoor_or_retractable": false,
         "temperature_c": 28.2,
-        "precipitation_probability": 3,
+        "precipitation_probability": 2,
         "wind_speed_kmh": 6.5,
         "wind_direction_deg": 109,
         "weather_run_factor": 1.0164
@@ -145,7 +145,7 @@
         "available": true,
         "indoor_or_retractable": false,
         "temperature_c": 32.6,
-        "precipitation_probability": 17,
+        "precipitation_probability": 15,
         "wind_speed_kmh": 12.6,
         "wind_direction_deg": 77,
         "weather_run_factor": 1.0292
@@ -310,7 +310,7 @@
         "available": true,
         "indoor_or_retractable": false,
         "temperature_c": 29.2,
-        "precipitation_probability": 0,
+        "precipitation_probability": 1,
         "wind_speed_kmh": 17.4,
         "wind_direction_deg": 150,
         "weather_run_factor": 1.0297
@@ -340,7 +340,7 @@
         "available": true,
         "indoor_or_retractable": false,
         "temperature_c": 31.2,
-        "precipitation_probability": 20,
+        "precipitation_probability": 23,
         "wind_speed_kmh": 9.7,
         "wind_direction_deg": 180,
         "weather_run_factor": 1.0224
@@ -355,10 +355,10 @@
         "available": true,
         "indoor_or_retractable": false,
         "temperature_c": 24.3,
-        "precipitation_probability": 83,
+        "precipitation_probability": 17,
         "wind_speed_kmh": 9.0,
         "wind_direction_deg": 180,
-        "weather_run_factor": 0.9935
+        "weather_run_factor": 1.0086
       }
     },
     {
@@ -367,13 +367,13 @@
       "home_team": "Chicago Cubs",
       "game_date_utc": "2026-08-01T23:15:00Z",
       "weather": {
-        "available": false,
+        "available": true,
         "indoor_or_retractable": false,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "temperature_c": 20.3,
+        "precipitation_probability": 42,
+        "wind_speed_kmh": 29.3,
+        "wind_direction_deg": 43,
+        "weather_run_factor": 1.0296
       }
     },
     {
@@ -382,13 +382,13 @@
       "home_team": "Colorado Rockies",
       "game_date_utc": "2026-08-02T00:10:00Z",
       "weather": {
-        "available": false,
+        "available": true,
         "indoor_or_retractable": false,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "temperature_c": 34.4,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 18.5,
+        "wind_direction_deg": 83,
+        "weather_run_factor": 1.0419
       }
     },
     {
@@ -397,13 +397,13 @@
       "home_team": "San Diego Padres",
       "game_date_utc": "2026-08-02T00:40:00Z",
       "weather": {
-        "available": false,
+        "available": true,
         "indoor_or_retractable": false,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "temperature_c": 27.0,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 10.0,
+        "wind_direction_deg": 232,
+        "weather_run_factor": 1.014
       }
     },
     {
@@ -427,13 +427,13 @@
       "home_team": "Los Angeles Angels",
       "game_date_utc": "2026-08-02T01:38:00Z",
       "weather": {
-        "available": false,
+        "available": true,
         "indoor_or_retractable": false,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "temperature_c": 29.2,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 12.0,
+        "wind_direction_deg": 231,
+        "weather_run_factor": 1.0215
       }
     },
     {
@@ -577,13 +577,13 @@
       "home_team": "Chicago Cubs",
       "game_date_utc": "2026-08-02T18:20:00Z",
       "weather": {
-        "available": true,
+        "available": false,
         "indoor_or_retractable": false,
-        "temperature_c": 21.4,
-        "precipitation_probability": 5,
-        "wind_speed_kmh": 31.2,
-        "wind_direction_deg": 7,
-        "weather_run_factor": 1.0347
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null,
+        "weather_run_factor": 1.0
       }
     },
     {
@@ -607,13 +607,13 @@
       "home_team": "Los Angeles Angels",
       "game_date_utc": "2026-08-02T19:15:00Z",
       "weather": {
-        "available": false,
+        "available": true,
         "indoor_or_retractable": false,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "temperature_c": 32.6,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 13.5,
+        "wind_direction_deg": 224,
+        "weather_run_factor": 1.0306
       }
     },
     {
@@ -622,13 +622,13 @@
       "home_team": "Athletics",
       "game_date_utc": "2026-08-02T20:05:00Z",
       "weather": {
-        "available": false,
+        "available": true,
         "indoor_or_retractable": false,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "temperature_c": 29.2,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 10.5,
+        "wind_direction_deg": 243,
+        "weather_run_factor": 1.0192
       }
     },
     {
@@ -637,13 +637,13 @@
       "home_team": "San Diego Padres",
       "game_date_utc": "2026-08-02T20:10:00Z",
       "weather": {
-        "available": false,
+        "available": true,
         "indoor_or_retractable": false,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "temperature_c": 26.1,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 15.1,
+        "wind_direction_deg": 232,
+        "weather_run_factor": 1.0199
       }
     },
     {
@@ -667,13 +667,13 @@
       "home_team": "Los Angeles Dodgers",
       "game_date_utc": "2026-08-02T23:20:00Z",
       "weather": {
-        "available": false,
+        "available": true,
         "indoor_or_retractable": false,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "temperature_c": 34.1,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 17.8,
+        "wind_direction_deg": 225,
+        "weather_run_factor": 1.0402
       }
     },
     {
