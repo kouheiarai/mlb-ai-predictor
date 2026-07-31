@@ -8,7 +8,6 @@ from typing import Any
 
 import requests
 
-
 MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
 DEFAULT_ELO = 1500.0
 K_FACTOR = 20.0
@@ -22,6 +21,19 @@ TEAM_ALIASES = {
     "d backs": "arizona diamondbacks",
 }
 
+PARK_FACTORS = {
+    "colorado rockies": 1.12,
+    "boston red sox": 1.05,
+    "cincinnati reds": 1.04,
+    "philadelphia phillies": 1.03,
+    "new york yankees": 1.03,
+    "los angeles dodgers": 1.01,
+    "seattle mariners": 0.96,
+    "san francisco giants": 0.96,
+    "san diego padres": 0.97,
+    "tampa bay rays": 0.98,
+}
+
 
 def normalize_team(name: str) -> str:
     value = re.sub(r"[^a-z0-9]+", " ", name.lower()).strip()
@@ -30,41 +42,30 @@ def normalize_team(name: str) -> str:
 
 def fetch_completed_games(season: int | None = None) -> list[dict[str, Any]]:
     season = season or date.today().year
-    params = {
-        "sportId": 1,
-        "season": season,
-        "gameType": "R",
-        "hydrate": "team",
-    }
-
-    response = requests.get(MLB_SCHEDULE_URL, params=params, timeout=60)
+    response = requests.get(
+        MLB_SCHEDULE_URL,
+        params={"sportId": 1, "season": season, "gameType": "R", "hydrate": "team"},
+        timeout=60,
+    )
     response.raise_for_status()
-
     games: list[dict[str, Any]] = []
-
     for date_block in response.json().get("dates", []):
         for game in date_block.get("games", []):
             if game.get("status", {}).get("abstractGameState") != "Final":
                 continue
-
             away = game.get("teams", {}).get("away", {})
             home = game.get("teams", {}).get("home", {})
             away_score = away.get("score")
             home_score = home.get("score")
-
             if away_score is None or home_score is None:
                 continue
-
-            games.append(
-                {
-                    "game_date": game.get("gameDate", ""),
-                    "away_team": away.get("team", {}).get("name", ""),
-                    "home_team": home.get("team", {}).get("name", ""),
-                    "away_score": int(away_score),
-                    "home_score": int(home_score),
-                }
-            )
-
+            games.append({
+                "game_date": game.get("gameDate", ""),
+                "away_team": away.get("team", {}).get("name", ""),
+                "home_team": home.get("team", {}).get("name", ""),
+                "away_score": int(away_score),
+                "home_score": int(home_score),
+            })
     games.sort(key=lambda game: game["game_date"])
     return games
 
@@ -74,55 +75,34 @@ def expected_home_win_probability(home_elo: float, away_elo: float) -> float:
     return 1.0 / (1.0 + 10 ** ((away_elo - adjusted_home_elo) / 400.0))
 
 
-def build_elo_ratings(
-    completed_games: list[dict[str, Any]],
-) -> dict[str, float]:
+def build_elo_ratings(completed_games: list[dict[str, Any]]) -> dict[str, float]:
     ratings: defaultdict[str, float] = defaultdict(lambda: DEFAULT_ELO)
-
     for game in completed_games:
         away_team = normalize_team(game["away_team"])
         home_team = normalize_team(game["home_team"])
         away_score = game["away_score"]
         home_score = game["home_score"]
-
         away_elo = ratings[away_team]
         home_elo = ratings[home_team]
         expected_home = expected_home_win_probability(home_elo, away_elo)
         actual_home = 1.0 if home_score > away_score else 0.0
-
         margin = abs(home_score - away_score)
-        multiplier = math.log(max(margin, 1) + 1) * (
-            2.2 / ((abs(home_elo - away_elo) * 0.001) + 2.2)
-        )
+        multiplier = math.log(max(margin, 1) + 1) * (2.2 / ((abs(home_elo - away_elo) * 0.001) + 2.2))
         change = K_FACTOR * multiplier * (actual_home - expected_home)
-
         ratings[home_team] += change
         ratings[away_team] -= change
-
     return dict(ratings)
 
 
-def build_recent_form(
-    completed_games: list[dict[str, Any]],
-    window: int = 10,
-) -> dict[str, float]:
-    results: defaultdict[str, deque[int]] = defaultdict(
-        lambda: deque(maxlen=window)
-    )
-
+def build_recent_form(completed_games: list[dict[str, Any]], window: int = 10) -> dict[str, float]:
+    results: defaultdict[str, deque[int]] = defaultdict(lambda: deque(maxlen=window))
     for game in completed_games:
         away = normalize_team(game["away_team"])
         home = normalize_team(game["home_team"])
         home_win = game["home_score"] > game["away_score"]
-
         results[home].append(1 if home_win else 0)
         results[away].append(0 if home_win else 1)
-
-    return {
-        team: sum(values) / len(values)
-        for team, values in results.items()
-        if values
-    }
+    return {team: sum(values) / len(values) for team, values in results.items() if values}
 
 
 def remove_vig_two_way(price_a: float, price_b: float) -> tuple[float, float]:
@@ -147,38 +127,59 @@ def expected_value(probability: float, decimal_odds: float) -> float:
 def starter_quality(stats: dict[str, Any] | None) -> float:
     if not stats:
         return 0.0
-
     era = stats.get("era")
     whip = stats.get("whip")
     kbb = stats.get("strikeout_walk_ratio")
     ip = stats.get("innings_pitched")
-
     if not isinstance(ip, (int, float)) or ip < 10:
         return 0.0
-
     parts: list[float] = []
-
     if isinstance(era, (int, float)):
         parts.append((4.20 - era) / 1.50)
     if isinstance(whip, (int, float)):
         parts.append((1.30 - whip) / 0.35)
     if isinstance(kbb, (int, float)):
         parts.append((kbb - 2.80) / 2.00)
+    return max(-1.0, min(1.0, sum(parts) / len(parts))) if parts else 0.0
 
-    if not parts:
+
+def offense_quality(metrics: dict[str, Any] | None) -> float:
+    if not metrics:
         return 0.0
+    parts: list[float] = []
+    ops = metrics.get("ops")
+    rpg = metrics.get("runs_per_game")
+    if isinstance(ops, (int, float)):
+        parts.append((ops - 0.720) / 0.090)
+    if isinstance(rpg, (int, float)):
+        parts.append((rpg - 4.40) / 1.10)
+    return max(-1.0, min(1.0, sum(parts) / len(parts))) if parts else 0.0
 
-    return max(-1.0, min(1.0, sum(parts) / len(parts)))
+
+def pitching_quality(metrics: dict[str, Any] | None) -> float:
+    if not metrics:
+        return 0.0
+    parts: list[float] = []
+    era = metrics.get("team_pitching_era")
+    whip = metrics.get("team_pitching_whip")
+    if isinstance(era, (int, float)):
+        parts.append((4.20 - era) / 1.20)
+    if isinstance(whip, (int, float)):
+        parts.append((1.30 - whip) / 0.25)
+    return max(-1.0, min(1.0, sum(parts) / len(parts))) if parts else 0.0
 
 
-def schedule_index(
-    schedule: list[dict[str, Any]],
-) -> dict[tuple[str, str], dict[str, Any]]:
+def _lookup_metrics(team_name: str, team_metrics: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    wanted = normalize_team(team_name)
+    for name, values in team_metrics.items():
+        if normalize_team(name) == wanted:
+            return values
+    return {}
+
+
+def schedule_index(schedule: list[dict[str, Any]]) -> dict[tuple[str, str], dict[str, Any]]:
     return {
-        (
-            normalize_team(game.get("away_team", "")),
-            normalize_team(game.get("home_team", "")),
-        ): game
+        (normalize_team(game.get("away_team", "")), normalize_team(game.get("home_team", ""))): game
         for game in schedule
     }
 
@@ -188,7 +189,8 @@ def make_moneyline_predictions(
     elo_ratings: dict[str, float],
     completed_games: list[dict[str, Any]],
     schedule: list[dict[str, Any]],
-    market_weight: float = 0.25,
+    team_metrics: dict[str, dict[str, Any]],
+    market_weight: float = 0.22,
 ) -> list[dict[str, Any]]:
     games: dict[str, list[dict[str, Any]]] = {}
     for row in odds_rows:
@@ -202,13 +204,11 @@ def make_moneyline_predictions(
     for event_id, rows in games.items():
         if len(rows) != 2:
             continue
-
         first = rows[0]
         away_team = first["away_team"]
         home_team = first["home_team"]
         away_key = normalize_team(away_team)
         home_key = normalize_team(home_team)
-
         by_selection = {row["selection"]: row for row in rows}
         away_row = by_selection.get(away_team)
         home_row = by_selection.get(home_team)
@@ -217,10 +217,7 @@ def make_moneyline_predictions(
 
         away_price = float(away_row["decimal_odds"])
         home_price = float(home_row["decimal_odds"])
-        market_away, market_home = remove_vig_two_way(
-            away_price,
-            home_price,
-        )
+        market_away, market_home = remove_vig_two_way(away_price, home_price)
 
         away_elo = elo_ratings.get(away_key, DEFAULT_ELO)
         home_elo = elo_ratings.get(home_key, DEFAULT_ELO)
@@ -230,92 +227,69 @@ def make_moneyline_predictions(
         away_starter = starter_quality(game.get("away_starter_stats"))
         home_starter = starter_quality(game.get("home_starter_stats"))
 
-        starter_adjustment = (home_starter - away_starter) * 0.045
-
+        away_metrics = _lookup_metrics(away_team, team_metrics)
+        home_metrics = _lookup_metrics(home_team, team_metrics)
+        away_offense = offense_quality(away_metrics)
+        home_offense = offense_quality(home_metrics)
+        away_pitching = pitching_quality(away_metrics)
+        home_pitching = pitching_quality(home_metrics)
         away_form = recent_form.get(away_key, 0.5)
         home_form = recent_form.get(home_key, 0.5)
-        form_adjustment = (home_form - away_form) * 0.06
 
-        baseball_home = max(
-            0.20,
-            min(0.80, elo_home + starter_adjustment + form_adjustment),
-        )
+        baseball_home = max(0.20, min(0.80,
+            elo_home
+            + (home_starter - away_starter) * 0.040
+            + (home_form - away_form) * 0.050
+            + (home_offense - away_offense) * 0.030
+            + (home_pitching - away_pitching) * 0.025
+            + (PARK_FACTORS.get(home_key, 1.0) - 1.0) * 0.06
+        ))
 
-        model_home = (
-            (1.0 - market_weight) * baseball_home
-            + market_weight * market_home
-        )
+        model_home = (1.0 - market_weight) * baseball_home + market_weight * market_home
         model_home = max(0.05, min(0.95, model_home))
         model_away = 1.0 - model_home
 
-        for team, price, probability, market_probability, rating, starter, form in [
-            (
-                away_team,
-                away_price,
-                model_away,
-                market_away,
-                away_elo,
-                away_starter,
-                away_form,
-            ),
-            (
-                home_team,
-                home_price,
-                model_home,
-                market_home,
-                home_elo,
-                home_starter,
-                home_form,
-            ),
-        ]:
+        selections = [
+            (away_team, away_price, model_away, market_away, away_elo, away_starter, away_form, away_offense, away_pitching),
+            (home_team, home_price, model_home, market_home, home_elo, home_starter, home_form, home_offense, home_pitching),
+        ]
+
+        for team, price, probability, market_probability, rating, starter, form, offense, pitching in selections:
             ev = expected_value(probability, price)
             kelly = quarter_kelly(probability, price)
             recommendation = "BUY" if ev >= 0.05 else ("LEAN" if ev > 0 else "PASS")
+            predictions.append({
+                "market": "moneyline",
+                "event_id": event_id,
+                "commence_time_utc": first["commence_time_utc"],
+                "away_team": away_team,
+                "home_team": home_team,
+                "selection": team,
+                "point": "",
+                "decimal_odds": round(price, 3),
+                "market_no_vig_probability": round(market_probability, 6),
+                "elo_rating": round(rating, 1),
+                "recent_10_win_pct": round(form, 4),
+                "starter_quality": round(starter, 4),
+                "offense_quality": round(offense, 4),
+                "team_pitching_quality": round(pitching, 4),
+                "model_probability": round(probability, 6),
+                "ev": round(ev, 6),
+                "quarter_kelly": round(kelly, 6),
+                "recommendation": recommendation,
+            })
 
-            predictions.append(
-                {
-                    "market": "moneyline",
-                    "event_id": event_id,
-                    "commence_time_utc": first["commence_time_utc"],
-                    "away_team": away_team,
-                    "home_team": home_team,
-                    "selection": team,
-                    "point": "",
-                    "decimal_odds": round(price, 3),
-                    "market_no_vig_probability": round(market_probability, 6),
-                    "elo_rating": round(rating, 1),
-                    "recent_10_win_pct": round(form, 4),
-                    "starter_quality": round(starter, 4),
-                    "model_probability": round(probability, 6),
-                    "ev": round(ev, 6),
-                    "quarter_kelly": round(kelly, 6),
-                    "recommendation": recommendation,
-                }
-            )
-
-    predictions.sort(
-        key=lambda row: (row["ev"], row["model_probability"]),
-        reverse=True,
-    )
+    predictions.sort(key=lambda row: (row["ev"], row["model_probability"]), reverse=True)
     return predictions
 
 
-def estimate_runline_probability(
-    moneyline_probability: float,
-    point: float,
-) -> float:
-    """
-    Heuristic run-line conversion.
-    Favorite -1.5 gets lower cover probability than ML.
-    Underdog +1.5 gets higher cover probability than ML.
-    """
+def estimate_runline_probability(moneyline_probability: float, point: float) -> float:
     if point <= -1.5:
         probability = 0.08 + 0.68 * moneyline_probability
     elif point >= 1.5:
         probability = 0.22 + 0.78 * moneyline_probability
     else:
         probability = moneyline_probability
-
     return max(0.05, min(0.95, probability))
 
 
@@ -323,61 +297,48 @@ def make_runline_predictions(
     odds_rows: list[dict[str, Any]],
     moneyline_predictions: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
-    ml_probability = {
-        (row["event_id"], row["selection"]): row["model_probability"]
-        for row in moneyline_predictions
-    }
-
+    ml_probability = {(row["event_id"], row["selection"]): row["model_probability"] for row in moneyline_predictions}
     runline_groups: dict[str, list[dict[str, Any]]] = {}
     for row in odds_rows:
         if row.get("market") == "spreads":
             runline_groups.setdefault(str(row.get("event_id", "")), []).append(row)
 
     predictions: list[dict[str, Any]] = []
-
     for event_id, rows in runline_groups.items():
         if len(rows) != 2:
             continue
-
         first = rows[0]
-
         for row in rows:
             team = row["selection"]
             point = float(row["point"])
             price = float(row["decimal_odds"])
             base_probability = ml_probability.get((event_id, team))
-
             if base_probability is None:
                 continue
-
             probability = estimate_runline_probability(base_probability, point)
             ev = expected_value(probability, price)
             kelly = quarter_kelly(probability, price)
             recommendation = "BUY" if ev >= 0.05 else ("LEAN" if ev > 0 else "PASS")
+            predictions.append({
+                "market": "runline",
+                "event_id": event_id,
+                "commence_time_utc": first["commence_time_utc"],
+                "away_team": first["away_team"],
+                "home_team": first["home_team"],
+                "selection": team,
+                "point": point,
+                "decimal_odds": round(price, 3),
+                "market_no_vig_probability": "",
+                "elo_rating": "",
+                "recent_10_win_pct": "",
+                "starter_quality": "",
+                "offense_quality": "",
+                "team_pitching_quality": "",
+                "model_probability": round(probability, 6),
+                "ev": round(ev, 6),
+                "quarter_kelly": round(kelly, 6),
+                "recommendation": recommendation,
+            })
 
-            predictions.append(
-                {
-                    "market": "runline",
-                    "event_id": event_id,
-                    "commence_time_utc": first["commence_time_utc"],
-                    "away_team": first["away_team"],
-                    "home_team": first["home_team"],
-                    "selection": team,
-                    "point": point,
-                    "decimal_odds": round(price, 3),
-                    "market_no_vig_probability": "",
-                    "elo_rating": "",
-                    "recent_10_win_pct": "",
-                    "starter_quality": "",
-                    "model_probability": round(probability, 6),
-                    "ev": round(ev, 6),
-                    "quarter_kelly": round(kelly, 6),
-                    "recommendation": recommendation,
-                }
-            )
-
-    predictions.sort(
-        key=lambda row: (row["ev"], row["model_probability"]),
-        reverse=True,
-    )
+    predictions.sort(key=lambda row: (row["ev"], row["model_probability"]), reverse=True)
     return predictions

@@ -11,12 +11,8 @@ from typing import Any
 import requests
 
 from mlb_api import attach_probable_pitcher_stats, fetch_mlb_schedule
-from predictor import (
-    build_elo_ratings,
-    fetch_completed_games,
-    make_moneyline_predictions,
-    make_runline_predictions,
-)
+from predictor import build_elo_ratings, fetch_completed_games, make_moneyline_predictions, make_runline_predictions
+from team_metrics import fetch_team_metrics
 
 API_URL = "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/"
 OUTPUT_DIR = Path("data")
@@ -30,19 +26,15 @@ def require_api_key() -> str:
 
 
 def fetch_odds(api_key: str) -> tuple[list[dict[str, Any]], dict[str, str]]:
-    params = {
+    response = requests.get(API_URL, params={
         "apiKey": api_key,
         "bookmakers": "pinnacle",
         "markets": "h2h,spreads",
         "oddsFormat": "decimal",
         "dateFormat": "iso",
-    }
-    response = requests.get(API_URL, params=params, timeout=30)
+    }, timeout=30)
     if response.status_code != 200:
-        raise RuntimeError(
-            f"The Odds API returned HTTP {response.status_code}: "
-            f"{response.text[:1000]}"
-        )
+        raise RuntimeError(f"The Odds API returned HTTP {response.status_code}: {response.text[:1000]}")
     return response.json(), {
         "requests_remaining": response.headers.get("x-requests-remaining", ""),
         "requests_used": response.headers.get("x-requests-used", ""),
@@ -61,17 +53,9 @@ def american_odds(decimal_price: float | None) -> str:
 def flatten_odds(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     for event in events:
-        pinnacle = next(
-            (
-                book
-                for book in event.get("bookmakers", [])
-                if book.get("key") == "pinnacle"
-            ),
-            None,
-        )
+        pinnacle = next((book for book in event.get("bookmakers", []) if book.get("key") == "pinnacle"), None)
         if not pinnacle:
             continue
-
         common = {
             "event_id": event.get("id", ""),
             "commence_time_utc": event.get("commence_time", ""),
@@ -80,25 +64,18 @@ def flatten_odds(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "bookmaker": "pinnacle",
             "bookmaker_last_update": pinnacle.get("last_update", ""),
         }
-
         for market in pinnacle.get("markets", []):
             for outcome in market.get("outcomes", []):
                 price = outcome.get("price")
-                rows.append(
-                    {
-                        **common,
-                        "market": market.get("key", ""),
-                        "selection": outcome.get("name", ""),
-                        "point": outcome.get("point", ""),
-                        "decimal_odds": price,
-                        "american_odds": american_odds(price),
-                        "implied_probability": (
-                            round(1 / price, 6)
-                            if isinstance(price, (int, float)) and price > 1
-                            else ""
-                        ),
-                    }
-                )
+                rows.append({
+                    **common,
+                    "market": market.get("key", ""),
+                    "selection": outcome.get("name", ""),
+                    "point": outcome.get("point", ""),
+                    "decimal_odds": price,
+                    "american_odds": american_odds(price),
+                    "implied_probability": round(1 / price, 6) if isinstance(price, (int, float)) and price > 1 else "",
+                })
     return rows
 
 
@@ -120,40 +97,29 @@ def pct(value: Any) -> str:
         return ""
 
 
-def write_report(
-    ml_predictions: list[dict[str, Any]],
-    rl_predictions: list[dict[str, Any]],
-    schedule: list[dict[str, Any]],
-    fetched_at: str,
-    quota: dict[str, str],
-    path: Path,
-) -> None:
+def write_report(ml_predictions, rl_predictions, schedule, fetched_at, quota, path: Path) -> None:
     lines = [
-        "# MLB Ver.16.2 Prediction Report",
-        "",
+        "# MLB Ver.17 Prediction Report", "",
         f"- Updated: {fetched_at}",
-        f"- API requests remaining: {quota.get('requests_remaining') or 'unknown'}",
-        "",
-        "## Moneyline Buy Ranking",
-        "",
+        f"- API requests remaining: {quota.get('requests_remaining') or 'unknown'}", "",
+        "## Moneyline Buy Ranking", "",
     ]
-
     ml_buys = [row for row in ml_predictions if row["recommendation"] == "BUY"]
     if not ml_buys:
         lines.append("No EV 5%+ Moneyline bets.")
     else:
         for index, row in enumerate(ml_buys, 1):
-            lines.extend(
-                [
-                    f"### {index}. {row['selection']}",
-                    f"- Game: {row['away_team']} @ {row['home_team']}",
-                    f"- Odds: {row['decimal_odds']}",
-                    f"- AI probability: {pct(row['model_probability'])}",
-                    f"- EV: {pct(row['ev'])}",
-                    f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
-                    "",
-                ]
-            )
+            lines.extend([
+                f"### {index}. {row['selection']}",
+                f"- Game: {row['away_team']} @ {row['home_team']}",
+                f"- Odds: {row['decimal_odds']}",
+                f"- AI probability: {pct(row['model_probability'])}",
+                f"- EV: {pct(row['ev'])}",
+                f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
+                f"- Starter: {row['starter_quality']:+.2f}",
+                f"- Offense: {row['offense_quality']:+.2f}",
+                f"- Team pitching proxy: {row['team_pitching_quality']:+.2f}", "",
+            ])
 
     lines.extend(["## Run Line Buy Ranking", ""])
     rl_buys = [row for row in rl_predictions if row["recommendation"] == "BUY"]
@@ -161,43 +127,32 @@ def write_report(
         lines.append("No EV 5%+ Run Line bets.")
     else:
         for index, row in enumerate(rl_buys, 1):
-            lines.extend(
-                [
-                    f"### {index}. {row['selection']} {row['point']:+g}",
-                    f"- Game: {row['away_team']} @ {row['home_team']}",
-                    f"- Odds: {row['decimal_odds']}",
-                    f"- AI probability: {pct(row['model_probability'])}",
-                    f"- EV: {pct(row['ev'])}",
-                    f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
-                    "",
-                ]
-            )
+            lines.extend([
+                f"### {index}. {row['selection']} {row['point']:+g}",
+                f"- Game: {row['away_team']} @ {row['home_team']}",
+                f"- Odds: {row['decimal_odds']}",
+                f"- AI probability: {pct(row['model_probability'])}",
+                f"- EV: {pct(row['ev'])}",
+                f"- 1/4 Kelly: {pct(row['quarter_kelly'])}", "",
+            ])
 
     lines.extend(["## Probable Pitchers", ""])
     for game in schedule:
         away_stats = game.get("away_starter_stats", {})
         home_stats = game.get("home_starter_stats", {})
-        lines.extend(
-            [
-                f"### {game['away_team']} @ {game['home_team']}",
-                f"- Away: {game['away_probable_pitcher']} "
-                f"(ERA {away_stats.get('era')}, WHIP {away_stats.get('whip')})",
-                f"- Home: {game['home_probable_pitcher']} "
-                f"(ERA {home_stats.get('era')}, WHIP {home_stats.get('whip')})",
-                "",
-            ]
-        )
+        lines.extend([
+            f"### {game['away_team']} @ {game['home_team']}",
+            f"- Away: {game['away_probable_pitcher']} (ERA {away_stats.get('era')}, WHIP {away_stats.get('whip')})",
+            f"- Home: {game['home_probable_pitcher']} (ERA {home_stats.get('era')}, WHIP {home_stats.get('whip')})", "",
+        ])
 
-    lines.extend(
-        [
-            "## Model Notes",
-            "",
-            "- Moneyline: Elo + recent 10-game form + probable starter stats + Pinnacle no-vig market.",
-            "- Run Line: heuristic conversion from Moneyline probability and spread.",
-            "- BUY threshold is EV 5% or higher.",
-            "- Bullpen, confirmed lineup, park and weather are not included yet.",
-        ]
-    )
+    lines.extend([
+        "## Model Notes", "",
+        "- Moneyline: Elo + recent form + probable starter + team offense + team pitching proxy + park factor + Pinnacle no-vig market.",
+        "- Team pitching proxy is not yet a true bullpen-only metric.",
+        "- Run Line remains a heuristic conversion and is not yet a run-distribution simulation.",
+        "- BUY threshold is EV 5% or higher.",
+    ])
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -205,62 +160,32 @@ def main() -> int:
     try:
         season = datetime.now(timezone.utc).year
         api_key = require_api_key()
-
         odds_events, quota = fetch_odds(api_key)
         odds_rows = flatten_odds(odds_events)
-
-        schedule = fetch_mlb_schedule(days=3)
-        schedule = attach_probable_pitcher_stats(schedule, season)
-
+        schedule = attach_probable_pitcher_stats(fetch_mlb_schedule(days=3), season)
         completed_games = fetch_completed_games(season)
         elo_ratings = build_elo_ratings(completed_games)
-
-        ml_predictions = make_moneyline_predictions(
-            odds_rows,
-            elo_ratings,
-            completed_games,
-            schedule,
-        )
-        rl_predictions = make_runline_predictions(
-            odds_rows,
-            ml_predictions,
-        )
+        team_metrics = fetch_team_metrics(season)
+        ml_predictions = make_moneyline_predictions(odds_rows, elo_ratings, completed_games, schedule, team_metrics)
+        rl_predictions = make_runline_predictions(odds_rows, ml_predictions)
 
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
         fetched_at = datetime.now(timezone.utc).isoformat()
-
-        files = {
+        payloads = {
             "latest_odds.json": {"fetched_at_utc": fetched_at, "events": odds_events},
             "mlb_schedule.json": {"fetched_at_utc": fetched_at, "games": schedule},
             "elo_ratings.json": {"fetched_at_utc": fetched_at, "ratings": elo_ratings},
-            "predictions.json": {
-                "fetched_at_utc": fetched_at,
-                "moneyline": ml_predictions,
-                "runline": rl_predictions,
-            },
+            "team_metrics.json": {"fetched_at_utc": fetched_at, "metrics": team_metrics},
+            "predictions.json": {"fetched_at_utc": fetched_at, "moneyline": ml_predictions, "runline": rl_predictions},
         }
-        for filename, payload in files.items():
-            (OUTPUT_DIR / filename).write_text(
-                json.dumps(payload, ensure_ascii=False, indent=2),
-                encoding="utf-8",
-            )
+        for filename, payload in payloads.items():
+            (OUTPUT_DIR / filename).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
         write_csv(odds_rows, OUTPUT_DIR / "latest_odds.csv")
         write_csv(ml_predictions, OUTPUT_DIR / "moneyline_predictions.csv")
         write_csv(rl_predictions, OUTPUT_DIR / "runline_predictions.csv")
-        write_report(
-            ml_predictions,
-            rl_predictions,
-            schedule,
-            fetched_at,
-            quota,
-            OUTPUT_DIR / "report.md",
-        )
-
-        print(
-            f"Generated {len(ml_predictions)} ML predictions and "
-            f"{len(rl_predictions)} RL predictions."
-        )
+        write_report(ml_predictions, rl_predictions, schedule, fetched_at, quota, OUTPUT_DIR / "report.md")
+        print(f"Generated {len(ml_predictions)} ML predictions and {len(rl_predictions)} RL predictions.")
         return 0
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
