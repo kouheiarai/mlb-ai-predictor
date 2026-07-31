@@ -1,10 +1,10 @@
 {
-  "fetched_at_utc": "2026-07-31T14:56:31.059362+00:00",
+  "fetched_at_utc": "2026-07-31T18:13:12.586224+00:00",
   "games": [
     {
       "game_pk": 824651,
       "game_date_utc": "2026-07-31T18:20:00Z",
-      "status": "Scheduled",
+      "status": "Warmup",
       "away_team": "New York Yankees",
       "home_team": "Chicago Cubs",
       "away_probable_pitcher_id": 701542,
@@ -28,25 +28,297 @@
         "innings_pitched": 121.0
       },
       "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": []
+        "away_announced": true,
+        "home_announced": true,
+        "away_batting_order": [
+          {
+            "person_id": 502671,
+            "name": "Paul Goldschmidt",
+            "position": "1B",
+            "batting_order": "100",
+            "season_stats": {
+              "person_id": 502671,
+              "ops": 0.78,
+              "avg": 0.254,
+              "obp": 0.315,
+              "slg": 0.465,
+              "plate_appearances": 311.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 700250,
+            "name": "Ben Rice",
+            "position": "DH",
+            "batting_order": "200",
+            "season_stats": {
+              "person_id": 700250,
+              "ops": 0.931,
+              "avg": 0.269,
+              "obp": 0.359,
+              "slg": 0.572,
+              "plate_appearances": 448.0
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 642708,
+            "name": "Amed Rosario",
+            "position": "3B",
+            "batting_order": "300",
+            "season_stats": {
+              "person_id": 642708,
+              "ops": 0.713,
+              "avg": 0.234,
+              "obp": 0.276,
+              "slg": 0.437,
+              "plate_appearances": 181.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 691176,
+            "name": "Jasson Domínguez",
+            "position": "RF",
+            "batting_order": "400",
+            "season_stats": {
+              "person_id": 691176,
+              "ops": 0.661,
+              "avg": 0.232,
+              "obp": 0.272,
+              "slg": 0.389,
+              "plate_appearances": 196.0
+            },
+            "bat_side": "S"
+          },
+          {
+            "person_id": 663757,
+            "name": "Trent Grisham",
+            "position": "CF",
+            "batting_order": "500",
+            "season_stats": {
+              "person_id": 663757,
+              "ops": 0.702,
+              "avg": 0.216,
+              "obp": 0.318,
+              "slg": 0.384,
+              "plate_appearances": 356.0
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 683011,
+            "name": "Anthony Volpe",
+            "position": "SS",
+            "batting_order": "600",
+            "season_stats": {
+              "person_id": 683011,
+              "ops": 0.668,
+              "avg": 0.248,
+              "obp": 0.335,
+              "slg": 0.333,
+              "plate_appearances": 188.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 682987,
+            "name": "Spencer Jones",
+            "position": "LF",
+            "batting_order": "700",
+            "season_stats": {
+              "person_id": 682987,
+              "ops": 0.695,
+              "avg": 0.23,
+              "obp": 0.316,
+              "slg": 0.379,
+              "plate_appearances": 98.0
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 645305,
+            "name": "Ali Sánchez",
+            "position": "C",
+            "batting_order": "800",
+            "season_stats": {
+              "person_id": 645305,
+              "ops": 0.63,
+              "avg": 0.245,
+              "obp": 0.283,
+              "slg": 0.347,
+              "plate_appearances": 53.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 676609,
+            "name": "José Caballero",
+            "position": "2B",
+            "batting_order": "900",
+            "season_stats": {
+              "person_id": 676609,
+              "ops": 0.665,
+              "avg": 0.239,
+              "obp": 0.289,
+              "slg": 0.376,
+              "plate_appearances": 334.0
+            },
+            "bat_side": "R"
+          }
+        ],
+        "home_batting_order": [
+          {
+            "person_id": 691718,
+            "name": "Pete Crow-Armstrong",
+            "position": "CF",
+            "batting_order": "100",
+            "season_stats": {
+              "person_id": 691718,
+              "ops": 0.923,
+              "avg": 0.285,
+              "obp": 0.382,
+              "slg": 0.541,
+              "plate_appearances": 480.0
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 699393,
+            "name": "Pedro Ramírez",
+            "position": "3B",
+            "batting_order": "200",
+            "season_stats": {
+              "person_id": 699393,
+              "ops": 0.82,
+              "avg": 0.311,
+              "obp": 0.364,
+              "slg": 0.456,
+              "plate_appearances": 100.0
+            },
+            "bat_side": "S"
+          },
+          {
+            "person_id": 683737,
+            "name": "Michael Busch",
+            "position": "1B",
+            "batting_order": "300",
+            "season_stats": {
+              "person_id": 683737,
+              "ops": 0.751,
+              "avg": 0.243,
+              "obp": 0.359,
+              "slg": 0.392,
+              "plate_appearances": 488.0
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 608324,
+            "name": "Alex Bregman",
+            "position": "DH",
+            "batting_order": "400",
+            "season_stats": {
+              "person_id": 608324,
+              "ops": 0.722,
+              "avg": 0.248,
+              "obp": 0.341,
+              "slg": 0.381,
+              "plate_appearances": 487.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 664023,
+            "name": "Ian Happ",
+            "position": "LF",
+            "batting_order": "500",
+            "season_stats": {
+              "person_id": 664023,
+              "ops": 0.752,
+              "avg": 0.219,
+              "obp": 0.33,
+              "slg": 0.422,
+              "plate_appearances": 455.0
+            },
+            "bat_side": "S"
+          },
+          {
+            "person_id": 663538,
+            "name": "Nico Hoerner",
+            "position": "2B",
+            "batting_order": "600",
+            "season_stats": {
+              "person_id": 663538,
+              "ops": 0.67,
+              "avg": 0.257,
+              "obp": 0.32,
+              "slg": 0.35,
+              "plate_appearances": 475.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 624424,
+            "name": "Michael Conforto",
+            "position": "RF",
+            "batting_order": "700",
+            "season_stats": {
+              "person_id": 624424,
+              "ops": 0.799,
+              "avg": 0.236,
+              "obp": 0.332,
+              "slg": 0.467,
+              "plate_appearances": 190.0
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 621020,
+            "name": "Dansby Swanson",
+            "position": "SS",
+            "batting_order": "800",
+            "season_stats": {
+              "person_id": 621020,
+              "ops": 0.698,
+              "avg": 0.216,
+              "obp": 0.295,
+              "slg": 0.403,
+              "plate_appearances": 404.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 665804,
+            "name": "Miguel Amaya",
+            "position": "C",
+            "batting_order": "900",
+            "season_stats": {
+              "person_id": 665804,
+              "ops": 0.71,
+              "avg": 0.242,
+              "obp": 0.354,
+              "slg": 0.356,
+              "plate_appearances": 177.0
+            },
+            "bat_side": "R"
+          }
+        ]
       },
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "weather_run_factor": 1.019,
-        "temperature_c": 25.7,
-        "precipitation_probability": 4,
-        "wind_speed_kmh": 19.5,
-        "wind_direction_deg": 118
+        "weather_run_factor": 1.0201,
+        "temperature_c": 26.9,
+        "precipitation_probability": 3,
+        "wind_speed_kmh": 18.2,
+        "wind_direction_deg": 150
       }
     },
     {
       "game_pk": 824486,
       "game_date_utc": "2026-07-31T22:10:00Z",
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_team": "Pittsburgh Pirates",
       "home_team": "Cincinnati Reds",
       "away_probable_pitcher_id": 694973,
@@ -71,18 +343,154 @@
       },
       "lineups": {
         "away_announced": false,
-        "home_announced": false,
+        "home_announced": true,
         "away_batting_order": [],
-        "home_batting_order": []
+        "home_batting_order": [
+          {
+            "person_id": 682829,
+            "name": "Elly De La Cruz",
+            "position": "SS",
+            "batting_order": "100",
+            "season_stats": {
+              "person_id": 682829,
+              "ops": 0.859,
+              "avg": 0.279,
+              "obp": 0.355,
+              "slg": 0.504,
+              "plate_appearances": 400.0
+            },
+            "bat_side": "S"
+          },
+          {
+            "person_id": 701398,
+            "name": "Sal Stewart",
+            "position": "1B",
+            "batting_order": "200",
+            "season_stats": {
+              "person_id": 701398,
+              "ops": 0.804,
+              "avg": 0.254,
+              "obp": 0.333,
+              "slg": 0.471,
+              "plate_appearances": 468.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 668709,
+            "name": "JJ Bleday",
+            "position": "LF",
+            "batting_order": "300",
+            "season_stats": {
+              "person_id": 668709,
+              "ops": 0.8,
+              "avg": 0.228,
+              "obp": 0.337,
+              "slg": 0.463,
+              "plate_appearances": 336.0
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 663886,
+            "name": "Tyler Stephenson",
+            "position": "C",
+            "batting_order": "400",
+            "season_stats": {
+              "person_id": 663886,
+              "ops": 0.731,
+              "avg": 0.251,
+              "obp": 0.333,
+              "slg": 0.398,
+              "plate_appearances": 294.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 663993,
+            "name": "Nathaniel Lowe",
+            "position": "DH",
+            "batting_order": "500",
+            "season_stats": {
+              "person_id": 663993,
+              "ops": 0.804,
+              "avg": 0.255,
+              "obp": 0.332,
+              "slg": 0.472,
+              "plate_appearances": 262.0
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 553993,
+            "name": "Eugenio Suárez",
+            "position": "3B",
+            "batting_order": "600",
+            "season_stats": {
+              "person_id": 553993,
+              "ops": 0.666,
+              "avg": 0.202,
+              "obp": 0.276,
+              "slg": 0.39,
+              "plate_appearances": 312.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 667472,
+            "name": "Dane Myers",
+            "position": "CF",
+            "batting_order": "700",
+            "season_stats": {
+              "person_id": 667472,
+              "ops": 0.758,
+              "avg": 0.276,
+              "obp": 0.376,
+              "slg": 0.382,
+              "plate_appearances": 178.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 682622,
+            "name": "Noelvi Marte",
+            "position": "RF",
+            "batting_order": "800",
+            "season_stats": {
+              "person_id": 682622,
+              "ops": 0.57,
+              "avg": 0.186,
+              "obp": 0.23,
+              "slg": 0.34,
+              "plate_appearances": 165.0
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 680574,
+            "name": "Matt McLain",
+            "position": "2B",
+            "batting_order": "900",
+            "season_stats": {
+              "person_id": 680574,
+              "ops": 0.62,
+              "avg": 0.191,
+              "obp": 0.293,
+              "slg": 0.327,
+              "plate_appearances": 313.0
+            },
+            "bat_side": "R"
+          }
+        ]
       },
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0216,
-        "temperature_c": 32.6,
+        "weather_run_factor": 1.0245,
+        "temperature_c": 31.7,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 8.5,
-        "wind_direction_deg": 126
+        "wind_speed_kmh": 13.1,
+        "wind_direction_deg": 106
       }
     },
     {
@@ -204,11 +612,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0119,
-        "temperature_c": 27.8,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 8.4,
-        "wind_direction_deg": 20
+        "weather_run_factor": 1.0136,
+        "temperature_c": 28.4,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 8.9,
+        "wind_direction_deg": 27
       }
     },
     {
@@ -261,8 +669,8 @@
       "home_team": "New York Mets",
       "away_probable_pitcher_id": 676083,
       "away_probable_pitcher": "Janson Junk",
-      "home_probable_pitcher_id": 642547,
-      "home_probable_pitcher": "Freddy Peralta",
+      "home_probable_pitcher_id": null,
+      "home_probable_pitcher": "TBD",
       "venue_id": 3289,
       "venue_name": "Citi Field",
       "away_starter_stats": {
@@ -273,11 +681,11 @@
         "innings_pitched": 73.2
       },
       "home_starter_stats": {
-        "person_id": 642547,
-        "era": 4.99,
-        "whip": 1.48,
-        "strikeout_walk_ratio": 2.3541666666666665,
-        "innings_pitched": 113.2
+        "person_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null
       },
       "lineups": {
         "away_announced": false,
@@ -286,7 +694,7 @@
         "home_batting_order": []
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": null,
       "weather": {
         "weather_run_factor": 1.0,
         "temperature_c": null,
@@ -414,11 +822,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0274,
-        "temperature_c": 32.2,
-        "precipitation_probability": 14,
-        "wind_speed_kmh": 14.9,
-        "wind_direction_deg": 58
+        "weather_run_factor": 1.03,
+        "temperature_c": 32.5,
+        "precipitation_probability": 15,
+        "wind_speed_kmh": 16.9,
+        "wind_direction_deg": 78
       }
     },
     {
@@ -469,18 +877,18 @@
       "status": "Scheduled",
       "away_team": "Detroit Tigers",
       "home_team": "Athletics",
-      "away_probable_pitcher_id": 663554,
-      "away_probable_pitcher": "Casey Mize",
+      "away_probable_pitcher_id": null,
+      "away_probable_pitcher": "TBD",
       "home_probable_pitcher_id": 605488,
       "home_probable_pitcher": "Jeffrey Springs",
       "venue_id": 2529,
       "venue_name": "Sutter Health Park",
       "away_starter_stats": {
-        "person_id": 663554,
-        "era": 2.7,
-        "whip": 0.99,
-        "strikeout_walk_ratio": 4.473684210526316,
-        "innings_pitched": 86.2
+        "person_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null
       },
       "home_starter_stats": {
         "person_id": 605488,
@@ -495,7 +903,7 @@
         "away_batting_order": [],
         "home_batting_order": []
       },
-      "away_probable_pitcher_hand": "R",
+      "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": "L",
       "weather": {
         "weather_run_factor": 1.0,
@@ -540,10 +948,10 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.007,
-        "temperature_c": 24.0,
+        "weather_run_factor": 1.0042,
+        "temperature_c": 23.1,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 11.0,
+        "wind_speed_kmh": 10.0,
         "wind_direction_deg": 308
       }
     },
@@ -624,11 +1032,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.005,
-        "temperature_c": 26.1,
+        "weather_run_factor": 1.0067,
+        "temperature_c": 26.2,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 4.9,
-        "wind_direction_deg": 343
+        "wind_speed_kmh": 6.4,
+        "wind_direction_deg": 344
       }
     },
     {
@@ -710,7 +1118,7 @@
       "weather": {
         "weather_run_factor": 1.0052,
         "temperature_c": 18.0,
-        "precipitation_probability": 18,
+        "precipitation_probability": 19,
         "wind_speed_kmh": 21.2,
         "wind_direction_deg": 235
       }
@@ -836,7 +1244,7 @@
       "weather": {
         "weather_run_factor": 1.0129,
         "temperature_c": 25.3,
-        "precipitation_probability": 56,
+        "precipitation_probability": 47,
         "wind_speed_kmh": 14.3,
         "wind_direction_deg": 133
       }
@@ -962,7 +1370,7 @@
       "weather": {
         "weather_run_factor": 1.0062,
         "temperature_c": 27.1,
-        "precipitation_probability": 23,
+        "precipitation_probability": 12,
         "wind_speed_kmh": 4.1,
         "wind_direction_deg": 38
       }
@@ -1046,7 +1454,7 @@
       "weather": {
         "weather_run_factor": 1.0152,
         "temperature_c": 21.7,
-        "precipitation_probability": 41,
+        "precipitation_probability": 42,
         "wind_speed_kmh": 23.8,
         "wind_direction_deg": 32
       }
@@ -1130,7 +1538,7 @@
       "weather": {
         "weather_run_factor": 1.0092,
         "temperature_c": 25.0,
-        "precipitation_probability": 1,
+        "precipitation_probability": 0,
         "wind_speed_kmh": 11.2,
         "wind_direction_deg": 222
       }
@@ -1422,11 +1830,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0102,
-        "temperature_c": 22.9,
+        "weather_run_factor": 0.9969,
+        "temperature_c": 22.8,
         "precipitation_probability": 68,
-        "wind_speed_kmh": 16.4,
-        "wind_direction_deg": 171
+        "wind_speed_kmh": 3.3,
+        "wind_direction_deg": 221
       }
     },
     {
@@ -1464,11 +1872,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 0.9952,
-        "temperature_c": 19.6,
+        "weather_run_factor": 0.9982,
+        "temperature_c": 21.1,
         "precipitation_probability": 54,
         "wind_speed_kmh": 8.0,
-        "wind_direction_deg": 207
+        "wind_direction_deg": 216
       }
     },
     {
@@ -1632,11 +2040,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0221,
-        "temperature_c": 21.4,
+        "weather_run_factor": 1.0191,
+        "temperature_c": 22.3,
         "precipitation_probability": 24,
-        "wind_speed_kmh": 31.2,
-        "wind_direction_deg": 7
+        "wind_speed_kmh": 26.4,
+        "wind_direction_deg": 26
       }
     },
     {
@@ -1674,11 +2082,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "weather_run_factor": 1.028,
-        "temperature_c": 37.6,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 5.0,
-        "wind_direction_deg": 90
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1800,11 +2208,11 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0153,
-        "temperature_c": 26.1,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 15.1,
-        "wind_direction_deg": 232
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1842,11 +2250,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 0.9961,
-        "temperature_c": 23.3,
-        "precipitation_probability": 2,
-        "wind_speed_kmh": 1.6,
-        "wind_direction_deg": 243
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
