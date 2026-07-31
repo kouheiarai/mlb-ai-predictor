@@ -1,150 +1,710 @@
-from __future__ import annotations
-
-from datetime import datetime, timedelta, timezone
-from typing import Any
-
-import requests
-
-
-MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
-MLB_PEOPLE_URL = "https://statsapi.mlb.com/api/v1/people"
-
-
-def fetch_mlb_schedule(days: int = 3) -> list[dict[str, Any]]:
-    """MLB公式データから試合日程と予告先発を取得する。"""
-    today_utc = datetime.now(timezone.utc).date()
-    end_date = today_utc + timedelta(days=days)
-
-    params = {
-        "sportId": 1,
-        "startDate": today_utc.isoformat(),
-        "endDate": end_date.isoformat(),
-        "hydrate": "probablePitcher",
-    }
-
-    response = requests.get(MLB_SCHEDULE_URL, params=params, timeout=30)
-    response.raise_for_status()
-
-    games: list[dict[str, Any]] = []
-
-    for date_block in response.json().get("dates", []):
-        for game in date_block.get("games", []):
-            away = game.get("teams", {}).get("away", {})
-            home = game.get("teams", {}).get("home", {})
-
-            away_pitcher = away.get("probablePitcher") or {}
-            home_pitcher = home.get("probablePitcher") or {}
-
-            games.append(
+{
+  "fetched_at_utc": "2026-07-31T12:31:08.531527+00:00",
+  "events": [
+    {
+      "id": "69b3161b9e45cd7a7054fba7043f41d6",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-07-31T18:21:00Z",
+      "home_team": "Chicago Cubs",
+      "away_team": "New York Yankees",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
                 {
-                    "game_pk": game.get("gamePk"),
-                    "game_date_utc": game.get("gameDate"),
-                    "status": game.get("status", {}).get("detailedState", ""),
-                    "away_team": away.get("team", {}).get("name", ""),
-                    "home_team": home.get("team", {}).get("name", ""),
-                    "away_probable_pitcher_id": away_pitcher.get("id"),
-                    "home_probable_pitcher_id": home_pitcher.get("id"),
-                    "away_probable_pitcher": away_pitcher.get("fullName", "未発表"),
-                    "home_probable_pitcher": home_pitcher.get("fullName", "未発表"),
+                  "name": "Chicago Cubs",
+                  "price": 1.68
+                },
+                {
+                  "name": "New York Yankees",
+                  "price": 2.34
                 }
-            )
-
-    return games
-
-
-def fetch_pitcher_season_stats(
-    pitcher_id: int | None,
-    season: int,
-) -> dict[str, Any]:
-    """予告先発のシーズン成績を取得する。データなしでも安全に空値を返す。"""
-    empty = {
-        "pitcher_id": pitcher_id,
-        "era": None,
-        "whip": None,
-        "strikeout_walk_ratio": None,
-        "innings_pitched": None,
-        "games_started": None,
-    }
-
-    if not pitcher_id:
-        return empty
-
-    url = f"{MLB_PEOPLE_URL}/{pitcher_id}/stats"
-    params = {
-        "stats": "season",
-        "group": "pitching",
-        "season": season,
-    }
-
-    response = requests.get(url, params=params, timeout=30)
-    response.raise_for_status()
-    payload = response.json()
-
-    stats_blocks = payload.get("stats") or []
-    if not stats_blocks:
-        return empty
-
-    splits = stats_blocks[0].get("splits") or []
-    if not splits:
-        return empty
-
-    stat = splits[0].get("stat") or {}
-
-    def as_float(value: Any) -> float | None:
-        try:
-            return float(value)
-        except (TypeError, ValueError):
-            return None
-
-    return {
-        "pitcher_id": pitcher_id,
-        "era": as_float(stat.get("era")),
-        "whip": as_float(stat.get("whip")),
-        "strikeout_walk_ratio": as_float(stat.get("strikeoutWalkRatio")),
-        "innings_pitched": as_float(stat.get("inningsPitched")),
-        "games_started": stat.get("gamesStarted"),
-    }
-
-
-def attach_probable_pitcher_stats(
-    schedule: list[dict[str, Any]],
-    season: int,
-) -> list[dict[str, Any]]:
-    """日程データへ両先発のシーズン成績を追加する。"""
-    cache: dict[int, dict[str, Any]] = {}
-
-    def get_stats(pitcher_id: int | None) -> dict[str, Any]:
-        if not pitcher_id:
-            return fetch_pitcher_season_stats(None, season)
-
-        if pitcher_id not in cache:
-            try:
-                cache[pitcher_id] = fetch_pitcher_season_stats(
-                    pitcher_id,
-                    season,
-                )
-            except requests.RequestException:
-                cache[pitcher_id] = {
-                    "pitcher_id": pitcher_id,
-                    "era": None,
-                    "whip": None,
-                    "strikeout_walk_ratio": None,
-                    "innings_pitched": None,
-                    "games_started": None,
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Chicago Cubs",
+                  "price": 2.37,
+                  "point": -1.5
+                },
+                {
+                  "name": "New York Yankees",
+                  "price": 1.66,
+                  "point": 1.5
                 }
-
-        return cache[pitcher_id]
-
-    enriched: list[dict[str, Any]] = []
-
-    for game in schedule:
-        row = dict(game)
-        row["away_starter_stats"] = get_stats(
-            game.get("away_probable_pitcher_id")
-        )
-        row["home_starter_stats"] = get_stats(
-            game.get("home_probable_pitcher_id")
-        )
-        enriched.append(row)
-
-    return enriched
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3ee3bc4062aa650bb871ebbc705fe19e",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-07-31T22:11:00Z",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Pittsburgh Pirates",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Cincinnati Reds",
+                  "price": 2.17
+                },
+                {
+                  "name": "Pittsburgh Pirates",
+                  "price": 1.79
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Cincinnati Reds",
+                  "price": 1.68,
+                  "point": 1.5
+                },
+                {
+                  "name": "Pittsburgh Pirates",
+                  "price": 2.32,
+                  "point": -1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "df9eba7a564b0b80a2a4fbd790388ee4",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-07-31T23:06:00Z",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Philadelphia Phillies",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Baltimore Orioles",
+                  "price": 1.9
+                },
+                {
+                  "name": "Philadelphia Phillies",
+                  "price": 2.0
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Baltimore Orioles",
+                  "price": 2.81,
+                  "point": -1.5
+                },
+                {
+                  "name": "Philadelphia Phillies",
+                  "price": 1.48,
+                  "point": 1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ea0ee6a34b3c09534e603775fb85d6e6",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-07-31T23:08:00Z",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "St. Louis Cardinals",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "St. Louis Cardinals",
+                  "price": 2.47
+                },
+                {
+                  "name": "Toronto Blue Jays",
+                  "price": 1.62
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "St. Louis Cardinals",
+                  "price": 1.68,
+                  "point": 1.5
+                },
+                {
+                  "name": "Toronto Blue Jays",
+                  "price": 2.32,
+                  "point": -1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b097b0b3884c6bbe4b246fb1c9b140a8",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-07-31T23:11:00Z",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Arizona Diamondbacks",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Arizona Diamondbacks",
+                  "price": 2.19
+                },
+                {
+                  "name": "Cleveland Guardians",
+                  "price": 1.78
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Arizona Diamondbacks",
+                  "price": 1.57,
+                  "point": 1.5
+                },
+                {
+                  "name": "Cleveland Guardians",
+                  "price": 2.58,
+                  "point": -1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8b3666056a3b2912d05e6a2ef95a35f8",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-07-31T23:11:00Z",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Chicago White Sox",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Chicago White Sox",
+                  "price": 2.34
+                },
+                {
+                  "name": "Tampa Bay Rays",
+                  "price": 1.69
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Chicago White Sox",
+                  "price": 1.61,
+                  "point": 1.5
+                },
+                {
+                  "name": "Tampa Bay Rays",
+                  "price": 2.47,
+                  "point": -1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5382f2f139958bbb12e0cd166e06d3ea",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-07-31T23:11:00Z",
+      "home_team": "New York Mets",
+      "away_team": "Miami Marlins",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Miami Marlins",
+                  "price": 2.13
+                },
+                {
+                  "name": "New York Mets",
+                  "price": 1.82
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Miami Marlins",
+                  "price": 1.54,
+                  "point": 1.5
+                },
+                {
+                  "name": "New York Mets",
+                  "price": 2.66,
+                  "point": -1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ef1a6817e767ffb63f4d758bd10473bc",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-07-31T23:16:00Z",
+      "home_team": "Atlanta Braves",
+      "away_team": "Washington Nationals",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Atlanta Braves",
+                  "price": 1.88
+                },
+                {
+                  "name": "Washington Nationals",
+                  "price": 2.04
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Atlanta Braves",
+                  "price": 2.74,
+                  "point": -1.5
+                },
+                {
+                  "name": "Washington Nationals",
+                  "price": 1.51,
+                  "point": 1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "84ba20fe8604de6c1825c09817cc4123",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-08-01T00:16:00Z",
+      "home_team": "Houston Astros",
+      "away_team": "Texas Rangers",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Houston Astros",
+                  "price": 1.8
+                },
+                {
+                  "name": "Texas Rangers",
+                  "price": 2.16
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Houston Astros",
+                  "price": 2.68,
+                  "point": -1.5
+                },
+                {
+                  "name": "Texas Rangers",
+                  "price": 1.53,
+                  "point": 1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "46f25bf1fcef5be6217eb3f4f200efc7",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-08-01T00:41:00Z",
+      "home_team": "Colorado Rockies",
+      "away_team": "Kansas City Royals",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Colorado Rockies",
+                  "price": 1.95
+                },
+                {
+                  "name": "Kansas City Royals",
+                  "price": 1.97
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Colorado Rockies",
+                  "price": 2.77,
+                  "point": -1.5
+                },
+                {
+                  "name": "Kansas City Royals",
+                  "price": 1.5,
+                  "point": 1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c69df1f1b8463bd572965f137748afe8",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-08-01T01:39:00Z",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Milwaukee Brewers",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Los Angeles Angels",
+                  "price": 2.51
+                },
+                {
+                  "name": "Milwaukee Brewers",
+                  "price": 1.61
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Los Angeles Angels",
+                  "price": 1.93,
+                  "point": 1.5
+                },
+                {
+                  "name": "Milwaukee Brewers",
+                  "price": 1.98,
+                  "point": -1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "32710e16b4824b9b77a99c532f78131f",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-08-01T01:41:00Z",
+      "home_team": "Athletics",
+      "away_team": "Detroit Tigers",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Athletics",
+                  "price": 2.42
+                },
+                {
+                  "name": "Detroit Tigers",
+                  "price": 1.65
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Athletics",
+                  "price": 1.92,
+                  "point": 1.5
+                },
+                {
+                  "name": "Detroit Tigers",
+                  "price": 1.99,
+                  "point": -1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fd2cf2d3dbd1656d7b968673de5f4cad",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-08-01T01:46:00Z",
+      "home_team": "San Diego Padres",
+      "away_team": "San Francisco Giants",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:54Z",
+              "outcomes": [
+                {
+                  "name": "San Diego Padres",
+                  "price": 1.7
+                },
+                {
+                  "name": "San Francisco Giants",
+                  "price": 2.31
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:54Z",
+              "outcomes": [
+                {
+                  "name": "San Diego Padres",
+                  "price": 2.45,
+                  "point": -1.5
+                },
+                {
+                  "name": "San Francisco Giants",
+                  "price": 1.62,
+                  "point": 1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7d1b7a2bed8c47d5ecf945ba07f77d56",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-08-01T02:11:00Z",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Boston Red Sox",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Boston Red Sox",
+                  "price": 2.07
+                },
+                {
+                  "name": "Los Angeles Dodgers",
+                  "price": 1.85
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Boston Red Sox",
+                  "price": 1.51,
+                  "point": 1.5
+                },
+                {
+                  "name": "Los Angeles Dodgers",
+                  "price": 2.71,
+                  "point": -1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0b314c94b53dbed0719087c29b520ace",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-08-01T02:11:00Z",
+      "home_team": "Seattle Mariners",
+      "away_team": "Minnesota Twins",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-07-31T12:29:54Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Minnesota Twins",
+                  "price": 2.6
+                },
+                {
+                  "name": "Seattle Mariners",
+                  "price": 1.57
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-07-31T12:29:53Z",
+              "outcomes": [
+                {
+                  "name": "Minnesota Twins",
+                  "price": 1.74,
+                  "point": 1.5
+                },
+                {
+                  "name": "Seattle Mariners",
+                  "price": 2.22,
+                  "point": -1.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

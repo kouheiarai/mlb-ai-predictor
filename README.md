@@ -1,39 +1,108 @@
-# MLB AI Predictor
+from __future__ import annotations
 
-The Odds APIからPinnacleのMLBオッズを取得し、GitHub Actionsで毎日自動更新する土台です。
+from typing import Any
 
-## 現時点で自動化されるもの
+import requests
 
-- Pinnacle Moneyline（`h2h`）
-- Pinnacle Run Line（`spreads`）
-- 小数オッズ・アメリカンオッズ
-- 市場の暗黙勝率
-- CSV / JSON / Markdownの自動生成
-- 毎日07:10（日本時間）の自動実行
-- GitHubリポジトリへの結果保存
 
-## 出力
+PEOPLE_URL = "https://statsapi.mlb.com/api/v1/people/{person_id}"
 
-- `data/latest_odds.csv`
-- `data/latest_odds.json`
-- `data/report.md`
 
-## 必要なSecret
+def fetch_player_bio(person_id: int | None) -> dict[str, Any]:
+    """MLB公式の選手プロフィールから打席・投球側を取得する。"""
+    if not person_id:
+        return {
+            "person_id": person_id,
+            "bat_side": None,
+            "pitch_hand": None,
+        }
 
-`Settings > Secrets and variables > Actions > New repository secret`
+    response = requests.get(
+        PEOPLE_URL.format(person_id=person_id),
+        timeout=30,
+    )
+    response.raise_for_status()
 
-- Name: `THE_ODDS_API_KEY`
-- Secret: The Odds APIのAPIキー
+    people = response.json().get("people") or []
+    if not people:
+        return {
+            "person_id": person_id,
+            "bat_side": None,
+            "pitch_hand": None,
+        }
 
-## 初回テスト
+    person = people[0]
+    return {
+        "person_id": person_id,
+        "bat_side": (person.get("batSide") or {}).get("code"),
+        "pitch_hand": (person.get("pitchHand") or {}).get("code"),
+    }
 
-1. `Actions` を開く
-2. `MLB Odds Auto Update` を選択
-3. `Run workflow` を押す
-4. 緑のチェックになったら成功
-5. `data/report.md` を開いて結果を確認
 
-## 大事な点
+def attach_handedness(schedule: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """
+    発表済み打順と予告先発へ左右情報を追加する。
 
-この段階の `implied_probability` はPinnacleオッズから計算した市場確率です。
-独自のAI勝率、EV、Kelly、先発・打線・ブルペン評価は次の段階で追加します。
+    注意:
+    この版は左右別の実績成績そのものではなく、
+    選手プロフィールの打席・投球側を使う「プラトーン代理補正」。
+    """
+    cache: dict[int, dict[str, Any]] = {}
+    enriched_schedule: list[dict[str, Any]] = []
+
+    def get_bio(person_id: int | None) -> dict[str, Any]:
+        if not person_id:
+            return {
+                "person_id": person_id,
+                "bat_side": None,
+                "pitch_hand": None,
+            }
+
+        if person_id not in cache:
+            try:
+                cache[person_id] = fetch_player_bio(person_id)
+            except requests.RequestException:
+                cache[person_id] = {
+                    "person_id": person_id,
+                    "bat_side": None,
+                    "pitch_hand": None,
+                }
+
+        return cache[person_id]
+
+    for game in schedule:
+        row = dict(game)
+        lineups = dict(row.get("lineups") or {})
+
+        away_pitcher_bio = get_bio(
+            row.get("away_probable_pitcher_id")
+        )
+        home_pitcher_bio = get_bio(
+            row.get("home_probable_pitcher_id")
+        )
+
+        row["away_probable_pitcher_hand"] = (
+            away_pitcher_bio.get("pitch_hand")
+        )
+        row["home_probable_pitcher_hand"] = (
+            home_pitcher_bio.get("pitch_hand")
+        )
+
+        for side in ("away", "home"):
+            hitters = []
+
+            for hitter in lineups.get(f"{side}_batting_order", []):
+                bio = get_bio(hitter.get("person_id"))
+                hitters.append(
+                    {
+                        **hitter,
+                        "bat_side": bio.get("bat_side"),
+                    }
+                )
+
+            lineups[f"{side}_batting_order"] = hitters
+
+        row["lineups"] = lineups
+        enriched_schedule.append(row)
+
+    return enriched_schedule
