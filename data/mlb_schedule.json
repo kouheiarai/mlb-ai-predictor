@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-07-31T05:23:25.818711+00:00",
+  "fetched_at_utc": "2026-07-31T07:34:52.240528+00:00",
   "games": [
     {
       "game_pk": 824651,
@@ -7,8 +7,26 @@
       "status": "Scheduled",
       "away_team": "New York Yankees",
       "home_team": "Chicago Cubs",
+      "away_probable_pitcher_id": 701542,
+      "home_probable_pitcher_id": 684007,
       "away_probable_pitcher": "Will Warren",
-      "home_probable_pitcher": "Shota Imanaga"
+      "home_probable_pitcher": "Shota Imanaga",
+      "away_starter_stats": {
+        "pitcher_id": 701542,
+        "era": 4.41,
+        "whip": 1.41,
+        "strikeout_walk_ratio": 2.83,
+        "innings_pitched": 102.0,
+        "games_started": 20
+      },
+      "home_starter_stats": {
+        "pitcher_id": 684007,
+        "era": 3.72,
+        "whip": 1.1,
+        "strikeout_walk_ratio": 3.9,
+        "innings_pitched": 121.0,
+        "games_started": 21
+      }
     },
     {
       "game_pk": 824486,
@@ -16,8 +34,26 @@
       "status": "Scheduled",
       "away_team": "Pittsburgh Pirates",
       "home_team": "Cincinnati Reds",
+      "away_probable_pitcher_id": 694973,
+      "home_probable_pitcher_id": 668881,
       "away_probable_pitcher": "Paul Skenes",
-      "home_probable_pitcher": "Hunter Greene"
+      "home_probable_pitcher": "Hunter Greene",
+      "away_starter_stats": {
+        "pitcher_id": 694973,
+        "era": 3.65,
+        "whip": 1.06,
+        "strikeout_walk_ratio": 5.32,
+        "innings_pitched": 120.2,
+        "games_started": 22
+      },
+      "home_starter_stats": {
+        "pitcher_id": 668881,
+        "era": 7.06,
+        "whip": 1.34,
+        "strikeout_walk_ratio": 4.14,
+        "innings_pitched": 21.2,
+        "games_started": 4
+      }
     },
     {
       "game_pk": 824809,
@@ -25,8 +61,26 @@
       "status": "Scheduled",
       "away_team": "Philadelphia Phillies",
       "home_team": "Baltimore Orioles",
+      "away_probable_pitcher_id": null,
+      "home_probable_pitcher_id": 687064,
       "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "Brandon Young"
+      "home_probable_pitcher": "Brandon Young",
+      "away_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": 687064,
+        "era": 3.13,
+        "whip": 1.29,
+        "strikeout_walk_ratio": 2.35,
+        "innings_pitched": 97.2,
+        "games_started": 17
+      }
     },
     {
       "game_pk": 822782,
@@ -34,8 +88,26 @@
       "status": "Scheduled",
       "away_team": "St. Louis Cardinals",
       "home_team": "Toronto Blue Jays",
+      "away_probable_pitcher_id": 681517,
+      "home_probable_pitcher_id": 656302,
       "away_probable_pitcher": "Kyle Leahy",
-      "home_probable_pitcher": "Dylan Cease"
+      "home_probable_pitcher": "Dylan Cease",
+      "away_starter_stats": {
+        "pitcher_id": 681517,
+        "era": 3.55,
+        "whip": 1.34,
+        "strikeout_walk_ratio": 2.59,
+        "innings_pitched": 101.1,
+        "games_started": 20
+      },
+      "home_starter_stats": {
+        "pitcher_id": 656302,
+        "era": 2.46,
+        "whip": 1.09,
+        "strikeout_walk_ratio": 3.48,
+        "innings_pitched": 113.1,
+        "games_started": 19
+      }
     },
     {
       "game_pk": 824407,
@@ -43,8 +115,26 @@
       "status": "Scheduled",
       "away_team": "Arizona Diamondbacks",
       "home_team": "Cleveland Guardians",
+      "away_probable_pitcher_id": 683352,
+      "home_probable_pitcher_id": 676440,
       "away_probable_pitcher": "Mitch Bratt",
-      "home_probable_pitcher": "Tanner Bibee"
+      "home_probable_pitcher": "Tanner Bibee",
+      "away_starter_stats": {
+        "pitcher_id": 683352,
+        "era": 6.32,
+        "whip": 1.98,
+        "strikeout_walk_ratio": 0.91,
+        "innings_pitched": 15.2,
+        "games_started": 4
+      },
+      "home_starter_stats": {
+        "pitcher_id": 676440,
+        "era": 3.89,
+        "whip": 1.18,
+        "strikeout_walk_ratio": 2.62,
+        "innings_pitched": 125.0,
+        "games_started": 22
+      }
     },
     {
       "game_pk": 822945,
@@ -52,8 +142,26 @@
       "status": "Scheduled",
       "away_team": "Chicago White Sox",
       "home_team": "Tampa Bay Rays",
+      "away_probable_pitcher_id": 607200,
+      "home_probable_pitcher_id": 607259,
       "away_probable_pitcher": "Erick Fedde",
-      "home_probable_pitcher": "Nick Martinez"
+      "home_probable_pitcher": "Nick Martinez",
+      "away_starter_stats": {
+        "pitcher_id": 607200,
+        "era": 4.25,
+        "whip": 1.4,
+        "strikeout_walk_ratio": 1.89,
+        "innings_pitched": 97.1,
+        "games_started": 11
+      },
+      "home_starter_stats": {
+        "pitcher_id": 607259,
+        "era": 2.45,
+        "whip": 1.1,
+        "strikeout_walk_ratio": 3.35,
+        "innings_pitched": 117.1,
+        "games_started": 20
+      }
     },
     {
       "game_pk": 823593,
@@ -61,8 +169,26 @@
       "status": "Scheduled",
       "away_team": "Miami Marlins",
       "home_team": "New York Mets",
+      "away_probable_pitcher_id": 676083,
+      "home_probable_pitcher_id": 642547,
       "away_probable_pitcher": "Janson Junk",
-      "home_probable_pitcher": "Freddy Peralta"
+      "home_probable_pitcher": "Freddy Peralta",
+      "away_starter_stats": {
+        "pitcher_id": 676083,
+        "era": 4.89,
+        "whip": 1.36,
+        "strikeout_walk_ratio": 2.85,
+        "innings_pitched": 73.2,
+        "games_started": 14
+      },
+      "home_starter_stats": {
+        "pitcher_id": 642547,
+        "era": 4.99,
+        "whip": 1.48,
+        "strikeout_walk_ratio": 2.35,
+        "innings_pitched": 113.2,
+        "games_started": 22
+      }
     },
     {
       "game_pk": 824892,
@@ -70,8 +196,26 @@
       "status": "Scheduled",
       "away_team": "Washington Nationals",
       "home_team": "Atlanta Braves",
+      "away_probable_pitcher_id": 656492,
+      "home_probable_pitcher_id": 693821,
       "away_probable_pitcher": "Foster Griffin",
-      "home_probable_pitcher": "Bryce Elder"
+      "home_probable_pitcher": "Bryce Elder",
+      "away_starter_stats": {
+        "pitcher_id": 656492,
+        "era": 2.76,
+        "whip": 1.03,
+        "strikeout_walk_ratio": 4.04,
+        "innings_pitched": 124.0,
+        "games_started": 21
+      },
+      "home_starter_stats": {
+        "pitcher_id": 693821,
+        "era": 3.96,
+        "whip": 1.25,
+        "strikeout_walk_ratio": 2.65,
+        "innings_pitched": 113.2,
+        "games_started": 20
+      }
     },
     {
       "game_pk": 824164,
@@ -79,8 +223,26 @@
       "status": "Scheduled",
       "away_team": "Texas Rangers",
       "home_team": "Houston Astros",
+      "away_probable_pitcher_id": 543135,
+      "home_probable_pitcher_id": 686613,
       "away_probable_pitcher": "Nathan Eovaldi",
-      "home_probable_pitcher": "Hunter Brown"
+      "home_probable_pitcher": "Hunter Brown",
+      "away_starter_stats": {
+        "pitcher_id": 543135,
+        "era": 4.05,
+        "whip": 1.17,
+        "strikeout_walk_ratio": 4.48,
+        "innings_pitched": 122.1,
+        "games_started": 20
+      },
+      "home_starter_stats": {
+        "pitcher_id": 686613,
+        "era": 3.45,
+        "whip": 1.28,
+        "strikeout_walk_ratio": 1.79,
+        "innings_pitched": 47.0,
+        "games_started": 9
+      }
     },
     {
       "game_pk": 824325,
@@ -88,8 +250,26 @@
       "status": "Scheduled",
       "away_team": "Kansas City Royals",
       "home_team": "Colorado Rockies",
+      "away_probable_pitcher_id": 608379,
+      "home_probable_pitcher_id": 608372,
       "away_probable_pitcher": "Michael Wacha",
-      "home_probable_pitcher": "Tomoyuki Sugano"
+      "home_probable_pitcher": "Tomoyuki Sugano",
+      "away_starter_stats": {
+        "pitcher_id": 608379,
+        "era": 3.6,
+        "whip": 1.17,
+        "strikeout_walk_ratio": 2.74,
+        "innings_pitched": 132.1,
+        "games_started": 21
+      },
+      "home_starter_stats": {
+        "pitcher_id": 608372,
+        "era": 4.69,
+        "whip": 1.29,
+        "strikeout_walk_ratio": 2.33,
+        "innings_pitched": 96.0,
+        "games_started": 18
+      }
     },
     {
       "game_pk": 823999,
@@ -97,8 +277,26 @@
       "status": "Scheduled",
       "away_team": "Milwaukee Brewers",
       "home_team": "Los Angeles Angels",
+      "away_probable_pitcher_id": 675660,
+      "home_probable_pitcher_id": 696270,
       "away_probable_pitcher": "Shane Drohan",
-      "home_probable_pitcher": "Ryan Johnson"
+      "home_probable_pitcher": "Ryan Johnson",
+      "away_starter_stats": {
+        "pitcher_id": 675660,
+        "era": 3.51,
+        "whip": 1.2,
+        "strikeout_walk_ratio": 3.57,
+        "innings_pitched": 82.0,
+        "games_started": 11
+      },
+      "home_starter_stats": {
+        "pitcher_id": 696270,
+        "era": 7.34,
+        "whip": 1.54,
+        "strikeout_walk_ratio": 2.0,
+        "innings_pitched": 41.2,
+        "games_started": 8
+      }
     },
     {
       "game_pk": 824975,
@@ -106,8 +304,26 @@
       "status": "Scheduled",
       "away_team": "Detroit Tigers",
       "home_team": "Athletics",
+      "away_probable_pitcher_id": 663554,
+      "home_probable_pitcher_id": 605488,
       "away_probable_pitcher": "Casey Mize",
-      "home_probable_pitcher": "Jeffrey Springs"
+      "home_probable_pitcher": "Jeffrey Springs",
+      "away_starter_stats": {
+        "pitcher_id": 663554,
+        "era": 2.7,
+        "whip": 0.99,
+        "strikeout_walk_ratio": 4.47,
+        "innings_pitched": 86.2,
+        "games_started": 16
+      },
+      "home_starter_stats": {
+        "pitcher_id": 605488,
+        "era": 6.23,
+        "whip": 1.45,
+        "strikeout_walk_ratio": 2.21,
+        "innings_pitched": 104.0,
+        "games_started": 21
+      }
     },
     {
       "game_pk": 823272,
@@ -115,8 +331,26 @@
       "status": "Scheduled",
       "away_team": "San Francisco Giants",
       "home_team": "San Diego Padres",
-      "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表"
+      "away_probable_pitcher_id": 687931,
+      "home_probable_pitcher_id": 699134,
+      "away_probable_pitcher": "Carson Whisenhunt",
+      "home_probable_pitcher": "Bradgley Rodriguez",
+      "away_starter_stats": {
+        "pitcher_id": 687931,
+        "era": 4.6,
+        "whip": 1.4,
+        "strikeout_walk_ratio": 1.63,
+        "innings_pitched": 15.2,
+        "games_started": 3
+      },
+      "home_starter_stats": {
+        "pitcher_id": 699134,
+        "era": 2.33,
+        "whip": 1.17,
+        "strikeout_walk_ratio": 2.94,
+        "innings_pitched": 46.1,
+        "games_started": 3
+      }
     },
     {
       "game_pk": 823922,
@@ -124,8 +358,26 @@
       "status": "Scheduled",
       "away_team": "Boston Red Sox",
       "home_team": "Los Angeles Dodgers",
+      "away_probable_pitcher_id": 624133,
+      "home_probable_pitcher_id": 683618,
       "away_probable_pitcher": "Ranger Suarez",
-      "home_probable_pitcher": "未発表"
+      "home_probable_pitcher": "Edgardo Henriquez",
+      "away_starter_stats": {
+        "pitcher_id": 624133,
+        "era": 3.02,
+        "whip": 1.15,
+        "strikeout_walk_ratio": 3.96,
+        "innings_pitched": 95.1,
+        "games_started": 18
+      },
+      "home_starter_stats": {
+        "pitcher_id": 683618,
+        "era": 2.79,
+        "whip": 1.05,
+        "strikeout_walk_ratio": 2.21,
+        "innings_pitched": 42.0,
+        "games_started": 0
+      }
     },
     {
       "game_pk": 823111,
@@ -133,8 +385,26 @@
       "status": "Scheduled",
       "away_team": "Minnesota Twins",
       "home_team": "Seattle Mariners",
+      "away_probable_pitcher_id": 805673,
+      "home_probable_pitcher_id": 682243,
       "away_probable_pitcher": "Zebby Matthews",
-      "home_probable_pitcher": "Bryce Miller"
+      "home_probable_pitcher": "Bryce Miller",
+      "away_starter_stats": {
+        "pitcher_id": 805673,
+        "era": 5.21,
+        "whip": 1.32,
+        "strikeout_walk_ratio": 2.46,
+        "innings_pitched": 76.0,
+        "games_started": 13
+      },
+      "home_starter_stats": {
+        "pitcher_id": 682243,
+        "era": 2.75,
+        "whip": 0.92,
+        "strikeout_walk_ratio": 6.45,
+        "innings_pitched": 68.2,
+        "games_started": 11
+      }
     },
     {
       "game_pk": 822781,
@@ -142,8 +412,26 @@
       "status": "Scheduled",
       "away_team": "St. Louis Cardinals",
       "home_team": "Toronto Blue Jays",
+      "away_probable_pitcher_id": 687273,
+      "home_probable_pitcher_id": 592332,
       "away_probable_pitcher": "Quinn Mathews",
-      "home_probable_pitcher": "Kevin Gausman"
+      "home_probable_pitcher": "Kevin Gausman",
+      "away_starter_stats": {
+        "pitcher_id": 687273,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": 592332,
+        "era": 4.51,
+        "whip": 1.27,
+        "strikeout_walk_ratio": 3.51,
+        "innings_pitched": 121.2,
+        "games_started": 22
+      }
     },
     {
       "game_pk": 823109,
@@ -151,8 +439,26 @@
       "status": "Scheduled",
       "away_team": "Minnesota Twins",
       "home_team": "Seattle Mariners",
+      "away_probable_pitcher_id": 687570,
+      "home_probable_pitcher_id": 669302,
       "away_probable_pitcher": "Connor Prielipp",
-      "home_probable_pitcher": "Logan Gilbert"
+      "home_probable_pitcher": "Logan Gilbert",
+      "away_starter_stats": {
+        "pitcher_id": 687570,
+        "era": 4.73,
+        "whip": 1.3,
+        "strikeout_walk_ratio": 2.92,
+        "innings_pitched": 72.1,
+        "games_started": 14
+      },
+      "home_starter_stats": {
+        "pitcher_id": 669302,
+        "era": 3.44,
+        "whip": 0.99,
+        "strikeout_walk_ratio": 4.93,
+        "innings_pitched": 125.2,
+        "games_started": 21
+      }
     },
     {
       "game_pk": 822944,
@@ -160,8 +466,26 @@
       "status": "Scheduled",
       "away_team": "Chicago White Sox",
       "home_team": "Tampa Bay Rays",
+      "away_probable_pitcher_id": 702273,
+      "home_probable_pitcher_id": 656876,
       "away_probable_pitcher": "Noah Schultz",
-      "home_probable_pitcher": "Drew Rasmussen"
+      "home_probable_pitcher": "Drew Rasmussen",
+      "away_starter_stats": {
+        "pitcher_id": 702273,
+        "era": 6.15,
+        "whip": 1.45,
+        "strikeout_walk_ratio": 1.74,
+        "innings_pitched": 60.0,
+        "games_started": 13
+      },
+      "home_starter_stats": {
+        "pitcher_id": 656876,
+        "era": 3.07,
+        "whip": 0.93,
+        "strikeout_walk_ratio": 5.89,
+        "innings_pitched": 111.1,
+        "games_started": 20
+      }
     },
     {
       "game_pk": 823594,
@@ -169,8 +493,26 @@
       "status": "Scheduled",
       "away_team": "Miami Marlins",
       "home_team": "New York Mets",
+      "away_probable_pitcher_id": 663969,
+      "home_probable_pitcher_id": 804267,
       "away_probable_pitcher": "Tyler Phillips",
-      "home_probable_pitcher": "Zac Thornton"
+      "home_probable_pitcher": "Zac Thornton",
+      "away_starter_stats": {
+        "pitcher_id": 663969,
+        "era": 3.52,
+        "whip": 1.36,
+        "strikeout_walk_ratio": 1.66,
+        "innings_pitched": 84.1,
+        "games_started": 11
+      },
+      "home_starter_stats": {
+        "pitcher_id": 804267,
+        "era": 2.43,
+        "whip": 0.91,
+        "strikeout_walk_ratio": 3.14,
+        "innings_pitched": 29.2,
+        "games_started": 5
+      }
     },
     {
       "game_pk": 824485,
@@ -178,8 +520,26 @@
       "status": "Scheduled",
       "away_team": "Pittsburgh Pirates",
       "home_team": "Cincinnati Reds",
+      "away_probable_pitcher_id": 677952,
+      "home_probable_pitcher_id": 671096,
       "away_probable_pitcher": "Braxton Ashcraft",
-      "home_probable_pitcher": "Andrew Abbott"
+      "home_probable_pitcher": "Andrew Abbott",
+      "away_starter_stats": {
+        "pitcher_id": 677952,
+        "era": 4.05,
+        "whip": 1.19,
+        "strikeout_walk_ratio": 4.5,
+        "innings_pitched": 122.1,
+        "games_started": 21
+      },
+      "home_starter_stats": {
+        "pitcher_id": 671096,
+        "era": 3.85,
+        "whip": 1.38,
+        "strikeout_walk_ratio": 1.74,
+        "innings_pitched": 117.0,
+        "games_started": 22
+      }
     },
     {
       "game_pk": 824808,
@@ -187,8 +547,26 @@
       "status": "Scheduled",
       "away_team": "Philadelphia Phillies",
       "home_team": "Baltimore Orioles",
+      "away_probable_pitcher_id": 650911,
+      "home_probable_pitcher_id": 669358,
       "away_probable_pitcher": "Cristopher Sánchez",
-      "home_probable_pitcher": "Shane Baz"
+      "home_probable_pitcher": "Shane Baz",
+      "away_starter_stats": {
+        "pitcher_id": 650911,
+        "era": 2.73,
+        "whip": 1.2,
+        "strikeout_walk_ratio": 5.61,
+        "innings_pitched": 138.2,
+        "games_started": 22
+      },
+      "home_starter_stats": {
+        "pitcher_id": 669358,
+        "era": 3.98,
+        "whip": 1.39,
+        "strikeout_walk_ratio": 2.43,
+        "innings_pitched": 122.0,
+        "games_started": 21
+      }
     },
     {
       "game_pk": 824162,
@@ -196,8 +574,26 @@
       "status": "Scheduled",
       "away_team": "Texas Rangers",
       "home_team": "Houston Astros",
+      "away_probable_pitcher_id": 594798,
+      "home_probable_pitcher_id": 669854,
       "away_probable_pitcher": "Jacob deGrom",
-      "home_probable_pitcher": "Ronel Blanco"
+      "home_probable_pitcher": "Ronel Blanco",
+      "away_starter_stats": {
+        "pitcher_id": 594798,
+        "era": 3.67,
+        "whip": 1.07,
+        "strikeout_walk_ratio": 5.5,
+        "innings_pitched": 110.1,
+        "games_started": 20
+      },
+      "home_starter_stats": {
+        "pitcher_id": 669854,
+        "era": 8.1,
+        "whip": 1.2,
+        "strikeout_walk_ratio": 2.0,
+        "innings_pitched": 10.0,
+        "games_started": 2
+      }
     },
     {
       "game_pk": 824405,
@@ -205,8 +601,26 @@
       "status": "Scheduled",
       "away_team": "Arizona Diamondbacks",
       "home_team": "Cleveland Guardians",
+      "away_probable_pitcher_id": 684442,
+      "home_probable_pitcher_id": 800048,
       "away_probable_pitcher": "Kohl Drake",
-      "home_probable_pitcher": "Parker Messick"
+      "home_probable_pitcher": "Parker Messick",
+      "away_starter_stats": {
+        "pitcher_id": 684442,
+        "era": 5.0,
+        "whip": 1.44,
+        "strikeout_walk_ratio": 1.5,
+        "innings_pitched": 9.0,
+        "games_started": 2
+      },
+      "home_starter_stats": {
+        "pitcher_id": 800048,
+        "era": 2.59,
+        "whip": 1.04,
+        "strikeout_walk_ratio": 3.39,
+        "innings_pitched": 125.1,
+        "games_started": 21
+      }
     },
     {
       "game_pk": 824890,
@@ -214,8 +628,26 @@
       "status": "Scheduled",
       "away_team": "Washington Nationals",
       "home_team": "Atlanta Braves",
+      "away_probable_pitcher_id": 571945,
+      "home_probable_pitcher_id": 625643,
       "away_probable_pitcher": "Miles Mikolas",
-      "home_probable_pitcher": "Reynaldo López"
+      "home_probable_pitcher": "Reynaldo López",
+      "away_starter_stats": {
+        "pitcher_id": 571945,
+        "era": 5.65,
+        "whip": 1.33,
+        "strikeout_walk_ratio": 2.48,
+        "innings_pitched": 102.0,
+        "games_started": 9
+      },
+      "home_starter_stats": {
+        "pitcher_id": 625643,
+        "era": 3.64,
+        "whip": 1.34,
+        "strikeout_walk_ratio": 2.28,
+        "innings_pitched": 71.2,
+        "games_started": 11
+      }
     },
     {
       "game_pk": 824649,
@@ -223,8 +655,26 @@
       "status": "Scheduled",
       "away_team": "New York Yankees",
       "home_team": "Chicago Cubs",
+      "away_probable_pitcher_id": 608331,
+      "home_probable_pitcher_id": 656849,
       "away_probable_pitcher": "Max Fried",
-      "home_probable_pitcher": "David Peterson"
+      "home_probable_pitcher": "David Peterson",
+      "away_starter_stats": {
+        "pitcher_id": 608331,
+        "era": 3.23,
+        "whip": 1.02,
+        "strikeout_walk_ratio": 2.77,
+        "innings_pitched": 69.2,
+        "games_started": 12
+      },
+      "home_starter_stats": {
+        "pitcher_id": 656849,
+        "era": 5.8,
+        "whip": 1.52,
+        "strikeout_walk_ratio": 1.93,
+        "innings_pitched": 94.2,
+        "games_started": 13
+      }
     },
     {
       "game_pk": 824326,
@@ -232,8 +682,26 @@
       "status": "Scheduled",
       "away_team": "Kansas City Royals",
       "home_team": "Colorado Rockies",
+      "away_probable_pitcher_id": 679883,
+      "home_probable_pitcher_id": 663372,
       "away_probable_pitcher": "Luinder Avila",
-      "home_probable_pitcher": "Ryan Feltner"
+      "home_probable_pitcher": "Ryan Feltner",
+      "away_starter_stats": {
+        "pitcher_id": 679883,
+        "era": 4.95,
+        "whip": 1.57,
+        "strikeout_walk_ratio": 1.51,
+        "innings_pitched": 67.1,
+        "games_started": 11
+      },
+      "home_starter_stats": {
+        "pitcher_id": 663372,
+        "era": 5.73,
+        "whip": 1.46,
+        "strikeout_walk_ratio": 1.86,
+        "innings_pitched": 70.2,
+        "games_started": 15
+      }
     },
     {
       "game_pk": 823269,
@@ -241,8 +709,26 @@
       "status": "Scheduled",
       "away_team": "San Francisco Giants",
       "home_team": "San Diego Padres",
+      "away_probable_pitcher_id": null,
+      "home_probable_pitcher_id": 621111,
       "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "Walker Buehler"
+      "home_probable_pitcher": "Walker Buehler",
+      "away_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": 621111,
+        "era": 5.13,
+        "whip": 1.41,
+        "strikeout_walk_ratio": 2.17,
+        "innings_pitched": 100.0,
+        "games_started": 21
+      }
     },
     {
       "game_pk": 823920,
@@ -250,8 +736,26 @@
       "status": "Scheduled",
       "away_team": "Boston Red Sox",
       "home_team": "Los Angeles Dodgers",
+      "away_probable_pitcher_id": 801139,
+      "home_probable_pitcher_id": 808967,
       "away_probable_pitcher": "Payton Tolle",
-      "home_probable_pitcher": "Yoshinobu Yamamoto"
+      "home_probable_pitcher": "Yoshinobu Yamamoto",
+      "away_starter_stats": {
+        "pitcher_id": 801139,
+        "era": 3.32,
+        "whip": 1.11,
+        "strikeout_walk_ratio": 3.81,
+        "innings_pitched": 95.0,
+        "games_started": 17
+      },
+      "home_starter_stats": {
+        "pitcher_id": 808967,
+        "era": 2.72,
+        "whip": 0.9,
+        "strikeout_walk_ratio": 4.21,
+        "innings_pitched": 125.2,
+        "games_started": 19
+      }
     },
     {
       "game_pk": 824000,
@@ -259,8 +763,26 @@
       "status": "Scheduled",
       "away_team": "Milwaukee Brewers",
       "home_team": "Los Angeles Angels",
+      "away_probable_pitcher_id": 688107,
+      "home_probable_pitcher_id": 667755,
       "away_probable_pitcher": "Robert Gasser",
-      "home_probable_pitcher": "José Soriano"
+      "home_probable_pitcher": "José Soriano",
+      "away_starter_stats": {
+        "pitcher_id": 688107,
+        "era": 4.71,
+        "whip": 1.17,
+        "strikeout_walk_ratio": 3.71,
+        "innings_pitched": 57.1,
+        "games_started": 11
+      },
+      "home_starter_stats": {
+        "pitcher_id": 667755,
+        "era": 3.29,
+        "whip": 1.25,
+        "strikeout_walk_ratio": 2.23,
+        "innings_pitched": 123.0,
+        "games_started": 22
+      }
     },
     {
       "game_pk": 824972,
@@ -268,8 +790,26 @@
       "status": "Scheduled",
       "away_team": "Detroit Tigers",
       "home_team": "Athletics",
+      "away_probable_pitcher_id": 664285,
+      "home_probable_pitcher_id": 678022,
       "away_probable_pitcher": "Framber Valdez",
-      "home_probable_pitcher": "Jack Perkins"
+      "home_probable_pitcher": "Jack Perkins",
+      "away_starter_stats": {
+        "pitcher_id": 664285,
+        "era": 4.53,
+        "whip": 1.38,
+        "strikeout_walk_ratio": 2.24,
+        "innings_pitched": 113.1,
+        "games_started": 21
+      },
+      "home_starter_stats": {
+        "pitcher_id": 678022,
+        "era": 6.45,
+        "whip": 1.36,
+        "strikeout_walk_ratio": 2.96,
+        "innings_pitched": 68.1,
+        "games_started": 8
+      }
     },
     {
       "game_pk": 824807,
@@ -277,8 +817,26 @@
       "status": "Scheduled",
       "away_team": "Philadelphia Phillies",
       "home_team": "Baltimore Orioles",
+      "away_probable_pitcher_id": 554430,
+      "home_probable_pitcher_id": 680694,
       "away_probable_pitcher": "Zack Wheeler",
-      "home_probable_pitcher": "Kyle Bradish"
+      "home_probable_pitcher": "Kyle Bradish",
+      "away_starter_stats": {
+        "pitcher_id": 554430,
+        "era": 2.53,
+        "whip": 0.92,
+        "strikeout_walk_ratio": 5.35,
+        "innings_pitched": 103.0,
+        "games_started": 17
+      },
+      "home_starter_stats": {
+        "pitcher_id": 680694,
+        "era": 3.74,
+        "whip": 1.36,
+        "strikeout_walk_ratio": 2.19,
+        "innings_pitched": 118.0,
+        "games_started": 21
+      }
     },
     {
       "game_pk": 824891,
@@ -286,8 +844,26 @@
       "status": "Scheduled",
       "away_team": "Washington Nationals",
       "home_team": "Atlanta Braves",
+      "away_probable_pitcher_id": 676917,
+      "home_probable_pitcher_id": 527048,
       "away_probable_pitcher": "Cade Cavalli",
-      "home_probable_pitcher": "Martín Pérez"
+      "home_probable_pitcher": "Martín Pérez",
+      "away_starter_stats": {
+        "pitcher_id": 676917,
+        "era": 3.55,
+        "whip": 1.29,
+        "strikeout_walk_ratio": 3.61,
+        "innings_pitched": 116.2,
+        "games_started": 23
+      },
+      "home_starter_stats": {
+        "pitcher_id": 527048,
+        "era": 3.49,
+        "whip": 1.23,
+        "strikeout_walk_ratio": 1.86,
+        "innings_pitched": 90.1,
+        "games_started": 16
+      }
     },
     {
       "game_pk": 822783,
@@ -295,8 +871,26 @@
       "status": "Scheduled",
       "away_team": "St. Louis Cardinals",
       "home_team": "Toronto Blue Jays",
+      "away_probable_pitcher_id": 700241,
+      "home_probable_pitcher_id": 453286,
       "away_probable_pitcher": "Michael McGreevy",
-      "home_probable_pitcher": "Max Scherzer"
+      "home_probable_pitcher": "Max Scherzer",
+      "away_starter_stats": {
+        "pitcher_id": 700241,
+        "era": 3.57,
+        "whip": 1.2,
+        "strikeout_walk_ratio": 2.62,
+        "innings_pitched": 116.0,
+        "games_started": 21
+      },
+      "home_starter_stats": {
+        "pitcher_id": 453286,
+        "era": 9.49,
+        "whip": 1.82,
+        "strikeout_walk_ratio": 1.29,
+        "innings_pitched": 24.2,
+        "games_started": 7
+      }
     },
     {
       "game_pk": 824404,
@@ -304,8 +898,26 @@
       "status": "Scheduled",
       "away_team": "Arizona Diamondbacks",
       "home_team": "Cleveland Guardians",
+      "away_probable_pitcher_id": 518876,
+      "home_probable_pitcher_id": 668909,
       "away_probable_pitcher": "Merrill Kelly",
-      "home_probable_pitcher": "Gavin Williams"
+      "home_probable_pitcher": "Gavin Williams",
+      "away_starter_stats": {
+        "pitcher_id": 518876,
+        "era": 4.86,
+        "whip": 1.45,
+        "strikeout_walk_ratio": 1.69,
+        "innings_pitched": 109.1,
+        "games_started": 19
+      },
+      "home_starter_stats": {
+        "pitcher_id": 668909,
+        "era": 3.71,
+        "whip": 1.07,
+        "strikeout_walk_ratio": 4.42,
+        "innings_pitched": 133.1,
+        "games_started": 22
+      }
     },
     {
       "game_pk": 824483,
@@ -313,8 +925,26 @@
       "status": "Scheduled",
       "away_team": "Pittsburgh Pirates",
       "home_team": "Cincinnati Reds",
+      "away_probable_pitcher_id": 656605,
+      "home_probable_pitcher_id": 695505,
       "away_probable_pitcher": "Mitch Keller",
-      "home_probable_pitcher": "Chase Burns"
+      "home_probable_pitcher": "Chase Burns",
+      "away_starter_stats": {
+        "pitcher_id": 656605,
+        "era": 4.83,
+        "whip": 1.31,
+        "strikeout_walk_ratio": 2.29,
+        "innings_pitched": 113.2,
+        "games_started": 21
+      },
+      "home_starter_stats": {
+        "pitcher_id": 695505,
+        "era": 2.4,
+        "whip": 1.12,
+        "strikeout_walk_ratio": 3.12,
+        "innings_pitched": 112.2,
+        "games_started": 20
+      }
     },
     {
       "game_pk": 822943,
@@ -322,8 +952,26 @@
       "status": "Scheduled",
       "away_team": "Chicago White Sox",
       "home_team": "Tampa Bay Rays",
+      "away_probable_pitcher_id": 641743,
+      "home_probable_pitcher_id": 643377,
       "away_probable_pitcher": "Anthony Kay",
-      "home_probable_pitcher": "Griffin Jax"
+      "home_probable_pitcher": "Griffin Jax",
+      "away_starter_stats": {
+        "pitcher_id": 641743,
+        "era": 4.25,
+        "whip": 1.36,
+        "strikeout_walk_ratio": 2.12,
+        "innings_pitched": 103.2,
+        "games_started": 20
+      },
+      "home_starter_stats": {
+        "pitcher_id": 643377,
+        "era": 3.74,
+        "whip": 1.23,
+        "strikeout_walk_ratio": 3.07,
+        "innings_pitched": 86.2,
+        "games_started": 17
+      }
     },
     {
       "game_pk": 823592,
@@ -331,8 +979,26 @@
       "status": "Scheduled",
       "away_team": "Miami Marlins",
       "home_team": "New York Mets",
+      "away_probable_pitcher_id": 645261,
+      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "Sandy Alcantara",
-      "home_probable_pitcher": "未発表"
+      "home_probable_pitcher": "未発表",
+      "away_starter_stats": {
+        "pitcher_id": 645261,
+        "era": 3.82,
+        "whip": 1.21,
+        "strikeout_walk_ratio": 2.95,
+        "innings_pitched": 150.2,
+        "games_started": 23
+      },
+      "home_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      }
     },
     {
       "game_pk": 824163,
@@ -340,8 +1006,26 @@
       "status": "Scheduled",
       "away_team": "Texas Rangers",
       "home_team": "Houston Astros",
+      "away_probable_pitcher_id": 677958,
+      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "Kumar Rocker",
-      "home_probable_pitcher": "未発表"
+      "home_probable_pitcher": "未発表",
+      "away_starter_stats": {
+        "pitcher_id": 677958,
+        "era": 4.03,
+        "whip": 1.29,
+        "strikeout_walk_ratio": 2.45,
+        "innings_pitched": 102.2,
+        "games_started": 18
+      },
+      "home_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      }
     },
     {
       "game_pk": 824648,
@@ -349,8 +1033,26 @@
       "status": "Scheduled",
       "away_team": "New York Yankees",
       "home_team": "Chicago Cubs",
+      "away_probable_pitcher_id": 543037,
+      "home_probable_pitcher_id": 607067,
       "away_probable_pitcher": "Gerrit Cole",
-      "home_probable_pitcher": "Colin Rea"
+      "home_probable_pitcher": "Colin Rea",
+      "away_starter_stats": {
+        "pitcher_id": 543037,
+        "era": 3.57,
+        "whip": 1.09,
+        "strikeout_walk_ratio": 5.21,
+        "innings_pitched": 68.0,
+        "games_started": 12
+      },
+      "home_starter_stats": {
+        "pitcher_id": 607067,
+        "era": 4.67,
+        "whip": 1.4,
+        "strikeout_walk_ratio": 2.08,
+        "innings_pitched": 111.2,
+        "games_started": 18
+      }
     },
     {
       "game_pk": 824323,
@@ -358,8 +1060,26 @@
       "status": "Scheduled",
       "away_team": "Kansas City Royals",
       "home_team": "Colorado Rockies",
+      "away_probable_pitcher_id": 607625,
+      "home_probable_pitcher_id": 607536,
       "away_probable_pitcher": "Seth Lugo",
-      "home_probable_pitcher": "Kyle Freeland"
+      "home_probable_pitcher": "Kyle Freeland",
+      "away_starter_stats": {
+        "pitcher_id": 607625,
+        "era": 4.22,
+        "whip": 1.37,
+        "strikeout_walk_ratio": 2.4,
+        "innings_pitched": 123.2,
+        "games_started": 22
+      },
+      "home_starter_stats": {
+        "pitcher_id": 607536,
+        "era": 7.34,
+        "whip": 1.55,
+        "strikeout_walk_ratio": 4.05,
+        "innings_pitched": 99.1,
+        "games_started": 19
+      }
     },
     {
       "game_pk": 823996,
@@ -367,8 +1087,26 @@
       "status": "Scheduled",
       "away_team": "Milwaukee Brewers",
       "home_team": "Los Angeles Angels",
+      "away_probable_pitcher_id": 694819,
+      "home_probable_pitcher_id": 700712,
       "away_probable_pitcher": "Jacob Misiorowski",
-      "home_probable_pitcher": "Walbert Ureña"
+      "home_probable_pitcher": "Walbert Ureña",
+      "away_starter_stats": {
+        "pitcher_id": 694819,
+        "era": 1.58,
+        "whip": 0.75,
+        "strikeout_walk_ratio": 6.61,
+        "innings_pitched": 120.0,
+        "games_started": 20
+      },
+      "home_starter_stats": {
+        "pitcher_id": 700712,
+        "era": 2.7,
+        "whip": 1.26,
+        "strikeout_walk_ratio": 1.8,
+        "innings_pitched": 93.1,
+        "games_started": 17
+      }
     },
     {
       "game_pk": 824971,
@@ -376,8 +1114,26 @@
       "status": "Scheduled",
       "away_team": "Detroit Tigers",
       "home_team": "Athletics",
+      "away_probable_pitcher_id": 672456,
+      "home_probable_pitcher_id": 695611,
       "away_probable_pitcher": "Keider Montero",
-      "home_probable_pitcher": "Gage Jump"
+      "home_probable_pitcher": "Gage Jump",
+      "away_starter_stats": {
+        "pitcher_id": 672456,
+        "era": 3.34,
+        "whip": 1.02,
+        "strikeout_walk_ratio": 3.43,
+        "innings_pitched": 110.1,
+        "games_started": 17
+      },
+      "home_starter_stats": {
+        "pitcher_id": 695611,
+        "era": 4.0,
+        "whip": 1.4,
+        "strikeout_walk_ratio": 2.72,
+        "innings_pitched": 63.0,
+        "games_started": 12
+      }
     },
     {
       "game_pk": 823270,
@@ -385,8 +1141,26 @@
       "status": "Scheduled",
       "away_team": "San Francisco Giants",
       "home_team": "San Diego Padres",
+      "away_probable_pitcher_id": null,
+      "home_probable_pitcher_id": 650633,
       "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "Michael King"
+      "home_probable_pitcher": "Michael King",
+      "away_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": 650633,
+        "era": 3.38,
+        "whip": 1.17,
+        "strikeout_walk_ratio": 2.18,
+        "innings_pitched": 125.1,
+        "games_started": 22
+      }
     },
     {
       "game_pk": 823107,
@@ -394,8 +1168,26 @@
       "status": "Scheduled",
       "away_team": "Minnesota Twins",
       "home_team": "Seattle Mariners",
+      "away_probable_pitcher_id": 671737,
+      "home_probable_pitcher_id": 669923,
       "away_probable_pitcher": "Taj Bradley",
-      "home_probable_pitcher": "George Kirby"
+      "home_probable_pitcher": "George Kirby",
+      "away_starter_stats": {
+        "pitcher_id": 671737,
+        "era": 3.65,
+        "whip": 1.21,
+        "strikeout_walk_ratio": 2.84,
+        "innings_pitched": 120.2,
+        "games_started": 21
+      },
+      "home_starter_stats": {
+        "pitcher_id": 669923,
+        "era": 3.98,
+        "whip": 1.3,
+        "strikeout_walk_ratio": 4.28,
+        "innings_pitched": 120.0,
+        "games_started": 20
+      }
     },
     {
       "game_pk": 823919,
@@ -403,8 +1195,26 @@
       "status": "Scheduled",
       "away_team": "Boston Red Sox",
       "home_team": "Los Angeles Dodgers",
+      "away_probable_pitcher_id": 687562,
+      "home_probable_pitcher_id": 686218,
       "away_probable_pitcher": "Jake Bennett",
-      "home_probable_pitcher": "Emmet Sheehan"
+      "home_probable_pitcher": "Emmet Sheehan",
+      "away_starter_stats": {
+        "pitcher_id": 687562,
+        "era": 2.74,
+        "whip": 0.97,
+        "strikeout_walk_ratio": 4.18,
+        "innings_pitched": 65.2,
+        "games_started": 11
+      },
+      "home_starter_stats": {
+        "pitcher_id": 686218,
+        "era": 4.95,
+        "whip": 1.25,
+        "strikeout_walk_ratio": 3.59,
+        "innings_pitched": 92.2,
+        "games_started": 19
+      }
     },
     {
       "game_pk": 823431,
@@ -412,8 +1222,26 @@
       "status": "Scheduled",
       "away_team": "Washington Nationals",
       "home_team": "Philadelphia Phillies",
+      "away_probable_pitcher_id": null,
+      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表"
+      "home_probable_pitcher": "未発表",
+      "away_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      }
     },
     {
       "game_pk": 823520,
@@ -421,8 +1249,26 @@
       "status": "Scheduled",
       "away_team": "St. Louis Cardinals",
       "home_team": "New York Yankees",
+      "away_probable_pitcher_id": null,
+      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表"
+      "home_probable_pitcher": "未発表",
+      "away_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      }
     },
     {
       "game_pk": 823757,
@@ -430,8 +1276,26 @@
       "status": "Scheduled",
       "away_team": "Pittsburgh Pirates",
       "home_team": "Milwaukee Brewers",
+      "away_probable_pitcher_id": null,
+      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表"
+      "home_probable_pitcher": "未発表",
+      "away_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      }
     },
     {
       "game_pk": 824647,
@@ -439,8 +1303,26 @@
       "status": "Scheduled",
       "away_team": "Los Angeles Dodgers",
       "home_team": "Chicago Cubs",
+      "away_probable_pitcher_id": null,
+      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表"
+      "home_probable_pitcher": "未発表",
+      "away_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      }
     },
     {
       "game_pk": 822867,
@@ -448,8 +1330,26 @@
       "status": "Scheduled",
       "away_team": "San Francisco Giants",
       "home_team": "Texas Rangers",
+      "away_probable_pitcher_id": null,
+      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表"
+      "home_probable_pitcher": "未発表",
+      "away_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      }
     },
     {
       "game_pk": 824160,
@@ -457,8 +1357,26 @@
       "status": "Scheduled",
       "away_team": "Toronto Blue Jays",
       "home_team": "Houston Astros",
+      "away_probable_pitcher_id": null,
+      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表"
+      "home_probable_pitcher": "未発表",
+      "away_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      }
     },
     {
       "game_pk": 824324,
@@ -466,8 +1384,26 @@
       "status": "Scheduled",
       "away_team": "Tampa Bay Rays",
       "home_team": "Colorado Rockies",
+      "away_probable_pitcher_id": null,
+      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表"
+      "home_probable_pitcher": "未発表",
+      "away_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      }
     },
     {
       "game_pk": 825095,
@@ -475,8 +1411,26 @@
       "status": "Scheduled",
       "away_team": "San Diego Padres",
       "home_team": "Arizona Diamondbacks",
+      "away_probable_pitcher_id": null,
+      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表"
+      "home_probable_pitcher": "未発表",
+      "away_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      },
+      "home_starter_stats": {
+        "pitcher_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null,
+        "games_started": null
+      }
     }
   ]
 }
