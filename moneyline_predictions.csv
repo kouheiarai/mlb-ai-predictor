@@ -1,0 +1,23 @@
+﻿event_id,commence_time_utc,away_team,home_team,selection,decimal_odds,market_no_vig_probability,elo_rating,recent_10_win_pct,starter_quality,model_probability,ev,quarter_kelly,recommendation
+0b314c94b53dbed0719087c29b520ace,2026-08-01T02:11:00Z,Minnesota Twins,Seattle Mariners,Minnesota Twins,2.6,0.375,1490.3,0.6,0.2146,0.48922,0.271973,0.042496,BUY
+ea0ee6a34b3c09534e603775fb85d6e6,2026-07-31T23:08:00Z,St. Louis Cardinals,Toronto Blue Jays,St. Louis Cardinals,2.42,0.402469,1448.3,0.3,0.2052,0.47113,0.140134,0.024671,BUY
+84ba20fe8604de6c1825c09817cc4123,2026-08-01T00:16:00Z,Texas Rangers,Houston Astros,Houston Astros,1.83,0.534351,1533.1,0.8,0.0,0.621289,0.136958,0.041253,BUY
+c69df1f1b8463bd572965f137748afe8,2026-08-01T01:39:00Z,Milwaukee Brewers,Los Angeles Angels,Milwaukee Brewers,1.61,0.604423,1564.7,0.6,1.0,0.704975,0.13501,0.055332,BUY
+3ee3bc4062aa650bb871ebbc705fe19e,2026-07-31T22:11:00Z,Pittsburgh Pirates,Cincinnati Reds,Cincinnati Reds,2.19,0.44557,1464.0,0.6,0.6248,0.507848,0.112187,0.023569,BUY
+46f25bf1fcef5be6217eb3f4f200efc7,2026-08-01T00:41:00Z,Kansas City Royals,Colorado Rockies,Kansas City Royals,1.95,0.5,1439.7,0.6,-0.1378,0.547942,0.068487,0.018023,BUY
+b097b0b3884c6bbe4b246fb1c9b140a8,2026-07-31T23:11:00Z,Arizona Diamondbacks,Cleveland Guardians,Arizona Diamondbacks,2.18,0.448101,1548.4,0.6,-0.4745,0.489482,0.067071,0.01421,BUY
+69b3161b9e45cd7a7054fba7043f41d6,2026-07-31T18:21:00Z,New York Yankees,Chicago Cubs,Chicago Cubs,1.69,0.576441,1619.7,0.6,-0.3197,0.62177,0.050791,0.018403,BUY
+5382f2f139958bbb12e0cd166e06d3ea,2026-07-31T23:11:00Z,Miami Marlins,New York Mets,New York Mets,1.81,0.53944,1497.7,0.5,0.0,0.575828,0.042249,0.01304,LEAN
+8b3666056a3b2912d05e6a2ef95a35f8,2026-07-31T23:11:00Z,Chicago White Sox,Tampa Bay Rays,Tampa Bay Rays,1.7,0.573935,1551.2,0.8,0.2139,0.608225,0.033982,0.012137,LEAN
+ef1a6817e767ffb63f4d758bd10473bc,2026-07-31T23:16:00Z,Washington Nationals,Atlanta Braves,Atlanta Braves,1.84,0.530612,1504.2,0.6,0.0678,0.548241,0.008763,0.002608,LEAN
+ef1a6817e767ffb63f4d758bd10473bc,2026-07-31T23:16:00Z,Washington Nationals,Atlanta Braves,Washington Nationals,2.08,0.469388,1498.7,0.5,0.289,0.451759,-0.060341,0.0,PASS
+b097b0b3884c6bbe4b246fb1c9b140a8,2026-07-31T23:11:00Z,Arizona Diamondbacks,Cleveland Guardians,Cleveland Guardians,1.77,0.551899,1485.9,0.4,0.5979,0.510518,-0.096384,0.0,PASS
+5382f2f139958bbb12e0cd166e06d3ea,2026-07-31T23:11:00Z,Miami Marlins,New York Mets,Miami Marlins,2.12,0.46056,1473.3,0.3,0.1952,0.424172,-0.100756,0.0,PASS
+8b3666056a3b2912d05e6a2ef95a35f8,2026-07-31T23:11:00Z,Chicago White Sox,Tampa Bay Rays,Chicago White Sox,2.29,0.426065,1527.4,0.5,-0.1816,0.391775,-0.102835,0.0,PASS
+46f25bf1fcef5be6217eb3f4f200efc7,2026-08-01T00:41:00Z,Kansas City Royals,Colorado Rockies,Colorado Rockies,1.95,0.5,1391.2,0.3,-0.7275,0.452058,-0.118487,0.0,PASS
+69b3161b9e45cd7a7054fba7043f41d6,2026-07-31T18:21:00Z,New York Yankees,Chicago Cubs,New York Yankees,2.3,0.423559,1520.1,0.6,0.7417,0.37823,-0.130071,0.0,PASS
+3ee3bc4062aa650bb871ebbc705fe19e,2026-07-31T22:11:00Z,Pittsburgh Pirates,Cincinnati Reds,Pittsburgh Pirates,1.76,0.55443,1518.5,0.3,-0.2345,0.492152,-0.133812,0.0,PASS
+ea0ee6a34b3c09534e603775fb85d6e6,2026-07-31T23:08:00Z,St. Louis Cardinals,Toronto Blue Jays,Toronto Blue Jays,1.63,0.597531,1451.1,0.4,-1.0,0.52887,-0.137941,0.0,PASS
+0b314c94b53dbed0719087c29b520ace,2026-08-01T02:11:00Z,Minnesota Twins,Seattle Mariners,Seattle Mariners,1.56,0.625,1446.4,0.3,0.2956,0.51078,-0.203184,0.0,PASS
+84ba20fe8604de6c1825c09817cc4123,2026-08-01T00:16:00Z,Texas Rangers,Houston Astros,Texas Rangers,2.1,0.465649,1474.4,0.5,-0.011,0.378711,-0.204706,0.0,PASS
+c69df1f1b8463bd572965f137748afe8,2026-08-01T01:39:00Z,Milwaukee Brewers,Los Angeles Angels,Los Angeles Angels,2.46,0.395577,1390.1,0.4,0.2048,0.295025,-0.274239,0.0,PASS

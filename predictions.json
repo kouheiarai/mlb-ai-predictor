@@ -1,339 +1,452 @@
-from __future__ import annotations
+# MLB Ver.22 Final Prediction Report
 
-import csv
-import json
-import os
-import sys
-from datetime import datetime, timezone
-from pathlib import Path
-from typing import Any
+- Updated: 2026-07-31T12:31:08.531527+00:00
+- API requests remaining: 450
+- Simulation: 100,000 Poisson score simulations per game
 
-import requests
+## Moneyline Buy Ranking
 
-from bullpen import fetch_bullpen_fatigue_proxy
-from lineup import attach_lineups
-from mlb_api import attach_probable_pitcher_stats, fetch_mlb_schedule
-from platoon import attach_handedness
-from predictor import build_elo_ratings, fetch_completed_games, make_predictions
-from weather_data import attach_weather
-from team_metrics import fetch_team_metrics
+### 1. New York Yankees
+- Game: New York Yankees @ Chicago Cubs
+- Odds: 2.34
+- AI probability: 58.2%
+- EV: 36.1%
+- 1/4 Kelly: 6.7%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.75
+- Expected score: New York Yankees 3.17 - Chicago Cubs 2.49
 
-API_URL = "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/"
-OUTPUT_DIR = Path("data")
-DOCS_DIR = Path("docs")
-MODEL_VERSION = "23.1"
+### 2. Cincinnati Reds
+- Game: Pittsburgh Pirates @ Cincinnati Reds
+- Odds: 2.17
+- AI probability: 62.6%
+- EV: 35.8%
+- 1/4 Kelly: 7.7%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 0.999
+- Temperature: 19.6 C
+- Rain probability: 35%
+- Wind: 8.0 km/h (207 deg)
+- Bullpen fatigue proxy: 0.80
+- Expected score: Pittsburgh Pirates 2.38 - Cincinnati Reds 3.35
 
+### 3. Minnesota Twins
+- Game: Minnesota Twins @ Seattle Mariners
+- Odds: 2.6
+- AI probability: 45.8%
+- EV: 19.1%
+- 1/4 Kelly: 3.0%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Minnesota Twins 2.46 - Seattle Mariners 2.60
 
-def require_api_key() -> str:
-    key = os.getenv("THE_ODDS_API_KEY", "").strip()
-    if not key:
-        raise RuntimeError("THE_ODDS_API_KEY is missing.")
-    return key
+### 4. Kansas City Royals
+- Game: Kansas City Royals @ Colorado Rockies
+- Odds: 1.97
+- AI probability: 59.1%
+- EV: 16.5%
+- 1/4 Kelly: 4.3%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.035
+- Temperature: 37.6 C
+- Rain probability: 0%
+- Wind: 5.0 km/h (90 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Kansas City Royals 4.07 - Colorado Rockies 3.31
 
+### 5. Philadelphia Phillies
+- Game: Philadelphia Phillies @ Baltimore Orioles
+- Odds: 2.0
+- AI probability: 57.2%
+- EV: 14.4%
+- 1/4 Kelly: 3.6%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.035
+- Temperature: 30.5 C
+- Rain probability: 4%
+- Wind: 19.2 km/h (152 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Philadelphia Phillies 2.90 - Baltimore Orioles 2.37
 
-def fetch_odds(api_key: str) -> tuple[list[dict[str, Any]], dict[str, str]]:
-    response = requests.get(
-        API_URL,
-        params={
-            "apiKey": api_key,
-            "bookmakers": "pinnacle",
-            "markets": "h2h,spreads",
-            "oddsFormat": "decimal",
-            "dateFormat": "iso",
-        },
-        timeout=30,
-    )
-    if response.status_code != 200:
-        raise RuntimeError(
-            f"The Odds API returned HTTP {response.status_code}: "
-            f"{response.text[:1000]}"
-        )
-    return response.json(), {
-        "requests_remaining": response.headers.get("x-requests-remaining", ""),
-        "requests_used": response.headers.get("x-requests-used", ""),
-        "requests_last": response.headers.get("x-requests-last", ""),
-    }
+### 6. St. Louis Cardinals
+- Game: St. Louis Cardinals @ Toronto Blue Jays
+- Odds: 2.47
+- AI probability: 45.0%
+- EV: 11.2%
+- 1/4 Kelly: 1.9%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.75
+- Expected score: St. Louis Cardinals 2.67 - Toronto Blue Jays 2.89
 
+### 7. San Francisco Giants
+- Game: San Francisco Giants @ San Diego Padres
+- Odds: 2.31
+- AI probability: 47.6%
+- EV: 10.0%
+- 1/4 Kelly: 1.9%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.020
+- Temperature: 26.1 C
+- Rain probability: 0%
+- Wind: 15.1 km/h (232 deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: San Francisco Giants 2.56 - San Diego Padres 2.64
 
-def american_odds(decimal_price: float | None) -> str:
-    if decimal_price is None or decimal_price <= 1:
-        return ""
-    if decimal_price >= 2:
-        return f"+{round((decimal_price - 1) * 100)}"
-    return str(round(-100 / (decimal_price - 1)))
+### 8. Los Angeles Angels
+- Game: Milwaukee Brewers @ Los Angeles Angels
+- Odds: 2.51
+- AI probability: 43.4%
+- EV: 8.8%
+- 1/4 Kelly: 1.5%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.031
+- Temperature: 32.6 C
+- Rain probability: 0%
+- Wind: 13.5 km/h (224 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Milwaukee Brewers 2.66 - Los Angeles Angels 2.31
 
+### 9. Texas Rangers
+- Game: Texas Rangers @ Houston Astros
+- Odds: 2.16
+- AI probability: 49.9%
+- EV: 7.8%
+- 1/4 Kelly: 1.7%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: Texas Rangers 3.27 - Houston Astros 3.21
 
-def flatten_odds(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    rows: list[dict[str, Any]] = []
-    for event in events:
-        pinnacle = next(
-            (
-                book
-                for book in event.get("bookmakers", [])
-                if book.get("key") == "pinnacle"
-            ),
-            None,
-        )
-        if not pinnacle:
-            continue
+### 10. Athletics
+- Game: Detroit Tigers @ Athletics
+- Odds: 2.42
+- AI probability: 44.1%
+- EV: 6.8%
+- 1/4 Kelly: 1.2%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.019
+- Temperature: 29.2 C
+- Rain probability: 0%
+- Wind: 10.5 km/h (243 deg)
+- Bullpen fatigue proxy: 0.65
+- Expected score: Detroit Tigers 2.85 - Athletics 2.54
 
-        common = {
-            "event_id": event.get("id", ""),
-            "commence_time_utc": event.get("commence_time", ""),
-            "away_team": event.get("away_team", ""),
-            "home_team": event.get("home_team", ""),
-            "bookmaker": "pinnacle",
-            "bookmaker_last_update": pinnacle.get("last_update", ""),
-        }
+### 11. Boston Red Sox
+- Game: Boston Red Sox @ Los Angeles Dodgers
+- Odds: 2.07
+- AI probability: 51.6%
+- EV: 6.8%
+- 1/4 Kelly: 1.6%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.040
+- Temperature: 34.1 C
+- Rain probability: 0%
+- Wind: 17.8 km/h (225 deg)
+- Bullpen fatigue proxy: 0.65
+- Expected score: Boston Red Sox 2.70 - Los Angeles Dodgers 2.55
 
-        for market in pinnacle.get("markets", []):
-            for outcome in market.get("outcomes", []):
-                price = outcome.get("price")
-                rows.append(
-                    {
-                        **common,
-                        "market": market.get("key", ""),
-                        "selection": outcome.get("name", ""),
-                        "point": outcome.get("point", ""),
-                        "decimal_odds": price,
-                        "american_odds": american_odds(price),
-                        "implied_probability": (
-                            round(1 / price, 6)
-                            if isinstance(price, (int, float)) and price > 1
-                            else ""
-                        ),
-                    }
-                )
-    return rows
+### 12. Miami Marlins
+- Game: Miami Marlins @ New York Mets
+- Odds: 2.13
+- AI probability: 49.4%
+- EV: 5.2%
+- 1/4 Kelly: 1.1%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.037
+- Temperature: 28.4 C
+- Rain probability: 1%
+- Wind: 23.5 km/h (165 deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: Miami Marlins 2.67 - New York Mets 2.65
 
+## Run Line Buy Ranking
 
-def write_csv(rows: list[dict[str, Any]], path: Path) -> None:
-    fields = list(rows[0].keys()) if rows else []
-    with path.open("w", newline="", encoding="utf-8-sig") as file:
-        if not fields:
-            file.write("")
-            return
-        writer = csv.DictWriter(file, fieldnames=fields)
-        writer.writeheader()
-        writer.writerows(rows)
+### 1. Cincinnati Reds +1.5
+- Game: Pittsburgh Pirates @ Cincinnati Reds
+- Odds: 1.68
+- Cover probability: 85.8%
+- EV: 44.2%
+- 1/4 Kelly: 16.2%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 0.999
+- Temperature: 19.6 C
+- Rain probability: 35%
+- Wind: 8.0 km/h (207 deg)
+- Bullpen fatigue proxy: 0.80
+- Expected score: Pittsburgh Pirates 2.38 - Cincinnati Reds 3.35
 
+### 2. New York Yankees +1.5
+- Game: New York Yankees @ Chicago Cubs
+- Odds: 1.66
+- Cover probability: 83.1%
+- EV: 38.0%
+- 1/4 Kelly: 14.4%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.75
+- Expected score: New York Yankees 3.17 - Chicago Cubs 2.49
 
-def pct(value: Any) -> str:
-    try:
-        return f"{float(value) * 100:.1f}%"
-    except (TypeError, ValueError):
-        return ""
+### 3. Los Angeles Angels +1.5
+- Game: Milwaukee Brewers @ Los Angeles Angels
+- Odds: 1.93
+- Cover probability: 70.9%
+- EV: 36.8%
+- 1/4 Kelly: 9.9%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.031
+- Temperature: 32.6 C
+- Rain probability: 0%
+- Wind: 13.5 km/h (224 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Milwaukee Brewers 2.66 - Los Angeles Angels 2.31
 
+### 4. Athletics +1.5
+- Game: Detroit Tigers @ Athletics
+- Odds: 1.92
+- Cover probability: 70.4%
+- EV: 35.2%
+- 1/4 Kelly: 9.6%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.019
+- Temperature: 29.2 C
+- Rain probability: 0%
+- Wind: 10.5 km/h (243 deg)
+- Bullpen fatigue proxy: 0.65
+- Expected score: Detroit Tigers 2.85 - Athletics 2.54
 
-def lineup_label(value: Any) -> str:
-    return "発表済み" if value else "未発表"
+### 5. Minnesota Twins +1.5
+- Game: Minnesota Twins @ Seattle Mariners
+- Odds: 1.74
+- Cover probability: 73.8%
+- EV: 28.4%
+- 1/4 Kelly: 9.6%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Minnesota Twins 2.46 - Seattle Mariners 2.60
 
+### 6. Philadelphia Phillies +1.5
+- Game: Philadelphia Phillies @ Baltimore Orioles
+- Odds: 1.48
+- Cover probability: 82.4%
+- EV: 21.9%
+- 1/4 Kelly: 11.4%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.035
+- Temperature: 30.5 C
+- Rain probability: 4%
+- Wind: 19.2 km/h (152 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Philadelphia Phillies 2.90 - Baltimore Orioles 2.37
 
-def write_report(
-    ml_predictions: list[dict[str, Any]],
-    rl_predictions: list[dict[str, Any]],
-    schedule: list[dict[str, Any]],
-    fetched_at: str,
-    quota: dict[str, str],
-    path: Path,
-) -> None:
-    lines = [
-        "# MLB AI Predictor Ver.23.1 Prediction Report",
-        "",
-        f"- Updated: {fetched_at}",
-        f"- API requests remaining: {quota.get('requests_remaining') or 'unknown'}",
-        "- Simulation: 100,000 Poisson score simulations per game",
-        "",
-        "## Moneyline Buy Ranking",
-        "",
-    ]
+### 7. San Francisco Giants +1.5
+- Game: San Francisco Giants @ San Diego Padres
+- Odds: 1.62
+- Cover probability: 74.6%
+- EV: 20.9%
+- 1/4 Kelly: 8.4%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.020
+- Temperature: 26.1 C
+- Rain probability: 0%
+- Wind: 15.1 km/h (232 deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: San Francisco Giants 2.56 - San Diego Padres 2.64
 
-    ml_buys = [row for row in ml_predictions if row["recommendation"] == "BUY"]
-    if not ml_buys:
-        lines.append("No EV 5%+ Moneyline bets.")
-    else:
-        for index, row in enumerate(ml_buys, 1):
-            lines.extend(
-                [
-                    f"### {index}. {row['selection']}",
-                    f"- Game: {row['away_team']} @ {row['home_team']}",
-                    f"- Odds: {row['decimal_odds']}",
-                    f"- AI probability: {pct(row['model_probability'])}",
-                    f"- EV: {pct(row['ev'])}",
-                    f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
-                    f"- Lineup: {lineup_label(row['lineup_announced'])}",
-                    f"- Lineup quality: {row['lineup_quality']:+.2f}",
-                    f"- Platoon proxy: {row['platoon_proxy']:+.2f}",
-                    f"- Weather run factor: {row['weather_run_factor']:.3f}",
-                    f"- Temperature: {row.get('temperature_c')} C",
-                    f"- Rain probability: {row.get('precipitation_probability')}%",
-                    f"- Wind: {row.get('wind_speed_kmh')} km/h "
-                    f"({row.get('wind_direction_deg')} deg)",
-                    f"- Bullpen fatigue proxy: {row['bullpen_fatigue']:.2f}",
-                    f"- Expected score: "
-                    f"{row['away_team']} {row['away_expected_runs']:.2f} - "
-                    f"{row['home_team']} {row['home_expected_runs']:.2f}",
-                    "",
-                ]
-            )
+### 8. Kansas City Royals +1.5
+- Game: Kansas City Royals @ Colorado Rockies
+- Odds: 1.5
+- Cover probability: 80.5%
+- EV: 20.7%
+- 1/4 Kelly: 10.4%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.035
+- Temperature: 37.6 C
+- Rain probability: 0%
+- Wind: 5.0 km/h (90 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Kansas City Royals 4.07 - Colorado Rockies 3.31
 
-    lines.extend(["## Run Line Buy Ranking", ""])
-    rl_buys = [row for row in rl_predictions if row["recommendation"] == "BUY"]
-    if not rl_buys:
-        lines.append("No EV 5%+ Run Line bets.")
-    else:
-        for index, row in enumerate(rl_buys, 1):
-            lines.extend(
-                [
-                    f"### {index}. {row['selection']} {row['point']:+g}",
-                    f"- Game: {row['away_team']} @ {row['home_team']}",
-                    f"- Odds: {row['decimal_odds']}",
-                    f"- Cover probability: {pct(row['model_probability'])}",
-                    f"- EV: {pct(row['ev'])}",
-                    f"- 1/4 Kelly: {pct(row['quarter_kelly'])}",
-                    f"- Lineup: {lineup_label(row['lineup_announced'])}",
-                    f"- Lineup quality: {row['lineup_quality']:+.2f}",
-                    f"- Platoon proxy: {row['platoon_proxy']:+.2f}",
-                    f"- Weather run factor: {row['weather_run_factor']:.3f}",
-                    f"- Temperature: {row.get('temperature_c')} C",
-                    f"- Rain probability: {row.get('precipitation_probability')}%",
-                    f"- Wind: {row.get('wind_speed_kmh')} km/h "
-                    f"({row.get('wind_direction_deg')} deg)",
-                    f"- Bullpen fatigue proxy: {row['bullpen_fatigue']:.2f}",
-                    f"- Expected score: "
-                    f"{row['away_team']} {row['away_expected_runs']:.2f} - "
-                    f"{row['home_team']} {row['home_expected_runs']:.2f}",
-                    "",
-                ]
-            )
+### 9. St. Louis Cardinals +1.5
+- Game: St. Louis Cardinals @ Toronto Blue Jays
+- Odds: 1.68
+- Cover probability: 71.7%
+- EV: 20.5%
+- 1/4 Kelly: 7.5%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.75
+- Expected score: St. Louis Cardinals 2.67 - Toronto Blue Jays 2.89
 
-    lines.extend(
-        [
-            "## Model Notes",
-            "",
-            "- Platoon proxy uses each hitter's batting side versus the probable starter's throwing hand.",
-            "- It is a conservative proxy, not a true split-stat model.",
-            "- Moneyline and Run Line probabilities come from 100,000 simulated scores per game.",
-            "- BUY threshold is EV 5% or higher.",
-            "- Outdoor-game weather is fetched from Open-Meteo at the scheduled game hour.",
-            "- Temperature, rain probability and wind speed affect expected runs conservatively.",
-            "- Wind direction is reported, but a park-axis model is not yet used; retractable-roof games are treated as neutral.",
-            "- BUY threshold is EV 5% or higher.",
-        ]
-    )
-    path.write_text("\n".join(lines), encoding="utf-8")
+### 10. Boston Red Sox +1.5
+- Game: Boston Red Sox @ Los Angeles Dodgers
+- Odds: 1.51
+- Cover probability: 77.5%
+- EV: 17.1%
+- 1/4 Kelly: 8.4%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.040
+- Temperature: 34.1 C
+- Rain probability: 0%
+- Wind: 17.8 km/h (225 deg)
+- Bullpen fatigue proxy: 0.65
+- Expected score: Boston Red Sox 2.70 - Los Angeles Dodgers 2.55
 
+### 11. Miami Marlins +1.5
+- Game: Miami Marlins @ New York Mets
+- Odds: 1.54
+- Cover probability: 75.6%
+- EV: 16.4%
+- 1/4 Kelly: 7.6%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.037
+- Temperature: 28.4 C
+- Rain probability: 1%
+- Wind: 23.5 km/h (165 deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: Miami Marlins 2.67 - New York Mets 2.65
 
-def main() -> int:
-    try:
-        season = datetime.now(timezone.utc).year
-        api_key = require_api_key()
+### 12. Washington Nationals +1.5
+- Game: Washington Nationals @ Atlanta Braves
+- Odds: 1.51
+- Cover probability: 75.3%
+- EV: 13.7%
+- 1/4 Kelly: 6.7%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.013
+- Temperature: 26.4 C
+- Rain probability: 17%
+- Wind: 8.2 km/h (229 deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: Washington Nationals 2.59 - Atlanta Braves 2.61
 
-        odds_events, quota = fetch_odds(api_key)
-        odds_rows = flatten_odds(odds_events)
+### 13. Texas Rangers +1.5
+- Game: Texas Rangers @ Houston Astros
+- Odds: 1.53
+- Cover probability: 73.9%
+- EV: 13.1%
+- 1/4 Kelly: 6.2%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: Texas Rangers 3.27 - Houston Astros 3.21
 
-        schedule = attach_probable_pitcher_stats(
-            fetch_mlb_schedule(days=3),
-            season,
-        )
-        schedule = attach_lineups(schedule, season)
-        schedule = attach_handedness(schedule)
-        schedule = attach_weather(schedule)
+### 14. Arizona Diamondbacks +1.5
+- Game: Arizona Diamondbacks @ Cleveland Guardians
+- Odds: 1.57
+- Cover probability: 71.0%
+- EV: 11.4%
+- 1/4 Kelly: 5.0%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: 22.9 C
+- Rain probability: 66%
+- Wind: 16.4 km/h (171 deg)
+- Bullpen fatigue proxy: 0.65
+- Expected score: Arizona Diamondbacks 2.43 - Cleveland Guardians 2.74
 
-        completed_games = fetch_completed_games(season)
-        elo_ratings = build_elo_ratings(completed_games)
-        team_metrics = fetch_team_metrics(season)
-        bullpen_fatigue = fetch_bullpen_fatigue_proxy()
+### 15. Chicago White Sox +1.5
+- Game: Chicago White Sox @ Tampa Bay Rays
+- Odds: 1.61
+- Cover probability: 68.8%
+- EV: 10.7%
+- 1/4 Kelly: 4.4%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.75
+- Expected score: Chicago White Sox 2.38 - Tampa Bay Rays 2.83
 
-        ml_predictions, rl_predictions = make_predictions(
-            odds_rows,
-            elo_ratings,
-            completed_games,
-            schedule,
-            team_metrics,
-            bullpen_fatigue,
-        )
+## Model Notes
 
-        OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-        DOCS_DIR.mkdir(parents=True, exist_ok=True)
-        fetched_at = datetime.now(timezone.utc).isoformat()
-
-        payloads = {
-            "latest_odds.json": {"fetched_at_utc": fetched_at, "events": odds_events},
-            "mlb_schedule.json": {"fetched_at_utc": fetched_at, "games": schedule},
-            "elo_ratings.json": {"fetched_at_utc": fetched_at, "ratings": elo_ratings},
-            "team_metrics.json": {
-                "fetched_at_utc": fetched_at,
-                "metrics": team_metrics,
-            },
-            "bullpen_fatigue.json": {
-                "fetched_at_utc": fetched_at,
-                "fatigue": bullpen_fatigue,
-            },
-            "weather.json": {
-                "fetched_at_utc": fetched_at,
-                "games": [
-                    {
-                        "game_pk": game.get("game_pk"),
-                        "away_team": game.get("away_team"),
-                        "home_team": game.get("home_team"),
-                        "game_date_utc": game.get("game_date_utc"),
-                        "weather": game.get("weather"),
-                    }
-                    for game in schedule
-                ],
-            },
-            "predictions.json": {
-                "fetched_at_utc": fetched_at,
-                "moneyline": ml_predictions,
-                "runline": rl_predictions,
-            },
-        }
-
-        for filename, payload in payloads.items():
-            (OUTPUT_DIR / filename).write_text(
-                json.dumps(payload, ensure_ascii=False, indent=2),
-                encoding="utf-8",
-            )
-
-        # Ver.23.1: publish a compact, stable JSON endpoint for GitHub Pages.
-        latest_payload = {
-            "model_version": MODEL_VERSION,
-            "updated_at_utc": fetched_at,
-            "simulation_count_per_game": 100000,
-            "source": {
-                "odds": "Pinnacle via The Odds API",
-                "baseball_data": "MLB Stats API",
-            },
-            "moneyline": ml_predictions,
-            "runline": rl_predictions,
-        }
-        latest_json = json.dumps(latest_payload, ensure_ascii=False, indent=2)
-        (DOCS_DIR / "prediction_latest.json").write_text(
-            latest_json, encoding="utf-8"
-        )
-
-        write_csv(odds_rows, OUTPUT_DIR / "latest_odds.csv")
-        write_csv(ml_predictions, OUTPUT_DIR / "moneyline_predictions.csv")
-        write_csv(rl_predictions, OUTPUT_DIR / "runline_predictions.csv")
-        write_report(
-            ml_predictions,
-            rl_predictions,
-            schedule,
-            fetched_at,
-            quota,
-            OUTPUT_DIR / "report.md",
-        )
-
-        print(
-            f"Generated {len(ml_predictions)} ML predictions and "
-            f"{len(rl_predictions)} RL predictions."
-        )
-        return 0
-    except Exception as exc:
-        print(f"ERROR: {exc}", file=sys.stderr)
-        return 1
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+- Platoon proxy uses each hitter's batting side versus the probable starter's throwing hand.
+- It is a conservative proxy, not a true split-stat model.
+- Moneyline and Run Line probabilities come from 100,000 simulated scores per game.
+- BUY threshold is EV 5% or higher.
+- Outdoor-game weather is fetched from Open-Meteo at the scheduled game hour.
+- Temperature, rain probability and wind speed affect expected runs conservatively.
+- Wind direction is reported, but a park-axis model is not yet used; retractable-roof games are treated as neutral.
+- BUY threshold is EV 5% or higher.
