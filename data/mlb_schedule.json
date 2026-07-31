@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-07-31T12:31:08.531527+00:00",
+  "fetched_at_utc": "2026-07-31T14:09:23.055512+00:00",
   "games": [
     {
       "game_pk": 824651,
@@ -8,24 +8,24 @@
       "away_team": "New York Yankees",
       "home_team": "Chicago Cubs",
       "away_probable_pitcher_id": 701542,
-      "home_probable_pitcher_id": 684007,
       "away_probable_pitcher": "Will Warren",
+      "home_probable_pitcher_id": 684007,
       "home_probable_pitcher": "Shota Imanaga",
+      "venue_id": 17,
+      "venue_name": "Wrigley Field",
       "away_starter_stats": {
-        "pitcher_id": 701542,
+        "person_id": 701542,
         "era": 4.41,
         "whip": 1.41,
-        "strikeout_walk_ratio": 2.83,
-        "innings_pitched": 102.0,
-        "games_started": 20
+        "strikeout_walk_ratio": 2.8333333333333335,
+        "innings_pitched": 102.0
       },
       "home_starter_stats": {
-        "pitcher_id": 684007,
+        "person_id": 684007,
         "era": 3.72,
         "whip": 1.1,
-        "strikeout_walk_ratio": 3.9,
-        "innings_pitched": 121.0,
-        "games_started": 21
+        "strikeout_walk_ratio": 3.896551724137931,
+        "innings_pitched": 121.0
       },
       "lineups": {
         "away_announced": false,
@@ -36,13 +36,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 25.8,
-        "precipitation_probability": 7,
-        "wind_speed_kmh": 21.6,
-        "wind_direction_deg": 120,
-        "weather_run_factor": 1.0292
+        "weather_run_factor": 1.0182,
+        "temperature_c": 25.4,
+        "precipitation_probability": 5,
+        "wind_speed_kmh": 19.3,
+        "wind_direction_deg": 117
       }
     },
     {
@@ -52,24 +50,24 @@
       "away_team": "Pittsburgh Pirates",
       "home_team": "Cincinnati Reds",
       "away_probable_pitcher_id": 694973,
-      "home_probable_pitcher_id": 668881,
       "away_probable_pitcher": "Paul Skenes",
+      "home_probable_pitcher_id": 668881,
       "home_probable_pitcher": "Hunter Greene",
+      "venue_id": 2602,
+      "venue_name": "Great American Ball Park",
       "away_starter_stats": {
-        "pitcher_id": 694973,
+        "person_id": 694973,
         "era": 3.65,
         "whip": 1.06,
-        "strikeout_walk_ratio": 5.32,
-        "innings_pitched": 120.2,
-        "games_started": 22
+        "strikeout_walk_ratio": 5.321428571428571,
+        "innings_pitched": 120.2
       },
       "home_starter_stats": {
-        "pitcher_id": 668881,
+        "person_id": 668881,
         "era": 7.06,
         "whip": 1.34,
-        "strikeout_walk_ratio": 4.14,
-        "innings_pitched": 21.2,
-        "games_started": 4
+        "strikeout_walk_ratio": 4.142857142857143,
+        "innings_pitched": 21.2
       },
       "lineups": {
         "away_announced": false,
@@ -80,13 +78,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 32.2,
+        "weather_run_factor": 1.0241,
+        "temperature_c": 32.6,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 7.8,
-        "wind_direction_deg": 158,
-        "weather_run_factor": 1.0244
+        "wind_speed_kmh": 10.9,
+        "wind_direction_deg": 171
       }
     },
     {
@@ -96,24 +92,24 @@
       "away_team": "Philadelphia Phillies",
       "home_team": "Baltimore Orioles",
       "away_probable_pitcher_id": null,
+      "away_probable_pitcher": "TBD",
       "home_probable_pitcher_id": 687064,
-      "away_probable_pitcher": "未発表",
       "home_probable_pitcher": "Brandon Young",
+      "venue_id": 2,
+      "venue_name": "Oriole Park at Camden Yards",
       "away_starter_stats": {
-        "pitcher_id": null,
+        "person_id": null,
         "era": null,
         "whip": null,
         "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
+        "innings_pitched": null
       },
       "home_starter_stats": {
-        "pitcher_id": 687064,
+        "person_id": 687064,
         "era": 3.13,
         "whip": 1.29,
-        "strikeout_walk_ratio": 2.35,
-        "innings_pitched": 97.2,
-        "games_started": 17
+        "strikeout_walk_ratio": 2.3529411764705883,
+        "innings_pitched": 97.2
       },
       "lineups": {
         "away_announced": false,
@@ -124,13 +120,11 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 30.4,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 5.4,
-        "wind_direction_deg": 262,
-        "weather_run_factor": 1.0208
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -140,24 +134,24 @@
       "away_team": "St. Louis Cardinals",
       "home_team": "Toronto Blue Jays",
       "away_probable_pitcher_id": 681517,
-      "home_probable_pitcher_id": 656302,
       "away_probable_pitcher": "Kyle Leahy",
+      "home_probable_pitcher_id": 656302,
       "home_probable_pitcher": "Dylan Cease",
+      "venue_id": 14,
+      "venue_name": "Rogers Centre",
       "away_starter_stats": {
-        "pitcher_id": 681517,
+        "person_id": 681517,
         "era": 3.55,
         "whip": 1.34,
-        "strikeout_walk_ratio": 2.59,
-        "innings_pitched": 101.1,
-        "games_started": 20
+        "strikeout_walk_ratio": 2.588235294117647,
+        "innings_pitched": 101.1
       },
       "home_starter_stats": {
-        "pitcher_id": 656302,
+        "person_id": 656302,
         "era": 2.46,
         "whip": 1.09,
-        "strikeout_walk_ratio": 3.48,
-        "innings_pitched": 113.1,
-        "games_started": 19
+        "strikeout_walk_ratio": 3.4791666666666665,
+        "innings_pitched": 113.1
       },
       "lineups": {
         "away_announced": false,
@@ -168,13 +162,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     },
     {
@@ -184,24 +176,24 @@
       "away_team": "Arizona Diamondbacks",
       "home_team": "Cleveland Guardians",
       "away_probable_pitcher_id": 683352,
-      "home_probable_pitcher_id": 676440,
       "away_probable_pitcher": "Mitch Bratt",
+      "home_probable_pitcher_id": 676440,
       "home_probable_pitcher": "Tanner Bibee",
+      "venue_id": 5,
+      "venue_name": "Progressive Field",
       "away_starter_stats": {
-        "pitcher_id": 683352,
+        "person_id": 683352,
         "era": 6.32,
         "whip": 1.98,
-        "strikeout_walk_ratio": 0.91,
-        "innings_pitched": 15.2,
-        "games_started": 4
+        "strikeout_walk_ratio": 0.9090909090909091,
+        "innings_pitched": 15.2
       },
       "home_starter_stats": {
-        "pitcher_id": 676440,
+        "person_id": 676440,
         "era": 3.89,
         "whip": 1.18,
-        "strikeout_walk_ratio": 2.62,
-        "innings_pitched": 125.0,
-        "games_started": 22
+        "strikeout_walk_ratio": 2.6216216216216215,
+        "innings_pitched": 125.0
       },
       "lineups": {
         "away_announced": false,
@@ -212,13 +204,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 28.0,
+        "weather_run_factor": 1.0102,
+        "temperature_c": 27.8,
         "precipitation_probability": 1,
-        "wind_speed_kmh": 6.6,
-        "wind_direction_deg": 347,
-        "weather_run_factor": 1.016
+        "wind_speed_kmh": 6.7,
+        "wind_direction_deg": 16
       }
     },
     {
@@ -228,24 +218,24 @@
       "away_team": "Chicago White Sox",
       "home_team": "Tampa Bay Rays",
       "away_probable_pitcher_id": 607200,
-      "home_probable_pitcher_id": 607259,
       "away_probable_pitcher": "Erick Fedde",
+      "home_probable_pitcher_id": 607259,
       "home_probable_pitcher": "Nick Martinez",
+      "venue_id": 12,
+      "venue_name": "Tropicana Field",
       "away_starter_stats": {
-        "pitcher_id": 607200,
+        "person_id": 607200,
         "era": 4.25,
         "whip": 1.4,
-        "strikeout_walk_ratio": 1.89,
-        "innings_pitched": 97.1,
-        "games_started": 11
+        "strikeout_walk_ratio": 1.8888888888888888,
+        "innings_pitched": 97.1
       },
       "home_starter_stats": {
-        "pitcher_id": 607259,
+        "person_id": 607259,
         "era": 2.45,
         "whip": 1.1,
         "strikeout_walk_ratio": 3.35,
-        "innings_pitched": 117.1,
-        "games_started": 20
+        "innings_pitched": 117.1
       },
       "lineups": {
         "away_announced": false,
@@ -256,13 +246,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     },
     {
@@ -272,24 +260,24 @@
       "away_team": "Miami Marlins",
       "home_team": "New York Mets",
       "away_probable_pitcher_id": 676083,
-      "home_probable_pitcher_id": 642547,
       "away_probable_pitcher": "Janson Junk",
+      "home_probable_pitcher_id": 642547,
       "home_probable_pitcher": "Freddy Peralta",
+      "venue_id": 3289,
+      "venue_name": "Citi Field",
       "away_starter_stats": {
-        "pitcher_id": 676083,
+        "person_id": 676083,
         "era": 4.89,
         "whip": 1.36,
         "strikeout_walk_ratio": 2.85,
-        "innings_pitched": 73.2,
-        "games_started": 14
+        "innings_pitched": 73.2
       },
       "home_starter_stats": {
-        "pitcher_id": 642547,
+        "person_id": 642547,
         "era": 4.99,
         "whip": 1.48,
-        "strikeout_walk_ratio": 2.35,
-        "innings_pitched": 113.2,
-        "games_started": 22
+        "strikeout_walk_ratio": 2.3541666666666665,
+        "innings_pitched": 113.2
       },
       "lineups": {
         "away_announced": false,
@@ -300,13 +288,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 28.2,
-        "precipitation_probability": 2,
-        "wind_speed_kmh": 6.5,
-        "wind_direction_deg": 109,
-        "weather_run_factor": 1.0164
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -316,24 +302,24 @@
       "away_team": "Washington Nationals",
       "home_team": "Atlanta Braves",
       "away_probable_pitcher_id": 656492,
-      "home_probable_pitcher_id": 693821,
       "away_probable_pitcher": "Foster Griffin",
+      "home_probable_pitcher_id": 693821,
       "home_probable_pitcher": "Bryce Elder",
+      "venue_id": 4705,
+      "venue_name": "Truist Park",
       "away_starter_stats": {
-        "pitcher_id": 656492,
+        "person_id": 656492,
         "era": 2.76,
         "whip": 1.03,
-        "strikeout_walk_ratio": 4.04,
-        "innings_pitched": 124.0,
-        "games_started": 21
+        "strikeout_walk_ratio": 4.035714285714286,
+        "innings_pitched": 124.0
       },
       "home_starter_stats": {
-        "pitcher_id": 693821,
+        "person_id": 693821,
         "era": 3.96,
         "whip": 1.25,
-        "strikeout_walk_ratio": 2.65,
-        "innings_pitched": 113.2,
-        "games_started": 20
+        "strikeout_walk_ratio": 2.6486486486486487,
+        "innings_pitched": 113.2
       },
       "lineups": {
         "away_announced": false,
@@ -344,13 +330,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 32.0,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 7.7,
-        "wind_direction_deg": 259,
-        "weather_run_factor": 1.024
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -360,24 +344,24 @@
       "away_team": "Texas Rangers",
       "home_team": "Houston Astros",
       "away_probable_pitcher_id": 543135,
-      "home_probable_pitcher_id": 686613,
       "away_probable_pitcher": "Nathan Eovaldi",
+      "home_probable_pitcher_id": 686613,
       "home_probable_pitcher": "Hunter Brown",
+      "venue_id": 2392,
+      "venue_name": "Daikin Park",
       "away_starter_stats": {
-        "pitcher_id": 543135,
+        "person_id": 543135,
         "era": 4.05,
         "whip": 1.17,
-        "strikeout_walk_ratio": 4.48,
-        "innings_pitched": 122.1,
-        "games_started": 20
+        "strikeout_walk_ratio": 4.482758620689655,
+        "innings_pitched": 122.1
       },
       "home_starter_stats": {
-        "pitcher_id": 686613,
+        "person_id": 686613,
         "era": 3.45,
         "whip": 1.28,
-        "strikeout_walk_ratio": 1.79,
-        "innings_pitched": 47.0,
-        "games_started": 9
+        "strikeout_walk_ratio": 1.7857142857142858,
+        "innings_pitched": 47.0
       },
       "lineups": {
         "away_announced": false,
@@ -388,13 +372,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     },
     {
@@ -404,24 +386,24 @@
       "away_team": "Kansas City Royals",
       "home_team": "Colorado Rockies",
       "away_probable_pitcher_id": 608379,
-      "home_probable_pitcher_id": 608372,
       "away_probable_pitcher": "Michael Wacha",
+      "home_probable_pitcher_id": 608372,
       "home_probable_pitcher": "Tomoyuki Sugano",
+      "venue_id": 19,
+      "venue_name": "Coors Field",
       "away_starter_stats": {
-        "pitcher_id": 608379,
+        "person_id": 608379,
         "era": 3.6,
         "whip": 1.17,
-        "strikeout_walk_ratio": 2.74,
-        "innings_pitched": 132.1,
-        "games_started": 21
+        "strikeout_walk_ratio": 2.736842105263158,
+        "innings_pitched": 132.1
       },
       "home_starter_stats": {
-        "pitcher_id": 608372,
+        "person_id": 608372,
         "era": 4.69,
         "whip": 1.29,
-        "strikeout_walk_ratio": 2.33,
-        "innings_pitched": 96.0,
-        "games_started": 18
+        "strikeout_walk_ratio": 2.3333333333333335,
+        "innings_pitched": 96.0
       },
       "lineups": {
         "away_announced": false,
@@ -432,13 +414,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 32.6,
-        "precipitation_probability": 15,
-        "wind_speed_kmh": 12.6,
-        "wind_direction_deg": 77,
-        "weather_run_factor": 1.0292
+        "weather_run_factor": 1.0328,
+        "temperature_c": 32.2,
+        "precipitation_probability": 14,
+        "wind_speed_kmh": 20.2,
+        "wind_direction_deg": 68
       }
     },
     {
@@ -448,24 +428,24 @@
       "away_team": "Milwaukee Brewers",
       "home_team": "Los Angeles Angels",
       "away_probable_pitcher_id": 675660,
-      "home_probable_pitcher_id": 696270,
       "away_probable_pitcher": "Shane Drohan",
+      "home_probable_pitcher_id": 696270,
       "home_probable_pitcher": "Ryan Johnson",
+      "venue_id": 1,
+      "venue_name": "Angel Stadium",
       "away_starter_stats": {
-        "pitcher_id": 675660,
+        "person_id": 675660,
         "era": 3.51,
         "whip": 1.2,
-        "strikeout_walk_ratio": 3.57,
-        "innings_pitched": 82.0,
-        "games_started": 11
+        "strikeout_walk_ratio": 3.5652173913043477,
+        "innings_pitched": 82.0
       },
       "home_starter_stats": {
-        "pitcher_id": 696270,
+        "person_id": 696270,
         "era": 7.34,
         "whip": 1.54,
         "strikeout_walk_ratio": 2.0,
-        "innings_pitched": 41.2,
-        "games_started": 8
+        "innings_pitched": 41.2
       },
       "lineups": {
         "away_announced": false,
@@ -476,13 +456,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 30.8,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 12.0,
-        "wind_direction_deg": 249,
-        "weather_run_factor": 1.0247
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -492,24 +470,24 @@
       "away_team": "Detroit Tigers",
       "home_team": "Athletics",
       "away_probable_pitcher_id": 663554,
-      "home_probable_pitcher_id": 605488,
       "away_probable_pitcher": "Casey Mize",
+      "home_probable_pitcher_id": 605488,
       "home_probable_pitcher": "Jeffrey Springs",
+      "venue_id": 2529,
+      "venue_name": "Sutter Health Park",
       "away_starter_stats": {
-        "pitcher_id": 663554,
+        "person_id": 663554,
         "era": 2.7,
         "whip": 0.99,
-        "strikeout_walk_ratio": 4.47,
-        "innings_pitched": 86.2,
-        "games_started": 16
+        "strikeout_walk_ratio": 4.473684210526316,
+        "innings_pitched": 86.2
       },
       "home_starter_stats": {
-        "pitcher_id": 605488,
+        "person_id": 605488,
         "era": 6.23,
         "whip": 1.45,
-        "strikeout_walk_ratio": 2.21,
-        "innings_pitched": 104.0,
-        "games_started": 21
+        "strikeout_walk_ratio": 2.2051282051282053,
+        "innings_pitched": 104.0
       },
       "lineups": {
         "away_announced": false,
@@ -520,13 +498,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 28.1,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 16.6,
-        "wind_direction_deg": 236,
-        "weather_run_factor": 1.0263
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -536,24 +512,24 @@
       "away_team": "San Francisco Giants",
       "home_team": "San Diego Padres",
       "away_probable_pitcher_id": 687931,
-      "home_probable_pitcher_id": 699134,
       "away_probable_pitcher": "Carson Whisenhunt",
+      "home_probable_pitcher_id": 699134,
       "home_probable_pitcher": "Bradgley Rodriguez",
+      "venue_id": 2680,
+      "venue_name": "Petco Park",
       "away_starter_stats": {
-        "pitcher_id": 687931,
+        "person_id": 687931,
         "era": 4.6,
         "whip": 1.4,
-        "strikeout_walk_ratio": 1.63,
-        "innings_pitched": 15.2,
-        "games_started": 3
+        "strikeout_walk_ratio": 1.625,
+        "innings_pitched": 15.2
       },
       "home_starter_stats": {
-        "pitcher_id": 699134,
+        "person_id": 699134,
         "era": 2.33,
         "whip": 1.17,
-        "strikeout_walk_ratio": 2.94,
-        "innings_pitched": 46.1,
-        "games_started": 3
+        "strikeout_walk_ratio": 2.9375,
+        "innings_pitched": 46.1
       },
       "lineups": {
         "away_announced": false,
@@ -564,13 +540,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 23.3,
+        "weather_run_factor": 1.0059,
+        "temperature_c": 23.5,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 9.3,
-        "wind_direction_deg": 306,
-        "weather_run_factor": 1.0066
+        "wind_speed_kmh": 10.9,
+        "wind_direction_deg": 314
       }
     },
     {
@@ -580,24 +554,24 @@
       "away_team": "Boston Red Sox",
       "home_team": "Los Angeles Dodgers",
       "away_probable_pitcher_id": 624133,
-      "home_probable_pitcher_id": 683618,
       "away_probable_pitcher": "Ranger Suarez",
+      "home_probable_pitcher_id": 683618,
       "home_probable_pitcher": "Edgardo Henriquez",
+      "venue_id": 22,
+      "venue_name": "UNIQLO Field at Dodger Stadium",
       "away_starter_stats": {
-        "pitcher_id": 624133,
+        "person_id": 624133,
         "era": 3.02,
         "whip": 1.15,
-        "strikeout_walk_ratio": 3.96,
-        "innings_pitched": 95.1,
-        "games_started": 18
+        "strikeout_walk_ratio": 3.9615384615384617,
+        "innings_pitched": 95.1
       },
       "home_starter_stats": {
-        "pitcher_id": 683618,
+        "person_id": 683618,
         "era": 2.79,
         "whip": 1.05,
-        "strikeout_walk_ratio": 2.21,
-        "innings_pitched": 42.0,
-        "games_started": 0
+        "strikeout_walk_ratio": 2.210526315789474,
+        "innings_pitched": 42.0
       },
       "lineups": {
         "away_announced": false,
@@ -608,13 +582,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 24.8,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 9.8,
-        "wind_direction_deg": 253,
-        "weather_run_factor": 1.0096
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -624,24 +596,24 @@
       "away_team": "Minnesota Twins",
       "home_team": "Seattle Mariners",
       "away_probable_pitcher_id": 805673,
-      "home_probable_pitcher_id": 682243,
       "away_probable_pitcher": "Zebby Matthews",
+      "home_probable_pitcher_id": 682243,
       "home_probable_pitcher": "Bryce Miller",
+      "venue_id": 680,
+      "venue_name": "T-Mobile Park",
       "away_starter_stats": {
-        "pitcher_id": 805673,
+        "person_id": 805673,
         "era": 5.21,
         "whip": 1.32,
-        "strikeout_walk_ratio": 2.46,
-        "innings_pitched": 76.0,
-        "games_started": 13
+        "strikeout_walk_ratio": 2.4583333333333335,
+        "innings_pitched": 76.0
       },
       "home_starter_stats": {
-        "pitcher_id": 682243,
+        "person_id": 682243,
         "era": 2.75,
         "whip": 0.92,
-        "strikeout_walk_ratio": 6.45,
-        "innings_pitched": 68.2,
-        "games_started": 11
+        "strikeout_walk_ratio": 6.454545454545454,
+        "innings_pitched": 68.2
       },
       "lineups": {
         "away_announced": false,
@@ -652,13 +624,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "weather_run_factor": 1.0071,
+        "temperature_c": 26.0,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 7.2,
+        "wind_direction_deg": 354
       }
     },
     {
@@ -668,24 +638,24 @@
       "away_team": "St. Louis Cardinals",
       "home_team": "Toronto Blue Jays",
       "away_probable_pitcher_id": 687273,
-      "home_probable_pitcher_id": 592332,
       "away_probable_pitcher": "Quinn Mathews",
+      "home_probable_pitcher_id": 592332,
       "home_probable_pitcher": "Kevin Gausman",
+      "venue_id": 14,
+      "venue_name": "Rogers Centre",
       "away_starter_stats": {
-        "pitcher_id": 687273,
+        "person_id": 687273,
         "era": null,
         "whip": null,
         "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
+        "innings_pitched": null
       },
       "home_starter_stats": {
-        "pitcher_id": 592332,
+        "person_id": 592332,
         "era": 4.51,
         "whip": 1.27,
-        "strikeout_walk_ratio": 3.51,
-        "innings_pitched": 121.2,
-        "games_started": 22
+        "strikeout_walk_ratio": 3.5142857142857142,
+        "innings_pitched": 121.2
       },
       "lineups": {
         "away_announced": false,
@@ -696,13 +666,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     },
     {
@@ -712,24 +680,24 @@
       "away_team": "Minnesota Twins",
       "home_team": "Seattle Mariners",
       "away_probable_pitcher_id": 687570,
-      "home_probable_pitcher_id": 669302,
       "away_probable_pitcher": "Connor Prielipp",
+      "home_probable_pitcher_id": 669302,
       "home_probable_pitcher": "Logan Gilbert",
+      "venue_id": 680,
+      "venue_name": "T-Mobile Park",
       "away_starter_stats": {
-        "pitcher_id": 687570,
+        "person_id": 687570,
         "era": 4.73,
         "whip": 1.3,
-        "strikeout_walk_ratio": 2.92,
-        "innings_pitched": 72.1,
-        "games_started": 14
+        "strikeout_walk_ratio": 2.923076923076923,
+        "innings_pitched": 72.1
       },
       "home_starter_stats": {
-        "pitcher_id": 669302,
+        "person_id": 669302,
         "era": 3.44,
         "whip": 0.99,
-        "strikeout_walk_ratio": 4.93,
-        "innings_pitched": 125.2,
-        "games_started": 21
+        "strikeout_walk_ratio": 4.925925925925926,
+        "innings_pitched": 125.2
       },
       "lineups": {
         "away_announced": false,
@@ -740,13 +708,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "weather_run_factor": 1.0052,
+        "temperature_c": 18.0,
+        "precipitation_probability": 18,
+        "wind_speed_kmh": 21.2,
+        "wind_direction_deg": 235
       }
     },
     {
@@ -756,24 +722,24 @@
       "away_team": "Chicago White Sox",
       "home_team": "Tampa Bay Rays",
       "away_probable_pitcher_id": 702273,
-      "home_probable_pitcher_id": 656876,
       "away_probable_pitcher": "Noah Schultz",
+      "home_probable_pitcher_id": 656876,
       "home_probable_pitcher": "Drew Rasmussen",
+      "venue_id": 12,
+      "venue_name": "Tropicana Field",
       "away_starter_stats": {
-        "pitcher_id": 702273,
+        "person_id": 702273,
         "era": 6.15,
         "whip": 1.45,
-        "strikeout_walk_ratio": 1.74,
-        "innings_pitched": 60.0,
-        "games_started": 13
+        "strikeout_walk_ratio": 1.7419354838709677,
+        "innings_pitched": 60.0
       },
       "home_starter_stats": {
-        "pitcher_id": 656876,
+        "person_id": 656876,
         "era": 3.07,
         "whip": 0.93,
-        "strikeout_walk_ratio": 5.89,
-        "innings_pitched": 111.1,
-        "games_started": 20
+        "strikeout_walk_ratio": 5.894736842105263,
+        "innings_pitched": 111.1
       },
       "lineups": {
         "away_announced": false,
@@ -784,13 +750,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     },
     {
@@ -800,24 +764,24 @@
       "away_team": "Miami Marlins",
       "home_team": "New York Mets",
       "away_probable_pitcher_id": 663969,
-      "home_probable_pitcher_id": 804267,
       "away_probable_pitcher": "Tyler Phillips",
+      "home_probable_pitcher_id": 804267,
       "home_probable_pitcher": "Zac Thornton",
+      "venue_id": 3289,
+      "venue_name": "Citi Field",
       "away_starter_stats": {
-        "pitcher_id": 663969,
+        "person_id": 663969,
         "era": 3.52,
         "whip": 1.36,
-        "strikeout_walk_ratio": 1.66,
-        "innings_pitched": 84.1,
-        "games_started": 11
+        "strikeout_walk_ratio": 1.6578947368421053,
+        "innings_pitched": 84.1
       },
       "home_starter_stats": {
-        "pitcher_id": 804267,
+        "person_id": 804267,
         "era": 2.43,
         "whip": 0.91,
-        "strikeout_walk_ratio": 3.14,
-        "innings_pitched": 29.2,
-        "games_started": 5
+        "strikeout_walk_ratio": 3.142857142857143,
+        "innings_pitched": 29.2
       },
       "lineups": {
         "away_announced": false,
@@ -828,13 +792,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 28.3,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 23.2,
-        "wind_direction_deg": 164,
-        "weather_run_factor": 1.0367
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -844,24 +806,24 @@
       "away_team": "Pittsburgh Pirates",
       "home_team": "Cincinnati Reds",
       "away_probable_pitcher_id": 677952,
-      "home_probable_pitcher_id": 671096,
       "away_probable_pitcher": "Braxton Ashcraft",
+      "home_probable_pitcher_id": 671096,
       "home_probable_pitcher": "Andrew Abbott",
+      "venue_id": 2602,
+      "venue_name": "Great American Ball Park",
       "away_starter_stats": {
-        "pitcher_id": 677952,
+        "person_id": 677952,
         "era": 4.05,
         "whip": 1.19,
         "strikeout_walk_ratio": 4.5,
-        "innings_pitched": 122.1,
-        "games_started": 21
+        "innings_pitched": 122.1
       },
       "home_starter_stats": {
-        "pitcher_id": 671096,
+        "person_id": 671096,
         "era": 3.85,
         "whip": 1.38,
-        "strikeout_walk_ratio": 1.74,
-        "innings_pitched": 117.0,
-        "games_started": 22
+        "strikeout_walk_ratio": 1.7407407407407407,
+        "innings_pitched": 117.0
       },
       "lineups": {
         "away_announced": false,
@@ -872,13 +834,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 24.9,
-        "precipitation_probability": 55,
-        "wind_speed_kmh": 5.2,
-        "wind_direction_deg": 326,
-        "weather_run_factor": 0.9947
+        "weather_run_factor": 1.0129,
+        "temperature_c": 25.3,
+        "precipitation_probability": 56,
+        "wind_speed_kmh": 14.3,
+        "wind_direction_deg": 133
       }
     },
     {
@@ -888,24 +848,24 @@
       "away_team": "Philadelphia Phillies",
       "home_team": "Baltimore Orioles",
       "away_probable_pitcher_id": 650911,
-      "home_probable_pitcher_id": 669358,
       "away_probable_pitcher": "Cristopher Sánchez",
+      "home_probable_pitcher_id": 669358,
       "home_probable_pitcher": "Shane Baz",
+      "venue_id": 2,
+      "venue_name": "Oriole Park at Camden Yards",
       "away_starter_stats": {
-        "pitcher_id": 650911,
+        "person_id": 650911,
         "era": 2.73,
         "whip": 1.2,
-        "strikeout_walk_ratio": 5.61,
-        "innings_pitched": 138.2,
-        "games_started": 22
+        "strikeout_walk_ratio": 5.607142857142857,
+        "innings_pitched": 138.2
       },
       "home_starter_stats": {
-        "pitcher_id": 669358,
+        "person_id": 669358,
         "era": 3.98,
         "whip": 1.39,
-        "strikeout_walk_ratio": 2.43,
-        "innings_pitched": 122.0,
-        "games_started": 21
+        "strikeout_walk_ratio": 2.4318181818181817,
+        "innings_pitched": 122.0
       },
       "lineups": {
         "away_announced": false,
@@ -916,13 +876,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 29.2,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 17.4,
-        "wind_direction_deg": 150,
-        "weather_run_factor": 1.0297
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -932,24 +890,24 @@
       "away_team": "Texas Rangers",
       "home_team": "Houston Astros",
       "away_probable_pitcher_id": 594798,
-      "home_probable_pitcher_id": 669854,
       "away_probable_pitcher": "Jacob deGrom",
+      "home_probable_pitcher_id": 669854,
       "home_probable_pitcher": "Ronel Blanco",
+      "venue_id": 2392,
+      "venue_name": "Daikin Park",
       "away_starter_stats": {
-        "pitcher_id": 594798,
+        "person_id": 594798,
         "era": 3.67,
         "whip": 1.07,
         "strikeout_walk_ratio": 5.5,
-        "innings_pitched": 110.1,
-        "games_started": 20
+        "innings_pitched": 110.1
       },
       "home_starter_stats": {
-        "pitcher_id": 669854,
+        "person_id": 669854,
         "era": 8.1,
         "whip": 1.2,
         "strikeout_walk_ratio": 2.0,
-        "innings_pitched": 10.0,
-        "games_started": 2
+        "innings_pitched": 10.0
       },
       "lineups": {
         "away_announced": false,
@@ -960,13 +918,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     },
     {
@@ -976,24 +932,24 @@
       "away_team": "Arizona Diamondbacks",
       "home_team": "Cleveland Guardians",
       "away_probable_pitcher_id": 684442,
-      "home_probable_pitcher_id": 800048,
       "away_probable_pitcher": "Kohl Drake",
+      "home_probable_pitcher_id": 800048,
       "home_probable_pitcher": "Parker Messick",
+      "venue_id": 5,
+      "venue_name": "Progressive Field",
       "away_starter_stats": {
-        "pitcher_id": 684442,
+        "person_id": 684442,
         "era": 5.0,
         "whip": 1.44,
         "strikeout_walk_ratio": 1.5,
-        "innings_pitched": 9.0,
-        "games_started": 2
+        "innings_pitched": 9.0
       },
       "home_starter_stats": {
-        "pitcher_id": 800048,
+        "person_id": 800048,
         "era": 2.59,
         "whip": 1.04,
-        "strikeout_walk_ratio": 3.39,
-        "innings_pitched": 125.1,
-        "games_started": 21
+        "strikeout_walk_ratio": 3.388888888888889,
+        "innings_pitched": 125.1
       },
       "lineups": {
         "away_announced": false,
@@ -1004,13 +960,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 31.2,
+        "weather_run_factor": 1.0062,
+        "temperature_c": 27.1,
         "precipitation_probability": 23,
-        "wind_speed_kmh": 9.7,
-        "wind_direction_deg": 180,
-        "weather_run_factor": 1.0224
+        "wind_speed_kmh": 4.1,
+        "wind_direction_deg": 38
       }
     },
     {
@@ -1020,24 +974,24 @@
       "away_team": "Washington Nationals",
       "home_team": "Atlanta Braves",
       "away_probable_pitcher_id": 571945,
-      "home_probable_pitcher_id": 625643,
       "away_probable_pitcher": "Miles Mikolas",
+      "home_probable_pitcher_id": 625643,
       "home_probable_pitcher": "Reynaldo López",
+      "venue_id": 4705,
+      "venue_name": "Truist Park",
       "away_starter_stats": {
-        "pitcher_id": 571945,
+        "person_id": 571945,
         "era": 5.65,
         "whip": 1.33,
-        "strikeout_walk_ratio": 2.48,
-        "innings_pitched": 102.0,
-        "games_started": 9
+        "strikeout_walk_ratio": 2.4761904761904763,
+        "innings_pitched": 102.0
       },
       "home_starter_stats": {
-        "pitcher_id": 625643,
+        "person_id": 625643,
         "era": 3.64,
         "whip": 1.34,
-        "strikeout_walk_ratio": 2.28,
-        "innings_pitched": 71.2,
-        "games_started": 11
+        "strikeout_walk_ratio": 2.2758620689655173,
+        "innings_pitched": 71.2
       },
       "lineups": {
         "away_announced": false,
@@ -1048,13 +1002,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 24.3,
-        "precipitation_probability": 17,
-        "wind_speed_kmh": 9.0,
-        "wind_direction_deg": 180,
-        "weather_run_factor": 1.0086
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1064,24 +1016,24 @@
       "away_team": "New York Yankees",
       "home_team": "Chicago Cubs",
       "away_probable_pitcher_id": 608331,
-      "home_probable_pitcher_id": 656849,
       "away_probable_pitcher": "Max Fried",
+      "home_probable_pitcher_id": 656849,
       "home_probable_pitcher": "David Peterson",
+      "venue_id": 17,
+      "venue_name": "Wrigley Field",
       "away_starter_stats": {
-        "pitcher_id": 608331,
+        "person_id": 608331,
         "era": 3.23,
         "whip": 1.02,
-        "strikeout_walk_ratio": 2.77,
-        "innings_pitched": 69.2,
-        "games_started": 12
+        "strikeout_walk_ratio": 2.772727272727273,
+        "innings_pitched": 69.2
       },
       "home_starter_stats": {
-        "pitcher_id": 656849,
+        "person_id": 656849,
         "era": 5.8,
         "whip": 1.52,
-        "strikeout_walk_ratio": 1.93,
-        "innings_pitched": 94.2,
-        "games_started": 13
+        "strikeout_walk_ratio": 1.925,
+        "innings_pitched": 94.2
       },
       "lineups": {
         "away_announced": false,
@@ -1092,13 +1044,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 20.3,
-        "precipitation_probability": 42,
-        "wind_speed_kmh": 29.3,
-        "wind_direction_deg": 43,
-        "weather_run_factor": 1.0296
+        "weather_run_factor": 1.0152,
+        "temperature_c": 21.7,
+        "precipitation_probability": 41,
+        "wind_speed_kmh": 23.8,
+        "wind_direction_deg": 32
       }
     },
     {
@@ -1108,24 +1058,24 @@
       "away_team": "Kansas City Royals",
       "home_team": "Colorado Rockies",
       "away_probable_pitcher_id": 679883,
-      "home_probable_pitcher_id": 663372,
       "away_probable_pitcher": "Luinder Avila",
+      "home_probable_pitcher_id": 663372,
       "home_probable_pitcher": "Ryan Feltner",
+      "venue_id": 19,
+      "venue_name": "Coors Field",
       "away_starter_stats": {
-        "pitcher_id": 679883,
+        "person_id": 679883,
         "era": 4.95,
         "whip": 1.57,
-        "strikeout_walk_ratio": 1.51,
-        "innings_pitched": 67.1,
-        "games_started": 11
+        "strikeout_walk_ratio": 1.5128205128205128,
+        "innings_pitched": 67.1
       },
       "home_starter_stats": {
-        "pitcher_id": 663372,
+        "person_id": 663372,
         "era": 5.73,
         "whip": 1.46,
-        "strikeout_walk_ratio": 1.86,
-        "innings_pitched": 70.2,
-        "games_started": 15
+        "strikeout_walk_ratio": 1.8620689655172413,
+        "innings_pitched": 70.2
       },
       "lineups": {
         "away_announced": false,
@@ -1136,13 +1086,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 34.4,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 18.5,
-        "wind_direction_deg": 83,
-        "weather_run_factor": 1.0419
+        "weather_run_factor": 1.0328,
+        "temperature_c": 34.8,
+        "precipitation_probability": 2,
+        "wind_speed_kmh": 15.1,
+        "wind_direction_deg": 90
       }
     },
     {
@@ -1152,24 +1100,24 @@
       "away_team": "San Francisco Giants",
       "home_team": "San Diego Padres",
       "away_probable_pitcher_id": null,
+      "away_probable_pitcher": "TBD",
       "home_probable_pitcher_id": 621111,
-      "away_probable_pitcher": "未発表",
       "home_probable_pitcher": "Walker Buehler",
+      "venue_id": 2680,
+      "venue_name": "Petco Park",
       "away_starter_stats": {
-        "pitcher_id": null,
+        "person_id": null,
         "era": null,
         "whip": null,
         "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
+        "innings_pitched": null
       },
       "home_starter_stats": {
-        "pitcher_id": 621111,
+        "person_id": 621111,
         "era": 5.13,
         "whip": 1.41,
-        "strikeout_walk_ratio": 2.17,
-        "innings_pitched": 100.0,
-        "games_started": 21
+        "strikeout_walk_ratio": 2.1666666666666665,
+        "innings_pitched": 100.0
       },
       "lineups": {
         "away_announced": false,
@@ -1180,13 +1128,11 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 27.0,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 10.0,
-        "wind_direction_deg": 232,
-        "weather_run_factor": 1.014
+        "weather_run_factor": 1.0092,
+        "temperature_c": 25.0,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 11.2,
+        "wind_direction_deg": 222
       }
     },
     {
@@ -1196,24 +1142,24 @@
       "away_team": "Boston Red Sox",
       "home_team": "Los Angeles Dodgers",
       "away_probable_pitcher_id": 801139,
-      "home_probable_pitcher_id": 808967,
       "away_probable_pitcher": "Payton Tolle",
+      "home_probable_pitcher_id": 808967,
       "home_probable_pitcher": "Yoshinobu Yamamoto",
+      "venue_id": 22,
+      "venue_name": "UNIQLO Field at Dodger Stadium",
       "away_starter_stats": {
-        "pitcher_id": 801139,
+        "person_id": 801139,
         "era": 3.32,
         "whip": 1.11,
-        "strikeout_walk_ratio": 3.81,
-        "innings_pitched": 95.0,
-        "games_started": 17
+        "strikeout_walk_ratio": 3.814814814814815,
+        "innings_pitched": 95.0
       },
       "home_starter_stats": {
-        "pitcher_id": 808967,
+        "person_id": 808967,
         "era": 2.72,
         "whip": 0.9,
-        "strikeout_walk_ratio": 4.21,
-        "innings_pitched": 125.2,
-        "games_started": 19
+        "strikeout_walk_ratio": 4.214285714285714,
+        "innings_pitched": 125.2
       },
       "lineups": {
         "away_announced": false,
@@ -1224,13 +1170,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 28.2,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 11.6,
-        "wind_direction_deg": 254,
-        "weather_run_factor": 1.0188
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1240,24 +1184,24 @@
       "away_team": "Milwaukee Brewers",
       "home_team": "Los Angeles Angels",
       "away_probable_pitcher_id": 688107,
-      "home_probable_pitcher_id": 667755,
       "away_probable_pitcher": "Robert Gasser",
+      "home_probable_pitcher_id": 667755,
       "home_probable_pitcher": "José Soriano",
+      "venue_id": 1,
+      "venue_name": "Angel Stadium",
       "away_starter_stats": {
-        "pitcher_id": 688107,
+        "person_id": 688107,
         "era": 4.71,
         "whip": 1.17,
-        "strikeout_walk_ratio": 3.71,
-        "innings_pitched": 57.1,
-        "games_started": 11
+        "strikeout_walk_ratio": 3.7142857142857144,
+        "innings_pitched": 57.1
       },
       "home_starter_stats": {
-        "pitcher_id": 667755,
+        "person_id": 667755,
         "era": 3.29,
         "whip": 1.25,
-        "strikeout_walk_ratio": 2.23,
-        "innings_pitched": 123.0,
-        "games_started": 22
+        "strikeout_walk_ratio": 2.2280701754385963,
+        "innings_pitched": 123.0
       },
       "lineups": {
         "away_announced": false,
@@ -1268,13 +1212,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 29.2,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 12.0,
-        "wind_direction_deg": 231,
-        "weather_run_factor": 1.0215
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1284,24 +1226,24 @@
       "away_team": "Detroit Tigers",
       "home_team": "Athletics",
       "away_probable_pitcher_id": 664285,
-      "home_probable_pitcher_id": 678022,
       "away_probable_pitcher": "Framber Valdez",
+      "home_probable_pitcher_id": 678022,
       "home_probable_pitcher": "Jack Perkins",
+      "venue_id": 2529,
+      "venue_name": "Sutter Health Park",
       "away_starter_stats": {
-        "pitcher_id": 664285,
+        "person_id": 664285,
         "era": 4.53,
         "whip": 1.38,
-        "strikeout_walk_ratio": 2.24,
-        "innings_pitched": 113.1,
-        "games_started": 21
+        "strikeout_walk_ratio": 2.2439024390243905,
+        "innings_pitched": 113.1
       },
       "home_starter_stats": {
-        "pitcher_id": 678022,
+        "person_id": 678022,
         "era": 6.45,
         "whip": 1.36,
-        "strikeout_walk_ratio": 2.96,
-        "innings_pitched": 68.1,
-        "games_started": 8
+        "strikeout_walk_ratio": 2.962962962962963,
+        "innings_pitched": 68.1
       },
       "lineups": {
         "away_announced": false,
@@ -1312,13 +1254,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 30.3,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 17.5,
-        "wind_direction_deg": 233,
-        "weather_run_factor": 1.0321
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1328,24 +1268,24 @@
       "away_team": "Philadelphia Phillies",
       "home_team": "Baltimore Orioles",
       "away_probable_pitcher_id": 554430,
-      "home_probable_pitcher_id": 680694,
       "away_probable_pitcher": "Zack Wheeler",
+      "home_probable_pitcher_id": 680694,
       "home_probable_pitcher": "Kyle Bradish",
+      "venue_id": 2,
+      "venue_name": "Oriole Park at Camden Yards",
       "away_starter_stats": {
-        "pitcher_id": 554430,
+        "person_id": 554430,
         "era": 2.53,
         "whip": 0.92,
-        "strikeout_walk_ratio": 5.35,
-        "innings_pitched": 103.0,
-        "games_started": 17
+        "strikeout_walk_ratio": 5.3478260869565215,
+        "innings_pitched": 103.0
       },
       "home_starter_stats": {
-        "pitcher_id": 680694,
+        "person_id": 680694,
         "era": 3.74,
         "whip": 1.36,
-        "strikeout_walk_ratio": 2.19,
-        "innings_pitched": 118.0,
-        "games_started": 21
+        "strikeout_walk_ratio": 2.1923076923076925,
+        "innings_pitched": 118.0
       },
       "lineups": {
         "away_announced": false,
@@ -1356,13 +1296,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 30.5,
-        "precipitation_probability": 4,
-        "wind_speed_kmh": 19.2,
-        "wind_direction_deg": 152,
-        "weather_run_factor": 1.0351
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1372,24 +1310,24 @@
       "away_team": "Washington Nationals",
       "home_team": "Atlanta Braves",
       "away_probable_pitcher_id": 676917,
-      "home_probable_pitcher_id": 527048,
       "away_probable_pitcher": "Cade Cavalli",
+      "home_probable_pitcher_id": 527048,
       "home_probable_pitcher": "Martín Pérez",
+      "venue_id": 4705,
+      "venue_name": "Truist Park",
       "away_starter_stats": {
-        "pitcher_id": 676917,
+        "person_id": 676917,
         "era": 3.55,
         "whip": 1.29,
-        "strikeout_walk_ratio": 3.61,
-        "innings_pitched": 116.2,
-        "games_started": 23
+        "strikeout_walk_ratio": 3.611111111111111,
+        "innings_pitched": 116.2
       },
       "home_starter_stats": {
-        "pitcher_id": 527048,
+        "person_id": 527048,
         "era": 3.49,
         "whip": 1.23,
-        "strikeout_walk_ratio": 1.86,
-        "innings_pitched": 90.1,
-        "games_started": 16
+        "strikeout_walk_ratio": 1.864864864864865,
+        "innings_pitched": 90.1
       },
       "lineups": {
         "away_announced": false,
@@ -1400,13 +1338,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 26.4,
-        "precipitation_probability": 17,
-        "wind_speed_kmh": 8.2,
-        "wind_direction_deg": 229,
-        "weather_run_factor": 1.0128
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1416,24 +1352,24 @@
       "away_team": "St. Louis Cardinals",
       "home_team": "Toronto Blue Jays",
       "away_probable_pitcher_id": 700241,
-      "home_probable_pitcher_id": 453286,
       "away_probable_pitcher": "Michael McGreevy",
+      "home_probable_pitcher_id": 453286,
       "home_probable_pitcher": "Max Scherzer",
+      "venue_id": 14,
+      "venue_name": "Rogers Centre",
       "away_starter_stats": {
-        "pitcher_id": 700241,
+        "person_id": 700241,
         "era": 3.57,
         "whip": 1.2,
-        "strikeout_walk_ratio": 2.62,
-        "innings_pitched": 116.0,
-        "games_started": 21
+        "strikeout_walk_ratio": 2.6206896551724137,
+        "innings_pitched": 116.0
       },
       "home_starter_stats": {
-        "pitcher_id": 453286,
+        "person_id": 453286,
         "era": 9.49,
         "whip": 1.82,
-        "strikeout_walk_ratio": 1.29,
-        "innings_pitched": 24.2,
-        "games_started": 7
+        "strikeout_walk_ratio": 1.2857142857142858,
+        "innings_pitched": 24.2
       },
       "lineups": {
         "away_announced": false,
@@ -1444,13 +1380,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     },
     {
@@ -1460,24 +1394,24 @@
       "away_team": "Arizona Diamondbacks",
       "home_team": "Cleveland Guardians",
       "away_probable_pitcher_id": 518876,
-      "home_probable_pitcher_id": 668909,
       "away_probable_pitcher": "Merrill Kelly",
+      "home_probable_pitcher_id": 668909,
       "home_probable_pitcher": "Gavin Williams",
+      "venue_id": 5,
+      "venue_name": "Progressive Field",
       "away_starter_stats": {
-        "pitcher_id": 518876,
+        "person_id": 518876,
         "era": 4.86,
         "whip": 1.45,
-        "strikeout_walk_ratio": 1.69,
-        "innings_pitched": 109.1,
-        "games_started": 19
+        "strikeout_walk_ratio": 1.6904761904761905,
+        "innings_pitched": 109.1
       },
       "home_starter_stats": {
-        "pitcher_id": 668909,
+        "person_id": 668909,
         "era": 3.71,
         "whip": 1.07,
-        "strikeout_walk_ratio": 4.42,
-        "innings_pitched": 133.1,
-        "games_started": 22
+        "strikeout_walk_ratio": 4.421052631578948,
+        "innings_pitched": 133.1
       },
       "lineups": {
         "away_announced": false,
@@ -1488,13 +1422,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 22.9,
-        "precipitation_probability": 66,
-        "wind_speed_kmh": 16.4,
-        "wind_direction_deg": 171,
-        "weather_run_factor": 1.0002
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1504,24 +1436,24 @@
       "away_team": "Pittsburgh Pirates",
       "home_team": "Cincinnati Reds",
       "away_probable_pitcher_id": 656605,
-      "home_probable_pitcher_id": 695505,
       "away_probable_pitcher": "Mitch Keller",
+      "home_probable_pitcher_id": 695505,
       "home_probable_pitcher": "Chase Burns",
+      "venue_id": 2602,
+      "venue_name": "Great American Ball Park",
       "away_starter_stats": {
-        "pitcher_id": 656605,
+        "person_id": 656605,
         "era": 4.83,
         "whip": 1.31,
-        "strikeout_walk_ratio": 2.29,
-        "innings_pitched": 113.2,
-        "games_started": 21
+        "strikeout_walk_ratio": 2.289473684210526,
+        "innings_pitched": 113.2
       },
       "home_starter_stats": {
-        "pitcher_id": 695505,
+        "person_id": 695505,
         "era": 2.4,
         "whip": 1.12,
-        "strikeout_walk_ratio": 3.12,
-        "innings_pitched": 112.2,
-        "games_started": 20
+        "strikeout_walk_ratio": 3.1219512195121952,
+        "innings_pitched": 112.2
       },
       "lineups": {
         "away_announced": false,
@@ -1532,13 +1464,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 19.6,
-        "precipitation_probability": 35,
-        "wind_speed_kmh": 8.0,
-        "wind_direction_deg": 207,
-        "weather_run_factor": 0.9992
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1548,24 +1478,24 @@
       "away_team": "Chicago White Sox",
       "home_team": "Tampa Bay Rays",
       "away_probable_pitcher_id": 641743,
-      "home_probable_pitcher_id": 643377,
       "away_probable_pitcher": "Anthony Kay",
+      "home_probable_pitcher_id": 643377,
       "home_probable_pitcher": "Griffin Jax",
+      "venue_id": 12,
+      "venue_name": "Tropicana Field",
       "away_starter_stats": {
-        "pitcher_id": 641743,
+        "person_id": 641743,
         "era": 4.25,
         "whip": 1.36,
-        "strikeout_walk_ratio": 2.12,
-        "innings_pitched": 103.2,
-        "games_started": 20
+        "strikeout_walk_ratio": 2.1219512195121952,
+        "innings_pitched": 103.2
       },
       "home_starter_stats": {
-        "pitcher_id": 643377,
+        "person_id": 643377,
         "era": 3.74,
         "whip": 1.23,
-        "strikeout_walk_ratio": 3.07,
-        "innings_pitched": 86.2,
-        "games_started": 17
+        "strikeout_walk_ratio": 3.066666666666667,
+        "innings_pitched": 86.2
       },
       "lineups": {
         "away_announced": false,
@@ -1576,13 +1506,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     },
     {
@@ -1592,24 +1520,24 @@
       "away_team": "Miami Marlins",
       "home_team": "New York Mets",
       "away_probable_pitcher_id": 645261,
-      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "Sandy Alcantara",
-      "home_probable_pitcher": "未発表",
+      "home_probable_pitcher_id": null,
+      "home_probable_pitcher": "TBD",
+      "venue_id": 3289,
+      "venue_name": "Citi Field",
       "away_starter_stats": {
-        "pitcher_id": 645261,
+        "person_id": 645261,
         "era": 3.82,
         "whip": 1.21,
-        "strikeout_walk_ratio": 2.95,
-        "innings_pitched": 150.2,
-        "games_started": 23
+        "strikeout_walk_ratio": 2.948717948717949,
+        "innings_pitched": 150.2
       },
       "home_starter_stats": {
-        "pitcher_id": null,
+        "person_id": null,
         "era": null,
         "whip": null,
         "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
+        "innings_pitched": null
       },
       "lineups": {
         "away_announced": false,
@@ -1620,13 +1548,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": null,
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 28.4,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 23.5,
-        "wind_direction_deg": 165,
-        "weather_run_factor": 1.0374
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1636,24 +1562,24 @@
       "away_team": "Texas Rangers",
       "home_team": "Houston Astros",
       "away_probable_pitcher_id": 677958,
-      "home_probable_pitcher_id": null,
       "away_probable_pitcher": "Kumar Rocker",
-      "home_probable_pitcher": "未発表",
+      "home_probable_pitcher_id": null,
+      "home_probable_pitcher": "TBD",
+      "venue_id": 2392,
+      "venue_name": "Daikin Park",
       "away_starter_stats": {
-        "pitcher_id": 677958,
+        "person_id": 677958,
         "era": 4.03,
         "whip": 1.29,
-        "strikeout_walk_ratio": 2.45,
-        "innings_pitched": 102.2,
-        "games_started": 18
+        "strikeout_walk_ratio": 2.4473684210526314,
+        "innings_pitched": 102.2
       },
       "home_starter_stats": {
-        "pitcher_id": null,
+        "person_id": null,
         "era": null,
         "whip": null,
         "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
+        "innings_pitched": null
       },
       "lineups": {
         "away_announced": false,
@@ -1664,13 +1590,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": null,
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     },
     {
@@ -1680,24 +1604,24 @@
       "away_team": "New York Yankees",
       "home_team": "Chicago Cubs",
       "away_probable_pitcher_id": 543037,
-      "home_probable_pitcher_id": 607067,
       "away_probable_pitcher": "Gerrit Cole",
+      "home_probable_pitcher_id": 607067,
       "home_probable_pitcher": "Colin Rea",
+      "venue_id": 17,
+      "venue_name": "Wrigley Field",
       "away_starter_stats": {
-        "pitcher_id": 543037,
+        "person_id": 543037,
         "era": 3.57,
         "whip": 1.09,
-        "strikeout_walk_ratio": 5.21,
-        "innings_pitched": 68.0,
-        "games_started": 12
+        "strikeout_walk_ratio": 5.214285714285714,
+        "innings_pitched": 68.0
       },
       "home_starter_stats": {
-        "pitcher_id": 607067,
+        "person_id": 607067,
         "era": 4.67,
         "whip": 1.4,
-        "strikeout_walk_ratio": 2.08,
-        "innings_pitched": 111.2,
-        "games_started": 18
+        "strikeout_walk_ratio": 2.075,
+        "innings_pitched": 111.2
       },
       "lineups": {
         "away_announced": false,
@@ -1708,13 +1632,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": false,
-        "indoor_or_retractable": false,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     },
     {
@@ -1724,24 +1646,24 @@
       "away_team": "Kansas City Royals",
       "home_team": "Colorado Rockies",
       "away_probable_pitcher_id": 607625,
-      "home_probable_pitcher_id": 607536,
       "away_probable_pitcher": "Seth Lugo",
+      "home_probable_pitcher_id": 607536,
       "home_probable_pitcher": "Kyle Freeland",
+      "venue_id": 19,
+      "venue_name": "Coors Field",
       "away_starter_stats": {
-        "pitcher_id": 607625,
+        "person_id": 607625,
         "era": 4.22,
         "whip": 1.37,
         "strikeout_walk_ratio": 2.4,
-        "innings_pitched": 123.2,
-        "games_started": 22
+        "innings_pitched": 123.2
       },
       "home_starter_stats": {
-        "pitcher_id": 607536,
+        "person_id": 607536,
         "era": 7.34,
         "whip": 1.55,
-        "strikeout_walk_ratio": 4.05,
-        "innings_pitched": 99.1,
-        "games_started": 19
+        "strikeout_walk_ratio": 4.0476190476190474,
+        "innings_pitched": 99.1
       },
       "lineups": {
         "away_announced": false,
@@ -1752,13 +1674,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 37.6,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 5.0,
-        "wind_direction_deg": 90,
-        "weather_run_factor": 1.0352
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1768,24 +1688,24 @@
       "away_team": "Milwaukee Brewers",
       "home_team": "Los Angeles Angels",
       "away_probable_pitcher_id": 694819,
-      "home_probable_pitcher_id": 700712,
       "away_probable_pitcher": "Jacob Misiorowski",
+      "home_probable_pitcher_id": 700712,
       "home_probable_pitcher": "Walbert Ureña",
+      "venue_id": 1,
+      "venue_name": "Angel Stadium",
       "away_starter_stats": {
-        "pitcher_id": 694819,
+        "person_id": 694819,
         "era": 1.58,
         "whip": 0.75,
-        "strikeout_walk_ratio": 6.61,
-        "innings_pitched": 120.0,
-        "games_started": 20
+        "strikeout_walk_ratio": 6.607142857142857,
+        "innings_pitched": 120.0
       },
       "home_starter_stats": {
-        "pitcher_id": 700712,
+        "person_id": 700712,
         "era": 2.7,
         "whip": 1.26,
-        "strikeout_walk_ratio": 1.8,
-        "innings_pitched": 93.1,
-        "games_started": 17
+        "strikeout_walk_ratio": 1.7959183673469388,
+        "innings_pitched": 93.1
       },
       "lineups": {
         "away_announced": false,
@@ -1796,13 +1716,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 32.6,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 13.5,
-        "wind_direction_deg": 224,
-        "weather_run_factor": 1.0306
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1812,24 +1730,24 @@
       "away_team": "Detroit Tigers",
       "home_team": "Athletics",
       "away_probable_pitcher_id": 672456,
-      "home_probable_pitcher_id": 695611,
       "away_probable_pitcher": "Keider Montero",
+      "home_probable_pitcher_id": 695611,
       "home_probable_pitcher": "Gage Jump",
+      "venue_id": 2529,
+      "venue_name": "Sutter Health Park",
       "away_starter_stats": {
-        "pitcher_id": 672456,
+        "person_id": 672456,
         "era": 3.34,
         "whip": 1.02,
-        "strikeout_walk_ratio": 3.43,
-        "innings_pitched": 110.1,
-        "games_started": 17
+        "strikeout_walk_ratio": 3.4347826086956523,
+        "innings_pitched": 110.1
       },
       "home_starter_stats": {
-        "pitcher_id": 695611,
+        "person_id": 695611,
         "era": 4.0,
         "whip": 1.4,
         "strikeout_walk_ratio": 2.72,
-        "innings_pitched": 63.0,
-        "games_started": 12
+        "innings_pitched": 63.0
       },
       "lineups": {
         "away_announced": false,
@@ -1840,13 +1758,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 29.2,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 10.5,
-        "wind_direction_deg": 243,
-        "weather_run_factor": 1.0192
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1856,24 +1772,24 @@
       "away_team": "San Francisco Giants",
       "home_team": "San Diego Padres",
       "away_probable_pitcher_id": null,
+      "away_probable_pitcher": "TBD",
       "home_probable_pitcher_id": 650633,
-      "away_probable_pitcher": "未発表",
       "home_probable_pitcher": "Michael King",
+      "venue_id": 2680,
+      "venue_name": "Petco Park",
       "away_starter_stats": {
-        "pitcher_id": null,
+        "person_id": null,
         "era": null,
         "whip": null,
         "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
+        "innings_pitched": null
       },
       "home_starter_stats": {
-        "pitcher_id": 650633,
+        "person_id": 650633,
         "era": 3.38,
         "whip": 1.17,
         "strikeout_walk_ratio": 2.18,
-        "innings_pitched": 125.1,
-        "games_started": 22
+        "innings_pitched": 125.1
       },
       "lineups": {
         "away_announced": false,
@@ -1884,13 +1800,11 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 26.1,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 15.1,
-        "wind_direction_deg": 232,
-        "weather_run_factor": 1.0199
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -1900,24 +1814,24 @@
       "away_team": "Minnesota Twins",
       "home_team": "Seattle Mariners",
       "away_probable_pitcher_id": 671737,
-      "home_probable_pitcher_id": 669923,
       "away_probable_pitcher": "Taj Bradley",
+      "home_probable_pitcher_id": 669923,
       "home_probable_pitcher": "George Kirby",
+      "venue_id": 680,
+      "venue_name": "T-Mobile Park",
       "away_starter_stats": {
-        "pitcher_id": 671737,
+        "person_id": 671737,
         "era": 3.65,
         "whip": 1.21,
-        "strikeout_walk_ratio": 2.84,
-        "innings_pitched": 120.2,
-        "games_started": 21
+        "strikeout_walk_ratio": 2.836734693877551,
+        "innings_pitched": 120.2
       },
       "home_starter_stats": {
-        "pitcher_id": 669923,
+        "person_id": 669923,
         "era": 3.98,
         "whip": 1.3,
         "strikeout_walk_ratio": 4.28,
-        "innings_pitched": 120.0,
-        "games_started": 20
+        "innings_pitched": 120.0
       },
       "lineups": {
         "away_announced": false,
@@ -1928,13 +1842,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     },
     {
@@ -1944,24 +1856,24 @@
       "away_team": "Boston Red Sox",
       "home_team": "Los Angeles Dodgers",
       "away_probable_pitcher_id": 687562,
-      "home_probable_pitcher_id": 686218,
       "away_probable_pitcher": "Jake Bennett",
+      "home_probable_pitcher_id": 686218,
       "home_probable_pitcher": "Emmet Sheehan",
+      "venue_id": 22,
+      "venue_name": "UNIQLO Field at Dodger Stadium",
       "away_starter_stats": {
-        "pitcher_id": 687562,
+        "person_id": 687562,
         "era": 2.74,
         "whip": 0.97,
-        "strikeout_walk_ratio": 4.18,
-        "innings_pitched": 65.2,
-        "games_started": 11
+        "strikeout_walk_ratio": 4.181818181818182,
+        "innings_pitched": 65.2
       },
       "home_starter_stats": {
-        "pitcher_id": 686218,
+        "person_id": 686218,
         "era": 4.95,
         "whip": 1.25,
-        "strikeout_walk_ratio": 3.59,
-        "innings_pitched": 92.2,
-        "games_started": 19
+        "strikeout_walk_ratio": 3.586206896551724,
+        "innings_pitched": 92.2
       },
       "lineups": {
         "away_announced": false,
@@ -1972,365 +1884,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 34.1,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 17.8,
-        "wind_direction_deg": 225,
-        "weather_run_factor": 1.0402
-      }
-    },
-    {
-      "game_pk": 823431,
-      "game_date_utc": "2026-08-03T22:40:00Z",
-      "status": "Scheduled",
-      "away_team": "Washington Nationals",
-      "home_team": "Philadelphia Phillies",
-      "away_probable_pitcher_id": null,
-      "home_probable_pitcher_id": null,
-      "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表",
-      "away_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "home_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": []
-      },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
-      "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 24.6,
-        "precipitation_probability": 66,
-        "wind_speed_kmh": 13.6,
-        "wind_direction_deg": 202,
-        "weather_run_factor": 0.9994
-      }
-    },
-    {
-      "game_pk": 823520,
-      "game_date_utc": "2026-08-03T23:05:00Z",
-      "status": "Scheduled",
-      "away_team": "St. Louis Cardinals",
-      "home_team": "New York Yankees",
-      "away_probable_pitcher_id": null,
-      "home_probable_pitcher_id": null,
-      "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表",
-      "away_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "home_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": []
-      },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
-      "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 25.1,
-        "precipitation_probability": 61,
-        "wind_speed_kmh": 15.1,
-        "wind_direction_deg": 205,
-        "weather_run_factor": 1.0027
-      }
-    },
-    {
-      "game_pk": 823757,
-      "game_date_utc": "2026-08-03T23:40:00Z",
-      "status": "Scheduled",
-      "away_team": "Pittsburgh Pirates",
-      "home_team": "Milwaukee Brewers",
-      "away_probable_pitcher_id": null,
-      "home_probable_pitcher_id": null,
-      "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表",
-      "away_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "home_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": []
-      },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
-      "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
+        "weather_run_factor": 1.0,
         "temperature_c": null,
         "precipitation_probability": null,
         "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
-      }
-    },
-    {
-      "game_pk": 824647,
-      "game_date_utc": "2026-08-04T00:05:00Z",
-      "status": "Scheduled",
-      "away_team": "Los Angeles Dodgers",
-      "home_team": "Chicago Cubs",
-      "away_probable_pitcher_id": null,
-      "home_probable_pitcher_id": null,
-      "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表",
-      "away_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "home_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": []
-      },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
-      "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 22.5,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 8.9,
-        "wind_direction_deg": 32,
-        "weather_run_factor": 1.005
-      }
-    },
-    {
-      "game_pk": 822867,
-      "game_date_utc": "2026-08-04T00:05:00Z",
-      "status": "Scheduled",
-      "away_team": "San Francisco Giants",
-      "home_team": "Texas Rangers",
-      "away_probable_pitcher_id": null,
-      "home_probable_pitcher_id": null,
-      "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表",
-      "away_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "home_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": []
-      },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
-      "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
-      }
-    },
-    {
-      "game_pk": 824160,
-      "game_date_utc": "2026-08-04T00:10:00Z",
-      "status": "Scheduled",
-      "away_team": "Toronto Blue Jays",
-      "home_team": "Houston Astros",
-      "away_probable_pitcher_id": null,
-      "home_probable_pitcher_id": null,
-      "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表",
-      "away_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "home_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": []
-      },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
-      "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
-      }
-    },
-    {
-      "game_pk": 824324,
-      "game_date_utc": "2026-08-04T00:40:00Z",
-      "status": "Scheduled",
-      "away_team": "Tampa Bay Rays",
-      "home_team": "Colorado Rockies",
-      "away_probable_pitcher_id": null,
-      "home_probable_pitcher_id": null,
-      "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表",
-      "away_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "home_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": []
-      },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
-      "weather": {
-        "available": true,
-        "indoor_or_retractable": false,
-        "temperature_c": 36.8,
-        "precipitation_probability": 6,
-        "wind_speed_kmh": 13.4,
-        "wind_direction_deg": 256,
-        "weather_run_factor": 1.0389
-      }
-    },
-    {
-      "game_pk": 825095,
-      "game_date_utc": "2026-08-04T01:40:00Z",
-      "status": "Scheduled",
-      "away_team": "San Diego Padres",
-      "home_team": "Arizona Diamondbacks",
-      "away_probable_pitcher_id": null,
-      "home_probable_pitcher_id": null,
-      "away_probable_pitcher": "未発表",
-      "home_probable_pitcher": "未発表",
-      "away_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "home_starter_stats": {
-        "pitcher_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null,
-        "games_started": null
-      },
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": []
-      },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
-      "weather": {
-        "available": true,
-        "indoor_or_retractable": true,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null,
-        "weather_run_factor": 1.0
+        "wind_direction_deg": null
       }
     }
   ]
