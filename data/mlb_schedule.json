@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-08-01T06:01:04.305750+00:00",
+  "fetched_at_utc": "2026-08-01T06:13:46.598040+00:00",
   "games": [
     {
       "game_pk": 822781,
@@ -323,8 +323,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9056,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "L",
@@ -659,8 +663,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9278,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "L",
@@ -668,7 +676,7 @@
       "weather": {
         "weather_run_factor": 1.0133,
         "temperature_c": 20.1,
-        "precipitation_probability": 10,
+        "precipitation_probability": 9,
         "wind_speed_kmh": 25.1,
         "wind_direction_deg": 241
       }
@@ -995,8 +1003,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.8944,
+        "home_lineup_confidence": "A",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -1331,8 +1343,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9056,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -1667,8 +1683,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -1676,7 +1696,7 @@
       "weather": {
         "weather_run_factor": 1.0053,
         "temperature_c": 24.5,
-        "precipitation_probability": 47,
+        "precipitation_probability": 46,
         "wind_speed_kmh": 8.3,
         "wind_direction_deg": 124
       }
@@ -2003,8 +2023,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9056,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "L",
@@ -2339,8 +2363,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9278,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -2675,8 +2703,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9278,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9056,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "L",
@@ -3011,8 +3043,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -3347,8 +3383,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "L",
@@ -3356,7 +3396,7 @@
       "weather": {
         "weather_run_factor": 1.021,
         "temperature_c": 21.8,
-        "precipitation_probability": 43,
+        "precipitation_probability": 41,
         "wind_speed_kmh": 29.3,
         "wind_direction_deg": 25
       }
@@ -3683,8 +3723,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9278,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -4019,8 +4063,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -4355,8 +4403,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "L",
@@ -4691,8 +4743,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9278,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "L",
@@ -5027,8 +5083,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9278,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "L",
@@ -5363,8 +5423,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9056,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -5699,8 +5763,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -6035,8 +6103,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9056,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -6371,8 +6443,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9278,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9056,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -6380,7 +6456,7 @@
       "weather": {
         "weather_run_factor": 1.0058,
         "temperature_c": 26.8,
-        "precipitation_probability": 50,
+        "precipitation_probability": 26,
         "wind_speed_kmh": 4.3,
         "wind_direction_deg": 355
       }
@@ -6707,8 +6783,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -6716,7 +6796,7 @@
       "weather": {
         "weather_run_factor": 1.0068,
         "temperature_c": 25.3,
-        "precipitation_probability": 24,
+        "precipitation_probability": 14,
         "wind_speed_kmh": 8.2,
         "wind_direction_deg": 218
       }
@@ -7043,8 +7123,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.8944,
+        "home_lineup_confidence": "A",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "L",
@@ -7379,8 +7463,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9056,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -7715,8 +7803,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9278,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -8051,8 +8143,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -8387,8 +8483,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9278,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -8723,8 +8823,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9278,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -9059,8 +9163,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9278,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -9395,8 +9503,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -9731,8 +9843,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9278,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "R",
@@ -10067,8 +10183,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": "L",
@@ -10403,18 +10523,22 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9056,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": null,
       "weather": {
-        "weather_run_factor": 1.0091,
-        "temperature_c": 25.7,
-        "precipitation_probability": 72,
-        "wind_speed_kmh": 9.7,
-        "wind_direction_deg": 195
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -10739,18 +10863,22 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": null,
       "weather": {
-        "weather_run_factor": 1.0044,
-        "temperature_c": 25.3,
-        "precipitation_probability": 70,
-        "wind_speed_kmh": 5.9,
-        "wind_direction_deg": 232
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -11075,8 +11203,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": null,
@@ -11411,18 +11543,22 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": null,
       "weather": {
-        "weather_run_factor": 1.0015,
-        "temperature_c": 22.3,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 8.9,
-        "wind_direction_deg": 27
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -11747,8 +11883,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": null,
@@ -12083,8 +12223,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9056,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9278,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": null,
@@ -12419,18 +12563,22 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.8944,
+        "away_lineup_confidence": "A",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9167,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": null,
       "weather": {
-        "weather_run_factor": 1.0267,
-        "temperature_c": 36.4,
-        "precipitation_probability": 11,
-        "wind_speed_kmh": 6.1,
-        "wind_direction_deg": 357
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -12755,8 +12903,12 @@
           }
         ],
         "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.9167,
+        "away_lineup_confidence": "S",
         "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
+        "home_lineup_reliability": 0.9278,
+        "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": null,
