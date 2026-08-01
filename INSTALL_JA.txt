@@ -1,0 +1,20 @@
+既存リポジトリ修復手順
+
+1. lineup.py をリポジトリ直下の lineup.py に上書き
+2. .github/workflows/mlb.yml を同じ場所に上書き
+3. Commit changes
+4. Actions で「MLB AI Predictor Ver.26 Auto Update」を選択
+5. Run workflow を実行
+
+今回の修正:
+- lineup.py に attach_lineups() を実装
+- MLB公式ライブフィードから発表済み打順を取得
+- 未発表時・通信失敗時は安全に空スタメンへフォールバック
+- Workflowに事前検査と出力検証を追加
+- data/だけでなくdocs/と公開用CSV/JSONもコミット
+
+ローカル確認済み:
+- 全Python構文チェック
+- 全主要モジュールimport
+- attach_lineupsの模擬取得テスト
+- PREFLIGHT_CHECK.py
