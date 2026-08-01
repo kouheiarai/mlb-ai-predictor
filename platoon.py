@@ -1,108 +1,87 @@
 from __future__ import annotations
 
+from collections import defaultdict
+from datetime import datetime, timedelta, timezone
 from typing import Any
 
 import requests
 
+MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
 
-PEOPLE_URL = "https://statsapi.mlb.com/api/v1/people/{person_id}"
 
-
-def fetch_player_bio(person_id: int | None) -> dict[str, Any]:
-    """MLB公式の選手プロフィールから打席・投球側を取得する。"""
-    if not person_id:
-        return {
-            "person_id": person_id,
-            "bat_side": None,
-            "pitch_hand": None,
-        }
+def fetch_bullpen_fatigue_proxy(lookback_days: int = 4) -> dict[str, dict[str, Any]]:
+    today = datetime.now(timezone.utc).date()
+    start_date = today - timedelta(days=lookback_days)
 
     response = requests.get(
-        PEOPLE_URL.format(person_id=person_id),
-        timeout=30,
+        MLB_SCHEDULE_URL,
+        params={
+            "sportId": 1,
+            "startDate": start_date.isoformat(),
+            "endDate": today.isoformat(),
+            "gameType": "R",
+            "hydrate": "linescore",
+        },
+        timeout=45,
     )
     response.raise_for_status()
 
-    people = response.json().get("people") or []
-    if not people:
-        return {
-            "person_id": person_id,
-            "bat_side": None,
-            "pitch_hand": None,
-        }
+    team_games: defaultdict[str, list[dict[str, Any]]] = defaultdict(list)
 
-    person = people[0]
-    return {
-        "person_id": person_id,
-        "bat_side": (person.get("batSide") or {}).get("code"),
-        "pitch_hand": (person.get("pitchHand") or {}).get("code"),
-    }
+    for date_block in response.json().get("dates", []):
+        game_date = date_block.get("date", "")
 
+        for game in date_block.get("games", []):
+            if game.get("status", {}).get("abstractGameState") != "Final":
+                continue
 
-def attach_handedness(schedule: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """
-    発表済み打順と予告先発へ左右情報を追加する。
-
-    注意:
-    この版は左右別の実績成績そのものではなく、
-    選手プロフィールの打席・投球側を使う「プラトーン代理補正」。
-    """
-    cache: dict[int, dict[str, Any]] = {}
-    enriched_schedule: list[dict[str, Any]] = []
-
-    def get_bio(person_id: int | None) -> dict[str, Any]:
-        if not person_id:
-            return {
-                "person_id": person_id,
-                "bat_side": None,
-                "pitch_hand": None,
+            innings = (
+                game.get("linescore", {}).get("currentInning")
+                or len(game.get("linescore", {}).get("innings", []))
+                or 9
+            )
+            entry = {
+                "date": game_date,
+                "innings": int(innings),
+                "double_header": game.get("doubleHeader") not in ("N", None),
             }
 
-        if person_id not in cache:
-            try:
-                cache[person_id] = fetch_player_bio(person_id)
-            except requests.RequestException:
-                cache[person_id] = {
-                    "person_id": person_id,
-                    "bat_side": None,
-                    "pitch_hand": None,
-                }
-
-        return cache[person_id]
-
-    for game in schedule:
-        row = dict(game)
-        lineups = dict(row.get("lineups") or {})
-
-        away_pitcher_bio = get_bio(
-            row.get("away_probable_pitcher_id")
-        )
-        home_pitcher_bio = get_bio(
-            row.get("home_probable_pitcher_id")
-        )
-
-        row["away_probable_pitcher_hand"] = (
-            away_pitcher_bio.get("pitch_hand")
-        )
-        row["home_probable_pitcher_hand"] = (
-            home_pitcher_bio.get("pitch_hand")
-        )
-
-        for side in ("away", "home"):
-            hitters = []
-
-            for hitter in lineups.get(f"{side}_batting_order", []):
-                bio = get_bio(hitter.get("person_id"))
-                hitters.append(
-                    {
-                        **hitter,
-                        "bat_side": bio.get("bat_side"),
-                    }
+            for side in ("away", "home"):
+                team_name = (
+                    game.get("teams", {})
+                    .get(side, {})
+                    .get("team", {})
+                    .get("name", "")
                 )
+                if team_name:
+                    team_games[team_name].append(entry)
 
-            lineups[f"{side}_batting_order"] = hitters
+    fatigue: dict[str, dict[str, Any]] = {}
 
-        row["lineups"] = lineups
-        enriched_schedule.append(row)
+    for team, games in team_games.items():
+        games.sort(key=lambda item: item["date"])
+        games_played = len(games)
+        unique_dates = len({game["date"] for game in games})
+        extra_inning_games = sum(
+            1 for game in games if game.get("innings", 9) > 9
+        )
+        doubleheaders = sum(
+            1 for game in games if game.get("double_header")
+        )
 
-    return enriched_schedule
+        score = 0.0
+        score += min(0.45, games_played * 0.10)
+        if unique_dates >= 3:
+            score += 0.15
+        score += min(0.20, extra_inning_games * 0.10)
+        score += min(0.20, doubleheaders * 0.10)
+
+        fatigue[team] = {
+            "fatigue_score": round(min(1.0, score), 4),
+            "games_played_lookback": games_played,
+            "unique_game_dates": unique_dates,
+            "extra_inning_games": extra_inning_games,
+            "doubleheader_games": doubleheaders,
+        }
+
+    return fatigue

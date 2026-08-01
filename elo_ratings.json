@@ -1,31 +1,22 @@
-﻿market,event_id,commence_time_utc,away_team,home_team,selection,point,decimal_odds,model_probability,ev,quarter_kelly,bullpen_fatigue,lineup_announced,lineup_quality,platoon_proxy,weather_run_factor,temperature_c,precipitation_probability,wind_speed_kmh,wind_direction_deg,away_expected_runs,home_expected_runs,simulations,recommendation
-runline,3ee3bc4062aa650bb871ebbc705fe19e,2026-07-31T22:11:00Z,Pittsburgh Pirates,Cincinnati Reds,Cincinnati Reds,1.5,1.68,0.85809,0.441591,0.16235,0.8,False,0.0,0.0,0.9992,19.6,35,8.0,207,2.382,3.346,100000,BUY
-runline,69b3161b9e45cd7a7054fba7043f41d6,2026-07-31T18:21:00Z,New York Yankees,Chicago Cubs,New York Yankees,1.5,1.66,0.83127,0.379908,0.143905,0.75,False,0.0,0.0,1.0,,,,,3.174,2.486,100000,BUY
-runline,c69df1f1b8463bd572965f137748afe8,2026-08-01T01:39:00Z,Milwaukee Brewers,Los Angeles Angels,Los Angeles Angels,1.5,1.93,0.70871,0.36781,0.098874,0.45,False,0.0,0.0,1.0306,32.6,0,13.5,224,2.657,2.307,100000,BUY
-runline,32710e16b4824b9b77a99c532f78131f,2026-08-01T01:41:00Z,Detroit Tigers,Athletics,Athletics,1.5,1.92,0.70437,0.35239,0.095758,0.65,False,0.0,0.0,1.0192,29.2,0,10.5,243,2.855,2.535,100000,BUY
-runline,0b314c94b53dbed0719087c29b520ace,2026-08-01T02:11:00Z,Minnesota Twins,Seattle Mariners,Minnesota Twins,1.5,1.74,0.73819,0.284451,0.096098,0.45,False,0.0,0.0,1.0,,,,,2.456,2.602,100000,BUY
-runline,df9eba7a564b0b80a2a4fbd790388ee4,2026-07-31T23:06:00Z,Philadelphia Phillies,Baltimore Orioles,Philadelphia Phillies,1.5,1.48,0.82395,0.219446,0.114295,0.45,False,0.0,0.0,1.0351,30.5,4,19.2,152,2.902,2.373,100000,BUY
-runline,fd2cf2d3dbd1656d7b968673de5f4cad,2026-08-01T01:46:00Z,San Francisco Giants,San Diego Padres,San Francisco Giants,1.5,1.62,0.74633,0.209055,0.084296,0.55,False,0.0,0.0,1.0199,26.1,0,15.1,232,2.564,2.636,100000,BUY
-runline,46f25bf1fcef5be6217eb3f4f200efc7,2026-08-01T00:41:00Z,Kansas City Royals,Colorado Rockies,Kansas City Royals,1.5,1.5,0.80482,0.20723,0.103615,0.45,False,0.0,0.0,1.0352,37.6,0,5.0,90,4.065,3.305,100000,BUY
-runline,ea0ee6a34b3c09534e603775fb85d6e6,2026-07-31T23:08:00Z,St. Louis Cardinals,Toronto Blue Jays,St. Louis Cardinals,1.5,1.68,0.71722,0.20493,0.075342,0.75,False,0.0,0.0,1.0,,,,,2.666,2.886,100000,BUY
-runline,7d1b7a2bed8c47d5ecf945ba07f77d56,2026-08-01T02:11:00Z,Boston Red Sox,Los Angeles Dodgers,Boston Red Sox,1.5,1.51,0.77531,0.170718,0.083685,0.65,False,0.0,0.0,1.0402,34.1,0,17.8,225,2.701,2.55,100000,BUY
-runline,5382f2f139958bbb12e0cd166e06d3ea,2026-07-31T23:11:00Z,Miami Marlins,New York Mets,Miami Marlins,1.5,1.54,0.75577,0.163886,0.075873,0.55,False,0.0,0.0,1.0374,28.4,1,23.5,165,2.668,2.648,100000,BUY
-runline,ef1a6817e767ffb63f4d758bd10473bc,2026-07-31T23:16:00Z,Washington Nationals,Atlanta Braves,Washington Nationals,1.5,1.51,0.75297,0.136985,0.067149,0.55,False,0.0,0.0,1.0128,26.4,17,8.2,229,2.59,2.613,100000,BUY
-runline,84ba20fe8604de6c1825c09817cc4123,2026-08-01T00:16:00Z,Texas Rangers,Houston Astros,Texas Rangers,1.5,1.53,0.73926,0.131068,0.061824,0.55,False,0.0,0.0,1.0,,,,,3.274,3.21,100000,BUY
-runline,b097b0b3884c6bbe4b246fb1c9b140a8,2026-07-31T23:11:00Z,Arizona Diamondbacks,Cleveland Guardians,Arizona Diamondbacks,1.5,1.57,0.7095,0.113915,0.049963,0.65,False,0.0,0.0,1.0002,22.9,66,16.4,171,2.427,2.742,100000,BUY
-runline,8b3666056a3b2912d05e6a2ef95a35f8,2026-07-31T23:11:00Z,Chicago White Sox,Tampa Bay Rays,Chicago White Sox,1.5,1.61,0.6876,0.107036,0.043867,0.75,False,0.0,0.0,1.0,,,,,2.379,2.832,100000,BUY
-runline,8b3666056a3b2912d05e6a2ef95a35f8,2026-07-31T23:11:00Z,Chicago White Sox,Tampa Bay Rays,Tampa Bay Rays,-1.5,2.47,0.3124,-0.228372,0.0,0.45,False,0.0,0.0,1.0,,,,,2.379,2.832,100000,PASS
-runline,b097b0b3884c6bbe4b246fb1c9b140a8,2026-07-31T23:11:00Z,Arizona Diamondbacks,Cleveland Guardians,Cleveland Guardians,-1.5,2.58,0.2905,-0.25051,0.0,0.75,False,0.0,0.0,1.0002,22.9,66,16.4,171,2.427,2.742,100000,PASS
-runline,84ba20fe8604de6c1825c09817cc4123,2026-08-01T00:16:00Z,Texas Rangers,Houston Astros,Houston Astros,-1.5,2.68,0.26074,-0.301217,0.0,0.45,False,0.0,0.0,1.0,,,,,3.274,3.21,100000,PASS
-runline,ef1a6817e767ffb63f4d758bd10473bc,2026-07-31T23:16:00Z,Washington Nationals,Atlanta Braves,Atlanta Braves,-1.5,2.74,0.24703,-0.323138,0.0,0.8,False,0.0,0.0,1.0128,26.4,17,8.2,229,2.59,2.613,100000,PASS
-runline,ea0ee6a34b3c09534e603775fb85d6e6,2026-07-31T23:08:00Z,St. Louis Cardinals,Toronto Blue Jays,Toronto Blue Jays,-1.5,2.32,0.28278,-0.34395,0.0,0.45,False,0.0,0.0,1.0,,,,,2.666,2.886,100000,PASS
-runline,5382f2f139958bbb12e0cd166e06d3ea,2026-07-31T23:11:00Z,Miami Marlins,New York Mets,New York Mets,-1.5,2.66,0.24423,-0.350348,0.0,0.8,False,0.0,0.0,1.0374,28.4,1,23.5,165,2.668,2.648,100000,PASS
-runline,fd2cf2d3dbd1656d7b968673de5f4cad,2026-08-01T01:46:00Z,San Francisco Giants,San Diego Padres,San Diego Padres,-1.5,2.45,0.25367,-0.378508,0.0,0.45,False,0.0,0.0,1.0199,26.1,0,15.1,232,2.564,2.636,100000,PASS
-runline,7d1b7a2bed8c47d5ecf945ba07f77d56,2026-08-01T02:11:00Z,Boston Red Sox,Los Angeles Dodgers,Los Angeles Dodgers,-1.5,2.71,0.22469,-0.39109,0.0,0.45,False,0.0,0.0,1.0402,34.1,0,17.8,225,2.701,2.55,100000,PASS
-runline,32710e16b4824b9b77a99c532f78131f,2026-08-01T01:41:00Z,Detroit Tigers,Athletics,Detroit Tigers,-1.5,1.99,0.29563,-0.411696,0.0,0.55,False,0.0,0.0,1.0192,29.2,0,10.5,243,2.855,2.535,100000,PASS
-runline,0b314c94b53dbed0719087c29b520ace,2026-08-01T02:11:00Z,Minnesota Twins,Seattle Mariners,Seattle Mariners,-1.5,2.22,0.26181,-0.418782,0.0,0.55,False,0.0,0.0,1.0,,,,,2.456,2.602,100000,PASS
-runline,c69df1f1b8463bd572965f137748afe8,2026-08-01T01:39:00Z,Milwaukee Brewers,Los Angeles Angels,Milwaukee Brewers,-1.5,1.98,0.29129,-0.423246,0.0,0.45,False,0.0,0.0,1.0306,32.6,0,13.5,224,2.657,2.307,100000,PASS
-runline,46f25bf1fcef5be6217eb3f4f200efc7,2026-08-01T00:41:00Z,Kansas City Royals,Colorado Rockies,Colorado Rockies,-1.5,2.77,0.19518,-0.459351,0.0,0.2,False,0.0,0.0,1.0352,37.6,0,5.0,90,4.065,3.305,100000,PASS
-runline,df9eba7a564b0b80a2a4fbd790388ee4,2026-07-31T23:06:00Z,Philadelphia Phillies,Baltimore Orioles,Baltimore Orioles,-1.5,2.81,0.17605,-0.5053,0.0,0.55,False,0.0,0.0,1.0351,30.5,4,19.2,152,2.902,2.373,100000,PASS
-runline,69b3161b9e45cd7a7054fba7043f41d6,2026-07-31T18:21:00Z,New York Yankees,Chicago Cubs,Chicago Cubs,-1.5,2.37,0.16873,-0.60011,0.0,0.75,False,0.0,0.0,1.0,,,,,3.174,2.486,100000,PASS
-runline,3ee3bc4062aa650bb871ebbc705fe19e,2026-07-31T22:11:00Z,Pittsburgh Pirates,Cincinnati Reds,Pittsburgh Pirates,-1.5,2.32,0.14191,-0.670769,0.0,0.75,False,0.0,0.0,0.9992,19.6,35,8.0,207,2.382,3.346,100000,PASS
+MLB AI Predictor Ver.25.1 上書き手順
+
+1. ZIPを解凍する。
+2. 中のファイルとフォルダをGitHubリポジトリのトップへアップロードして上書きする。
+3. 特に .github/workflows/mlb.yml がアップロードされていることを確認する。
+4. GitHub Actions → MLB AI Predictor Ver.25.1 Auto Update → Run workflow を実行する。
+5. 緑のチェック後、以下を確認する。
+   data/predictions.csv
+   data/prediction_latest.json
+   prediction_latest.json
+   docs/prediction_latest.json
+
+主な変更:
+- model_version 25.1
+- predictions.csvへ生成日時・対象日・先発名・ELO・直近フォーム等を追加
+- ML/RL/O-Uを別計算して同一CSVにも統合
+- prediction_latest.jsonをChatGPT向けに拡張
+- Actionsで公開ファイルを検証してからコミット
+
+注意:
+- GitHub Secretsの THE_ODDS_API_KEY はそのまま必要。
+- The Odds APIの契約で totals 市場が返らない場合、O/U欄は空になるがML/RLは動作する。

@@ -1,0 +1,14 @@
+MLB AI Predictor Ver.23.1 完成版
+
+1. このZIPを解凍します。
+2. 解凍後のフォルダを開き、中にある全ファイル・全フォルダをGitHubリポジトリのトップへアップロードします。
+3. GitHubで Add file → Upload files を選び、解凍フォルダそのものではなく「中身」を全部ドラッグします。
+4. Commit changes を押します。
+5. Actions → MLB Predictor Auto Update → Run workflow を押します。
+6. 緑のチェックになったら Settings → Pages を開きます。
+7. Source: Deploy from a branch / Branch: main / Folder: /docs を選び Save します。
+
+注意:
+- GitHub Secretsに THE_ODDS_API_KEY が必要です。
+- .github/workflows/mlb-predictor.yml を必ずアップロードしてください。
+- 既存の data フォルダは上書きされ、実行後に最新値へ更新されます。

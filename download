@@ -344,6 +344,21 @@ def simulate_game(
     }
 
 
+def simulate_total_probability(
+    event_id: str,
+    away_lambda: float,
+    home_lambda: float,
+    total_line: float,
+) -> tuple[float, float, float]:
+    """Return over, under, and push probabilities using a separate deterministic draw."""
+    rng = np.random.default_rng(deterministic_seed(f"{event_id}:total:{total_line}"))
+    totals = rng.poisson(away_lambda, SIMULATIONS) + rng.poisson(home_lambda, SIMULATIONS)
+    over = float(np.mean(totals > total_line))
+    under = float(np.mean(totals < total_line))
+    push = max(0.0, 1.0 - over - under)
+    return over, under, push
+
+
 def make_predictions(
     odds_rows: list[dict[str, Any]],
     elo_ratings: dict[str, float],
@@ -352,7 +367,7 @@ def make_predictions(
     team_metrics: dict[str, dict[str, Any]],
     bullpen_fatigue: dict[str, dict[str, Any]],
     market_weight: float = 0.15,
-) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
     by_event: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for row in odds_rows:
         by_event[str(row.get("event_id", ""))].append(row)
@@ -361,6 +376,7 @@ def make_predictions(
     schedule_by_matchup = schedule_index(schedule)
     ml_predictions: list[dict[str, Any]] = []
     rl_predictions: list[dict[str, Any]] = []
+    total_predictions: list[dict[str, Any]] = []
 
     for event_id, rows in by_event.items():
         first = rows[0]
@@ -493,6 +509,15 @@ def make_predictions(
                             "commence_time_utc": first["commence_time_utc"],
                             "away_team": away_team,
                             "home_team": home_team,
+                            "away_probable_pitcher": game.get("away_probable_pitcher"),
+                            "home_probable_pitcher": game.get("home_probable_pitcher"),
+                            "away_starter_quality": round(away_starter, 4),
+                            "home_starter_quality": round(home_starter, 4),
+                            "away_elo": round(float(elo_ratings.get(away_key, DEFAULT_ELO)), 2),
+                            "home_elo": round(float(elo_ratings.get(home_key, DEFAULT_ELO)), 2),
+                            "away_recent_form": round(away_form, 4),
+                            "home_recent_form": round(home_form, 4),
+                            "park_factor": round(park, 4),
                             "selection": team,
                             "point": "",
                             "decimal_odds": round(price, 3),
@@ -562,6 +587,15 @@ def make_predictions(
                     "commence_time_utc": first["commence_time_utc"],
                     "away_team": away_team,
                     "home_team": home_team,
+                    "away_probable_pitcher": game.get("away_probable_pitcher"),
+                    "home_probable_pitcher": game.get("home_probable_pitcher"),
+                    "away_starter_quality": round(away_starter, 4),
+                    "home_starter_quality": round(home_starter, 4),
+                    "away_elo": round(float(elo_ratings.get(away_key, DEFAULT_ELO)), 2),
+                    "home_elo": round(float(elo_ratings.get(home_key, DEFAULT_ELO)), 2),
+                    "away_recent_form": round(away_form, 4),
+                    "home_recent_form": round(home_form, 4),
+                    "park_factor": round(park, 4),
                     "selection": team,
                     "point": point,
                     "decimal_odds": round(price, 3),
@@ -593,6 +627,47 @@ def make_predictions(
                 }
             )
 
+        total_rows = [row for row in rows if row.get("market") == "totals"]
+        by_line: dict[float, list[dict[str, Any]]] = defaultdict(list)
+        for row in total_rows:
+            try:
+                by_line[float(row["point"])].append(row)
+            except (TypeError, ValueError, KeyError):
+                continue
+
+        for total_line, line_rows in by_line.items():
+            over_p, under_p, push_p = simulate_total_probability(
+                event_id, away_lambda, home_lambda, total_line
+            )
+            for row in line_rows:
+                selection = str(row.get("selection", ""))
+                probability = over_p if selection.lower() == "over" else under_p
+                price = float(row["decimal_odds"])
+                ev = expected_value(probability, price)
+                total_predictions.append({
+                    "market": "total",
+                    "event_id": event_id,
+                    "commence_time_utc": first["commence_time_utc"],
+                    "away_team": away_team,
+                    "home_team": home_team,
+                    "away_probable_pitcher": game.get("away_probable_pitcher"),
+                    "home_probable_pitcher": game.get("home_probable_pitcher"),
+                    "selection": selection,
+                    "point": total_line,
+                    "decimal_odds": round(price, 3),
+                    "model_probability": round(probability, 6),
+                    "push_probability": round(push_p, 6),
+                    "ev": round(ev, 6),
+                    "quarter_kelly": round(quarter_kelly(probability, price), 6),
+                    "weather_run_factor": round(weather_run_factor, 4),
+                    "park_factor": round(park, 4),
+                    "away_expected_runs": round(sim["away_expected_runs"], 3),
+                    "home_expected_runs": round(sim["home_expected_runs"], 3),
+                    "simulations": SIMULATIONS,
+                    "recommendation": "BUY" if ev >= 0.05 else ("LEAN" if ev > 0 else "PASS"),
+                })
+
     ml_predictions.sort(key=lambda row: row["ev"], reverse=True)
     rl_predictions.sort(key=lambda row: row["ev"], reverse=True)
-    return ml_predictions, rl_predictions
+    total_predictions.sort(key=lambda row: row["ev"], reverse=True)
+    return ml_predictions, rl_predictions, total_predictions
