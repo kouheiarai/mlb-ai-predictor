@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-08-01T06:49:09.107426+00:00",
+  "fetched_at_utc": "2026-08-01T06:58:50.737346+00:00",
   "games": [
     {
       "game_pk": 822781,
@@ -12574,11 +12574,11 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": null,
       "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "weather_run_factor": 1.0267,
+        "temperature_c": 36.4,
+        "precipitation_probability": 11,
+        "wind_speed_kmh": 6.1,
+        "wind_direction_deg": 357
       }
     },
     {
