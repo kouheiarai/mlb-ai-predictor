@@ -1,4 +1,4 @@
-name: MLB AI Predictor Ver.25.3 Auto Update
+name: MLB AI Predictor Ver.26.0 Auto Update
 
 on:
   workflow_dispatch:
@@ -31,12 +31,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate Ver.25.3 predictions
+      - name: Generate Ver.26.0 predictions
         env:
           THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
         run: python main.py
 
-      - name: Validate Ver.25.3 public outputs
+      - name: Validate Ver.26.0 public outputs
         run: |
           python validate_outputs.py
           head -n 2 data/predictions.csv
@@ -50,7 +50,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update MLB Ver.25.3 predictions"
+            git commit -m "Update MLB Ver.26.0 predictions"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

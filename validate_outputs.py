@@ -4,7 +4,7 @@ import csv
 import json
 from pathlib import Path
 
-MODEL_VERSION = "25.3"
+MODEL_VERSION = "26.0"
 REQUIRED_CSV_COLUMNS = {
     "model_version",
     "generated_at_utc",
@@ -53,7 +53,7 @@ def main() -> None:
     if not rows:
         raise RuntimeError("CSV contains no predictions")
     if any(row.get("model_version") != MODEL_VERSION for row in rows):
-        raise RuntimeError("CSV model_version is not 25.3")
+        raise RuntimeError("CSV model_version is not 26.0")
 
     markets = {row.get("market") for row in rows}
     if "moneyline" not in markets:
@@ -62,13 +62,13 @@ def main() -> None:
 
     latest = json.loads(Path("data/prediction_latest.json").read_text(encoding="utf-8"))
     if latest.get("model_version") != MODEL_VERSION:
-        raise RuntimeError("prediction_latest.json is not Ver.25.3")
+        raise RuntimeError("prediction_latest.json is not Ver.26.0")
     if latest.get("game_count", 0) <= 0:
         raise RuntimeError("prediction_latest.json contains no games")
 
     manifest = json.loads(Path("data/output_manifest.json").read_text(encoding="utf-8"))
     if manifest.get("model_version") != MODEL_VERSION:
-        raise RuntimeError("output_manifest.json is not Ver.25.3")
+        raise RuntimeError("output_manifest.json is not Ver.26.0")
     if manifest.get("combined_rows") != len(rows):
         raise RuntimeError("Manifest/CSV row count mismatch")
 

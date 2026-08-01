@@ -21,7 +21,7 @@ from team_metrics import fetch_team_metrics
 API_URL = "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/"
 OUTPUT_DIR = Path("data")
 DOCS_DIR = Path("docs")
-MODEL_VERSION = "25.3"
+MODEL_VERSION = "26.0"
 
 
 def require_api_key() -> str:
@@ -138,7 +138,7 @@ def write_report(
     path: Path,
 ) -> None:
     lines = [
-        "# MLB AI Predictor Ver.25.3 Prediction Report",
+        "# MLB AI Predictor Ver.26.0 Prediction Report",
         "",
         f"- Updated: {fetched_at}",
         f"- API requests remaining: {quota.get('requests_remaining') or 'unknown'}",
