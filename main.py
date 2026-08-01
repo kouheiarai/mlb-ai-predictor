@@ -380,6 +380,19 @@ def main() -> int:
                 "fetched_at_utc": fetched_at,
                 "fatigue": bullpen_fatigue,
             },
+            "lineups_latest.json": {
+                "fetched_at_utc": fetched_at,
+                "games": [
+                    {
+                        "game_pk": game.get("game_pk"),
+                        "game_date_utc": game.get("game_date_utc"),
+                        "away_team": game.get("away_team"),
+                        "home_team": game.get("home_team"),
+                        "lineups": game.get("lineups"),
+                    }
+                    for game in schedule
+                ],
+            },
             "weather.json": {
                 "fetched_at_utc": fetched_at,
                 "games": [
