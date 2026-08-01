@@ -245,21 +245,70 @@ def fetch_hitting_split_stats(season: int, pitcher_hand: str | None) -> dict[int
     return output
 
 
+def _advanced_hitter_ops_equivalent(stats: dict[str, Any]) -> tuple[float | None, str]:
+    """Return an OPS-scale hitter value and the source used.
+
+    True wRC+/OPS+ values are preferred when upstream data provides them.
+    Because MLB Stats API boxscore data normally does not expose wRC+, the
+    function transparently falls back to season OPS rather than inventing a
+    value.  The conversion is deliberately conservative and capped.
+    """
+    season_ops = stats.get("ops")
+    if not isinstance(season_ops, (int, float)):
+        return None, "missing"
+
+    for key, source in (("wrc_plus", "wRC+"), ("wRC+", "wRC+"), ("ops_plus", "OPS+"), ("OPS+", "OPS+")):
+        value = stats.get(key)
+        if isinstance(value, (int, float)):
+            # Translate plus-stat distance from 100 onto a restrained OPS scale.
+            adjustment = max(-0.090, min(0.090, (float(value) - 100.0) * 0.0020))
+            return max(0.450, min(1.200, float(season_ops) + adjustment)), source
+
+    return float(season_ops), "OPS"
+
+
+def _bvp_ops_adjustment(hitter: dict[str, Any]) -> tuple[float, bool]:
+    """Return a conservative batter-vs-pitcher OPS adjustment.
+
+    The predictor consumes BvP data only when an upstream collector has placed
+    it in ``vs_pitcher_stats`` or ``bvp``.  At least 10 plate appearances are
+    required; the effect is shrunk toward zero until 40 PA and capped to avoid
+    tiny-sample overfitting.
+    """
+    data = hitter.get("vs_pitcher_stats") or hitter.get("bvp") or {}
+    if not isinstance(data, dict):
+        return 0.0, False
+
+    pa = data.get("plate_appearances", data.get("pa"))
+    ops = data.get("ops")
+    try:
+        pa_value = float(pa)
+        ops_value = float(ops)
+    except (TypeError, ValueError):
+        return 0.0, False
+
+    if pa_value < 10:
+        return 0.0, False
+
+    reliability = max(0.0, min(1.0, (pa_value - 10.0) / 30.0))
+    raw = max(-0.100, min(0.100, ops_value - 0.720))
+    return raw * reliability * 0.35, True
+
+
 def lineup_quality(
     lineup: list[dict[str, Any]],
     announced: bool,
     pitcher_hand: str | None = None,
     season: int | None = None,
-) -> tuple[float, float]:
-    """Return lineup strength and split-data coverage.
+) -> tuple[float, float, float, float]:
+    """Return lineup strength and data-coverage diagnostics.
 
-    Versus-hand OPS is used when available and supported by at least 20 plate
-    appearances.  Small samples are shrunk toward season OPS; missing split
-    data falls back completely to season OPS.  This avoids unstable swings in
-    AI probability while still adding the requested handedness information.
+    Returns ``(quality, split_ops_coverage, advanced_metric_coverage,
+    bvp_coverage)``.  BvP is used only with >=10 PA and is strongly shrunk.
+    Missing advanced data always falls back to season OPS.
     """
     if not announced or len(lineup) < 8:
-        return 0.0, 0.0
+        return 0.0, 0.0, 0.0, 0.0
 
     season = int(season or date.today().year)
     split_stats = fetch_hitting_split_stats(season, pitcher_hand)
@@ -267,47 +316,55 @@ def lineup_quality(
     weighted_scores: list[float] = []
     used_weights: list[float] = []
     split_weight_used = 0.0
+    advanced_weight_used = 0.0
+    bvp_weight_used = 0.0
 
     for index, hitter in enumerate(lineup[:9]):
         stats = hitter.get("season_stats", {})
-        season_ops = stats.get("ops")
+        base_ops, source = _advanced_hitter_ops_equivalent(stats)
         season_pa = stats.get("plate_appearances")
-        if not isinstance(season_ops, (int, float)):
+        if not isinstance(base_ops, (int, float)):
             continue
+
+        weight = weights[index]
+        if source in {"wRC+", "OPS+"}:
+            advanced_weight_used += weight
 
         player_id = hitter.get("person_id")
         split = split_stats.get(player_id) if isinstance(player_id, int) else None
         split_ops = split.get("ops") if split else None
         split_pa = split.get("plate_appearances", 0.0) if split else 0.0
 
-        # Shrink small handedness samples toward the full-season rate.
         if isinstance(split_ops, (int, float)) and split_pa > 0:
             split_reliability = max(0.0, min(1.0, split_pa / 80.0))
-            effective_ops = (
-                split_reliability * split_ops
-                + (1.0 - split_reliability) * season_ops
-            )
+            effective_ops = split_reliability * split_ops + (1.0 - split_reliability) * base_ops
             if split_pa >= 20:
-                split_weight_used += weights[index]
+                split_weight_used += weight
         else:
-            effective_ops = season_ops
+            effective_ops = base_ops
+
+        bvp_adjustment, bvp_used = _bvp_ops_adjustment(hitter)
+        if bvp_used:
+            effective_ops += bvp_adjustment
+            bvp_weight_used += weight
 
         sample_reliability = 1.0
         if isinstance(season_pa, (int, float)):
             sample_reliability = max(0.35, min(1.0, season_pa / 250.0))
 
         score = ((effective_ops - 0.720) / 0.120) * sample_reliability
-        weight = weights[index]
         weighted_scores.append(score * weight)
         used_weights.append(weight)
 
     if not weighted_scores:
-        return 0.0, 0.0
+        return 0.0, 0.0, 0.0, 0.0
 
     total_weight = sum(used_weights)
     quality = max(-1.0, min(1.0, sum(weighted_scores) / total_weight))
-    coverage = max(0.0, min(1.0, split_weight_used / total_weight))
-    return quality, coverage
+    split_coverage = max(0.0, min(1.0, split_weight_used / total_weight))
+    advanced_coverage = max(0.0, min(1.0, advanced_weight_used / total_weight))
+    bvp_coverage = max(0.0, min(1.0, bvp_weight_used / total_weight))
+    return quality, split_coverage, advanced_coverage, bvp_coverage
 
 
 def platoon_proxy(
@@ -510,13 +567,13 @@ def make_predictions(
         if len(game_date_value) >= 4 and game_date_value[:4].isdigit():
             game_season = int(game_date_value[:4])
 
-        away_lineup_quality_raw, away_split_ops_coverage = lineup_quality(
+        away_lineup_quality_raw, away_split_ops_coverage, away_advanced_metric_coverage, away_bvp_coverage = lineup_quality(
             away_lineup,
             away_usable,
             game.get("home_probable_pitcher_hand"),
             game_season,
         )
-        home_lineup_quality_raw, home_split_ops_coverage = lineup_quality(
+        home_lineup_quality_raw, home_split_ops_coverage, home_advanced_metric_coverage, home_bvp_coverage = lineup_quality(
             home_lineup,
             home_usable,
             game.get("away_probable_pitcher_hand"),
@@ -667,6 +724,14 @@ def make_predictions(
                                 away_split_ops_coverage if team == away_team else home_split_ops_coverage,
                                 4,
                             ),
+                            "advanced_metric_coverage": round(
+                                away_advanced_metric_coverage if team == away_team else home_advanced_metric_coverage,
+                                4,
+                            ),
+                            "bvp_coverage": round(
+                                away_bvp_coverage if team == away_team else home_bvp_coverage,
+                                4,
+                            ),
                             "platoon_proxy": round(platoon_score, 4),
                             "weather_run_factor": round(weather_run_factor, 4),
                             "temperature_c": weather.get("temperature_c"),
@@ -749,6 +814,14 @@ def make_predictions(
                     "lineup_quality": round(lineup_score, 4),
                     "split_ops_coverage": round(
                         away_split_ops_coverage if team == away_team else home_split_ops_coverage,
+                        4,
+                    ),
+                    "advanced_metric_coverage": round(
+                        away_advanced_metric_coverage if team == away_team else home_advanced_metric_coverage,
+                        4,
+                    ),
+                    "bvp_coverage": round(
+                        away_bvp_coverage if team == away_team else home_bvp_coverage,
                         4,
                     ),
                     "platoon_proxy": round(platoon_score, 4),
