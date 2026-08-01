@@ -230,16 +230,39 @@ def attach_predicted_lineups(
             team = str(row.get(f"{side}_team") or "")
             if announced:
                 lineups[f"{side}_lineup_status"] = "official"
+                lineups[f"{side}_lineup_reliability"] = 1.0
+                lineups[f"{side}_lineup_confidence"] = "Official"
                 lineups[f"{side}_prediction_source_games"] = 0
                 continue
             predicted, used_games = predicted_cache.get(team, ([], 0))
             if predicted:
+                start_rates = [
+                    min(1.0, float(player.get("prediction_start_count") or 0) / max(1, used_games))
+                    for player in predicted
+                ]
+                coverage = min(1.0, len(predicted) / 9.0)
+                mean_start_rate = sum(start_rates) / len(start_rates) if start_rates else 0.0
+                sample_factor = min(1.0, used_games / max(1, games_per_team))
+                reliability = max(
+                    0.50,
+                    min(0.95, 0.40 + 0.30 * mean_start_rate + 0.15 * coverage + 0.10 * sample_factor),
+                )
+                confidence = (
+                    "S" if reliability >= 0.90 else
+                    "A" if reliability >= 0.82 else
+                    "B" if reliability >= 0.72 else
+                    "C" if reliability >= 0.60 else "D"
+                )
                 lineups[f"{side}_batting_order"] = predicted
                 lineups[f"{side}_lineup_status"] = "predicted"
+                lineups[f"{side}_lineup_reliability"] = round(reliability, 4)
+                lineups[f"{side}_lineup_confidence"] = confidence
                 lineups[f"{side}_prediction_source_games"] = used_games
             else:
                 lineups.setdefault(f"{side}_batting_order", [])
                 lineups[f"{side}_lineup_status"] = "unavailable"
+                lineups[f"{side}_lineup_reliability"] = 0.0
+                lineups[f"{side}_lineup_confidence"] = "Unavailable"
                 lineups[f"{side}_prediction_source_games"] = 0
         row["lineups"] = lineups
     return output
@@ -274,9 +297,10 @@ def attach_lineups(
         for row in output:
             lineups = dict(row.get("lineups") or {})
             for side in ("away", "home"):
-                lineups[f"{side}_lineup_status"] = (
-                    "official" if lineups.get(f"{side}_announced") else "unavailable"
-                )
+                is_official = bool(lineups.get(f"{side}_announced"))
+                lineups[f"{side}_lineup_status"] = "official" if is_official else "unavailable"
+                lineups[f"{side}_lineup_reliability"] = 1.0 if is_official else 0.0
+                lineups[f"{side}_lineup_confidence"] = "Official" if is_official else "Unavailable"
                 lineups[f"{side}_prediction_source_games"] = 0
             row["lineups"] = lineups
         return output

@@ -392,22 +392,34 @@ def make_predictions(
         lineups = game.get("lineups", {})
         away_announced = bool(lineups.get("away_announced"))
         home_announced = bool(lineups.get("home_announced"))
+        away_status = str(lineups.get("away_lineup_status") or ("official" if away_announced else "unavailable"))
+        home_status = str(lineups.get("home_lineup_status") or ("official" if home_announced else "unavailable"))
+        away_reliability = float(lineups.get("away_lineup_reliability") or (1.0 if away_announced else 0.0))
+        home_reliability = float(lineups.get("home_lineup_reliability") or (1.0 if home_announced else 0.0))
+        away_reliability = max(0.0, min(1.0, away_reliability))
+        home_reliability = max(0.0, min(1.0, home_reliability))
         away_lineup = lineups.get("away_batting_order", [])
         home_lineup = lineups.get("home_batting_order", [])
+        away_usable = away_status in {"official", "predicted"} and len(away_lineup) >= 8
+        home_usable = home_status in {"official", "predicted"} and len(home_lineup) >= 8
 
-        away_lineup_quality = lineup_quality(away_lineup, away_announced)
-        home_lineup_quality = lineup_quality(home_lineup, home_announced)
+        away_lineup_quality_raw = lineup_quality(away_lineup, away_usable)
+        home_lineup_quality_raw = lineup_quality(home_lineup, home_usable)
+        away_lineup_quality = away_lineup_quality_raw * away_reliability
+        home_lineup_quality = home_lineup_quality_raw * home_reliability
 
-        away_platoon = platoon_proxy(
+        away_platoon_raw = platoon_proxy(
             away_lineup,
             game.get("home_probable_pitcher_hand"),
-            away_announced,
+            away_usable,
         )
-        home_platoon = platoon_proxy(
+        home_platoon_raw = platoon_proxy(
             home_lineup,
             game.get("away_probable_pitcher_hand"),
-            home_announced,
+            home_usable,
         )
+        away_platoon = away_platoon_raw * away_reliability
+        home_platoon = home_platoon_raw * home_reliability
 
         away_metrics = _lookup(away_team, team_metrics)
         home_metrics = _lookup(home_team, team_metrics)
@@ -530,6 +542,9 @@ def make_predictions(
                             ),
                             "bullpen_fatigue": round(fatigue, 4),
                             "lineup_announced": lineup_announced,
+                            "lineup_status": away_status if team == away_team else home_status,
+                            "lineup_reliability": round(away_reliability if team == away_team else home_reliability, 4),
+                            "lineup_confidence": lineups.get("away_lineup_confidence") if team == away_team else lineups.get("home_lineup_confidence"),
                             "lineup_quality": round(lineup_score, 4),
                             "platoon_proxy": round(platoon_score, 4),
                             "weather_run_factor": round(weather_run_factor, 4),
@@ -607,6 +622,9 @@ def make_predictions(
                     ),
                     "bullpen_fatigue": round(fatigue, 4),
                     "lineup_announced": announced,
+                    "lineup_status": away_status if team == away_team else home_status,
+                    "lineup_reliability": round(away_reliability if team == away_team else home_reliability, 4),
+                    "lineup_confidence": lineups.get("away_lineup_confidence") if team == away_team else lineups.get("home_lineup_confidence"),
                     "lineup_quality": round(lineup_score, 4),
                     "platoon_proxy": round(platoon_score, 4),
                     "weather_run_factor": round(weather_run_factor, 4),
