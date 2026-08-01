@@ -1,7 +1,7 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-08-01T06:13:46.598040+00:00
-- API requests remaining: 476
+- Updated: 2026-08-01T06:28:31.454990+00:00
+- API requests remaining: 471
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
@@ -24,10 +24,10 @@
 
 ### 2. Arizona Diamondbacks
 - Game: Arizona Diamondbacks @ Cleveland Guardians
-- Odds: 2.37
-- AI probability: 69.5%
-- EV: 64.8%
-- 1/4 Kelly: 11.8%
+- Odds: 2.42
+- AI probability: 69.4%
+- EV: 67.9%
+- 1/4 Kelly: 12.0%
 - Lineup: 未発表
 - Lineup quality: +0.20
 - Platoon proxy: +0.13
@@ -38,23 +38,7 @@
 - Bullpen fatigue proxy: 0.55
 - Expected score: Arizona Diamondbacks 4.40 - Cleveland Guardians 2.63
 
-### 3. St. Louis Cardinals
-- Game: St. Louis Cardinals @ Toronto Blue Jays
-- Odds: 2.27
-- AI probability: 58.7%
-- EV: 33.2%
-- 1/4 Kelly: 6.5%
-- Lineup: 未発表
-- Lineup quality: +0.04
-- Platoon proxy: +0.04
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.75
-- Expected score: St. Louis Cardinals 3.77 - Toronto Blue Jays 3.00
-
-### 4. Washington Nationals
+### 3. Washington Nationals
 - Game: Washington Nationals @ Atlanta Braves
 - Odds: 2.66
 - AI probability: 49.8%
@@ -70,12 +54,28 @@
 - Bullpen fatigue proxy: 0.55
 - Expected score: Washington Nationals 3.18 - Atlanta Braves 3.04
 
+### 4. St. Louis Cardinals
+- Game: St. Louis Cardinals @ Toronto Blue Jays
+- Odds: 2.25
+- AI probability: 58.7%
+- EV: 32.1%
+- 1/4 Kelly: 6.4%
+- Lineup: 未発表
+- Lineup quality: +0.04
+- Platoon proxy: +0.04
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.75
+- Expected score: St. Louis Cardinals 3.77 - Toronto Blue Jays 3.00
+
 ### 5. Baltimore Orioles
 - Game: Philadelphia Phillies @ Baltimore Orioles
-- Odds: 2.23
-- AI probability: 56.1%
-- EV: 25.2%
-- 1/4 Kelly: 5.1%
+- Odds: 2.27
+- AI probability: 56.0%
+- EV: 27.1%
+- 1/4 Kelly: 5.3%
 - Lineup: 未発表
 - Lineup quality: -0.21
 - Platoon proxy: +0.05
@@ -104,10 +104,10 @@
 
 ### 7. Houston Astros
 - Game: Texas Rangers @ Houston Astros
-- Odds: 2.12
-- AI probability: 56.7%
-- EV: 20.1%
-- 1/4 Kelly: 4.5%
+- Odds: 2.13
+- AI probability: 56.6%
+- EV: 20.6%
+- 1/4 Kelly: 4.6%
 - Lineup: 未発表
 - Lineup quality: +0.42
 - Platoon proxy: -0.09
@@ -202,10 +202,10 @@
 
 ### 2. Arizona Diamondbacks +1.5
 - Game: Arizona Diamondbacks @ Cleveland Guardians
-- Odds: 1.65
+- Odds: 1.66
 - Cover probability: 89.9%
-- EV: 48.4%
-- 1/4 Kelly: 18.6%
+- EV: 49.3%
+- 1/4 Kelly: 18.7%
 - Lineup: 未発表
 - Lineup quality: +0.20
 - Platoon proxy: +0.13
@@ -218,10 +218,10 @@
 
 ### 3. Baltimore Orioles +1.5
 - Game: Philadelphia Phillies @ Baltimore Orioles
-- Odds: 1.72
+- Odds: 1.74
 - Cover probability: 79.4%
-- EV: 36.5%
-- 1/4 Kelly: 12.7%
+- EV: 38.1%
+- 1/4 Kelly: 12.9%
 - Lineup: 未発表
 - Lineup quality: -0.21
 - Platoon proxy: +0.05
@@ -264,23 +264,7 @@
 - Bullpen fatigue proxy: 0.80
 - Expected score: Pittsburgh Pirates 3.05 - Cincinnati Reds 3.81
 
-### 6. St. Louis Cardinals +1.5
-- Game: St. Louis Cardinals @ Toronto Blue Jays
-- Odds: 1.6
-- Cover probability: 81.7%
-- EV: 30.7%
-- 1/4 Kelly: 12.8%
-- Lineup: 未発表
-- Lineup quality: +0.04
-- Platoon proxy: +0.04
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.75
-- Expected score: St. Louis Cardinals 3.77 - Toronto Blue Jays 3.00
-
-### 7. Houston Astros +1.5
+### 6. Houston Astros +1.5
 - Game: Texas Rangers @ Houston Astros
 - Odds: 1.66
 - Cover probability: 78.4%
@@ -295,6 +279,22 @@
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.45
 - Expected score: Texas Rangers 3.38 - Houston Astros 3.96
+
+### 7. St. Louis Cardinals +1.5
+- Game: St. Louis Cardinals @ Toronto Blue Jays
+- Odds: 1.59
+- Cover probability: 81.7%
+- EV: 29.9%
+- 1/4 Kelly: 12.7%
+- Lineup: 未発表
+- Lineup quality: +0.04
+- Platoon proxy: +0.04
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.75
+- Expected score: St. Louis Cardinals 3.77 - Toronto Blue Jays 3.00
 
 ### 8. Boston Red Sox +1.5
 - Game: Boston Red Sox @ Los Angeles Dodgers
@@ -362,10 +362,10 @@
 
 ### 12. Miami Marlins +1.5
 - Game: Miami Marlins @ New York Mets
-- Odds: 1.53
+- Odds: 1.54
 - Cover probability: 70.0%
-- EV: 7.1%
-- 1/4 Kelly: 3.3%
+- EV: 7.8%
+- 1/4 Kelly: 3.6%
 - Lineup: 未発表
 - Lineup quality: +0.40
 - Platoon proxy: +0.00

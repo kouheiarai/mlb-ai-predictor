@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-08-01T06:13:46.598040+00:00",
+  "fetched_at_utc": "2026-08-01T06:28:31.454990+00:00",
   "games": [
     {
       "game_pk": 822781,
@@ -397,11 +397,11 @@
       "home_team": "Philadelphia Phillies",
       "game_date_utc": "2026-08-03T22:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "weather_run_factor": 1.0091,
+        "temperature_c": 25.7,
+        "precipitation_probability": 72,
+        "wind_speed_kmh": 9.7,
+        "wind_direction_deg": 195
       }
     },
     {
@@ -410,11 +410,11 @@
       "home_team": "New York Yankees",
       "game_date_utc": "2026-08-03T23:05:00Z",
       "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "weather_run_factor": 1.0044,
+        "temperature_c": 25.3,
+        "precipitation_probability": 70,
+        "wind_speed_kmh": 5.9,
+        "wind_direction_deg": 232
       }
     },
     {
