@@ -17,6 +17,8 @@ K_FACTOR = 20.0
 HOME_FIELD_ELO = 35.0
 LEAGUE_RUNS_PER_TEAM = 4.40
 SIMULATIONS = 100_000
+MLB_STATS_URL = "https://statsapi.mlb.com/api/v1/stats"
+_SPLIT_STATS_CACHE: dict[tuple[int, str], dict[int, dict[str, float]]] = {}
 
 TEAM_ALIASES = {
     "athletics": "oakland athletics",
@@ -171,41 +173,141 @@ def starter_quality(stats: dict[str, Any] | None) -> float:
     return max(-1.0, min(1.0, sum(parts) / len(parts))) if parts else 0.0
 
 
+def fetch_hitting_split_stats(season: int, pitcher_hand: str | None) -> dict[int, dict[str, float]]:
+    """Fetch season batting splits versus the opponent starter's throwing hand.
+
+    MLB Stats API situation codes:
+    - ``vr``: versus right-handed pitchers
+    - ``vl``: versus left-handed pitchers
+
+    The function is deliberately fail-safe.  A network/API failure returns an
+    empty mapping, so the predictor falls back to each hitter's season OPS.
+    Results are cached for the process lifetime to avoid repeated API calls.
+    """
+    hand = (pitcher_hand or "").upper()
+    if hand not in {"R", "L"}:
+        return {}
+
+    situation = "vr" if hand == "R" else "vl"
+    cache_key = (int(season), situation)
+    if cache_key in _SPLIT_STATS_CACHE:
+        return _SPLIT_STATS_CACHE[cache_key]
+
+    try:
+        response = requests.get(
+            MLB_STATS_URL,
+            params={
+                "stats": "season",
+                "group": "hitting",
+                "season": int(season),
+                "sportIds": 1,
+                "playerPool": "ALL",
+                "sitCodes": situation,
+                "limit": 2000,
+            },
+            timeout=45,
+        )
+        response.raise_for_status()
+        payload = response.json()
+    except (requests.RequestException, ValueError, TypeError):
+        _SPLIT_STATS_CACHE[cache_key] = {}
+        return {}
+
+    output: dict[int, dict[str, float]] = {}
+    for block in payload.get("stats", []):
+        for split in block.get("splits", []):
+            player = split.get("player") or {}
+            stat = split.get("stat") or {}
+            player_id = player.get("id")
+            if not isinstance(player_id, int):
+                continue
+
+            def number(name: str) -> float | None:
+                value = stat.get(name)
+                try:
+                    return float(value) if value not in (None, "") else None
+                except (TypeError, ValueError):
+                    return None
+
+            ops = number("ops")
+            pa = number("plateAppearances")
+            if ops is None:
+                continue
+            output[player_id] = {
+                "ops": ops,
+                "plate_appearances": pa or 0.0,
+                "avg": number("avg") or 0.0,
+                "obp": number("obp") or 0.0,
+                "slg": number("slg") or 0.0,
+            }
+
+    _SPLIT_STATS_CACHE[cache_key] = output
+    return output
+
+
 def lineup_quality(
     lineup: list[dict[str, Any]],
     announced: bool,
-) -> float:
-    if not announced or len(lineup) < 8:
-        return 0.0
+    pitcher_hand: str | None = None,
+    season: int | None = None,
+) -> tuple[float, float]:
+    """Return lineup strength and split-data coverage.
 
+    Versus-hand OPS is used when available and supported by at least 20 plate
+    appearances.  Small samples are shrunk toward season OPS; missing split
+    data falls back completely to season OPS.  This avoids unstable swings in
+    AI probability while still adding the requested handedness information.
+    """
+    if not announced or len(lineup) < 8:
+        return 0.0, 0.0
+
+    season = int(season or date.today().year)
+    split_stats = fetch_hitting_split_stats(season, pitcher_hand)
     weights = [1.10, 1.08, 1.15, 1.18, 1.05, 0.95, 0.90, 0.85, 0.80]
-    weighted_scores = []
-    used_weights = []
+    weighted_scores: list[float] = []
+    used_weights: list[float] = []
+    split_weight_used = 0.0
 
     for index, hitter in enumerate(lineup[:9]):
         stats = hitter.get("season_stats", {})
-        ops = stats.get("ops")
-        pa = stats.get("plate_appearances")
-
-        if not isinstance(ops, (int, float)):
+        season_ops = stats.get("ops")
+        season_pa = stats.get("plate_appearances")
+        if not isinstance(season_ops, (int, float)):
             continue
 
-        reliability = 1.0
-        if isinstance(pa, (int, float)):
-            reliability = max(0.35, min(1.0, pa / 250.0))
+        player_id = hitter.get("person_id")
+        split = split_stats.get(player_id) if isinstance(player_id, int) else None
+        split_ops = split.get("ops") if split else None
+        split_pa = split.get("plate_appearances", 0.0) if split else 0.0
 
-        score = ((ops - 0.720) / 0.120) * reliability
+        # Shrink small handedness samples toward the full-season rate.
+        if isinstance(split_ops, (int, float)) and split_pa > 0:
+            split_reliability = max(0.0, min(1.0, split_pa / 80.0))
+            effective_ops = (
+                split_reliability * split_ops
+                + (1.0 - split_reliability) * season_ops
+            )
+            if split_pa >= 20:
+                split_weight_used += weights[index]
+        else:
+            effective_ops = season_ops
+
+        sample_reliability = 1.0
+        if isinstance(season_pa, (int, float)):
+            sample_reliability = max(0.35, min(1.0, season_pa / 250.0))
+
+        score = ((effective_ops - 0.720) / 0.120) * sample_reliability
         weight = weights[index]
         weighted_scores.append(score * weight)
         used_weights.append(weight)
 
     if not weighted_scores:
-        return 0.0
+        return 0.0, 0.0
 
-    return max(
-        -1.0,
-        min(1.0, sum(weighted_scores) / sum(used_weights)),
-    )
+    total_weight = sum(used_weights)
+    quality = max(-1.0, min(1.0, sum(weighted_scores) / total_weight))
+    coverage = max(0.0, min(1.0, split_weight_used / total_weight))
+    return quality, coverage
 
 
 def platoon_proxy(
@@ -403,8 +505,23 @@ def make_predictions(
         away_usable = away_status in {"official", "predicted"} and len(away_lineup) >= 8
         home_usable = home_status in {"official", "predicted"} and len(home_lineup) >= 8
 
-        away_lineup_quality_raw = lineup_quality(away_lineup, away_usable)
-        home_lineup_quality_raw = lineup_quality(home_lineup, home_usable)
+        game_season = date.today().year
+        game_date_value = str(game.get("game_date_utc") or game.get("game_date") or "")
+        if len(game_date_value) >= 4 and game_date_value[:4].isdigit():
+            game_season = int(game_date_value[:4])
+
+        away_lineup_quality_raw, away_split_ops_coverage = lineup_quality(
+            away_lineup,
+            away_usable,
+            game.get("home_probable_pitcher_hand"),
+            game_season,
+        )
+        home_lineup_quality_raw, home_split_ops_coverage = lineup_quality(
+            home_lineup,
+            home_usable,
+            game.get("away_probable_pitcher_hand"),
+            game_season,
+        )
         away_lineup_quality = away_lineup_quality_raw * away_reliability
         home_lineup_quality = home_lineup_quality_raw * home_reliability
 
@@ -546,6 +663,10 @@ def make_predictions(
                             "lineup_reliability": round(away_reliability if team == away_team else home_reliability, 4),
                             "lineup_confidence": lineups.get("away_lineup_confidence") if team == away_team else lineups.get("home_lineup_confidence"),
                             "lineup_quality": round(lineup_score, 4),
+                            "split_ops_coverage": round(
+                                away_split_ops_coverage if team == away_team else home_split_ops_coverage,
+                                4,
+                            ),
                             "platoon_proxy": round(platoon_score, 4),
                             "weather_run_factor": round(weather_run_factor, 4),
                             "temperature_c": weather.get("temperature_c"),
@@ -626,6 +747,10 @@ def make_predictions(
                     "lineup_reliability": round(away_reliability if team == away_team else home_reliability, 4),
                     "lineup_confidence": lineups.get("away_lineup_confidence") if team == away_team else lineups.get("home_lineup_confidence"),
                     "lineup_quality": round(lineup_score, 4),
+                    "split_ops_coverage": round(
+                        away_split_ops_coverage if team == away_team else home_split_ops_coverage,
+                        4,
+                    ),
                     "platoon_proxy": round(platoon_score, 4),
                     "weather_run_factor": round(weather_run_factor, 4),
                     "temperature_c": weather.get("temperature_c"),
