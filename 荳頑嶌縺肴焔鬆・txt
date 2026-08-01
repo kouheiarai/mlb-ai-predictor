@@ -1,9 +1,19 @@
-MLB AI Predictor Ver.25.2 完全上書き手順
+MLB Ver.25.3 修正版
 
-1. ZIPを解凍する。
-2. 解凍後フォルダの「中身」をGitHubリポジトリ直下へアップロードする。
-3. 同名ファイルは上書きする。
-4. 古い requirements(1).txt、prediction_latest (2).json、*.pyc は削除推奨。
-5. Commit changes を押す。
-6. Actions → MLB AI Predictor Ver.25.2 Auto Update → Run workflow。
-7. 緑のチェック後、data/predictions.csv と prediction_latest.json を確認。
+重要：GitHubのWebアップロードでは .github フォルダが平坦化されることがあります。
+前回、mlb.ymlがリポジトリ直下に置かれていたため、古いGitHub Actionsが動き続けました。
+
+1. ZIP内のPythonファイル等をリポジトリ直下へ上書きします。
+2. GitHubで既存の .github/workflows/ 内の実行中ワークフローを開きます。
+3. そのYAMLの中身を、ZIP内の .github/workflows/update-odds.yml の内容で全置換します。
+   ファイル名は既存のままでも構いません。
+4. リポジトリ直下に誤って置かれた mlb.yml は削除して構いません。
+5. Actionsから「MLB AI Predictor Ver.25.3 Auto Update」を手動実行します。
+6. Validate Ver.25.3 public outputs が緑になれば成功です。
+7. data/output_manifest.json の model_version が 25.3 であることを確認します。
+
+公開先：
+- data/predictions.csv
+- data/prediction_latest.json
+- prediction_latest.json
+- data/output_manifest.json
