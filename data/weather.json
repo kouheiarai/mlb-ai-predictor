@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-08-01T06:58:50.737346+00:00",
+  "fetched_at_utc": "2026-08-01T07:44:27.113731+00:00",
   "games": [
     {
       "game_pk": 822781,
@@ -22,7 +22,7 @@
       "weather": {
         "weather_run_factor": 1.0121,
         "temperature_c": 19.7,
-        "precipitation_probability": 9,
+        "precipitation_probability": 8,
         "wind_speed_kmh": 24.7,
         "wind_direction_deg": 233
       }
@@ -61,7 +61,7 @@
       "weather": {
         "weather_run_factor": 1.009,
         "temperature_c": 23.9,
-        "precipitation_probability": 46,
+        "precipitation_probability": 45,
         "wind_speed_kmh": 13.2,
         "wind_direction_deg": 135
       }
@@ -243,7 +243,7 @@
       "weather": {
         "weather_run_factor": 1.0058,
         "temperature_c": 26.8,
-        "precipitation_probability": 26,
+        "precipitation_probability": 31,
         "wind_speed_kmh": 4.3,
         "wind_direction_deg": 355
       }
@@ -308,7 +308,7 @@
       "weather": {
         "weather_run_factor": 1.0187,
         "temperature_c": 23.3,
-        "precipitation_probability": 6,
+        "precipitation_probability": 1,
         "wind_speed_kmh": 24.0,
         "wind_direction_deg": 17
       }
@@ -371,11 +371,11 @@
       "home_team": "Seattle Mariners",
       "game_date_utc": "2026-08-02T20:10:00Z",
       "weather": {
-        "weather_run_factor": 0.9987,
-        "temperature_c": 19.0,
-        "precipitation_probability": 3,
-        "wind_speed_kmh": 12.7,
-        "wind_direction_deg": 325
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -397,11 +397,11 @@
       "home_team": "Philadelphia Phillies",
       "game_date_utc": "2026-08-03T22:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0091,
-        "temperature_c": 25.7,
-        "precipitation_probability": 72,
-        "wind_speed_kmh": 9.7,
-        "wind_direction_deg": 195
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -410,11 +410,11 @@
       "home_team": "New York Yankees",
       "game_date_utc": "2026-08-03T23:05:00Z",
       "weather": {
-        "weather_run_factor": 1.0044,
-        "temperature_c": 25.3,
-        "precipitation_probability": 70,
-        "wind_speed_kmh": 5.9,
-        "wind_direction_deg": 232
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
