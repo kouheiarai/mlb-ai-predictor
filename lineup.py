@@ -1,2 +1,4 @@
-requests
-numpy
+__pycache__/
+*.py[cod]
+.venv/
+.env
