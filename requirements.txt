@@ -1,6 +1,2 @@
-1. GitHubリポジトリ直下の requirements.txt を開く
-2. 鉛筆マークで編集
-3. 中身をすべて削除
-4. このZIP内の requirements.txt の2行を貼り付ける
-5. Commit changes
-6. Actions → MLB AI Predictor Ver.25.1 Auto Update → Run workflow
+requests>=2.31.0,<3.0.0
+numpy>=1.26.0,<3.0.0
