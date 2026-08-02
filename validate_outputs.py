@@ -30,6 +30,52 @@ def require_file(path: Path) -> None:
         raise RuntimeError(f"Missing or empty output: {path}")
 
 
+def check_public_endpoints() -> None:
+    """公開URLが想定どおりの中身かを検査する。
+
+    過去にアップロード事故でルート直下の JSON/CSV/HTML に Python
+    ソースが入り、ChatGPT や Claude から取得できなくなったことがある。
+    同じ壊れ方を CI で止めるためのガード。
+    """
+    for name in ("index.html", "docs/index.html"):
+        path = Path(name)
+        require_file(path)
+        head = path.read_text(encoding="utf-8", errors="replace").lstrip()[:200].lower()
+        if not head.startswith("<!doctype html"):
+            raise RuntimeError(f"{path} is not an HTML document")
+
+    for name in (
+        "prediction_latest.json",
+        "docs/prediction_latest.json",
+        "output_manifest.json",
+        "data/output_manifest.json",
+    ):
+        path = Path(name)
+        require_file(path)
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            raise RuntimeError(f"{path} is not valid JSON: {exc}") from exc
+        if payload.get("model_version") != MODEL_VERSION:
+            raise RuntimeError(f"{path} is not Ver.{MODEL_VERSION}")
+
+    for name in (
+        "predictions.csv",
+        "moneyline_predictions.csv",
+        "runline_predictions.csv",
+        "total_predictions.csv",
+        "docs/predictions.csv",
+    ):
+        path = Path(name)
+        require_file(path)
+        header = path.read_text(encoding="utf-8-sig", errors="replace").splitlines()[0]
+        if "," not in header or "event_id" not in header:
+            raise RuntimeError(f"{path} does not look like a predictions CSV")
+
+    for name in ("llms.txt", "robots.txt", "latest.md", "docs/llms.txt"):
+        require_file(Path(name))
+
+
 def main() -> None:
     paths = [
         Path("data/predictions.csv"),
@@ -41,6 +87,8 @@ def main() -> None:
     ]
     for path in paths:
         require_file(path)
+
+    check_public_endpoints()
 
     with Path("data/predictions.csv").open(encoding="utf-8-sig", newline="") as fh:
         reader = csv.DictReader(fh)
