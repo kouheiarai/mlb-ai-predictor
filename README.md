@@ -6,14 +6,16 @@ GitHub ActionsでPinnacle系オッズ、MLB公式日程・予告先発、ライ�
 
 以下の URL をそのまま渡してください（GitHub Pages で公開、毎時更新）。
 
-| 用途 | URL |
-| --- | --- |
-| まずこれ（全予測 JSON） | https://kouheiarai.github.io/mlb-ai-predictor/prediction_latest.json |
-| 表形式で集計したいとき | https://kouheiarai.github.io/mlb-ai-predictor/predictions.csv |
-| 文章で読ませたいとき | https://kouheiarai.github.io/mlb-ai-predictor/latest.md |
-| 人が見るダッシュボード | https://kouheiarai.github.io/mlb-ai-predictor/ |
-| AI 向けの案内 | https://kouheiarai.github.io/mlb-ai-predictor/llms.txt |
-| 更新時刻・件数の確認 | https://kouheiarai.github.io/mlb-ai-predictor/output_manifest.json |
+| 用途 | URL | サイズ目安 |
+| --- | --- | --- |
+| **まずこれ**（推奨ピックのみ・軽量） | https://kouheiarai.github.io/mlb-ai-predictor/summary.txt | 約 10KB |
+| 同じ内容の JSON | https://kouheiarai.github.io/mlb-ai-predictor/summary.json | 約 25KB |
+| 全予測 JSON（正本） | https://kouheiarai.github.io/mlb-ai-predictor/prediction_latest.json | 約 180KB |
+| 表形式で集計したいとき | https://kouheiarai.github.io/mlb-ai-predictor/predictions.csv | 約 45KB |
+| 全試合の詳細レポート | https://kouheiarai.github.io/mlb-ai-predictor/latest.md | 約 15KB |
+| 人が見るダッシュボード | https://kouheiarai.github.io/mlb-ai-predictor/ | 約 18KB |
+| AI 向けの案内 | https://kouheiarai.github.io/mlb-ai-predictor/llms.txt | 約 4KB |
+| 更新時刻・件数の確認 | https://kouheiarai.github.io/mlb-ai-predictor/output_manifest.json | 約 0.3KB |
 
 市場別 CSV は `moneyline_predictions.csv` / `runline_predictions.csv` / `total_predictions.csv`、
 補助データは `mlb_schedule.json` / `elo_ratings.json` / `team_metrics.json` /
@@ -21,6 +23,19 @@ GitHub ActionsでPinnacle系オッズ、MLB公式日程・予告先発、ライ�
 同じ階層に置いています。全ファイルは `docs/` 配下と GitHub の `data/` 配下にも同内容で存在します。
 
 `robots.txt` で GPTBot・ChatGPT-User・OAI-SearchBot・ClaudeBot・Claude-User などの取得を明示的に許可しています。
+
+### AI が「取得できない」と言うとき
+
+サーバ側は全 URL が 200 を返し、上記のクローラーもブロックしていません。
+取得できない場合は AI 側の事情なので、次の順に試してください。
+
+1. **`summary.txt` を渡す。** `prediction_latest.json` は約 180KB あり、取得ツールが
+   読み込めないことがあります。`summary.txt` は約 10KB で BUY 判定を全部含みます。
+2. **GitHub コネクタではなく Web 閲覧で読ませる。** コネクタはリポジトリ内のファイルしか
+   読めず、`github.io` の URL は取得対象外です。コネクタを使う場合は URL ではなく
+   リポジトリ内のパス（例: `kouheiarai/mlb-ai-predictor` の `summary.txt`）を指定してください。
+3. **新しい会話で試す。** 以前に壊れたファイルを読んだ会話を続けると、その内容が
+   文脈に残って誤った回答が続きます。
 
 ## 必須設定
 
