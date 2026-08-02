@@ -1,55 +1,51 @@
 {
-  "fetched_at_utc": "2026-08-01T20:16:12.583181+00:00",
+  "fetched_at_utc": "2026-08-02T00:37:29.959271+00:00",
   "metrics": {
     "San Francisco Giants": {
       "runs_per_game": 0.47959183673469385,
       "team_pitching_era": 4.12
     },
     "Houston Astros": {
-      "runs_per_game": 0.6788990825688074
+      "runs_per_game": 0.6818181818181818
     },
     "Miami Marlins": {
-      "runs_per_game": 0.5454545454545454,
+      "runs_per_game": 0.54,
       "team_pitching_era": 3.82
     },
     "Pittsburgh Pirates": {
-      "runs_per_game": 0.5625,
-      "team_pitching_era": 4.05
+      "runs_per_game": 0.6696428571428571,
+      "team_pitching_era": 3.96
     },
     "Los Angeles Dodgers": {
       "runs_per_game": 0.5871559633027523,
       "team_pitching_era": 2.88
     },
     "Tampa Bay Rays": {
-      "runs_per_game": 0.4766355140186916,
-      "team_pitching_era": 3.04
+      "runs_per_game": 0.6,
+      "team_pitching_era": 2.91
     },
     "Texas Rangers": {
       "runs_per_game": 0.5,
       "team_pitching_era": 4.31
     },
-    "Toronto Blue Jays": {
-      "runs_per_game": 0.42592592592592593,
-      "team_pitching_era": 4.37
-    },
     "Colorado Rockies": {
       "runs_per_game": 0.35051546391752575
     },
+    "Toronto Blue Jays": {
+      "runs_per_game": 0.4351851851851852,
+      "team_pitching_era": 4.38
+    },
     "Atlanta Braves": {
-      "runs_per_game": 0.6896551724137931,
+      "runs_per_game": 0.6818181818181818,
       "team_pitching_era": 3.84
     },
     "Washington Nationals": {
-      "runs_per_game": 0.8918918918918919,
+      "runs_per_game": 0.46153846153846156,
       "team_pitching_era": 3.55
     },
     "Boston Red Sox": {
       "runs_per_game": 0.49523809523809526,
       "team_pitching_era": 2.93
-    },
-    "St. Louis Cardinals": {
-      "runs_per_game": 0.6146788990825688,
-      "team_pitching_era": 3.72
     },
     "San Diego Padres": {
       "runs_per_game": 0.5137614678899083,
@@ -57,27 +53,23 @@
     },
     "Detroit Tigers": {
       "runs_per_game": 0.5544554455445545,
-      "team_pitching_era": 3.34
+      "team_pitching_era": 4.53
+    },
+    "St. Louis Cardinals": {
+      "runs_per_game": 0.6146788990825688,
+      "team_pitching_era": 3.72
     },
     "New York Mets": {
       "runs_per_game": 0.5476190476190477,
       "team_pitching_era": 3.29
     },
-    "Chicago Cubs": {
-      "runs_per_game": 0.6344086021505376,
-      "team_pitching_era": 3.67
-    },
-    "Chicago White Sox": {
-      "runs_per_game": 0.5794392523364486,
-      "team_pitching_era": 3.62
-    },
     "Seattle Mariners": {
-      "runs_per_game": 0.6538461538461539,
+      "runs_per_game": 0.6826923076923077,
       "team_pitching_era": 3.98
     },
-    "Cincinnati Reds": {
-      "runs_per_game": 0.6888888888888889,
-      "team_pitching_era": 3.85
+    "Chicago Cubs": {
+      "runs_per_game": 0.6486486486486487,
+      "team_pitching_era": 3.67
     },
     "Los Angeles Angels": {
       "runs_per_game": 0.37777777777777777,
@@ -87,12 +79,20 @@
       "runs_per_game": 0.5425531914893617,
       "team_pitching_era": 4.22
     },
+    "Chicago White Sox": {
+      "runs_per_game": 0.5794392523364486,
+      "team_pitching_era": 3.62
+    },
     "Philadelphia Phillies": {
-      "runs_per_game": 0.5238095238095238,
+      "runs_per_game": 0.5188679245283019,
       "team_pitching_era": 3.57
     },
+    "Cincinnati Reds": {
+      "runs_per_game": 0.6813186813186813,
+      "team_pitching_era": 3.91
+    },
     "Cleveland Guardians": {
-      "runs_per_game": 0.40860215053763443,
+      "runs_per_game": 0.4148936170212766,
       "team_pitching_era": 3.88
     },
     "Milwaukee Brewers": {
@@ -100,6 +100,7 @@
       "team_pitching_era": 1.58
     },
     "New York Yankees": {
+      "runs_per_game": 0.6666666666666666,
       "team_pitching_era": 3.99
     },
     "Arizona Diamondbacks": {
@@ -109,7 +110,7 @@
       "team_pitching_era": 3.65
     },
     "Baltimore Orioles": {
-      "team_pitching_era": 3.98
+      "team_pitching_era": 3.87
     }
   }
 }
