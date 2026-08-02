@@ -62,9 +62,12 @@
 
   <section id="endpoints">
     <h2>機械可読エンドポイント</h2>
-    <p>ChatGPT・Claude などから読み込む場合は下記 URL を直接指定してください。毎時自動更新されます。</p>
+    <p>ChatGPT・Claude などから読み込む場合は下記 URL を直接指定してください。自動更新されます。
+    取得サイズに制約がある環境では、まず軽量な <code>summary.txt</code> を使ってください。</p>
     <ul class="endpoints">
-      <li><code><a href="https://kouheiarai.github.io/mlb-ai-predictor/prediction_latest.json">https://kouheiarai.github.io/mlb-ai-predictor/prediction_latest.json</a></code> — 全予測（正本 JSON）</li>
+      <li><code><a href="https://kouheiarai.github.io/mlb-ai-predictor/summary.txt">https://kouheiarai.github.io/mlb-ai-predictor/summary.txt</a></code> — <strong>推奨ピックのみ（数 KB・軽量）</strong></li>
+      <li><code><a href="https://kouheiarai.github.io/mlb-ai-predictor/summary.json">https://kouheiarai.github.io/mlb-ai-predictor/summary.json</a></code> — 同上の JSON 版</li>
+      <li><code><a href="https://kouheiarai.github.io/mlb-ai-predictor/prediction_latest.json">https://kouheiarai.github.io/mlb-ai-predictor/prediction_latest.json</a></code> — 全予測（正本 JSON・約 180KB）</li>
       <li><code><a href="https://kouheiarai.github.io/mlb-ai-predictor/predictions.csv">https://kouheiarai.github.io/mlb-ai-predictor/predictions.csv</a></code> — 全市場まとめ CSV</li>
       <li><code><a href="https://kouheiarai.github.io/mlb-ai-predictor/moneyline_predictions.csv">https://kouheiarai.github.io/mlb-ai-predictor/moneyline_predictions.csv</a></code> — マネーライン CSV</li>
       <li><code><a href="https://kouheiarai.github.io/mlb-ai-predictor/runline_predictions.csv">https://kouheiarai.github.io/mlb-ai-predictor/runline_predictions.csv</a></code> — ランライン CSV</li>
