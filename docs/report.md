@@ -1,26 +1,26 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-08-03T17:19:51.821479+00:00
-- API requests remaining: 313
+- Updated: 2026-08-03T21:55:25.854937+00:00
+- API requests remaining: 300
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
 ### 1. Washington Nationals
 - Game: Washington Nationals @ Philadelphia Phillies
-- Odds: 2.43
-- AI probability: 49.6%
-- EV: 20.5%
-- 1/4 Kelly: 3.6%
+- Odds: 2.35
+- AI probability: 49.7%
+- EV: 16.9%
+- 1/4 Kelly: 3.1%
 - Lineup: 未発表
 - Lineup quality: +0.27
 - Platoon proxy: +0.05
-- Weather run factor: 1.019
-- Temperature: 30.0 C
-- Rain probability: 51%
-- Wind: 10.6 km/h (198 deg)
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.55
-- Expected score: Washington Nationals 3.22 - Philadelphia Phillies 3.13
+- Expected score: Washington Nationals 3.16 - Philadelphia Phillies 3.08
 
 ### 2. Milwaukee Brewers
 - Game: Pittsburgh Pirates @ Milwaukee Brewers
@@ -42,58 +42,58 @@
 
 ### 1. Washington Nationals +1.5
 - Game: Washington Nationals @ Philadelphia Phillies
-- Odds: 1.69
-- Cover probability: 74.3%
-- EV: 25.6%
-- 1/4 Kelly: 9.3%
+- Odds: 1.66
+- Cover probability: 74.8%
+- EV: 24.1%
+- 1/4 Kelly: 9.1%
 - Lineup: 未発表
 - Lineup quality: +0.27
 - Platoon proxy: +0.05
-- Weather run factor: 1.019
-- Temperature: 30.0 C
-- Rain probability: 51%
-- Wind: 10.6 km/h (198 deg)
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.55
-- Expected score: Washington Nationals 3.22 - Philadelphia Phillies 3.13
+- Expected score: Washington Nationals 3.16 - Philadelphia Phillies 3.08
 
-### 2. Chicago Cubs +1.5
+### 2. Colorado Rockies +1.5
+- Game: Tampa Bay Rays @ Colorado Rockies
+- Odds: 2.06
+- Cover probability: 57.8%
+- EV: 19.1%
+- 1/4 Kelly: 4.5%
+- Lineup: 未発表
+- Lineup quality: +0.64
+- Platoon proxy: +0.10
+- Weather run factor: 1.026
+- Temperature: 31.1 C
+- Rain probability: 1%
+- Wind: 15.3 km/h (51 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Tampa Bay Rays 3.95 - Colorado Rockies 2.94
+
+### 3. Chicago Cubs +1.5
 - Game: Los Angeles Dodgers @ Chicago Cubs
 - Odds: 1.65
-- Cover probability: 71.4%
-- EV: 17.8%
+- Cover probability: 71.5%
+- EV: 18.0%
 - 1/4 Kelly: 6.9%
 - Lineup: 未発表
 - Lineup quality: +0.30
 - Platoon proxy: +0.00
-- Weather run factor: 1.012
-- Temperature: 27.1 C
-- Rain probability: 30%
-- Wind: 10.2 km/h (129 deg)
+- Weather run factor: 1.010
+- Temperature: 26.3 C
+- Rain probability: 28%
+- Wind: 9.7 km/h (169 deg)
 - Bullpen fatigue proxy: 0.65
 - Expected score: Los Angeles Dodgers 2.97 - Chicago Cubs 2.78
 
-### 3. Colorado Rockies +1.5
-- Game: Tampa Bay Rays @ Colorado Rockies
-- Odds: 2.01
-- Cover probability: 57.8%
-- EV: 16.3%
-- 1/4 Kelly: 4.0%
-- Lineup: 未発表
-- Lineup quality: +0.64
-- Platoon proxy: +0.10
-- Weather run factor: 1.023
-- Temperature: 31.1 C
-- Rain probability: 2%
-- Wind: 13.0 km/h (51 deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: Tampa Bay Rays 3.94 - Colorado Rockies 2.93
-
 ### 4. San Diego Padres +1.5
 - Game: San Diego Padres @ Arizona Diamondbacks
-- Odds: 1.48
+- Odds: 1.47
 - Cover probability: 74.7%
-- EV: 10.6%
-- 1/4 Kelly: 5.5%
+- EV: 9.8%
+- 1/4 Kelly: 5.2%
 - Lineup: 未発表
 - Lineup quality: -0.10
 - Platoon proxy: +0.14
@@ -106,10 +106,10 @@
 
 ### 5. Toronto Blue Jays +1.5
 - Game: Toronto Blue Jays @ Houston Astros
-- Odds: 1.57
+- Odds: 1.58
 - Cover probability: 67.4%
-- EV: 5.8%
-- 1/4 Kelly: 2.5%
+- EV: 6.5%
+- 1/4 Kelly: 2.8%
 - Lineup: 未発表
 - Lineup quality: -0.08
 - Platoon proxy: -0.09
@@ -119,6 +119,22 @@
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.45
 - Expected score: Toronto Blue Jays 3.29 - Houston Astros 3.66
+
+### 6. San Francisco Giants +1.5
+- Game: San Francisco Giants @ Texas Rangers
+- Odds: 1.51
+- Cover probability: 69.7%
+- EV: 5.2%
+- 1/4 Kelly: 2.5%
+- Lineup: 未発表
+- Lineup quality: -0.07
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: San Francisco Giants 3.37 - Texas Rangers 3.57
 
 ## Model Notes
 
