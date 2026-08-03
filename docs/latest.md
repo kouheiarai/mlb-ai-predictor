@@ -1,16 +1,32 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-08-03T08:53:38.504732+00:00
-- API requests remaining: 332
+- Updated: 2026-08-03T17:19:51.821479+00:00
+- API requests remaining: 313
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-### 1. Milwaukee Brewers
+### 1. Washington Nationals
+- Game: Washington Nationals @ Philadelphia Phillies
+- Odds: 2.43
+- AI probability: 49.6%
+- EV: 20.5%
+- 1/4 Kelly: 3.6%
+- Lineup: 未発表
+- Lineup quality: +0.27
+- Platoon proxy: +0.05
+- Weather run factor: 1.019
+- Temperature: 30.0 C
+- Rain probability: 51%
+- Wind: 10.6 km/h (198 deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: Washington Nationals 3.22 - Philadelphia Phillies 3.13
+
+### 2. Milwaukee Brewers
 - Game: Pittsburgh Pirates @ Milwaukee Brewers
 - Odds: 1.7
 - AI probability: 62.1%
-- EV: 5.5%
+- EV: 5.6%
 - 1/4 Kelly: 2.0%
 - Lineup: 未発表
 - Lineup quality: +0.46
@@ -24,39 +40,71 @@
 
 ## Run Line Buy Ranking
 
-### 1. Arizona Diamondbacks +1.5
-- Game: San Diego Padres @ Arizona Diamondbacks
-- Odds: 1.55
-- Cover probability: 73.6%
-- EV: 14.1%
-- 1/4 Kelly: 6.4%
+### 1. Washington Nationals +1.5
+- Game: Washington Nationals @ Philadelphia Phillies
+- Odds: 1.69
+- Cover probability: 74.3%
+- EV: 25.6%
+- 1/4 Kelly: 9.3%
 - Lineup: 未発表
-- Lineup quality: +0.13
+- Lineup quality: +0.27
+- Platoon proxy: +0.05
+- Weather run factor: 1.019
+- Temperature: 30.0 C
+- Rain probability: 51%
+- Wind: 10.6 km/h (198 deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: Washington Nationals 3.22 - Philadelphia Phillies 3.13
+
+### 2. Chicago Cubs +1.5
+- Game: Los Angeles Dodgers @ Chicago Cubs
+- Odds: 1.65
+- Cover probability: 71.4%
+- EV: 17.8%
+- 1/4 Kelly: 6.9%
+- Lineup: 未発表
+- Lineup quality: +0.30
 - Platoon proxy: +0.00
+- Weather run factor: 1.012
+- Temperature: 27.1 C
+- Rain probability: 30%
+- Wind: 10.2 km/h (129 deg)
+- Bullpen fatigue proxy: 0.65
+- Expected score: Los Angeles Dodgers 2.97 - Chicago Cubs 2.78
+
+### 3. Colorado Rockies +1.5
+- Game: Tampa Bay Rays @ Colorado Rockies
+- Odds: 2.01
+- Cover probability: 57.8%
+- EV: 16.3%
+- 1/4 Kelly: 4.0%
+- Lineup: 未発表
+- Lineup quality: +0.64
+- Platoon proxy: +0.10
+- Weather run factor: 1.023
+- Temperature: 31.1 C
+- Rain probability: 2%
+- Wind: 13.0 km/h (51 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Tampa Bay Rays 3.94 - Colorado Rockies 2.93
+
+### 4. San Diego Padres +1.5
+- Game: San Diego Padres @ Arizona Diamondbacks
+- Odds: 1.48
+- Cover probability: 74.7%
+- EV: 10.6%
+- 1/4 Kelly: 5.5%
+- Lineup: 未発表
+- Lineup quality: -0.10
+- Platoon proxy: +0.14
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.45
+- Bullpen fatigue proxy: 0.55
 - Expected score: San Diego Padres 2.92 - Arizona Diamondbacks 2.89
 
-### 2. Colorado Rockies +1.5
-- Game: Tampa Bay Rays @ Colorado Rockies
-- Odds: 1.93
-- Cover probability: 57.8%
-- EV: 11.6%
-- 1/4 Kelly: 3.1%
-- Lineup: 未発表
-- Lineup quality: +0.64
-- Platoon proxy: +0.10
-- Weather run factor: 1.030
-- Temperature: 32.5 C
-- Rain probability: 3%
-- Wind: 16.6 km/h (48 deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: Tampa Bay Rays 3.97 - Colorado Rockies 2.95
-
-### 3. Toronto Blue Jays +1.5
+### 5. Toronto Blue Jays +1.5
 - Game: Toronto Blue Jays @ Houston Astros
 - Odds: 1.57
 - Cover probability: 67.4%
