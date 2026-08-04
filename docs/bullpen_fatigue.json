@@ -1,60 +1,18 @@
 {
-  "fetched_at_utc": "2026-08-03T21:55:25.854937+00:00",
+  "fetched_at_utc": "2026-08-04T07:51:26.037246+00:00",
   "fatigue": {
-    "Texas Rangers": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
-    "Tampa Bay Rays": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
-    "Kansas City Royals": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
-    "Minnesota Twins": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
     "New York Yankees": {
-      "fatigue_score": 0.65,
+      "fatigue_score": 0.55,
       "games_played_lookback": 4,
       "unique_game_dates": 4,
-      "extra_inning_games": 1,
-      "doubleheader_games": 0
-    },
-    "Chicago White Sox": {
-      "fatigue_score": 0.65,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
-      "extra_inning_games": 1,
+      "extra_inning_games": 0,
       "doubleheader_games": 0
     },
     "Chicago Cubs": {
-      "fatigue_score": 0.65,
+      "fatigue_score": 0.55,
       "games_played_lookback": 4,
       "unique_game_dates": 4,
-      "extra_inning_games": 1,
-      "doubleheader_games": 0
-    },
-    "St. Louis Cardinals": {
-      "fatigue_score": 0.65,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
-      "extra_inning_games": 1,
+      "extra_inning_games": 0,
       "doubleheader_games": 0
     },
     "Pittsburgh Pirates": {
@@ -65,6 +23,62 @@
       "doubleheader_games": 0
     },
     "Cincinnati Reds": {
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Philadelphia Phillies": {
+      "fatigue_score": 0.55,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Baltimore Orioles": {
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "St. Louis Cardinals": {
+      "fatigue_score": 0.55,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Toronto Blue Jays": {
+      "fatigue_score": 0.55,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Arizona Diamondbacks": {
+      "fatigue_score": 0.55,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Cleveland Guardians": {
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Chicago White Sox": {
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Tampa Bay Rays": {
       "fatigue_score": 0.55,
       "games_played_lookback": 4,
       "unique_game_dates": 4,
@@ -72,16 +86,16 @@
       "doubleheader_games": 0
     },
     "Miami Marlins": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
     "New York Mets": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
@@ -93,23 +107,65 @@
       "doubleheader_games": 0
     },
     "Atlanta Braves": {
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Texas Rangers": {
       "fatigue_score": 0.55,
       "games_played_lookback": 4,
       "unique_game_dates": 4,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
-    "Boston Red Sox": {
+    "Houston Astros": {
       "fatigue_score": 0.55,
       "games_played_lookback": 4,
       "unique_game_dates": 4,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Kansas City Royals": {
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Colorado Rockies": {
+      "fatigue_score": 0.55,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Milwaukee Brewers": {
+      "fatigue_score": 0.55,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Los Angeles Angels": {
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
+      "extra_inning_games": 0,
+      "doubleheader_games": 0
+    },
+    "Detroit Tigers": {
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
     "Athletics": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
@@ -127,10 +183,10 @@
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
-    "Seattle Mariners": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
+    "Boston Red Sox": {
+      "fatigue_score": 0.45,
+      "games_played_lookback": 3,
+      "unique_game_dates": 3,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
@@ -141,70 +197,14 @@
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
-    "Philadelphia Phillies": {
+    "Minnesota Twins": {
       "fatigue_score": 0.45,
       "games_played_lookback": 3,
       "unique_game_dates": 3,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
-    "Baltimore Orioles": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
-    "Toronto Blue Jays": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
-    "Arizona Diamondbacks": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
-    "Cleveland Guardians": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
-    "Houston Astros": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
-    "Colorado Rockies": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
-    "Milwaukee Brewers": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
-    "Los Angeles Angels": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
-      "extra_inning_games": 0,
-      "doubleheader_games": 0
-    },
-    "Detroit Tigers": {
+    "Seattle Mariners": {
       "fatigue_score": 0.45,
       "games_played_lookback": 3,
       "unique_game_dates": 3,

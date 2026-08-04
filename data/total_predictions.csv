@@ -1,17 +1,15 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,ec933bb866229ec8d1ed9b978c363175,2026-08-04T00:41:00Z,Tampa Bay Rays,Colorado Rockies,Nick Martinez,Tomoyuki Sugano,Under,11.5,1.88,0.95744,0.0,0.799987,0.227269,1.0256,1.12,3.953,2.937,100000,BUY
-total,d5f05941c82f5ea7de7ee32d879c0d59,2026-08-03T22:41:00Z,Washington Nationals,Philadelphia Phillies,Jake Irvin,Andrew Painter,Under,9.0,2.03,0.83849,0.0725,0.702135,0.170421,1.0,1.03,3.163,3.077,100000,BUY
-total,de37e0dedc65578fdd76ba2fe3519038,2026-08-03T23:41:00Z,Pittsburgh Pirates,Milwaukee Brewers,Paul Skenes,TBD,Under,8.5,1.89,0.89268,0.0,0.687165,0.193024,1.0,1.0,2.447,3.226,100000,BUY
-total,caa5090c496576a1a597ac531d646e9b,2026-08-04T01:41:00Z,San Diego Padres,Arizona Diamondbacks,TBD,Mitch Bratt,Under,9.0,1.88,0.88403,0.05528,0.661976,0.188061,1.0,1.0,2.925,2.889,100000,BUY
-total,ee5bdf1920cb1fffe248c1f4bb875246,2026-08-04T00:06:00Z,Los Angeles Dodgers,Chicago Cubs,TBD,Shota Imanaga,Under,8.0,1.96,0.80249,0.08783,0.57288,0.149188,1.0103,1.0,2.968,2.776,100000,BUY
-total,dce673f29a2a1bdfc8ad0e51de72a21d,2026-08-04T00:10:00Z,Toronto Blue Jays,Houston Astros,Dylan Cease,Hunter Brown,Under,9.0,2.03,0.7547,0.09597,0.532041,0.129136,1.0,1.0,3.291,3.663,100000,BUY
-total,c34859ea48280a80eb3203f53118c114,2026-08-04T00:06:00Z,San Francisco Giants,Texas Rangers,TBD,TBD,Under,8.0,1.93,0.62969,0.1247,0.215302,0.057877,1.0,1.0,3.369,3.573,100000,BUY
-total,74ae10226cb75552e9cb91f8488d161e,2026-08-03T23:06:00Z,St. Louis Cardinals,New York Yankees,TBD,Will Warren,Under,8.0,1.91,0.50701,0.13906,-0.031611,0.0,1.0,1.03,3.142,4.614,100000,PASS
-total,74ae10226cb75552e9cb91f8488d161e,2026-08-03T23:06:00Z,St. Louis Cardinals,New York Yankees,TBD,Will Warren,Over,8.0,1.98,0.35393,0.13906,-0.299219,0.0,1.0,1.03,3.142,4.614,100000,PASS
-total,c34859ea48280a80eb3203f53118c114,2026-08-04T00:06:00Z,San Francisco Giants,Texas Rangers,TBD,TBD,Over,8.0,1.94,0.24561,0.1247,-0.523517,0.0,1.0,1.0,3.369,3.573,100000,PASS
-total,dce673f29a2a1bdfc8ad0e51de72a21d,2026-08-04T00:10:00Z,Toronto Blue Jays,Houston Astros,Dylan Cease,Hunter Brown,Over,9.0,1.86,0.14933,0.09597,-0.722246,0.0,1.0,1.0,3.291,3.663,100000,PASS
-total,de37e0dedc65578fdd76ba2fe3519038,2026-08-03T23:41:00Z,Pittsburgh Pirates,Milwaukee Brewers,Paul Skenes,TBD,Over,8.5,2.0,0.10732,0.0,-0.78536,0.0,1.0,1.0,2.447,3.226,100000,PASS
-total,ee5bdf1920cb1fffe248c1f4bb875246,2026-08-04T00:06:00Z,Los Angeles Dodgers,Chicago Cubs,TBD,Shota Imanaga,Over,8.0,1.93,0.10968,0.08783,-0.788318,0.0,1.0103,1.0,2.968,2.776,100000,PASS
-total,d5f05941c82f5ea7de7ee32d879c0d59,2026-08-03T22:41:00Z,Washington Nationals,Philadelphia Phillies,Jake Irvin,Andrew Painter,Over,9.0,1.86,0.08901,0.0725,-0.834441,0.0,1.0,1.03,3.163,3.077,100000,PASS
-total,caa5090c496576a1a597ac531d646e9b,2026-08-04T01:41:00Z,San Diego Padres,Arizona Diamondbacks,TBD,Mitch Bratt,Over,9.0,2.01,0.06069,0.05528,-0.878013,0.0,1.0,1.0,2.925,2.889,100000,PASS
-total,ec933bb866229ec8d1ed9b978c363175,2026-08-04T00:41:00Z,Tampa Bay Rays,Colorado Rockies,Nick Martinez,Tomoyuki Sugano,Over,11.5,2.02,0.04256,0.0,-0.914029,0.0,1.0256,1.12,3.953,2.937,100000,PASS
+total,5137c54e299ea7c31dbd7cf26b6bf6e2,2026-08-05T00:41:00Z,Tampa Bay Rays,Colorado Rockies,Nick Martinez,Tomoyuki Sugano,Under,11.0,1.98,0.9183,0.03819,0.818234,0.208733,1.0144,1.12,4.046,2.863,100000,BUY
+total,9d696e41666e6fc76dc4b83ced2e8996,2026-08-04T22:40:00Z,Washington Nationals,Philadelphia Phillies,TBD,Cristopher Sánchez,Under,9.0,1.84,0.89465,0.05109,0.646156,0.192308,1.0,1.03,2.67,3.001,100000,BUY
+total,c242db575b7b666cd549f31569266d89,2026-08-04T22:40:00Z,New York Mets,Cleveland Guardians,TBD,Tanner Bibee,Under,7.5,1.96,0.83861,0.0,0.643676,0.167624,1.0103,1.0,2.866,2.587,100000,BUY
+total,9981a2df41e94c5547e84ff3f9979beb,2026-08-04T23:40:00Z,Pittsburgh Pirates,Milwaukee Brewers,Braxton Ashcraft,Shane Drohan,Under,7.5,1.91,0.81295,0.0,0.552734,0.15185,1.0,1.0,2.446,3.208,100000,BUY
+total,8d270beb38a7f10433d0b54d64dfcc06,2026-08-05T00:10:00Z,Toronto Blue Jays,Houston Astros,Dylan Cease,Hunter Brown,Under,8.5,1.89,0.75209,0.0,0.42145,0.118385,1.0,1.0,3.319,3.639,100000,BUY
+total,9c77a3a4edfe3bf897bbe0330b1edbb7,2026-08-04T23:41:00Z,Minnesota Twins,Kansas City Royals,Bailey Ober,Michael Wacha,Under,9.0,2.0,0.64558,0.11717,0.29116,0.07279,1.0,1.0,4.859,2.881,100000,BUY
+total,f79dec5ded280dbf4ef07225e03ccd7e,2026-08-04T22:40:00Z,Athletics,Cincinnati Reds,TBD,Hunter Greene,Under,9.0,2.01,0.57141,0.12509,0.148534,0.036766,1.0204,1.04,4.569,3.723,100000,BUY
+total,f79dec5ded280dbf4ef07225e03ccd7e,2026-08-04T22:40:00Z,Athletics,Cincinnati Reds,TBD,Hunter Greene,Over,9.0,1.86,0.3035,0.12509,-0.43549,0.0,1.0204,1.04,4.569,3.723,100000,PASS
+total,8d270beb38a7f10433d0b54d64dfcc06,2026-08-05T00:10:00Z,Toronto Blue Jays,Houston Astros,Dylan Cease,Hunter Brown,Over,8.5,1.98,0.24791,0.0,-0.509138,0.0,1.0,1.0,3.319,3.639,100000,PASS
+total,9c77a3a4edfe3bf897bbe0330b1edbb7,2026-08-04T23:41:00Z,Minnesota Twins,Kansas City Royals,Bailey Ober,Michael Wacha,Over,9.0,1.87,0.23725,0.11717,-0.556342,0.0,1.0,1.0,4.859,2.881,100000,PASS
+total,9981a2df41e94c5547e84ff3f9979beb,2026-08-04T23:40:00Z,Pittsburgh Pirates,Milwaukee Brewers,Braxton Ashcraft,Shane Drohan,Over,7.5,1.96,0.18705,0.0,-0.633382,0.0,1.0,1.0,2.446,3.208,100000,PASS
+total,c242db575b7b666cd549f31569266d89,2026-08-04T22:40:00Z,New York Mets,Cleveland Guardians,TBD,Tanner Bibee,Over,7.5,1.91,0.16139,0.0,-0.691745,0.0,1.0103,1.0,2.866,2.587,100000,PASS
+total,9d696e41666e6fc76dc4b83ced2e8996,2026-08-04T22:40:00Z,Washington Nationals,Philadelphia Phillies,TBD,Cristopher Sánchez,Over,9.0,2.04,0.05426,0.05109,-0.88931,0.0,1.0,1.03,2.67,3.001,100000,PASS
+total,5137c54e299ea7c31dbd7cf26b6bf6e2,2026-08-05T00:41:00Z,Tampa Bay Rays,Colorado Rockies,Nick Martinez,Tomoyuki Sugano,Over,11.0,1.88,0.04351,0.03819,-0.918201,0.0,1.0144,1.12,4.046,2.863,100000,PASS
