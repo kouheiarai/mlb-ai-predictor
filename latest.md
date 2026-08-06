@@ -1,620 +1,300 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-08-06T00:16:08.749413+00:00
-- API requests remaining: 179
+- Updated: 2026-08-06T11:00:32.844566+00:00
+- API requests remaining: 154
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-### 1. Miami Marlins
-- Game: Miami Marlins @ Atlanta Braves
-- Odds: 7.48
-- AI probability: 39.9%
-- EV: 198.2%
-- 1/4 Kelly: 7.6%
+### 1. Athletics
+- Game: Athletics @ Cincinnati Reds
+- Odds: 2.4
+- AI probability: 60.8%
+- EV: 46.0%
+- 1/4 Kelly: 8.2%
 - Lineup: 未発表
-- Lineup quality: +0.28
+- Lineup quality: -0.10
 - Platoon proxy: +0.01
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Miami Marlins 2.89 - Atlanta Braves 3.21
+- Weather run factor: 1.007
+- Temperature: 27.8 C
+- Rain probability: 1%
+- Wind: 3.1 km/h (126 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Athletics 4.23 - Cincinnati Reds 3.20
 
 ### 2. Arizona Diamondbacks
 - Game: San Diego Padres @ Arizona Diamondbacks
-- Odds: 2.26
-- AI probability: 68.2%
-- EV: 54.2%
-- 1/4 Kelly: 10.8%
-- Lineup: 未発表
-- Lineup quality: +0.20
-- Platoon proxy: +0.09
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: San Diego Padres 2.71 - Arizona Diamondbacks 4.29
-
-### 3. Cleveland Guardians
-- Game: New York Mets @ Cleveland Guardians
-- Odds: 3.61
-- AI probability: 42.1%
-- EV: 52.1%
-- 1/4 Kelly: 5.0%
-- Lineup: 未発表
-- Lineup quality: -0.09
-- Platoon proxy: +0.11
-- Weather run factor: 1.014
-- Temperature: 28.0 C
-- Rain probability: 3%
-- Wind: 9.6 km/h (283 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: New York Mets 2.73 - Cleveland Guardians 2.42
-
-### 4. Athletics
-- Game: Athletics @ Cincinnati Reds
-- Odds: 2.46
-- AI probability: 59.9%
-- EV: 47.4%
-- 1/4 Kelly: 8.1%
-- Lineup: 未発表
-- Lineup quality: -0.02
-- Platoon proxy: +0.00
-- Weather run factor: 1.018
-- Temperature: 29.3 C
-- Rain probability: 5%
-- Wind: 11.2 km/h (228 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Athletics 4.09 - Cincinnati Reds 3.13
-
-### 5. Minnesota Twins
-- Game: Minnesota Twins @ Kansas City Royals
-- Odds: 2.39
-- AI probability: 59.3%
-- EV: 41.8%
-- 1/4 Kelly: 7.5%
-- Lineup: 未発表
-- Lineup quality: +0.18
-- Platoon proxy: +0.08
-- Weather run factor: 1.015
-- Temperature: 29.5 C
-- Rain probability: 0%
-- Wind: 8.4 km/h (83 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Minnesota Twins 3.78 - Kansas City Royals 2.93
-
-### 6. Athletics
-- Game: Athletics @ Cincinnati Reds
-- Odds: 2.34
-- AI probability: 60.0%
-- EV: 40.4%
-- 1/4 Kelly: 7.5%
-- Lineup: 未発表
-- Lineup quality: -0.02
-- Platoon proxy: +0.00
-- Weather run factor: 1.018
-- Temperature: 29.3 C
-- Rain probability: 5%
-- Wind: 11.2 km/h (228 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Athletics 4.08 - Cincinnati Reds 3.13
-
-### 7. Washington Nationals
-- Game: Washington Nationals @ Philadelphia Phillies
-- Odds: 3.83
-- AI probability: 35.6%
-- EV: 36.2%
-- 1/4 Kelly: 3.2%
-- Lineup: 未発表
-- Lineup quality: +0.61
-- Platoon proxy: +0.01
-- Weather run factor: 1.020
-- Temperature: 29.9 C
-- Rain probability: 3%
-- Wind: 11.7 km/h (191 deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: Washington Nationals 2.48 - Philadelphia Phillies 3.25
-
-### 8. Washington Nationals
-- Game: Washington Nationals @ Philadelphia Phillies
-- Odds: 3.76
-- AI probability: 35.4%
-- EV: 33.3%
-- 1/4 Kelly: 3.0%
-- Lineup: 未発表
-- Lineup quality: +0.61
-- Platoon proxy: +0.01
-- Weather run factor: 1.020
-- Temperature: 29.9 C
-- Rain probability: 3%
-- Wind: 11.7 km/h (191 deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: Washington Nationals 2.49 - Philadelphia Phillies 3.26
-
-### 9. Arizona Diamondbacks
-- Game: San Diego Padres @ Arizona Diamondbacks
-- Odds: 1.88
-- AI probability: 69.7%
-- EV: 31.0%
-- 1/4 Kelly: 8.8%
-- Lineup: 未発表
-- Lineup quality: +0.20
-- Platoon proxy: +0.09
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: San Diego Padres 2.70 - Arizona Diamondbacks 4.30
-
-### 10. Minnesota Twins
-- Game: Minnesota Twins @ Kansas City Royals
-- Odds: 2.03
-- AI probability: 60.2%
-- EV: 22.3%
-- 1/4 Kelly: 5.4%
-- Lineup: 未発表
-- Lineup quality: +0.18
-- Platoon proxy: +0.08
-- Weather run factor: 1.015
-- Temperature: 29.5 C
-- Rain probability: 0%
-- Wind: 8.4 km/h (83 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Minnesota Twins 3.77 - Kansas City Royals 2.93
-
-### 11. Detroit Tigers
-- Game: Detroit Tigers @ Seattle Mariners
-- Odds: 2.35
-- AI probability: 52.0%
-- EV: 22.3%
-- 1/4 Kelly: 4.1%
-- Lineup: 未発表
-- Lineup quality: +0.86
-- Platoon proxy: +0.00
-- Weather run factor: 1.010
-- Temperature: 25.8 C
-- Rain probability: 0%
-- Wind: 10.0 km/h (296 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Detroit Tigers 2.73 - Seattle Mariners 2.48
-
-### 12. Chicago Cubs
-- Game: Toronto Blue Jays @ Chicago Cubs
-- Odds: 2.03
-- AI probability: 56.7%
-- EV: 15.1%
-- 1/4 Kelly: 3.7%
-- Lineup: 未発表
-- Lineup quality: +0.34
-- Platoon proxy: +0.01
-- Weather run factor: 1.011
-- Temperature: 25.0 C
-- Rain probability: 9%
-- Wind: 12.7 km/h (227 deg)
-- Bullpen fatigue proxy: 0.55
-- Expected score: Toronto Blue Jays 3.08 - Chicago Cubs 3.61
-
-### 13. Detroit Tigers
-- Game: Detroit Tigers @ Seattle Mariners
-- Odds: 2.16
-- AI probability: 52.7%
-- EV: 13.7%
-- 1/4 Kelly: 3.0%
-- Lineup: 未発表
-- Lineup quality: +0.86
-- Platoon proxy: +0.00
-- Weather run factor: 1.010
-- Temperature: 25.8 C
-- Rain probability: 0%
-- Wind: 10.0 km/h (296 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Detroit Tigers 2.72 - Seattle Mariners 2.48
-
-### 14. Los Angeles Angels
-- Game: Los Angeles Angels @ Baltimore Orioles
-- Odds: 5.44
-- AI probability: 20.6%
-- EV: 11.9%
-- 1/4 Kelly: 0.7%
+- Odds: 1.97
+- AI probability: 70.4%
+- EV: 38.6%
+- 1/4 Kelly: 10.0%
 - Lineup: 未発表
 - Lineup quality: +0.02
-- Platoon proxy: -0.05
+- Platoon proxy: +0.19
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Los Angeles Angels 2.86 - Baltimore Orioles 5.12
+- Bullpen fatigue proxy: 0.55
+- Expected score: San Diego Padres 2.66 - Arizona Diamondbacks 4.37
 
-### 15. Boston Red Sox
-- Game: Chicago White Sox @ Boston Red Sox
-- Odds: 1.58
-- AI probability: 70.0%
-- EV: 10.6%
-- 1/4 Kelly: 4.6%
+### 3. Washington Nationals
+- Game: Washington Nationals @ Philadelphia Phillies
+- Odds: 3.8
+- AI probability: 34.6%
+- EV: 31.4%
+- 1/4 Kelly: 2.8%
 - Lineup: 未発表
-- Lineup quality: +0.29
-- Platoon proxy: +0.08
-- Weather run factor: 1.022
-- Temperature: 31.3 C
-- Rain probability: 9%
-- Wind: 11.6 km/h (244 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Chicago White Sox 2.51 - Boston Red Sox 3.93
+- Lineup quality: +0.35
+- Platoon proxy: +0.01
+- Weather run factor: 1.029
+- Temperature: 32.4 C
+- Rain probability: 5%
+- Wind: 16.2 km/h (197 deg)
+- Bullpen fatigue proxy: 0.65
+- Expected score: Washington Nationals 2.50 - Philadelphia Phillies 3.35
 
-### 16. St. Louis Cardinals
-- Game: St. Louis Cardinals @ New York Yankees
-- Odds: 2.4
-- AI probability: 45.9%
-- EV: 10.2%
-- 1/4 Kelly: 1.8%
+### 4. Minnesota Twins
+- Game: Minnesota Twins @ Kansas City Royals
+- Odds: 2.13
+- AI probability: 58.4%
+- EV: 24.3%
+- 1/4 Kelly: 5.4%
 - Lineup: 未発表
-- Lineup quality: +0.00
-- Platoon proxy: +0.00
+- Lineup quality: +0.08
+- Platoon proxy: +0.12
+- Weather run factor: 1.013
+- Temperature: 29.6 C
+- Rain probability: 1%
+- Wind: 6.2 km/h (10 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Minnesota Twins 3.84 - Kansas City Royals 3.11
+
+### 5. Detroit Tigers
+- Game: Detroit Tigers @ Seattle Mariners
+- Odds: 2.11
+- AI probability: 55.4%
+- EV: 17.0%
+- 1/4 Kelly: 3.8%
+- Lineup: 未発表
+- Lineup quality: +0.61
+- Platoon proxy: +0.05
+- Weather run factor: 1.006
+- Temperature: 24.5 C
+- Rain probability: 0%
+- Wind: 9.2 km/h (296 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Detroit Tigers 3.05 - Seattle Mariners 2.60
+
+### 6. Baltimore Orioles
+- Game: Los Angeles Angels @ Baltimore Orioles
+- Odds: 1.52
+- AI probability: 76.6%
+- EV: 16.4%
+- 1/4 Kelly: 7.9%
+- Lineup: 未発表
+- Lineup quality: -0.15
+- Platoon proxy: +0.02
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.45
-- Expected score: St. Louis Cardinals 2.94 - New York Yankees 3.12
+- Expected score: Los Angeles Angels 3.02 - Baltimore Orioles 5.30
 
-### 17. Miami Marlins
-- Game: Miami Marlins @ Atlanta Braves
-- Odds: 2.38
-- AI probability: 44.4%
-- EV: 5.8%
-- 1/4 Kelly: 1.0%
+### 7. New York Mets
+- Game: New York Mets @ Cleveland Guardians
+- Odds: 2.0
+- AI probability: 54.5%
+- EV: 9.0%
+- 1/4 Kelly: 2.3%
 - Lineup: 未発表
-- Lineup quality: +0.28
-- Platoon proxy: +0.01
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Miami Marlins 2.90 - Atlanta Braves 3.19
+- Lineup quality: -0.17
+- Platoon proxy: +0.06
+- Weather run factor: 1.020
+- Temperature: 29.0 C
+- Rain probability: 1%
+- Wind: 14.2 km/h (300 deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: New York Mets 2.90 - Cleveland Guardians 2.55
 
-### 18. Milwaukee Brewers
+### 8. Boston Red Sox
+- Game: Chicago White Sox @ Boston Red Sox
+- Odds: 1.53
+- AI probability: 71.2%
+- EV: 8.9%
+- 1/4 Kelly: 4.2%
+- Lineup: 未発表
+- Lineup quality: +0.23
+- Platoon proxy: +0.06
+- Weather run factor: 1.023
+- Temperature: 31.5 C
+- Rain probability: 5%
+- Wind: 12.4 km/h (244 deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Chicago White Sox 2.57 - Boston Red Sox 4.10
+
+### 9. Milwaukee Brewers
 - Game: Pittsburgh Pirates @ Milwaukee Brewers
-- Odds: 1.74
-- AI probability: 60.7%
-- EV: 5.6%
-- 1/4 Kelly: 1.9%
+- Odds: 1.75
+- AI probability: 60.9%
+- EV: 6.6%
+- 1/4 Kelly: 2.2%
 - Lineup: 未発表
-- Lineup quality: +0.38
+- Lineup quality: +0.26
 - Platoon proxy: +0.05
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: Pittsburgh Pirates 2.54 - Milwaukee Brewers 3.23
+- Bullpen fatigue proxy: 0.55
+- Expected score: Pittsburgh Pirates 2.52 - Milwaukee Brewers 3.23
+
+### 10. Toronto Blue Jays
+- Game: Toronto Blue Jays @ Chicago Cubs
+- Odds: 1.88
+- AI probability: 56.5%
+- EV: 6.3%
+- 1/4 Kelly: 1.8%
+- Lineup: 未発表
+- Lineup quality: -0.17
+- Platoon proxy: +0.10
+- Weather run factor: 1.004
+- Temperature: 23.1 C
+- Rain probability: 7%
+- Wind: 10.0 km/h (75 deg)
+- Bullpen fatigue proxy: 0.65
+- Expected score: Toronto Blue Jays 3.07 - Chicago Cubs 2.61
 
 ## Run Line Buy Ranking
 
-### 1. Minnesota Twins +1
-- Game: Minnesota Twins @ Kansas City Royals
-- Odds: 1.89
-- Cover probability: 82.7%
-- EV: 56.3%
-- 1/4 Kelly: 15.8%
-- Lineup: 未発表
-- Lineup quality: +0.18
-- Platoon proxy: +0.08
-- Weather run factor: 1.015
-- Temperature: 29.5 C
-- Rain probability: 0%
-- Wind: 8.4 km/h (83 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Minnesota Twins 3.78 - Kansas City Royals 2.93
-
-### 2. Arizona Diamondbacks +1.5
+### 1. Arizona Diamondbacks -1.5
 - Game: San Diego Padres @ Arizona Diamondbacks
-- Odds: 1.74
-- Cover probability: 88.4%
-- EV: 53.9%
-- 1/4 Kelly: 18.2%
+- Odds: 2.87
+- Cover probability: 52.2%
+- EV: 49.8%
+- 1/4 Kelly: 6.7%
 - Lineup: 未発表
-- Lineup quality: +0.20
-- Platoon proxy: +0.09
+- Lineup quality: +0.02
+- Platoon proxy: +0.19
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: San Diego Padres 2.71 - Arizona Diamondbacks 4.29
+- Bullpen fatigue proxy: 0.55
+- Expected score: San Diego Padres 2.66 - Arizona Diamondbacks 4.37
 
-### 3. Milwaukee Brewers -1
-- Game: Pittsburgh Pirates @ Milwaukee Brewers
-- Odds: 1.86
-- Cover probability: 82.6%
-- EV: 53.6%
-- 1/4 Kelly: 15.6%
-- Lineup: 未発表
-- Lineup quality: +0.38
-- Platoon proxy: +0.05
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: Pittsburgh Pirates 2.54 - Milwaukee Brewers 3.23
-
-### 4. Washington Nationals +1.5
+### 2. Washington Nationals +1.5
 - Game: Washington Nationals @ Philadelphia Phillies
-- Odds: 2.3
-- Cover probability: 63.1%
-- EV: 45.2%
-- 1/4 Kelly: 8.7%
+- Odds: 2.29
+- Cover probability: 61.6%
+- EV: 41.1%
+- 1/4 Kelly: 8.0%
 - Lineup: 未発表
-- Lineup quality: +0.61
+- Lineup quality: +0.35
 - Platoon proxy: +0.01
-- Weather run factor: 1.020
-- Temperature: 29.9 C
-- Rain probability: 3%
-- Wind: 11.7 km/h (191 deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: Washington Nationals 2.48 - Philadelphia Phillies 3.25
-
-### 5. Athletics +1.5
-- Game: Athletics @ Cincinnati Reds
-- Odds: 1.72
-- Cover probability: 82.5%
-- EV: 42.0%
-- 1/4 Kelly: 14.6%
-- Lineup: 未発表
-- Lineup quality: -0.02
-- Platoon proxy: +0.00
-- Weather run factor: 1.018
-- Temperature: 29.3 C
+- Weather run factor: 1.029
+- Temperature: 32.4 C
 - Rain probability: 5%
-- Wind: 11.2 km/h (228 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Athletics 4.09 - Cincinnati Reds 3.13
+- Wind: 16.2 km/h (197 deg)
+- Bullpen fatigue proxy: 0.65
+- Expected score: Washington Nationals 2.50 - Philadelphia Phillies 3.35
 
-### 6. Arizona Diamondbacks -1.5
-- Game: San Diego Padres @ Arizona Diamondbacks
-- Odds: 2.75
-- Cover probability: 50.6%
-- EV: 39.1%
-- 1/4 Kelly: 5.6%
-- Lineup: 未発表
-- Lineup quality: +0.20
-- Platoon proxy: +0.09
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: San Diego Padres 2.70 - Arizona Diamondbacks 4.30
-
-### 7. Athletics +1
+### 3. Athletics +1.5
 - Game: Athletics @ Cincinnati Reds
-- Odds: 1.68
-- Cover probability: 82.6%
-- EV: 38.8%
-- 1/4 Kelly: 14.3%
+- Odds: 1.7
+- Cover probability: 83.0%
+- EV: 41.1%
+- 1/4 Kelly: 14.7%
 - Lineup: 未発表
-- Lineup quality: -0.02
-- Platoon proxy: +0.00
-- Weather run factor: 1.018
-- Temperature: 29.3 C
-- Rain probability: 5%
-- Wind: 11.2 km/h (228 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Athletics 4.08 - Cincinnati Reds 3.13
-
-### 8. Detroit Tigers +1.5
-- Game: Detroit Tigers @ Seattle Mariners
-- Odds: 1.63
-- Cover probability: 78.9%
-- EV: 28.6%
-- 1/4 Kelly: 11.4%
-- Lineup: 未発表
-- Lineup quality: +0.86
-- Platoon proxy: +0.00
-- Weather run factor: 1.010
-- Temperature: 25.8 C
-- Rain probability: 0%
-- Wind: 10.0 km/h (296 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Detroit Tigers 2.73 - Seattle Mariners 2.48
-
-### 9. Cincinnati Reds -1
-- Game: Athletics @ Cincinnati Reds
-- Odds: 2.18
-- Cover probability: 58.7%
-- EV: 28.1%
-- 1/4 Kelly: 5.9%
-- Lineup: 未発表
-- Lineup quality: +0.15
+- Lineup quality: -0.10
 - Platoon proxy: +0.01
-- Weather run factor: 1.018
-- Temperature: 29.3 C
-- Rain probability: 5%
-- Wind: 11.2 km/h (228 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Athletics 4.08 - Cincinnati Reds 3.13
-
-### 10. Pittsburgh Pirates +1
-- Game: Pittsburgh Pirates @ Milwaukee Brewers
-- Odds: 1.96
-- Cover probability: 64.3%
-- EV: 26.1%
-- 1/4 Kelly: 6.8%
-- Lineup: 未発表
-- Lineup quality: +0.44
-- Platoon proxy: +0.13
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
+- Weather run factor: 1.007
+- Temperature: 27.8 C
+- Rain probability: 1%
+- Wind: 3.1 km/h (126 deg)
 - Bullpen fatigue proxy: 0.45
-- Expected score: Pittsburgh Pirates 2.54 - Milwaukee Brewers 3.23
+- Expected score: Athletics 4.23 - Cincinnati Reds 3.20
 
-### 11. Cleveland Guardians +2
-- Game: New York Mets @ Cleveland Guardians
-- Odds: 1.78
-- Cover probability: 70.7%
-- EV: 25.9%
-- 1/4 Kelly: 8.3%
-- Lineup: 未発表
-- Lineup quality: -0.09
-- Platoon proxy: +0.11
-- Weather run factor: 1.014
-- Temperature: 28.0 C
-- Rain probability: 3%
-- Wind: 9.6 km/h (283 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: New York Mets 2.73 - Cleveland Guardians 2.42
-
-### 12. Miami Marlins +3.5
-- Game: Miami Marlins @ Atlanta Braves
-- Odds: 1.78
-- Cover probability: 69.5%
-- EV: 23.7%
-- 1/4 Kelly: 7.6%
-- Lineup: 未発表
-- Lineup quality: +0.28
-- Platoon proxy: +0.01
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Miami Marlins 2.89 - Atlanta Braves 3.21
-
-### 13. Minnesota Twins +1.5
+### 4. Minnesota Twins +1.5
 - Game: Minnesota Twins @ Kansas City Royals
-- Odds: 1.5
-- Cover probability: 82.4%
-- EV: 23.7%
-- 1/4 Kelly: 11.8%
-- Lineup: 未発表
-- Lineup quality: +0.18
-- Platoon proxy: +0.08
-- Weather run factor: 1.015
-- Temperature: 29.5 C
-- Rain probability: 0%
-- Wind: 8.4 km/h (83 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Minnesota Twins 3.77 - Kansas City Royals 2.93
-
-### 14. Detroit Tigers +1.5
-- Game: Detroit Tigers @ Seattle Mariners
 - Odds: 1.53
-- Cover probability: 79.0%
-- EV: 20.8%
-- 1/4 Kelly: 9.8%
+- Cover probability: 80.9%
+- EV: 23.8%
+- 1/4 Kelly: 11.2%
 - Lineup: 未発表
-- Lineup quality: +0.86
-- Platoon proxy: +0.00
-- Weather run factor: 1.010
-- Temperature: 25.8 C
-- Rain probability: 0%
-- Wind: 10.0 km/h (296 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Detroit Tigers 2.72 - Seattle Mariners 2.48
-
-### 15. St. Louis Cardinals +1.5
-- Game: St. Louis Cardinals @ New York Yankees
-- Odds: 1.66
-- Cover probability: 71.2%
-- EV: 18.3%
-- 1/4 Kelly: 6.9%
-- Lineup: 未発表
-- Lineup quality: +0.00
-- Platoon proxy: +0.00
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
+- Lineup quality: +0.08
+- Platoon proxy: +0.12
+- Weather run factor: 1.013
+- Temperature: 29.6 C
+- Rain probability: 1%
+- Wind: 6.2 km/h (10 deg)
 - Bullpen fatigue proxy: 0.45
-- Expected score: St. Louis Cardinals 2.94 - New York Yankees 3.12
+- Expected score: Minnesota Twins 3.84 - Kansas City Royals 3.11
 
-### 16. Kansas City Royals -1
-- Game: Minnesota Twins @ Kansas City Royals
-- Odds: 1.93
-- Cover probability: 60.5%
-- EV: 16.8%
-- 1/4 Kelly: 4.5%
-- Lineup: 未発表
-- Lineup quality: +0.03
-- Platoon proxy: +0.04
-- Weather run factor: 1.015
-- Temperature: 29.5 C
-- Rain probability: 0%
-- Wind: 8.4 km/h (83 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Minnesota Twins 3.78 - Kansas City Royals 2.93
-
-### 17. Miami Marlins +1.5
-- Game: Miami Marlins @ Atlanta Braves
-- Odds: 1.67
-- Cover probability: 69.8%
-- EV: 16.6%
-- 1/4 Kelly: 6.2%
-- Lineup: 未発表
-- Lineup quality: +0.28
-- Platoon proxy: +0.01
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Miami Marlins 2.90 - Atlanta Braves 3.19
-
-### 18. Washington Nationals +2
-- Game: Washington Nationals @ Philadelphia Phillies
-- Odds: 1.8
-- Cover probability: 63.1%
-- EV: 13.6%
-- 1/4 Kelly: 4.2%
+### 5. Detroit Tigers +1.5
+- Game: Detroit Tigers @ Seattle Mariners
+- Odds: 1.52
+- Cover probability: 80.4%
+- EV: 22.2%
+- 1/4 Kelly: 10.7%
 - Lineup: 未発表
 - Lineup quality: +0.61
-- Platoon proxy: +0.01
-- Weather run factor: 1.020
-- Temperature: 29.9 C
-- Rain probability: 3%
-- Wind: 11.7 km/h (191 deg)
+- Platoon proxy: +0.05
+- Weather run factor: 1.006
+- Temperature: 24.5 C
+- Rain probability: 0%
+- Wind: 9.2 km/h (296 deg)
 - Bullpen fatigue proxy: 0.45
-- Expected score: Washington Nationals 2.49 - Philadelphia Phillies 3.26
+- Expected score: Detroit Tigers 3.05 - Seattle Mariners 2.60
 
-### 19. Cleveland Guardians +1.5
-- Game: New York Mets @ Cleveland Guardians
-- Odds: 1.57
-- Cover probability: 71.1%
-- EV: 11.6%
+### 6. Baltimore Orioles -1.5
+- Game: Los Angeles Angels @ Baltimore Orioles
+- Odds: 1.99
+- Cover probability: 60.3%
+- EV: 20.0%
 - 1/4 Kelly: 5.1%
 - Lineup: 未発表
-- Lineup quality: -0.09
-- Platoon proxy: +0.11
-- Weather run factor: 1.014
-- Temperature: 28.0 C
-- Rain probability: 3%
-- Wind: 9.6 km/h (283 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: New York Mets 2.72 - Cleveland Guardians 2.41
-
-### 20. Baltimore Orioles -2
-- Game: Los Angeles Angels @ Baltimore Orioles
-- Odds: 1.85
-- Cover probability: 60.0%
-- EV: 11.0%
-- 1/4 Kelly: 3.2%
-- Lineup: 未発表
-- Lineup quality: -0.02
-- Platoon proxy: +0.00
+- Lineup quality: -0.15
+- Platoon proxy: +0.02
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Los Angeles Angels 2.86 - Baltimore Orioles 5.12
+- Bullpen fatigue proxy: 0.45
+- Expected score: Los Angeles Angels 3.02 - Baltimore Orioles 5.30
+
+### 7. Miami Marlins +1.5
+- Game: Miami Marlins @ Atlanta Braves
+- Odds: 1.63
+- Cover probability: 68.6%
+- EV: 11.8%
+- 1/4 Kelly: 4.7%
+- Lineup: 未発表
+- Lineup quality: +0.32
+- Platoon proxy: -0.03
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Miami Marlins 2.97 - Atlanta Braves 3.33
+
+### 8. Cleveland Guardians +1.5
+- Game: New York Mets @ Cleveland Guardians
+- Odds: 1.52
+- Cover probability: 69.9%
+- EV: 6.2%
+- 1/4 Kelly: 3.0%
+- Lineup: 未発表
+- Lineup quality: +0.03
+- Platoon proxy: +0.17
+- Weather run factor: 1.020
+- Temperature: 29.0 C
+- Rain probability: 1%
+- Wind: 14.2 km/h (300 deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: New York Mets 2.90 - Cleveland Guardians 2.55
 
 ## Model Notes
 
