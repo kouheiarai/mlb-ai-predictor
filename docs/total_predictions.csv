@@ -1,25 +1,19 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,ea84587619219eda157528a5519fdb38,2026-08-06T23:11:00Z,Chicago White Sox,Boston Red Sox,,,Under,15.0,2.21,0.99821,0.00108,1.206044,0.249183,1.0,1.05,2.516,3.673,100000,BUY
-total,ac809bf2f9ff5445c2ded443c4cc7795,2026-08-07T01:41:00Z,San Diego Padres,Arizona Diamondbacks,,,Under,9.0,1.98,0.79507,0.0844,0.574239,0.146489,1.0,1.0,2.56,4.059,100000,BUY
-total,de2d6836db4bc97363ff6663002a1226,2026-08-07T22:41:00Z,Toronto Blue Jays,Philadelphia Phillies,TBD,Jesús Luzardo,Under,8.0,1.95,0.80575,0.08585,0.571212,0.150319,1.029,1.03,2.734,2.95,100000,BUY
-total,8c55b85bc3145610b69af3bd9f09586e,2026-08-08T00:16:00Z,Colorado Rockies,St. Louis Cardinals,Michael Lorenzen,Michael McGreevy,Under,8.5,2.03,0.77135,0.0,0.56584,0.13734,1.0333,1.0,2.912,3.906,100000,BUY
-total,cd7a442939785b6d6b84212d352d5f62,2026-08-07T23:11:00Z,Los Angeles Angels,Miami Marlins,Grayson Rodriguez,Ryan Gusto,Under,9.0,1.99,0.786,0.08737,0.56414,0.14246,1.0,1.0,2.739,3.937,100000,BUY
-total,cad05e7cd27dfc1bc5a8301e34d64c33,2026-08-07T23:41:00Z,Cleveland Guardians,Chicago White Sox,Joey Cantillo,Davis Martin,Under,8.5,1.87,0.82231,0.0,0.53772,0.154517,1.0,1.0,3.018,3.364,100000,BUY
-total,91a75ec8bd4cdcae338a3b513e0ad681,2026-08-07T23:11:00Z,Athletics,Boston Red Sox,J.T. Ginn,TBD,Under,9.0,1.93,0.78267,0.08825,0.510553,0.137245,1.0336,1.05,3.356,3.388,100000,BUY
-total,05fcf64141a314191b3d0fe945a8cf83,2026-08-08T01:41:00Z,Houston Astros,San Diego Padres,TBD,TBD,Under,8.0,1.98,0.71136,0.10986,0.408493,0.104207,1.0174,0.97,2.902,3.491,100000,BUY
-total,5fad7bb8baaba2fe466e4c6ce84f2a76,2026-08-08T01:46:00Z,Tampa Bay Rays,Seattle Mariners,TBD,Emerson Hancock,Under,7.0,1.87,0.73045,0.11161,0.365942,0.105156,1.0088,0.96,2.885,2.493,100000,BUY
-total,4f9df9d570d705ced380cfa799b0b640,2026-08-06T23:16:13Z,Miami Marlins,Atlanta Braves,,,Under,6.5,2.0,0.64059,0.0,0.28118,0.070295,1.0,1.0,2.868,3.08,100000,BUY
-total,b16edbe527767ab334db0995f39c8a5d,2026-08-07T22:41:00Z,New York Mets,Pittsburgh Pirates,Sean Manaea,Jared Jones,Under,8.0,2.01,0.56081,0.13334,0.127228,0.031492,1.0179,1.0,4.449,2.937,100000,BUY
-total,5c4bef98be73bcc77b30b2af7b0aad13,2026-08-08T00:16:00Z,Baltimore Orioles,Texas Rangers,Cade Povich,Kumar Rocker,Under,8.0,1.94,0.45219,0.14027,-0.122751,0.0,1.0,1.0,4.703,3.405,100000,PASS
-total,5c4bef98be73bcc77b30b2af7b0aad13,2026-08-08T00:16:00Z,Baltimore Orioles,Texas Rangers,Cade Povich,Kumar Rocker,Over,8.0,1.93,0.40754,0.14027,-0.213448,0.0,1.0,1.0,4.703,3.405,100000,PASS
-total,4f9df9d570d705ced380cfa799b0b640,2026-08-06T23:16:13Z,Miami Marlins,Atlanta Braves,,,Over,6.5,1.83,0.35941,0.0,-0.34228,0.0,1.0,1.0,2.868,3.08,100000,PASS
-total,b16edbe527767ab334db0995f39c8a5d,2026-08-07T22:41:00Z,New York Mets,Pittsburgh Pirates,Sean Manaea,Jared Jones,Over,8.0,1.87,0.30585,0.13334,-0.42806,0.0,1.0179,1.0,4.449,2.937,100000,PASS
-total,8c55b85bc3145610b69af3bd9f09586e,2026-08-08T00:16:00Z,Colorado Rockies,St. Louis Cardinals,Michael Lorenzen,Michael McGreevy,Over,8.5,1.85,0.22865,0.0,-0.576998,0.0,1.0333,1.0,2.912,3.906,100000,PASS
-total,cad05e7cd27dfc1bc5a8301e34d64c33,2026-08-07T23:41:00Z,Cleveland Guardians,Chicago White Sox,Joey Cantillo,Davis Martin,Over,8.5,2.01,0.17769,0.0,-0.642843,0.0,1.0,1.0,3.018,3.364,100000,PASS
-total,05fcf64141a314191b3d0fe945a8cf83,2026-08-08T01:41:00Z,Houston Astros,San Diego Padres,TBD,TBD,Over,8.0,1.88,0.17878,0.10986,-0.663894,0.0,1.0174,0.97,2.902,3.491,100000,PASS
-total,5fad7bb8baaba2fe466e4c6ce84f2a76,2026-08-08T01:46:00Z,Tampa Bay Rays,Seattle Mariners,TBD,Emerson Hancock,Over,7.0,2.0,0.15794,0.11161,-0.68412,0.0,1.0088,0.96,2.885,2.493,100000,PASS
-total,91a75ec8bd4cdcae338a3b513e0ad681,2026-08-07T23:11:00Z,Athletics,Boston Red Sox,J.T. Ginn,TBD,Over,9.0,1.94,0.12908,0.08825,-0.749585,0.0,1.0336,1.05,3.356,3.388,100000,PASS
-total,cd7a442939785b6d6b84212d352d5f62,2026-08-07T23:11:00Z,Los Angeles Angels,Miami Marlins,Grayson Rodriguez,Ryan Gusto,Over,9.0,1.88,0.12663,0.08737,-0.761936,0.0,1.0,1.0,2.739,3.937,100000,PASS
-total,ac809bf2f9ff5445c2ded443c4cc7795,2026-08-07T01:41:00Z,San Diego Padres,Arizona Diamondbacks,,,Over,9.0,1.91,0.12053,0.0844,-0.769788,0.0,1.0,1.0,2.56,4.059,100000,PASS
-total,de2d6836db4bc97363ff6663002a1226,2026-08-07T22:41:00Z,Toronto Blue Jays,Philadelphia Phillies,TBD,Jesús Luzardo,Over,8.0,1.92,0.1084,0.08585,-0.791872,0.0,1.029,1.03,2.734,2.95,100000,PASS
-total,ea84587619219eda157528a5519fdb38,2026-08-06T23:11:00Z,Chicago White Sox,Boston Red Sox,,,Over,15.0,1.65,0.00071,0.00108,-0.998829,0.0,1.0,1.05,2.516,3.673,100000,PASS
+total,8c55b85bc3145610b69af3bd9f09586e,2026-08-08T00:16:00Z,Colorado Rockies,St. Louis Cardinals,Michael Lorenzen,Michael McGreevy,Under,8.5,2.03,0.76937,0.0,0.561821,0.136364,1.0354,1.0,2.918,3.913,100000,BUY
+total,cd7a442939785b6d6b84212d352d5f62,2026-08-07T23:11:00Z,Los Angeles Angels,Miami Marlins,Grayson Rodriguez,Ryan Gusto,Under,9.0,1.96,0.78651,0.08673,0.54156,0.141031,1.0,1.0,2.818,3.868,100000,BUY
+total,cad05e7cd27dfc1bc5a8301e34d64c33,2026-08-07T23:41:00Z,Cleveland Guardians,Chicago White Sox,Joey Cantillo,Davis Martin,Under,8.5,1.87,0.81875,0.0,0.531062,0.152604,1.0,1.0,3.138,3.292,100000,BUY
+total,de2d6836db4bc97363ff6663002a1226,2026-08-07T22:41:00Z,Toronto Blue Jays,Philadelphia Phillies,TBD,Jesús Luzardo,Under,8.0,1.88,0.80796,0.08473,0.518965,0.147433,1.028,1.03,2.732,2.949,100000,BUY
+total,91a75ec8bd4cdcae338a3b513e0ad681,2026-08-07T23:11:00Z,Athletics,Boston Red Sox,J.T. Ginn,TBD,Under,9.0,1.85,0.76924,0.09098,0.423094,0.124439,1.0314,1.05,3.479,3.375,100000,BUY
+total,05fcf64141a314191b3d0fe945a8cf83,2026-08-08T01:41:00Z,Houston Astros,San Diego Padres,TBD,TBD,Under,8.0,1.98,0.70836,0.1119,0.402553,0.102692,1.0152,0.97,2.928,3.487,100000,BUY
+total,5fad7bb8baaba2fe466e4c6ce84f2a76,2026-08-08T01:46:00Z,Tampa Bay Rays,Seattle Mariners,TBD,Emerson Hancock,Under,7.0,1.88,0.72996,0.11294,0.372325,0.105774,1.0085,0.96,2.884,2.493,100000,BUY
+total,b16edbe527767ab334db0995f39c8a5d,2026-08-07T22:41:00Z,New York Mets,Pittsburgh Pirates,Sean Manaea,Jared Jones,Under,8.5,1.88,0.69638,0.0,0.309194,0.087839,1.0165,1.0,4.443,2.933,100000,BUY
+total,5c4bef98be73bcc77b30b2af7b0aad13,2026-08-08T00:16:00Z,Baltimore Orioles,Texas Rangers,Cade Povich,Kumar Rocker,Under,8.0,1.92,0.45219,0.14027,-0.131795,0.0,1.0,1.0,4.703,3.405,100000,PASS
+total,5c4bef98be73bcc77b30b2af7b0aad13,2026-08-08T00:16:00Z,Baltimore Orioles,Texas Rangers,Cade Povich,Kumar Rocker,Over,8.0,1.95,0.40754,0.14027,-0.205297,0.0,1.0,1.0,4.703,3.405,100000,PASS
+total,b16edbe527767ab334db0995f39c8a5d,2026-08-07T22:41:00Z,New York Mets,Pittsburgh Pirates,Sean Manaea,Jared Jones,Over,8.5,1.98,0.30362,0.0,-0.398832,0.0,1.0165,1.0,4.443,2.933,100000,PASS
+total,8c55b85bc3145610b69af3bd9f09586e,2026-08-08T00:16:00Z,Colorado Rockies,St. Louis Cardinals,Michael Lorenzen,Michael McGreevy,Over,8.5,1.85,0.23063,0.0,-0.573334,0.0,1.0354,1.0,2.918,3.913,100000,PASS
+total,cad05e7cd27dfc1bc5a8301e34d64c33,2026-08-07T23:41:00Z,Cleveland Guardians,Chicago White Sox,Joey Cantillo,Davis Martin,Over,8.5,2.0,0.18125,0.0,-0.6375,0.0,1.0,1.0,3.138,3.292,100000,PASS
+total,05fcf64141a314191b3d0fe945a8cf83,2026-08-08T01:41:00Z,Houston Astros,San Diego Padres,TBD,TBD,Over,8.0,1.88,0.17974,0.1119,-0.662089,0.0,1.0152,0.97,2.928,3.487,100000,PASS
+total,5fad7bb8baaba2fe466e4c6ce84f2a76,2026-08-08T01:46:00Z,Tampa Bay Rays,Seattle Mariners,TBD,Emerson Hancock,Over,7.0,1.99,0.1571,0.11294,-0.687371,0.0,1.0085,0.96,2.884,2.493,100000,PASS
+total,91a75ec8bd4cdcae338a3b513e0ad681,2026-08-07T23:11:00Z,Athletics,Boston Red Sox,J.T. Ginn,TBD,Over,9.0,2.02,0.13978,0.09098,-0.717644,0.0,1.0314,1.05,3.479,3.375,100000,PASS
+total,cd7a442939785b6d6b84212d352d5f62,2026-08-07T23:11:00Z,Los Angeles Angels,Miami Marlins,Grayson Rodriguez,Ryan Gusto,Over,9.0,1.91,0.12676,0.08673,-0.757888,0.0,1.0,1.0,2.818,3.868,100000,PASS
+total,de2d6836db4bc97363ff6663002a1226,2026-08-07T22:41:00Z,Toronto Blue Jays,Philadelphia Phillies,TBD,Jesús Luzardo,Over,8.0,1.99,0.10731,0.08473,-0.786453,0.0,1.028,1.03,2.732,2.949,100000,PASS
