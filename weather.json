@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-08-07T14:38:51.987140+00:00",
+  "fetched_at_utc": "2026-08-07T17:40:09.033822+00:00",
   "games": [
     {
       "game_pk": 823349,
@@ -7,11 +7,11 @@
       "home_team": "Pittsburgh Pirates",
       "game_date_utc": "2026-08-07T22:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0114,
-        "temperature_c": 24.7,
-        "precipitation_probability": 20,
-        "wind_speed_kmh": 14.0,
-        "wind_direction_deg": 119
+        "weather_run_factor": 1.0097,
+        "temperature_c": 24.8,
+        "precipitation_probability": 30,
+        "wind_speed_kmh": 12.1,
+        "wind_direction_deg": 210
       }
     },
     {
@@ -20,10 +20,10 @@
       "home_team": "Philadelphia Phillies",
       "game_date_utc": "2026-08-07T22:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0323,
-        "temperature_c": 33.1,
-        "precipitation_probability": 15,
-        "wind_speed_kmh": 17.9,
+        "weather_run_factor": 1.035,
+        "temperature_c": 33.4,
+        "precipitation_probability": 14,
+        "wind_speed_kmh": 20.0,
         "wind_direction_deg": 208
       }
     },
@@ -46,11 +46,11 @@
       "home_team": "New York Yankees",
       "game_date_utc": "2026-08-07T23:05:00Z",
       "weather": {
-        "weather_run_factor": 1.0153,
-        "temperature_c": 29.7,
-        "precipitation_probability": 36,
-        "wind_speed_kmh": 8.0,
-        "wind_direction_deg": 262
+        "weather_run_factor": 1.0112,
+        "temperature_c": 25.8,
+        "precipitation_probability": 35,
+        "wind_speed_kmh": 11.6,
+        "wind_direction_deg": 175
       }
     },
     {
@@ -59,11 +59,11 @@
       "home_team": "Boston Red Sox",
       "game_date_utc": "2026-08-07T23:10:00Z",
       "weather": {
-        "weather_run_factor": 1.0263,
-        "temperature_c": 32.3,
+        "weather_run_factor": 1.0273,
+        "temperature_c": 32.6,
         "precipitation_probability": 3,
-        "wind_speed_kmh": 13.7,
-        "wind_direction_deg": 272
+        "wind_speed_kmh": 14.0,
+        "wind_direction_deg": 271
       }
     },
     {
@@ -111,11 +111,11 @@
       "home_team": "Kansas City Royals",
       "game_date_utc": "2026-08-08T00:10:00Z",
       "weather": {
-        "weather_run_factor": 1.0176,
-        "temperature_c": 30.8,
-        "precipitation_probability": 6,
-        "wind_speed_kmh": 8.1,
-        "wind_direction_deg": 201
+        "weather_run_factor": 1.0172,
+        "temperature_c": 31.0,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 7.3,
+        "wind_direction_deg": 171
       }
     },
     {
@@ -124,11 +124,11 @@
       "home_team": "St. Louis Cardinals",
       "game_date_utc": "2026-08-08T00:15:00Z",
       "weather": {
-        "weather_run_factor": 1.0144,
-        "temperature_c": 30.5,
-        "precipitation_probability": 2,
-        "wind_speed_kmh": 5.5,
-        "wind_direction_deg": 238
+        "weather_run_factor": 1.0177,
+        "temperature_c": 31.4,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 7.0,
+        "wind_direction_deg": 201
       }
     },
     {
@@ -163,11 +163,11 @@
       "home_team": "San Diego Padres",
       "game_date_utc": "2026-08-08T01:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0101,
-        "temperature_c": 25.4,
+        "weather_run_factor": 1.0115,
+        "temperature_c": 25.5,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 11.3,
-        "wind_direction_deg": 297
+        "wind_speed_kmh": 12.5,
+        "wind_direction_deg": 303
       }
     },
     {
@@ -176,11 +176,11 @@
       "home_team": "Seattle Mariners",
       "game_date_utc": "2026-08-08T01:45:00Z",
       "weather": {
-        "weather_run_factor": 1.0124,
+        "weather_run_factor": 1.0133,
         "temperature_c": 27.2,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 10.0,
-        "wind_direction_deg": 330
+        "wind_speed_kmh": 10.9,
+        "wind_direction_deg": 343
       }
     },
     {
@@ -189,11 +189,11 @@
       "home_team": "San Francisco Giants",
       "game_date_utc": "2026-08-08T02:15:00Z",
       "weather": {
-        "weather_run_factor": 0.9991,
-        "temperature_c": 16.5,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 18.1,
-        "wind_direction_deg": 275
+        "weather_run_factor": 0.9984,
+        "temperature_c": 15.8,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 18.9,
+        "wind_direction_deg": 278
       }
     },
     {
@@ -204,7 +204,7 @@
       "weather": {
         "weather_run_factor": 1.0356,
         "temperature_c": 33.6,
-        "precipitation_probability": 7,
+        "precipitation_probability": 6,
         "wind_speed_kmh": 20.2,
         "wind_direction_deg": 230
       }
@@ -217,7 +217,7 @@
       "weather": {
         "weather_run_factor": 1.0337,
         "temperature_c": 33.5,
-        "precipitation_probability": 8,
+        "precipitation_probability": 5,
         "wind_speed_kmh": 18.5,
         "wind_direction_deg": 257
       }
@@ -243,7 +243,7 @@
       "weather": {
         "weather_run_factor": 1.0302,
         "temperature_c": 32.6,
-        "precipitation_probability": 5,
+        "precipitation_probability": 10,
         "wind_speed_kmh": 16.9,
         "wind_direction_deg": 220
       }
@@ -256,7 +256,7 @@
       "weather": {
         "weather_run_factor": 1.0182,
         "temperature_c": 28.9,
-        "precipitation_probability": 3,
+        "precipitation_probability": 2,
         "wind_speed_kmh": 12.4,
         "wind_direction_deg": 240
       }
@@ -282,7 +282,7 @@
       "weather": {
         "weather_run_factor": 1.0329,
         "temperature_c": 35.2,
-        "precipitation_probability": 4,
+        "precipitation_probability": 1,
         "wind_speed_kmh": 14.4,
         "wind_direction_deg": 148
       }
@@ -306,11 +306,11 @@
       "home_team": "San Diego Padres",
       "game_date_utc": "2026-08-08T23:15:00Z",
       "weather": {
-        "weather_run_factor": 1.0152,
-        "temperature_c": 25.9,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 15.4,
-        "wind_direction_deg": 307
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -319,11 +319,11 @@
       "home_team": "San Francisco Giants",
       "game_date_utc": "2026-08-08T23:15:00Z",
       "weather": {
-        "weather_run_factor": 1.0088,
-        "temperature_c": 18.7,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 23.4,
-        "wind_direction_deg": 269
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -332,11 +332,11 @@
       "home_team": "St. Louis Cardinals",
       "game_date_utc": "2026-08-08T23:15:00Z",
       "weather": {
-        "weather_run_factor": 1.0242,
-        "temperature_c": 32.3,
-        "precipitation_probability": 4,
-        "wind_speed_kmh": 11.6,
-        "wind_direction_deg": 173
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -423,11 +423,11 @@
       "home_team": "Pittsburgh Pirates",
       "game_date_utc": "2026-08-09T17:35:00Z",
       "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "weather_run_factor": 1.0158,
+        "temperature_c": 29.2,
+        "precipitation_probability": 9,
+        "wind_speed_kmh": 9.4,
+        "wind_direction_deg": 238
       }
     },
     {
@@ -436,11 +436,11 @@
       "home_team": "Philadelphia Phillies",
       "game_date_utc": "2026-08-09T17:35:00Z",
       "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "weather_run_factor": 1.0318,
+        "temperature_c": 34.1,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 15.5,
+        "wind_direction_deg": 267
       }
     },
     {
@@ -516,7 +516,7 @@
       "weather": {
         "weather_run_factor": 1.0291,
         "temperature_c": 34.9,
-        "precipitation_probability": 5,
+        "precipitation_probability": 2,
         "wind_speed_kmh": 11.3,
         "wind_direction_deg": 173
       }
