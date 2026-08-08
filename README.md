@@ -71,5 +71,9 @@ GitHub Pages は **Settings → Pages → Source: Deploy from a branch → `main
 - ファイルを GitHub の「Add files via upload」でまとめて差し替えると、名前と中身が入れ違いになる事故が起きています。
   公開ファイルは手で置き換えず、`python main.py && python publish.py` で生成してください。
   `validate_outputs.py` が同種の破損を CI で検知します。
+- 掲載対象は**開始前の試合のみ**です。The Odds API は開始済みの試合のライブオッズも返しますが、
+  本モデルは9イニングをこれから戦う前提で確率を出すため、両者を比較すると期待値が桁違いに
+  膨らみます（EV +600% のような値はこれが原因でした）。`main.py` の `drop_started_events()` で
+  除外し、`validate_outputs.py` が混入を検知します。
 - 現行モデルの一部指標は公開データから作る代理指標であり、すべてがStatcast由来の厳密なWAR/FIP分解ではありません。
 - 予測であり結果を保証するものではありません。
