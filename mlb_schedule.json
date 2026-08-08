@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-08-08T14:10:58.740886+00:00",
+  "fetched_at_utc": "2026-08-08T15:17:01.060874+00:00",
   "games": [
     {
       "game_pk": 823514,
@@ -334,11 +334,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0325,
-        "temperature_c": 33.0,
+        "weather_run_factor": 1.0318,
+        "temperature_c": 32.6,
         "precipitation_probability": 3,
-        "wind_speed_kmh": 18.3,
-        "wind_direction_deg": 225
+        "wind_speed_kmh": 18.4,
+        "wind_direction_deg": 228
       }
     },
     {
@@ -674,11 +674,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "weather_run_factor": 1.0317,
+        "weather_run_factor": 1.0315,
         "temperature_c": 32.4,
-        "precipitation_probability": 3,
-        "wind_speed_kmh": 18.7,
-        "wind_direction_deg": 251
+        "precipitation_probability": 2,
+        "wind_speed_kmh": 18.5,
+        "wind_direction_deg": 249
       }
     },
     {
@@ -1354,11 +1354,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0042,
-        "temperature_c": 26.5,
-        "precipitation_probability": 29,
-        "wind_speed_kmh": 3.3,
-        "wind_direction_deg": 174
+        "weather_run_factor": 1.0303,
+        "temperature_c": 33.1,
+        "precipitation_probability": 31,
+        "wind_speed_kmh": 16.0,
+        "wind_direction_deg": 247
       }
     },
     {
@@ -1694,11 +1694,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0267,
-        "temperature_c": 30.8,
-        "precipitation_probability": 3,
-        "wind_speed_kmh": 17.0,
-        "wind_direction_deg": 249
+        "weather_run_factor": 1.0202,
+        "temperature_c": 29.5,
+        "precipitation_probability": 2,
+        "wind_speed_kmh": 13.2,
+        "wind_direction_deg": 223
       }
     },
     {
@@ -2374,11 +2374,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0298,
+        "weather_run_factor": 1.0249,
         "temperature_c": 33.1,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 15.5,
-        "wind_direction_deg": 126
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 10.7,
+        "wind_direction_deg": 130
       }
     },
     {
@@ -3054,11 +3054,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0179,
-        "temperature_c": 27.4,
+        "weather_run_factor": 1.0181,
+        "temperature_c": 27.6,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 15.1,
-        "wind_direction_deg": 310
+        "wind_speed_kmh": 14.9,
+        "wind_direction_deg": 307
       }
     },
     {
@@ -3394,11 +3394,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0101,
-        "temperature_c": 19.1,
+        "weather_run_factor": 1.0103,
+        "temperature_c": 19.6,
         "precipitation_probability": 1,
-        "wind_speed_kmh": 23.9,
-        "wind_direction_deg": 275
+        "wind_speed_kmh": 23.1,
+        "wind_direction_deg": 274
       }
     },
     {
@@ -3734,11 +3734,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "weather_run_factor": 1.0233,
-        "temperature_c": 32.6,
+        "weather_run_factor": 1.0251,
+        "temperature_c": 32.4,
         "precipitation_probability": 1,
-        "wind_speed_kmh": 10.1,
-        "wind_direction_deg": 180
+        "wind_speed_kmh": 12.3,
+        "wind_direction_deg": 177
       }
     },
     {
@@ -5094,11 +5094,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0134,
-        "temperature_c": 26.8,
+        "weather_run_factor": 1.0124,
+        "temperature_c": 26.2,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 11.8,
-        "wind_direction_deg": 23
+        "wind_speed_kmh": 12.0,
+        "wind_direction_deg": 9
       }
     },
     {
@@ -5774,11 +5774,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": null,
       "weather": {
-        "weather_run_factor": 1.0335,
-        "temperature_c": 32.2,
-        "precipitation_probability": 2,
-        "wind_speed_kmh": 20.9,
-        "wind_direction_deg": 259
+        "weather_run_factor": 1.0327,
+        "temperature_c": 32.5,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 19.5,
+        "wind_direction_deg": 258
       }
     },
     {
@@ -6114,11 +6114,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0145,
-        "temperature_c": 30.1,
+        "weather_run_factor": 1.0185,
+        "temperature_c": 30.7,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 6.4,
-        "wind_direction_deg": 297
+        "wind_speed_kmh": 9.2,
+        "wind_direction_deg": 281
       }
     },
     {
@@ -6454,11 +6454,11 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "weather_run_factor": 1.0175,
+        "temperature_c": 30.7,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 8.2,
+        "wind_direction_deg": 232
       }
     },
     {
@@ -6794,11 +6794,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0305,
-        "temperature_c": 33.8,
+        "weather_run_factor": 1.0282,
+        "temperature_c": 33.6,
         "precipitation_probability": 3,
-        "wind_speed_kmh": 14.8,
-        "wind_direction_deg": 271
+        "wind_speed_kmh": 13.0,
+        "wind_direction_deg": 272
       }
     },
     {
@@ -7474,11 +7474,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0515,
-        "temperature_c": 36.7,
+        "weather_run_factor": 1.0447,
+        "temperature_c": 35.9,
         "precipitation_probability": 1,
-        "wind_speed_kmh": 29.5,
-        "wind_direction_deg": 213
+        "wind_speed_kmh": 24.5,
+        "wind_direction_deg": 208
       }
     },
     {
@@ -8494,11 +8494,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0361,
-        "temperature_c": 33.7,
+        "weather_run_factor": 1.0343,
+        "temperature_c": 34.9,
         "precipitation_probability": 1,
-        "wind_speed_kmh": 20.5,
-        "wind_direction_deg": 177
+        "wind_speed_kmh": 16.4,
+        "wind_direction_deg": 189
       }
     },
     {
@@ -9174,11 +9174,11 @@
       "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0183,
-        "temperature_c": 25.6,
+        "weather_run_factor": 1.0193,
+        "temperature_c": 26.4,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 19.0,
-        "wind_direction_deg": 255
+        "wind_speed_kmh": 18.4,
+        "wind_direction_deg": 253
       }
     },
     {
@@ -11214,11 +11214,11 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": null,
       "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "weather_run_factor": 1.0286,
+        "temperature_c": 34.4,
+        "precipitation_probability": 3,
+        "wind_speed_kmh": 11.8,
+        "wind_direction_deg": 168
       }
     },
     {
@@ -12914,11 +12914,11 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": null,
       "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "weather_run_factor": 1.01,
+        "temperature_c": 25.0,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 12.0,
+        "wind_direction_deg": 231
       }
     },
     {
@@ -13254,11 +13254,11 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": null,
       "weather": {
-        "weather_run_factor": 1.0049,
-        "temperature_c": 19.4,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 18.1,
-        "wind_direction_deg": 239
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
