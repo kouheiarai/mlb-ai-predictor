@@ -104,6 +104,99 @@ def mirror_data_outputs() -> list[str]:
     return copied
 
 
+def build_summary_text(latest: dict[str, Any]) -> str:
+    """1リクエストで読み切れる軽量なテキスト版の推奨一覧を作る。
+
+    prediction_latest.json は全試合の全指標を含むため 180KB 前後になり、
+    ChatGPT の取得ツールでは読み込めないことがある。BUY だけを 1行に
+    まとめた数 KB の入口を別に用意する。
+    """
+    summary = latest.get("summary", {}) or {}
+    rankings = latest.get("buy_rankings", {}) or {}
+    updated = str(latest.get("updated_at_utc", ""))
+
+    lines = [
+        f"MLB AI Predictor Ver.{latest.get('model_version', '-')} 推奨一覧",
+        "",
+        f"更新: {_to_jst(updated)}（UTC {updated}）",
+        f"対象日 (UTC): {', '.join(latest.get('target_dates_utc', []) or []) or '-'}",
+        f"対象試合数: {latest.get('game_count', '-')}",
+        f"BUY 件数: マネーライン {summary.get('moneyline_buy_count', 0)} / "
+        f"ランライン {summary.get('runline_buy_count', 0)} / "
+        f"合計得点 {summary.get('total_buy_count', 0)}",
+        f"オッズ: {(latest.get('source') or {}).get('odds', '-')}",
+        "",
+    ]
+
+    for market, label in MARKET_LABELS.items():
+        rows = rankings.get(market) or []
+        lines.append(f"## {label}（EV 降順・{len(rows)} 件）")
+        if not rows:
+            lines.extend(["BUY 判定なし。", ""])
+            continue
+        for index, row in enumerate(rows, start=1):
+            lines.append(
+                f"{index}. {_selection_label(row)} | "
+                f"{row.get('away_team', '')} @ {row.get('home_team', '')} | "
+                f"{_to_jst(str(row.get('commence_time_utc', '')))} | "
+                f"オッズ {_num(row.get('decimal_odds'))} | "
+                f"AI勝率 {_pct(row.get('model_probability'))} | "
+                f"EV {_pct(row.get('ev'))} | "
+                f"1/4ケリー {_pct(row.get('quarter_kelly'))} | "
+                f"信頼度 {row.get('confidence', '-') or '-'}"
+            )
+        lines.append("")
+
+    lines.extend(
+        [
+            "## 注意",
+            "",
+            "- 予測であり的中を保証しない。",
+            "- EV が数百パーセントに達している行は、先発未定やデータ欠損時の"
+            "推定が極端に振れた結果である可能性が高い。市場のオッズと大きく"
+            "乖離している行はそのまま採用しないこと。",
+            f"- 全試合の全指標は {SITE_URL}/prediction_latest.json"
+            f"（約 180KB）または {SITE_URL}/predictions.csv にある。",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def build_summary_json(latest: dict[str, Any]) -> str:
+    """BUY のみ・項目を絞った軽量 JSON。"""
+    keep = (
+        "market",
+        "away_team",
+        "home_team",
+        "commence_time_utc",
+        "selection",
+        "point",
+        "decimal_odds",
+        "model_probability",
+        "ev",
+        "quarter_kelly",
+        "confidence",
+    )
+    rankings = latest.get("buy_rankings", {}) or {}
+    payload = {
+        "model_version": latest.get("model_version"),
+        "updated_at_utc": latest.get("updated_at_utc"),
+        "target_dates_utc": latest.get("target_dates_utc"),
+        "game_count": latest.get("game_count"),
+        "summary": latest.get("summary", {}),
+        "note": (
+            "BUY 判定のみを抜粋した軽量版。全試合の全指標は "
+            f"{SITE_URL}/prediction_latest.json を参照。"
+        ),
+        "buy_rankings": {
+            market: [{k: row.get(k) for k in keep} for row in (rankings.get(market) or [])]
+            for market in MARKET_LABELS
+        },
+    }
+    return json.dumps(payload, ensure_ascii=False, indent=2)
+
+
 def _rows_table(rows: list[dict[str, Any]]) -> str:
     if not rows:
         return '<p class="empty">この市場に BUY 判定はありません。</p>'
@@ -212,9 +305,12 @@ def build_index_html(latest: dict[str, Any]) -> str:
 
   <section id="endpoints">
     <h2>機械可読エンドポイント</h2>
-    <p>ChatGPT・Claude などから読み込む場合は下記 URL を直接指定してください。毎時自動更新されます。</p>
+    <p>ChatGPT・Claude などから読み込む場合は下記 URL を直接指定してください。自動更新されます。
+    取得サイズに制約がある環境では、まず軽量な <code>summary.txt</code> を使ってください。</p>
     <ul class="endpoints">
-      <li><code><a href="{SITE_URL}/prediction_latest.json">{SITE_URL}/prediction_latest.json</a></code> — 全予測（正本 JSON）</li>
+      <li><code><a href="{SITE_URL}/summary.txt">{SITE_URL}/summary.txt</a></code> — <strong>推奨ピックのみ（数 KB・軽量）</strong></li>
+      <li><code><a href="{SITE_URL}/summary.json">{SITE_URL}/summary.json</a></code> — 同上の JSON 版</li>
+      <li><code><a href="{SITE_URL}/prediction_latest.json">{SITE_URL}/prediction_latest.json</a></code> — 全予測（正本 JSON・約 180KB）</li>
       <li><code><a href="{SITE_URL}/predictions.csv">{SITE_URL}/predictions.csv</a></code> — 全市場まとめ CSV</li>
       <li><code><a href="{SITE_URL}/moneyline_predictions.csv">{SITE_URL}/moneyline_predictions.csv</a></code> — マネーライン CSV</li>
       <li><code><a href="{SITE_URL}/runline_predictions.csv">{SITE_URL}/runline_predictions.csv</a></code> — ランライン CSV</li>
@@ -251,11 +347,17 @@ def build_llms_txt(latest: dict[str, Any]) -> str:
 - 対象試合数: {latest.get('game_count', '-')}
 - BUY 件数: マネーライン {summary.get('moneyline_buy_count', 0)} / ランライン {summary.get('runline_buy_count', 0)} / 合計得点 {summary.get('total_buy_count', 0)}
 
-## 正本エンドポイント
+## まずこれを読む（軽量・数 KB）
 
-- [prediction_latest.json]({SITE_URL}/prediction_latest.json): 全予測を含む JSON。`summary`（各市場の推奨1件）、`buy_rankings`（EV 降順の BUY 一覧）、`all_predictions`（全試合）を持つ。まずこれを読めば足りる。
+- [summary.txt]({SITE_URL}/summary.txt): BUY 判定の全ピックを 1行 1件のプレーンテキストにしたもの。取得サイズに制約がある環境はこれを使う。
+- [summary.json]({SITE_URL}/summary.json): 同じ内容の JSON。項目を 11 個に絞ってある。
+- [summary.md]({SITE_URL}/summary.md): summary.txt と同一内容（拡張子違い）。
+
+## 全量エンドポイント
+
+- [prediction_latest.json]({SITE_URL}/prediction_latest.json): 全予測を含む JSON。`summary`（各市場の推奨1件）、`buy_rankings`（EV 降順の BUY 一覧）、`all_predictions`（全試合）を持つ。約 180KB あるので取得制限に注意。
 - [predictions.csv]({SITE_URL}/predictions.csv): 3市場をまとめた CSV。1行 = 1ピック。表計算・集計向け。
-- [latest.md]({SITE_URL}/latest.md): 同じ内容の人間可読レポート（Markdown）。
+- [latest.md]({SITE_URL}/latest.md): 全試合の詳細を含む人間可読レポート（Markdown）。
 
 ## 市場別 CSV
 
@@ -336,6 +438,12 @@ def publish() -> None:
 
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     copied = mirror_data_outputs()
+
+    # 軽量な入口。ChatGPT のように取得サイズに制約がある環境向け。
+    summary_text = build_summary_text(latest)
+    _write_both("summary.txt", summary_text)
+    _write_both("summary.md", summary_text)
+    _write_both("summary.json", build_summary_json(latest))
 
     _write_both("index.html", build_index_html(latest))
     _write_both("llms.txt", build_llms_txt(latest))

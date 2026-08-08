@@ -11,11 +11,17 @@
 - 対象試合数: 15
 - BUY 件数: マネーライン 14 / ランライン 12 / 合計得点 14
 
-## 正本エンドポイント
+## まずこれを読む（軽量・数 KB）
 
-- [prediction_latest.json](https://kouheiarai.github.io/mlb-ai-predictor/prediction_latest.json): 全予測を含む JSON。`summary`（各市場の推奨1件）、`buy_rankings`（EV 降順の BUY 一覧）、`all_predictions`（全試合）を持つ。まずこれを読めば足りる。
+- [summary.txt](https://kouheiarai.github.io/mlb-ai-predictor/summary.txt): BUY 判定の全ピックを 1行 1件のプレーンテキストにしたもの。取得サイズに制約がある環境はこれを使う。
+- [summary.json](https://kouheiarai.github.io/mlb-ai-predictor/summary.json): 同じ内容の JSON。項目を 11 個に絞ってある。
+- [summary.md](https://kouheiarai.github.io/mlb-ai-predictor/summary.md): summary.txt と同一内容（拡張子違い）。
+
+## 全量エンドポイント
+
+- [prediction_latest.json](https://kouheiarai.github.io/mlb-ai-predictor/prediction_latest.json): 全予測を含む JSON。`summary`（各市場の推奨1件）、`buy_rankings`（EV 降順の BUY 一覧）、`all_predictions`（全試合）を持つ。約 180KB あるので取得制限に注意。
 - [predictions.csv](https://kouheiarai.github.io/mlb-ai-predictor/predictions.csv): 3市場をまとめた CSV。1行 = 1ピック。表計算・集計向け。
-- [latest.md](https://kouheiarai.github.io/mlb-ai-predictor/latest.md): 同じ内容の人間可読レポート（Markdown）。
+- [latest.md](https://kouheiarai.github.io/mlb-ai-predictor/latest.md): 全試合の詳細を含む人間可読レポート（Markdown）。
 
 ## 市場別 CSV
 

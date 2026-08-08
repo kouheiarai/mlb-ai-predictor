@@ -75,6 +75,23 @@ def check_public_endpoints() -> None:
     for name in ("llms.txt", "robots.txt", "latest.md", "docs/llms.txt"):
         require_file(Path(name))
 
+    # 軽量な入口。取得サイズに制約のある環境向けなので上限も見る。
+    for name in ("summary.txt", "summary.md", "docs/summary.txt"):
+        path = Path(name)
+        require_file(path)
+        size = path.stat().st_size
+        if size > 200_000:
+            raise RuntimeError(f"{path} is too large to be a lightweight summary ({size} bytes)")
+
+    for name in ("summary.json", "docs/summary.json"):
+        path = Path(name)
+        require_file(path)
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        if payload.get("model_version") != MODEL_VERSION:
+            raise RuntimeError(f"{path} is not Ver.{MODEL_VERSION}")
+        if "buy_rankings" not in payload:
+            raise RuntimeError(f"{path} is missing buy_rankings")
+
 
 def main() -> None:
     paths = [
