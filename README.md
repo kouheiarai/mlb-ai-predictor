@@ -47,7 +47,22 @@ GitHub Pages は **Settings → Pages → Source: Deploy from a branch → `main
 
 ## 実行
 
-**Actions → MLB AI Predictor Auto Update → Run workflow**
+自動実行は **1 日 4 回**（UTC 16:00 / 20:00 / 22:00 / 翌 0:00 = JST 翌 1:00 / 5:00 / 7:00 / 9:00）です。
+手動で走らせる場合は **Actions → MLB AI Predictor Auto Update → Run workflow**。
+
+### 更新頻度と API クレジット
+
+The Odds API の無料枠は**月 500 クレジット**で、1 回の実行で 3 消費します。
+
+| 頻度 | 1 日あたり | 1 か月あたり | 無料枠 |
+| --- | --- | --- | --- |
+| 毎時（旧設定） | 72 | 2160 | 8 日で枯渇 |
+| **1 日 4 回（現行）** | **12** | **372** | 収まる |
+
+MLB の試合は UTC 17 時〜翌 1 時に集中するため、その直前を狙った時刻に寄せています。
+枯渇すると `main.py` が `HTTP 401 OUT_OF_USAGE_CREDITS` で停止し、
+公開ファイルは最後に成功した内容のまま据え置かれます（壊れたデータは公開されません）。
+残クレジットは `prediction_latest.json` の `api_quota.requests_remaining` で確認できます。
 
 処理の流れは次のとおりです。
 

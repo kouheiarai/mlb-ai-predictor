@@ -3,7 +3,12 @@ name: MLB AI Predictor Auto Update
 on:
   workflow_dispatch:
   schedule:
-    - cron: "10 * * * *"
+    # The Odds API の無料枠は月 500 クレジットで、1 回の実行で 3 消費する。
+    # 毎時実行だと月 2160 になり 8 日ほどで枠が尽きるため、1 日 4 回に絞る
+    # （月 372）。MLB の試合は UTC 17 時〜翌 1 時に集中するので、その直前を
+    # 狙って賭ける前に最新のオッズが載るようにしている。
+    - cron: "0 16,20,22 * * *"
+    - cron: "0 0 * * *"
 
 permissions:
   contents: write
