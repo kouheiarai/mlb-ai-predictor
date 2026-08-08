@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-08-08T04:22:20.807649+00:00",
+  "fetched_at_utc": "2026-08-08T07:56:56.535660+00:00",
   "metrics": {
     "Houston Astros": {
       "runs_per_game": 0.6869565217391305
@@ -43,13 +43,13 @@
       "runs_per_game": 0.4774774774774775,
       "team_pitching_era": 3.69
     },
-    "Detroit Tigers": {
-      "runs_per_game": 0.543859649122807,
-      "team_pitching_era": 4.17
-    },
     "Chicago Cubs": {
       "runs_per_game": 0.63,
       "team_pitching_era": 4.29
+    },
+    "Detroit Tigers": {
+      "runs_per_game": 0.5887850467289719,
+      "team_pitching_era": 4.17
     },
     "Boston Red Sox": {
       "runs_per_game": 0.5428571428571428,
