@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import json
+from datetime import datetime, timedelta
 from pathlib import Path
 
 MODEL_VERSION = "26.0"
@@ -28,6 +29,35 @@ REQUIRED_CSV_COLUMNS = {
 def require_file(path: Path) -> None:
     if not path.is_file() or path.stat().st_size == 0:
         raise RuntimeError(f"Missing or empty output: {path}")
+
+
+def check_no_in_play_games(rows: list[dict[str, str]], generated_at: str) -> None:
+    """開始済みの試合が混ざっていないことを確かめる。
+
+    ライブオッズはプレゲームのラインとは前提が違うため、9イニング分を
+    シミュレートする本モデルの確率と比較すると期待値が数百パーセントに
+    膨らむ。取得から書き出しまでのラグを見込んで 30 分の猶予を置く。
+    """
+    try:
+        cutoff = datetime.fromisoformat(generated_at) - timedelta(minutes=30)
+    except ValueError as exc:
+        raise RuntimeError(f"generated_at_utc is unparsable: {generated_at}") from exc
+
+    stale = []
+    for row in rows:
+        raw = row.get("commence_time_utc", "")
+        try:
+            commence = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        if commence < cutoff:
+            stale.append(f"{row.get('away_team')} @ {row.get('home_team')} ({raw})")
+
+    if stale:
+        raise RuntimeError(
+            "In-play games leaked into the predictions "
+            f"({len(stale)}): {sorted(set(stale))[:5]}"
+        )
 
 
 def check_public_endpoints() -> None:
@@ -124,6 +154,8 @@ def main() -> None:
     if "moneyline" not in markets:
         raise RuntimeError("Moneyline rows are missing")
     # RL/totals may be absent only if Pinnacle did not return those markets.
+
+    check_no_in_play_games(rows, rows[0].get("generated_at_utc", ""))
 
     latest = json.loads(Path("data/prediction_latest.json").read_text(encoding="utf-8"))
     if latest.get("model_version") != MODEL_VERSION:

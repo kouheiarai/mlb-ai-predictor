@@ -32,6 +32,10 @@ def require_api_key() -> str:
 
 
 def fetch_odds(api_key: str) -> tuple[list[dict[str, Any]], dict[str, str]]:
+    # The Odds API は既に始まっている試合のライブオッズも返す。本モデルは
+    # 9イニングをこれから戦う前提で確率を出すため、開始済みの試合を混ぜると
+    # 比較対象が食い違い、期待値が桁違いに膨らむ。API 側で切っておく。
+    commence_time_from = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     response = requests.get(
         API_URL,
         params={
@@ -40,6 +44,7 @@ def fetch_odds(api_key: str) -> tuple[list[dict[str, Any]], dict[str, str]]:
             "markets": "h2h,spreads,totals",
             "oddsFormat": "decimal",
             "dateFormat": "iso",
+            "commenceTimeFrom": commence_time_from,
         },
         timeout=30,
     )
@@ -53,6 +58,36 @@ def fetch_odds(api_key: str) -> tuple[list[dict[str, Any]], dict[str, str]]:
         "requests_used": response.headers.get("x-requests-used", ""),
         "requests_last": response.headers.get("x-requests-last", ""),
     }
+
+
+def drop_started_events(
+    events: list[dict[str, Any]], now: datetime | None = None
+) -> list[dict[str, Any]]:
+    """開始済みの試合を落とす。
+
+    `commenceTimeFrom` を付けていても、API 側の丸めや取得から解析までの
+    ラグで開始済みの試合が残ることがある。ライブオッズはプレゲームの
+    ラインとは別物（マネーラインが 1.04 や 14.69、ランラインが ±1.5 以外に
+    なる）なので、手元でも必ず落とす。
+    """
+    now = now or datetime.now(timezone.utc)
+    upcoming: list[dict[str, Any]] = []
+    dropped = 0
+    for event in events:
+        raw = str(event.get("commence_time", ""))
+        try:
+            commence = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        except ValueError:
+            # 開始時刻が読めない試合は判断できないので残す。
+            upcoming.append(event)
+            continue
+        if commence <= now:
+            dropped += 1
+            continue
+        upcoming.append(event)
+    if dropped:
+        print(f"Dropped {dropped} in-play event(s); {len(upcoming)} upcoming event(s) remain.")
+    return upcoming
 
 
 def american_odds(decimal_price: float | None) -> str:
@@ -340,6 +375,7 @@ def main() -> int:
         api_key = require_api_key()
 
         odds_events, quota = fetch_odds(api_key)
+        odds_events = drop_started_events(odds_events)
         odds_rows = flatten_odds(odds_events)
 
         schedule = attach_probable_pitcher_stats(

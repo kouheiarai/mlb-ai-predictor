@@ -1,76 +1,59 @@
 MLB AI Predictor Ver.26.0 推奨一覧
 
-更新: 2026-08-02 09:37 JST（UTC 2026-08-02T00:37:29.959271+00:00）
-対象日 (UTC): 2026-08-01, 2026-08-02
-対象試合数: 22
-BUY 件数: マネーライン 17 / ランライン 19 / 合計得点 21
+更新: 2026-08-09 00:17 JST（UTC 2026-08-08T15:17:01.060874+00:00）
+対象日 (UTC): 2026-08-08, 2026-08-09
+対象試合数: 15
+BUY 件数: マネーライン 14 / ランライン 12 / 合計得点 14
 オッズ: Pinnacle via The Odds API
 
-## マネーライン（EV 降順・17 件）
-1. Washington Nationals | Washington Nationals @ Atlanta Braves | 2026-08-02 08:16 JST | オッズ 14.69 | AI勝率 45.9% | EV 573.9% | 1/4ケリー 10.5% | 信頼度 B
-2. Cincinnati Reds | Pittsburgh Pirates @ Cincinnati Reds | 2026-08-02 07:41 JST | オッズ 6.63 | AI勝率 53.6% | EV 255.2% | 1/4ケリー 11.3% | 信頼度 B
-3. Arizona Diamondbacks | Arizona Diamondbacks @ Cleveland Guardians | 2026-08-02 08:16 JST | オッズ 5.46 | AI勝率 64.4% | EV 251.7% | 1/4ケリー 14.1% | 信頼度 A
-4. Baltimore Orioles | Philadelphia Phillies @ Baltimore Orioles | 2026-08-02 08:06 JST | オッズ 3.07 | AI勝率 55.3% | EV 69.9% | 1/4ケリー 8.4% | 信頼度 B
-5. Texas Rangers | Texas Rangers @ Houston Astros | 2026-08-02 08:11 JST | オッズ 4.71 | AI勝率 35.5% | EV 67.0% | 1/4ケリー 4.5% | 信頼度 B
-6. Athletics | Detroit Tigers @ Athletics | 2026-08-02 10:41 JST | オッズ 2.59 | AI勝率 61.4% | EV 59.1% | 1/4ケリー 9.3% | 信頼度 A
-7. Arizona Diamondbacks | Arizona Diamondbacks @ Cleveland Guardians | 2026-08-03 02:41 JST | オッズ 2.22 | AI勝率 68.6% | EV 52.3% | 1/4ケリー 10.7% | 信頼度 A
-8. Minnesota Twins | Minnesota Twins @ Seattle Mariners | 2026-08-03 05:11 JST | オッズ 2.19 | AI勝率 68.9% | EV 50.8% | 1/4ケリー 10.7% | 信頼度 A
-9. Boston Red Sox | Boston Red Sox @ Los Angeles Dodgers | 2026-08-02 10:11 JST | オッズ 2.62 | AI勝率 49.0% | EV 28.4% | 1/4ケリー 4.4% | 信頼度 B
-10. Baltimore Orioles | Philadelphia Phillies @ Baltimore Orioles | 2026-08-03 02:36 JST | オッズ 2.16 | AI勝率 57.8% | EV 24.7% | 1/4ケリー 5.3% | 信頼度 A
-11. New York Yankees | New York Yankees @ Chicago Cubs | 2026-08-02 08:16 JST | オッズ 2.50 | AI勝率 46.6% | EV 16.6% | 1/4ケリー 2.8% | 信頼度 B
-12. Houston Astros | Texas Rangers @ Houston Astros | 2026-08-03 03:11 JST | オッズ 1.83 | AI勝率 60.8% | EV 11.2% | 1/4ケリー 3.4% | 信頼度 B
-13. Los Angeles Angels | Milwaukee Brewers @ Los Angeles Angels | 2026-08-03 04:16 JST | オッズ 3.04 | AI勝率 35.3% | EV 7.4% | 1/4ケリー 0.9% | 信頼度 C
-14. Milwaukee Brewers | Milwaukee Brewers @ Los Angeles Angels | 2026-08-02 10:39 JST | オッズ 1.69 | AI勝率 63.4% | EV 7.2% | 1/4ケリー 2.6% | 信頼度 B
-15. Chicago Cubs | New York Yankees @ Chicago Cubs | 2026-08-03 03:21 JST | オッズ 2.09 | AI勝率 51.0% | EV 6.6% | 1/4ケリー 1.5% | 信頼度 C
-16. New York Mets | Miami Marlins @ New York Mets | 2026-08-03 02:41 JST | オッズ 2.00 | AI勝率 53.1% | EV 6.2% | 1/4ケリー 1.6% | 信頼度 C
-17. San Diego Padres | San Francisco Giants @ San Diego Padres | 2026-08-02 09:41 JST | オッズ 1.68 | AI勝率 63.1% | EV 6.0% | 1/4ケリー 2.2% | 信頼度 B
+## マネーライン（EV 降順・14 件）
+1. Baltimore Orioles | Baltimore Orioles @ Texas Rangers | 2026-08-09 08:16 JST | オッズ 2.32 | AI勝率 66.2% | EV 53.5% | 1/4ケリー 10.1% | 信頼度 A
+2. Arizona Diamondbacks | Los Angeles Dodgers @ Arizona Diamondbacks | 2026-08-09 09:11 JST | オッズ 2.56 | AI勝率 53.1% | EV 35.8% | 1/4ケリー 5.7% | 信頼度 B
+3. Athletics | Athletics @ Boston Red Sox | 2026-08-09 05:11 JST | オッズ 3.26 | AI勝率 41.0% | EV 33.7% | 1/4ケリー 3.7% | 信頼度 B
+4. Tampa Bay Rays | Tampa Bay Rays @ Seattle Mariners | 2026-08-09 10:50 JST | オッズ 2.05 | AI勝率 60.6% | EV 24.3% | 1/4ケリー 5.8% | 信頼度 A
+5. New York Yankees | Atlanta Braves @ New York Yankees | 2026-08-09 04:05 JST | オッズ 2.28 | AI勝率 52.6% | EV 19.9% | 1/4ケリー 3.9% | 信頼度 B
+6. Washington Nationals | Cincinnati Reds @ Washington Nationals | 2026-08-09 07:46 JST | オッズ 2.29 | AI勝率 50.8% | EV 16.4% | 1/4ケリー 3.2% | 信頼度 B
+7. Kansas City Royals | Chicago Cubs @ Kansas City Royals | 2026-08-09 08:10 JST | オッズ 2.43 | AI勝率 47.7% | EV 15.8% | 1/4ケリー 2.8% | 信頼度 B
+8. Toronto Blue Jays | Toronto Blue Jays @ Philadelphia Phillies | 2026-08-09 07:06 JST | オッズ 2.47 | AI勝率 44.5% | EV 10.0% | 1/4ケリー 1.7% | 信頼度 B
+9. New York Mets | New York Mets @ Pittsburgh Pirates | 2026-08-09 07:41 JST | オッズ 2.11 | AI勝率 51.6% | EV 8.9% | 1/4ケリー 2.0% | 信頼度 B
+10. St. Louis Cardinals | Colorado Rockies @ St. Louis Cardinals | 2026-08-09 08:16 JST | オッズ 1.69 | AI勝率 64.3% | EV 8.7% | 1/4ケリー 3.2% | 信頼度 A
+11. Minnesota Twins | Minnesota Twins @ Milwaukee Brewers | 2026-08-09 08:11 JST | オッズ 2.25 | AI勝率 48.2% | EV 8.4% | 1/4ケリー 1.7% | 信頼度 B
+12. Chicago White Sox | Cleveland Guardians @ Chicago White Sox | 2026-08-09 08:16 JST | オッズ 2.11 | AI勝率 50.6% | EV 6.7% | 1/4ケリー 1.5% | 信頼度 C
+13. Miami Marlins | Los Angeles Angels @ Miami Marlins | 2026-08-09 05:11 JST | オッズ 1.66 | AI勝率 64.1% | EV 6.4% | 1/4ケリー 2.4% | 信頼度 B
+14. Detroit Tigers | Detroit Tigers @ San Francisco Giants | 2026-08-09 08:16 JST | オッズ 1.88 | AI勝率 56.4% | EV 6.0% | 1/4ケリー 1.7% | 信頼度 B
 
-## ランライン（EV 降順・19 件）
-1. Arizona Diamondbacks +2 | Arizona Diamondbacks @ Cleveland Guardians | 2026-08-02 08:16 JST | オッズ 2.02 | AI勝率 89.3% | EV 80.4% | 1/4ケリー 19.7% | 信頼度 A
-2. Athletics +1.5 | Detroit Tigers @ Athletics | 2026-08-02 10:41 JST | オッズ 2.04 | AI勝率 82.8% | EV 68.9% | 1/4ケリー 16.6% | 信頼度 A
-3. Chicago Cubs -1 | New York Yankees @ Chicago Cubs | 2026-08-02 08:16 JST | オッズ 2.12 | AI勝率 74.6% | EV 58.1% | 1/4ケリー 13.0% | 信頼度 A
-4. Washington Nationals +4 | Washington Nationals @ Atlanta Braves | 2026-08-02 08:16 JST | オッズ 2.08 | AI勝率 76.0% | EV 58.1% | 1/4ケリー 13.5% | 信頼度 A
-5. Cincinnati Reds +3 | Pittsburgh Pirates @ Cincinnati Reds | 2026-08-02 07:41 JST | オッズ 1.83 | AI勝率 80.9% | EV 48.0% | 1/4ケリー 14.5% | 信頼度 A
-6. Arizona Diamondbacks +1.5 | Arizona Diamondbacks @ Cleveland Guardians | 2026-08-03 02:41 JST | オッズ 1.57 | AI勝率 89.5% | EV 40.5% | 1/4ケリー 17.8% | 信頼度 A
-7. Kansas City Royals -1 | Kansas City Royals @ Colorado Rockies | 2026-08-02 09:11 JST | オッズ 1.99 | AI勝率 69.9% | EV 39.1% | 1/4ケリー 9.9% | 信頼度 A
-8. Baltimore Orioles +1.5 | Philadelphia Phillies @ Baltimore Orioles | 2026-08-02 08:06 JST | オッズ 1.71 | AI勝率 80.6% | EV 37.8% | 1/4ケリー 13.3% | 信頼度 A
-9. Minnesota Twins +1.5 | Minnesota Twins @ Seattle Mariners | 2026-08-03 05:11 JST | オッズ 1.53 | AI勝率 89.1% | EV 36.3% | 1/4ケリー 17.1% | 信頼度 A
-10. Baltimore Orioles +1.5 | Philadelphia Phillies @ Baltimore Orioles | 2026-08-03 02:36 JST | オッズ 1.68 | AI勝率 80.7% | EV 35.6% | 1/4ケリー 13.1% | 信頼度 A
-11. Los Angeles Angels +1.5 | Milwaukee Brewers @ Los Angeles Angels | 2026-08-03 04:16 JST | オッズ 2.15 | AI勝率 61.7% | EV 32.7% | 1/4ケリー 7.1% | 信頼度 A
-12. Boston Red Sox +1.5 | Boston Red Sox @ Los Angeles Dodgers | 2026-08-02 10:11 JST | オッズ 1.72 | AI勝率 76.6% | EV 31.8% | 1/4ケリー 11.0% | 信頼度 A
-13. Colorado Rockies +1 | Kansas City Royals @ Colorado Rockies | 2026-08-02 09:11 JST | オッズ 1.81 | AI勝率 71.3% | EV 29.1% | 1/4ケリー 9.0% | 信頼度 A
-14. New York Mets +1.5 | Miami Marlins @ New York Mets | 2026-08-03 02:41 JST | オッズ 1.60 | AI勝率 77.1% | EV 23.4% | 1/4ケリー 9.8% | 信頼度 A
-15. New York Yankees +1 | New York Yankees @ Chicago Cubs | 2026-08-02 08:16 JST | オッズ 1.71 | AI勝率 71.7% | EV 22.6% | 1/4ケリー 8.0% | 信頼度 A
-16. Chicago Cubs +1.5 | New York Yankees @ Chicago Cubs | 2026-08-03 03:21 JST | オッズ 1.58 | AI勝率 74.2% | EV 17.3% | 1/4ケリー 7.5% | 信頼度 A
-17. Colorado Rockies +1.5 | Kansas City Royals @ Colorado Rockies | 2026-08-03 04:11 JST | オッズ 1.64 | AI勝率 71.3% | EV 17.0% | 1/4ケリー 6.6% | 信頼度 A
-18. Texas Rangers +2.5 | Texas Rangers @ Houston Astros | 2026-08-02 08:11 JST | オッズ 1.88 | AI勝率 61.0% | EV 14.7% | 1/4ケリー 4.2% | 信頼度 B
-19. Los Angeles Angels +1.5 | Milwaukee Brewers @ Los Angeles Angels | 2026-08-02 10:39 JST | オッズ 1.81 | AI勝率 61.7% | EV 11.7% | 1/4ケリー 3.6% | 信頼度 B
+## ランライン（EV 降順・12 件）
+1. Arizona Diamondbacks +1.5 | Los Angeles Dodgers @ Arizona Diamondbacks | 2026-08-09 09:11 JST | オッズ 1.93 | AI勝率 80.1% | EV 54.5% | 1/4ケリー 14.7% | 信頼度 A
+2. Athletics +1.5 | Athletics @ Boston Red Sox | 2026-08-09 05:11 JST | オッズ 2.16 | AI勝率 65.3% | EV 41.1% | 1/4ケリー 8.8% | 信頼度 A
+3. Baltimore Orioles +1.5 | Baltimore Orioles @ Texas Rangers | 2026-08-09 08:16 JST | オッズ 1.58 | AI勝率 86.7% | EV 37.1% | 1/4ケリー 16.0% | 信頼度 A
+4. Kansas City Royals +1.5 | Chicago Cubs @ Kansas City Royals | 2026-08-09 08:10 JST | オッズ 1.89 | AI勝率 70.8% | EV 33.9% | 1/4ケリー 9.5% | 信頼度 A
+5. Washington Nationals +1.5 | Cincinnati Reds @ Washington Nationals | 2026-08-09 07:46 JST | オッズ 1.77 | AI勝率 75.3% | EV 33.3% | 1/4ケリー 10.8% | 信頼度 A
+6. New York Yankees +1.5 | Atlanta Braves @ New York Yankees | 2026-08-09 04:05 JST | オッズ 1.71 | AI勝率 76.4% | EV 30.6% | 1/4ケリー 10.8% | 信頼度 A
+7. Tampa Bay Rays +1.5 | Tampa Bay Rays @ Seattle Mariners | 2026-08-09 10:50 JST | オッズ 1.46 | AI勝率 84.2% | EV 22.9% | 1/4ケリー 12.5% | 信頼度 A
+8. Toronto Blue Jays +1.5 | Toronto Blue Jays @ Philadelphia Phillies | 2026-08-09 07:06 JST | オッズ 1.71 | AI勝率 70.9% | EV 21.2% | 1/4ケリー 7.5% | 信頼度 A
+9. Chicago White Sox +1.5 | Cleveland Guardians @ Chicago White Sox | 2026-08-09 08:16 JST | オッズ 1.62 | AI勝率 73.7% | EV 19.4% | 1/4ケリー 7.8% | 信頼度 A
+10. New York Mets +1.5 | New York Mets @ Pittsburgh Pirates | 2026-08-09 07:41 JST | オッズ 1.55 | AI勝率 76.1% | EV 18.0% | 1/4ケリー 8.2% | 信頼度 A
+11. Minnesota Twins +1.5 | Minnesota Twins @ Milwaukee Brewers | 2026-08-09 08:11 JST | オッズ 1.59 | AI勝率 72.5% | EV 15.3% | 1/4ケリー 6.5% | 信頼度 A
+12. San Francisco Giants +1.5 | Detroit Tigers @ San Francisco Giants | 2026-08-09 08:16 JST | オッズ 1.61 | AI勝率 66.4% | EV 6.8% | 1/4ケリー 2.8% | 信頼度 B
 
-## 合計得点（EV 降順・21 件）
-1. Under +8.5 | Miami Marlins @ New York Mets | 2026-08-03 02:41 JST | オッズ 2.04 | AI勝率 88.7% | EV 80.9% | 1/4ケリー 19.4% | 信頼度 A
-2. Under +13 | Texas Rangers @ Houston Astros | 2026-08-02 08:11 JST | オッズ 1.84 | AI勝率 97.5% | EV 79.4% | 1/4ケリー 23.6% | 信頼度 A
-3. Under +12.5 | Kansas City Royals @ Colorado Rockies | 2026-08-03 04:11 JST | オッズ 1.88 | AI勝率 94.1% | EV 76.9% | 1/4ケリー 21.8% | 信頼度 A
-4. Under +9 | Milwaukee Brewers @ Los Angeles Angels | 2026-08-02 10:39 JST | オッズ 1.90 | AI勝率 91.2% | EV 73.3% | 1/4ケリー 20.4% | 信頼度 A
-5. Under +7.5 | Milwaukee Brewers @ Los Angeles Angels | 2026-08-03 04:16 JST | オッズ 2.01 | AI勝率 83.6% | EV 68.1% | 1/4ケリー 16.9% | 信頼度 A
-6. Under +10.5 | Kansas City Royals @ Colorado Rockies | 2026-08-02 09:11 JST | オッズ 1.92 | AI勝率 82.3% | EV 58.0% | 1/4ケリー 15.8% | 信頼度 A
-7. Under +7.5 | Chicago White Sox @ Tampa Bay Rays | 2026-08-03 02:41 JST | オッズ 1.97 | AI勝率 79.5% | EV 56.6% | 1/4ケリー 14.6% | 信頼度 A
-8. Under +7 | Boston Red Sox @ Los Angeles Dodgers | 2026-08-02 10:11 JST | オッズ 2.06 | AI勝率 75.8% | EV 56.1% | 1/4ケリー 13.2% | 信頼度 A
-9. Under +10.5 | Detroit Tigers @ Athletics | 2026-08-02 10:41 JST | オッズ 1.87 | AI勝率 82.9% | EV 55.1% | 1/4ケリー 15.8% | 信頼度 A
-10. Under +8 | San Francisco Giants @ San Diego Padres | 2026-08-03 05:11 JST | オッズ 1.97 | AI勝率 77.7% | EV 53.1% | 1/4ケリー 13.7% | 信頼度 A
-11. Under +8 | San Francisco Giants @ San Diego Padres | 2026-08-02 09:41 JST | オッズ 1.97 | AI勝率 77.7% | EV 53.0% | 1/4ケリー 13.7% | 信頼度 A
-12. Under +8.5 | Texas Rangers @ Houston Astros | 2026-08-03 03:11 JST | オッズ 2.03 | AI勝率 74.0% | EV 50.3% | 1/4ケリー 12.2% | 信頼度 A
-13. Under +8.5 | Pittsburgh Pirates @ Cincinnati Reds | 2026-08-03 02:41 JST | オッズ 1.87 | AI勝率 79.7% | EV 49.0% | 1/4ケリー 14.1% | 信頼度 A
-14. Under +7.5 | Washington Nationals @ Atlanta Braves | 2026-08-02 08:16 JST | オッズ 2.01 | AI勝率 74.1% | EV 48.9% | 1/4ケリー 12.1% | 信頼度 A
-15. Under +8 | Philadelphia Phillies @ Baltimore Orioles | 2026-08-03 02:36 JST | オッズ 1.91 | AI勝率 71.9% | EV 37.3% | 1/4ケリー 10.2% | 信頼度 A
-16. Under +8 | Pittsburgh Pirates @ Cincinnati Reds | 2026-08-02 07:41 JST | オッズ 2.00 | AI勝率 67.8% | EV 35.6% | 1/4ケリー 8.9% | 信頼度 A
-17. Over +4 | Philadelphia Phillies @ Baltimore Orioles | 2026-08-02 08:06 JST | オッズ 1.82 | AI勝率 73.5% | EV 33.8% | 1/4ケリー 10.3% | 信頼度 A
-18. Under +8 | Arizona Diamondbacks @ Cleveland Guardians | 2026-08-03 02:41 JST | オッズ 1.97 | AI勝率 66.9% | EV 31.7% | 1/4ケリー 8.2% | 信頼度 A
-19. Over +5.5 | Arizona Diamondbacks @ Cleveland Guardians | 2026-08-02 08:16 JST | オッズ 1.83 | AI勝率 63.6% | EV 16.4% | 1/4ケリー 4.9% | 信頼度 A
-20. Under +6.5 | New York Yankees @ Chicago Cubs | 2026-08-03 03:21 JST | オッズ 1.98 | AI勝率 55.9% | EV 10.6% | 1/4ケリー 2.7% | 信頼度 B
-21. Over +5 | New York Yankees @ Chicago Cubs | 2026-08-02 08:16 JST | オッズ 1.83 | AI勝率 60.1% | EV 10.0% | 1/4ケリー 3.0% | 信頼度 B
+## 合計得点（EV 降順・14 件）
+1. Under +9.5 | Toronto Blue Jays @ Philadelphia Phillies | 2026-08-09 07:06 JST | オッズ 1.92 | AI勝率 94.8% | EV 82.1% | 1/4ケリー 22.3% | 信頼度 A
+2. Under +8.5 | Los Angeles Dodgers @ Arizona Diamondbacks | 2026-08-09 09:11 JST | オッズ 1.93 | AI勝率 94.0% | EV 81.3% | 1/4ケリー 21.9% | 信頼度 A
+3. Under +8.5 | Cincinnati Reds @ Washington Nationals | 2026-08-09 07:46 JST | オッズ 1.96 | AI勝率 86.0% | EV 68.6% | 1/4ケリー 17.9% | 信頼度 A
+4. Under +9 | New York Mets @ Pittsburgh Pirates | 2026-08-09 07:41 JST | オッズ 1.94 | AI勝率 85.6% | EV 66.1% | 1/4ケリー 17.6% | 信頼度 A
+5. Under +9.5 | Chicago Cubs @ Kansas City Royals | 2026-08-09 08:10 JST | オッズ 1.87 | AI勝率 83.8% | EV 56.6% | 1/4ケリー 16.3% | 信頼度 A
+6. Under +8.5 | Colorado Rockies @ St. Louis Cardinals | 2026-08-09 08:16 JST | オッズ 1.96 | AI勝率 76.9% | EV 50.7% | 1/4ケリー 13.2% | 信頼度 A
+7. Under +8 | Minnesota Twins @ Milwaukee Brewers | 2026-08-09 08:11 JST | オッズ 1.99 | AI勝率 70.5% | EV 40.3% | 1/4ケリー 10.2% | 信頼度 A
+8. Under +8 | Detroit Tigers @ San Francisco Giants | 2026-08-09 08:16 JST | オッズ 1.96 | AI勝率 71.3% | EV 39.7% | 1/4ケリー 10.3% | 信頼度 A
+9. Under +8 | Houston Astros @ San Diego Padres | 2026-08-09 08:16 JST | オッズ 1.88 | AI勝率 73.0% | EV 37.3% | 1/4ケリー 10.6% | 信頼度 A
+10. Under +9 | Athletics @ Boston Red Sox | 2026-08-09 05:11 JST | オッズ 1.96 | AI勝率 67.8% | EV 32.9% | 1/4ケリー 8.6% | 信頼度 A
+11. Under +7.5 | Atlanta Braves @ New York Yankees | 2026-08-09 04:05 JST | オッズ 1.88 | AI勝率 70.6% | EV 32.8% | 1/4ケリー 9.3% | 信頼度 A
+12. Under +7 | Tampa Bay Rays @ Seattle Mariners | 2026-08-09 10:50 JST | オッズ 1.93 | AI勝率 66.6% | EV 28.5% | 1/4ケリー 7.7% | 信頼度 A
+13. Under +7.5 | Cleveland Guardians @ Chicago White Sox | 2026-08-09 08:16 JST | オッズ 1.84 | AI勝率 68.5% | EV 26.0% | 1/4ケリー 7.7% | 信頼度 A
+14. Under +7.5 | Los Angeles Angels @ Miami Marlins | 2026-08-09 05:11 JST | オッズ 1.81 | AI勝率 67.1% | EV 21.5% | 1/4ケリー 6.6% | 信頼度 A
 
 ## 注意
 
 - 予測であり的中を保証しない。
-- EV が数百パーセントに達している行は、先発未定やデータ欠損時の推定が極端に振れた結果である可能性が高い。市場のオッズと大きく乖離している行はそのまま採用しないこと。
+- 掲載しているのは開始前の試合のみ。試合中のライブオッズは前提が異なるため除外している。
 - 全試合の全指標は https://kouheiarai.github.io/mlb-ai-predictor/prediction_latest.json（約 180KB）または https://kouheiarai.github.io/mlb-ai-predictor/predictions.csv にある。
