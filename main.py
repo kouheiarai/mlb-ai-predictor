@@ -31,6 +31,15 @@ def require_api_key() -> str:
     return key
 
 
+class QuotaExhausted(RuntimeError):
+    """The Odds API の月間クレジットを使い切った状態。
+
+    翌月のリセットまで必ず起きる想定内の停止であり、こちらで直せる不具合
+    ではない。ワークフローを失敗させると毎回通知メールが飛ぶだけなので、
+    スキップとして扱う。
+    """
+
+
 def fetch_odds(api_key: str) -> tuple[list[dict[str, Any]], dict[str, str]]:
     # The Odds API は既に始まっている試合のライブオッズも返す。本モデルは
     # 9イニングをこれから戦う前提で確率を出すため、開始済みの試合を混ぜると
@@ -48,6 +57,8 @@ def fetch_odds(api_key: str) -> tuple[list[dict[str, Any]], dict[str, str]]:
         },
         timeout=30,
     )
+    if response.status_code == 401 and "OUT_OF_USAGE_CREDITS" in response.text:
+        raise QuotaExhausted(response.text[:500])
     if response.status_code != 200:
         raise RuntimeError(
             f"The Odds API returned HTTP {response.status_code}: "
@@ -517,6 +528,16 @@ def main() -> int:
             f"{len(rl_predictions)} RL predictions and "
             f"{len(total_predictions)} total predictions."
         )
+        return 0
+    except QuotaExhausted as exc:
+        # 失敗にすると毎回通知メールが飛ぶため、警告として残して正常終了する。
+        # 公開ファイルは最後に成功した内容のまま据え置かれる。
+        print(
+            "::warning title=The Odds API quota exhausted::"
+            "月間クレジットを使い切ったため更新をスキップしました。"
+            "翌月のリセットまで公開ファイルは据え置かれます。"
+        )
+        print(f"SKIPPED: {exc}")
         return 0
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
