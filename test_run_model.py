@@ -20,7 +20,15 @@ from __future__ import annotations
 import unittest
 
 from bullpen import NEUTRAL_FATIGUE_SCORE
-from predictor import LEAGUE_RUNS_PER_TEAM, expected_runs
+from predictor import (
+    LEAGUE_RUNS_PER_TEAM,
+    RUN_DISPERSION,
+    draw_runs,
+    expected_runs,
+    expected_value,
+    quarter_kelly,
+    simulate_total_probability,
+)
 from team_metrics import (
     MLB_TEAMS,
     PLAUSIBLE_LEAGUE_RUNS_PER_GAME,
@@ -150,6 +158,79 @@ class MetricsValidationTest(unittest.TestCase):
     def test_absurd_era_is_rejected(self):
         with self.assertRaises(TeamMetricsError):
             validate_metrics(fake_metrics(4.5, era=0.4))
+
+
+class RunDistributionTest(unittest.TestCase):
+    """Runs are over-dispersed; a Poisson draw made both tails far too thin."""
+
+    @classmethod
+    def setUpClass(cls):
+        import numpy as np
+
+        rng = np.random.default_rng(11)
+        cls.np = np
+        cls.away = draw_runs(rng, 4.487, 300_000)
+        cls.home = draw_runs(rng, 4.487, 300_000)
+        cls.totals = cls.away + cls.home
+
+    def test_mean_is_preserved(self):
+        self.assertAlmostEqual(float(self.away.mean()), 4.487, delta=0.05)
+
+    def test_variance_matches_the_measured_dispersion(self):
+        ratio = float(self.away.var() / self.away.mean())
+        self.assertAlmostEqual(ratio, RUN_DISPERSION, delta=0.1)
+
+    def test_game_totals_keep_the_same_dispersion(self):
+        """Sharing p keeps the sum negative binomial rather than smearing it."""
+        ratio = float(self.totals.var() / self.totals.mean())
+        self.assertAlmostEqual(ratio, RUN_DISPERSION, delta=0.1)
+
+    def test_low_scoring_games_are_not_vanishingly_rare(self):
+        """A 3-run game happens ~6.8% of the time; Poisson claimed 1.5%."""
+        share = float((self.totals == 3).mean())
+        self.assertGreater(share, 0.035)
+
+    def test_blowouts_are_not_vanishingly_rare(self):
+        """20-run games are ~0.7% in reality and 0.06% under Poisson."""
+        share = float((self.totals >= 20).mean())
+        self.assertGreater(share, 0.01)
+
+
+class PushAccountingTest(unittest.TestCase):
+    """A whole-number total returns the stake; that is not a loss."""
+
+    def test_push_raises_expected_value(self):
+        without = expected_value(0.45, 2.0)
+        with_push = expected_value(0.45, 2.0, 0.13)
+        self.assertAlmostEqual(with_push - without, 0.13, places=9)
+
+    def test_expected_value_matches_the_payout_definition(self):
+        win, push, odds = 0.45, 0.13, 2.0
+        lose = 1.0 - win - push
+        manual = win * (odds - 1.0) + push * 0.0 - lose
+        self.assertAlmostEqual(expected_value(win, odds, push), manual, places=9)
+
+    def test_no_push_is_unchanged(self):
+        self.assertAlmostEqual(expected_value(0.55, 1.9), expected_value(0.55, 1.9, 0.0))
+
+    def test_kelly_conditions_on_the_bet_resolving(self):
+        """Ignoring the push understates the stake, because it inflates 'lose'."""
+        naive = quarter_kelly(0.45, 2.2)
+        aware = quarter_kelly(0.45, 2.2, 0.13)
+        self.assertGreater(aware, naive)
+
+    def test_kelly_never_goes_negative(self):
+        self.assertEqual(quarter_kelly(0.10, 1.5, 0.05), 0.0)
+
+    def test_total_probabilities_form_a_distribution(self):
+        over, under, push = simulate_total_probability("t", 4.5, 4.5, 8.0)
+        self.assertAlmostEqual(over + under + push, 1.0, places=6)
+        self.assertGreater(push, 0.05, "a whole-number line must be able to push")
+
+    def test_half_line_cannot_push(self):
+        over, under, push = simulate_total_probability("t", 4.5, 4.5, 8.5)
+        self.assertAlmostEqual(push, 0.0, places=6)
+        self.assertAlmostEqual(over + under, 1.0, places=6)
 
 
 class OutputGuardTest(unittest.TestCase):
