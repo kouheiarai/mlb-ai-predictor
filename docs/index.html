@@ -34,6 +34,11 @@
   td.pick { font-weight:600; }
   td.ev { color:var(--accent); font-weight:600; }
   .empty { color:var(--muted); }
+  .stale { background:#fdf2d5; color:#5c4409; border:1px solid #e6c65c;
+            border-radius:10px; padding:.8rem 1rem; margin:0 0 1.25rem; font-size:.9rem; }
+  @media (prefers-color-scheme: dark) {
+    .stale { background:#332a10; color:#f2dfa4; border-color:#6b551d; }
+  }
   ul.endpoints { padding-left:1.1rem; }
   ul.endpoints code { font-size:.85rem; }
   footer { margin-top:2.5rem; color:var(--muted); font-size:.8rem;
@@ -43,6 +48,7 @@
 <body>
 <main>
   <h1>MLB AI Predictor Ver.26.0</h1>
+  <div class="stale"><strong>【重要・古いデータです】</strong><br>このデータは 2026-08-09 00:17 JST 時点のもので、2日10時間前に生成されました。<br>The Odds API の月間クレジットを使い切ったため自動更新が止まっています。<br>以下に並ぶ試合はすでに終了している可能性が高く、本日の予想ではありません。<br>クレジットは翌月にリセットされ、その時点で自動的に更新が再開します。</div>
   <p class="meta">
     最終更新: <strong>2026-08-09 00:17 JST</strong>
     （UTC: 2026-08-08T15:17:01.060874+00:00）<br>
