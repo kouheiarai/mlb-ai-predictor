@@ -8,6 +8,15 @@ import requests
 
 MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
 
+# fatigue_score is a one-sided 0..1 severity score, so its neutral point is not
+# zero. A team on an ordinary schedule — one game a day across the lookback, no
+# extra innings, no doubleheaders — already scores this much:
+#     min(0.45, 4 * 0.10) + 0.15 = 0.55
+# Consumers must compare against this baseline rather than against 0, otherwise
+# every team reads as tired and the adjustment becomes a constant bias instead
+# of a discriminator.
+NEUTRAL_FATIGUE_SCORE = 0.55
+
 
 def fetch_bullpen_fatigue_proxy(lookback_days: int = 4) -> dict[str, dict[str, Any]]:
     today = datetime.now(timezone.utc).date()

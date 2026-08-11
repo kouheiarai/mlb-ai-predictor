@@ -60,6 +60,33 @@ def check_no_in_play_games(rows: list[dict[str, str]], generated_at: str) -> Non
         )
 
 
+def check_scoring_is_plausible(latest: dict) -> None:
+    """モデルの想定得点が MLB としてあり得る範囲かを確かめる。
+
+    チーム成績の取得先が player 単位の成績を返していたことがあり、
+    1試合の合計得点が 6.4 点（実際は約 9 点）に沈んだまま公開されていた。
+    得点の水準がずれると合計得点もランラインも全て偏るため、
+    個々の予測ではなくスレート全体の平均で検知する。
+    """
+    rows = ((latest.get("all_predictions") or {}).get("moneyline")) or []
+    totals = [
+        row["away_expected_runs"] + row["home_expected_runs"]
+        for row in rows
+        if isinstance(row.get("away_expected_runs"), (int, float))
+        and isinstance(row.get("home_expected_runs"), (int, float))
+    ]
+    if not totals:
+        raise RuntimeError("No expected runs found; the run model did not produce output")
+
+    mean_total = sum(totals) / len(totals)
+    # 近代MLBの1試合合計得点はおおむね 8〜10 点で推移している。
+    if not 7.0 <= mean_total <= 11.0:
+        raise RuntimeError(
+            f"Slate average total is {mean_total:.2f} runs, outside the plausible "
+            "7-11 range. The scoring inputs are probably wrong."
+        )
+
+
 def check_public_endpoints() -> None:
     """公開URLが想定どおりの中身かを検査する。
 
@@ -162,6 +189,8 @@ def main() -> None:
         raise RuntimeError("prediction_latest.json is not Ver.26.0")
     if latest.get("game_count", 0) <= 0:
         raise RuntimeError("prediction_latest.json contains no games")
+
+    check_scoring_is_plausible(latest)
 
     manifest = json.loads(Path("data/output_manifest.json").read_text(encoding="utf-8"))
     if manifest.get("model_version") != MODEL_VERSION:

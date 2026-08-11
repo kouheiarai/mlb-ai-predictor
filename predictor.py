@@ -10,6 +10,8 @@ from typing import Any
 import numpy as np
 import requests
 
+from bullpen import NEUTRAL_FATIGUE_SCORE
+
 
 MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
 DEFAULT_ELO = 1500.0
@@ -445,7 +447,13 @@ def expected_runs(
     offense_factor = max(0.70, min(1.30, offense_rpg / LEAGUE_RUNS_PER_TEAM))
     pitching_factor = max(0.75, min(1.30, opponent_era / 4.20))
     starter_factor = max(0.80, min(1.20, 1.0 - opponent_starter_quality * 0.12))
-    bullpen_factor = max(1.0, min(1.18, 1.0 + opponent_bullpen_fatigue * 0.12))
+    # Fatigue is measured against an ordinary schedule, not against zero: a
+    # rested bullpen has to be able to pull the total down, or this term only
+    # ever inflates scoring.
+    bullpen_factor = max(
+        0.93,
+        min(1.12, 1.0 + (opponent_bullpen_fatigue - NEUTRAL_FATIGUE_SCORE) * 0.12),
+    )
     form_factor = max(0.90, min(1.10, 1.0 + (recent_form - 0.5) * 0.20))
     lineup_factor = max(0.88, min(1.12, 1.0 + lineup_adjustment * 0.10))
     platoon_factor = max(0.96, min(1.04, 1.0 + platoon_adjustment * 0.04))

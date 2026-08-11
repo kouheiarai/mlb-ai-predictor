@@ -37,6 +37,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Run run-model regression tests
+        run: python -m unittest test_run_model
+
       - name: Generate predictions
         env:
           THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
