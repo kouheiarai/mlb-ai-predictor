@@ -41,14 +41,19 @@ jobs:
         run: python -m unittest test_run_model
 
       - name: Generate predictions
+        id: generate
         env:
           THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
         run: python main.py
 
+      # クレジット枯渇でスキップしたときは公開ファイルが前回のまま据え置かれる。
+      # 再配布も検査もせずに抜ける（古いモデル版を検査すると誤検知で落ちる）。
       - name: Publish public endpoints
+        if: steps.generate.outputs.skipped != 'true'
         run: python publish.py
 
       - name: Validate public outputs
+        if: steps.generate.outputs.skipped != 'true'
         run: |
           python validate_outputs.py
           cat data/output_manifest.json

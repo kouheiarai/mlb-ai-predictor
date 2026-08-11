@@ -380,6 +380,23 @@ def build_latest_payload(
         },
     }
 
+def _report_skipped() -> None:
+    """Tell the workflow this run produced no new predictions.
+
+    GitHub Actions reads step outputs from the file named by GITHUB_OUTPUT, so
+    writing there lets the publish and validate steps opt out. Outside Actions
+    the variable is unset and this is a no-op.
+    """
+    output_path = os.environ.get("GITHUB_OUTPUT")
+    if not output_path:
+        return
+    try:
+        with open(output_path, "a", encoding="utf-8") as handle:
+            handle.write("skipped=true\n")
+    except OSError:
+        pass
+
+
 def main() -> int:
     try:
         season = datetime.now(timezone.utc).year
@@ -538,6 +555,10 @@ def main() -> int:
             "翌月のリセットまで公開ファイルは据え置かれます。"
         )
         print(f"SKIPPED: {exc}")
+        # 据え置かれた公開ファイルは前バージョンのままなので、後段の配布と
+        # 検査まで走らせると「古いモデル版が混ざっている」と誤検知して落ちる。
+        # スキップしたことをワークフローに伝え、後段ごと飛ばしてもらう。
+        _report_skipped()
         return 0
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
