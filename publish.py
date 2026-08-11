@@ -104,6 +104,41 @@ def mirror_data_outputs() -> list[str]:
     return copied
 
 
+STALE_AFTER_HOURS = 12
+
+
+def data_age_hours(latest: dict[str, Any]) -> float | None:
+    """データが生成されてから何時間経ったか。"""
+    try:
+        updated = datetime.fromisoformat(str(latest.get("updated_at_utc", "")))
+    except ValueError:
+        return None
+    return (datetime.now(timezone.utc) - updated).total_seconds() / 3600
+
+
+def staleness_notice(latest: dict[str, Any]) -> list[str]:
+    """古いデータであることを読み手に必ず伝えるための文言。
+
+    The Odds API のクレジットが尽きると更新が止まり、公開ファイルは最後に
+    成功した内容のまま残る。何も書かないと、読んだ AI が終わった試合を
+    今日の予想として提示してしまうため、先頭で明示する。
+    """
+    hours = data_age_hours(latest)
+    if hours is None or hours < STALE_AFTER_HOURS:
+        return []
+    days, rest = divmod(int(hours), 24)
+    elapsed = f"{days}日{rest}時間前" if days else f"{rest}時間前"
+    return [
+        "【重要・古いデータです】",
+        f"このデータは {_to_jst(str(latest.get('updated_at_utc', '')))} 時点のもので、"
+        f"{elapsed}に生成されました。",
+        "The Odds API の月間クレジットを使い切ったため自動更新が止まっています。",
+        "以下に並ぶ試合はすでに終了している可能性が高く、本日の予想ではありません。",
+        "クレジットは翌月にリセットされ、その時点で自動的に更新が再開します。",
+        "",
+    ]
+
+
 def build_summary_text(latest: dict[str, Any]) -> str:
     """1リクエストで読み切れる軽量なテキスト版の推奨一覧を作る。
 
@@ -118,6 +153,7 @@ def build_summary_text(latest: dict[str, Any]) -> str:
     lines = [
         f"MLB AI Predictor Ver.{latest.get('model_version', '-')} 推奨一覧",
         "",
+        *staleness_notice(latest),
         f"更新: {_to_jst(updated)}（UTC {updated}）",
         f"対象日 (UTC): {', '.join(latest.get('target_dates_utc', []) or []) or '-'}",
         f"対象試合数: {latest.get('game_count', '-')}",
@@ -178,9 +214,18 @@ def build_summary_json(latest: dict[str, Any]) -> str:
         "confidence",
     )
     rankings = latest.get("buy_rankings", {}) or {}
+    hours = data_age_hours(latest)
     payload = {
         "model_version": latest.get("model_version"),
         "updated_at_utc": latest.get("updated_at_utc"),
+        "data_age_hours": round(hours, 1) if hours is not None else None,
+        "is_stale": bool(hours is not None and hours >= STALE_AFTER_HOURS),
+        "stale_warning": (
+            "The Odds API の月間クレジットを使い切ったため自動更新が止まっている。"
+            "掲載の試合はすでに終了している可能性が高く、本日の予想ではない。"
+            if hours is not None and hours >= STALE_AFTER_HOURS
+            else None
+        ),
         "target_dates_utc": latest.get("target_dates_utc"),
         "game_count": latest.get("game_count"),
         "summary": latest.get("summary", {}),
@@ -240,6 +285,17 @@ def build_index_html(latest: dict[str, Any]) -> str:
     source = latest.get("source", {}) or {}
     target_dates = ", ".join(latest.get("target_dates_utc", []) or []) or "-"
 
+    notice = staleness_notice(latest)
+    banner = (
+        '<div class="stale"><strong>'
+        + html.escape(notice[0])
+        + "</strong><br>"
+        + "<br>".join(html.escape(line) for line in notice[1:] if line)
+        + "</div>"
+        if notice
+        else ""
+    )
+
     return f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -276,6 +332,11 @@ def build_index_html(latest: dict[str, Any]) -> str:
   td.pick {{ font-weight:600; }}
   td.ev {{ color:var(--accent); font-weight:600; }}
   .empty {{ color:var(--muted); }}
+  .stale {{ background:#fdf2d5; color:#5c4409; border:1px solid #e6c65c;
+            border-radius:10px; padding:.8rem 1rem; margin:0 0 1.25rem; font-size:.9rem; }}
+  @media (prefers-color-scheme: dark) {{
+    .stale {{ background:#332a10; color:#f2dfa4; border-color:#6b551d; }}
+  }}
   ul.endpoints {{ padding-left:1.1rem; }}
   ul.endpoints code {{ font-size:.85rem; }}
   footer {{ margin-top:2.5rem; color:var(--muted); font-size:.8rem;
@@ -285,6 +346,7 @@ def build_index_html(latest: dict[str, Any]) -> str:
 <body>
 <main>
   <h1>MLB AI Predictor Ver.{html.escape(str(latest.get('model_version', '')))}</h1>
+  {banner}
   <p class="meta">
     最終更新: <strong>{html.escape(_to_jst(updated_utc))}</strong>
     （UTC: {html.escape(updated_utc)}）<br>
@@ -333,7 +395,12 @@ def build_index_html(latest: dict[str, Any]) -> str:
 
 def build_llms_txt(latest: dict[str, Any]) -> str:
     summary = latest.get("summary", {}) or {}
+    notice = staleness_notice(latest)
+    warning = ("\n".join(f"> **{line}**" if i == 0 else f"> {line}"
+                         for i, line in enumerate(notice) if line) + "\n") if notice else ""
     return f"""# MLB AI Predictor
+
+{warning}
 
 > MLB の各試合について、マネーライン・ランライン・合計得点を
 > モンテカルロ法（1試合 {int(latest.get('simulation_count_per_game') or 0):,} 回）で予測し、
