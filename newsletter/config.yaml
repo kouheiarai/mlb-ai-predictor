@@ -1,0 +1,68 @@
+# このファイルがニュースレターの設定のすべて。コードを触らずにここだけで運用を変えられる。
+
+newsletter:
+  name: "Japan Money Weekly"
+  tagline: "Where Japan's money is actually moving — in English, from the inside."
+  language: "en"
+
+publish:
+  # local     … HTML と Markdown を state/issues/ に書き出すだけ。beehiiv には触らない（無料プラン向け）
+  # draft     … beehiiv に下書きとして作成する（Max プラン以上が必要）
+  # confirmed … beehiiv で即時公開する（Max プラン以上が必要）
+  #
+  # 読者 100 人を超えて Max に上げたら "draft" に変え、運用が安定したら "confirmed" にする。
+  mode: "local"
+  beehiiv:
+    # 実際の値は環境変数から読む。API キーをこのファイルに書かないこと。
+    api_key_env: "BEEHIIV_API_KEY"
+    publication_id_env: "BEEHIIV_PUBLICATION_ID"
+    # confirmed のときだけ使う。null なら即時送信。
+    scheduled_at: null
+    content_tags:
+      - "japan"
+      - "macro"
+
+model:
+  id: "claude-opus-5"
+  # low / medium / high / xhigh / max。リサーチと執筆を伴うので high 以上を推奨。
+  effort: "high"
+  max_tokens: 32000
+  # 1 号あたりの Web 検索回数の上限。検索は 1000 回で $10 なので 12 回で約 $0.12。
+  max_web_searches: 12
+  # 検索ツールが 10 往復の上限に達したとき（stop_reason=pause_turn）に再開する最大回数
+  max_resumes: 4
+
+issue_types:
+  # 通常号。⑦ 家計金融資産・NISA・資金フローが主題。
+  weekly:
+    prompt: "prompts/weekly.md"
+    target_words: 900
+
+  # ④ 日銀ウォッチ。金融政策決定会合の翌営業日に出す臨時号。
+  # 会合日程は年 8 回。日銀の公表スケジュールから毎年転記すること。
+  #   https://www.boj.or.jp/mopo/mpmsche_minu/index.htm
+  # ここが空のままだと日銀号は一度も発火しない（通常号だけが出る）。
+  boj:
+    prompt: "prompts/boj.md"
+    target_words: 700
+    # 会合の「最終日」を YYYY-MM-DD で並べる。実行日がこの翌日〜2 日後なら日銀号になる。
+    meeting_dates: []
+    trigger_window_days: 2
+
+  # ③ 春闘シリーズ。賃上げ交渉のシーズンだけ通常号を置き換える。
+  shunto:
+    prompt: "prompts/shunto.md"
+    target_words: 900
+    # MM-DD。この期間内は 2 回に 1 回を春闘号にする（通常号と交互）。
+    window_start: "01-15"
+    window_end: "04-10"
+    every_nth: 2
+
+dedup:
+  # 過去何号分のタイトルと扱ったトピックをプロンプトに渡して重複を防ぐか。
+  # ここを削ると 3 ヶ月目から同じ話の焼き直しが始まる。
+  lookback: 40
+  state_file: "state/topics.json"
+
+output:
+  dir: "state/issues"

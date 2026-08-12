@@ -1,0 +1,70 @@
+name: Japan Money Weekly
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue_type:
+        description: "号種を明示する（空なら config.yaml の判定に従う）"
+        required: false
+        type: choice
+        options: ["", "weekly", "boj", "shunto"]
+        default: ""
+  schedule:
+    # 毎週水曜 08:00 JST = 火曜 23:00 UTC。
+    # 火曜の米国市場が引けたあとで、日本の水曜午前に届く時間帯を狙っている。
+    - cron: "0 23 * * 2"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: japan-money-weekly
+  cancel-in-progress: false
+
+jobs:
+  write-issue:
+    runs-on: ubuntu-latest
+    # リサーチに Web 検索を十数回まわすので 1 号あたり数分〜十数分かかる
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: newsletter/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r newsletter/requirements.txt
+
+      - name: Generate issue
+        working-directory: newsletter
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # publish.mode が local のあいだは未設定でよい
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+          BEEHIIV_PUBLICATION_ID: ${{ secrets.BEEHIIV_PUBLICATION_ID }}
+        run: |
+          if [ -n "${{ inputs.issue_type }}" ]; then
+            python generate.py --type "${{ inputs.issue_type }}"
+          else
+            python generate.py
+          fi
+
+      - name: Commit the draft
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add newsletter/state
+          if git diff --staged --quiet; then
+            echo "No new issue to commit."
+            exit 0
+          fi
+          git commit -m "Add newsletter issue for $(date -u +%Y-%m-%d)"
+          # 手動実行と定時実行がかち合ったときのために、push 前に取り込む
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
