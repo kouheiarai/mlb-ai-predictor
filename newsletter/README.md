@@ -119,6 +119,19 @@ Windows のメモ帳や Excel のように CP932 を既定とするアプリで�
 `.md` はレビュー欄に日本語を含むため純 ASCII にはできないが、UTF-8 BOM を付けてあるので
 Windows のアプリでも UTF-8 と判定される。
 
+## beehiiv API が使えるか確かめる
+
+投稿せずに接続だけを検証できる。beehiiv 側には何も作らない。
+
+```bash
+export BEEHIIV_API_KEY="..."
+export BEEHIIV_PUBLICATION_ID="pub_..."
+python beehiiv.py --check
+```
+
+`403` が返る場合はプランが足りていない（Create post は Max / Enterprise 限定）。
+Max トライアル中に実行しておくと、将来アップグレードしたときに動くことが確認できる。
+
 ## 読者 100 人を超えたら
 
 beehiiv を Max プランに上げたうえで:

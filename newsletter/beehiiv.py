@@ -10,12 +10,76 @@ config.yaml の publish.mode を "local" にしておくこと（このモジュ
 from __future__ import annotations
 
 import os
+import sys
 from typing import Any
 
 import requests
 
 API_ROOT = "https://api.beehiiv.com/v2"
 TIMEOUT_SECONDS = 60
+
+
+def _credentials(cfg: dict[str, Any]) -> tuple[str, str]:
+    settings = cfg["publish"]["beehiiv"]
+    api_key = os.environ.get(settings.get("api_key_env", "BEEHIIV_API_KEY"))
+    publication_id = os.environ.get(
+        settings.get("publication_id_env", "BEEHIIV_PUBLICATION_ID")
+    )
+    if not api_key or not publication_id:
+        raise RuntimeError(
+            "BEEHIIV_API_KEY / BEEHIIV_PUBLICATION_ID are not set. "
+            "Set them, or put publish.mode back to 'local' in config.yaml."
+        )
+    return api_key, publication_id
+
+
+def verify(cfg: dict[str, Any]) -> None:
+    """投稿せずに API 接続だけを確かめる。
+
+    読み取り専用のエンドポイントを叩くだけなので、beehiiv 側に何も作らない。
+    Max トライアル中に「本番で使えるか」を確認する用途を想定している。
+    """
+    api_key, publication_id = _credentials(cfg)
+    response = requests.get(
+        f"{API_ROOT}/publications/{publication_id}",
+        headers={"Authorization": f"Bearer {api_key}"},
+        timeout=TIMEOUT_SECONDS,
+    )
+
+    if response.status_code == 401:
+        raise RuntimeError("401: API キーが無効です。beehiiv 側で再発行してください。")
+    if response.status_code == 404:
+        raise RuntimeError(
+            "404: Publication ID が違います。beehiiv の Settings で確認してください。"
+        )
+    if response.status_code == 403:
+        raise RuntimeError(
+            "403: このプランでは API を使えません。Max トライアルが切れている可能性があります。"
+        )
+    if response.status_code >= 400:
+        raise RuntimeError(f"{response.status_code}: {response.text[:300]}")
+
+    data = response.json().get("data", {})
+    print("OK  beehiiv API に接続できました。")
+    print(f"    publication: {data.get('name', '(名前不明)')}")
+    print(f"    id:          {data.get('id', publication_id)}")
+    print("\n    投稿 API が使えるかはプラン次第です。実際に下書きを作って確かめるには")
+    print("    config.yaml の publish.mode を draft にして ingest.py を実行してください。")
+
+
+if __name__ == "__main__":
+    # python beehiiv.py --check
+    import yaml
+    from pathlib import Path
+
+    if "--check" not in sys.argv:
+        print("使い方: python beehiiv.py --check", file=sys.stderr)
+        sys.exit(2)
+    try:
+        verify(yaml.safe_load((Path(__file__).parent / "config.yaml").read_text(encoding="utf-8")))
+    except RuntimeError as exc:
+        print(f"NG  {exc}", file=sys.stderr)
+        sys.exit(1)
 
 
 def publish(cfg: dict[str, Any], issue: dict[str, Any], status: str) -> str:
@@ -29,15 +93,7 @@ def publish(cfg: dict[str, Any], issue: dict[str, Any], status: str) -> str:
         raise RuntimeError(f"invalid publish.mode for beehiiv: {status!r}")
 
     settings = cfg["publish"]["beehiiv"]
-    api_key = os.environ.get(settings.get("api_key_env", "BEEHIIV_API_KEY"))
-    publication_id = os.environ.get(
-        settings.get("publication_id_env", "BEEHIIV_PUBLICATION_ID")
-    )
-    if not api_key or not publication_id:
-        raise RuntimeError(
-            "BEEHIIV_API_KEY / BEEHIIV_PUBLICATION_ID are not set. "
-            "Set them, or put publish.mode back to 'local' in config.yaml."
-        )
+    api_key, publication_id = _credentials(cfg)
 
     payload: dict[str, Any] = {
         "title": issue["title"],
