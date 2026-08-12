@@ -34,7 +34,7 @@ PRICE_OUTPUT_PER_MTOK = 25.00
 PRICE_PER_WEB_SEARCH = 0.01  # 1000 回で $10
 
 # 本文が長い HTML になるため、JSON ではなくマーカー区切りで受け取る（エスケープ事故を避ける）
-SECTION_MARKERS = ("TITLE", "SUBTITLE", "TOPICS", "SOURCES", "BODY_HTML")
+SECTION_MARKERS = ("TITLE", "SUBTITLE", "TOPICS", "SOURCES", "REVIEW_JA", "BODY_HTML")
 
 
 # --------------------------------------------------------------------------- config
@@ -291,6 +291,7 @@ def parse_output(raw: str) -> dict[str, Any]:
         "subtitle": sections["SUBTITLE"].strip(),
         "topics": bullets(sections["TOPICS"]),
         "sources": bullets(sections["SOURCES"]),
+        "review_ja": sections["REVIEW_JA"].strip(),
         "body_html": body,
     }
 
@@ -307,23 +308,32 @@ def write_issue(out_dir: Path, today: dt.date, issue_type: str, issue: dict[str,
 
     (out_dir / f"{stem}.html").write_text(issue["body_html"] + "\n", encoding="utf-8")
 
+    # 日本語のレビュー用サマリーを先頭に置く。公開前に最初に読む場所であり、配信はされない。
     review = [
         f"# {issue['title']}",
         "",
         f"*{issue['subtitle']}*",
         "",
-        f"- Date: {today.isoformat()}",
-        f"- Edition: {issue_type}",
+        f"- 配信日: {today.isoformat()}",
+        f"- 号種: {issue_type}",
         "",
-        "## Sources",
+        "---",
+        "",
+        "## レビュー用サマリー（日本語・配信されません）",
+        "",
+        issue["review_ja"],
+        "",
+        "---",
+        "",
+        "## 出典",
         "",
         *[f"- {src}" for src in issue["sources"]],
         "",
-        "## Topics covered",
+        "## 扱ったトピック",
         "",
         *[f"- {topic}" for topic in issue["topics"]],
         "",
-        "## Body (HTML — paste this into beehiiv)",
+        "## 本文（この HTML を beehiiv に貼る）",
         "",
         "```html",
         issue["body_html"],

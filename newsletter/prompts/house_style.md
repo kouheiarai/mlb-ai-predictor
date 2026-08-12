@@ -101,9 +101,33 @@ fed to future issues so you can avoid repeating yourself. Be specific: "BOJ July
 core-inflation wording change", not "monetary policy".)
 ===SOURCES===
 (one line per source you actually used, formatted as "- Publisher — title — URL")
+===REVIEW_JA===
+(このセクションだけ日本語で書く。読者には配信されず、公開前のレビュー専用。以下の4項目を
+この見出しのまま、簡潔に書くこと。)
+
+**この号の主張**
+(2〜3文。この号が結局なにを言っているのか。)
+
+**使った数字と出典の対応**
+(本文に出した数値を1行ずつ。「数値 — 何の数字か — 出典と発表日」の形式。本文の数値は
+すべてここに現れなければならない。)
+
+**確信度が低い箇所**
+(検証しきれなかった点、出典が二次情報にとどまる点、解釈が分かれうる点。該当なしなら
+「なし」と書く。ここを省略しないこと——レビュー担当が真っ先に見る項目。)
+
+**コンプライアンス自己点検**
+(個別銘柄の推奨・価格予想・「買うべき」に類する表現が入っていないか。将来見通しがすべて
+発言者に帰属されているか。問題があれば具体的に指摘する。)
 ===BODY_HTML===
 (the issue body as simple HTML)
 ```
+
+`REVIEW_JA` is the only section written in Japanese. Everything else — title, subtitle, topics,
+sources, and the entire body — is English. The review section exists so a Japanese-speaking editor
+can verify the facts and the compliance posture in under five minutes without re-reading the
+English draft line by line. Write it for that reader, plainly and without flattery: if something in
+the issue is weak, say so there.
 
 ### HTML rules for the body
 
