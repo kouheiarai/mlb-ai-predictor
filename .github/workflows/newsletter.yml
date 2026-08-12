@@ -41,21 +41,34 @@ jobs:
       - name: Install dependencies
         run: pip install -r newsletter/requirements.txt
 
-      - name: Generate issue
+      # ANTHROPIC_API_KEY があれば記事本体まで書かせる。無ければ claude.ai に貼るための
+      # プロンプトを書き出す。無料運用のままでも、毎週の準備だけは自動で終わっている状態にする。
+      - name: Generate issue (or the prompt to paste into claude.ai)
         working-directory: newsletter
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           # publish.mode が local のあいだは未設定でよい
           BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
           BEEHIIV_PUBLICATION_ID: ${{ secrets.BEEHIIV_PUBLICATION_ID }}
+          ISSUE_TYPE: ${{ inputs.issue_type }}
         run: |
-          if [ -n "${{ inputs.issue_type }}" ]; then
-            python generate.py --type "${{ inputs.issue_type }}"
-          else
-            python generate.py
+          ARGS=""
+          if [ -n "$ISSUE_TYPE" ]; then
+            ARGS="--type $ISSUE_TYPE"
           fi
 
-      - name: Commit the draft
+          if [ -n "$ANTHROPIC_API_KEY" ]; then
+            echo "::notice::API モード — 記事本体まで生成します"
+            python generate.py $ARGS
+          else
+            echo "::notice::無料モード — claude.ai に貼るプロンプトを生成します"
+            mkdir -p state/prompts
+            OUT="state/prompts/$(date -u +%Y-%m-%d)-prompt.txt"
+            python generate.py --print-prompt $ARGS > "$OUT"
+            echo "書き出しました: $OUT"
+          fi
+
+      - name: Commit the result
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -64,7 +77,7 @@ jobs:
             echo "No new issue to commit."
             exit 0
           fi
-          git commit -m "Add newsletter issue for $(date -u +%Y-%m-%d)"
+          git commit -m "Add newsletter material for $(date -u +%Y-%m-%d)"
           # 手動実行と定時実行がかち合ったときのために、push 前に取り込む
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"

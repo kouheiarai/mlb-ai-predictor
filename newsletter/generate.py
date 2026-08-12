@@ -393,7 +393,10 @@ def main() -> int:
     else:
         issue_type, extra = decide_issue_type(cfg, today)
 
-    print(f"[{today}] edition: {issue_type}")
+    # --print-prompt では標準出力がそのまま貼り付け用の文章になるので、
+    # 進捗ログは必ず標準エラーへ出す。
+    log = sys.stderr if args.print_prompt else sys.stdout
+    print(f"[{today}] edition: {issue_type}", file=log)
 
     system, user = build_prompts(cfg, issue_type, today, extra)
 
