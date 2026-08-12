@@ -46,6 +46,11 @@ def main() -> int:
         help="号種。--print-prompt が表示したものを指定する。",
     )
     parser.add_argument("--date", help="配信日を YYYY-MM-DD で指定する（既定は今日）")
+    parser.add_argument(
+        "--replace",
+        action="store_true",
+        help="同じ配信日の号を差し替える。書き直した原稿を取り込むときに使う。",
+    )
     args = parser.parse_args()
 
     raw = Path(args.response).read_text(encoding="utf-8") if args.response else sys.stdin.read()
@@ -58,10 +63,20 @@ def main() -> int:
     issue = parse_output(raw)
 
     out_dir = BASE_DIR / resolve(cfg, "output.dir", "state/issues")
-    review_path = write_issue(out_dir, today, args.type, issue)
-
     state_path = BASE_DIR / resolve(cfg, "dedup.state_file", "state/topics.json")
     state = load_state(state_path)
+
+    if args.replace:
+        # 書き直した原稿の取り込み。旧版のファイルと履歴を消してから入れ直す。
+        # タイトルが変わっていても確実に消せるよう、日付で引き当てる。
+        stale = [i for i in state["issues"] if i.get("date") == today.isoformat()]
+        for old in stale:
+            for path in out_dir.glob(f"{today.isoformat()}-*"):
+                path.unlink()
+            print(f"  replaced: {old.get('title', '')[:60]}")
+        state["issues"] = [i for i in state["issues"] if i.get("date") != today.isoformat()]
+
+    review_path = write_issue(out_dir, today, args.type, issue)
 
     # 同じ号を二度取り込んでしまっても履歴が汚れないようにする
     already = [

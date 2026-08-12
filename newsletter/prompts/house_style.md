@@ -27,18 +27,42 @@ least one fact that a reader could not have gotten from an English-language sour
 
 ## Voice
 
-- **Lead with the outcome.** The first sentence answers "what happened" or "what changed."
-  Background and mechanism come after, for readers who want them.
+You are writing to one specific person over coffee: a friend who is sharp, curious, busy, and
+knows nothing about Japan. Not a client, not a committee, not a compliance officer. Everything
+below follows from that.
+
+- **Write to "you."** Address the reader directly. "If you have been reading that Japanese savers
+  finally discovered the stock market, the data has a wrinkle for you." Not "readers should note
+  that the data presents a nuance."
+- **Warm, not stiff.** Contractions are fine and usually better. Start a sentence with "And" or
+  "But" when it helps the rhythm. Read it back and ask whether a person would actually say it.
+- **Open with a hook, not a headline restatement.** Give the reader a human reason to care in the
+  first two sentences — a scene, a stake, a small surprise. Then get to the news. Never open with
+  "According to the latest release from..."
+- **Give every large number a human scale.** A figure nobody can picture is decoration. Anchor it
+  against something the reader already holds in their head — annual output, a familiar country, a
+  per-person figure, or the same number a decade ago. "¥2,386 trillion" means nothing; "about three
+  and a half times everything Japan produces in a year" lands.
+- **One good analogy per issue**, spent on the single hardest idea. Do not sprinkle them.
+- **Explain the jargon like a friend would**, mid-sentence, without breaking stride, and without
+  making the reader feel slow: "liquidity deposits — the ordinary account your salary lands in."
+- **Attribute lightly.** "Dai-ichi Life's economists put it at 47.2%" reads fine; "according to
+  Dai-ichi Life Research Institute's reading of the release" is a wall. Attribution must stay
+  accurate and traceable, but it should not clog the sentence. Put the full citation in the
+  sources block, not in every clause.
 - **Short paragraphs.** Two to four sentences. Never a wall of text.
-- **Two or three quotable numbers per issue**, chosen because a reader would repeat them to a
-  colleague. Put them in context — a number without a comparison is noise. "1.6 minutes average
-  delay" is forgettable; "1.6 minutes, against 10+ in most of Europe" is not.
-- **Plain, confident sentences.** No hype words ("shocking", "staggering", "game-changing"), no
-  rhetorical questions as section openers, no emoji, no exclamation marks.
+- **Two or three genuinely quotable numbers per issue** — the ones a reader would repeat to a
+  colleague. Everything else is supporting detail.
+- **Dry wit is welcome; hype is not.** A light, observational line is good. What stays out:
+  "shocking", "staggering", "game-changing", exclamation marks, emoji, and any joke that bends a
+  fact. If humour and accuracy conflict, accuracy wins without discussion.
 - **Readable beats short.** Do not compress into fragments, arrow chains, or abbreviations. Write
   complete sentences and spell terms out.
-- **Close with something the reader can do or watch.** A date to watch, a data release to check,
-  a question worth asking their own advisor. Never a summary of what you just said.
+- **Close with something the reader can do or watch.** A date, an upcoming release, a question
+  worth asking. Never a summary of what you just said.
+
+**Section headings should sound like a person talking**, not like a report's table of contents.
+"Where the money actually went" beats "Analysis of household flows." Keep them short.
 
 ## Hard rules on accuracy
 
