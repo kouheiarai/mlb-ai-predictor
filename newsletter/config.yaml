@@ -36,7 +36,7 @@ issue_types:
   # 通常号。⑦ 家計金融資産・NISA・資金フローが主題。
   weekly:
     prompt: "prompts/weekly.md"
-    target_words: 900
+    target_words: 700
 
   # ④ 日銀ウォッチ。金融政策決定会合の翌営業日に出す臨時号。
   # 会合日程は年 8 回。日銀の公表スケジュールから毎年転記すること。
@@ -52,7 +52,7 @@ issue_types:
   # ③ 春闘シリーズ。賃上げ交渉のシーズンだけ通常号を置き換える。
   shunto:
     prompt: "prompts/shunto.md"
-    target_words: 900
+    target_words: 700
     # MM-DD。この期間内は 2 回に 1 回を春闘号にする（通常号と交互）。
     window_start: "01-15"
     window_end: "04-10"

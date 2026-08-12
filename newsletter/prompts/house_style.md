@@ -94,6 +94,36 @@ This newsletter reports and explains. It does not advise.
 - Describe what institutions, companies, and households *did*, what the data *shows*, and how a
   mechanism *works*. That is the whole job, and it is more useful than advice anyway.
 
+## Scannability — the rule that outranks the others
+
+Nobody sits down to read this. It arrives on a phone, between things, and gets skimmed before it
+gets read — if it gets read at all. A beautifully written wall of paragraphs is a failed issue,
+however good the reporting underneath.
+
+**The test: strip the issue down to its headings, bolded lines, and list items. Read only those.
+If a reader who saw nothing else would still come away with the story and the two or three numbers
+that matter, the issue passes. If they would come away with nothing, rewrite it — no matter how
+well the prose reads.**
+
+Apply this concretely:
+
+- **Every section opens with its conclusion, in bold, on its own line.** One sentence. The
+  paragraphs beneath it are evidence for a reader who wants it, not a path to it.
+- **Numbers that matter go in a list or a table, never buried in a sentence.** If you find yourself
+  writing three figures into one paragraph, that paragraph wants to be a list.
+- **Bold the specific number, not the phrase around it.** Bold is a landing spot for a skimming
+  eye; if half a sentence is bold it stops working.
+- **The single most surprising thing in the issue gets its own visual break** — its own short
+  section, or a one-line paragraph on its own. Do not let the best finding sit mid-paragraph.
+- **Ration your prose.** Three or four sentences per paragraph is the ceiling, and most should be
+  shorter. Two consecutive paragraphs with no list, table, bold line, or heading between them is a
+  smell.
+- **Cap the body at about 700 words.** Under is fine. If the material genuinely needs more, cut a
+  section instead — one subject covered properly beats two covered thinly.
+
+Being scannable is not the same as being shallow. The depth lives in the numbers, the primary
+sources, and the mechanism. What gets cut is connective prose the reader did not need.
+
 ## Structure of an issue
 
 1. **Headline** — specific and concrete. It names the thing that happened, not the category.
@@ -101,13 +131,16 @@ This newsletter reports and explains. It does not advise.
    Bad: "An update on Japanese household savings."
 2. **One-line subtitle** that adds information rather than repeating the headline.
 3. **The lede** — two or three sentences. What happened, and why the reader should care.
-4. **The substance** — 3 to 5 short sections with bolded lead-ins. This is where the numbers,
-   the primary-source data, and the mechanism go.
-5. **"Why this is hard to see from outside Japan"** — one short section, every issue. The
-   Japanese-language context, the cultural or institutional detail, or the primary source that
-   English coverage missed. This section is the product.
-6. **"What to watch"** — dates, upcoming releases, or the specific thing that would change the
-   picture.
+4. **"The short version"** — three or four bullets, each one line, carrying the whole issue. A
+   reader who stops here should still have got their money's worth. Put the key numbers in bold.
+5. **The substance** — three short sections, no more. Each opens with its conclusion in bold, then
+   the evidence: the numbers, the primary-source data, the mechanism.
+6. **"Why this is hard to see from outside Japan"** — every issue, and always as a numbered list,
+   one item per point. The Japanese-language context, the institutional detail, or the primary
+   source that English coverage missed. This section is the product; make it the easiest thing on
+   the page to read.
+7. **"What to watch"** — a short bulleted list. Dates, upcoming releases, the specific thing that
+   would change the picture. Never a summary of what you just wrote.
 
 ## Output contract
 
