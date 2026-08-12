@@ -1,0 +1,91 @@
+# このファイルがニュースレターの設定のすべて。コードを触らずにここだけで運用を変えられる。
+
+newsletter:
+  name: "Japan Money Weekly"
+  tagline: "Where Japan's money is actually moving — in English, from the inside."
+  language: "en"
+
+publish:
+  # local     … HTML と Markdown を state/issues/ に書き出すだけ。beehiiv には触らない（無料プラン向け）
+  # draft     … beehiiv に下書きとして作成する（Max プラン以上が必要）
+  # confirmed … beehiiv で即時公開する（Max プラン以上が必要）
+  #
+  # 読者 100 人を超えて Max に上げたら "draft" に変え、運用が安定したら "confirmed" にする。
+  mode: "local"
+  beehiiv:
+    # 実際の値は環境変数から読む。API キーをこのファイルに書かないこと。
+    api_key_env: "BEEHIIV_API_KEY"
+    publication_id_env: "BEEHIIV_PUBLICATION_ID"
+    # confirmed のときだけ使う。null なら即時送信。
+    scheduled_at: null
+    content_tags:
+      - "japan"
+      - "macro"
+
+model:
+  id: "claude-opus-5"
+  # low / medium / high / xhigh / max。リサーチと執筆を伴うので high 以上を推奨。
+  effort: "high"
+  max_tokens: 32000
+  # 1 号あたりの Web 検索回数の上限。検索は 1000 回で $10 なので 12 回で約 $0.12。
+  max_web_searches: 12
+  # 検索ツールが 10 往復の上限に達したとき（stop_reason=pause_turn）に再開する最大回数
+  max_resumes: 4
+
+issue_types:
+  # 通常号。⑦ 家計金融資産・NISA・資金フローが主題。
+  weekly:
+    prompt: "prompts/weekly.md"
+    target_words: 700
+
+  # ④ 日銀ウォッチ。金融政策決定会合の直後に出す臨時号。
+  # 会合は年 8 回。日銀の公表スケジュールから毎年転記する。
+  #   https://www.boj.or.jp/mopo/mpmsche_minu/index.htm
+  # ここが空だと日銀号は発火せず、通常号だけが出続ける。
+  boj:
+    prompt: "prompts/boj.md"
+    target_words: 700
+    # 各会合の「最終日」を YYYY-MM-DD で並べる（会合は 2 日間開催で、
+    # 決定内容は最終日に公表される）。実行日がこの日〜2 日後なら日銀号になる。
+    # 2027 年末まで転記済み。2028 年分は年内に日銀が公表したら追記すること。
+    meeting_dates:
+      - "2026-01-23"
+      - "2026-03-19"
+      - "2026-04-28"
+      - "2026-06-16"
+      - "2026-07-31"
+      - "2026-09-18"
+      - "2026-10-30"
+      - "2026-12-18"
+      - "2027-01-22"
+      - "2027-03-18"
+      - "2027-04-28"
+      - "2027-06-11"
+      - "2027-07-22"
+      - "2027-09-22"
+      - "2027-10-29"
+      - "2027-12-17"
+    # 会合日から何日後までを日銀号の対象とするか。
+    # 会合は火・木・金に終わることが多く、定時実行は水曜なので、窓が短いと
+    # 水曜がどの窓にも入らず日銀号が発火しない（窓 2 日だと 16 回中 2 回しか
+    # 当たらない）。7 にすると会合の直後の水曜が必ず窓に入り、全会合を拾える。
+    # 「会合のあった週の号は日銀号になる」という運用になる。
+    trigger_window_days: 7
+
+  # ③ 春闘シリーズ。賃上げ交渉のシーズンだけ通常号を置き換える。
+  shunto:
+    prompt: "prompts/shunto.md"
+    target_words: 700
+    # MM-DD。この期間内は 2 回に 1 回を春闘号にする（通常号と交互）。
+    window_start: "01-15"
+    window_end: "04-10"
+    every_nth: 2
+
+dedup:
+  # 過去何号分のタイトルと扱ったトピックをプロンプトに渡して重複を防ぐか。
+  # ここを削ると 3 ヶ月目から同じ話の焼き直しが始まる。
+  lookback: 40
+  state_file: "state/topics.json"
+
+output:
+  dir: "state/issues"
