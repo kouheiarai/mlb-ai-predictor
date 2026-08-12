@@ -23,8 +23,10 @@ import unicodedata
 from pathlib import Path
 from typing import Any
 
-import anthropic
 import yaml
+
+# anthropic の import は call_claude() 内で行う。手動モード（--print-prompt / ingest.py）を
+# SDK 未インストールでも動かせるようにするため。
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -158,6 +160,8 @@ def build_prompts(
 
 def call_claude(cfg: dict[str, Any], system: str, user: str) -> tuple[str, dict[str, int]]:
     """Web 検索つきで 1 号ぶん書かせる。pause_turn とリフューザルを扱う。"""
+    import anthropic
+
     client = anthropic.Anthropic()
     model_cfg = cfg["model"]
 
@@ -238,8 +242,10 @@ def call_claude(cfg: dict[str, Any], system: str, user: str) -> tuple[str, dict[
     raise RuntimeError("unreachable")
 
 
-def _stream_once(client: anthropic.Anthropic, params: dict[str, Any], messages: list[Any]):
+def _stream_once(client: Any, params: dict[str, Any], messages: list[Any]):
     """SDK が fallbacks に未対応な場合はそれを外して再試行する（CI で古い SDK を踏んでも止めない）。"""
+    import anthropic
+
     try:
         with client.beta.messages.stream(**params, messages=messages) as stream:
             return stream.get_final_message()
@@ -354,6 +360,11 @@ def main() -> int:
     parser.add_argument("--type", choices=["weekly", "boj", "shunto"], help="号種を明示する")
     parser.add_argument("--date", help="実行日を YYYY-MM-DD で上書きする（テスト用）")
     parser.add_argument("--dry-run", action="store_true", help="生成するが保存も配信もしない")
+    parser.add_argument(
+        "--print-prompt",
+        action="store_true",
+        help="API を呼ばず、claude.ai に貼るためのプロンプトを出力する（無料の手動モード）",
+    )
     args = parser.parse_args()
 
     cfg = load_config(Path(args.config))
@@ -369,6 +380,27 @@ def main() -> int:
     print(f"[{today}] edition: {issue_type}")
 
     system, user = build_prompts(cfg, issue_type, today, extra)
+
+    if args.print_prompt:
+        # 手動モード。この出力をまるごと claude.ai に貼り、リサーチ（Web 検索）を有効にして送る。
+        # 返ってきた応答を丸ごと保存し、`python ingest.py <file>` に渡せば API 版と同じ成果物になる。
+        print("=" * 78, file=sys.stderr)
+        print(
+            f"以下を claude.ai に貼り付けてください（{issue_type} 号 / {today}）。\n"
+            "リサーチ機能（Web 検索）を必ず有効にすること。\n"
+            "返ってきた応答を丸ごとファイルに保存し、次を実行します:\n"
+            f"    python ingest.py response.txt --type {issue_type} --date {today}",
+            file=sys.stderr,
+        )
+        print("=" * 78, file=sys.stderr)
+        # プロンプト本体だけを標準出力に出すので、そのままファイルへリダイレクトできる
+        print(system)
+        print()
+        print("-" * 78)
+        print()
+        print(user)
+        return 0
+
     print("  researching and writing (this usually takes several minutes) …")
     raw, totals = call_claude(cfg, system, user)
     issue = parse_output(raw)

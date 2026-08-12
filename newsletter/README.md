@@ -18,7 +18,39 @@ Claude（`claude-opus-5`）に Web 検索させて一次情報を集めさせ、
 `boj` と `shunto` は単体では配信頻度が足りないが、`weekly` に束ねることで週次が埋まり、
 年 8 回と年 1 回の「目玉号」として機能する。号種は実行日から自動判定される。
 
-## セットアップ
+## 2つの動かし方
+
+| | 手動モード | API モード |
+|---|---|---|
+| 費用 | **無料** | 1 号 $0.30〜0.60（週1で月 $2〜3） |
+| 手間 | 毎週 5〜10 分の貼り付け作業 | ゼロ（GitHub Actions が自動実行） |
+| 必要なもの | ブラウザの Claude | Anthropic の API キー |
+
+**成果物はどちらも同じ**。重複防止の履歴も共通なので、手動で始めて後から API に切り替えても
+それまでの号はすべて引き継がれる。まず手動モードで品質を確かめ、続けられそうなら API に
+移行するのが安全。
+
+## 手動モード（無料）
+
+```bash
+cd newsletter
+pip install PyYAML          # anthropic SDK は不要
+python generate.py --print-prompt > prompt.txt
+```
+
+1. `prompt.txt` の中身をまるごと [claude.ai](https://claude.ai) に貼る
+2. **リサーチ（Web 検索）を有効にして**送る
+3. 返ってきた応答を**まるごと** `response.txt` に保存する（`===TITLE===` から最後まで）
+4. 取り込む:
+
+```bash
+python ingest.py response.txt
+```
+
+`--print-prompt` は号種と、そのまま実行できる `ingest.py` のコマンドを画面に表示する。
+日銀号や春闘号を試すときは `--type boj` などを両方のコマンドに付ける。
+
+## API モード（自動）
 
 ```bash
 cd newsletter
@@ -116,7 +148,8 @@ GitHub Actions は 1 回あたり数分〜十数分で、無料枠（月 2,000 �
 ```
 newsletter/
 ├── config.yaml            運用設定はすべてここ。コードは触らない
-├── generate.py            リサーチ → 執筆 → 保存 → 配信
+├── generate.py            リサーチ → 執筆 → 保存 → 配信（--print-prompt で手動モード）
+├── ingest.py              claude.ai の応答を取り込む（手動モード用）
 ├── beehiiv.py             Create Post API のクライアント
 ├── prompts/
 │   ├── house_style.md     編集方針・文体・正確性ルール・出力フォーマット（毎号共通）

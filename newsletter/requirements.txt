@@ -1,3 +1,8 @@
-anthropic>=0.116.0
+# 手動モード（generate.py --print-prompt / ingest.py）に必要なのは PyYAML だけ。
 PyYAML>=6.0
+
+# API モードで必要
+anthropic>=0.116.0
+
+# beehiiv へ自動投稿するとき（publish.mode が local 以外）に必要
 requests>=2.31.0
