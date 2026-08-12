@@ -308,11 +308,25 @@ def slugify(text: str, limit: int = 60) -> str:
     return (slug[:limit].rstrip("-") or "issue")
 
 
+def to_ascii_html(markup: str) -> str:
+    """非 ASCII 文字を数値文字参照に変換する。
+
+    ¥ や em dash（—）は UTF-8 では multi-byte になるため、Windows のメモ帳や Excel など
+    CP932 を既定とするアプリで開くと「ﾂ･」「窶」のように化ける。数値文字参照にしておけば
+    ファイルは純 ASCII になり、どのエンコーディングで開いても壊れず、ブラウザと beehiiv は
+    元の文字として描画する。
+    """
+    return markup.encode("ascii", "xmlcharrefreplace").decode("ascii")
+
+
 def write_issue(out_dir: Path, today: dt.date, issue_type: str, issue: dict[str, Any]) -> Path:
     out_dir.mkdir(parents=True, exist_ok=True)
     stem = f"{today.isoformat()}-{slugify(issue['title'])}"
 
-    (out_dir / f"{stem}.html").write_text(issue["body_html"] + "\n", encoding="utf-8")
+    # 貼り付け用。純 ASCII なので文字化けしない。
+    (out_dir / f"{stem}.html").write_text(
+        to_ascii_html(issue["body_html"]) + "\n", encoding="utf-8"
+    )
 
     # 日本語のレビュー用サマリーを先頭に置く。公開前に最初に読む場所であり、配信はされない。
     review = [
@@ -342,12 +356,14 @@ def write_issue(out_dir: Path, today: dt.date, issue_type: str, issue: dict[str,
         "## 本文（この HTML を beehiiv に貼る）",
         "",
         "```html",
-        issue["body_html"],
+        to_ascii_html(issue["body_html"]),
         "```",
         "",
     ]
     review_path = out_dir / f"{stem}.md"
-    review_path.write_text("\n".join(review), encoding="utf-8")
+    # BOM 付きで書く。日本語のレビュー欄を含むので純 ASCII にはできないが、BOM があれば
+    # Windows のメモ帳や Excel が UTF-8 と判定するため、CP932 として読まれて化けるのを防げる。
+    review_path.write_text("\n".join(review), encoding="utf-8-sig")
     return review_path
 
 
