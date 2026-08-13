@@ -58,7 +58,15 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update MLB predictions"
+            # クレジット枯渇でオッズを取得できなかった実行でも、publish.py が
+            # 「何時間前のデータか」を書き直すので差分は出る。data/ が動いた
+            # ときだけ予測の更新と呼ぶ。
+            if git diff --cached --quiet -- data/; then
+              message="Refresh data age notice"
+            else
+              message="Update MLB predictions"
+            fi
+            git commit -m "$message"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
