@@ -145,7 +145,7 @@ Apply this concretely:
   and mostly into another safe asset down the hall" is a bolded opener. "Deposit outflow analysis"
   is a label. The skimmable layer is still writing; telegraphic fragments make the whole page feel
   automated.
-- **Cap the body at about 700 words.** Under is fine. If the material genuinely needs more, cut a
+- **Cap the body at about 1,000 words.** Under is fine. If the material genuinely needs more, cut a
   section instead — one subject covered properly beats two covered thinly.
 
 Being scannable is not the same as being shallow, and it is not the same as being impersonal. The
