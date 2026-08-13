@@ -36,7 +36,9 @@ PRICE_OUTPUT_PER_MTOK = 25.00
 PRICE_PER_WEB_SEARCH = 0.01  # 1000 回で $10
 
 # 本文が長い HTML になるため、JSON ではなくマーカー区切りで受け取る（エスケープ事故を避ける）
-SECTION_MARKERS = ("TITLE", "SUBTITLE", "TOPICS", "SOURCES", "REVIEW_JA", "BODY_HTML")
+SECTION_MARKERS = (
+    "TITLE", "SUBTITLE", "TOPICS", "SUBJECT_LINES", "SOURCES", "REVIEW_JA", "BODY_HTML",
+)
 
 
 # --------------------------------------------------------------------------- config
@@ -296,6 +298,7 @@ def parse_output(raw: str) -> dict[str, Any]:
         "title": sections["TITLE"].strip().strip("#").strip(),
         "subtitle": sections["SUBTITLE"].strip(),
         "topics": bullets(sections["TOPICS"]),
+        "subject_lines": bullets(sections["SUBJECT_LINES"]),
         "sources": bullets(sections["SOURCES"]),
         "review_ja": sections["REVIEW_JA"].strip(),
         "body_html": body,
@@ -342,6 +345,14 @@ def write_issue(out_dir: Path, today: dt.date, issue_type: str, issue: dict[str,
         "## レビュー用サマリー（日本語・配信されません）",
         "",
         issue["review_ja"],
+        "",
+        "---",
+        "",
+        "## 件名の候補（beehiiv の Subject line に入れる）",
+        "",
+        "スマホの受信箱では先頭 40 文字ほどしか見えない。前半だけで意味が通るものを選ぶ。",
+        "",
+        *[f"{i}. {line}  （{len(line)} 文字）" for i, line in enumerate(issue["subject_lines"], 1)],
         "",
         "---",
         "",

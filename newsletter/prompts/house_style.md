@@ -156,6 +156,24 @@ before the first marker and nothing after the last block. Do not wrap the output
 (3 to 6 lines, each starting with "- ", naming a specific topic covered in this issue. These are
 fed to future issues so you can avoid repeating yourself. Be specific: "BOJ July statement
 core-inflation wording change", not "monetary policy".)
+===SUBJECT_LINES===
+(exactly 10 lines, each starting with "- ". Candidate email subject lines, which are a different
+job from the headline: the headline sits on the page with the subtitle beside it, while the subject
+line has to earn the open on its own, in a crowded phone inbox, before anyone has seen a word of
+the issue.
+
+Write each one to survive truncation — mobile inboxes show roughly the first 40 characters, so the
+first half must carry a complete, intriguing thought on its own. Keep every candidate under 60
+characters.
+
+Give a spread of approaches so there is a real choice, roughly: three that ask a question, three
+built on a specific number from the issue, three that state something counterintuitive, and one
+plain and factual.
+
+The accuracy and no-hype rules apply here with no exceptions. A subject line that overstates what
+the issue delivers is the fastest way to lose a reader permanently — it wins one open and costs
+every future one. No "shocking", no "you won't believe", no manufactured urgency, no promise the
+body does not keep.)
 ===SOURCES===
 (one line per source you actually used, formatted as "- Publisher — title — URL")
 ===REVIEW_JA===
