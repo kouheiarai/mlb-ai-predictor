@@ -10,9 +10,15 @@ on:
         options: ["", "weekly", "boj", "shunto"]
         default: ""
   schedule:
-    # 毎週水曜 08:00 JST = 火曜 23:00 UTC。
-    # 火曜の米国市場が引けたあとで、日本の水曜午前に届く時間帯を狙っている。
-    - cron: "0 23 * * 2"
+    # 毎週水曜 10:00 JST = 水曜 01:00 UTC。
+    #
+    # 日本の統計はほぼ全部が朝に出る。総務省の消費者物価などは 8:30、
+    # 日銀の統計と「主な意見」「議事要旨」は 8:50。以前は 08:00 JST に
+    # 動かしていたが、それだと同じ水曜の朝に出た数字を 30〜50 分の差で
+    # 取りこぼし、前の期の数字で書くことになる。10:00 なら確実に後ろ。
+    #   消費者物価の公表時刻: https://www.stat.go.jp/data/cpi/gaiyou.html
+    #   日銀の公表時刻      : https://www.boj.or.jp/statistics/outline/index.htm
+    - cron: "0 1 * * 3"
 
 permissions:
   contents: write
