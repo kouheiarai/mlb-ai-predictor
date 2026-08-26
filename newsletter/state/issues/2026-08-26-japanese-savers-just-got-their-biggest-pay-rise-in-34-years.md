@@ -93,13 +93,13 @@
 
 <p>Those two numbers belong side by side, and almost nobody puts them there.</p>
 
-<table>
-  <tr><th></th><th>Rate</th></tr>
-  <tr><td>Megabank ordinary deposit, from 3 August</td><td>0.4%</td></tr>
-  <tr><td>CPI, all items, July, year on year</td><td>1.9%</td></tr>
-  <tr><td>CPI ex fresh food</td><td>1.8%</td></tr>
-  <tr><td>CPI ex fresh food and energy</td><td>1.9%</td></tr>
-  <tr><td><strong>Real return on the ordinary account</strong></td><td><strong>about &minus;1.5%</strong></td></tr>
+<table style="width:100%;border-collapse:collapse;margin:28px 0;">
+  <tr><th style="text-align:left;padding:10px 12px;border-bottom:2px solid #9aa0a6;font-weight:600;"></th><th style="text-align:right;padding:10px 12px;border-bottom:2px solid #9aa0a6;font-weight:600;">Rate</th></tr>
+  <tr><td style="padding:10px 12px;border-bottom:1px solid #d9dcdf;">Megabank ordinary deposit, from 3 August</td><td style="text-align:right;padding:10px 12px;border-bottom:1px solid #d9dcdf;">0.4%</td></tr>
+  <tr><td style="padding:10px 12px;border-bottom:1px solid #d9dcdf;">CPI, all items, July, year on year</td><td style="text-align:right;padding:10px 12px;border-bottom:1px solid #d9dcdf;">1.9%</td></tr>
+  <tr><td style="padding:10px 12px;border-bottom:1px solid #d9dcdf;">CPI ex fresh food</td><td style="text-align:right;padding:10px 12px;border-bottom:1px solid #d9dcdf;">1.8%</td></tr>
+  <tr><td style="padding:10px 12px;border-bottom:1px solid #d9dcdf;">CPI ex fresh food and energy</td><td style="text-align:right;padding:10px 12px;border-bottom:1px solid #d9dcdf;">1.9%</td></tr>
+  <tr><td style="padding:10px 12px;border-top:2px solid #9aa0a6;"><strong>Real return on the ordinary account</strong></td><td style="text-align:right;padding:10px 12px;border-top:2px solid #9aa0a6;"><strong>about &minus;1.5%</strong></td></tr>
 </table>
 
 <p>Put &yen;1,000,000 in a megabank ordinary account and leave it there for a year. You earn &yen;4,000 before tax. At 1.9% inflation, the same &yen;1,000,000 buys about &yen;19,000 less than it did. You are down roughly &yen;15,000, and you were paid to be there.</p>
