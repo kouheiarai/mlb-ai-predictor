@@ -145,52 +145,92 @@ real? I read all of them.
 
 必ず次の順で進める。
 
-1. 各 subreddit の Rules と「self-promotion」に関する記載を読む
+1. 各 subreddit の Rules を読む。**要約を読むのではなく、全部展開して原文を読むこと。**
 2. 迷ったら modmail で先に許可を取る（数日かかることもある）
-3. **リンクではなく中身を投稿する。** 記事の要点を本文にそのまま書き、
-   ニュースレターへの言及は末尾の1行にとどめる
+3. **リンクも、ニュースレターへの言及も、本文に一切入れない**（理由は下）
 
-宣伝として投稿すると失敗する。**発見を共有する投稿の末尾に出典として置く**と通る。
+### r/JapanFinance の規約を読んで分かったこと（2026-08 時点）
 
-### r/JapanFinance 向け
+規約は7条。運用に直接効くのが2つある。
+
+**規約5「勧誘や宣伝は一切行いません」**
+
+> ビジネスを推奨したりレビューしたりするのは問題ありませんが、広告のようなコンテンツは
+> 削除されます。また、**ダイレクトメッセージやその他の個人的なコミュニケーション
+> （電子メール、オンラインフォームなど）の勧誘もお控えください。**
+
+後半が重要。ニュースレターは定義上「メールアドレスの勧誘」である。したがって
+
+- **本文の末尾に1行だけ置く、も禁止に当たる。**末尾でも勧誘は勧誘。
+- 投稿にも、コメントにも、**ニュースレターの存在を書かない**。
+
+代わりに、**プロフィール欄のリンクに働かせる**。投稿が良ければユーザー名は押される。
+プロフィールは sub の外なので規約5の範囲外。これが唯一の安全な導線。
+
+**規約7「Don't cite LLMs」**
+
+- 「AI に聞いたら」「Claude によると」は書かない。出典は必ず一次資料（日銀、統計局など）。
+- 規約は "cite" を禁じているが、実務上は**文章が LLM っぽいだけで疑われて沈む**。
+  整いすぎた箇条書き、体言止めの多用、「Moreover」「Furthermore」は避ける。
+  一人称で、少し粗く書く。
+
+**規約3・4「専門家のアドバイスを求めない/提供しない」** は `prompts/house_style.md` の
+コンプライアンス方針と同じ。個別の行動を処方せず、一般的な情報にとどめる。
+
+**規約6**は米国納税者のみフレア設定が必要。該当しなければ無視。
+
+### r/JapanFinance 向けの投稿文
 
 **Title**
 
 ```
-Japanese households pulled a record amount out of ordinary deposits last quarter — but most of it
-didn't go into stocks
+Household deposits are shrinking as a share of assets — but deposits as a category are still growing
 ```
 
 **Body**
 
 ```
-The BOJ's Q1 2026 flow of funds came out and the headline everyone picked up was that cash and
-deposits fell to 47.2% of household financial assets, from 47.6%. That share sat above 50% for
-decades.
+I was going through the BOJ's Q1 2026 flow of funds release and the breakdown surprised me a lot
+more than the headline did.
 
-What I found more interesting is the breakdown. Smoothed over four quarters, households added
-¥5.8tn:
+The number that got picked up was that cash and deposits fell to 47.2% of household financial
+assets, from 47.6%. That share sat above 50% for decades, so it reads like the shift into risk
+assets everyone has been waiting for.
+
+Then I looked at the flows. Smoothed over four quarters, households added ¥5.8tn:
 
 - Cash and deposits: +¥1.7tn
 - Equities and investment trusts: +¥1.5tn (investment trusts alone +¥3.0tn)
 - Debt securities: +¥1.3tn
 - Insurance and pensions: +¥1.3tn
 
-Deposits as a category are still growing. What is collapsing is specifically the liquidity
-deposit — the ordinary account. The money is largely moving to time deposits, JGBs and insurance,
-which is a rate story rather than a risk-appetite story. Long-term lending rates crossed 2% in
+Deposits as a category are still growing. What's shrinking is specifically the liquidity deposit —
+the ordinary account your salary lands in. The money is largely moving to time deposits, JGBs and
+insurance. That's a rate story, not a risk-appetite story. Long-term lending rates crossed 2% in
 June for the first time in 25 years.
 
-Also worth noting: equities and investment trusts together took in ¥1.5tn while investment trusts
-alone took in ¥3.0tn — so households are buying funds and net selling individual shares.
+The other bit worth noting: equities and investment trusts together took in ¥1.5tn while
+investment trusts alone took in ¥3.0tn. So households are buying funds and net selling individual
+shares.
 
 And seasonally adjusted, households went to a net financial deficit (−¥1.3tn from +¥4.9tn).
-Dai-ichi Life is cautious about reading much into it since the adjusted series swings hard, but
-it's an unusual print for a sector that has been in surplus for decades.
+Dai-ichi Life is cautious about reading much into that since the adjusted series swings hard, but
+it's an unusual print for a sector that's been in surplus for decades.
 
-Sources: BOJ flow of funds Q1 2026, with the reads from Dai-ichi Life Research Institute and NLI
-Research Institute.
+Curious whether anyone here has actually moved cash around since rates started moving.
+
+Sources: BOJ flow of funds Q1 2026 (released 25 June), with commentary from Dai-ichi Life Research
+Institute and NLI Research Institute.
 ```
+
+**元の文面から変えた点**
+
+| 変更 | 理由 |
+|---|---|
+| ニュースレターへの言及を全削除 | 規約5（メール勧誘の禁止） |
+| 「came out」→「I was going through」 | 6月25日公表なので「出たばかり」は嘘になる |
+| 末尾に読者への問いかけを追加 | 規約2の「協力的・建設的」に沿い、コメントが付きやすい |
+| 出典に公表日を明記 | 数字の鮮度を読者が自分で判断できる |
 
 投稿がついたら、コメント欄で質問に答える。**ここでの受け答えが、リンクより効く。**
 

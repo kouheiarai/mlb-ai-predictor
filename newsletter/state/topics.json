@@ -25,6 +25,52 @@
       "source": "manual",
       "url": "https://kouheis-newsletter.beehiiv.com/p/japan-s-savers-are-finally-leaving-the-bank-most-only-walked-next-door",
       "published_at": "2026-08-12"
+    },
+    {
+      "date": "2026-08-19",
+      "type": "weekly",
+      "title": "Japan beat its NISA money target two years early — and is still 5.8m people short",
+      "subtitle": "The fix it chose says more than the miss does: from January, the tax-free wrapper opens to bond funds and to children.",
+      "topics": [
+        "NISA accounts at 28.21m against the 34m end-2027 government target",
+        "Cumulative NISA purchases at ¥71tn, already ¥15tn past the ¥56tn end-2027 target",
+        "Average cumulative purchase per NISA account rising from ¥1.65m to ¥2.52m",
+        "Kodomo NISA from January 2027: ages 0-17, ¥600k a year, ¥6m cap, tsumitate frame only",
+        "Why kodomo NISA is built differently from the discontinued Junior NISA",
+        "Tsumitate eligibility rule changing from equities over 50% to equities and bonds over 50%",
+        "Yomiuri 333 and JPX Prime 150 added to the designated index list"
+      ],
+      "sources": [
+        "Financial Services Agency — NISA口座の利用状況（令和7年12月末時点） — https://www.fsa.go.jp/policy/nisa/20260703/2512nisa-graph.pdf",
+        "Financial Services Agency — NISA口座の利用状況に関する調査結果（令和7年12月末時点）の公表について — https://www.fsa.go.jp/policy/nisa/20260703.html",
+        "Financial Services Agency — 「令和8年度税制改正の大綱」の概要（アクセスFSA 2026年2月号） — https://www.fsa.go.jp/access/r7/270/270_03.pdf",
+        "Financial Services Agency — 令和8年度税制改正大綱における金融庁関係の主要項目について — https://www.fsa.go.jp/news/r7/sonota/20251226-2.html",
+        "税理士法人山田&パートナーズ — 2026年（令和8年）度税制改正法、3月31日に成立 — https://www.yamada-partners.jp/tax-topics/r080406"
+      ],
+      "source": "manual"
+    },
+    {
+      "date": "2026-08-26",
+      "type": "weekly",
+      "title": "Japanese savers just got their biggest pay rise in 34 years. They are still losing money.",
+      "subtitle": "The megabank ordinary account now pays 0.4%. July inflation ran at 1.9%. The gap is the whole story.",
+      "topics": [
+        "Megabank ordinary deposit rate rising to 0.4% from 3 August 2026, a 34-year high",
+        "BOJ setting the overnight call rate at around 1.0% on 16 June 2026 on a 7-1 vote",
+        "July 2026 national CPI at +1.9% headline, +1.8% core, +1.9% core-core on the new 2025 base",
+        "The negative real return on ordinary deposits even after the rate rise",
+        "Worked example of what a 1 million yen ordinary account gains and loses in a year",
+        "Widening dispersion between megabank and online-bank deposit rates",
+        "The CPI rebasing from 2020 to 2025"
+      ],
+      "sources": [
+        "Bank of Japan — 金融市場調節方針の変更について（2026年6月16日） — https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260616a.pdf",
+        "総務省統計局 — 2025年基準 消費者物価指数 全国 2026年7月分 — https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/zenkoku.pdf",
+        "総務省 — 2025年基準 消費者物価指数 全国 2026年(令和8年)7月分（報道資料） — https://www.soumu.go.jp/menu_news/s-news/01toukei08_01000349.html",
+        "時事通信 — 普通預金金利、34年ぶり高水準 3メガ銀、日銀利上げで0.4%に — https://www.jiji.com/jc/article?k=2026061601202&g=eco",
+        "Bank of Japan — Flow of Funds (1st Quarter of 2026), Reference Charts — https://www.boj.or.jp/en/statistics/sj/sjexp.pdf"
+      ],
+      "source": "manual"
     }
   ]
 }
