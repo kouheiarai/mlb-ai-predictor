@@ -71,6 +71,30 @@
         "Bank of Japan — Flow of Funds (1st Quarter of 2026), Reference Charts — https://www.boj.or.jp/en/statistics/sj/sjexp.pdf"
       ],
       "source": "manual"
+    },
+    {
+      "date": "2026-09-02",
+      "type": "weekly",
+      "title": "Japan's 10-year hit 3%. Households are being offered 1.87%.",
+      "subtitle": "The retail government bond pays two-thirds of the market rate — a haircut designed for a world where rates were zero.",
+      "topics": [
+        "10-year JGB yield reaching 3% on 1 September 2026, the first time since 1996",
+        "The 0.66 multiplier that sets the variable-10 retail JGB rate from the base rate",
+        "September 2026 retail JGB rates: 1.87% variable-10, 2.06% fixed-5, 1.71% fixed-3",
+        "The fixed-5 retail bond crossing into positive real return against July CPI",
+        "Retail JGB rates for the September issue being fixed during August, before the 3% print",
+        "The roughly 1.7 point gap between the retail government bond and the megabank ordinary deposit",
+        "Why the retail JGB formula was calibrated for a zero-rate world"
+      ],
+      "sources": [
+        "Bloomberg — Japan's 10-Year Bond Yield Hits 3% for First Time Since 1996 — https://www.bloomberg.com/news/articles/2026-09-01/japan-s-10-year-bond-yield-hits-3-for-first-time-since-1996-mti4e8ui",
+        "Euronews — Japan's 10-year yield hits 3%, a first since 1996 as rate hikes dominate the G20 — https://www.euronews.com/business/2026/09/01/japans-10-year-yield-hits-3-a-first-since-1996-as-rate-hikes-dominate-the-g20",
+        "野村総合研究所 木内登英 — 10年国債利回りが3％の大台乗せも3％は通過点か — https://www.nri.com/jp/media/column/kiuchi/20260901_2.html",
+        "money-pro.net — 【2026年8月版】個人向け国債の最新金利 — https://money-pro.net/assetmanagement/202608kokusai/",
+        "財務省 — 個人向け国債 — https://www.mof.go.jp/jgbs/individual/kojinmuke/main/index.html",
+        "総務省統計局 — 2025年基準 消費者物価指数 全国 2026年7月分 — https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/zenkoku.pdf"
+      ],
+      "source": "manual"
     }
   ]
 }
