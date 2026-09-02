@@ -243,6 +243,30 @@ beehiiv renders this directly, so keep it simple and portable:
 
 - Use only `<p>`, `<h2>`, `<h3>`, `<strong>`, `<em>`, `<ul>`, `<ol>`, `<li>`, `<a>`, `<blockquote>`,
   `<table>`, `<tr>`, `<th>`, `<td>`, and `<hr>`.
-- No `<style>` blocks, no `class` or `id` attributes, no inline CSS, no `<script>`, no `<img>`.
+- No `<style>` blocks, no `class` or `id` attributes, no `<script>`, no `<img>`.
+- **Tables are the one exception, and they need inline `style` attributes.** Mail clients strip
+  `<style>` blocks and ignore class selectors, so an unstyled `<table>` falls back to the client's
+  default: no borders, no padding, columns jammed together. A table is usually the most quoted
+  thing in an issue, so it cannot be the ugliest. Copy this shape exactly:
+
+  ```html
+  <table style="width:100%;border-collapse:collapse;margin:28px 0;">
+    <tr>
+      <th style="text-align:left;padding:10px 12px;border-bottom:2px solid #9aa0a6;font-weight:600;">Destination</th>
+      <th style="text-align:right;padding:10px 12px;border-bottom:2px solid #9aa0a6;font-weight:600;">Flow</th>
+    </tr>
+    <tr>
+      <td style="padding:10px 12px;border-bottom:1px solid #d9dcdf;">Cash and deposits</td>
+      <td style="text-align:right;padding:10px 12px;border-bottom:1px solid #d9dcdf;">+&yen;1.7tn</td>
+    </tr>
+  </table>
+  ```
+
+  Rules for the styling itself: set **borders, padding and alignment only**. Never set a text
+  colour or a background colour — a reader in dark mode gets your dark text on their dark
+  background and the row disappears. Leaving colour unset means the client's own theme applies and
+  the table stays readable either way. Right-align every column that holds a number, left-align
+  every column that holds a label; numbers that share a column must line up or the comparison the
+  table exists to make is harder to see, not easier.
 - Link every claim that has a source: `<a href="...">the FSA's tally</a>`.
 - Do not include the headline as an `<h1>` in the body — beehiiv adds the title itself.
