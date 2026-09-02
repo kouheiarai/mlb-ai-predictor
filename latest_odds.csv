@@ -1,91 +1,57 @@
 ﻿event_id,commence_time_utc,away_team,home_team,bookmaker,bookmaker_last_update,market,selection,point,decimal_odds,american_odds,implied_probability
-764521fed86b5329011236a43540951b,2026-09-01T22:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-01T22:09:36Z,h2h,Cincinnati Reds,,2.19,+119,0.456621
-764521fed86b5329011236a43540951b,2026-09-01T22:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-01T22:09:36Z,h2h,San Diego Padres,,1.78,-128,0.561798
-764521fed86b5329011236a43540951b,2026-09-01T22:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-01T22:09:36Z,spreads,Cincinnati Reds,1.5,1.75,-133,0.571429
-764521fed86b5329011236a43540951b,2026-09-01T22:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-01T22:09:36Z,spreads,San Diego Padres,-1.5,2.2,+120,0.454545
-764521fed86b5329011236a43540951b,2026-09-01T22:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-01T22:09:36Z,totals,Over,9.0,1.87,-115,0.534759
-764521fed86b5329011236a43540951b,2026-09-01T22:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-01T22:09:36Z,totals,Under,9.0,2.02,+102,0.49505
-81a434657f4b4211068ffd662aa0e939,2026-09-01T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-01T22:09:36Z,h2h,Cleveland Guardians,,1.59,-169,0.628931
-81a434657f4b4211068ffd662aa0e939,2026-09-01T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-01T22:09:36Z,h2h,Toronto Blue Jays,,2.56,+156,0.390625
-81a434657f4b4211068ffd662aa0e939,2026-09-01T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-01T22:09:36Z,spreads,Cleveland Guardians,-1.5,2.26,+126,0.442478
-81a434657f4b4211068ffd662aa0e939,2026-09-01T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-01T22:09:36Z,spreads,Toronto Blue Jays,1.5,1.71,-141,0.584795
-81a434657f4b4211068ffd662aa0e939,2026-09-01T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-01T22:09:36Z,totals,Over,8.0,1.98,-102,0.505051
-81a434657f4b4211068ffd662aa0e939,2026-09-01T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-01T22:09:36Z,totals,Under,8.0,1.91,-110,0.52356
-59757c299ffa7405f5f856a6f1b86c6f,2026-09-01T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-01T22:09:36Z,h2h,New York Mets,,2.19,+119,0.456621
-59757c299ffa7405f5f856a6f1b86c6f,2026-09-01T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-01T22:09:36Z,h2h,Tampa Bay Rays,,1.78,-128,0.561798
-59757c299ffa7405f5f856a6f1b86c6f,2026-09-01T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-01T22:09:36Z,spreads,New York Mets,1.5,1.55,-182,0.645161
-59757c299ffa7405f5f856a6f1b86c6f,2026-09-01T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-01T22:09:36Z,spreads,Tampa Bay Rays,-1.5,2.61,+161,0.383142
-59757c299ffa7405f5f856a6f1b86c6f,2026-09-01T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-01T22:09:36Z,totals,Over,8.0,1.98,-102,0.505051
-59757c299ffa7405f5f856a6f1b86c6f,2026-09-01T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-01T22:09:36Z,totals,Under,8.0,1.91,-110,0.52356
-0d8e1807210d19a49240ad01d066fb7f,2026-09-01T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-01T22:09:36Z,h2h,Pittsburgh Pirates,,1.62,-161,0.617284
-0d8e1807210d19a49240ad01d066fb7f,2026-09-01T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-01T22:09:36Z,h2h,San Francisco Giants,,2.48,+148,0.403226
-0d8e1807210d19a49240ad01d066fb7f,2026-09-01T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-01T22:09:36Z,spreads,Pittsburgh Pirates,-1.5,2.33,+133,0.429185
-0d8e1807210d19a49240ad01d066fb7f,2026-09-01T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-01T22:09:36Z,spreads,San Francisco Giants,1.5,1.68,-147,0.595238
-0d8e1807210d19a49240ad01d066fb7f,2026-09-01T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-01T22:09:36Z,totals,Over,7.5,1.94,-106,0.515464
-0d8e1807210d19a49240ad01d066fb7f,2026-09-01T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-01T22:09:36Z,totals,Under,7.5,1.94,-106,0.515464
-cc8fcec1e4ece9bdd8fbe14c96ef1f5e,2026-09-01T22:46:00Z,Atlanta Braves,Washington Nationals,pinnacle,2026-09-01T22:09:36Z,h2h,Atlanta Braves,,1.7,-143,0.588235
-cc8fcec1e4ece9bdd8fbe14c96ef1f5e,2026-09-01T22:46:00Z,Atlanta Braves,Washington Nationals,pinnacle,2026-09-01T22:09:36Z,h2h,Washington Nationals,,2.31,+131,0.4329
-cc8fcec1e4ece9bdd8fbe14c96ef1f5e,2026-09-01T22:46:00Z,Atlanta Braves,Washington Nationals,pinnacle,2026-09-01T22:09:36Z,spreads,Atlanta Braves,-1.5,2.08,+108,0.480769
-cc8fcec1e4ece9bdd8fbe14c96ef1f5e,2026-09-01T22:46:00Z,Atlanta Braves,Washington Nationals,pinnacle,2026-09-01T22:09:36Z,spreads,Washington Nationals,1.5,1.84,-119,0.543478
-cc8fcec1e4ece9bdd8fbe14c96ef1f5e,2026-09-01T22:46:00Z,Atlanta Braves,Washington Nationals,pinnacle,2026-09-01T22:09:36Z,totals,Over,10.0,2.0,+100,0.5
-cc8fcec1e4ece9bdd8fbe14c96ef1f5e,2026-09-01T22:46:00Z,Atlanta Braves,Washington Nationals,pinnacle,2026-09-01T22:09:36Z,totals,Under,10.0,1.89,-112,0.529101
-16c1ff66c09048a0d06a0b9a90a78d7d,2026-09-01T22:46:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-01T22:09:36Z,h2h,Boston Red Sox,,1.88,-114,0.531915
-16c1ff66c09048a0d06a0b9a90a78d7d,2026-09-01T22:46:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-01T22:09:36Z,h2h,Seattle Mariners,,2.06,+106,0.485437
-16c1ff66c09048a0d06a0b9a90a78d7d,2026-09-01T22:46:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-01T22:09:36Z,spreads,Boston Red Sox,-1.5,2.84,+184,0.352113
-16c1ff66c09048a0d06a0b9a90a78d7d,2026-09-01T22:46:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-01T22:09:36Z,spreads,Seattle Mariners,1.5,1.48,-208,0.675676
-16c1ff66c09048a0d06a0b9a90a78d7d,2026-09-01T22:46:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-01T22:09:36Z,totals,Over,7.0,1.82,-122,0.549451
-16c1ff66c09048a0d06a0b9a90a78d7d,2026-09-01T22:46:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-01T22:09:36Z,totals,Under,7.0,2.09,+109,0.478469
-6bd83b91a8bb56ff6403609a135f92ba,2026-09-01T23:41:00Z,Milwaukee Brewers,Chicago Cubs,pinnacle,2026-09-01T22:09:36Z,h2h,Chicago Cubs,,1.84,-119,0.543478
-6bd83b91a8bb56ff6403609a135f92ba,2026-09-01T23:41:00Z,Milwaukee Brewers,Chicago Cubs,pinnacle,2026-09-01T22:09:36Z,h2h,Milwaukee Brewers,,2.1,+110,0.47619
-6bd83b91a8bb56ff6403609a135f92ba,2026-09-01T23:41:00Z,Milwaukee Brewers,Chicago Cubs,pinnacle,2026-09-01T22:09:36Z,spreads,Chicago Cubs,-1.5,2.62,+162,0.381679
-6bd83b91a8bb56ff6403609a135f92ba,2026-09-01T23:41:00Z,Milwaukee Brewers,Chicago Cubs,pinnacle,2026-09-01T22:09:36Z,spreads,Milwaukee Brewers,1.5,1.55,-182,0.645161
-6bd83b91a8bb56ff6403609a135f92ba,2026-09-01T23:41:00Z,Milwaukee Brewers,Chicago Cubs,pinnacle,2026-09-01T22:09:36Z,totals,Over,10.0,1.96,-104,0.510204
-6bd83b91a8bb56ff6403609a135f92ba,2026-09-01T23:41:00Z,Milwaukee Brewers,Chicago Cubs,pinnacle,2026-09-01T22:09:36Z,totals,Under,10.0,1.93,-108,0.518135
-ba3a4cc7ae5fe8f253de4da50e16ef96,2026-09-01T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-01T22:09:36Z,h2h,Detroit Tigers,,2.01,+101,0.497512
-ba3a4cc7ae5fe8f253de4da50e16ef96,2026-09-01T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-01T22:09:36Z,h2h,Minnesota Twins,,1.92,-109,0.520833
-ba3a4cc7ae5fe8f253de4da50e16ef96,2026-09-01T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-01T22:09:36Z,spreads,Detroit Tigers,-1.5,2.62,+162,0.381679
-ba3a4cc7ae5fe8f253de4da50e16ef96,2026-09-01T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-01T22:09:36Z,spreads,Minnesota Twins,1.5,1.55,-182,0.645161
-ba3a4cc7ae5fe8f253de4da50e16ef96,2026-09-01T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-01T22:09:36Z,totals,Over,8.5,1.93,-108,0.518135
-ba3a4cc7ae5fe8f253de4da50e16ef96,2026-09-01T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-01T22:09:36Z,totals,Under,8.5,1.96,-104,0.510204
-2c2bb6cbfb44dc9988fabb21c5bf5cff,2026-09-01T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-01T22:09:36Z,h2h,Kansas City Royals,,1.91,-110,0.52356
-2c2bb6cbfb44dc9988fabb21c5bf5cff,2026-09-01T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-01T22:09:36Z,h2h,Miami Marlins,,2.02,+102,0.49505
-2c2bb6cbfb44dc9988fabb21c5bf5cff,2026-09-01T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-01T22:09:36Z,spreads,Kansas City Royals,-1.5,2.74,+174,0.364964
-2c2bb6cbfb44dc9988fabb21c5bf5cff,2026-09-01T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-01T22:09:36Z,spreads,Miami Marlins,1.5,1.51,-196,0.662252
-2c2bb6cbfb44dc9988fabb21c5bf5cff,2026-09-01T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-01T22:09:36Z,totals,Over,10.0,1.99,-101,0.502513
-2c2bb6cbfb44dc9988fabb21c5bf5cff,2026-09-01T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-01T22:09:36Z,totals,Under,10.0,1.9,-111,0.526316
-c2d8843514360ba23db4493a00f3a91d,2026-09-02T00:06:00Z,Athletics,Texas Rangers,pinnacle,2026-09-01T22:09:36Z,h2h,Athletics,,2.94,+194,0.340136
-c2d8843514360ba23db4493a00f3a91d,2026-09-02T00:06:00Z,Athletics,Texas Rangers,pinnacle,2026-09-01T22:09:36Z,h2h,Texas Rangers,,1.47,-213,0.680272
-c2d8843514360ba23db4493a00f3a91d,2026-09-02T00:06:00Z,Athletics,Texas Rangers,pinnacle,2026-09-01T22:09:36Z,spreads,Athletics,1.5,1.88,-114,0.531915
-c2d8843514360ba23db4493a00f3a91d,2026-09-02T00:06:00Z,Athletics,Texas Rangers,pinnacle,2026-09-01T22:09:36Z,spreads,Texas Rangers,-1.5,2.03,+103,0.492611
-c2d8843514360ba23db4493a00f3a91d,2026-09-02T00:06:00Z,Athletics,Texas Rangers,pinnacle,2026-09-01T22:09:36Z,totals,Over,7.5,1.97,-103,0.507614
-c2d8843514360ba23db4493a00f3a91d,2026-09-02T00:06:00Z,Athletics,Texas Rangers,pinnacle,2026-09-01T22:09:36Z,totals,Under,7.5,1.92,-109,0.520833
-2a66ecfafefe10812f1ef722c242a75f,2026-09-02T00:11:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-01T22:09:36Z,h2h,Chicago White Sox,,1.94,-106,0.515464
-2a66ecfafefe10812f1ef722c242a75f,2026-09-02T00:11:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-01T22:09:36Z,h2h,Houston Astros,,1.98,-102,0.505051
-2a66ecfafefe10812f1ef722c242a75f,2026-09-02T00:11:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-01T22:09:36Z,spreads,Chicago White Sox,1.5,1.44,-227,0.694444
-2a66ecfafefe10812f1ef722c242a75f,2026-09-02T00:11:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-01T22:09:36Z,spreads,Houston Astros,-1.5,3.01,+201,0.332226
-2a66ecfafefe10812f1ef722c242a75f,2026-09-02T00:11:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-01T22:09:36Z,totals,Over,8.5,1.91,-110,0.52356
-2a66ecfafefe10812f1ef722c242a75f,2026-09-02T00:11:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-01T22:09:36Z,totals,Under,8.5,1.98,-102,0.505051
-2d4b3b0bb026c73aa884eb3633604ded,2026-09-02T00:41:00Z,Baltimore Orioles,Colorado Rockies,pinnacle,2026-09-01T22:09:36Z,h2h,Baltimore Orioles,,1.71,-141,0.584795
-2d4b3b0bb026c73aa884eb3633604ded,2026-09-02T00:41:00Z,Baltimore Orioles,Colorado Rockies,pinnacle,2026-09-01T22:09:36Z,h2h,Colorado Rockies,,2.29,+129,0.436681
-2d4b3b0bb026c73aa884eb3633604ded,2026-09-02T00:41:00Z,Baltimore Orioles,Colorado Rockies,pinnacle,2026-09-01T22:09:36Z,spreads,Baltimore Orioles,-1.5,2.08,+108,0.480769
-2d4b3b0bb026c73aa884eb3633604ded,2026-09-02T00:41:00Z,Baltimore Orioles,Colorado Rockies,pinnacle,2026-09-01T22:09:36Z,spreads,Colorado Rockies,1.5,1.84,-119,0.543478
-2d4b3b0bb026c73aa884eb3633604ded,2026-09-02T00:41:00Z,Baltimore Orioles,Colorado Rockies,pinnacle,2026-09-01T22:09:36Z,totals,Over,11.0,1.88,-114,0.531915
-2d4b3b0bb026c73aa884eb3633604ded,2026-09-02T00:41:00Z,Baltimore Orioles,Colorado Rockies,pinnacle,2026-09-01T22:09:36Z,totals,Under,11.0,2.01,+101,0.497512
-1b131c580c5da54dd5ca7bcb24d0c131,2026-09-02T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-01T22:09:36Z,h2h,Los Angeles Angels,,2.63,+163,0.380228
-1b131c580c5da54dd5ca7bcb24d0c131,2026-09-02T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-01T22:09:36Z,h2h,New York Yankees,,1.56,-179,0.641026
-1b131c580c5da54dd5ca7bcb24d0c131,2026-09-02T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-01T22:09:36Z,spreads,Los Angeles Angels,1.5,1.93,-108,0.518135
-1b131c580c5da54dd5ca7bcb24d0c131,2026-09-02T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-01T22:09:36Z,spreads,New York Yankees,-1.5,1.97,-103,0.507614
-1b131c580c5da54dd5ca7bcb24d0c131,2026-09-02T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-01T22:09:36Z,totals,Over,7.5,2.05,+105,0.487805
-1b131c580c5da54dd5ca7bcb24d0c131,2026-09-02T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-01T22:09:36Z,totals,Under,7.5,1.85,-118,0.540541
-594a3405f55139e4b9bd00aa0518f4a4,2026-09-02T01:41:00Z,Philadelphia Phillies,Arizona Diamondbacks,pinnacle,2026-09-01T22:09:36Z,h2h,Arizona Diamondbacks,,2.11,+111,0.473934
-594a3405f55139e4b9bd00aa0518f4a4,2026-09-02T01:41:00Z,Philadelphia Phillies,Arizona Diamondbacks,pinnacle,2026-09-01T22:09:36Z,h2h,Philadelphia Phillies,,1.83,-120,0.546448
-594a3405f55139e4b9bd00aa0518f4a4,2026-09-02T01:41:00Z,Philadelphia Phillies,Arizona Diamondbacks,pinnacle,2026-09-01T22:09:36Z,spreads,Arizona Diamondbacks,1.5,1.65,-154,0.606061
-594a3405f55139e4b9bd00aa0518f4a4,2026-09-02T01:41:00Z,Philadelphia Phillies,Arizona Diamondbacks,pinnacle,2026-09-01T22:09:36Z,spreads,Philadelphia Phillies,-1.5,2.39,+139,0.41841
-594a3405f55139e4b9bd00aa0518f4a4,2026-09-02T01:41:00Z,Philadelphia Phillies,Arizona Diamondbacks,pinnacle,2026-09-01T22:09:36Z,totals,Over,7.5,2.0,+100,0.5
-594a3405f55139e4b9bd00aa0518f4a4,2026-09-02T01:41:00Z,Philadelphia Phillies,Arizona Diamondbacks,pinnacle,2026-09-01T22:09:36Z,totals,Under,7.5,1.88,-114,0.531915
-315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-01T22:09:36Z,h2h,Los Angeles Dodgers,,1.54,-185,0.649351
-315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-01T22:09:36Z,h2h,St. Louis Cardinals,,2.7,+170,0.37037
-315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-01T22:09:36Z,spreads,Los Angeles Dodgers,-1.5,2.13,+113,0.469484
-315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-01T22:09:36Z,spreads,St. Louis Cardinals,1.5,1.8,-125,0.555556
-315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-01T22:09:36Z,totals,Over,9.0,2.03,+103,0.492611
-315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-01T22:09:36Z,totals,Under,9.0,1.87,-115,0.534759
+315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-02T02:02:38Z,h2h,Los Angeles Dodgers,,1.52,-192,0.657895
+315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-02T02:02:38Z,h2h,St. Louis Cardinals,,2.76,+176,0.362319
+315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-02T02:02:38Z,spreads,Los Angeles Dodgers,-1.5,2.09,+109,0.478469
+315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-02T02:02:38Z,spreads,St. Louis Cardinals,1.5,1.83,-120,0.546448
+315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-02T02:02:38Z,totals,Over,9.0,2.04,+104,0.490196
+315bf242d2edacc5912ce11b61b7de41,2026-09-02T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,pinnacle,2026-09-02T02:02:38Z,totals,Under,9.0,1.85,-118,0.540541
+fbeefe8aa3a2d5aefc1dccf34b4f3a13,2026-09-02T16:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-02T02:02:38Z,h2h,Cincinnati Reds,,2.27,+127,0.440529
+fbeefe8aa3a2d5aefc1dccf34b4f3a13,2026-09-02T16:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-02T02:02:38Z,h2h,San Diego Padres,,1.71,-141,0.584795
+fbeefe8aa3a2d5aefc1dccf34b4f3a13,2026-09-02T16:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-02T02:02:38Z,spreads,Cincinnati Reds,1.5,1.8,-125,0.555556
+fbeefe8aa3a2d5aefc1dccf34b4f3a13,2026-09-02T16:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-02T02:02:38Z,spreads,San Diego Padres,-1.5,2.11,+111,0.473934
+fbeefe8aa3a2d5aefc1dccf34b4f3a13,2026-09-02T16:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-02T02:02:38Z,totals,Over,9.5,1.93,-108,0.518135
+fbeefe8aa3a2d5aefc1dccf34b4f3a13,2026-09-02T16:41:00Z,San Diego Padres,Cincinnati Reds,pinnacle,2026-09-02T02:02:38Z,totals,Under,9.5,1.94,-106,0.515464
+0b0373954f04c35c2aaee9aed8171c17,2026-09-02T20:11:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-02T02:02:38Z,h2h,Boston Red Sox,,1.76,-132,0.568182
+0b0373954f04c35c2aaee9aed8171c17,2026-09-02T20:11:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-02T02:02:38Z,h2h,Seattle Mariners,,2.19,+119,0.456621
+0b0373954f04c35c2aaee9aed8171c17,2026-09-02T20:11:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-02T02:02:38Z,spreads,Boston Red Sox,-1.5,2.56,+156,0.390625
+0b0373954f04c35c2aaee9aed8171c17,2026-09-02T20:11:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-02T02:02:38Z,spreads,Seattle Mariners,1.5,1.56,-179,0.641026
+0b0373954f04c35c2aaee9aed8171c17,2026-09-02T20:11:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-02T02:02:38Z,totals,Over,8.5,1.92,-109,0.520833
+0b0373954f04c35c2aaee9aed8171c17,2026-09-02T20:11:00Z,Seattle Mariners,Boston Red Sox,pinnacle,2026-09-02T02:02:38Z,totals,Under,8.5,1.95,-105,0.512821
+5552db2bbb6ea8db5548a0b2bd77cc77,2026-09-02T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-02T02:02:38Z,h2h,Cleveland Guardians,,2.14,+114,0.46729
+5552db2bbb6ea8db5548a0b2bd77cc77,2026-09-02T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-02T02:02:38Z,h2h,Toronto Blue Jays,,1.79,-127,0.558659
+5552db2bbb6ea8db5548a0b2bd77cc77,2026-09-02T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-02T02:02:38Z,spreads,Cleveland Guardians,1.5,1.62,-161,0.617284
+5552db2bbb6ea8db5548a0b2bd77cc77,2026-09-02T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-02T02:02:38Z,spreads,Toronto Blue Jays,-1.5,2.41,+141,0.414938
+5552db2bbb6ea8db5548a0b2bd77cc77,2026-09-02T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-02T02:02:38Z,totals,Over,7.0,1.9,-111,0.526316
+5552db2bbb6ea8db5548a0b2bd77cc77,2026-09-02T22:41:00Z,Toronto Blue Jays,Cleveland Guardians,pinnacle,2026-09-02T02:02:38Z,totals,Under,7.0,1.97,-103,0.507614
+0f008463e07ac89253cf7559eae28606,2026-09-02T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-02T02:02:38Z,h2h,New York Mets,,2.43,+143,0.411523
+0f008463e07ac89253cf7559eae28606,2026-09-02T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-02T02:02:38Z,h2h,Tampa Bay Rays,,1.63,-159,0.613497
+0f008463e07ac89253cf7559eae28606,2026-09-02T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-02T02:02:38Z,spreads,New York Mets,1.5,1.66,-152,0.60241
+0f008463e07ac89253cf7559eae28606,2026-09-02T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-02T02:02:38Z,spreads,Tampa Bay Rays,-1.5,2.34,+134,0.42735
+0f008463e07ac89253cf7559eae28606,2026-09-02T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-02T02:02:38Z,totals,Over,8.0,1.94,-106,0.515464
+0f008463e07ac89253cf7559eae28606,2026-09-02T22:41:00Z,New York Mets,Tampa Bay Rays,pinnacle,2026-09-02T02:02:38Z,totals,Under,8.0,1.93,-108,0.518135
+a081961893797b7b0bda834791610d56,2026-09-02T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-02T02:02:38Z,h2h,Pittsburgh Pirates,,1.66,-152,0.60241
+a081961893797b7b0bda834791610d56,2026-09-02T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-02T02:02:38Z,h2h,San Francisco Giants,,2.36,+136,0.423729
+a081961893797b7b0bda834791610d56,2026-09-02T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-02T02:02:38Z,spreads,Pittsburgh Pirates,-1.5,2.39,+139,0.41841
+a081961893797b7b0bda834791610d56,2026-09-02T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-02T02:02:38Z,spreads,San Francisco Giants,1.5,1.63,-159,0.613497
+a081961893797b7b0bda834791610d56,2026-09-02T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-02T02:02:38Z,totals,Over,8.0,1.87,-115,0.534759
+a081961893797b7b0bda834791610d56,2026-09-02T22:41:00Z,San Francisco Giants,Pittsburgh Pirates,pinnacle,2026-09-02T02:02:38Z,totals,Under,8.0,2.01,+101,0.497512
+e5573b0492ef2f689b729412d3bde508,2026-09-02T23:41:00Z,Milwaukee Brewers,Chicago Cubs,pinnacle,2026-09-02T02:02:38Z,h2h,Chicago Cubs,,2.38,+138,0.420168
+e5573b0492ef2f689b729412d3bde508,2026-09-02T23:41:00Z,Milwaukee Brewers,Chicago Cubs,pinnacle,2026-09-02T02:02:38Z,h2h,Milwaukee Brewers,,1.65,-154,0.606061
+af7b25a4d0428e7f04b74c6c3a75c59d,2026-09-02T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-02T02:02:38Z,h2h,Detroit Tigers,,2.03,+103,0.492611
+af7b25a4d0428e7f04b74c6c3a75c59d,2026-09-02T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-02T02:02:38Z,h2h,Minnesota Twins,,1.88,-114,0.531915
+af7b25a4d0428e7f04b74c6c3a75c59d,2026-09-02T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-02T02:02:38Z,spreads,Detroit Tigers,1.5,1.5,-200,0.666667
+af7b25a4d0428e7f04b74c6c3a75c59d,2026-09-02T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-02T02:02:38Z,spreads,Minnesota Twins,-1.5,2.74,+174,0.364964
+af7b25a4d0428e7f04b74c6c3a75c59d,2026-09-02T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-02T02:02:38Z,totals,Over,9.0,2.02,+102,0.49505
+af7b25a4d0428e7f04b74c6c3a75c59d,2026-09-02T23:41:00Z,Detroit Tigers,Minnesota Twins,pinnacle,2026-09-02T02:02:38Z,totals,Under,9.0,1.85,-118,0.540541
+865b5161840c3b0f959eaa526c8ac629,2026-09-02T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-02T02:02:38Z,h2h,Kansas City Royals,,1.93,-108,0.518135
+865b5161840c3b0f959eaa526c8ac629,2026-09-02T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-02T02:02:38Z,h2h,Miami Marlins,,1.98,-102,0.505051
+865b5161840c3b0f959eaa526c8ac629,2026-09-02T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-02T02:02:38Z,spreads,Kansas City Royals,1.5,1.56,-179,0.641026
+865b5161840c3b0f959eaa526c8ac629,2026-09-02T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-02T02:02:38Z,spreads,Miami Marlins,-1.5,2.56,+156,0.390625
+865b5161840c3b0f959eaa526c8ac629,2026-09-02T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-02T02:02:38Z,totals,Over,8.5,1.88,-114,0.531915
+865b5161840c3b0f959eaa526c8ac629,2026-09-02T23:41:00Z,Miami Marlins,Kansas City Royals,pinnacle,2026-09-02T02:02:38Z,totals,Under,8.5,2.0,+100,0.5
+6467c41d2b7da8c9e8efcda4c5d5f7b8,2026-09-03T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-02T02:02:38Z,h2h,Los Angeles Angels,,2.46,+146,0.406504
+6467c41d2b7da8c9e8efcda4c5d5f7b8,2026-09-03T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-02T02:02:38Z,h2h,New York Yankees,,1.61,-164,0.621118
+6467c41d2b7da8c9e8efcda4c5d5f7b8,2026-09-03T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-02T02:02:38Z,spreads,Los Angeles Angels,1.5,1.79,-127,0.558659
+6467c41d2b7da8c9e8efcda4c5d5f7b8,2026-09-03T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-02T02:02:38Z,spreads,New York Yankees,-1.5,2.12,+112,0.471698
+6467c41d2b7da8c9e8efcda4c5d5f7b8,2026-09-03T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-02T02:02:38Z,totals,Over,7.0,2.01,+101,0.497512
+6467c41d2b7da8c9e8efcda4c5d5f7b8,2026-09-03T01:39:00Z,New York Yankees,Los Angeles Angels,pinnacle,2026-09-02T02:02:38Z,totals,Under,7.0,1.87,-115,0.534759
