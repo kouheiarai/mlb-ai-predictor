@@ -1,17 +1,13 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,e3f232afa3f72858e94154eb4e526488,2026-09-03T18:10:00Z,Chicago White Sox,Houston Astros,Luis Castillo,Hunter Brown,Under,8.5,1.88,0.83863,0.0,0.576624,0.163814,1.0,1.0,3.435,2.79,100000,BUY
-total,8cc27a7b0c6903978e605ba541bed625,2026-09-03T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,Quinn Mathews,Tarik Skubal,Under,8.0,1.94,0.79626,0.09036,0.544744,0.144879,1.0,1.01,2.272,3.478,100000,BUY
-total,a7447a61565d33b1dcfb229c623b45cb,2026-09-04T02:10:00Z,St. Louis Cardinals,Los Angeles Dodgers,Quinn Mathews,Tarik Skubal,Under,8.0,1.92,0.79768,0.08725,0.531546,0.144442,1.0,1.01,2.275,3.471,100000,BUY
-total,d64025a75ea543bf8f87ab2a697704d8,2026-09-03T23:40:00Z,Miami Marlins,Kansas City Royals,Sandy Alcantara,Michael Wacha,Under,9.0,1.96,0.77756,0.08942,0.524018,0.136463,1.0427,1.0,3.791,2.984,100000,BUY
-total,c3d5e91757e67f6c08706b0970a77f89,2026-09-03T23:15:00Z,Milwaukee Brewers,Chicago Cubs,Logan Henderson,Kevin Gausman,Under,8.0,1.97,0.75121,0.1014,0.479884,0.123681,1.0026,1.0,3.727,2.368,100000,BUY
-total,e956df5f498f78f522f5b8656f304df4,2026-09-03T17:10:00Z,Toronto Blue Jays,Cleveland Guardians,José Soriano,Tanner Bibee,Under,8.0,1.88,0.75926,0.09855,0.427409,0.121423,1.0275,1.0,3.088,2.976,100000,BUY
-total,9218b403d53014d099eb5bec35ae957c,2026-09-04T01:41:00Z,Athletics,Seattle Mariners,TBD,George Kirby,Under,7.5,1.88,0.71876,0.0,0.351269,0.099792,0.9925,0.96,3.127,3.212,100000,BUY
-total,3ce16b1285f3f868ac4262314873f267,2026-09-04T00:06:00Z,Tampa Bay Rays,Texas Rangers,Drew Rasmussen,Jacob deGrom,Under,8.0,1.91,0.60777,0.12817,0.160841,0.044187,1.0,1.0,3.429,3.655,100000,BUY
-total,9218b403d53014d099eb5bec35ae957c,2026-09-04T01:41:00Z,Athletics,Seattle Mariners,TBD,George Kirby,Over,7.5,1.99,0.28124,0.0,-0.440332,0.0,0.9925,0.96,3.127,3.212,100000,PASS
-total,3ce16b1285f3f868ac4262314873f267,2026-09-04T00:06:00Z,Tampa Bay Rays,Texas Rangers,Drew Rasmussen,Jacob deGrom,Over,8.0,1.96,0.26406,0.12817,-0.482442,0.0,1.0,1.0,3.429,3.655,100000,PASS
-total,e3f232afa3f72858e94154eb4e526488,2026-09-03T18:10:00Z,Chicago White Sox,Houston Astros,Luis Castillo,Hunter Brown,Over,8.5,1.99,0.16137,0.0,-0.678874,0.0,1.0,1.0,3.435,2.79,100000,PASS
-total,e956df5f498f78f522f5b8656f304df4,2026-09-03T17:10:00Z,Toronto Blue Jays,Cleveland Guardians,José Soriano,Tanner Bibee,Over,8.0,1.99,0.14219,0.09855,-0.717042,0.0,1.0275,1.0,3.088,2.976,100000,PASS
-total,c3d5e91757e67f6c08706b0970a77f89,2026-09-03T23:15:00Z,Milwaukee Brewers,Chicago Cubs,Logan Henderson,Kevin Gausman,Over,8.0,1.89,0.14739,0.1014,-0.721433,0.0,1.0026,1.0,3.727,2.368,100000,PASS
-total,d64025a75ea543bf8f87ab2a697704d8,2026-09-03T23:40:00Z,Miami Marlins,Kansas City Royals,Sandy Alcantara,Michael Wacha,Over,9.0,1.91,0.13302,0.08942,-0.745932,0.0,1.0427,1.0,3.791,2.984,100000,PASS
-total,a7447a61565d33b1dcfb229c623b45cb,2026-09-04T02:10:00Z,St. Louis Cardinals,Los Angeles Dodgers,Quinn Mathews,Tarik Skubal,Over,8.0,1.95,0.11507,0.08725,-0.775613,0.0,1.0,1.01,2.275,3.471,100000,PASS
-total,8cc27a7b0c6903978e605ba541bed625,2026-09-03T02:11:00Z,St. Louis Cardinals,Los Angeles Dodgers,Quinn Mathews,Tarik Skubal,Over,8.0,1.94,0.11338,0.09036,-0.780043,0.0,1.0,1.01,2.272,3.478,100000,PASS
+total,c3d5e91757e67f6c08706b0970a77f89,2026-09-03T23:15:00Z,Milwaukee Brewers,Chicago Cubs,Logan Henderson,Kevin Gausman,Under,8.5,1.92,0.8449,0.0,0.622208,0.169078,1.0062,1.0,3.767,2.402,100000,BUY
+total,b27b102032634f4f3dc542889c7d62e9,2026-09-03T23:15:00Z,Boston Red Sox,Baltimore Orioles,Sonny Gray,Chris Bassitt,Under,8.5,1.88,0.84676,0.0,0.591909,0.168156,1.0,1.0,3.628,2.526,100000,BUY
+total,d64025a75ea543bf8f87ab2a697704d8,2026-09-03T23:40:00Z,Miami Marlins,Kansas City Royals,Sandy Alcantara,Michael Wacha,Under,9.0,1.98,0.77594,0.09015,0.536361,0.136827,1.0369,1.0,3.856,2.932,100000,BUY
+total,a7447a61565d33b1dcfb229c623b45cb,2026-09-04T02:10:00Z,St. Louis Cardinals,Los Angeles Dodgers,Quinn Mathews,Tarik Skubal,Under,8.0,1.89,0.78397,0.09295,0.481703,0.13531,1.0,1.01,2.273,3.574,100000,BUY
+total,9218b403d53014d099eb5bec35ae957c,2026-09-04T01:40:00Z,Athletics,Seattle Mariners,TBD,George Kirby,Under,7.5,1.87,0.7174,0.0,0.341538,0.098143,0.996,0.96,3.137,3.223,100000,BUY
+total,3ce16b1285f3f868ac4262314873f267,2026-09-04T00:05:00Z,Tampa Bay Rays,Texas Rangers,Drew Rasmussen,Jacob deGrom,Under,8.0,1.88,0.60777,0.12817,0.142608,0.040514,1.0,1.0,3.429,3.655,100000,BUY
+total,9218b403d53014d099eb5bec35ae957c,2026-09-04T01:40:00Z,Athletics,Seattle Mariners,TBD,George Kirby,Over,7.5,2.02,0.2826,0.0,-0.429148,0.0,0.996,0.96,3.137,3.223,100000,PASS
+total,3ce16b1285f3f868ac4262314873f267,2026-09-04T00:05:00Z,Tampa Bay Rays,Texas Rangers,Drew Rasmussen,Jacob deGrom,Over,8.0,2.01,0.26406,0.12817,-0.469239,0.0,1.0,1.0,3.429,3.655,100000,PASS
+total,b27b102032634f4f3dc542889c7d62e9,2026-09-03T23:15:00Z,Boston Red Sox,Baltimore Orioles,Sonny Gray,Chris Bassitt,Over,8.5,2.01,0.15324,0.0,-0.691988,0.0,1.0,1.0,3.628,2.526,100000,PASS
+total,c3d5e91757e67f6c08706b0970a77f89,2026-09-03T23:15:00Z,Milwaukee Brewers,Chicago Cubs,Logan Henderson,Kevin Gausman,Over,8.5,1.97,0.1551,0.0,-0.694453,0.0,1.0062,1.0,3.767,2.402,100000,PASS
+total,d64025a75ea543bf8f87ab2a697704d8,2026-09-03T23:40:00Z,Miami Marlins,Kansas City Royals,Sandy Alcantara,Michael Wacha,Over,9.0,1.91,0.13391,0.09015,-0.744232,0.0,1.0369,1.0,3.856,2.932,100000,PASS
+total,a7447a61565d33b1dcfb229c623b45cb,2026-09-04T02:10:00Z,St. Louis Cardinals,Los Angeles Dodgers,Quinn Mathews,Tarik Skubal,Over,8.0,2.0,0.12308,0.09295,-0.75384,0.0,1.0,1.01,2.273,3.574,100000,PASS
