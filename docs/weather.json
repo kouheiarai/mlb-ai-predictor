@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-09-04T21:55:51.241813+00:00",
+  "fetched_at_utc": "2026-09-04T23:35:24.194918+00:00",
   "games": [
     {
       "game_pk": 824424,
@@ -21,10 +21,10 @@
       "game_date_utc": "2026-09-04T23:15:00Z",
       "weather": {
         "weather_run_factor": 1.0032,
-        "temperature_c": 23.8,
+        "temperature_c": 24.1,
         "precipitation_probability": 4,
-        "wind_speed_kmh": 7.6,
-        "wind_direction_deg": 301
+        "wind_speed_kmh": 7.0,
+        "wind_direction_deg": 291
       }
     },
     {
@@ -33,11 +33,11 @@
       "home_team": "Cincinnati Reds",
       "game_date_utc": "2026-09-04T22:10:00Z",
       "weather": {
-        "weather_run_factor": 1.0333,
-        "temperature_c": 35.5,
-        "precipitation_probability": 2,
-        "wind_speed_kmh": 14.2,
-        "wind_direction_deg": 330
+        "weather_run_factor": 1.0394,
+        "temperature_c": 32.7,
+        "precipitation_probability": 8,
+        "wind_speed_kmh": 25.7,
+        "wind_direction_deg": 345
       }
     },
     {
@@ -46,11 +46,11 @@
       "home_team": "Philadelphia Phillies",
       "game_date_utc": "2026-09-04T22:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0117,
-        "temperature_c": 27.4,
-        "precipitation_probability": 2,
-        "wind_speed_kmh": 8.9,
-        "wind_direction_deg": 310
+        "weather_run_factor": 1.0124,
+        "temperature_c": 27.8,
+        "precipitation_probability": 3,
+        "wind_speed_kmh": 8.8,
+        "wind_direction_deg": 305
       }
     },
     {
@@ -59,11 +59,11 @@
       "home_team": "Pittsburgh Pirates",
       "game_date_utc": "2026-09-04T22:45:00Z",
       "weather": {
-        "weather_run_factor": 1.0043,
-        "temperature_c": 26.5,
-        "precipitation_probability": 19,
-        "wind_speed_kmh": 3.4,
-        "wind_direction_deg": 212
+        "weather_run_factor": 1.0076,
+        "temperature_c": 26.4,
+        "precipitation_probability": 11,
+        "wind_speed_kmh": 6.9,
+        "wind_direction_deg": 219
       }
     },
     {
@@ -150,11 +150,11 @@
       "home_team": "Kansas City Royals",
       "game_date_utc": "2026-09-05T00:10:00Z",
       "weather": {
-        "weather_run_factor": 1.0342,
-        "temperature_c": 36.2,
+        "weather_run_factor": 1.0317,
+        "temperature_c": 35.8,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 13.7,
-        "wind_direction_deg": 178
+        "wind_speed_kmh": 12.1,
+        "wind_direction_deg": 168
       }
     },
     {
@@ -163,11 +163,11 @@
       "home_team": "Colorado Rockies",
       "game_date_utc": "2026-09-05T00:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0293,
-        "temperature_c": 32.4,
-        "precipitation_probability": 3,
-        "wind_speed_kmh": 16.4,
-        "wind_direction_deg": 116
+        "weather_run_factor": 1.0331,
+        "temperature_c": 32.7,
+        "precipitation_probability": 2,
+        "wind_speed_kmh": 19.5,
+        "wind_direction_deg": 118
       }
     },
     {
@@ -176,11 +176,11 @@
       "home_team": "San Diego Padres",
       "game_date_utc": "2026-09-05T01:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0047,
-        "temperature_c": 23.3,
+        "weather_run_factor": 1.0032,
+        "temperature_c": 23.1,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 10.1,
-        "wind_direction_deg": 287
+        "wind_speed_kmh": 9.0,
+        "wind_direction_deg": 275
       }
     },
     {
@@ -202,11 +202,11 @@
       "home_team": "Seattle Mariners",
       "game_date_utc": "2026-09-05T02:10:00Z",
       "weather": {
-        "weather_run_factor": 0.9849,
-        "temperature_c": 18.1,
-        "precipitation_probability": 6,
-        "wind_speed_kmh": 0.7,
-        "wind_direction_deg": 90
+        "weather_run_factor": 0.9902,
+        "temperature_c": 16.0,
+        "precipitation_probability": 7,
+        "wind_speed_kmh": 10.2,
+        "wind_direction_deg": 135
       }
     },
     {
@@ -243,7 +243,7 @@
       "weather": {
         "weather_run_factor": 1.0061,
         "temperature_c": 24.2,
-        "precipitation_probability": 1,
+        "precipitation_probability": 0,
         "wind_speed_kmh": 9.7,
         "wind_direction_deg": 318
       }
@@ -282,7 +282,7 @@
       "weather": {
         "weather_run_factor": 1.0284,
         "temperature_c": 28.9,
-        "precipitation_probability": 22,
+        "precipitation_probability": 18,
         "wind_speed_kmh": 22.4,
         "wind_direction_deg": 33
       }
@@ -358,11 +358,11 @@
       "home_team": "San Diego Padres",
       "game_date_utc": "2026-09-05T23:15:00Z",
       "weather": {
-        "weather_run_factor": 1.0041,
-        "temperature_c": 26.5,
-        "precipitation_probability": 3,
-        "wind_speed_kmh": 3.2,
-        "wind_direction_deg": 180
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -371,11 +371,11 @@
       "home_team": "Colorado Rockies",
       "game_date_utc": "2026-09-06T00:10:00Z",
       "weather": {
-        "weather_run_factor": 1.0298,
-        "temperature_c": 30.8,
-        "precipitation_probability": 6,
-        "wind_speed_kmh": 20.0,
-        "wind_direction_deg": 334
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -397,11 +397,11 @@
       "home_team": "Seattle Mariners",
       "game_date_utc": "2026-09-06T01:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0023,
-        "temperature_c": 18.3,
-        "precipitation_probability": 14,
-        "wind_speed_kmh": 17.7,
-        "wind_direction_deg": 192
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -410,11 +410,11 @@
       "home_team": "Cincinnati Reds",
       "game_date_utc": "2026-09-06T16:10:00Z",
       "weather": {
-        "weather_run_factor": 1.0126,
-        "temperature_c": 24.6,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 15.4,
-        "wind_direction_deg": 46
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -423,11 +423,11 @@
       "home_team": "Philadelphia Phillies",
       "game_date_utc": "2026-09-06T17:10:00Z",
       "weather": {
-        "weather_run_factor": 1.0093,
-        "temperature_c": 24.3,
-        "precipitation_probability": 3,
-        "wind_speed_kmh": 12.7,
-        "wind_direction_deg": 45
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     },
     {
@@ -449,10 +449,10 @@
       "home_team": "Pittsburgh Pirates",
       "game_date_utc": "2026-09-06T17:35:00Z",
       "weather": {
-        "weather_run_factor": 1.0077,
+        "weather_run_factor": 1.0076,
         "temperature_c": 23.6,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 12.5,
+        "wind_speed_kmh": 12.4,
         "wind_direction_deg": 43
       }
     },
@@ -462,11 +462,11 @@
       "home_team": "Cleveland Guardians",
       "game_date_utc": "2026-09-06T17:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0102,
+        "weather_run_factor": 1.0107,
         "temperature_c": 22.7,
         "precipitation_probability": 2,
-        "wind_speed_kmh": 16.8,
-        "wind_direction_deg": 24
+        "wind_speed_kmh": 17.3,
+        "wind_direction_deg": 23
       }
     },
     {
@@ -514,11 +514,11 @@
       "home_team": "Kansas City Royals",
       "game_date_utc": "2026-09-06T18:10:00Z",
       "weather": {
-        "weather_run_factor": 1.028,
+        "weather_run_factor": 1.0249,
         "temperature_c": 35.0,
         "precipitation_probability": 2,
-        "wind_speed_kmh": 10.1,
-        "wind_direction_deg": 287
+        "wind_speed_kmh": 7.0,
+        "wind_direction_deg": 279
       }
     },
     {
@@ -540,11 +540,11 @@
       "home_team": "Colorado Rockies",
       "game_date_utc": "2026-09-06T19:10:00Z",
       "weather": {
-        "weather_run_factor": 1.0214,
+        "weather_run_factor": 1.0213,
         "temperature_c": 32.0,
         "precipitation_probability": 18,
-        "wind_speed_kmh": 9.5,
-        "wind_direction_deg": 79
+        "wind_speed_kmh": 9.4,
+        "wind_direction_deg": 97
       }
     },
     {
@@ -553,11 +553,11 @@
       "home_team": "Seattle Mariners",
       "game_date_utc": "2026-09-06T20:10:00Z",
       "weather": {
-        "weather_run_factor": 1.0027,
+        "weather_run_factor": 1.0037,
         "temperature_c": 22.5,
         "precipitation_probability": 1,
-        "wind_speed_kmh": 9.7,
-        "wind_direction_deg": 345
+        "wind_speed_kmh": 10.7,
+        "wind_direction_deg": 346
       }
     },
     {
@@ -566,11 +566,11 @@
       "home_team": "San Diego Padres",
       "game_date_utc": "2026-09-06T20:10:00Z",
       "weather": {
-        "weather_run_factor": 1.0281,
+        "weather_run_factor": 1.0271,
         "temperature_c": 28.7,
         "precipitation_probability": 9,
-        "wind_speed_kmh": 22.5,
-        "wind_direction_deg": 340
+        "wind_speed_kmh": 21.5,
+        "wind_direction_deg": 339
       }
     },
     {
