@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-09-04T02:07:06.459611+00:00",
+  "fetched_at_utc": "2026-09-04T18:44:25.308321+00:00",
   "metrics": {
     "Houston Astros": {
       "runs_per_game": 0.6618705035971223
@@ -40,7 +40,7 @@
       "runs_per_game": 0.41911764705882354
     },
     "St. Louis Cardinals": {
-      "runs_per_game": 0.5611510791366906,
+      "runs_per_game": 0.5571428571428572,
       "team_pitching_era": 3.97
     },
     "New York Yankees": {
@@ -95,24 +95,24 @@
       "runs_per_game": 0.5671641791044776,
       "team_pitching_era": 3.2
     },
+    "Seattle Mariners": {
+      "runs_per_game": 0.6842105263157895,
+      "team_pitching_era": 4.25
+    },
     "Cincinnati Reds": {
       "runs_per_game": 0.6859504132231405,
       "team_pitching_era": 4.83
-    },
-    "Seattle Mariners": {
-      "runs_per_game": 0.6766917293233082,
-      "team_pitching_era": 4.25
     },
     "Detroit Tigers": {
       "runs_per_game": 0.5462184873949579,
       "team_pitching_era": 4.36
     },
+    "Athletics": {
+      "runs_per_game": 0.3548387096774194
+    },
     "Baltimore Orioles": {
       "runs_per_game": 0.6099290780141844,
       "team_pitching_era": 4.3
-    },
-    "Athletics": {
-      "runs_per_game": 0.3387096774193548
     },
     "Washington Nationals": {
       "team_pitching_era": 3.12
