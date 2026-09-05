@@ -1,19 +1,19 @@
 {
-  "fetched_at_utc": "2026-09-05T21:48:39.798993+00:00",
+  "fetched_at_utc": "2026-09-05T23:28:21.193396+00:00",
   "metrics": {
-    "Houston Astros": {
-      "runs_per_game": 0.6642857142857143
-    },
     "Philadelphia Phillies": {
       "runs_per_game": 0.4962962962962963,
       "team_pitching_era": 4.93
     },
+    "Houston Astros": {
+      "runs_per_game": 0.6595744680851063
+    },
     "Tampa Bay Rays": {
-      "runs_per_game": 0.48175182481751827,
+      "runs_per_game": 0.4782608695652174,
       "team_pitching_era": 4.96
     },
     "Pittsburgh Pirates": {
-      "runs_per_game": 0.5075757575757576,
+      "runs_per_game": 0.5037593984962406,
       "team_pitching_era": 3.97
     },
     "Los Angeles Dodgers": {
@@ -25,18 +25,18 @@
       "team_pitching_era": 3.54
     },
     "Arizona Diamondbacks": {
-      "runs_per_game": 0.5315315315315315,
+      "runs_per_game": 0.5267857142857143,
       "team_pitching_era": 5.06
     },
     "Colorado Rockies": {
       "runs_per_game": 0.5317460317460317
     },
     "Cleveland Guardians": {
-      "runs_per_game": 0.5227272727272727,
+      "runs_per_game": 0.518796992481203,
       "team_pitching_era": 4.06
     },
     "Atlanta Braves": {
-      "runs_per_game": 0.45112781954887216,
+      "runs_per_game": 0.6218487394957983,
       "team_pitching_era": 4.11
     },
     "St. Louis Cardinals": {
@@ -47,44 +47,44 @@
       "runs_per_game": 0.4732824427480916,
       "team_pitching_era": 2.04
     },
+    "Kansas City Royals": {
+      "runs_per_game": 0.5038167938931297,
+      "team_pitching_era": 5.11
+    },
     "Milwaukee Brewers": {
       "runs_per_game": 0.6220472440944882,
       "team_pitching_era": 1.97
     },
-    "Kansas City Royals": {
-      "runs_per_game": 0.5076923076923077,
-      "team_pitching_era": 5.03
-    },
     "Boston Red Sox": {
       "runs_per_game": 0.528,
-      "team_pitching_era": 2.82
+      "team_pitching_era": 2.81
     },
     "San Diego Padres": {
-      "runs_per_game": 0.5755395683453237,
-      "team_pitching_era": 3.14
-    },
-    "Chicago Cubs": {
-      "runs_per_game": 0.688,
-      "team_pitching_era": 4.38
+      "runs_per_game": 0.5714285714285714,
+      "team_pitching_era": 3.12
     },
     "San Francisco Giants": {
       "runs_per_game": 0.47692307692307695,
       "team_pitching_era": 4.21
     },
+    "Chicago Cubs": {
+      "runs_per_game": 0.688,
+      "team_pitching_era": 4.38
+    },
+    "Cincinnati Reds": {
+      "runs_per_game": 0.5633802816901409,
+      "team_pitching_era": 4.52
+    },
+    "Texas Rangers": {
+      "runs_per_game": 0.47761194029850745,
+      "team_pitching_era": 4.31
+    },
     "New York Mets": {
       "runs_per_game": 0.5220588235294118,
       "team_pitching_era": 3.06
     },
-    "Cincinnati Reds": {
-      "runs_per_game": 0.6885245901639344,
-      "team_pitching_era": 4.83
-    },
-    "Texas Rangers": {
-      "runs_per_game": 0.48120300751879697,
-      "team_pitching_era": 4.31
-    },
     "Toronto Blue Jays": {
-      "runs_per_game": 0.41304347826086957,
+      "runs_per_game": 0.41007194244604317,
       "team_pitching_era": 3.52
     },
     "Los Angeles Angels": {
@@ -92,15 +92,15 @@
       "team_pitching_era": 3.44
     },
     "Minnesota Twins": {
-      "runs_per_game": 0.5075757575757576,
-      "team_pitching_era": 3.85
+      "runs_per_game": 0.5037593984962406,
+      "team_pitching_era": 4.01
     },
     "Detroit Tigers": {
-      "runs_per_game": 0.635036496350365,
-      "team_pitching_era": 4.36
+      "runs_per_game": 0.5619834710743802,
+      "team_pitching_era": 4.22
     },
     "Chicago White Sox": {
-      "runs_per_game": 0.562962962962963,
+      "runs_per_game": 0.5588235294117647,
       "team_pitching_era": 3.2
     },
     "Athletics": {
@@ -111,11 +111,10 @@
       "team_pitching_era": 4.25
     },
     "Baltimore Orioles": {
-      "runs_per_game": 0.6056338028169014,
+      "runs_per_game": 0.6013986013986014,
       "team_pitching_era": 4.3
     },
     "Washington Nationals": {
-      "runs_per_game": 0.8620689655172413,
       "team_pitching_era": 3.12
     }
   }
