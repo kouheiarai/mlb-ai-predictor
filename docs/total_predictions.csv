@@ -1,5 +1,11 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,855005fb1370a5252daf5699bd5fce84,2026-09-06T22:20:00Z,Minnesota Twins,Chicago White Sox,Bailey Ober,Bryan Hudson,Under,8.5,1.99,0.8784,0.0,0.748016,0.188893,1.0,1.0,2.456,3.377,100000,BUY
-total,35484b18fe129394ebc819752a8b92c1,2026-09-07T02:11:00Z,Washington Nationals,Los Angeles Dodgers,Andrew Alvarez,Justin Wrobleski,Under,8.0,2.0,0.73347,0.10577,0.46694,0.116735,1.0,1.01,3.584,2.647,100000,BUY
-total,35484b18fe129394ebc819752a8b92c1,2026-09-07T02:11:00Z,Washington Nationals,Los Angeles Dodgers,Andrew Alvarez,Justin Wrobleski,Over,8.0,1.89,0.16076,0.10577,-0.696164,0.0,1.0,1.01,3.584,2.647,100000,PASS
-total,855005fb1370a5252daf5699bd5fce84,2026-09-06T22:20:00Z,Minnesota Twins,Chicago White Sox,Bailey Ober,Bryan Hudson,Over,8.5,1.9,0.1216,0.0,-0.76896,0.0,1.0,1.0,2.456,3.377,100000,PASS
+total,4645b2d34e3503155b3ff308836621dc,2026-09-07T17:11:00Z,New York Mets,Miami Marlins,Sean Manaea,Sandy Alcantara,Under,8.0,1.91,0.83534,0.07656,0.595499,0.163599,1.0,1.0,2.788,2.701,100000,BUY
+total,35484b18fe129394ebc819752a8b92c1,2026-09-07T02:11:00Z,Washington Nationals,Los Angeles Dodgers,Andrew Alvarez,Justin Wrobleski,Under,8.0,2.01,0.73263,0.10578,0.472586,0.116977,1.0,1.01,3.585,2.65,100000,BUY
+total,56329e0195eb8df1d61a2ced249e623d,2026-09-08T02:06:00Z,Toronto Blue Jays,Athletics,José Soriano,Jack Perkins,Under,8.0,2.02,0.68231,0.11662,0.378266,0.092712,1.0,1.0,3.767,2.826,100000,BUY
+total,0a5522c3b427e5162e8c13c1ddb05dd7,2026-09-07T17:36:00Z,Cleveland Guardians,Baltimore Orioles,Tanner Bibee,Brandon Young,Under,8.0,1.99,0.64367,0.12372,0.280903,0.070935,1.0,1.0,3.447,3.422,100000,BUY
+total,ce94c6d5ef8ae9f29d29223e386beee1,2026-09-07T17:06:00Z,Atlanta Braves,Philadelphia Phillies,Grant Holmes,Jesús Luzardo,Under,8.0,1.93,0.5405,0.13712,0.043165,0.011603,1.0038,1.03,3.796,3.729,100000,LEAN
+total,ce94c6d5ef8ae9f29d29223e386beee1,2026-09-07T17:06:00Z,Atlanta Braves,Philadelphia Phillies,Grant Holmes,Jesús Luzardo,Over,8.0,1.93,0.32238,0.13712,-0.377807,0.0,1.0038,1.03,3.796,3.729,100000,PASS
+total,0a5522c3b427e5162e8c13c1ddb05dd7,2026-09-07T17:36:00Z,Cleveland Guardians,Baltimore Orioles,Tanner Bibee,Brandon Young,Over,8.0,1.88,0.23261,0.12372,-0.562693,0.0,1.0,1.0,3.447,3.422,100000,PASS
+total,56329e0195eb8df1d61a2ced249e623d,2026-09-08T02:06:00Z,Toronto Blue Jays,Athletics,José Soriano,Jack Perkins,Over,8.0,1.85,0.20107,0.11662,-0.62802,0.0,1.0,1.0,3.767,2.826,100000,PASS
+total,35484b18fe129394ebc819752a8b92c1,2026-09-07T02:11:00Z,Washington Nationals,Los Angeles Dodgers,Andrew Alvarez,Justin Wrobleski,Over,8.0,1.88,0.16159,0.10578,-0.696211,0.0,1.0,1.01,3.585,2.65,100000,PASS
+total,4645b2d34e3503155b3ff308836621dc,2026-09-07T17:11:00Z,New York Mets,Miami Marlins,Sean Manaea,Sandy Alcantara,Over,8.0,1.96,0.0881,0.07656,-0.827324,0.0,1.0,1.0,2.788,2.701,100000,PASS
