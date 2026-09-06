@@ -1,17 +1,5 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,855005fb1370a5252daf5699bd5fce84,2026-09-06T22:20:00Z,Minnesota Twins,Chicago White Sox,Bailey Ober,Bryan Hudson,Under,8.5,1.95,0.87455,0.0,0.705372,0.185624,1.0,1.0,2.476,3.403,100000,BUY
-total,efbec01e9ddadbf59d572981c0ab0b39,2026-09-06T19:10:00Z,St. Louis Cardinals,Colorado Rockies,Kyle Leahy,Tanner Gordon,Under,11.0,1.95,0.87314,0.05499,0.702623,0.184901,1.0154,1.12,3.855,3.668,100000,BUY
-total,d545cab19c6dbf61ef08fc9c481877f8,2026-09-06T18:11:00Z,Toronto Blue Jays,Kansas City Royals,Spencer Arrighetti,Randy Dobnak,Under,9.5,1.87,0.82403,0.0,0.540936,0.155441,1.0265,1.0,4.23,2.967,100000,BUY
-total,35484b18fe129394ebc819752a8b92c1,2026-09-07T02:11:00Z,Washington Nationals,Los Angeles Dodgers,Andrew Alvarez,Justin Wrobleski,Under,8.0,2.01,0.73347,0.10577,0.474275,0.117395,1.0,1.01,3.584,2.647,100000,BUY
-total,e0254ee2268c129376e98827bedc7496,2026-09-06T20:10:00Z,New York Yankees,San Diego Padres,Gerrit Cole,Michael King,Under,7.0,1.86,0.78711,0.09761,0.464025,0.134891,1.023,0.97,2.712,2.298,100000,BUY
-total,c5e971853b3a0b4ad3526141459bf5d5,2026-09-06T18:10:00Z,Arizona Diamondbacks,Houston Astros,Eduardo Rodriguez,Peter Lambert,Under,8.0,1.9,0.75648,0.09931,0.437312,0.121476,1.0,1.0,3.399,2.673,100000,BUY
-total,35ced11ee1bb21f179e3ac5a39a75fd2,2026-09-06T20:10:00Z,Athletics,Seattle Mariners,Gage Jump,Bryan Woo,Under,7.0,2.03,0.56845,0.14212,0.153953,0.037367,0.9988,0.96,3.065,3.337,100000,BUY
-total,c0d390a487adbc676467b156b561e0f0,2026-09-06T18:36:00Z,Tampa Bay Rays,Texas Rangers,Ian Seymour,MacKenzie Gore,Under,7.5,1.91,0.53426,0.0,0.020437,0.005614,1.0,1.0,3.701,3.874,100000,LEAN
-total,c0d390a487adbc676467b156b561e0f0,2026-09-06T18:36:00Z,Tampa Bay Rays,Texas Rangers,Ian Seymour,MacKenzie Gore,Over,7.5,1.97,0.46574,0.0,-0.082492,0.0,1.0,1.0,3.701,3.874,100000,PASS
-total,35ced11ee1bb21f179e3ac5a39a75fd2,2026-09-06T20:10:00Z,Athletics,Seattle Mariners,Gage Jump,Bryan Woo,Over,7.0,1.86,0.28943,0.14212,-0.46166,0.0,0.9988,0.96,3.065,3.337,100000,PASS
-total,d545cab19c6dbf61ef08fc9c481877f8,2026-09-06T18:11:00Z,Toronto Blue Jays,Kansas City Royals,Spencer Arrighetti,Randy Dobnak,Over,9.5,2.03,0.17597,0.0,-0.642781,0.0,1.0265,1.0,4.23,2.967,100000,PASS
-total,35484b18fe129394ebc819752a8b92c1,2026-09-07T02:11:00Z,Washington Nationals,Los Angeles Dodgers,Andrew Alvarez,Justin Wrobleski,Over,8.0,1.88,0.16076,0.10577,-0.697771,0.0,1.0,1.01,3.584,2.647,100000,PASS
-total,c5e971853b3a0b4ad3526141459bf5d5,2026-09-06T18:10:00Z,Arizona Diamondbacks,Houston Astros,Eduardo Rodriguez,Peter Lambert,Over,8.0,1.99,0.14421,0.09931,-0.713022,0.0,1.0,1.0,3.399,2.673,100000,PASS
-total,855005fb1370a5252daf5699bd5fce84,2026-09-06T22:20:00Z,Minnesota Twins,Chicago White Sox,Bailey Ober,Bryan Hudson,Over,8.5,1.93,0.12545,0.0,-0.757881,0.0,1.0,1.0,2.476,3.403,100000,PASS
-total,e0254ee2268c129376e98827bedc7496,2026-09-06T20:10:00Z,New York Yankees,San Diego Padres,Gerrit Cole,Michael King,Over,7.0,2.03,0.11528,0.09761,-0.765982,0.0,1.023,0.97,2.712,2.298,100000,PASS
-total,efbec01e9ddadbf59d572981c0ab0b39,2026-09-06T19:10:00Z,St. Louis Cardinals,Colorado Rockies,Kyle Leahy,Tanner Gordon,Over,11.0,1.93,0.07187,0.05499,-0.861291,0.0,1.0154,1.12,3.855,3.668,100000,PASS
+total,855005fb1370a5252daf5699bd5fce84,2026-09-06T22:20:00Z,Minnesota Twins,Chicago White Sox,Bailey Ober,Bryan Hudson,Under,8.5,1.99,0.8784,0.0,0.748016,0.188893,1.0,1.0,2.456,3.377,100000,BUY
+total,35484b18fe129394ebc819752a8b92c1,2026-09-07T02:11:00Z,Washington Nationals,Los Angeles Dodgers,Andrew Alvarez,Justin Wrobleski,Under,8.0,2.0,0.73347,0.10577,0.46694,0.116735,1.0,1.01,3.584,2.647,100000,BUY
+total,35484b18fe129394ebc819752a8b92c1,2026-09-07T02:11:00Z,Washington Nationals,Los Angeles Dodgers,Andrew Alvarez,Justin Wrobleski,Over,8.0,1.89,0.16076,0.10577,-0.696164,0.0,1.0,1.01,3.584,2.647,100000,PASS
+total,855005fb1370a5252daf5699bd5fce84,2026-09-06T22:20:00Z,Minnesota Twins,Chicago White Sox,Bailey Ober,Bryan Hudson,Over,8.5,1.9,0.1216,0.0,-0.76896,0.0,1.0,1.0,2.456,3.377,100000,PASS
