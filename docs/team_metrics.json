@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-09-06T23:22:41.220877+00:00",
+  "fetched_at_utc": "2026-09-07T02:00:11.757952+00:00",
   "metrics": {
     "Philadelphia Phillies": {
       "runs_per_game": 0.5944055944055944,
@@ -91,31 +91,30 @@
       "runs_per_game": 0.40714285714285714,
       "team_pitching_era": 3.52
     },
-    "Minnesota Twins": {
-      "runs_per_game": 0.5149253731343284,
-      "team_pitching_era": 3.95
-    },
     "Detroit Tigers": {
       "runs_per_game": 0.6304347826086957,
       "team_pitching_era": 4.17
+    },
+    "Minnesota Twins": {
+      "runs_per_game": 0.5149253731343284,
+      "team_pitching_era": 3.95
     },
     "Seattle Mariners": {
       "runs_per_game": 0.3805970149253731,
       "team_pitching_era": 4.18
     },
     "Chicago White Sox": {
-      "runs_per_game": 0.5620437956204379,
+      "runs_per_game": 0.5853658536585366,
       "team_pitching_era": 3.2
     },
     "Athletics": {
       "runs_per_game": 0.3543307086614173
     },
-    "Baltimore Orioles": {
-      "runs_per_game": 0.5972222222222222,
-      "team_pitching_era": 4.3
-    },
     "Washington Nationals": {
       "team_pitching_era": 3.12
+    },
+    "Baltimore Orioles": {
+      "team_pitching_era": 4.3
     }
   }
 }
