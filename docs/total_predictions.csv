@@ -1,9 +1,7 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,4b966f5cc20bd2c8aabb3ffae91d489c,2026-09-07T21:11:00Z,Washington Nationals,San Diego Padres,Jackson Kent,Walker Buehler,Under,8.0,1.97,0.81257,0.08469,0.600763,0.154836,1.0199,0.97,2.801,2.827,100000,BUY
-total,56329e0195eb8df1d61a2ced249e623d,2026-09-08T02:06:00Z,Toronto Blue Jays,Athletics,TBD,TBD,Under,8.5,1.9,0.83624,0.0,0.588856,0.163571,1.0,1.0,3.426,2.836,100000,BUY
-total,a58a90b8a19f48d680546cac451b77ec,2026-09-08T01:11:00Z,Cincinnati Reds,Los Angeles Dodgers,Rhett Lowder,Yoshinobu Yamamoto,Under,8.5,1.89,0.76272,0.0,0.441541,0.124028,1.0,1.01,2.317,4.526,100000,BUY
-total,7e08f8c46ae533c3c09d2e5d1a37ac2b,2026-09-08T00:11:00Z,St. Louis Cardinals,San Francisco Giants,TBD,Blade Tidwell,Under,8.0,1.86,0.68937,0.11662,0.282228,0.082043,1.0145,0.96,3.396,3.175,100000,BUY
-total,a58a90b8a19f48d680546cac451b77ec,2026-09-08T01:11:00Z,Cincinnati Reds,Los Angeles Dodgers,Rhett Lowder,Yoshinobu Yamamoto,Over,8.5,2.0,0.23728,0.0,-0.52544,0.0,1.0,1.01,2.317,4.526,100000,PASS
-total,7e08f8c46ae533c3c09d2e5d1a37ac2b,2026-09-08T00:11:00Z,St. Louis Cardinals,San Francisco Giants,TBD,Blade Tidwell,Over,8.0,2.03,0.19401,0.11662,-0.60616,0.0,1.0145,0.96,3.396,3.175,100000,PASS
-total,56329e0195eb8df1d61a2ced249e623d,2026-09-08T02:06:00Z,Toronto Blue Jays,Athletics,TBD,TBD,Over,8.5,1.99,0.16376,0.0,-0.674118,0.0,1.0,1.0,3.426,2.836,100000,PASS
-total,4b966f5cc20bd2c8aabb3ffae91d489c,2026-09-07T21:11:00Z,Washington Nationals,San Diego Padres,Jackson Kent,Walker Buehler,Over,8.0,1.92,0.10274,0.08469,-0.802739,0.0,1.0199,0.97,2.801,2.827,100000,PASS
+total,56329e0195eb8df1d61a2ced249e623d,2026-09-08T02:06:00Z,Toronto Blue Jays,Athletics,TBD,TBD,Under,8.5,1.88,0.83624,0.0,0.572131,0.162537,1.0,1.0,3.426,2.836,100000,BUY
+total,a58a90b8a19f48d680546cac451b77ec,2026-09-08T01:11:00Z,Cincinnati Reds,Los Angeles Dodgers,Rhett Lowder,Yoshinobu Yamamoto,Under,8.5,1.9,0.76272,0.0,0.449168,0.124769,1.0,1.01,2.317,4.526,100000,BUY
+total,7e08f8c46ae533c3c09d2e5d1a37ac2b,2026-09-08T00:11:00Z,St. Louis Cardinals,San Francisco Giants,TBD,Blade Tidwell,Under,8.0,1.91,0.70116,0.11338,0.339216,0.093191,1.0,0.96,3.348,3.129,100000,BUY
+total,a58a90b8a19f48d680546cac451b77ec,2026-09-08T01:11:00Z,Cincinnati Reds,Los Angeles Dodgers,Rhett Lowder,Yoshinobu Yamamoto,Over,8.5,1.99,0.23728,0.0,-0.527813,0.0,1.0,1.01,2.317,4.526,100000,PASS
+total,7e08f8c46ae533c3c09d2e5d1a37ac2b,2026-09-08T00:11:00Z,St. Louis Cardinals,San Francisco Giants,TBD,Blade Tidwell,Over,8.0,1.98,0.18546,0.11338,-0.632789,0.0,1.0,0.96,3.348,3.129,100000,PASS
+total,56329e0195eb8df1d61a2ced249e623d,2026-09-08T02:06:00Z,Toronto Blue Jays,Athletics,TBD,TBD,Over,8.5,2.01,0.16376,0.0,-0.670842,0.0,1.0,1.0,3.426,2.836,100000,PASS
