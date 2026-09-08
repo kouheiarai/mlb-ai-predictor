@@ -1,10 +1,10 @@
 {
   "model_version": "26.0",
-  "generated_at_utc": "2026-09-07T22:25:29.534475+00:00",
-  "moneyline_rows": 6,
-  "runline_rows": 6,
-  "total_rows": 6,
-  "combined_rows": 18,
+  "generated_at_utc": "2026-09-08T02:11:32.385149+00:00",
+  "moneyline_rows": 26,
+  "runline_rows": 26,
+  "total_rows": 26,
+  "combined_rows": 78,
   "canonical_csv": "data/predictions.csv",
   "canonical_json": "data/prediction_latest.json"
 }
