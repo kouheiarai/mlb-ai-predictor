@@ -1,19 +1,13 @@
 ﻿event_id,commence_time_utc,away_team,home_team,bookmaker,bookmaker_last_update,market,selection,point,decimal_odds,american_odds,implied_probability
-36a89478e8db28447dfe1b5d1f656477,2026-09-10T20:10:00Z,Texas Rangers,Seattle Mariners,pinnacle,2026-09-10T18:47:46Z,h2h,Seattle Mariners,,1.89,-112,0.529101
-36a89478e8db28447dfe1b5d1f656477,2026-09-10T20:10:00Z,Texas Rangers,Seattle Mariners,pinnacle,2026-09-10T18:47:46Z,h2h,Texas Rangers,,2.03,+103,0.492611
-36a89478e8db28447dfe1b5d1f656477,2026-09-10T20:10:00Z,Texas Rangers,Seattle Mariners,pinnacle,2026-09-10T18:47:46Z,spreads,Seattle Mariners,-1.5,2.91,+191,0.343643
-36a89478e8db28447dfe1b5d1f656477,2026-09-10T20:10:00Z,Texas Rangers,Seattle Mariners,pinnacle,2026-09-10T18:47:46Z,spreads,Texas Rangers,1.5,1.46,-217,0.684932
-36a89478e8db28447dfe1b5d1f656477,2026-09-10T20:10:00Z,Texas Rangers,Seattle Mariners,pinnacle,2026-09-10T18:47:46Z,totals,Over,7.0,2.05,+105,0.487805
-36a89478e8db28447dfe1b5d1f656477,2026-09-10T20:10:00Z,Texas Rangers,Seattle Mariners,pinnacle,2026-09-10T18:47:46Z,totals,Under,7.0,1.85,-118,0.540541
-de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T18:47:46Z,h2h,Colorado Rockies,,3.5,+250,0.285714
-de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T18:47:46Z,h2h,New York Yankees,,1.36,-278,0.735294
-de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T18:47:46Z,spreads,Colorado Rockies,1.5,2.17,+117,0.460829
-de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T18:47:46Z,spreads,New York Yankees,-1.5,1.78,-128,0.561798
-de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T18:47:46Z,totals,Over,8.5,1.96,-104,0.510204
-de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T18:47:46Z,totals,Under,8.5,1.93,-108,0.518135
-46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T18:47:46Z,h2h,Chicago White Sox,,1.96,-104,0.510204
-46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T18:47:46Z,h2h,Pittsburgh Pirates,,1.96,-104,0.510204
-46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T18:47:46Z,spreads,Chicago White Sox,-1.5,3.01,+201,0.332226
-46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T18:47:46Z,spreads,Pittsburgh Pirates,1.5,1.44,-227,0.694444
-46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T18:47:46Z,totals,Over,7.5,1.88,-114,0.531915
-46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T18:47:46Z,totals,Under,7.5,2.01,+101,0.497512
+de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T22:02:39Z,h2h,Colorado Rockies,,3.41,+241,0.293255
+de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T22:02:39Z,h2h,New York Yankees,,1.37,-270,0.729927
+de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T22:02:39Z,spreads,Colorado Rockies,1.5,2.14,+114,0.46729
+de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T22:02:39Z,spreads,New York Yankees,-1.5,1.79,-127,0.558659
+de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T22:02:39Z,totals,Over,8.5,2.03,+103,0.492611
+de5c4fe6a041ce8073e59e063fe7f31f,2026-09-10T23:05:00Z,Colorado Rockies,New York Yankees,pinnacle,2026-09-10T22:02:39Z,totals,Under,8.5,1.86,-116,0.537634
+46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T22:02:39Z,h2h,Chicago White Sox,,1.92,-109,0.520833
+46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T22:02:39Z,h2h,Pittsburgh Pirates,,2.01,+101,0.497512
+46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T22:02:39Z,spreads,Chicago White Sox,-1.5,2.94,+194,0.340136
+46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T22:02:39Z,spreads,Pittsburgh Pirates,1.5,1.45,-222,0.689655
+46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T22:02:39Z,totals,Over,7.5,1.92,-109,0.520833
+46bb732d224f9da07f9e3bb2f32281cc,2026-09-10T23:41:00Z,Pittsburgh Pirates,Chicago White Sox,pinnacle,2026-09-10T22:02:39Z,totals,Under,7.5,1.97,-103,0.507614

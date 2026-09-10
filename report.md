@@ -1,26 +1,26 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-09-10T18:50:01.301794+00:00
-- API requests remaining: 398
+- Updated: 2026-09-10T22:05:41.858868+00:00
+- API requests remaining: 395
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
 ### 1. Chicago White Sox
 - Game: Pittsburgh Pirates @ Chicago White Sox
-- Odds: 1.96
-- AI probability: 55.6%
-- EV: 9.1%
-- 1/4 Kelly: 2.4%
-- Lineup: 未発表
-- Lineup quality: +0.41
-- Platoon proxy: +0.10
+- Odds: 1.92
+- AI probability: 55.3%
+- EV: 6.1%
+- 1/4 Kelly: 1.7%
+- Lineup: 発表済み
+- Lineup quality: +0.26
+- Platoon proxy: +0.12
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.45
-- Expected score: Pittsburgh Pirates 2.72 - Chicago White Sox 3.11
+- Expected score: Pittsburgh Pirates 2.71 - Chicago White Sox 3.07
 
 ## Run Line Buy Ranking
 
