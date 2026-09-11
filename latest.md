@@ -1,17 +1,17 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-09-11T18:54:00.977244+00:00
-- API requests remaining: 389
+- Updated: 2026-09-11T22:07:00.023829+00:00
+- API requests remaining: 386
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
 ### 1. Houston Astros
 - Game: Houston Astros @ Tampa Bay Rays
-- Odds: 2.52
-- AI probability: 56.2%
-- EV: 41.5%
-- 1/4 Kelly: 6.8%
+- Odds: 2.69
+- AI probability: 55.8%
+- EV: 50.1%
+- 1/4 Kelly: 7.4%
 - Lineup: 未発表
 - Lineup quality: +0.29
 - Platoon proxy: -0.09
@@ -24,9 +24,9 @@
 
 ### 2. Arizona Diamondbacks
 - Game: Texas Rangers @ Arizona Diamondbacks
-- Odds: 1.89
+- Odds: 1.9
 - AI probability: 64.1%
-- EV: 21.2%
+- EV: 21.8%
 - 1/4 Kelly: 6.0%
 - Lineup: 未発表
 - Lineup quality: -0.09
@@ -40,26 +40,26 @@
 
 ### 3. Colorado Rockies
 - Game: Colorado Rockies @ Detroit Tigers
-- Odds: 2.63
-- AI probability: 45.2%
-- EV: 18.9%
-- 1/4 Kelly: 2.9%
+- Odds: 2.58
+- AI probability: 45.3%
+- EV: 16.9%
+- 1/4 Kelly: 2.7%
 - Lineup: 未発表
 - Lineup quality: +0.58
 - Platoon proxy: +0.11
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
+- Weather run factor: 1.003
+- Temperature: 24.4 C
+- Rain probability: 3%
+- Wind: 6.5 km/h (329 deg)
 - Bullpen fatigue proxy: 0.45
-- Expected score: Colorado Rockies 3.41 - Detroit Tigers 3.63
+- Expected score: Colorado Rockies 3.42 - Detroit Tigers 3.64
 
 ### 4. Boston Red Sox
 - Game: Kansas City Royals @ Boston Red Sox
-- Odds: 1.51
+- Odds: 1.5
 - AI probability: 77.2%
-- EV: 16.5%
-- 1/4 Kelly: 8.1%
+- EV: 15.8%
+- 1/4 Kelly: 7.9%
 - Lineup: 未発表
 - Lineup quality: +0.00
 - Platoon proxy: +0.10
@@ -72,9 +72,9 @@
 
 ### 5. Athletics
 - Game: Seattle Mariners @ Athletics
-- Odds: 2.43
+- Odds: 2.42
 - AI probability: 47.3%
-- EV: 15.0%
+- EV: 14.6%
 - 1/4 Kelly: 2.6%
 - Lineup: 未発表
 - Lineup quality: -0.10
@@ -88,10 +88,10 @@
 
 ### 6. Minnesota Twins
 - Game: Cleveland Guardians @ Minnesota Twins
-- Odds: 2.05
+- Odds: 2.04
 - AI probability: 55.7%
-- EV: 14.1%
-- 1/4 Kelly: 3.4%
+- EV: 13.6%
+- 1/4 Kelly: 3.3%
 - Lineup: 未発表
 - Lineup quality: +0.26
 - Platoon proxy: +0.00
@@ -102,21 +102,21 @@
 - Bullpen fatigue proxy: 0.45
 - Expected score: Cleveland Guardians 3.07 - Minnesota Twins 3.52
 
-### 7. Miami Marlins
-- Game: Los Angeles Dodgers @ Miami Marlins
-- Odds: 2.84
-- AI probability: 38.9%
-- EV: 10.4%
-- 1/4 Kelly: 1.4%
+### 7. Toronto Blue Jays
+- Game: Baltimore Orioles @ Toronto Blue Jays
+- Odds: 1.78
+- AI probability: 63.7%
+- EV: 13.4%
+- 1/4 Kelly: 4.3%
 - Lineup: 未発表
-- Lineup quality: +0.20
-- Platoon proxy: +0.00
+- Lineup quality: -0.00
+- Platoon proxy: +0.05
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.45
-- Expected score: Los Angeles Dodgers 3.17 - Miami Marlins 2.53
+- Expected score: Baltimore Orioles 2.41 - Toronto Blue Jays 3.34
 
 ### 8. Milwaukee Brewers
 - Game: Cincinnati Reds @ Milwaukee Brewers
@@ -134,46 +134,46 @@
 - Bullpen fatigue proxy: 0.55
 - Expected score: Cincinnati Reds 2.52 - Milwaukee Brewers 3.99
 
-### 9. Toronto Blue Jays
-- Game: Baltimore Orioles @ Toronto Blue Jays
-- Odds: 1.76
-- AI probability: 61.0%
-- EV: 7.3%
-- 1/4 Kelly: 2.4%
+### 9. Miami Marlins
+- Game: Los Angeles Dodgers @ Miami Marlins
+- Odds: 2.74
+- AI probability: 39.1%
+- EV: 7.1%
+- 1/4 Kelly: 1.0%
 - Lineup: 未発表
-- Lineup quality: -0.00
-- Platoon proxy: +0.05
+- Lineup quality: +0.20
+- Platoon proxy: +0.00
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.45
-- Expected score: Baltimore Orioles 2.63 - Toronto Blue Jays 3.35
+- Expected score: Los Angeles Dodgers 3.17 - Miami Marlins 2.53
+
+### 10. Chicago White Sox
+- Game: Chicago White Sox @ St. Louis Cardinals
+- Odds: 2.0
+- AI probability: 53.3%
+- EV: 6.5%
+- 1/4 Kelly: 1.6%
+- Lineup: 未発表
+- Lineup quality: +0.41
+- Platoon proxy: +0.10
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Chicago White Sox 3.08 - St. Louis Cardinals 2.82
 
 ## Run Line Buy Ranking
 
-### 1. Athletics +1.5
-- Game: Seattle Mariners @ Athletics
-- Odds: 1.91
-- Cover probability: 71.1%
-- EV: 35.7%
-- 1/4 Kelly: 9.8%
-- Lineup: 未発表
-- Lineup quality: -0.10
-- Platoon proxy: -0.00
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: Seattle Mariners 3.43 - Athletics 3.32
-
-### 2. Houston Astros +1.5
+### 1. Houston Astros +1.5
 - Game: Houston Astros @ Tampa Bay Rays
-- Odds: 1.7
+- Odds: 1.76
 - Cover probability: 79.3%
-- EV: 34.8%
-- 1/4 Kelly: 12.4%
+- EV: 39.6%
+- 1/4 Kelly: 13.0%
 - Lineup: 未発表
 - Lineup quality: +0.29
 - Platoon proxy: -0.09
@@ -184,12 +184,28 @@
 - Bullpen fatigue proxy: 0.45
 - Expected score: Houston Astros 3.94 - Tampa Bay Rays 3.30
 
+### 2. Athletics +1.5
+- Game: Seattle Mariners @ Athletics
+- Odds: 1.9
+- Cover probability: 71.1%
+- EV: 35.0%
+- 1/4 Kelly: 9.7%
+- Lineup: 未発表
+- Lineup quality: -0.10
+- Platoon proxy: -0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Seattle Mariners 3.43 - Athletics 3.32
+
 ### 3. Miami Marlins +1.5
 - Game: Los Angeles Dodgers @ Miami Marlins
-- Odds: 2.05
+- Odds: 2.02
 - Cover probability: 64.8%
-- EV: 32.8%
-- 1/4 Kelly: 7.8%
+- EV: 30.9%
+- 1/4 Kelly: 7.6%
 - Lineup: 未発表
 - Lineup quality: +0.20
 - Platoon proxy: +0.00
@@ -218,10 +234,10 @@
 
 ### 5. Boston Red Sox -1.5
 - Game: Kansas City Royals @ Boston Red Sox
-- Odds: 2.08
+- Odds: 2.05
 - Cover probability: 58.5%
-- EV: 21.7%
-- 1/4 Kelly: 5.0%
+- EV: 19.9%
+- 1/4 Kelly: 4.7%
 - Lineup: 未発表
 - Lineup quality: +0.00
 - Platoon proxy: +0.10
@@ -234,25 +250,25 @@
 
 ### 6. Colorado Rockies +1.5
 - Game: Colorado Rockies @ Detroit Tigers
-- Odds: 1.74
+- Odds: 1.72
 - Cover probability: 69.4%
-- EV: 20.7%
-- 1/4 Kelly: 7.0%
+- EV: 19.4%
+- 1/4 Kelly: 6.7%
 - Lineup: 未発表
 - Lineup quality: +0.58
 - Platoon proxy: +0.11
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
+- Weather run factor: 1.003
+- Temperature: 24.4 C
+- Rain probability: 3%
+- Wind: 6.5 km/h (329 deg)
 - Bullpen fatigue proxy: 0.45
-- Expected score: Colorado Rockies 3.41 - Detroit Tigers 3.63
+- Expected score: Colorado Rockies 3.42 - Detroit Tigers 3.64
 
 ### 7. Arizona Diamondbacks -1.5
 - Game: Texas Rangers @ Arizona Diamondbacks
-- Odds: 2.78
+- Odds: 2.79
 - Cover probability: 41.9%
-- EV: 16.4%
+- EV: 16.8%
 - 1/4 Kelly: 2.3%
 - Lineup: 未発表
 - Lineup quality: -0.09
@@ -282,26 +298,26 @@
 
 ### 9. St. Louis Cardinals +1.5
 - Game: Chicago White Sox @ St. Louis Cardinals
-- Odds: 1.58
-- Cover probability: 69.9%
-- EV: 10.5%
-- 1/4 Kelly: 4.5%
+- Odds: 1.54
+- Cover probability: 70.3%
+- EV: 8.3%
+- 1/4 Kelly: 3.8%
 - Lineup: 未発表
 - Lineup quality: -0.16
 - Platoon proxy: +0.00
-- Weather run factor: 1.021
-- Temperature: 33.2 C
-- Rain probability: 6%
-- Wind: 6.7 km/h (16 deg)
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.55
-- Expected score: Chicago White Sox 3.14 - St. Louis Cardinals 2.88
+- Expected score: Chicago White Sox 3.08 - St. Louis Cardinals 2.82
 
 ### 10. New York Mets +1.5
 - Game: New York Mets @ New York Yankees
-- Odds: 1.56
+- Odds: 1.54
 - Cover probability: 68.6%
-- EV: 7.0%
-- 1/4 Kelly: 3.1%
+- EV: 5.7%
+- 1/4 Kelly: 2.6%
 - Lineup: 未発表
 - Lineup quality: +0.08
 - Platoon proxy: +0.10

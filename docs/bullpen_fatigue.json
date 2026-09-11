@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-09-11T18:54:00.977244+00:00",
+  "fetched_at_utc": "2026-09-11T22:07:00.023829+00:00",
   "fatigue": {
     "Atlanta Braves": {
       "fatigue_score": 0.55,
@@ -72,9 +72,9 @@
       "doubleheader_games": 0
     },
     "Chicago Cubs": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
+      "fatigue_score": 0.65,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
       "extra_inning_games": 1,
       "doubleheader_games": 0
     },
@@ -184,9 +184,9 @@
       "doubleheader_games": 0
     },
     "Pittsburgh Pirates": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
+      "fatigue_score": 0.55,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
