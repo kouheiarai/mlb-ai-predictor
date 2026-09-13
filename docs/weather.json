@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-09-13T02:11:07.620695+00:00",
+  "fetched_at_utc": "2026-09-13T18:25:05.433276+00:00",
   "games": [
     {
       "game_pk": 824225,
@@ -7,11 +7,11 @@
       "home_team": "Detroit Tigers",
       "game_date_utc": "2026-09-13T16:10:00Z",
       "weather": {
-        "weather_run_factor": 1.0144,
-        "temperature_c": 26.7,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 13.0,
-        "wind_direction_deg": 275
+        "weather_run_factor": 1.0107,
+        "temperature_c": 25.2,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 12.3,
+        "wind_direction_deg": 291
       }
     },
     {
@@ -46,11 +46,11 @@
       "home_team": "New York Yankees",
       "game_date_utc": "2026-09-13T17:35:00Z",
       "weather": {
-        "weather_run_factor": 1.0036,
-        "temperature_c": 23.4,
-        "precipitation_probability": 13,
-        "wind_speed_kmh": 8.8,
-        "wind_direction_deg": 9
+        "weather_run_factor": 1.0039,
+        "temperature_c": 21.7,
+        "precipitation_probability": 38,
+        "wind_speed_kmh": 12.5,
+        "wind_direction_deg": 327
       }
     },
     {
@@ -98,11 +98,11 @@
       "home_team": "Minnesota Twins",
       "game_date_utc": "2026-09-13T18:10:00Z",
       "weather": {
-        "weather_run_factor": 0.9953,
-        "temperature_c": 19.0,
+        "weather_run_factor": 1.0036,
+        "temperature_c": 20.3,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 9.3,
-        "wind_direction_deg": 286
+        "wind_speed_kmh": 15.0,
+        "wind_direction_deg": 314
       }
     },
     {
@@ -124,11 +124,11 @@
       "home_team": "St. Louis Cardinals",
       "game_date_utc": "2026-09-13T18:15:00Z",
       "weather": {
-        "weather_run_factor": 1.0188,
-        "temperature_c": 29.7,
-        "precipitation_probability": 9,
-        "wind_speed_kmh": 11.4,
-        "wind_direction_deg": 298
+        "weather_run_factor": 1.0134,
+        "temperature_c": 27.6,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 10.2,
+        "wind_direction_deg": 315
       }
     },
     {
@@ -137,10 +137,10 @@
       "home_team": "Chicago Cubs",
       "game_date_utc": "2026-09-13T18:20:00Z",
       "weather": {
-        "weather_run_factor": 1.0071,
-        "temperature_c": 22.8,
-        "precipitation_probability": 5,
-        "wind_speed_kmh": 13.5,
+        "weather_run_factor": 1.0035,
+        "temperature_c": 21.2,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 13.1,
         "wind_direction_deg": 16
       }
     },
@@ -150,11 +150,11 @@
       "home_team": "Boston Red Sox",
       "game_date_utc": "2026-09-13T19:05:00Z",
       "weather": {
-        "weather_run_factor": 1.0039,
-        "temperature_c": 20.1,
-        "precipitation_probability": 59,
-        "wind_speed_kmh": 15.7,
-        "wind_direction_deg": 81
+        "weather_run_factor": 0.999,
+        "temperature_c": 19.2,
+        "precipitation_probability": 90,
+        "wind_speed_kmh": 12.6,
+        "wind_direction_deg": 88
       }
     },
     {
@@ -189,8 +189,8 @@
       "home_team": "San Francisco Giants",
       "game_date_utc": "2026-09-13T23:20:00Z",
       "weather": {
-        "weather_run_factor": 1.017,
-        "temperature_c": 20.9,
+        "weather_run_factor": 1.0176,
+        "temperature_c": 21.2,
         "precipitation_probability": 0,
         "wind_speed_kmh": 27.2,
         "wind_direction_deg": 298
@@ -202,11 +202,11 @@
       "home_team": "Cincinnati Reds",
       "game_date_utc": "2026-09-14T22:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0085,
-        "temperature_c": 25.4,
+        "weather_run_factor": 1.0095,
+        "temperature_c": 25.6,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 9.7,
-        "wind_direction_deg": 59
+        "wind_speed_kmh": 10.3,
+        "wind_direction_deg": 65
       }
     },
     {
@@ -215,11 +215,11 @@
       "home_team": "Cleveland Guardians",
       "game_date_utc": "2026-09-14T22:40:00Z",
       "weather": {
-        "weather_run_factor": 0.9991,
-        "temperature_c": 18.9,
+        "weather_run_factor": 0.9988,
+        "temperature_c": 19.0,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 13.3,
-        "wind_direction_deg": 26
+        "wind_speed_kmh": 12.8,
+        "wind_direction_deg": 22
       }
     },
     {
@@ -254,11 +254,11 @@
       "home_team": "Chicago Cubs",
       "game_date_utc": "2026-09-14T23:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0121,
-        "temperature_c": 20.9,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 22.3,
-        "wind_direction_deg": 139
+        "weather_run_factor": 1.006,
+        "temperature_c": 20.7,
+        "precipitation_probability": 2,
+        "wind_speed_kmh": 16.6,
+        "wind_direction_deg": 141
       }
     },
     {
@@ -267,11 +267,11 @@
       "home_team": "Minnesota Twins",
       "game_date_utc": "2026-09-14T23:40:00Z",
       "weather": {
-        "weather_run_factor": 0.9971,
-        "temperature_c": 16.1,
-        "precipitation_probability": 99,
-        "wind_speed_kmh": 16.9,
-        "wind_direction_deg": 164
+        "weather_run_factor": 1.0015,
+        "temperature_c": 13.8,
+        "precipitation_probability": 45,
+        "wind_speed_kmh": 26.1,
+        "wind_direction_deg": 150
       }
     },
     {
@@ -280,11 +280,11 @@
       "home_team": "St. Louis Cardinals",
       "game_date_utc": "2026-09-14T23:45:00Z",
       "weather": {
-        "weather_run_factor": 1.023,
-        "temperature_c": 30.0,
+        "weather_run_factor": 1.0259,
+        "temperature_c": 29.8,
         "precipitation_probability": 1,
-        "wind_speed_kmh": 14.9,
-        "wind_direction_deg": 135
+        "wind_speed_kmh": 18.2,
+        "wind_direction_deg": 142
       }
     },
     {
@@ -293,11 +293,11 @@
       "home_team": "Colorado Rockies",
       "game_date_utc": "2026-09-15T00:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0112,
-        "temperature_c": 29.8,
-        "precipitation_probability": 20,
-        "wind_speed_kmh": 3.8,
-        "wind_direction_deg": 208
+        "weather_run_factor": 1.0163,
+        "temperature_c": 28.7,
+        "precipitation_probability": 2,
+        "wind_speed_kmh": 10.9,
+        "wind_direction_deg": 226
       }
     },
     {
@@ -332,11 +332,11 @@
       "home_team": "Cincinnati Reds",
       "game_date_utc": "2026-09-15T22:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0182,
+        "weather_run_factor": 1.0233,
         "temperature_c": 33.2,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 4.0,
-        "wind_direction_deg": 95
+        "wind_speed_kmh": 9.0,
+        "wind_direction_deg": 182
       }
     },
     {
@@ -358,11 +358,11 @@
       "home_team": "Cleveland Guardians",
       "game_date_utc": "2026-09-15T22:40:00Z",
       "weather": {
-        "weather_run_factor": 1.014,
-        "temperature_c": 24.9,
-        "precipitation_probability": 3,
-        "wind_speed_kmh": 16.2,
-        "wind_direction_deg": 180
+        "weather_run_factor": 1.0135,
+        "temperature_c": 24.3,
+        "precipitation_probability": 1,
+        "wind_speed_kmh": 16.9,
+        "wind_direction_deg": 179
       }
     },
     {
@@ -371,11 +371,11 @@
       "home_team": "Pittsburgh Pirates",
       "game_date_utc": "2026-09-15T22:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0043,
-        "temperature_c": 25.6,
+        "weather_run_factor": 0.9999,
+        "temperature_c": 24.2,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 5.2,
-        "wind_direction_deg": 115
+        "wind_speed_kmh": 3.6,
+        "wind_direction_deg": 135
       }
     },
     {
@@ -423,11 +423,11 @@
       "home_team": "Chicago Cubs",
       "game_date_utc": "2026-09-15T23:40:00Z",
       "weather": {
-        "weather_run_factor": 0.9953,
-        "temperature_c": 22.2,
-        "precipitation_probability": 38,
-        "wind_speed_kmh": 2.9,
-        "wind_direction_deg": 330
+        "weather_run_factor": 1.0093,
+        "temperature_c": 23.9,
+        "precipitation_probability": 42,
+        "wind_speed_kmh": 13.5,
+        "wind_direction_deg": 331
       }
     },
     {
@@ -436,11 +436,11 @@
       "home_team": "Minnesota Twins",
       "game_date_utc": "2026-09-15T23:40:00Z",
       "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "weather_run_factor": 1.0012,
+        "temperature_c": 20.8,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 11.6,
+        "wind_direction_deg": 324
       }
     },
     {
@@ -449,11 +449,11 @@
       "home_team": "St. Louis Cardinals",
       "game_date_utc": "2026-09-15T23:45:00Z",
       "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "weather_run_factor": 1.0143,
+        "temperature_c": 27.6,
+        "precipitation_probability": 48,
+        "wind_speed_kmh": 11.1,
+        "wind_direction_deg": 324
       }
     },
     {

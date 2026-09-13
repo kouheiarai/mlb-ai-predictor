@@ -1,21 +1,9 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,bb473dec1856e220c392f73ee51cb98a,2026-09-13T17:40:00Z,Los Angeles Dodgers,Miami Marlins,Emmet Sheehan,Eury Pérez,Under,8.5,1.89,0.89333,0.0,0.688394,0.193369,1.0,1.0,3.113,2.554,100000,BUY
-total,25ea35d9e1cfed80a2bef6c8e21f0786,2026-09-13T17:36:00Z,New York Mets,New York Yankees,Christian Scott,Cam Schlittler,Under,7.5,1.94,0.84498,0.0,0.639261,0.170016,1.0036,1.03,2.379,2.959,100000,BUY
-total,24dff06b7aac0693e5e299af47f50290,2026-09-13T20:06:00Z,Seattle Mariners,Athletics,Bryce Miller,Jacob Lopez,Under,10.0,1.88,0.85536,0.06161,0.608077,0.172749,1.0,1.0,3.391,3.524,100000,BUY
-total,83d0a9d067e7d1abba253a527eb4257f,2026-09-13T16:11:00Z,Colorado Rockies,Detroit Tigers,Gabriel Hughes,Jackson Jobe,Under,8.5,2.04,0.73043,0.0,0.490077,0.117807,1.0144,1.0,3.267,3.885,100000,BUY
-total,712095bfc2d808a30b170139a010a1d4,2026-09-13T17:36:00Z,Philadelphia Phillies,Atlanta Braves,Andrew Painter,Grant Holmes,Under,9.0,1.91,0.67626,0.11253,0.291657,0.080125,1.0,1.0,3.203,4.307,100000,BUY
-total,56927216de1b9cc394e6c83b75d6926b,2026-09-13T17:36:00Z,Los Angeles Angels,Washington Nationals,Grayson Rodriguez,Jake Irvin,Under,9.0,1.98,0.64691,0.11693,0.280882,0.071654,1.0,1.0,3.495,4.233,100000,BUY
-total,6f96adeb30e87f1372ad951bf3404d21,2026-09-13T23:21:00Z,San Diego Padres,San Francisco Giants,Nick Pivetta,Logan Webb,Under,7.0,1.9,0.67389,0.12401,0.280391,0.077886,1.017,0.96,3.133,2.608,100000,BUY
-total,119261d49b81854e942bebf7f44afa6b,2026-09-13T19:06:00Z,Kansas City Royals,Boston Red Sox,Noah Cameron,Payton Tolle,Under,7.5,1.85,0.67724,0.0,0.252894,0.074381,1.0039,1.05,2.327,4.285,100000,BUY
-total,e11cab546e55ee3d1f8dbb787a7d7fee,2026-09-13T17:38:00Z,Baltimore Orioles,Toronto Blue Jays,Trevor Rogers,Dylan Cease,Under,7.5,1.83,0.66469,0.0,0.216383,0.065176,1.0,1.0,3.365,3.345,100000,BUY
-total,c8c288fb5f290ac3cb4c91c056e01cdc,2026-09-13T17:41:00Z,Houston Astros,Tampa Bay Rays,Hayden Wesneski,Freddy Peralta,Under,8.0,1.87,0.58768,0.13125,0.098962,0.028437,1.0,0.98,3.779,3.453,100000,BUY
-total,e11cab546e55ee3d1f8dbb787a7d7fee,2026-09-13T17:38:00Z,Baltimore Orioles,Toronto Blue Jays,Trevor Rogers,Dylan Cease,Over,7.5,2.06,0.33531,0.0,-0.309261,0.0,1.0,1.0,3.365,3.345,100000,PASS
-total,119261d49b81854e942bebf7f44afa6b,2026-09-13T19:06:00Z,Kansas City Royals,Boston Red Sox,Noah Cameron,Payton Tolle,Over,7.5,2.03,0.32276,0.0,-0.344797,0.0,1.0039,1.05,2.327,4.285,100000,PASS
-total,c8c288fb5f290ac3cb4c91c056e01cdc,2026-09-13T17:41:00Z,Houston Astros,Tampa Bay Rays,Hayden Wesneski,Freddy Peralta,Over,8.0,2.01,0.28107,0.13125,-0.435049,0.0,1.0,0.98,3.779,3.453,100000,PASS
-total,83d0a9d067e7d1abba253a527eb4257f,2026-09-13T16:11:00Z,Colorado Rockies,Detroit Tigers,Gabriel Hughes,Jackson Jobe,Over,8.5,1.83,0.26957,0.0,-0.506687,0.0,1.0144,1.0,3.267,3.885,100000,PASS
-total,56927216de1b9cc394e6c83b75d6926b,2026-09-13T17:36:00Z,Los Angeles Angels,Washington Nationals,Grayson Rodriguez,Jake Irvin,Over,9.0,1.88,0.23616,0.11693,-0.556019,0.0,1.0,1.0,3.495,4.233,100000,PASS
-total,712095bfc2d808a30b170139a010a1d4,2026-09-13T17:36:00Z,Philadelphia Phillies,Atlanta Braves,Andrew Painter,Grant Holmes,Over,9.0,1.96,0.21121,0.11253,-0.586028,0.0,1.0,1.0,3.203,4.307,100000,PASS
-total,6f96adeb30e87f1372ad951bf3404d21,2026-09-13T23:21:00Z,San Diego Padres,San Francisco Giants,Nick Pivetta,Logan Webb,Over,7.0,1.97,0.2021,0.12401,-0.601863,0.0,1.017,0.96,3.133,2.608,100000,PASS
-total,25ea35d9e1cfed80a2bef6c8e21f0786,2026-09-13T17:36:00Z,New York Mets,New York Yankees,Christian Scott,Cam Schlittler,Over,7.5,1.93,0.15502,0.0,-0.700811,0.0,1.0036,1.03,2.379,2.959,100000,PASS
-total,bb473dec1856e220c392f73ee51cb98a,2026-09-13T17:40:00Z,Los Angeles Dodgers,Miami Marlins,Emmet Sheehan,Eury Pérez,Over,8.5,1.98,0.10667,0.0,-0.788793,0.0,1.0,1.0,3.113,2.554,100000,PASS
-total,24dff06b7aac0693e5e299af47f50290,2026-09-13T20:06:00Z,Seattle Mariners,Athletics,Bryce Miller,Jacob Lopez,Over,10.0,1.98,0.08303,0.06161,-0.835601,0.0,1.0,1.0,3.391,3.524,100000,PASS
+total,6f96adeb30e87f1372ad951bf3404d21,2026-09-13T23:21:00Z,San Diego Padres,San Francisco Giants,Nick Pivetta,Logan Webb,Under,7.5,1.89,0.79808,0.0,0.508371,0.142801,1.0176,0.96,3.137,2.612,100000,BUY
+total,24dff06b7aac0693e5e299af47f50290,2026-09-13T20:06:00Z,Seattle Mariners,Athletics,Bryce Miller,Jacob Lopez,Under,9.0,1.99,0.734,0.10215,0.46066,0.116328,1.0,1.0,3.546,3.579,100000,BUY
+total,119261d49b81854e942bebf7f44afa6b,2026-09-13T19:06:00Z,Kansas City Royals,Boston Red Sox,Noah Cameron,Payton Tolle,Under,7.5,1.88,0.67319,0.0,0.265597,0.075454,0.999,1.05,2.329,4.321,100000,BUY
+total,deb38987e1d795a4b7e4e497442320ac,2026-09-13T20:11:00Z,Texas Rangers,Arizona Diamondbacks,Cal Quantrill,Eduardo Rodriguez,Under,8.0,2.01,0.55854,0.13341,0.122665,0.030363,1.0,1.0,3.721,3.704,100000,BUY
+total,119261d49b81854e942bebf7f44afa6b,2026-09-13T19:06:00Z,Kansas City Royals,Boston Red Sox,Noah Cameron,Payton Tolle,Over,7.5,2.01,0.32681,0.0,-0.343112,0.0,0.999,1.05,2.329,4.321,100000,PASS
+total,deb38987e1d795a4b7e4e497442320ac,2026-09-13T20:11:00Z,Texas Rangers,Arizona Diamondbacks,Cal Quantrill,Eduardo Rodriguez,Over,8.0,1.88,0.30805,0.13341,-0.420866,0.0,1.0,1.0,3.721,3.704,100000,PASS
+total,6f96adeb30e87f1372ad951bf3404d21,2026-09-13T23:21:00Z,San Diego Padres,San Francisco Giants,Nick Pivetta,Logan Webb,Over,7.5,2.0,0.20192,0.0,-0.59616,0.0,1.0176,0.96,3.137,2.612,100000,PASS
+total,24dff06b7aac0693e5e299af47f50290,2026-09-13T20:06:00Z,Seattle Mariners,Athletics,Bryce Miller,Jacob Lopez,Over,9.0,1.9,0.16385,0.10215,-0.688685,0.0,1.0,1.0,3.546,3.579,100000,PASS
