@@ -1,19 +1,20 @@
 MLB AI Predictor Ver.26.0 推奨一覧
 
-更新: 2026-09-14 06:56 JST（UTC 2026-09-13T21:56:54.312008+00:00）
-対象日 (UTC): 2026-09-13
-対象試合数: 1
-BUY 件数: マネーライン 0 / ランライン 1 / 合計得点 1
+更新: 2026-09-14 08:46 JST（UTC 2026-09-13T23:46:42.004278+00:00）
+対象日 (UTC): 2026-09-14
+対象試合数: 2
+BUY 件数: マネーライン 2 / ランライン 1 / 合計得点 0
 オッズ: Pinnacle via The Odds API
 
-## マネーライン（EV 降順・0 件）
-BUY 判定なし。
+## マネーライン（EV 降順・2 件）
+1. Atlanta Braves | Atlanta Braves @ Chicago Cubs | 2026-09-15 08:41 JST | オッズ 2.19 | AI勝率 62.3% | EV 36.5% | 1/4ケリー 7.7% | 信頼度 A
+2. Los Angeles Dodgers | Los Angeles Dodgers @ Cincinnati Reds | 2026-09-15 07:41 JST | オッズ 1.50 | AI勝率 81.8% | EV 22.7% | 1/4ケリー 11.3% | 信頼度 A
 
 ## ランライン（EV 降順・1 件）
-1. San Francisco Giants +1.5 | San Diego Padres @ San Francisco Giants | 2026-09-14 08:21 JST | オッズ 1.68 | AI勝率 65.2% | EV 9.5% | 1/4ケリー 3.5% | 信頼度 A
+1. Los Angeles Dodgers -1.5 | Los Angeles Dodgers @ Cincinnati Reds | 2026-09-15 07:41 JST | オッズ 1.85 | AI勝率 68.0% | EV 25.7% | 1/4ケリー 7.6% | 信頼度 A
 
-## 合計得点（EV 降順・1 件）
-1. Under +7.5 | San Diego Padres @ San Francisco Giants | 2026-09-14 08:21 JST | オッズ 1.90 | AI勝率 81.4% | EV 54.7% | 1/4ケリー 15.2% | 信頼度 A
+## 合計得点（EV 降順・0 件）
+BUY 判定なし。
 
 ## 注意
 

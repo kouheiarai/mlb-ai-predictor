@@ -1,3 +1,3 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,6f96adeb30e87f1372ad951bf3404d21,2026-09-13T23:21:00Z,San Diego Padres,San Francisco Giants,Nick Pivetta,Logan Webb,Under,7.5,1.9,0.81443,0.0,0.547417,0.15206,1.0164,0.96,3.117,2.501,100000,BUY
-total,6f96adeb30e87f1372ad951bf3404d21,2026-09-13T23:21:00Z,San Diego Padres,San Francisco Giants,Nick Pivetta,Logan Webb,Over,7.5,1.99,0.18557,0.0,-0.630716,0.0,1.0164,0.96,3.117,2.501,100000,PASS
+total,fd0c792d70a4325cb16c03c7af9a089a,2026-09-14T22:41:00Z,Los Angeles Dodgers,Cincinnati Reds,Yoshinobu Yamamoto,Rhett Lowder,Under,8.0,1.92,0.54036,0.13627,0.037491,0.010188,1.0215,1.04,5.141,2.346,100000,LEAN
+total,fd0c792d70a4325cb16c03c7af9a089a,2026-09-14T22:41:00Z,Los Angeles Dodgers,Cincinnati Reds,Yoshinobu Yamamoto,Rhett Lowder,Over,8.0,1.95,0.32337,0.13627,-0.369429,0.0,1.0215,1.04,5.141,2.346,100000,PASS

@@ -1,29 +1,60 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-09-13T21:56:54.312008+00:00
-- API requests remaining: 365
+- Updated: 2026-09-13T23:46:42.004278+00:00
+- API requests remaining: 362
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-No EV 5%+ Moneyline bets.
+### 1. Atlanta Braves
+- Game: Atlanta Braves @ Chicago Cubs
+- Odds: 2.19
+- AI probability: 62.3%
+- EV: 36.5%
+- 1/4 Kelly: 7.7%
+- Lineup: 未発表
+- Lineup quality: +0.32
+- Platoon proxy: +0.07
+- Weather run factor: 1.011
+- Temperature: 26.3 C
+- Rain probability: 32%
+- Wind: 10.7 km/h (340 deg)
+- Bullpen fatigue proxy: 0.70
+- Expected score: Atlanta Braves 3.75 - Chicago Cubs 2.71
+
+### 2. Los Angeles Dodgers
+- Game: Los Angeles Dodgers @ Cincinnati Reds
+- Odds: 1.5
+- AI probability: 81.8%
+- EV: 22.7%
+- 1/4 Kelly: 11.3%
+- Lineup: 未発表
+- Lineup quality: +0.05
+- Platoon proxy: +0.01
+- Weather run factor: 1.022
+- Temperature: 33.0 C
+- Rain probability: 0%
+- Wind: 7.6 km/h (199 deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: Los Angeles Dodgers 5.14 - Cincinnati Reds 2.35
+
 ## Run Line Buy Ranking
 
-### 1. San Francisco Giants +1.5
-- Game: San Diego Padres @ San Francisco Giants
-- Odds: 1.68
-- Cover probability: 65.2%
-- EV: 9.5%
-- 1/4 Kelly: 3.5%
-- Lineup: 発表済み
-- Lineup quality: -0.39
-- Platoon proxy: +0.02
-- Weather run factor: 1.016
-- Temperature: 21.1 C
+### 1. Los Angeles Dodgers -1.5
+- Game: Los Angeles Dodgers @ Cincinnati Reds
+- Odds: 1.85
+- Cover probability: 68.0%
+- EV: 25.7%
+- 1/4 Kelly: 7.6%
+- Lineup: 未発表
+- Lineup quality: +0.05
+- Platoon proxy: +0.01
+- Weather run factor: 1.022
+- Temperature: 33.0 C
 - Rain probability: 0%
-- Wind: 26.2 km/h (297 deg)
-- Bullpen fatigue proxy: 0.45
-- Expected score: San Diego Padres 3.12 - San Francisco Giants 2.50
+- Wind: 7.6 km/h (199 deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: Los Angeles Dodgers 5.14 - Cincinnati Reds 2.35
 
 ## Model Notes
 

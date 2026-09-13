@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-09-13T21:56:54.312008+00:00",
+  "fetched_at_utc": "2026-09-13T23:46:42.004278+00:00",
   "fatigue": {
     "Minnesota Twins": {
       "fatigue_score": 0.55,
@@ -23,9 +23,9 @@
       "doubleheader_games": 0
     },
     "Athletics": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
+      "fatigue_score": 0.65,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
       "extra_inning_games": 1,
       "doubleheader_games": 0
     },
@@ -58,16 +58,16 @@
       "doubleheader_games": 0
     },
     "Texas Rangers": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
+      "fatigue_score": 0.6,
+      "games_played_lookback": 5,
+      "unique_game_dates": 5,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
     "Seattle Mariners": {
-      "fatigue_score": 0.65,
-      "games_played_lookback": 4,
-      "unique_game_dates": 4,
+      "fatigue_score": 0.7,
+      "games_played_lookback": 5,
+      "unique_game_dates": 5,
       "extra_inning_games": 1,
       "doubleheader_games": 0
     },
@@ -121,9 +121,9 @@
       "doubleheader_games": 0
     },
     "Boston Red Sox": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
+      "fatigue_score": 0.55,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
@@ -156,16 +156,16 @@
       "doubleheader_games": 0
     },
     "Arizona Diamondbacks": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
+      "fatigue_score": 0.55,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
     "Kansas City Royals": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
+      "fatigue_score": 0.55,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
       "extra_inning_games": 0,
       "doubleheader_games": 0
     },
