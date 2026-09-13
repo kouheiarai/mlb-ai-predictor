@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-09-12T23:34:16.506156+00:00",
+  "fetched_at_utc": "2026-09-13T02:11:07.620695+00:00",
   "metrics": {
     "Philadelphia Phillies": {
       "runs_per_game": 0.5838926174496645,
@@ -21,7 +21,7 @@
       "team_pitching_era": 3.78
     },
     "Arizona Diamondbacks": {
-      "runs_per_game": 0.5213675213675214,
+      "runs_per_game": 0.5254237288135594,
       "team_pitching_era": 4.97
     },
     "Colorado Rockies": {
@@ -32,7 +32,7 @@
       "team_pitching_era": 2.62
     },
     "Milwaukee Brewers": {
-      "runs_per_game": 0.6240601503759399,
+      "runs_per_game": 0.5112781954887218,
       "team_pitching_era": 1.95
     },
     "Cleveland Guardians": {
@@ -43,6 +43,10 @@
       "runs_per_game": 0.5619834710743802,
       "team_pitching_era": 2.01
     },
+    "Atlanta Braves": {
+      "runs_per_game": 0.6190476190476191,
+      "team_pitching_era": 4.11
+    },
     "San Diego Padres": {
       "runs_per_game": 0.5821917808219178,
       "team_pitching_era": 3.57
@@ -51,9 +55,9 @@
       "runs_per_game": 0.6388888888888888,
       "team_pitching_era": 3.92
     },
-    "Atlanta Braves": {
-      "runs_per_game": 0.6111111111111112,
-      "team_pitching_era": 4.11
+    "Cincinnati Reds": {
+      "runs_per_game": 0.5472972972972973,
+      "team_pitching_era": 5.38
     },
     "Boston Red Sox": {
       "runs_per_game": 0.528,
@@ -62,10 +66,6 @@
     "Kansas City Royals": {
       "runs_per_game": 0.6461538461538462,
       "team_pitching_era": 4.99
-    },
-    "Cincinnati Reds": {
-      "runs_per_game": 0.5405405405405406,
-      "team_pitching_era": 4.78
     },
     "Detroit Tigers": {
       "runs_per_game": 0.6363636363636364,
@@ -88,7 +88,7 @@
       "team_pitching_era": 3.48
     },
     "Seattle Mariners": {
-      "runs_per_game": 0.39855072463768115,
+      "runs_per_game": 0.6879432624113475,
       "team_pitching_era": 4.25
     },
     "Minnesota Twins": {
@@ -96,15 +96,15 @@
       "team_pitching_era": 3.81
     },
     "Athletics": {
-      "runs_per_game": 0.36153846153846153
-    },
-    "Chicago White Sox": {
-      "runs_per_game": 0.5748031496062992,
-      "team_pitching_era": 3.58
+      "runs_per_game": 0.35877862595419846
     },
     "Texas Rangers": {
-      "runs_per_game": 0.4748201438848921,
+      "runs_per_game": 0.4714285714285714,
       "team_pitching_era": 4.62
+    },
+    "Chicago White Sox": {
+      "runs_per_game": 0.5633802816901409,
+      "team_pitching_era": 3.58
     },
     "Washington Nationals": {
       "team_pitching_era": 3.12
