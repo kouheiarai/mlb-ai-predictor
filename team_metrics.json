@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-09-13T23:46:42.004278+00:00",
+  "fetched_at_utc": "2026-09-14T02:30:05.742375+00:00",
   "metrics": {
     "Philadelphia Phillies": {
       "runs_per_game": 0.5866666666666667,
@@ -43,13 +43,13 @@
       "runs_per_game": 0.5357142857142857,
       "team_pitching_era": 4.16
     },
+    "San Diego Padres": {
+      "runs_per_game": 0.5918367346938775,
+      "team_pitching_era": 3.57
+    },
     "New York Yankees": {
       "runs_per_game": 0.5573770491803278,
       "team_pitching_era": 1.95
-    },
-    "San Diego Padres": {
-      "runs_per_game": 0.5850340136054422,
-      "team_pitching_era": 3.57
     },
     "Cincinnati Reds": {
       "runs_per_game": 0.5503355704697986,
@@ -71,13 +71,13 @@
       "runs_per_game": 0.6412213740458015,
       "team_pitching_era": 4.99
     },
-    "San Francisco Giants": {
-      "runs_per_game": 0.45985401459854014,
-      "team_pitching_era": 4.19
-    },
     "Chicago Cubs": {
       "runs_per_game": 0.6893939393939394,
       "team_pitching_era": 4.6
+    },
+    "San Francisco Giants": {
+      "runs_per_game": 0.45985401459854014,
+      "team_pitching_era": 4.31
     },
     "Seattle Mariners": {
       "runs_per_game": 0.40714285714285714,
