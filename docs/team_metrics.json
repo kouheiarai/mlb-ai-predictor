@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-09-15T02:34:23.382333+00:00",
+  "fetched_at_utc": "2026-09-15T19:23:13.759121+00:00",
   "metrics": {
     "Philadelphia Phillies": {
       "runs_per_game": 0.5866666666666667,
@@ -20,12 +20,12 @@
       "runs_per_game": 0.4927536231884058,
       "team_pitching_era": 3.78
     },
-    "Colorado Rockies": {
-      "runs_per_game": 0.5333333333333333
-    },
     "Arizona Diamondbacks": {
       "runs_per_game": 0.525,
       "team_pitching_era": 4.97
+    },
+    "Colorado Rockies": {
+      "runs_per_game": 0.5407407407407407
     },
     "Los Angeles Dodgers": {
       "runs_per_game": 0.5625,
@@ -39,13 +39,13 @@
       "runs_per_game": 0.42657342657342656,
       "team_pitching_era": 2.18
     },
-    "San Diego Padres": {
-      "runs_per_game": 0.5945945945945946,
-      "team_pitching_era": 3.57
-    },
     "Cleveland Guardians": {
       "runs_per_game": 0.5319148936170213,
       "team_pitching_era": 4.16
+    },
+    "San Diego Padres": {
+      "runs_per_game": 0.5945945945945946,
+      "team_pitching_era": 3.57
     },
     "New York Yankees": {
       "runs_per_game": 0.5609756097560976,
@@ -108,7 +108,7 @@
       "team_pitching_era": 3.12
     },
     "Los Angeles Angels": {
-      "team_pitching_era": 3.41
+      "team_pitching_era": 3.36
     },
     "Baltimore Orioles": {
       "team_pitching_era": 4.22
