@@ -117,6 +117,29 @@
         "総務省統計局 — 2025年基準 消費者物価指数 全国 2026年7月分 — https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/zenkoku.pdf"
       ],
       "source": "manual"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "weekly",
+      "title": "Japan's borrowers expect rates to rise. Three-quarters took a variable mortgage anyway.",
+      "subtitle": "A government survey asked the same people both questions — and then asked whether they understood what a rate rise would cost them.",
+      "topics": [
+        "JHF January 2026 survey: 75.0% of new mortgage borrowers chose variable rate, down 4.0 points",
+        "73.7% of those same borrowers expect mortgage rates to rise over the next year",
+        "52.0% of borrowers say they do not fully understand their rate risk",
+        "Prospective borrowers preferring variable at only 37.0%, against 75.0% actual behaviour",
+        "All-fixed preference among prospective borrowers up 4.6 points since April 2024",
+        "Household borrowings of 392 trillion yen against 2,386 trillion in financial assets",
+        "The rate rise repricing the liability side of the household balance sheet"
+      ],
+      "sources": [
+        "住宅金融支援機構 — 住宅ローン利用者の実態調査結果（2026年1月調査） — https://www.jhf.go.jp/files/topics/4955_ext_99_4.pdf",
+        "住宅金融支援機構 — 住宅ローン利用者の実態調査 — https://www.jhf.go.jp/about/research/loan/user/index.html",
+        "Bank of Japan — Flow of Funds (1st Quarter of 2026), Reference Charts — https://www.boj.or.jp/en/statistics/sj/sjexp.pdf",
+        "Bank of Japan — 金融市場調節方針の変更について（2026年6月16日） — https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260616a.pdf",
+        "モゲチェック — 住宅ローン金利2026年9月の最新動向 — https://mogecheck.jp/articles/show/51rzNy7XEJ5o4mQ6ZkVv"
+      ],
+      "source": "manual"
     }
   ]
 }
