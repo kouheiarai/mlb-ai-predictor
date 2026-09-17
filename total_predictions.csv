@@ -1,9 +1,11 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,0e8da1c4233051485aceb65b1a5c417a,2026-09-17T19:10:00Z,San Diego Padres,Colorado Rockies,Michael King,Tanner Gordon,Under,11.0,1.87,0.90949,0.04146,0.700746,0.201364,1.0058,1.12,3.997,3.02,100000,BUY
-total,da77890c919d4d7e049b450184fffb24,2026-09-17T23:41:00Z,Detroit Tigers,Chicago White Sox,Jackson Jobe,TBD,Under,8.5,1.88,0.85964,0.0,0.616123,0.175035,1.0,1.0,2.866,3.17,100000,BUY
-total,86a852d517d266c4d6c74e570caffa06,2026-09-17T23:16:00Z,Philadelphia Phillies,New York Mets,TBD,Christian Scott,Under,8.0,1.97,0.70554,0.1119,0.389914,0.100493,1.0,1.0,2.578,3.83,100000,BUY
-total,a62a35a880cc2c7bc487947c5d3afe74,2026-09-17T17:10:00Z,Athletics,Tampa Bay Rays,Jeffrey Springs,Drew Rasmussen,Under,7.5,1.98,0.59791,0.0,0.183862,0.046904,1.0,0.98,3.159,3.982,100000,BUY
-total,a62a35a880cc2c7bc487947c5d3afe74,2026-09-17T17:10:00Z,Athletics,Tampa Bay Rays,Jeffrey Springs,Drew Rasmussen,Over,7.5,1.89,0.40209,0.0,-0.24005,0.0,1.0,0.98,3.159,3.982,100000,PASS
-total,86a852d517d266c4d6c74e570caffa06,2026-09-17T23:16:00Z,Philadelphia Phillies,New York Mets,TBD,Christian Scott,Over,8.0,1.9,0.18256,0.1119,-0.653136,0.0,1.0,1.0,2.578,3.83,100000,PASS
-total,da77890c919d4d7e049b450184fffb24,2026-09-17T23:41:00Z,Detroit Tigers,Chicago White Sox,Jackson Jobe,TBD,Over,8.5,1.99,0.14036,0.0,-0.720684,0.0,1.0,1.0,2.866,3.17,100000,PASS
-total,0e8da1c4233051485aceb65b1a5c417a,2026-09-17T19:10:00Z,San Diego Padres,Colorado Rockies,Michael King,Tanner Gordon,Over,11.0,2.0,0.04905,0.04146,-0.9019,0.0,1.0058,1.12,3.997,3.02,100000,PASS
+total,da77890c919d4d7e049b450184fffb24,2026-09-17T23:41:00Z,Detroit Tigers,Chicago White Sox,Jackson Jobe,TBD,Under,8.5,1.89,0.85964,0.0,0.62472,0.175483,1.0,1.0,2.866,3.17,100000,BUY
+total,86a852d517d266c4d6c74e570caffa06,2026-09-17T23:16:00Z,Philadelphia Phillies,New York Mets,TBD,Christian Scott,Under,8.5,1.88,0.81846,0.0,0.538705,0.153041,1.0,1.0,2.578,3.83,100000,BUY
+total,04a2f236dde09215a7d5033c63178a44,2026-09-18T00:06:00Z,Boston Red Sox,Texas Rangers,Sonny Gray,Tyler Alexander,Under,8.0,1.9,0.74575,0.10301,0.416925,0.115813,1.0,1.0,3.645,2.485,100000,BUY
+total,7147180b37c36caf2b4003b82c2d1afa,2026-09-18T01:39:00Z,Minnesota Twins,Los Angeles Angels,Joe Ryan,Reid Detmers,Under,7.5,1.93,0.70701,0.0,0.364529,0.097992,1.0,1.0,2.379,4.01,100000,BUY
+total,b9c3b50472005c67c30de323cd8a5396,2026-09-17T23:17:00Z,Kansas City Royals,Houston Astros,Seth Lugo,Miguel Ullola,Under,9.0,1.88,0.69478,0.10894,0.306186,0.086985,1.0,1.0,3.251,4.132,100000,BUY
+total,7147180b37c36caf2b4003b82c2d1afa,2026-09-18T01:39:00Z,Minnesota Twins,Los Angeles Angels,Joe Ryan,Reid Detmers,Over,7.5,1.96,0.29299,0.0,-0.42574,0.0,1.0,1.0,2.379,4.01,100000,PASS
+total,b9c3b50472005c67c30de323cd8a5396,2026-09-17T23:17:00Z,Kansas City Royals,Houston Astros,Seth Lugo,Miguel Ullola,Over,9.0,2.01,0.19628,0.10894,-0.605477,0.0,1.0,1.0,3.251,4.132,100000,PASS
+total,86a852d517d266c4d6c74e570caffa06,2026-09-17T23:16:00Z,Philadelphia Phillies,New York Mets,TBD,Christian Scott,Over,8.5,2.02,0.18154,0.0,-0.633289,0.0,1.0,1.0,2.578,3.83,100000,PASS
+total,04a2f236dde09215a7d5033c63178a44,2026-09-18T00:06:00Z,Boston Red Sox,Texas Rangers,Sonny Gray,Tyler Alexander,Over,8.0,1.98,0.15124,0.10301,-0.700545,0.0,1.0,1.0,3.645,2.485,100000,PASS
+total,da77890c919d4d7e049b450184fffb24,2026-09-17T23:41:00Z,Detroit Tigers,Chicago White Sox,Jackson Jobe,TBD,Over,8.5,2.0,0.14036,0.0,-0.71928,0.0,1.0,1.0,2.866,3.17,100000,PASS
