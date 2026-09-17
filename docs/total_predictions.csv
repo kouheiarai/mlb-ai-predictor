@@ -1,11 +1,11 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,da77890c919d4d7e049b450184fffb24,2026-09-17T23:41:00Z,Detroit Tigers,Chicago White Sox,Jackson Jobe,TBD,Under,8.5,1.89,0.85964,0.0,0.62472,0.175483,1.0,1.0,2.866,3.17,100000,BUY
-total,86a852d517d266c4d6c74e570caffa06,2026-09-17T23:16:00Z,Philadelphia Phillies,New York Mets,TBD,Christian Scott,Under,8.5,1.88,0.81846,0.0,0.538705,0.153041,1.0,1.0,2.578,3.83,100000,BUY
-total,04a2f236dde09215a7d5033c63178a44,2026-09-18T00:06:00Z,Boston Red Sox,Texas Rangers,Sonny Gray,Tyler Alexander,Under,8.0,1.9,0.74575,0.10301,0.416925,0.115813,1.0,1.0,3.645,2.485,100000,BUY
-total,7147180b37c36caf2b4003b82c2d1afa,2026-09-18T01:39:00Z,Minnesota Twins,Los Angeles Angels,Joe Ryan,Reid Detmers,Under,7.5,1.93,0.70701,0.0,0.364529,0.097992,1.0,1.0,2.379,4.01,100000,BUY
-total,b9c3b50472005c67c30de323cd8a5396,2026-09-17T23:17:00Z,Kansas City Royals,Houston Astros,Seth Lugo,Miguel Ullola,Under,9.0,1.88,0.69478,0.10894,0.306186,0.086985,1.0,1.0,3.251,4.132,100000,BUY
-total,7147180b37c36caf2b4003b82c2d1afa,2026-09-18T01:39:00Z,Minnesota Twins,Los Angeles Angels,Joe Ryan,Reid Detmers,Over,7.5,1.96,0.29299,0.0,-0.42574,0.0,1.0,1.0,2.379,4.01,100000,PASS
-total,b9c3b50472005c67c30de323cd8a5396,2026-09-17T23:17:00Z,Kansas City Royals,Houston Astros,Seth Lugo,Miguel Ullola,Over,9.0,2.01,0.19628,0.10894,-0.605477,0.0,1.0,1.0,3.251,4.132,100000,PASS
-total,86a852d517d266c4d6c74e570caffa06,2026-09-17T23:16:00Z,Philadelphia Phillies,New York Mets,TBD,Christian Scott,Over,8.5,2.02,0.18154,0.0,-0.633289,0.0,1.0,1.0,2.578,3.83,100000,PASS
-total,04a2f236dde09215a7d5033c63178a44,2026-09-18T00:06:00Z,Boston Red Sox,Texas Rangers,Sonny Gray,Tyler Alexander,Over,8.0,1.98,0.15124,0.10301,-0.700545,0.0,1.0,1.0,3.645,2.485,100000,PASS
-total,da77890c919d4d7e049b450184fffb24,2026-09-17T23:41:00Z,Detroit Tigers,Chicago White Sox,Jackson Jobe,TBD,Over,8.5,2.0,0.14036,0.0,-0.71928,0.0,1.0,1.0,2.866,3.17,100000,PASS
+total,da77890c919d4d7e049b450184fffb24,2026-09-17T23:41:00Z,Detroit Tigers,Chicago White Sox,Jackson Jobe,Sean Burke,Under,8.5,1.91,0.86936,0.0,0.660478,0.18145,1.0,1.0,2.771,3.17,100000,BUY
+total,04a2f236dde09215a7d5033c63178a44,2026-09-18T00:06:00Z,Boston Red Sox,Texas Rangers,Sonny Gray,Tyler Alexander,Under,8.0,1.89,0.75817,0.0985,0.432941,0.121613,1.0,1.0,3.58,2.47,100000,BUY
+total,86a852d517d266c4d6c74e570caffa06,2026-09-17T23:16:00Z,Philadelphia Phillies,New York Mets,TBD,Christian Scott,Under,8.0,2.02,0.70554,0.1119,0.425191,0.104213,1.0,1.0,2.578,3.83,100000,BUY
+total,b9c3b50472005c67c30de323cd8a5396,2026-09-17T23:17:00Z,Kansas City Royals,Houston Astros,Seth Lugo,Miguel Ullola,Under,8.5,2.04,0.69771,0.0,0.423328,0.101762,1.0,1.0,3.231,4.131,100000,BUY
+total,7147180b37c36caf2b4003b82c2d1afa,2026-09-18T01:39:00Z,Minnesota Twins,Los Angeles Angels,Joe Ryan,Reid Detmers,Under,7.5,1.87,0.70701,0.0,0.322109,0.09256,1.0,1.0,2.379,4.01,100000,BUY
+total,7147180b37c36caf2b4003b82c2d1afa,2026-09-18T01:39:00Z,Minnesota Twins,Los Angeles Angels,Joe Ryan,Reid Detmers,Over,7.5,2.02,0.29299,0.0,-0.40816,0.0,1.0,1.0,2.379,4.01,100000,PASS
+total,b9c3b50472005c67c30de323cd8a5396,2026-09-17T23:17:00Z,Kansas City Royals,Houston Astros,Seth Lugo,Miguel Ullola,Over,8.5,1.85,0.30229,0.0,-0.440763,0.0,1.0,1.0,3.231,4.131,100000,PASS
+total,86a852d517d266c4d6c74e570caffa06,2026-09-17T23:16:00Z,Philadelphia Phillies,New York Mets,TBD,Christian Scott,Over,8.0,1.88,0.18256,0.1119,-0.656787,0.0,1.0,1.0,2.578,3.83,100000,PASS
+total,04a2f236dde09215a7d5033c63178a44,2026-09-18T00:06:00Z,Boston Red Sox,Texas Rangers,Sonny Gray,Tyler Alexander,Over,8.0,1.99,0.14333,0.0985,-0.714773,0.0,1.0,1.0,3.58,2.47,100000,PASS
+total,da77890c919d4d7e049b450184fffb24,2026-09-17T23:41:00Z,Detroit Tigers,Chicago White Sox,Jackson Jobe,Sean Burke,Over,8.5,1.98,0.13064,0.0,-0.741333,0.0,1.0,1.0,2.771,3.17,100000,PASS
