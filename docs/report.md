@@ -1,45 +1,92 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-09-20T22:04:30.271293+00:00
-- API requests remaining: 296
+- Updated: 2026-09-21T02:28:44.135331+00:00
+- API requests remaining: 293
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-No EV 5%+ Moneyline bets.
+### 1. Washington Nationals
+- Game: Washington Nationals @ Detroit Tigers
+- Odds: 2.33
+- AI probability: 71.5%
+- EV: 66.6%
+- 1/4 Kelly: 12.5%
+- Lineup: 未発表
+- Lineup quality: +0.08
+- Platoon proxy: -0.05
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: Washington Nationals 4.72 - Detroit Tigers 2.71
+
+### 2. Baltimore Orioles
+- Game: Toronto Blue Jays @ Baltimore Orioles
+- Odds: 1.94
+- AI probability: 63.9%
+- EV: 23.9%
+- 1/4 Kelly: 6.4%
+- Lineup: 未発表
+- Lineup quality: -0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.55
+- Expected score: Toronto Blue Jays 3.15 - Baltimore Orioles 4.28
+
 ## Run Line Buy Ranking
 
-### 1. San Francisco Giants +1.5
-- Game: Minnesota Twins @ San Francisco Giants
-- Odds: 1.6
-- Cover probability: 73.8%
-- EV: 18.0%
-- 1/4 Kelly: 7.5%
+### 1. Washington Nationals +1.5
+- Game: Washington Nationals @ Detroit Tigers
+- Odds: 1.62
+- Cover probability: 90.8%
+- EV: 47.0%
+- 1/4 Kelly: 19.0%
 - Lineup: 未発表
-- Lineup quality: -0.25
-- Platoon proxy: +0.01
+- Lineup quality: +0.08
+- Platoon proxy: -0.05
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.55
-- Expected score: Minnesota Twins 2.99 - San Francisco Giants 2.98
+- Expected score: Washington Nationals 4.72 - Detroit Tigers 2.71
 
 ### 2. Baltimore Orioles +1.5
-- Game: Milwaukee Brewers @ Baltimore Orioles
-- Odds: 2.04
-- Cover probability: 53.7%
-- EV: 9.6%
-- 1/4 Kelly: 2.3%
-- Lineup: 発表済み
-- Lineup quality: -0.24
-- Platoon proxy: +0.06
+- Game: Toronto Blue Jays @ Baltimore Orioles
+- Odds: 1.55
+- Cover probability: 83.8%
+- EV: 30.0%
+- 1/4 Kelly: 13.6%
+- Lineup: 未発表
+- Lineup quality: -0.00
+- Platoon proxy: +0.00
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.55
-- Expected score: Milwaukee Brewers 3.60 - Baltimore Orioles 2.28
+- Expected score: Toronto Blue Jays 3.15 - Baltimore Orioles 4.28
+
+### 3. San Francisco Giants +1.5
+- Game: Minnesota Twins @ San Francisco Giants
+- Odds: 1.6
+- Cover probability: 68.1%
+- EV: 9.0%
+- 1/4 Kelly: 3.7%
+- Lineup: 未発表
+- Lineup quality: -0.13
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.45
+- Expected score: Minnesota Twins 3.30 - San Francisco Giants 2.93
 
 ## Model Notes
 

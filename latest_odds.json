@@ -1,61 +1,61 @@
 {
-  "fetched_at_utc": "2026-09-20T22:04:30.271293+00:00",
+  "fetched_at_utc": "2026-09-21T02:28:44.135331+00:00",
   "events": [
     {
-      "id": "b93df18188b2370baac5d9d231f2bd59",
+      "id": "198233ed5390fadb40e84cac794551ab",
       "sport_key": "baseball_mlb",
       "sport_title": "MLB",
-      "commence_time": "2026-09-20T23:21:00Z",
+      "commence_time": "2026-09-21T22:36:00Z",
       "home_team": "Baltimore Orioles",
-      "away_team": "Milwaukee Brewers",
+      "away_team": "Toronto Blue Jays",
       "bookmakers": [
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-09-20T22:01:00Z",
+          "last_update": "2026-09-21T02:25:15Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-09-20T22:01:00Z",
+              "last_update": "2026-09-21T02:25:15Z",
               "outcomes": [
                 {
                   "name": "Baltimore Orioles",
-                  "price": 2.83
+                  "price": 1.94
                 },
                 {
-                  "name": "Milwaukee Brewers",
-                  "price": 1.5
+                  "name": "Toronto Blue Jays",
+                  "price": 1.96
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-09-20T22:01:00Z",
+              "last_update": "2026-09-21T02:25:15Z",
               "outcomes": [
                 {
                   "name": "Baltimore Orioles",
-                  "price": 2.04,
+                  "price": 1.55,
                   "point": 1.5
                 },
                 {
-                  "name": "Milwaukee Brewers",
-                  "price": 1.88,
+                  "name": "Toronto Blue Jays",
+                  "price": 2.6,
                   "point": -1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-09-20T22:01:00Z",
+              "last_update": "2026-09-21T02:25:15Z",
               "outcomes": [
                 {
                   "name": "Over",
-                  "price": 1.94,
+                  "price": 1.89,
                   "point": 7.5
                 },
                 {
                   "name": "Under",
-                  "price": 1.94,
+                  "price": 1.98,
                   "point": 7.5
                 }
               ]
@@ -65,13 +65,67 @@
       ]
     },
     {
-      "id": "198233ed5390fadb40e84cac794551ab",
+      "id": "3e7090629723a062facffeca147d8c9d",
       "sport_key": "baseball_mlb",
       "sport_title": "MLB",
-      "commence_time": "2026-09-21T22:36:00Z",
-      "home_team": "Baltimore Orioles",
-      "away_team": "Toronto Blue Jays",
-      "bookmakers": []
+      "commence_time": "2026-09-21T22:41:00Z",
+      "home_team": "Detroit Tigers",
+      "away_team": "Washington Nationals",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-09-21T02:25:15Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-09-21T02:25:15Z",
+              "outcomes": [
+                {
+                  "name": "Detroit Tigers",
+                  "price": 1.68
+                },
+                {
+                  "name": "Washington Nationals",
+                  "price": 2.33
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-09-21T02:25:15Z",
+              "outcomes": [
+                {
+                  "name": "Detroit Tigers",
+                  "price": 2.41,
+                  "point": -1.5
+                },
+                {
+                  "name": "Washington Nationals",
+                  "price": 1.62,
+                  "point": 1.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2026-09-21T02:25:15Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": 1.86,
+                  "point": 8.0
+                },
+                {
+                  "name": "Under",
+                  "price": 2.01,
+                  "point": 8.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "7294e99a67c70c66b6edecf9841d4f03",
@@ -84,29 +138,29 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-09-20T22:01:00Z",
+          "last_update": "2026-09-21T02:25:15Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-09-20T22:01:00Z",
+              "last_update": "2026-09-21T02:25:15Z",
               "outcomes": [
                 {
                   "name": "Minnesota Twins",
-                  "price": 1.89
+                  "price": 1.9
                 },
                 {
                   "name": "San Francisco Giants",
-                  "price": 2.02
+                  "price": 2.01
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-09-20T22:01:00Z",
+              "last_update": "2026-09-21T02:25:15Z",
               "outcomes": [
                 {
                   "name": "Minnesota Twins",
-                  "price": 2.47,
+                  "price": 2.48,
                   "point": -1.5
                 },
                 {
@@ -118,7 +172,7 @@
             },
             {
               "key": "totals",
-              "last_update": "2026-09-20T22:01:00Z",
+              "last_update": "2026-09-21T02:25:15Z",
               "outcomes": [
                 {
                   "name": "Over",
