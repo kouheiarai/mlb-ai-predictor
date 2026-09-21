@@ -1,7 +1,7 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,7294e99a67c70c66b6edecf9841d4f03,2026-09-22T01:46:00Z,Minnesota Twins,San Francisco Giants,TBD,Cesar Perdomo,Under,8.0,2.0,0.73602,0.10443,0.47204,0.11801,1.0,0.96,3.297,2.929,100000,BUY
-total,3e7090629723a062facffeca147d8c9d,2026-09-21T22:41:00Z,Washington Nationals,Detroit Tigers,TBD,Framber Valdez,Under,8.0,2.01,0.55056,0.13599,0.106626,0.026392,1.0,1.0,4.718,2.71,100000,BUY
-total,198233ed5390fadb40e84cac794551ab,2026-09-21T22:36:00Z,Toronto Blue Jays,Baltimore Orioles,TBD,TBD,Under,7.5,1.98,0.55307,0.0,0.095079,0.024255,1.0,1.0,3.154,4.281,100000,BUY
-total,198233ed5390fadb40e84cac794551ab,2026-09-21T22:36:00Z,Toronto Blue Jays,Baltimore Orioles,TBD,TBD,Over,7.5,1.89,0.44693,0.0,-0.155302,0.0,1.0,1.0,3.154,4.281,100000,PASS
-total,3e7090629723a062facffeca147d8c9d,2026-09-21T22:41:00Z,Washington Nationals,Detroit Tigers,TBD,Framber Valdez,Over,8.0,1.86,0.31345,0.13599,-0.416983,0.0,1.0,1.0,4.718,2.71,100000,PASS
-total,7294e99a67c70c66b6edecf9841d4f03,2026-09-22T01:46:00Z,Minnesota Twins,San Francisco Giants,TBD,Cesar Perdomo,Over,8.0,1.87,0.15955,0.10443,-0.701642,0.0,1.0,0.96,3.297,2.929,100000,PASS
+total,7294e99a67c70c66b6edecf9841d4f03,2026-09-22T01:46:00Z,Minnesota Twins,San Francisco Giants,TBD,Cesar Perdomo,Under,8.5,1.91,0.84113,0.0,0.606558,0.166637,1.0011,0.96,3.299,2.931,100000,BUY
+total,3e7090629723a062facffeca147d8c9d,2026-09-21T22:41:00Z,Washington Nationals,Detroit Tigers,TBD,Framber Valdez,Under,8.5,2.02,0.68079,0.0,0.375196,0.09196,1.0075,1.0,4.753,2.729,100000,BUY
+total,198233ed5390fadb40e84cac794551ab,2026-09-21T22:36:00Z,Toronto Blue Jays,Baltimore Orioles,TBD,TBD,Under,7.5,1.89,0.55307,0.0,0.045302,0.012725,1.0,1.0,3.154,4.281,100000,LEAN
+total,198233ed5390fadb40e84cac794551ab,2026-09-21T22:36:00Z,Toronto Blue Jays,Baltimore Orioles,TBD,TBD,Over,7.5,2.0,0.44693,0.0,-0.10614,0.0,1.0,1.0,3.154,4.281,100000,PASS
+total,3e7090629723a062facffeca147d8c9d,2026-09-21T22:41:00Z,Washington Nationals,Detroit Tigers,TBD,Framber Valdez,Over,8.5,1.88,0.31921,0.0,-0.399885,0.0,1.0075,1.0,4.753,2.729,100000,PASS
+total,7294e99a67c70c66b6edecf9841d4f03,2026-09-22T01:46:00Z,Minnesota Twins,San Francisco Giants,TBD,Cesar Perdomo,Over,8.5,1.98,0.15887,0.0,-0.685437,0.0,1.0011,0.96,3.299,2.931,100000,PASS
