@@ -1,11 +1,11 @@
 {
-  "fetched_at_utc": "2026-09-25T19:40:59.120604+00:00",
+  "fetched_at_utc": "2026-09-25T22:58:27.907760+00:00",
   "metrics": {
     "Houston Astros": {
       "runs_per_game": 0.6516129032258065
     },
     "Philadelphia Phillies": {
-      "runs_per_game": 0.5786163522012578,
+      "runs_per_game": 0.575,
       "team_pitching_era": 4.54
     },
     "Arizona Diamondbacks": {
@@ -13,8 +13,8 @@
       "team_pitching_era": 4.94
     },
     "Tampa Bay Rays": {
-      "runs_per_game": 0.48026315789473684,
-      "team_pitching_era": 4.56
+      "runs_per_game": 0.477124183006536,
+      "team_pitching_era": 4.54
     },
     "Miami Marlins": {
       "runs_per_game": 0.4295774647887324,
@@ -64,7 +64,7 @@
       "team_pitching_era": 4.03
     },
     "Chicago Cubs": {
-      "runs_per_game": 0.676056338028169,
+      "runs_per_game": 0.6713286713286714,
       "team_pitching_era": 4.51
     },
     "Seattle Mariners": {
@@ -92,15 +92,15 @@
       "team_pitching_era": 3.4
     },
     "New York Mets": {
-      "runs_per_game": 0.5424836601307189,
+      "runs_per_game": 0.538961038961039,
       "team_pitching_era": 3.16
+    },
+    "Baltimore Orioles": {
+      "runs_per_game": 0.6125,
+      "team_pitching_era": 4.11
     },
     "Athletics": {
       "runs_per_game": 0.3617021276595745
-    },
-    "Baltimore Orioles": {
-      "runs_per_game": 0.6037735849056604,
-      "team_pitching_era": 4.11
     },
     "Toronto Blue Jays": {
       "team_pitching_era": 3.72

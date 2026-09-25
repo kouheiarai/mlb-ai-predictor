@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-09-25T19:40:59.120604+00:00",
+  "fetched_at_utc": "2026-09-25T22:58:27.907760+00:00",
   "fatigue": {
     "Toronto Blue Jays": {
       "fatigue_score": 0.75,
@@ -9,11 +9,11 @@
       "doubleheader_games": 2
     },
     "Baltimore Orioles": {
-      "fatigue_score": 0.75,
-      "games_played_lookback": 4,
-      "unique_game_dates": 3,
+      "fatigue_score": 0.8,
+      "games_played_lookback": 5,
+      "unique_game_dates": 4,
       "extra_inning_games": 0,
-      "doubleheader_games": 2
+      "doubleheader_games": 3
     },
     "Washington Nationals": {
       "fatigue_score": 0.45,
@@ -51,11 +51,11 @@
       "doubleheader_games": 2
     },
     "New York Yankees": {
-      "fatigue_score": 0.75,
-      "games_played_lookback": 4,
-      "unique_game_dates": 3,
+      "fatigue_score": 0.8,
+      "games_played_lookback": 5,
+      "unique_game_dates": 4,
       "extra_inning_games": 0,
-      "doubleheader_games": 2
+      "doubleheader_games": 3
     },
     "St. Louis Cardinals": {
       "fatigue_score": 0.45,
@@ -93,11 +93,11 @@
       "doubleheader_games": 0
     },
     "Boston Red Sox": {
-      "fatigue_score": 0.45,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
+      "fatigue_score": 0.65,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
       "extra_inning_games": 0,
-      "doubleheader_games": 0
+      "doubleheader_games": 1
     },
     "Cincinnati Reds": {
       "fatigue_score": 0.55,
@@ -135,11 +135,11 @@
       "doubleheader_games": 0
     },
     "Chicago Cubs": {
-      "fatigue_score": 0.55,
-      "games_played_lookback": 3,
-      "unique_game_dates": 3,
+      "fatigue_score": 0.75,
+      "games_played_lookback": 4,
+      "unique_game_dates": 4,
       "extra_inning_games": 1,
-      "doubleheader_games": 0
+      "doubleheader_games": 1
     },
     "New York Mets": {
       "fatigue_score": 0.45,
