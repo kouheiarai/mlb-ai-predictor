@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-09-25T02:37:32.100972+00:00",
+  "fetched_at_utc": "2026-09-25T19:40:59.120604+00:00",
   "metrics": {
     "Houston Astros": {
       "runs_per_game": 0.6516129032258065
@@ -27,21 +27,21 @@
     "Colorado Rockies": {
       "runs_per_game": 0.5416666666666666
     },
-    "Atlanta Braves": {
-      "runs_per_game": 0.4304635761589404,
-      "team_pitching_era": 2.16
-    },
     "Los Angeles Dodgers": {
       "runs_per_game": 0.5572519083969466,
       "team_pitching_era": 2.53
     },
-    "Cleveland Guardians": {
-      "runs_per_game": 0.5234899328859061,
-      "team_pitching_era": 4.35
+    "Atlanta Braves": {
+      "runs_per_game": 0.4304635761589404,
+      "team_pitching_era": 2.16
     },
     "San Diego Padres": {
       "runs_per_game": 0.6050955414012739,
       "team_pitching_era": 3.59
+    },
+    "Cleveland Guardians": {
+      "runs_per_game": 0.5234899328859061,
+      "team_pitching_era": 4.35
     },
     "Cincinnati Reds": {
       "runs_per_game": 0.5408805031446541,
@@ -64,7 +64,7 @@
       "team_pitching_era": 4.03
     },
     "Chicago Cubs": {
-      "runs_per_game": 0.6737588652482269,
+      "runs_per_game": 0.676056338028169,
       "team_pitching_era": 4.51
     },
     "Seattle Mariners": {
@@ -96,7 +96,7 @@
       "team_pitching_era": 3.16
     },
     "Athletics": {
-      "runs_per_game": 0.3546099290780142
+      "runs_per_game": 0.3617021276595745
     },
     "Baltimore Orioles": {
       "runs_per_game": 0.6037735849056604,
