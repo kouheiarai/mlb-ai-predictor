@@ -1,233 +1,44 @@
 {
-  "fetched_at_utc": "2026-09-25T22:58:27.907760+00:00",
+  "fetched_at_utc": "2026-09-26T02:38:56.131984+00:00",
   "events": [
     {
-      "id": "890be5ce6e3ea3d7c6f0b76bd9a0e45a",
+      "id": "287e49b158c6a0b40e1ca1a98f81cee8",
       "sport_key": "baseball_mlb",
       "sport_title": "MLB",
-      "commence_time": "2026-09-25T23:08:00Z",
-      "home_team": "Toronto Blue Jays",
-      "away_team": "Cincinnati Reds",
+      "commence_time": "2026-09-26T16:36:00Z",
+      "home_team": "Washington Nationals",
+      "away_team": "New York Mets",
       "bookmakers": [
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-09-25T22:54:52Z",
+          "last_update": "2026-09-26T02:36:57Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-09-25T22:54:52Z",
+              "last_update": "2026-09-26T02:36:57Z",
               "outcomes": [
                 {
-                  "name": "Cincinnati Reds",
-                  "price": 2.38
+                  "name": "New York Mets",
+                  "price": 1.78
                 },
                 {
-                  "name": "Toronto Blue Jays",
-                  "price": 1.67
+                  "name": "Washington Nationals",
+                  "price": 2.16
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-09-25T22:54:52Z",
+              "last_update": "2026-09-26T02:36:57Z",
               "outcomes": [
                 {
-                  "name": "Cincinnati Reds",
-                  "price": 1.61,
-                  "point": 1.5
-                },
-                {
-                  "name": "Toronto Blue Jays",
-                  "price": 2.47,
-                  "point": -1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.91,
-                  "point": 7.5
-                },
-                {
-                  "name": "Under",
-                  "price": 1.98,
-                  "point": 7.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "2d3d378044cc538b0a3d77acaacd15a1",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-25T23:11:00Z",
-      "home_team": "Miami Marlins",
-      "away_team": "Atlanta Braves",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-09-25T22:54:52Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Atlanta Braves",
-                  "price": 1.93
-                },
-                {
-                  "name": "Miami Marlins",
-                  "price": 2.0
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Atlanta Braves",
-                  "price": 2.53,
+                  "name": "New York Mets",
+                  "price": 2.28,
                   "point": -1.5
                 },
                 {
-                  "name": "Miami Marlins",
-                  "price": 1.59,
-                  "point": 1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.92,
-                  "point": 8.0
-                },
-                {
-                  "name": "Under",
-                  "price": 1.97,
-                  "point": 8.0
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "b6829a3017da7786aceea335c5c36bb3",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-25T23:40:00Z",
-      "home_team": "Chicago White Sox",
-      "away_team": "Colorado Rockies",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-09-25T22:54:52Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Chicago White Sox",
-                  "price": 1.42
-                },
-                {
-                  "name": "Colorado Rockies",
-                  "price": 3.13
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Chicago White Sox",
-                  "price": 1.91,
-                  "point": -1.5
-                },
-                {
-                  "name": "Colorado Rockies",
-                  "price": 2.0,
-                  "point": 1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.88,
-                  "point": 8.0
-                },
-                {
-                  "name": "Under",
-                  "price": 2.01,
-                  "point": 8.0
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "7bd30076728c7fcf1f893c1d269a60af",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-25T23:41:00Z",
-      "home_team": "Kansas City Royals",
-      "away_team": "Cleveland Guardians",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-09-25T22:54:52Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Cleveland Guardians",
-                  "price": 1.75
-                },
-                {
-                  "name": "Kansas City Royals",
-                  "price": 2.23
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Cleveland Guardians",
-                  "price": 2.3,
-                  "point": -1.5
-                },
-                {
-                  "name": "Kansas City Royals",
+                  "name": "Washington Nationals",
                   "price": 1.69,
                   "point": 1.5
                 }
@@ -235,458 +46,17 @@
             },
             {
               "key": "totals",
-              "last_update": "2026-09-25T22:54:52Z",
+              "last_update": "2026-09-26T02:36:57Z",
               "outcomes": [
                 {
                   "name": "Over",
+                  "price": 2.0,
+                  "point": 8.5
+                },
+                {
+                  "name": "Under",
                   "price": 1.87,
-                  "point": 7.0
-                },
-                {
-                  "name": "Under",
-                  "price": 2.03,
-                  "point": 7.0
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "12c52c4f4de763e9a171ffac0f4f02ef",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-25T23:41:00Z",
-      "home_team": "Milwaukee Brewers",
-      "away_team": "St. Louis Cardinals",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-09-25T22:54:52Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Milwaukee Brewers",
-                  "price": 1.56
-                },
-                {
-                  "name": "St. Louis Cardinals",
-                  "price": 2.62
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Milwaukee Brewers",
-                  "price": 2.23,
-                  "point": -1.5
-                },
-                {
-                  "name": "St. Louis Cardinals",
-                  "price": 1.74,
-                  "point": 1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.9,
-                  "point": 7.5
-                },
-                {
-                  "name": "Under",
-                  "price": 1.99,
-                  "point": 7.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "3fe14d478bc1ffac17198c460085ca70",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-25T23:45:00Z",
-      "home_team": "New York Yankees",
-      "away_team": "Baltimore Orioles",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-09-25T22:54:52Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Baltimore Orioles",
-                  "price": 1.94
-                },
-                {
-                  "name": "New York Yankees",
-                  "price": 1.98
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Baltimore Orioles",
-                  "price": 1.41,
-                  "point": 1.5
-                },
-                {
-                  "name": "New York Yankees",
-                  "price": 3.11,
-                  "point": -1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.9,
-                  "point": 6.5
-                },
-                {
-                  "name": "Under",
-                  "price": 1.99,
-                  "point": 6.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "9f08a9d734982153de27326c32e8be0e",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-26T00:11:00Z",
-      "home_team": "Minnesota Twins",
-      "away_team": "Texas Rangers",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-09-25T22:54:52Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Minnesota Twins",
-                  "price": 2.14
-                },
-                {
-                  "name": "Texas Rangers",
-                  "price": 1.81
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Minnesota Twins",
-                  "price": 1.63,
-                  "point": 1.5
-                },
-                {
-                  "name": "Texas Rangers",
-                  "price": 2.43,
-                  "point": -1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.93,
-                  "point": 7.0
-                },
-                {
-                  "name": "Under",
-                  "price": 1.96,
-                  "point": 7.0
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "eb8b9160f66fc6d5f6bd58bf4a888011",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-26T01:41:00Z",
-      "home_team": "San Diego Padres",
-      "away_team": "Arizona Diamondbacks",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-09-25T22:54:52Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Arizona Diamondbacks",
-                  "price": 2.11
-                },
-                {
-                  "name": "San Diego Padres",
-                  "price": 1.83
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Arizona Diamondbacks",
-                  "price": 1.53,
-                  "point": 1.5
-                },
-                {
-                  "name": "San Diego Padres",
-                  "price": 2.69,
-                  "point": -1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.93,
-                  "point": 7.5
-                },
-                {
-                  "name": "Under",
-                  "price": 1.96,
-                  "point": 7.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "de8bbf8d379bf416df612c557ddd338a",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-26T01:41:00Z",
-      "home_team": "Athletics",
-      "away_team": "Houston Astros",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-09-25T22:54:52Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Athletics",
-                  "price": 2.61
-                },
-                {
-                  "name": "Houston Astros",
-                  "price": 1.57
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Athletics",
-                  "price": 1.96,
-                  "point": 1.5
-                },
-                {
-                  "name": "Houston Astros",
-                  "price": 1.94,
-                  "point": -1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.93,
-                  "point": 9.0
-                },
-                {
-                  "name": "Under",
-                  "price": 1.96,
-                  "point": 9.0
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "60b3d02ac77cf6a81e234358cfe187bb",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-26T02:11:00Z",
-      "home_team": "Seattle Mariners",
-      "away_team": "Los Angeles Angels",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-09-25T22:54:52Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Los Angeles Angels",
-                  "price": 2.04
-                },
-                {
-                  "name": "Seattle Mariners",
-                  "price": 1.88
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Los Angeles Angels",
-                  "price": 1.47,
-                  "point": 1.5
-                },
-                {
-                  "name": "Seattle Mariners",
-                  "price": 2.9,
-                  "point": -1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.89,
-                  "point": 6.5
-                },
-                {
-                  "name": "Under",
-                  "price": 1.99,
-                  "point": 6.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "e47efe97f629cae0287ca6f3ea6d6794",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-26T02:16:00Z",
-      "home_team": "San Francisco Giants",
-      "away_team": "Los Angeles Dodgers",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-09-25T22:54:52Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Los Angeles Dodgers",
-                  "price": 1.32
-                },
-                {
-                  "name": "San Francisco Giants",
-                  "price": 3.77
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Los Angeles Dodgers",
-                  "price": 1.56,
-                  "point": -1.5
-                },
-                {
-                  "name": "San Francisco Giants",
-                  "price": 2.59,
-                  "point": 1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-09-25T22:54:52Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.86,
-                  "point": 7.5
-                },
-                {
-                  "name": "Under",
-                  "price": 2.03,
-                  "point": 7.5
+                  "point": 8.5
                 }
               ]
             }
@@ -701,16 +71,61 @@
       "commence_time": "2026-09-26T19:08:00Z",
       "home_team": "Toronto Blue Jays",
       "away_team": "Cincinnati Reds",
-      "bookmakers": []
-    },
-    {
-      "id": "b9398adf1faaf0c53a1212c75565dff6",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-26T20:05:00Z",
-      "home_team": "Washington Nationals",
-      "away_team": "New York Mets",
-      "bookmakers": []
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-09-26T02:36:57Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Cincinnati Reds",
+                  "price": 2.42
+                },
+                {
+                  "name": "Toronto Blue Jays",
+                  "price": 1.63
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Cincinnati Reds",
+                  "price": 1.65,
+                  "point": 1.5
+                },
+                {
+                  "name": "Toronto Blue Jays",
+                  "price": 2.35,
+                  "point": -1.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": 1.98,
+                  "point": 8.0
+                },
+                {
+                  "name": "Under",
+                  "price": 1.89,
+                  "point": 8.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "93809969d7d5e6b21cc1e8a6070121e9",
@@ -719,7 +134,61 @@
       "commence_time": "2026-09-26T20:06:00Z",
       "home_team": "San Francisco Giants",
       "away_team": "Los Angeles Dodgers",
-      "bookmakers": []
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-09-26T02:36:57Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Los Angeles Dodgers",
+                  "price": 1.31
+                },
+                {
+                  "name": "San Francisco Giants",
+                  "price": 3.73
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Los Angeles Dodgers",
+                  "price": 1.6,
+                  "point": -1.5
+                },
+                {
+                  "name": "San Francisco Giants",
+                  "price": 2.47,
+                  "point": 1.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": 2.01,
+                  "point": 7.5
+                },
+                {
+                  "name": "Under",
+                  "price": 1.87,
+                  "point": 7.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "6b474c64214114311f42d90b1a674c02",
@@ -728,7 +197,61 @@
       "commence_time": "2026-09-26T23:10:00Z",
       "home_team": "Kansas City Royals",
       "away_team": "Cleveland Guardians",
-      "bookmakers": []
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-09-26T02:36:57Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Cleveland Guardians",
+                  "price": 1.79
+                },
+                {
+                  "name": "Kansas City Royals",
+                  "price": 2.15
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Cleveland Guardians",
+                  "price": 2.31,
+                  "point": -1.5
+                },
+                {
+                  "name": "Kansas City Royals",
+                  "price": 1.68,
+                  "point": 1.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": 1.88,
+                  "point": 8.0
+                },
+                {
+                  "name": "Under",
+                  "price": 1.99,
+                  "point": 8.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "5e96347a5c09f2be46dc616aa404bf27",
@@ -737,7 +260,61 @@
       "commence_time": "2026-09-26T23:11:00Z",
       "home_team": "Chicago White Sox",
       "away_team": "Colorado Rockies",
-      "bookmakers": []
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-09-26T02:36:57Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Chicago White Sox",
+                  "price": 1.45
+                },
+                {
+                  "name": "Colorado Rockies",
+                  "price": 2.95
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Chicago White Sox",
+                  "price": 1.99,
+                  "point": -1.5
+                },
+                {
+                  "name": "Colorado Rockies",
+                  "price": 1.9,
+                  "point": 1.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": 1.86,
+                  "point": 8.0
+                },
+                {
+                  "name": "Under",
+                  "price": 2.01,
+                  "point": 8.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "bff2944df94a062f85abadcd9aab1086",
@@ -746,16 +323,61 @@
       "commence_time": "2026-09-26T23:11:00Z",
       "home_team": "Milwaukee Brewers",
       "away_team": "St. Louis Cardinals",
-      "bookmakers": []
-    },
-    {
-      "id": "a0fc8eb52d64679d94e7eaa311299d74",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-27T00:40:00Z",
-      "home_team": "San Diego Padres",
-      "away_team": "Arizona Diamondbacks",
-      "bookmakers": []
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-09-26T02:36:57Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Milwaukee Brewers",
+                  "price": 1.56
+                },
+                {
+                  "name": "St. Louis Cardinals",
+                  "price": 2.61
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Milwaukee Brewers",
+                  "price": 2.22,
+                  "point": -1.5
+                },
+                {
+                  "name": "St. Louis Cardinals",
+                  "price": 1.73,
+                  "point": 1.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": 1.89,
+                  "point": 7.5
+                },
+                {
+                  "name": "Under",
+                  "price": 1.98,
+                  "point": 7.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "eba81e8f90abe50ccdfcee55fe0080b8",
@@ -764,7 +386,61 @@
       "commence_time": "2026-09-27T01:41:00Z",
       "home_team": "Seattle Mariners",
       "away_team": "Los Angeles Angels",
-      "bookmakers": []
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-09-26T02:36:57Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Los Angeles Angels",
+                  "price": 2.72
+                },
+                {
+                  "name": "Seattle Mariners",
+                  "price": 1.52
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Los Angeles Angels",
+                  "price": 1.78,
+                  "point": 1.5
+                },
+                {
+                  "name": "Seattle Mariners",
+                  "price": 2.14,
+                  "point": -1.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2026-09-26T02:36:57Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": 1.88,
+                  "point": 7.5
+                },
+                {
+                  "name": "Under",
+                  "price": 1.99,
+                  "point": 7.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
