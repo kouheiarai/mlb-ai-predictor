@@ -1,7 +1,13 @@
 ﻿event_id,commence_time_utc,away_team,home_team,bookmaker,bookmaker_last_update,market,selection,point,decimal_odds,american_odds,implied_probability
-8d968b3a9346c52d763b36a57a1cb74a,2026-09-27T20:30:00Z,Baltimore Orioles,New York Yankees,pinnacle,2026-09-27T19:23:44Z,h2h,Baltimore Orioles,,2.05,+105,0.487805
-8d968b3a9346c52d763b36a57a1cb74a,2026-09-27T20:30:00Z,Baltimore Orioles,New York Yankees,pinnacle,2026-09-27T19:23:44Z,h2h,New York Yankees,,1.88,-114,0.531915
-8d968b3a9346c52d763b36a57a1cb74a,2026-09-27T20:30:00Z,Baltimore Orioles,New York Yankees,pinnacle,2026-09-27T19:23:44Z,spreads,Baltimore Orioles,1.5,1.5,-200,0.666667
-8d968b3a9346c52d763b36a57a1cb74a,2026-09-27T20:30:00Z,Baltimore Orioles,New York Yankees,pinnacle,2026-09-27T19:23:44Z,spreads,New York Yankees,-1.5,2.78,+178,0.359712
-8d968b3a9346c52d763b36a57a1cb74a,2026-09-27T20:30:00Z,Baltimore Orioles,New York Yankees,pinnacle,2026-09-27T19:23:44Z,totals,Over,7.0,1.82,-122,0.549451
-8d968b3a9346c52d763b36a57a1cb74a,2026-09-27T20:30:00Z,Baltimore Orioles,New York Yankees,pinnacle,2026-09-27T19:23:44Z,totals,Under,7.0,2.09,+109,0.478469
+4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-27T22:39:25Z,h2h,Boston Red Sox,,2.28,+128,0.438596
+4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-27T22:39:25Z,h2h,New York Yankees,,1.7,-143,0.588235
+4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-27T22:39:25Z,spreads,Boston Red Sox,1.5,1.54,-185,0.649351
+4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-27T22:39:25Z,spreads,New York Yankees,-1.5,2.63,+163,0.380228
+4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-27T22:39:25Z,totals,Over,6.5,1.89,-112,0.529101
+4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-27T22:39:25Z,totals,Under,6.5,1.98,-102,0.505051
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-27T22:39:25Z,h2h,Chicago Cubs,,2.13,+113,0.469484
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-27T22:39:25Z,h2h,San Diego Padres,,1.8,-125,0.555556
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-27T22:39:25Z,spreads,Chicago Cubs,1.5,1.5,-200,0.666667
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-27T22:39:25Z,spreads,San Diego Padres,-1.5,2.73,+173,0.3663
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-27T22:39:25Z,totals,Over,7.0,1.86,-116,0.537634
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-27T22:39:25Z,totals,Under,7.0,2.01,+101,0.497512

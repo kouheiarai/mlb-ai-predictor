@@ -1,3 +1,5 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,8d968b3a9346c52d763b36a57a1cb74a,2026-09-27T20:30:00Z,Baltimore Orioles,New York Yankees,Shane Baz,Elmer Rodríguez,Under,7.0,2.09,0.55361,0.14365,0.157045,0.036019,1.007,1.03,2.913,3.588,100000,BUY
-total,8d968b3a9346c52d763b36a57a1cb74a,2026-09-27T20:30:00Z,Baltimore Orioles,New York Yankees,Shane Baz,Elmer Rodríguez,Over,7.0,1.82,0.30274,0.14365,-0.449013,0.0,1.007,1.03,2.913,3.588,100000,PASS
+total,4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,TBD,Cam Schlittler,Under,6.5,1.98,0.7666,0.0,0.517868,0.132109,0.9955,1.03,2.364,2.798,100000,BUY
+total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,TBD,Michael King,Under,7.0,2.01,0.51413,0.14891,0.033401,0.008268,1.0027,0.97,2.809,3.908,100000,LEAN
+total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,TBD,Michael King,Over,7.0,1.86,0.33696,0.14891,-0.373254,0.0,1.0027,0.97,2.809,3.908,100000,PASS
+total,4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,TBD,Cam Schlittler,Over,6.5,1.89,0.2334,0.0,-0.558874,0.0,0.9955,1.03,2.364,2.798,100000,PASS
