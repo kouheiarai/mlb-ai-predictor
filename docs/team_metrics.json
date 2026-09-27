@@ -1,19 +1,19 @@
 {
-  "fetched_at_utc": "2026-09-26T22:15:31.931287+00:00",
+  "fetched_at_utc": "2026-09-27T02:36:16.794523+00:00",
   "metrics": {
     "Houston Astros": {
-      "runs_per_game": 0.6538461538461539
+      "runs_per_game": 0.6496815286624203
     },
     "Arizona Diamondbacks": {
-      "runs_per_game": 0.5581395348837209,
+      "runs_per_game": 0.5538461538461539,
       "team_pitching_era": 4.94
     },
     "Philadelphia Phillies": {
-      "runs_per_game": 0.575,
-      "team_pitching_era": 4.54
+      "runs_per_game": 0.5714285714285714,
+      "team_pitching_era": 4.67
     },
     "Tampa Bay Rays": {
-      "runs_per_game": 0.60625,
+      "runs_per_game": 0.474025974025974,
       "team_pitching_era": 4.42
     },
     "Miami Marlins": {
@@ -25,31 +25,35 @@
       "team_pitching_era": 3.82
     },
     "Colorado Rockies": {
-      "runs_per_game": 0.5379310344827586
+      "runs_per_game": 0.547945205479452
     },
     "Atlanta Braves": {
       "runs_per_game": 0.4276315789473684,
       "team_pitching_era": 2.16
     },
     "San Diego Padres": {
-      "runs_per_game": 0.6012658227848101,
+      "runs_per_game": 0.6037735849056604,
       "team_pitching_era": 3.59
     },
     "Los Angeles Dodgers": {
       "runs_per_game": 0.556390977443609,
       "team_pitching_era": 2.53
     },
-    "Cleveland Guardians": {
-      "runs_per_game": 0.5333333333333333,
-      "team_pitching_era": 4.35
-    },
     "Milwaukee Brewers": {
-      "runs_per_game": 0.6778523489932886,
+      "runs_per_game": 0.6433566433566433,
       "team_pitching_era": 1.86
     },
     "Kansas City Royals": {
-      "runs_per_game": 0.6524822695035462,
+      "runs_per_game": 0.6619718309859155,
       "team_pitching_era": 5.17
+    },
+    "Cleveland Guardians": {
+      "runs_per_game": 0.5298013245033113,
+      "team_pitching_era": 4.36
+    },
+    "Minnesota Twins": {
+      "runs_per_game": 0.5496688741721855,
+      "team_pitching_era": 3.73
     },
     "Cincinnati Reds": {
       "runs_per_game": 0.5403726708074534,
@@ -63,47 +67,43 @@
       "runs_per_game": 0.5271317829457365,
       "team_pitching_era": 2.72
     },
-    "Minnesota Twins": {
-      "runs_per_game": 0.5364238410596026,
-      "team_pitching_era": 3.73
-    },
-    "Seattle Mariners": {
-      "runs_per_game": 0.4027777777777778,
-      "team_pitching_era": 4.33
-    },
     "New York Mets": {
       "runs_per_game": 0.5548387096774193,
       "team_pitching_era": 3.16
     },
     "St. Louis Cardinals": {
-      "runs_per_game": 0.6089743589743589,
+      "runs_per_game": 0.6114649681528662,
       "team_pitching_era": 3.95
+    },
+    "Seattle Mariners": {
+      "runs_per_game": 0.7254901960784313,
+      "team_pitching_era": 4.33
     },
     "Chicago Cubs": {
       "runs_per_game": 0.6713286713286714,
       "team_pitching_era": 4.51
     },
     "New York Yankees": {
-      "runs_per_game": 0.46938775510204084,
+      "runs_per_game": 0.553030303030303,
       "team_pitching_era": 1.95
     },
     "San Francisco Giants": {
       "runs_per_game": 0.45454545454545453
     },
     "Chicago White Sox": {
-      "runs_per_game": 0.5882352941176471,
+      "runs_per_game": 0.5827338129496403,
       "team_pitching_era": 3.34
     },
     "Baltimore Orioles": {
       "runs_per_game": 0.6211180124223602,
       "team_pitching_era": 4.11
     },
-    "Athletics": {
-      "runs_per_game": 0.36619718309859156
-    },
     "Washington Nationals": {
       "runs_per_game": 0.7835820895522388,
       "team_pitching_era": 3.02
+    },
+    "Athletics": {
+      "runs_per_game": 0.36363636363636365
     },
     "Toronto Blue Jays": {
       "team_pitching_era": 3.91
