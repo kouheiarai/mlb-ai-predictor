@@ -1,7 +1,9 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,TBD,Max Fried,Under,6.5,1.95,0.7505,0.0,0.463475,0.121967,1.0015,1.03,2.457,2.819,100000,BUY
-total,08d9219713246e3edff39b4f549085d8,2026-09-29T18:00:00Z,Philadelphia Phillies,Atlanta Braves,TBD,TBD,Under,6.5,2.03,0.56735,0.0,0.15172,0.036825,1.0,1.0,2.465,3.903,100000,BUY
-total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,TBD,TBD,Under,7.0,2.01,0.49829,0.14757,0.001563,0.000387,1.0027,0.97,2.917,3.908,100000,LEAN
-total,08d9219713246e3edff39b4f549085d8,2026-09-29T18:00:00Z,Philadelphia Phillies,Atlanta Braves,TBD,TBD,Over,6.5,1.85,0.43265,0.0,-0.199597,0.0,1.0,1.0,2.465,3.903,100000,PASS
-total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,TBD,TBD,Over,7.0,1.86,0.35414,0.14757,-0.3413,0.0,1.0027,0.97,2.917,3.908,100000,PASS
-total,4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,TBD,Max Fried,Over,6.5,1.92,0.2495,0.0,-0.52096,0.0,1.0015,1.03,2.457,2.819,100000,PASS
+total,3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,TBD,TBD,Under,8.5,1.88,0.82085,0.0,0.543198,0.154318,1.0,1.0,3.526,2.865,100000,BUY
+total,4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,Sonny Gray,Max Fried,Under,6.5,1.88,0.77674,0.0,0.460271,0.130759,1.0014,1.03,2.458,2.643,100000,BUY
+total,08d9219713246e3edff39b4f549085d8,2026-09-29T18:00:00Z,Philadelphia Phillies,Atlanta Braves,TBD,TBD,Under,7.0,1.82,0.57039,0.1415,0.03811,0.011619,1.0,1.0,2.465,3.903,100000,LEAN
+total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,TBD,TBD,Under,7.0,2.04,0.50312,0.14727,0.026365,0.006338,0.999,0.97,2.907,3.897,100000,LEAN
+total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,TBD,TBD,Over,7.0,1.84,0.34961,0.14727,-0.356718,0.0,0.999,0.97,2.907,3.897,100000,PASS
+total,08d9219713246e3edff39b4f549085d8,2026-09-29T18:00:00Z,Philadelphia Phillies,Atlanta Braves,TBD,TBD,Over,7.0,2.06,0.28811,0.1415,-0.406493,0.0,1.0,1.0,2.465,3.903,100000,PASS
+total,4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,Sonny Gray,Max Fried,Over,6.5,2.0,0.22326,0.0,-0.55348,0.0,1.0014,1.03,2.458,2.643,100000,PASS
+total,3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,TBD,TBD,Over,8.5,1.99,0.17915,0.0,-0.643491,0.0,1.0,1.0,3.526,2.865,100000,PASS
