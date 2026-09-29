@@ -1,6 +1,6 @@
 {
   "model_version": "26.0",
-  "updated_at_utc": "2026-09-29T01:20:55.171851+00:00",
+  "updated_at_utc": "2026-09-29T03:21:16.172301+00:00",
   "data_age_hours": 0.0,
   "is_stale": false,
   "stale_warning": null,
@@ -122,9 +122,9 @@
         "selection": "San Diego Padres",
         "point": "",
         "decimal_odds": 1.82,
-        "model_probability": 0.624968,
-        "ev": 0.137441,
-        "quarter_kelly": 0.041903,
+        "model_probability": 0.624791,
+        "ev": 0.137119,
+        "quarter_kelly": 0.041805,
         "confidence": "A"
       },
       {
@@ -162,10 +162,10 @@
         "commence_time_utc": "2026-09-30T02:00:00Z",
         "selection": "San Diego Padres",
         "point": -1.5,
-        "decimal_odds": 2.73,
+        "decimal_odds": 2.74,
         "model_probability": 0.40422,
-        "ev": 0.103521,
-        "quarter_kelly": 0.01496,
+        "ev": 0.107563,
+        "quarter_kelly": 0.015454,
         "confidence": "B"
       },
       {

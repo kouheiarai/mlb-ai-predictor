@@ -1,7 +1,7 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-09-29T01:20:55.171851+00:00
-- API requests remaining: 224
+- Updated: 2026-09-29T03:21:16.172301+00:00
+- API requests remaining: 221
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
@@ -74,9 +74,9 @@
 
 ### 2. San Diego Padres -1.5
 - Game: Chicago Cubs @ San Diego Padres
-- Odds: 2.73
+- Odds: 2.74
 - Cover probability: 40.4%
-- EV: 10.4%
+- EV: 10.8%
 - 1/4 Kelly: 1.5%
 - Lineup: 未発表
 - Lineup quality: +0.07
@@ -99,7 +99,7 @@
 - Platoon proxy: +0.12
 - Weather run factor: 1.003
 - Temperature: 23.2 C
-- Rain probability: 0%
+- Rain probability: 1%
 - Wind: 8.7 km/h (197 deg)
 - Bullpen fatigue proxy: 0.50
 - Expected score: Boston Red Sox 2.38 - New York Yankees 2.64

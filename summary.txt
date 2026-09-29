@@ -1,6 +1,6 @@
 MLB AI Predictor Ver.26.0 推奨一覧
 
-更新: 2026-09-29 10:20 JST（UTC 2026-09-29T01:20:55.171851+00:00）
+更新: 2026-09-29 12:21 JST（UTC 2026-09-29T03:21:16.172301+00:00）
 対象日 (UTC): 2026-09-29, 2026-09-30
 対象試合数: 4
 BUY 件数: マネーライン 3 / ランライン 4 / 合計得点 3
@@ -13,7 +13,7 @@ BUY 件数: マネーライン 3 / ランライン 4 / 合計得点 3
 
 ## ランライン（EV 降順・4 件）
 1. Chicago White Sox +1.5 | Chicago White Sox @ Houston Astros | 2026-09-30 06:00 JST | オッズ 1.54 | AI勝率 81.3% | EV 25.3% | 1/4ケリー 11.7% | 信頼度 A
-2. San Diego Padres -1.5 | Chicago Cubs @ San Diego Padres | 2026-09-30 11:00 JST | オッズ 2.73 | AI勝率 40.4% | EV 10.4% | 1/4ケリー 1.5% | 信頼度 B
+2. San Diego Padres -1.5 | Chicago Cubs @ San Diego Padres | 2026-09-30 11:00 JST | オッズ 2.74 | AI勝率 40.4% | EV 10.8% | 1/4ケリー 1.5% | 信頼度 B
 3. Boston Red Sox +1.5 | Boston Red Sox @ New York Yankees | 2026-09-30 09:10 JST | オッズ 1.52 | AI勝率 72.1% | EV 9.7% | 1/4ケリー 4.6% | 信頼度 A
 4. Atlanta Braves -1.5 | Philadelphia Phillies @ Atlanta Braves | 2026-09-30 03:00 JST | オッズ 2.22 | AI勝率 47.8% | EV 6.1% | 1/4ケリー 1.3% | 信頼度 C
 
