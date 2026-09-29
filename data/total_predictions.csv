@@ -1,9 +1,7 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,Ranger Suarez,Gerrit Cole,Under,6.5,1.85,0.78672,0.0,0.455432,0.133951,1.0031,1.03,2.38,2.638,100000,BUY
-total,3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,TBD,TBD,Under,8.0,1.95,0.72085,0.10985,0.405658,0.106752,1.0,1.0,3.486,2.831,100000,BUY
-total,08d9219713246e3edff39b4f549085d8,2026-09-29T18:00:00Z,Philadelphia Phillies,Atlanta Braves,TBD,TBD,Under,6.5,2.03,0.57954,0.0,0.176466,0.042832,1.0,1.0,2.442,3.858,100000,BUY
-total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,TBD,TBD,Under,7.0,2.0,0.5111,0.14774,0.0222,0.00555,1.0108,0.97,2.909,3.835,100000,LEAN
-total,08d9219713246e3edff39b4f549085d8,2026-09-29T18:00:00Z,Philadelphia Phillies,Atlanta Braves,TBD,TBD,Over,6.5,1.85,0.42046,0.0,-0.222149,0.0,1.0,1.0,2.442,3.858,100000,PASS
-total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:00:00Z,Chicago Cubs,San Diego Padres,TBD,TBD,Over,7.0,1.88,0.34116,0.14774,-0.358619,0.0,1.0108,0.97,2.909,3.835,100000,PASS
-total,4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,Ranger Suarez,Gerrit Cole,Over,6.5,2.02,0.21328,0.0,-0.569174,0.0,1.0031,1.03,2.38,2.638,100000,PASS
-total,3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,TBD,TBD,Over,8.0,1.92,0.1693,0.10985,-0.674944,0.0,1.0,1.0,3.486,2.831,100000,PASS
+total,3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,TBD,TBD,Under,8.0,2.01,0.72085,0.10985,0.448908,0.111116,1.0,1.0,3.486,2.831,100000,BUY
+total,4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,Ranger Suarez,Gerrit Cole,Under,6.0,1.99,0.65059,0.13931,0.294674,0.074413,1.0012,1.03,2.376,2.635,100000,BUY
+total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,TBD,TBD,Under,7.5,1.88,0.65723,0.0,0.235592,0.06693,1.0102,0.97,2.907,3.832,100000,BUY
+total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,TBD,TBD,Over,7.5,2.01,0.34277,0.0,-0.311032,0.0,1.0102,0.97,2.907,3.832,100000,PASS
+total,4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,Ranger Suarez,Gerrit Cole,Over,6.0,1.9,0.2101,0.13931,-0.60081,0.0,1.0012,1.03,2.376,2.635,100000,PASS
+total,3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,TBD,TBD,Over,8.0,1.88,0.1693,0.10985,-0.681716,0.0,1.0,1.0,3.486,2.831,100000,PASS
