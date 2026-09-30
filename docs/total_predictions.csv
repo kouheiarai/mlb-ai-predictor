@@ -1,5 +1,5 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,TBD,TBD,Under,7.5,1.96,0.69813,0.0,0.368335,0.095921,1.0075,0.97,2.82,3.657,100000,BUY
+total,766096a9312f4528ba2e8b59fe9550fd,2026-09-30T21:00:00Z,Chicago White Sox,Houston Astros,TBD,TBD,Under,7.5,1.91,0.74643,0.0,0.425681,0.116945,1.0,1.0,3.391,2.75,100000,BUY
 total,9e23239e0075a017225697fa3bcd88b3,2026-09-30T18:00:00Z,Philadelphia Phillies,Atlanta Braves,TBD,TBD,Under,7.0,2.01,0.60737,0.13727,0.220814,0.054657,1.0,1.0,2.379,3.755,100000,BUY
-total,98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,TBD,TBD,Over,7.5,1.93,0.30187,0.0,-0.417391,0.0,1.0075,0.97,2.82,3.657,100000,PASS
+total,766096a9312f4528ba2e8b59fe9550fd,2026-09-30T21:00:00Z,Chicago White Sox,Houston Astros,TBD,TBD,Over,7.5,1.96,0.25357,0.0,-0.503003,0.0,1.0,1.0,3.391,2.75,100000,PASS
 total,9e23239e0075a017225697fa3bcd88b3,2026-09-30T18:00:00Z,Philadelphia Phillies,Atlanta Braves,TBD,TBD,Over,7.0,1.86,0.25536,0.13727,-0.52503,0.0,1.0,1.0,2.379,3.755,100000,PASS
