@@ -95,6 +95,76 @@
         "総務省統計局 — 2025年基準 消費者物価指数 全国 2026年7月分 — https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/zenkoku.pdf"
       ],
       "source": "manual"
+    },
+    {
+      "date": "2026-09-09",
+      "type": "weekly",
+      "title": "The best-performing asset in a Japanese household right now is the salary",
+      "subtitle": "Wages grew 4.7% in July. The bank account they land in pays 0.4%. Japan's income is compounding faster than its savings.",
+      "topics": [
+        "July 2026 nominal cash earnings at 436,401 yen, up 4.7% year on year",
+        "Real wages up 2.4%, a seventh consecutive positive month",
+        "Scheduled pay up 4.1% against bonuses up 6.3%, and what that split means",
+        "Part-time hourly scheduled pay up 5.7% against full-time scheduled pay up 3.9%",
+        "MHLW publishing two real-wage figures using two different CPI deflators",
+        "The gap between wage growth and what household savings earn",
+        "Nominal wage growth above 3% for six straight months for the first time since March 1992"
+      ],
+      "sources": [
+        "厚生労働省 — 毎月勤労統計調査 2026年7月分結果速報 — https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2607p/2607p.html",
+        "厚生労働省 — 毎月勤労統計調査 2026年7月分結果速報（PDF） — https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2607p/dl/pdf2607p.pdf",
+        "日本経済新聞 — 7月の実質賃金2.4%増、7カ月連続プラス 夏季賞与の伸びが寄与 — https://www.nikkei.com/article/DGXZQOUA077UC0X00C26A9000000/",
+        "総務省統計局 — 2025年基準 消費者物価指数 全国 2026年7月分 — https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/zenkoku.pdf"
+      ],
+      "source": "manual"
+    },
+    {
+      "date": "2026-09-16",
+      "type": "weekly",
+      "title": "Japan's borrowers expect rates to rise. Three-quarters took a variable mortgage anyway.",
+      "subtitle": "A government survey asked the same people both questions — and then asked whether they understood what a rate rise would cost them.",
+      "topics": [
+        "JHF January 2026 survey: 75.0% of new mortgage borrowers chose variable rate, down 4.0 points",
+        "73.7% of those same borrowers expect mortgage rates to rise over the next year",
+        "52.0% of borrowers say they do not fully understand their rate risk",
+        "Prospective borrowers preferring variable at only 37.0%, against 75.0% actual behaviour",
+        "All-fixed preference among prospective borrowers up 4.6 points since April 2024",
+        "Household borrowings of 392 trillion yen against 2,386 trillion in financial assets",
+        "The rate rise repricing the liability side of the household balance sheet"
+      ],
+      "sources": [
+        "住宅金融支援機構 — 住宅ローン利用者の実態調査結果（2026年1月調査） — https://www.jhf.go.jp/files/topics/4955_ext_99_4.pdf",
+        "住宅金融支援機構 — 住宅ローン利用者の実態調査 — https://www.jhf.go.jp/about/research/loan/user/index.html",
+        "Bank of Japan — Flow of Funds (1st Quarter of 2026), Reference Charts — https://www.boj.or.jp/en/statistics/sj/sjexp.pdf",
+        "Bank of Japan — 金融市場調節方針の変更について（2026年6月16日） — https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260616a.pdf",
+        "モゲチェック — 住宅ローン金利2026年9月の最新動向 — https://mogecheck.jp/articles/show/51rzNy7XEJ5o4mQ6ZkVv"
+      ],
+      "source": "manual"
+    },
+    {
+      "date": "2026-09-30",
+      "type": "boj",
+      "title": "The Bank of Japan has stopped saying real rates are negative",
+      "subtitle": "It raised to 1.25% on a 7-2 vote, and the newest member dissented at her first meeting. The wording changed more than the rate did.",
+      "topics": [
+        "BOJ raising the overnight call rate from 1.0% to 1.25% on 18 September 2026",
+        "Basic loan rate going from 1.25% to 1.5%, effective 24 September",
+        "Vote splitting 7-2, up from 7-1 in June, with Sato Ayano dissenting at her first meeting",
+        "Asada Toichiro changing his stated reason for dissenting between June and September",
+        "The statement dropping \"real interest rates have been negative\" for \"remained at low levels\"",
+        "The overshoot risk being reattributed from crude oil pass-through to firms' wage and price setting",
+        "A new sentence committing the Bank to stop an overshoot before it damages the economy",
+        "The yen weakening to 158 after a rate rise"
+      ],
+      "sources": [
+        "日本銀行 — 金融市場調節方針の変更について（2026年9月18日） — https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260918a.pdf",
+        "Bank of Japan — Statement on Monetary Policy (18 September 2026, official English) — https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
+        "日本銀行 — 金融市場調節方針の変更について（2026年6月16日） — https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260616a.pdf",
+        "Bank of Japan — Statement on Monetary Policy (16 June 2026, official English) — https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf",
+        "日本経済新聞 — 円下落、一時158円台 日銀利上げ決定も「反対」 — https://www.nikkei.com/article/DGXZQOUB1809Y0Y6A910C2000000/",
+        "ピクテ・ジャパン — 日銀9月会合：タカ派的利上げペースに円安で反応 — https://www.pictet.co.jp/investment-information/market/today/20260924.html"
+      ],
+      "source": "manual"
     }
   ]
 }
