@@ -1,19 +1,13 @@
 ﻿event_id,commence_time_utc,away_team,home_team,bookmaker,bookmaker_last_update,market,selection,point,decimal_odds,american_odds,implied_probability
-3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-29T20:18:54Z,h2h,Chicago White Sox,,2.09,+109,0.478469
-3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-29T20:18:54Z,h2h,Houston Astros,,1.85,-118,0.540541
-3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-29T20:18:54Z,spreads,Chicago White Sox,1.5,1.54,-185,0.649351
-3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-29T20:18:54Z,spreads,Houston Astros,-1.5,2.65,+165,0.377358
-3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-29T20:18:54Z,totals,Over,8.0,1.88,-114,0.531915
-3a08d35ecf12b54dc25f5912ccecf222,2026-09-29T21:00:00Z,Chicago White Sox,Houston Astros,pinnacle,2026-09-29T20:18:54Z,totals,Under,8.0,2.01,+101,0.497512
-4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-29T20:18:54Z,h2h,Boston Red Sox,,2.15,+115,0.465116
-4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-29T20:18:54Z,h2h,New York Yankees,,1.81,-123,0.552486
-4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-29T20:18:54Z,spreads,Boston Red Sox,1.5,1.5,-200,0.666667
-4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-29T20:18:54Z,spreads,New York Yankees,-1.5,2.8,+180,0.357143
-4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-29T20:18:54Z,totals,Over,6.0,1.9,-111,0.526316
-4cb76cceb16eb603c683038d132f4642,2026-09-30T00:10:00Z,Boston Red Sox,New York Yankees,pinnacle,2026-09-29T20:18:54Z,totals,Under,6.0,1.99,-101,0.502513
-98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-29T20:18:54Z,h2h,Chicago Cubs,,2.16,+116,0.462963
-98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-29T20:18:54Z,h2h,San Diego Padres,,1.79,-127,0.558659
-98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-29T20:18:54Z,spreads,Chicago Cubs,1.5,1.53,-189,0.653595
-98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-29T20:18:54Z,spreads,San Diego Padres,-1.5,2.69,+169,0.371747
-98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-29T20:18:54Z,totals,Over,7.5,2.01,+101,0.497512
-98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-29T20:18:54Z,totals,Under,7.5,1.88,-114,0.531915
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-30T00:50:52Z,h2h,Chicago Cubs,,2.21,+121,0.452489
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-30T00:50:52Z,h2h,San Diego Padres,,1.76,-132,0.568182
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-30T00:50:52Z,spreads,Chicago Cubs,1.5,1.55,-182,0.645161
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-30T00:50:52Z,spreads,San Diego Padres,-1.5,2.62,+162,0.381679
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-30T00:50:52Z,totals,Over,7.5,1.93,-108,0.518135
+98adc841e3aababc93878e3cf743a2d4,2026-09-30T02:10:00Z,Chicago Cubs,San Diego Padres,pinnacle,2026-09-30T00:50:52Z,totals,Under,7.5,1.96,-104,0.510204
+9e23239e0075a017225697fa3bcd88b3,2026-09-30T18:00:00Z,Philadelphia Phillies,Atlanta Braves,pinnacle,2026-09-30T00:50:52Z,h2h,Atlanta Braves,,2.01,+101,0.497512
+9e23239e0075a017225697fa3bcd88b3,2026-09-30T18:00:00Z,Philadelphia Phillies,Atlanta Braves,pinnacle,2026-09-30T00:50:52Z,h2h,Philadelphia Phillies,,1.9,-111,0.526316
+9e23239e0075a017225697fa3bcd88b3,2026-09-30T18:00:00Z,Philadelphia Phillies,Atlanta Braves,pinnacle,2026-09-30T00:50:52Z,spreads,Atlanta Braves,1.5,1.56,-179,0.641026
+9e23239e0075a017225697fa3bcd88b3,2026-09-30T18:00:00Z,Philadelphia Phillies,Atlanta Braves,pinnacle,2026-09-30T00:50:52Z,spreads,Philadelphia Phillies,-1.5,2.56,+156,0.390625
+9e23239e0075a017225697fa3bcd88b3,2026-09-30T18:00:00Z,Philadelphia Phillies,Atlanta Braves,pinnacle,2026-09-30T00:50:52Z,totals,Over,7.0,1.86,-116,0.537634
+9e23239e0075a017225697fa3bcd88b3,2026-09-30T18:00:00Z,Philadelphia Phillies,Atlanta Braves,pinnacle,2026-09-30T00:50:52Z,totals,Under,7.0,2.01,+101,0.497512

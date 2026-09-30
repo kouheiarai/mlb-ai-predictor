@@ -1,24 +1,21 @@
 MLB AI Predictor Ver.26.0 推奨一覧
 
-更新: 2026-09-30 05:19 JST（UTC 2026-09-29T20:19:21.128296+00:00）
-対象日 (UTC): 2026-09-29, 2026-09-30
-対象試合数: 3
-BUY 件数: マネーライン 2 / ランライン 3 / 合計得点 3
+更新: 2026-09-30 09:51 JST（UTC 2026-09-30T00:51:13.798246+00:00）
+対象日 (UTC): 2026-09-30
+対象試合数: 2
+BUY 件数: マネーライン 2 / ランライン 1 / 合計得点 2
 オッズ: Pinnacle via The Odds API
 
 ## マネーライン（EV 降順・2 件）
-1. Chicago White Sox | Chicago White Sox @ Houston Astros | 2026-09-30 06:00 JST | オッズ 2.09 | AI勝率 58.0% | EV 21.3% | 1/4ケリー 4.9% | 信頼度 A
-2. San Diego Padres | Chicago Cubs @ San Diego Padres | 2026-09-30 11:10 JST | オッズ 1.79 | AI勝率 62.7% | EV 12.3% | 1/4ケリー 3.9% | 信頼度 A
+1. Atlanta Braves | Philadelphia Phillies @ Atlanta Braves | 2026-10-01 03:00 JST | オッズ 2.01 | AI勝率 67.8% | EV 36.3% | 1/4ケリー 9.0% | 信頼度 A
+2. San Diego Padres | Chicago Cubs @ San Diego Padres | 2026-09-30 11:10 JST | オッズ 1.76 | AI勝率 61.9% | EV 9.0% | 1/4ケリー 3.0% | 信頼度 B
 
-## ランライン（EV 降順・3 件）
-1. Chicago White Sox +1.5 | Chicago White Sox @ Houston Astros | 2026-09-30 06:00 JST | オッズ 1.54 | AI勝率 81.3% | EV 25.3% | 1/4ケリー 11.7% | 信頼度 A
-2. San Diego Padres -1.5 | Chicago Cubs @ San Diego Padres | 2026-09-30 11:10 JST | オッズ 2.69 | AI勝率 40.4% | EV 8.6% | 1/4ケリー 1.3% | 信頼度 B
-3. Boston Red Sox +1.5 | Boston Red Sox @ New York Yankees | 2026-09-30 09:10 JST | オッズ 1.50 | AI勝率 72.3% | EV 8.5% | 1/4ケリー 4.2% | 信頼度 A
+## ランライン（EV 降順・1 件）
+1. Atlanta Braves +1.5 | Philadelphia Phillies @ Atlanta Braves | 2026-10-01 03:00 JST | オッズ 1.56 | AI勝率 88.5% | EV 38.0% | 1/4ケリー 17.0% | 信頼度 A
 
-## 合計得点（EV 降順・3 件）
-1. Under +8 | Chicago White Sox @ Houston Astros | 2026-09-30 06:00 JST | オッズ 2.01 | AI勝率 72.1% | EV 44.9% | 1/4ケリー 11.1% | 信頼度 A
-2. Under +6 | Boston Red Sox @ New York Yankees | 2026-09-30 09:10 JST | オッズ 1.99 | AI勝率 65.1% | EV 29.5% | 1/4ケリー 7.4% | 信頼度 A
-3. Under +7.5 | Chicago Cubs @ San Diego Padres | 2026-09-30 11:10 JST | オッズ 1.88 | AI勝率 65.7% | EV 23.6% | 1/4ケリー 6.7% | 信頼度 A
+## 合計得点（EV 降順・2 件）
+1. Under +7.5 | Chicago Cubs @ San Diego Padres | 2026-09-30 11:10 JST | オッズ 1.96 | AI勝率 69.8% | EV 36.8% | 1/4ケリー 9.6% | 信頼度 A
+2. Under +7 | Philadelphia Phillies @ Atlanta Braves | 2026-10-01 03:00 JST | オッズ 2.01 | AI勝率 60.7% | EV 22.1% | 1/4ケリー 5.5% | 信頼度 A
 
 ## 注意
 
