@@ -1,7 +1,7 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-01T00:54:15.207345+00:00
-- API requests remaining: 497
+- Updated: 2026-10-01T03:10:50.830214+00:00
+- API requests remaining: 494
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
@@ -21,22 +21,6 @@
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.10
 - Expected score: Philadelphia Phillies 2.36 - Atlanta Braves 3.71
-
-### 2. San Diego Padres
-- Game: Chicago Cubs @ San Diego Padres
-- Odds: 1.73
-- AI probability: 62.5%
-- EV: 8.1%
-- 1/4 Kelly: 2.8%
-- Lineup: 未発表
-- Lineup quality: +0.07
-- Platoon proxy: +0.00
-- Weather run factor: 1.003
-- Temperature: 21.6 C
-- Rain probability: 0%
-- Wind: 11.4 km/h (336 deg)
-- Bullpen fatigue proxy: 0.10
-- Expected score: Chicago Cubs 2.77 - San Diego Padres 3.64
 
 ## Run Line Buy Ranking
 

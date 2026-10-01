@@ -1,17 +1,17 @@
 {
   "model_version": "26.0",
-  "updated_at_utc": "2026-10-01T00:54:15.207345+00:00",
+  "updated_at_utc": "2026-10-01T03:10:50.830214+00:00",
   "data_age_hours": 0.0,
   "is_stale": false,
   "stale_warning": null,
   "target_dates_utc": [
     "2026-10-01"
   ],
-  "game_count": 2,
+  "game_count": 1,
   "summary": {
-    "moneyline_buy_count": 2,
+    "moneyline_buy_count": 1,
     "runline_buy_count": 1,
-    "total_buy_count": 2,
+    "total_buy_count": 1,
     "best_moneyline": {
       "market": "moneyline",
       "event_id": "2b7c78b3c1a232ece3e9752493924b6c",
@@ -112,19 +112,6 @@
         "ev": 0.337408,
         "quarter_kelly": 0.086073,
         "confidence": "A"
-      },
-      {
-        "market": "moneyline",
-        "away_team": "Chicago Cubs",
-        "home_team": "San Diego Padres",
-        "commence_time_utc": "2026-10-01T02:00:00Z",
-        "selection": "San Diego Padres",
-        "point": "",
-        "decimal_odds": 1.73,
-        "model_probability": 0.625052,
-        "ev": 0.081341,
-        "quarter_kelly": 0.027856,
-        "confidence": "A"
       }
     ],
     "runline": [
@@ -155,19 +142,6 @@
         "ev": 0.394105,
         "quarter_kelly": 0.115913,
         "confidence": "A"
-      },
-      {
-        "market": "total",
-        "away_team": "Chicago Cubs",
-        "home_team": "San Diego Padres",
-        "commence_time_utc": "2026-10-01T02:00:00Z",
-        "selection": "Under",
-        "point": 7.0,
-        "decimal_odds": 2.0,
-        "model_probability": 0.56427,
-        "ev": 0.12854,
-        "quarter_kelly": 0.032135,
-        "confidence": "B"
       }
     ]
   }
