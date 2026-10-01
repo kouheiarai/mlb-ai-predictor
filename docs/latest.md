@@ -1,76 +1,60 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-09-30T20:23:16.033322+00:00
-- API requests remaining: 209
+- Updated: 2026-10-01T00:54:15.207345+00:00
+- API requests remaining: 497
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-### 1. Chicago White Sox
-- Game: Chicago White Sox @ Houston Astros
-- Odds: 2.34
-- AI probability: 57.2%
-- EV: 33.9%
-- 1/4 Kelly: 6.3%
+### 1. Atlanta Braves
+- Game: Philadelphia Phillies @ Atlanta Braves
+- Odds: 1.98
+- AI probability: 67.5%
+- EV: 33.7%
+- 1/4 Kelly: 8.6%
 - Lineup: 未発表
-- Lineup quality: +0.26
+- Lineup quality: +0.24
 - Platoon proxy: +0.00
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Chicago White Sox 3.39 - Houston Astros 2.75
+- Bullpen fatigue proxy: 0.10
+- Expected score: Philadelphia Phillies 2.36 - Atlanta Braves 3.71
 
 ### 2. San Diego Padres
 - Game: Chicago Cubs @ San Diego Padres
-- Odds: 1.71
-- AI probability: 62.1%
-- EV: 6.3%
-- 1/4 Kelly: 2.2%
+- Odds: 1.73
+- AI probability: 62.5%
+- EV: 8.1%
+- 1/4 Kelly: 2.8%
 - Lineup: 未発表
 - Lineup quality: +0.07
 - Platoon proxy: +0.00
-- Weather run factor: 1.002
+- Weather run factor: 1.003
 - Temperature: 21.6 C
 - Rain probability: 0%
-- Wind: 10.9 km/h (333 deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Chicago Cubs 2.80 - San Diego Padres 3.64
+- Wind: 11.4 km/h (336 deg)
+- Bullpen fatigue proxy: 0.10
+- Expected score: Chicago Cubs 2.77 - San Diego Padres 3.64
 
 ## Run Line Buy Ranking
 
-### 1. Chicago White Sox +1.5
-- Game: Chicago White Sox @ Houston Astros
-- Odds: 1.6
-- Cover probability: 81.5%
-- EV: 30.4%
-- 1/4 Kelly: 12.7%
+### 1. Atlanta Braves +1.5
+- Game: Philadelphia Phillies @ Atlanta Braves
+- Odds: 1.55
+- Cover probability: 88.5%
+- EV: 37.2%
+- 1/4 Kelly: 16.9%
 - Lineup: 未発表
-- Lineup quality: +0.26
+- Lineup quality: +0.24
 - Platoon proxy: +0.00
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Chicago White Sox 3.39 - Houston Astros 2.75
-
-### 2. Boston Red Sox +1.5
-- Game: Boston Red Sox @ New York Yankees
-- Odds: 1.53
-- Cover probability: 73.4%
-- EV: 12.3%
-- 1/4 Kelly: 5.8%
-- Lineup: 未発表
-- Lineup quality: -0.02
-- Platoon proxy: +0.12
-- Weather run factor: 0.993
-- Temperature: 19.3 C
-- Rain probability: 4%
-- Wind: 6.1 km/h (152 deg)
 - Bullpen fatigue proxy: 0.10
-- Expected score: Boston Red Sox 2.29 - New York Yankees 2.51
+- Expected score: Philadelphia Phillies 2.36 - Atlanta Braves 3.71
 
 ## Model Notes
 
