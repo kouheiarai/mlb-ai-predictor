@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-02T03:12:19.420478+00:00",
+  "fetched_at_utc": "2026-10-02T20:14:04.502370+00:00",
   "games": [
     {
       "game_pk": 849829,
@@ -7,11 +7,11 @@
       "home_team": "Cleveland Guardians",
       "game_date_utc": "2026-10-03T17:00:00Z",
       "weather": {
-        "weather_run_factor": 0.991,
-        "temperature_c": 16.7,
+        "weather_run_factor": 0.9958,
+        "temperature_c": 18.0,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 9.6,
-        "wind_direction_deg": 56
+        "wind_speed_kmh": 11.8,
+        "wind_direction_deg": 67
       }
     },
     {

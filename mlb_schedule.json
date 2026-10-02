@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-02T03:12:19.420478+00:00",
+  "fetched_at_utc": "2026-10-02T20:14:04.502370+00:00",
   "games": [
     {
       "game_pk": 849829,
@@ -7,18 +7,18 @@
       "status": "Scheduled",
       "away_team": "Chicago White Sox",
       "home_team": "Cleveland Guardians",
-      "away_probable_pitcher_id": null,
-      "away_probable_pitcher": "TBD",
+      "away_probable_pitcher_id": 696146,
+      "away_probable_pitcher": "Hagen Smith",
       "home_probable_pitcher_id": 800048,
       "home_probable_pitcher": "Parker Messick",
       "venue_id": 5,
       "venue_name": "Progressive Field",
       "away_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
+        "person_id": 696146,
+        "era": 1.29,
+        "whip": 0.96,
+        "strikeout_walk_ratio": 2.5625,
+        "innings_pitched": 28.0
       },
       "home_starter_stats": {
         "person_id": 800048,
@@ -331,14 +331,14 @@
         "home_lineup_confidence": "A",
         "home_prediction_source_games": 3
       },
-      "away_probable_pitcher_hand": null,
+      "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "weather_run_factor": 0.991,
-        "temperature_c": 16.7,
+        "weather_run_factor": 0.9958,
+        "temperature_c": 18.0,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 9.6,
-        "wind_direction_deg": 56
+        "wind_speed_kmh": 11.8,
+        "wind_direction_deg": 67
       }
     },
     {
@@ -349,8 +349,8 @@
       "home_team": "Los Angeles Dodgers",
       "away_probable_pitcher_id": null,
       "away_probable_pitcher": "TBD",
-      "home_probable_pitcher_id": null,
-      "home_probable_pitcher": "TBD",
+      "home_probable_pitcher_id": 669373,
+      "home_probable_pitcher": "Tarik Skubal",
       "venue_id": 22,
       "venue_name": "UNIQLO Field at Dodger Stadium",
       "away_starter_stats": {
@@ -361,11 +361,11 @@
         "innings_pitched": null
       },
       "home_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
+        "person_id": 669373,
+        "era": 2.72,
+        "whip": 0.96,
+        "strikeout_walk_ratio": 6.888888888888889,
+        "innings_pitched": 158.2
       },
       "lineups": {
         "away_announced": false,
@@ -672,7 +672,7 @@
         "home_prediction_source_games": 3
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": "L",
       "weather": {
         "weather_run_factor": 1.0,
         "temperature_c": null,
@@ -687,18 +687,18 @@
       "status": "Scheduled",
       "away_team": "New York Yankees",
       "home_team": "Tampa Bay Rays",
-      "away_probable_pitcher_id": null,
-      "away_probable_pitcher": "TBD",
+      "away_probable_pitcher_id": 543037,
+      "away_probable_pitcher": "Gerrit Cole",
       "home_probable_pitcher_id": 656876,
       "home_probable_pitcher": "Drew Rasmussen",
       "venue_id": 12,
       "venue_name": "Tropicana Field",
       "away_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
+        "person_id": 543037,
+        "era": 3.61,
+        "whip": 1.1,
+        "strikeout_walk_ratio": 5.24,
+        "innings_pitched": 127.0
       },
       "home_starter_stats": {
         "person_id": 656876,
@@ -1011,7 +1011,7 @@
         "home_lineup_confidence": "S",
         "home_prediction_source_games": 3
       },
-      "away_probable_pitcher_hand": null,
+      "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
         "weather_run_factor": 1.0,
