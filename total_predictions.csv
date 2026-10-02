@@ -1,9 +1,7 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,5524c44b05e28aa899909c9e001184ec,2026-10-02T00:11:00Z,Philadelphia Phillies,Atlanta Braves,Aaron Nola,Ray Kerr,Under,7.5,1.92,0.75354,0.0,0.446797,0.121412,1.0,1.0,2.274,3.776,100000,BUY
-total,347a2e725dd11a54a1d964eae3d04dd2,2026-10-04T00:30:00Z,San Diego Padres,Milwaukee Brewers,TBD,Jacob Misiorowski,Under,7.0,1.88,0.72961,0.11166,0.371667,0.105587,1.0,1.0,2.277,3.094,100000,BUY
-total,cb4d07dc15440acf3d9ebe1ad41756c1,2026-10-03T22:31:00Z,New York Yankees,Tampa Bay Rays,TBD,Drew Rasmussen,Under,7.0,1.85,0.71846,0.11721,0.329151,0.096809,1.0,0.98,2.936,2.527,100000,BUY
-total,5d13b613a334039f0694d8c95af28728,2026-10-03T17:01:00Z,Chicago White Sox,Cleveland Guardians,TBD,Parker Messick,Under,7.0,1.83,0.64673,0.12953,0.183516,0.055276,0.9942,1.0,3.158,2.777,100000,BUY
-total,5524c44b05e28aa899909c9e001184ec,2026-10-02T00:11:00Z,Philadelphia Phillies,Atlanta Braves,Aaron Nola,Ray Kerr,Over,7.5,1.97,0.24646,0.0,-0.514474,0.0,1.0,1.0,2.274,3.776,100000,PASS
-total,5d13b613a334039f0694d8c95af28728,2026-10-03T17:01:00Z,Chicago White Sox,Cleveland Guardians,TBD,Parker Messick,Over,7.0,2.04,0.22374,0.12953,-0.54357,0.0,0.9942,1.0,3.158,2.777,100000,PASS
-total,cb4d07dc15440acf3d9ebe1ad41756c1,2026-10-03T22:31:00Z,New York Yankees,Tampa Bay Rays,TBD,Drew Rasmussen,Over,7.0,2.03,0.16433,0.11721,-0.66641,0.0,1.0,0.98,2.936,2.527,100000,PASS
-total,347a2e725dd11a54a1d964eae3d04dd2,2026-10-04T00:30:00Z,San Diego Padres,Milwaukee Brewers,TBD,Jacob Misiorowski,Over,7.0,1.99,0.15873,0.11166,-0.684127,0.0,1.0,1.0,2.277,3.094,100000,PASS
+total,347a2e725dd11a54a1d964eae3d04dd2,2026-10-04T00:30:00Z,San Diego Padres,Milwaukee Brewers,TBD,Logan Henderson,Under,7.0,1.88,0.73608,0.11131,0.38383,0.109043,1.0,1.0,2.278,3.06,100000,BUY
+total,cb4d07dc15440acf3d9ebe1ad41756c1,2026-10-03T22:31:00Z,New York Yankees,Tampa Bay Rays,TBD,Drew Rasmussen,Under,7.0,1.85,0.72822,0.11338,0.347207,0.10212,1.0,0.98,2.901,2.498,100000,BUY
+total,5d13b613a334039f0694d8c95af28728,2026-10-03T17:01:00Z,Chicago White Sox,Cleveland Guardians,TBD,Parker Messick,Under,7.0,1.83,0.65457,0.1314,0.197863,0.059597,0.9957,1.0,3.129,2.749,100000,BUY
+total,5d13b613a334039f0694d8c95af28728,2026-10-03T17:01:00Z,Chicago White Sox,Cleveland Guardians,TBD,Parker Messick,Over,7.0,2.04,0.21403,0.1314,-0.563379,0.0,0.9957,1.0,3.129,2.749,100000,PASS
+total,cb4d07dc15440acf3d9ebe1ad41756c1,2026-10-03T22:31:00Z,New York Yankees,Tampa Bay Rays,TBD,Drew Rasmussen,Over,7.0,2.03,0.1584,0.11338,-0.678448,0.0,1.0,0.98,2.901,2.498,100000,PASS
+total,347a2e725dd11a54a1d964eae3d04dd2,2026-10-04T00:30:00Z,San Diego Padres,Milwaukee Brewers,TBD,Logan Henderson,Over,7.0,2.0,0.15261,0.11131,-0.69478,0.0,1.0,1.0,2.278,3.06,100000,PASS
