@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-02T01:11:08.076174+00:00",
+  "fetched_at_utc": "2026-10-02T03:12:19.420478+00:00",
   "games": [
     {
       "game_pk": 849829,
@@ -7,16 +7,16 @@
       "home_team": "Cleveland Guardians",
       "game_date_utc": "2026-10-03T17:00:00Z",
       "weather": {
-        "weather_run_factor": 0.9957,
-        "temperature_c": 17.1,
+        "weather_run_factor": 0.991,
+        "temperature_c": 16.7,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 13.5,
-        "wind_direction_deg": 31
+        "wind_speed_kmh": 9.6,
+        "wind_direction_deg": 56
       }
     },
     {
       "game_pk": 849828,
-      "away_team": "ATL/PHI",
+      "away_team": "Atlanta Braves",
       "home_team": "Los Angeles Dodgers",
       "game_date_utc": "2026-10-03T20:00:00Z",
       "weather": {
@@ -68,7 +68,7 @@
     },
     {
       "game_pk": 849823,
-      "away_team": "ATL/PHI",
+      "away_team": "Atlanta Braves",
       "home_team": "Los Angeles Dodgers",
       "game_date_utc": "2026-10-05T00:00:00Z",
       "weather": {

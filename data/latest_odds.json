@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-02T01:11:08.076174+00:00",
+  "fetched_at_utc": "2026-10-02T03:12:19.420478+00:00",
   "events": [
     {
       "id": "5d13b613a334039f0694d8c95af28728",
@@ -12,11 +12,11 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-02T01:10:55Z",
+          "last_update": "2026-10-02T03:12:05Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-02T01:10:55Z",
+              "last_update": "2026-10-02T03:12:05Z",
               "outcomes": [
                 {
                   "name": "Chicago White Sox",
@@ -30,7 +30,7 @@
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-02T01:10:55Z",
+              "last_update": "2026-10-02T03:12:05Z",
               "outcomes": [
                 {
                   "name": "Chicago White Sox",
@@ -46,7 +46,7 @@
             },
             {
               "key": "totals",
-              "last_update": "2026-10-02T01:10:55Z",
+              "last_update": "2026-10-02T03:12:05Z",
               "outcomes": [
                 {
                   "name": "Over",
@@ -55,7 +55,7 @@
                 },
                 {
                   "name": "Under",
-                  "price": 1.83,
+                  "price": 1.84,
                   "point": 7.0
                 }
               ]
@@ -63,6 +63,15 @@
           ]
         }
       ]
+    },
+    {
+      "id": "1632ced04d65127cf6172d3a2c2e2d16",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-10-03T20:00:00Z",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Atlanta Braves",
+      "bookmakers": []
     },
     {
       "id": "cb4d07dc15440acf3d9ebe1ad41756c1",
@@ -75,11 +84,11 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-02T01:10:55Z",
+          "last_update": "2026-10-02T03:12:05Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-02T01:10:55Z",
+              "last_update": "2026-10-02T03:12:05Z",
               "outcomes": [
                 {
                   "name": "New York Yankees",
@@ -93,7 +102,7 @@
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-02T01:10:55Z",
+              "last_update": "2026-10-02T03:12:05Z",
               "outcomes": [
                 {
                   "name": "New York Yankees",
@@ -109,7 +118,7 @@
             },
             {
               "key": "totals",
-              "last_update": "2026-10-02T01:10:55Z",
+              "last_update": "2026-10-02T03:12:05Z",
               "outcomes": [
                 {
                   "name": "Over",
@@ -138,41 +147,41 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-02T01:10:55Z",
+          "last_update": "2026-10-02T03:12:05Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-02T01:10:55Z",
+              "last_update": "2026-10-02T03:12:05Z",
               "outcomes": [
                 {
                   "name": "Milwaukee Brewers",
-                  "price": 1.45
+                  "price": 1.47
                 },
                 {
                   "name": "San Diego Padres",
-                  "price": 2.95
+                  "price": 2.9
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-02T01:10:55Z",
+              "last_update": "2026-10-02T03:12:05Z",
               "outcomes": [
                 {
                   "name": "Milwaukee Brewers",
-                  "price": 2.07,
+                  "price": 2.09,
                   "point": -1.5
                 },
                 {
                   "name": "San Diego Padres",
-                  "price": 1.83,
+                  "price": 1.82,
                   "point": 1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-02T01:10:55Z",
+              "last_update": "2026-10-02T03:12:05Z",
               "outcomes": [
                 {
                   "name": "Over",

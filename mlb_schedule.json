@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-02T01:11:08.076174+00:00",
+  "fetched_at_utc": "2026-10-02T03:12:19.420478+00:00",
   "games": [
     {
       "game_pk": 849829,
@@ -334,18 +334,18 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "weather_run_factor": 0.9957,
-        "temperature_c": 17.1,
+        "weather_run_factor": 0.991,
+        "temperature_c": 16.7,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 13.5,
-        "wind_direction_deg": 31
+        "wind_speed_kmh": 9.6,
+        "wind_direction_deg": 56
       }
     },
     {
       "game_pk": 849828,
       "game_date_utc": "2026-10-03T20:00:00Z",
       "status": "Scheduled",
-      "away_team": "ATL/PHI",
+      "away_team": "Atlanta Braves",
       "home_team": "Los Angeles Dodgers",
       "away_probable_pitcher_id": null,
       "away_probable_pitcher": "TBD",
@@ -370,7 +370,152 @@
       "lineups": {
         "away_announced": false,
         "home_announced": false,
-        "away_batting_order": [],
+        "away_batting_order": [
+          {
+            "person_id": 660670,
+            "full_name": "Ronald Acuña Jr.",
+            "batting_order": 1,
+            "position": "RF",
+            "season_stats": {
+              "ops": 0.806,
+              "plate_appearances": 464.0,
+              "avg": 0.258,
+              "obp": 0.349,
+              "slg": 0.457
+            },
+            "prediction_start_count": 2,
+            "prediction_median_order": 2.0,
+            "bat_side": "R"
+          },
+          {
+            "person_id": 686948,
+            "full_name": "Drake Baldwin",
+            "batting_order": 2,
+            "position": "DH",
+            "season_stats": {
+              "ops": 0.808,
+              "plate_appearances": 610.0,
+              "avg": 0.281,
+              "obp": 0.356,
+              "slg": 0.452
+            },
+            "prediction_start_count": 2,
+            "prediction_median_order": 2.5,
+            "bat_side": "L"
+          },
+          {
+            "person_id": 671739,
+            "full_name": "Michael Harris II",
+            "batting_order": 3,
+            "position": "CF",
+            "season_stats": {
+              "ops": 0.803,
+              "plate_appearances": 616.0,
+              "avg": 0.29,
+              "obp": 0.318,
+              "slg": 0.485
+            },
+            "prediction_start_count": 2,
+            "prediction_median_order": 2.5,
+            "bat_side": "L"
+          },
+          {
+            "person_id": 621566,
+            "full_name": "Matt Olson",
+            "batting_order": 4,
+            "position": "1B",
+            "season_stats": {
+              "ops": 0.829,
+              "plate_appearances": 691.0,
+              "avg": 0.252,
+              "obp": 0.323,
+              "slg": 0.506
+            },
+            "prediction_start_count": 3,
+            "prediction_median_order": 3.0,
+            "bat_side": "L"
+          },
+          {
+            "person_id": 643289,
+            "full_name": "Mauricio Dubón",
+            "batting_order": 5,
+            "position": "SS",
+            "season_stats": {
+              "ops": 0.713,
+              "plate_appearances": 615.0,
+              "avg": 0.275,
+              "obp": 0.32,
+              "slg": 0.393
+            },
+            "prediction_start_count": 2,
+            "prediction_median_order": 3.0,
+            "bat_side": "R"
+          },
+          {
+            "person_id": 663586,
+            "full_name": "Austin Riley",
+            "batting_order": 6,
+            "position": "3B",
+            "season_stats": {
+              "ops": 0.662,
+              "plate_appearances": 621.0,
+              "avg": 0.222,
+              "obp": 0.293,
+              "slg": 0.369
+            },
+            "prediction_start_count": 3,
+            "prediction_median_order": 5.0,
+            "bat_side": "R"
+          },
+          {
+            "person_id": 642086,
+            "full_name": "Dominic Smith",
+            "batting_order": 7,
+            "position": "DH",
+            "season_stats": {
+              "ops": 0.699,
+              "plate_appearances": 298.0,
+              "avg": 0.255,
+              "obp": 0.313,
+              "slg": 0.386
+            },
+            "prediction_start_count": 2,
+            "prediction_median_order": 5.5,
+            "bat_side": "L"
+          },
+          {
+            "person_id": 573262,
+            "full_name": "Mike Yastrzemski",
+            "batting_order": 8,
+            "position": "LF",
+            "season_stats": {
+              "ops": 0.7,
+              "plate_appearances": 400.0,
+              "avg": 0.229,
+              "obp": 0.313,
+              "slg": 0.387
+            },
+            "prediction_start_count": 3,
+            "prediction_median_order": 6.0,
+            "bat_side": "L"
+          },
+          {
+            "person_id": 645277,
+            "full_name": "Ozzie Albies",
+            "batting_order": 9,
+            "position": "2B",
+            "season_stats": {
+              "ops": 0.691,
+              "plate_appearances": 677.0,
+              "avg": 0.24,
+              "obp": 0.295,
+              "slg": 0.396
+            },
+            "prediction_start_count": 3,
+            "prediction_median_order": 6.0,
+            "bat_side": "S"
+          }
+        ],
         "home_batting_order": [
           {
             "person_id": 660271,
@@ -517,10 +662,10 @@
             "bat_side": "R"
           }
         ],
-        "away_lineup_status": "unavailable",
-        "away_lineup_reliability": 0.0,
-        "away_lineup_confidence": "Unavailable",
-        "away_prediction_source_games": 0,
+        "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.8944,
+        "away_lineup_confidence": "A",
+        "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
         "home_lineup_reliability": 0.8944,
         "home_lineup_confidence": "A",
@@ -1560,7 +1705,7 @@
       "game_pk": 849823,
       "game_date_utc": "2026-10-05T00:00:00Z",
       "status": "Scheduled",
-      "away_team": "ATL/PHI",
+      "away_team": "Atlanta Braves",
       "home_team": "Los Angeles Dodgers",
       "away_probable_pitcher_id": null,
       "away_probable_pitcher": "TBD",
@@ -1585,7 +1730,152 @@
       "lineups": {
         "away_announced": false,
         "home_announced": false,
-        "away_batting_order": [],
+        "away_batting_order": [
+          {
+            "person_id": 660670,
+            "full_name": "Ronald Acuña Jr.",
+            "batting_order": 1,
+            "position": "RF",
+            "season_stats": {
+              "ops": 0.806,
+              "plate_appearances": 464.0,
+              "avg": 0.258,
+              "obp": 0.349,
+              "slg": 0.457
+            },
+            "prediction_start_count": 2,
+            "prediction_median_order": 2.0,
+            "bat_side": "R"
+          },
+          {
+            "person_id": 686948,
+            "full_name": "Drake Baldwin",
+            "batting_order": 2,
+            "position": "DH",
+            "season_stats": {
+              "ops": 0.808,
+              "plate_appearances": 610.0,
+              "avg": 0.281,
+              "obp": 0.356,
+              "slg": 0.452
+            },
+            "prediction_start_count": 2,
+            "prediction_median_order": 2.5,
+            "bat_side": "L"
+          },
+          {
+            "person_id": 671739,
+            "full_name": "Michael Harris II",
+            "batting_order": 3,
+            "position": "CF",
+            "season_stats": {
+              "ops": 0.803,
+              "plate_appearances": 616.0,
+              "avg": 0.29,
+              "obp": 0.318,
+              "slg": 0.485
+            },
+            "prediction_start_count": 2,
+            "prediction_median_order": 2.5,
+            "bat_side": "L"
+          },
+          {
+            "person_id": 621566,
+            "full_name": "Matt Olson",
+            "batting_order": 4,
+            "position": "1B",
+            "season_stats": {
+              "ops": 0.829,
+              "plate_appearances": 691.0,
+              "avg": 0.252,
+              "obp": 0.323,
+              "slg": 0.506
+            },
+            "prediction_start_count": 3,
+            "prediction_median_order": 3.0,
+            "bat_side": "L"
+          },
+          {
+            "person_id": 643289,
+            "full_name": "Mauricio Dubón",
+            "batting_order": 5,
+            "position": "SS",
+            "season_stats": {
+              "ops": 0.713,
+              "plate_appearances": 615.0,
+              "avg": 0.275,
+              "obp": 0.32,
+              "slg": 0.393
+            },
+            "prediction_start_count": 2,
+            "prediction_median_order": 3.0,
+            "bat_side": "R"
+          },
+          {
+            "person_id": 663586,
+            "full_name": "Austin Riley",
+            "batting_order": 6,
+            "position": "3B",
+            "season_stats": {
+              "ops": 0.662,
+              "plate_appearances": 621.0,
+              "avg": 0.222,
+              "obp": 0.293,
+              "slg": 0.369
+            },
+            "prediction_start_count": 3,
+            "prediction_median_order": 5.0,
+            "bat_side": "R"
+          },
+          {
+            "person_id": 642086,
+            "full_name": "Dominic Smith",
+            "batting_order": 7,
+            "position": "DH",
+            "season_stats": {
+              "ops": 0.699,
+              "plate_appearances": 298.0,
+              "avg": 0.255,
+              "obp": 0.313,
+              "slg": 0.386
+            },
+            "prediction_start_count": 2,
+            "prediction_median_order": 5.5,
+            "bat_side": "L"
+          },
+          {
+            "person_id": 573262,
+            "full_name": "Mike Yastrzemski",
+            "batting_order": 8,
+            "position": "LF",
+            "season_stats": {
+              "ops": 0.7,
+              "plate_appearances": 400.0,
+              "avg": 0.229,
+              "obp": 0.313,
+              "slg": 0.387
+            },
+            "prediction_start_count": 3,
+            "prediction_median_order": 6.0,
+            "bat_side": "L"
+          },
+          {
+            "person_id": 645277,
+            "full_name": "Ozzie Albies",
+            "batting_order": 9,
+            "position": "2B",
+            "season_stats": {
+              "ops": 0.691,
+              "plate_appearances": 677.0,
+              "avg": 0.24,
+              "obp": 0.295,
+              "slg": 0.396
+            },
+            "prediction_start_count": 3,
+            "prediction_median_order": 6.0,
+            "bat_side": "S"
+          }
+        ],
         "home_batting_order": [
           {
             "person_id": 660271,
@@ -1732,10 +2022,10 @@
             "bat_side": "R"
           }
         ],
-        "away_lineup_status": "unavailable",
-        "away_lineup_reliability": 0.0,
-        "away_lineup_confidence": "Unavailable",
-        "away_prediction_source_games": 0,
+        "away_lineup_status": "predicted",
+        "away_lineup_reliability": 0.8944,
+        "away_lineup_confidence": "A",
+        "away_prediction_source_games": 3,
         "home_lineup_status": "predicted",
         "home_lineup_reliability": 0.8944,
         "home_lineup_confidence": "A",

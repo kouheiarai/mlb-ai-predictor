@@ -1,7 +1,7 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-02T01:11:08.076174+00:00
-- API requests remaining: 488
+- Updated: 2026-10-02T03:12:19.420478+00:00
+- API requests remaining: 485
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
@@ -9,18 +9,18 @@
 ### 1. Chicago White Sox
 - Game: Chicago White Sox @ Cleveland Guardians
 - Odds: 2.36
-- AI probability: 53.7%
-- EV: 26.7%
+- AI probability: 53.8%
+- EV: 26.9%
 - 1/4 Kelly: 4.9%
 - Lineup: 未発表
 - Lineup quality: +0.28
 - Platoon proxy: +0.00
-- Weather run factor: 0.996
-- Temperature: 17.1 C
+- Weather run factor: 0.991
+- Temperature: 16.7 C
 - Rain probability: 0%
-- Wind: 13.5 km/h (31 deg)
+- Wind: 9.6 km/h (56 deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Chicago White Sox 3.13 - Cleveland Guardians 2.75
+- Expected score: Chicago White Sox 3.12 - Cleveland Guardians 2.74
 
 ### 2. New York Yankees
 - Game: New York Yankees @ Tampa Bay Rays
@@ -40,10 +40,10 @@
 
 ### 3. San Diego Padres
 - Game: San Diego Padres @ Milwaukee Brewers
-- Odds: 2.95
-- AI probability: 36.2%
-- EV: 6.7%
-- 1/4 Kelly: 0.9%
+- Odds: 2.9
+- AI probability: 36.3%
+- EV: 5.2%
+- 1/4 Kelly: 0.7%
 - Lineup: 未発表
 - Lineup quality: +0.10
 - Platoon proxy: -0.04
@@ -65,12 +65,12 @@
 - Lineup: 未発表
 - Lineup quality: +0.28
 - Platoon proxy: +0.00
-- Weather run factor: 0.996
-- Temperature: 17.1 C
+- Weather run factor: 0.991
+- Temperature: 16.7 C
 - Rain probability: 0%
-- Wind: 13.5 km/h (31 deg)
+- Wind: 9.6 km/h (56 deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Chicago White Sox 3.13 - Cleveland Guardians 2.75
+- Expected score: Chicago White Sox 3.12 - Cleveland Guardians 2.74
 
 ### 2. New York Yankees +1.5
 - Game: New York Yankees @ Tampa Bay Rays
@@ -90,10 +90,10 @@
 
 ### 3. San Diego Padres +1.5
 - Game: San Diego Padres @ Milwaukee Brewers
-- Odds: 1.83
+- Odds: 1.82
 - Cover probability: 63.4%
-- EV: 16.0%
-- 1/4 Kelly: 4.8%
+- EV: 15.4%
+- 1/4 Kelly: 4.7%
 - Lineup: 未発表
 - Lineup quality: +0.10
 - Platoon proxy: -0.04
