@@ -1,9 +1,9 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
 total,1632ced04d65127cf6172d3a2c2e2d16,2026-10-03T20:00:00Z,Atlanta Braves,Los Angeles Dodgers,TBD,TBD,Under,8.5,1.87,0.9328,0.0,0.744336,0.21389,1.0,1.01,2.441,2.735,100000,BUY
-total,cb4d07dc15440acf3d9ebe1ad41756c1,2026-10-03T22:31:00Z,New York Yankees,Tampa Bay Rays,Gerrit Cole,Drew Rasmussen,Under,7.0,1.94,0.76027,0.10435,0.474924,0.12631,1.0,0.98,2.901,2.298,100000,BUY
-total,347a2e725dd11a54a1d964eae3d04dd2,2026-10-04T00:30:00Z,San Diego Padres,Milwaukee Brewers,TBD,Logan Henderson,Under,7.0,1.97,0.73608,0.11131,0.450078,0.115999,1.0,1.0,2.278,3.06,100000,BUY
-total,5d13b613a334039f0694d8c95af28728,2026-10-03T17:01:00Z,Chicago White Sox,Cleveland Guardians,Hagen Smith,Parker Messick,Under,7.0,1.85,0.70039,0.12119,0.295721,0.086977,0.9958,1.0,3.129,2.465,100000,BUY
-total,5d13b613a334039f0694d8c95af28728,2026-10-03T17:01:00Z,Chicago White Sox,Cleveland Guardians,Hagen Smith,Parker Messick,Over,7.0,2.02,0.17842,0.12119,-0.639592,0.0,0.9958,1.0,3.129,2.465,100000,PASS
-total,347a2e725dd11a54a1d964eae3d04dd2,2026-10-04T00:30:00Z,San Diego Padres,Milwaukee Brewers,TBD,Logan Henderson,Over,7.0,1.9,0.15261,0.11131,-0.710041,0.0,1.0,1.0,2.278,3.06,100000,PASS
-total,cb4d07dc15440acf3d9ebe1ad41756c1,2026-10-03T22:31:00Z,New York Yankees,Tampa Bay Rays,Gerrit Cole,Drew Rasmussen,Over,7.0,1.93,0.13538,0.10435,-0.738717,0.0,1.0,0.98,2.901,2.298,100000,PASS
+total,347a2e725dd11a54a1d964eae3d04dd2,2026-10-04T00:30:00Z,San Diego Padres,Milwaukee Brewers,Michael King,Logan Henderson,Under,7.0,1.97,0.74735,0.10805,0.472279,0.121722,1.0,1.0,2.279,2.983,100000,BUY
+total,cb4d07dc15440acf3d9ebe1ad41756c1,2026-10-03T22:31:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,TBD,Under,7.0,1.94,0.69953,0.12148,0.357088,0.09497,1.0,0.98,3.276,2.284,100000,BUY
+total,5d13b613a334039f0694d8c95af28728,2026-10-03T17:01:00Z,Chicago White Sox,Cleveland Guardians,TBD,Gavin Williams,Under,7.0,1.87,0.63172,0.13376,0.181316,0.052102,0.9996,1.0,3.259,2.759,100000,BUY
+total,5d13b613a334039f0694d8c95af28728,2026-10-03T17:01:00Z,Chicago White Sox,Cleveland Guardians,TBD,Gavin Williams,Over,7.0,2.01,0.23452,0.13376,-0.528615,0.0,0.9996,1.0,3.259,2.759,100000,PASS
+total,cb4d07dc15440acf3d9ebe1ad41756c1,2026-10-03T22:31:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,TBD,Over,7.0,1.93,0.17899,0.12148,-0.654549,0.0,1.0,0.98,3.276,2.284,100000,PASS
+total,347a2e725dd11a54a1d964eae3d04dd2,2026-10-04T00:30:00Z,San Diego Padres,Milwaukee Brewers,Michael King,Logan Henderson,Over,7.0,1.9,0.1446,0.10805,-0.72526,0.0,1.0,1.0,2.279,2.983,100000,PASS
 total,1632ced04d65127cf6172d3a2c2e2d16,2026-10-03T20:00:00Z,Atlanta Braves,Los Angeles Dodgers,TBD,TBD,Over,8.5,2.0,0.0672,0.0,-0.8656,0.0,1.0,1.01,2.441,2.735,100000,PASS

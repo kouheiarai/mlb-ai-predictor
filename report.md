@@ -1,33 +1,17 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-02T20:14:04.502370+00:00
-- API requests remaining: 482
+- Updated: 2026-10-03T00:48:33.597480+00:00
+- API requests remaining: 479
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-### 1. Chicago White Sox
-- Game: Chicago White Sox @ Cleveland Guardians
-- Odds: 2.31
-- AI probability: 57.9%
-- EV: 33.8%
-- 1/4 Kelly: 6.4%
-- Lineup: 未発表
-- Lineup quality: +0.28
-- Platoon proxy: +0.00
-- Weather run factor: 0.996
-- Temperature: 18.0 C
-- Rain probability: 0%
-- Wind: 11.8 km/h (67 deg)
-- Bullpen fatigue proxy: 0.00
-- Expected score: Chicago White Sox 3.13 - Cleveland Guardians 2.46
-
-### 2. New York Yankees
+### 1. New York Yankees
 - Game: New York Yankees @ Tampa Bay Rays
-- Odds: 2.13
-- AI probability: 57.9%
-- EV: 23.4%
-- 1/4 Kelly: 5.2%
+- Odds: 2.14
+- AI probability: 63.0%
+- EV: 34.8%
+- 1/4 Kelly: 7.6%
 - Lineup: 未発表
 - Lineup quality: +0.22
 - Platoon proxy: +0.00
@@ -36,14 +20,30 @@
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: New York Yankees 2.90 - Tampa Bay Rays 2.30
+- Expected score: New York Yankees 3.28 - Tampa Bay Rays 2.28
+
+### 2. Chicago White Sox
+- Game: Chicago White Sox @ Cleveland Guardians
+- Odds: 2.32
+- AI probability: 55.3%
+- EV: 28.3%
+- 1/4 Kelly: 5.4%
+- Lineup: 未発表
+- Lineup quality: +0.28
+- Platoon proxy: +0.04
+- Weather run factor: 1.000
+- Temperature: 16.0 C
+- Rain probability: 0%
+- Wind: 19.7 km/h (329 deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Chicago White Sox 3.26 - Cleveland Guardians 2.76
 
 ### 3. Atlanta Braves
 - Game: Atlanta Braves @ Los Angeles Dodgers
-- Odds: 2.87
-- AI probability: 43.0%
-- EV: 23.4%
-- 1/4 Kelly: 3.1%
+- Odds: 2.96
+- AI probability: 42.9%
+- EV: 26.8%
+- 1/4 Kelly: 3.4%
 - Lineup: 未発表
 - Lineup quality: +0.24
 - Platoon proxy: +0.00
@@ -58,10 +58,10 @@
 
 ### 1. Atlanta Braves +1.5
 - Game: Atlanta Braves @ Los Angeles Dodgers
-- Odds: 1.88
+- Odds: 1.93
 - Cover probability: 71.5%
-- EV: 34.4%
-- 1/4 Kelly: 9.8%
+- EV: 38.0%
+- 1/4 Kelly: 10.2%
 - Lineup: 未発表
 - Lineup quality: +0.24
 - Platoon proxy: +0.00
@@ -72,28 +72,12 @@
 - Bullpen fatigue proxy: 0.00
 - Expected score: Atlanta Braves 2.44 - Los Angeles Dodgers 2.73
 
-### 2. Chicago White Sox +1.5
-- Game: Chicago White Sox @ Cleveland Guardians
-- Odds: 1.59
-- Cover probability: 82.9%
-- EV: 31.8%
-- 1/4 Kelly: 13.5%
-- Lineup: 未発表
-- Lineup quality: +0.28
-- Platoon proxy: +0.00
-- Weather run factor: 0.996
-- Temperature: 18.0 C
-- Rain probability: 0%
-- Wind: 11.8 km/h (67 deg)
-- Bullpen fatigue proxy: 0.00
-- Expected score: Chicago White Sox 3.13 - Cleveland Guardians 2.46
-
-### 3. New York Yankees +1.5
+### 2. New York Yankees +1.5
 - Game: New York Yankees @ Tampa Bay Rays
 - Odds: 1.51
-- Cover probability: 83.4%
-- EV: 25.9%
-- 1/4 Kelly: 12.7%
+- Cover probability: 86.6%
+- EV: 30.7%
+- 1/4 Kelly: 15.1%
 - Lineup: 未発表
 - Lineup quality: +0.22
 - Platoon proxy: +0.00
@@ -102,14 +86,30 @@
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: New York Yankees 2.90 - Tampa Bay Rays 2.30
+- Expected score: New York Yankees 3.28 - Tampa Bay Rays 2.28
+
+### 3. Chicago White Sox +1.5
+- Game: Chicago White Sox @ Cleveland Guardians
+- Odds: 1.59
+- Cover probability: 80.0%
+- EV: 27.2%
+- 1/4 Kelly: 11.5%
+- Lineup: 未発表
+- Lineup quality: +0.28
+- Platoon proxy: +0.04
+- Weather run factor: 1.000
+- Temperature: 16.0 C
+- Rain probability: 0%
+- Wind: 19.7 km/h (329 deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Chicago White Sox 3.26 - Cleveland Guardians 2.76
 
 ### 4. San Diego Padres +1.5
 - Game: San Diego Padres @ Milwaukee Brewers
-- Odds: 1.83
-- Cover probability: 63.4%
-- EV: 16.0%
-- 1/4 Kelly: 4.8%
+- Odds: 1.81
+- Cover probability: 64.7%
+- EV: 17.1%
+- 1/4 Kelly: 5.3%
 - Lineup: 未発表
 - Lineup quality: +0.10
 - Platoon proxy: -0.04
@@ -118,7 +118,7 @@
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: San Diego Padres 2.28 - Milwaukee Brewers 3.06
+- Expected score: San Diego Padres 2.28 - Milwaukee Brewers 2.98
 
 ## Model Notes
 
