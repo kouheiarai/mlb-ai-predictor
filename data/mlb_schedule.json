@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-03T00:48:33.597480+00:00",
+  "fetched_at_utc": "2026-10-03T02:58:19.649202+00:00",
   "games": [
     {
       "game_pk": 849829,
@@ -334,11 +334,11 @@
       "away_probable_pitcher_hand": "L",
       "home_probable_pitcher_hand": "L",
       "weather": {
-        "weather_run_factor": 0.9964,
+        "weather_run_factor": 0.9954,
         "temperature_c": 18.2,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 12.0,
-        "wind_direction_deg": 67
+        "wind_speed_kmh": 11.0,
+        "wind_direction_deg": 59
       }
     },
     {

@@ -1,7 +1,7 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-03T00:48:33.597480+00:00
-- API requests remaining: 479
+- Updated: 2026-10-03T02:58:19.649202+00:00
+- API requests remaining: 476
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
@@ -40,10 +40,10 @@
 
 ### 3. Atlanta Braves
 - Game: Atlanta Braves @ Los Angeles Dodgers
-- Odds: 2.96
+- Odds: 2.91
 - AI probability: 42.9%
-- EV: 26.8%
-- 1/4 Kelly: 3.4%
+- EV: 24.9%
+- 1/4 Kelly: 3.3%
 - Lineup: 未発表
 - Lineup quality: +0.24
 - Platoon proxy: +0.00
@@ -58,10 +58,10 @@
 
 ### 1. Atlanta Braves +1.5
 - Game: Atlanta Braves @ Los Angeles Dodgers
-- Odds: 1.93
+- Odds: 1.92
 - Cover probability: 71.5%
-- EV: 38.0%
-- 1/4 Kelly: 10.2%
+- EV: 37.3%
+- 1/4 Kelly: 10.1%
 - Lineup: 未発表
 - Lineup quality: +0.24
 - Platoon proxy: +0.00
