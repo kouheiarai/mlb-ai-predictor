@@ -1,19 +1,18 @@
 {
   "model_version": "26.0",
-  "updated_at_utc": "2026-10-04T18:52:50.974908+00:00",
+  "updated_at_utc": "2026-10-04T22:36:06.726922+00:00",
   "data_age_hours": 0.0,
   "is_stale": false,
   "stale_warning": null,
   "target_dates_utc": [
-    "2026-10-04",
     "2026-10-05",
     "2026-10-06"
   ],
-  "game_count": 4,
+  "game_count": 3,
   "summary": {
-    "moneyline_buy_count": 4,
+    "moneyline_buy_count": 3,
     "runline_buy_count": 2,
-    "total_buy_count": 4,
+    "total_buy_count": 3,
     "best_moneyline": {
       "market": "moneyline",
       "event_id": "583202487b52f61769b2404a64e01c77",
@@ -30,16 +29,16 @@
       "weather_run_factor": 1.0,
       "selection": "Atlanta Braves",
       "point": "",
-      "decimal_odds": 3.03,
-      "market_no_vig_probability": 0.322148,
-      "model_probability": 0.453322,
-      "ev": 0.373565,
-      "quarter_kelly": 0.046005,
+      "decimal_odds": 3.04,
+      "market_no_vig_probability": 0.321429,
+      "model_probability": 0.449185,
+      "ev": 0.365522,
+      "quarter_kelly": 0.044794,
       "recommendation": "BUY",
-      "confidence": "B",
-      "lineup_announced": false,
-      "away_expected_runs": 2.294,
-      "home_expected_runs": 2.408,
+      "confidence": "A",
+      "lineup_announced": true,
+      "away_expected_runs": 2.295,
+      "home_expected_runs": 2.437,
       "simulations": 100000
     },
     "best_runline": {
@@ -60,14 +59,14 @@
       "point": 1.5,
       "decimal_odds": 1.88,
       "market_no_vig_probability": null,
-      "model_probability": 0.75193,
-      "ev": 0.413628,
-      "quarter_kelly": 0.117508,
+      "model_probability": 0.74887,
+      "ev": 0.407876,
+      "quarter_kelly": 0.115874,
       "recommendation": "BUY",
-      "confidence": "A",
-      "lineup_announced": false,
-      "away_expected_runs": 2.294,
-      "home_expected_runs": 2.408,
+      "confidence": "S",
+      "lineup_announced": true,
+      "away_expected_runs": 2.295,
+      "home_expected_runs": 2.437,
       "simulations": 100000
     },
     "best_total": {
@@ -86,16 +85,16 @@
       "weather_run_factor": 1.0,
       "selection": "Under",
       "point": 8.0,
-      "decimal_odds": 1.94,
+      "decimal_odds": 1.96,
       "market_no_vig_probability": null,
-      "model_probability": 0.91218,
-      "ev": 0.769629,
-      "quarter_kelly": 0.204689,
+      "model_probability": 0.90939,
+      "ev": 0.782404,
+      "quarter_kelly": 0.203751,
       "recommendation": "BUY",
       "confidence": "A",
       "lineup_announced": null,
-      "away_expected_runs": 2.294,
-      "home_expected_runs": 2.408,
+      "away_expected_runs": 2.295,
+      "home_expected_runs": 2.437,
       "simulations": 100000
     }
   },
@@ -109,11 +108,11 @@
         "commence_time_utc": "2026-10-05T00:00:00Z",
         "selection": "Atlanta Braves",
         "point": "",
-        "decimal_odds": 3.03,
-        "model_probability": 0.453322,
-        "ev": 0.373565,
-        "quarter_kelly": 0.046005,
-        "confidence": "B"
+        "decimal_odds": 3.04,
+        "model_probability": 0.449185,
+        "ev": 0.365522,
+        "quarter_kelly": 0.044794,
+        "confidence": "A"
       },
       {
         "market": "moneyline",
@@ -122,10 +121,10 @@
         "commence_time_utc": "2026-10-05T21:10:00Z",
         "selection": "Chicago White Sox",
         "point": "",
-        "decimal_odds": 2.36,
-        "model_probability": 0.543397,
-        "ev": 0.282418,
-        "quarter_kelly": 0.051915,
+        "decimal_odds": 2.35,
+        "model_probability": 0.543048,
+        "ev": 0.276163,
+        "quarter_kelly": 0.051141,
         "confidence": "B"
       },
       {
@@ -140,19 +139,6 @@
         "ev": 0.183311,
         "quarter_kelly": 0.055214,
         "confidence": "A"
-      },
-      {
-        "market": "moneyline",
-        "away_team": "San Diego Padres",
-        "home_team": "Milwaukee Brewers",
-        "commence_time_utc": "2026-10-04T20:00:00Z",
-        "selection": "Milwaukee Brewers",
-        "point": "",
-        "decimal_odds": 1.78,
-        "model_probability": 0.60819,
-        "ev": 0.082578,
-        "quarter_kelly": 0.026467,
-        "confidence": "A"
       }
     ],
     "runline": [
@@ -164,10 +150,10 @@
         "selection": "Atlanta Braves",
         "point": 1.5,
         "decimal_odds": 1.88,
-        "model_probability": 0.75193,
-        "ev": 0.413628,
-        "quarter_kelly": 0.117508,
-        "confidence": "A"
+        "model_probability": 0.74887,
+        "ev": 0.407876,
+        "quarter_kelly": 0.115874,
+        "confidence": "S"
       },
       {
         "market": "runline",
@@ -177,9 +163,9 @@
         "selection": "Chicago White Sox",
         "point": 1.5,
         "decimal_odds": 1.58,
-        "model_probability": 0.79201,
-        "ev": 0.251376,
-        "quarter_kelly": 0.108352,
+        "model_probability": 0.79145,
+        "ev": 0.250491,
+        "quarter_kelly": 0.10797,
         "confidence": "A"
       }
     ],
@@ -191,23 +177,10 @@
         "commence_time_utc": "2026-10-05T00:00:00Z",
         "selection": "Under",
         "point": 8.0,
-        "decimal_odds": 1.94,
-        "model_probability": 0.91218,
-        "ev": 0.769629,
-        "quarter_kelly": 0.204689,
-        "confidence": "A"
-      },
-      {
-        "market": "total",
-        "away_team": "San Diego Padres",
-        "home_team": "Milwaukee Brewers",
-        "commence_time_utc": "2026-10-04T20:00:00Z",
-        "selection": "Under",
-        "point": 7.0,
-        "decimal_odds": 2.04,
-        "model_probability": 0.75128,
-        "ev": 0.532611,
-        "quarter_kelly": 0.128032,
+        "decimal_odds": 1.96,
+        "model_probability": 0.90939,
+        "ev": 0.782404,
+        "quarter_kelly": 0.203751,
         "confidence": "A"
       },
       {
@@ -231,9 +204,9 @@
         "selection": "Under",
         "point": 6.5,
         "decimal_odds": 2.06,
-        "model_probability": 0.62328,
-        "ev": 0.283957,
-        "quarter_kelly": 0.066971,
+        "model_probability": 0.62442,
+        "ev": 0.286305,
+        "quarter_kelly": 0.067525,
         "confidence": "A"
       }
     ]

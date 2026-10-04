@@ -1,25 +1,19 @@
 ﻿event_id,commence_time_utc,away_team,home_team,bookmaker,bookmaker_last_update,market,selection,point,decimal_odds,american_odds,implied_probability
-6da40e91a31110e51e84ba5671996deb,2026-10-04T20:00:00Z,San Diego Padres,Milwaukee Brewers,pinnacle,2026-10-04T18:52:33Z,h2h,Milwaukee Brewers,,1.78,-128,0.561798
-6da40e91a31110e51e84ba5671996deb,2026-10-04T20:00:00Z,San Diego Padres,Milwaukee Brewers,pinnacle,2026-10-04T18:52:33Z,h2h,San Diego Padres,,2.19,+119,0.456621
-6da40e91a31110e51e84ba5671996deb,2026-10-04T20:00:00Z,San Diego Padres,Milwaukee Brewers,pinnacle,2026-10-04T18:52:33Z,spreads,Milwaukee Brewers,-1.5,2.66,+166,0.37594
-6da40e91a31110e51e84ba5671996deb,2026-10-04T20:00:00Z,San Diego Padres,Milwaukee Brewers,pinnacle,2026-10-04T18:52:33Z,spreads,San Diego Padres,1.5,1.53,-189,0.653595
-6da40e91a31110e51e84ba5671996deb,2026-10-04T20:00:00Z,San Diego Padres,Milwaukee Brewers,pinnacle,2026-10-04T18:52:33Z,totals,Over,7.0,1.85,-118,0.540541
-6da40e91a31110e51e84ba5671996deb,2026-10-04T20:00:00Z,San Diego Padres,Milwaukee Brewers,pinnacle,2026-10-04T18:52:33Z,totals,Under,7.0,2.04,+104,0.490196
-583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T18:52:33Z,h2h,Atlanta Braves,,3.03,+203,0.330033
-583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T18:52:33Z,h2h,Los Angeles Dodgers,,1.44,-227,0.694444
-583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T18:52:33Z,spreads,Atlanta Braves,1.5,1.88,-114,0.531915
-583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T18:52:33Z,spreads,Los Angeles Dodgers,-1.5,2.03,+103,0.492611
-583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T18:52:33Z,totals,Over,8.0,1.94,-106,0.515464
-583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T18:52:33Z,totals,Under,8.0,1.94,-106,0.515464
-ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T18:52:33Z,h2h,Chicago White Sox,,2.36,+136,0.423729
-ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T18:52:33Z,h2h,Cleveland Guardians,,1.66,-152,0.60241
-ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T18:52:33Z,spreads,Chicago White Sox,1.5,1.58,-172,0.632911
-ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T18:52:33Z,spreads,Cleveland Guardians,-1.5,2.52,+152,0.396825
-ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T18:52:33Z,totals,Over,6.5,1.82,-122,0.549451
-ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T18:52:33Z,totals,Under,6.5,2.06,+106,0.485437
-4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T18:52:33Z,h2h,New York Yankees,,1.83,-120,0.546448
-4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T18:52:33Z,h2h,Tampa Bay Rays,,2.1,+110,0.47619
-4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T18:52:33Z,spreads,New York Yankees,-1.5,2.5,+150,0.4
-4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T18:52:33Z,spreads,Tampa Bay Rays,1.5,1.58,-172,0.632911
-4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T18:52:33Z,totals,Over,6.5,1.92,-109,0.520833
-4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T18:52:33Z,totals,Under,6.5,1.95,-105,0.512821
+583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T22:35:45Z,h2h,Atlanta Braves,,3.04,+204,0.328947
+583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T22:35:45Z,h2h,Los Angeles Dodgers,,1.44,-227,0.694444
+583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T22:35:45Z,spreads,Atlanta Braves,1.5,1.88,-114,0.531915
+583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T22:35:45Z,spreads,Los Angeles Dodgers,-1.5,2.03,+103,0.492611
+583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T22:35:45Z,totals,Over,8.0,1.93,-108,0.518135
+583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,pinnacle,2026-10-04T22:35:45Z,totals,Under,8.0,1.96,-104,0.510204
+ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T22:35:45Z,h2h,Chicago White Sox,,2.35,+135,0.425532
+ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T22:35:45Z,h2h,Cleveland Guardians,,1.67,-149,0.598802
+ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T22:35:45Z,spreads,Chicago White Sox,1.5,1.58,-172,0.632911
+ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T22:35:45Z,spreads,Cleveland Guardians,-1.5,2.52,+152,0.396825
+ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T22:35:45Z,totals,Over,6.5,1.82,-122,0.549451
+ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,pinnacle,2026-10-04T22:35:45Z,totals,Under,6.5,2.06,+106,0.485437
+4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T22:35:45Z,h2h,New York Yankees,,1.83,-120,0.546448
+4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T22:35:45Z,h2h,Tampa Bay Rays,,2.1,+110,0.47619
+4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T22:35:45Z,spreads,New York Yankees,-1.5,2.5,+150,0.4
+4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T22:35:45Z,spreads,Tampa Bay Rays,1.5,1.58,-172,0.632911
+4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T22:35:45Z,totals,Over,6.5,1.92,-109,0.520833
+4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,pinnacle,2026-10-04T22:35:45Z,totals,Under,6.5,1.95,-105,0.512821
