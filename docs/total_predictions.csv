@@ -1,5 +1,7 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,347a2e725dd11a54a1d964eae3d04dd2,2026-10-04T00:30:00Z,San Diego Padres,Milwaukee Brewers,Michael King,Logan Henderson,Under,7.0,1.88,0.74735,0.10805,0.405018,0.115062,1.0,1.0,2.279,2.983,100000,BUY
-total,cb4d07dc15440acf3d9ebe1ad41756c1,2026-10-03T22:31:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,TBD,Under,7.0,1.89,0.69953,0.12148,0.322112,0.090481,1.0,0.98,3.276,2.284,100000,BUY
-total,cb4d07dc15440acf3d9ebe1ad41756c1,2026-10-03T22:31:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,TBD,Over,7.0,2.0,0.17899,0.12148,-0.64202,0.0,1.0,0.98,3.276,2.284,100000,PASS
-total,347a2e725dd11a54a1d964eae3d04dd2,2026-10-04T00:30:00Z,San Diego Padres,Milwaukee Brewers,Michael King,Logan Henderson,Over,7.0,2.01,0.1446,0.10805,-0.709354,0.0,1.0,1.0,2.279,2.983,100000,PASS
+total,583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,TBD,Blake Snell,Under,7.0,1.93,0.78515,0.09758,0.51534,0.138532,1.0,1.01,2.291,2.717,100000,BUY
+total,4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,Freddy Peralta,Under,6.5,1.95,0.69511,0.0,0.355465,0.093543,1.0,0.98,3.325,2.282,100000,BUY
+total,ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,TBD,Gavin Williams,Under,6.5,2.06,0.63481,0.0,0.307709,0.072573,0.9978,1.0,3.251,2.751,100000,BUY
+total,ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,TBD,Gavin Williams,Over,6.5,1.83,0.36519,0.0,-0.331702,0.0,0.9978,1.0,3.251,2.751,100000,PASS
+total,4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,Freddy Peralta,Over,6.5,1.92,0.30489,0.0,-0.414611,0.0,1.0,0.98,3.325,2.282,100000,PASS
+total,583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,TBD,Blake Snell,Over,7.0,1.93,0.11727,0.09758,-0.773669,0.0,1.0,1.01,2.291,2.717,100000,PASS

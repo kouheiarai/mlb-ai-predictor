@@ -1,17 +1,33 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-03T22:31:08.591521+00:00
-- API requests remaining: 470
+- Updated: 2026-10-04T03:27:46.442575+00:00
+- API requests remaining: 467
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-### 1. New York Yankees
+### 1. Chicago White Sox
+- Game: Chicago White Sox @ Cleveland Guardians
+- Odds: 2.36
+- AI probability: 55.4%
+- EV: 30.7%
+- 1/4 Kelly: 5.6%
+- Lineup: 未発表
+- Lineup quality: +0.28
+- Platoon proxy: +0.04
+- Weather run factor: 0.998
+- Temperature: 14.9 C
+- Rain probability: 0%
+- Wind: 20.1 km/h (327 deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Chicago White Sox 3.25 - Cleveland Guardians 2.75
+
+### 2. New York Yankees
 - Game: New York Yankees @ Tampa Bay Rays
-- Odds: 2.23
-- AI probability: 62.8%
-- EV: 40.0%
-- 1/4 Kelly: 8.1%
+- Odds: 1.83
+- AI probability: 64.7%
+- EV: 18.3%
+- 1/4 Kelly: 5.5%
 - Lineup: 未発表
 - Lineup quality: +0.22
 - Platoon proxy: +0.00
@@ -20,41 +36,41 @@
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: New York Yankees 3.28 - Tampa Bay Rays 2.28
+- Expected score: New York Yankees 3.33 - Tampa Bay Rays 2.28
 
 ## Run Line Buy Ranking
 
-### 1. New York Yankees +1.5
-- Game: New York Yankees @ Tampa Bay Rays
-- Odds: 1.53
-- Cover probability: 86.6%
-- EV: 32.5%
-- 1/4 Kelly: 15.3%
+### 1. Chicago White Sox +1.5
+- Game: Chicago White Sox @ Cleveland Guardians
+- Odds: 1.58
+- Cover probability: 80.2%
+- EV: 26.7%
+- 1/4 Kelly: 11.5%
 - Lineup: 未発表
-- Lineup quality: +0.22
+- Lineup quality: +0.28
+- Platoon proxy: +0.04
+- Weather run factor: 0.998
+- Temperature: 14.9 C
+- Rain probability: 0%
+- Wind: 20.1 km/h (327 deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Chicago White Sox 3.25 - Cleveland Guardians 2.75
+
+### 2. Atlanta Braves +1.5
+- Game: Atlanta Braves @ Los Angeles Dodgers
+- Odds: 1.59
+- Cover probability: 69.7%
+- EV: 10.8%
+- 1/4 Kelly: 4.6%
+- Lineup: 未発表
+- Lineup quality: +0.23
 - Platoon proxy: +0.00
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: New York Yankees 3.28 - Tampa Bay Rays 2.28
-
-### 2. San Diego Padres +1.5
-- Game: San Diego Padres @ Milwaukee Brewers
-- Odds: 1.83
-- Cover probability: 64.7%
-- EV: 18.4%
-- 1/4 Kelly: 5.6%
-- Lineup: 未発表
-- Lineup quality: +0.10
-- Platoon proxy: -0.04
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.00
-- Expected score: San Diego Padres 2.28 - Milwaukee Brewers 2.98
+- Expected score: Atlanta Braves 2.29 - Los Angeles Dodgers 2.72
 
 ## Model Notes
 

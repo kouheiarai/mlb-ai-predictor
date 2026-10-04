@@ -1,58 +1,6 @@
 {
-  "fetched_at_utc": "2026-10-03T22:31:08.591521+00:00",
+  "fetched_at_utc": "2026-10-04T03:27:46.442575+00:00",
   "games": [
-    {
-      "game_pk": 849829,
-      "away_team": "Chicago White Sox",
-      "home_team": "Cleveland Guardians",
-      "game_date_utc": "2026-10-03T17:00:00Z",
-      "weather": {
-        "weather_run_factor": 0.9952,
-        "temperature_c": 17.7,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 11.8,
-        "wind_direction_deg": 62
-      }
-    },
-    {
-      "game_pk": 849828,
-      "away_team": "Atlanta Braves",
-      "home_team": "Los Angeles Dodgers",
-      "game_date_utc": "2026-10-03T20:00:00Z",
-      "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
-      }
-    },
-    {
-      "game_pk": 849835,
-      "away_team": "New York Yankees",
-      "home_team": "Tampa Bay Rays",
-      "game_date_utc": "2026-10-03T22:30:00Z",
-      "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
-      }
-    },
-    {
-      "game_pk": 849830,
-      "away_team": "San Diego Padres",
-      "home_team": "Milwaukee Brewers",
-      "game_date_utc": "2026-10-04T00:30:00Z",
-      "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
-      }
-    },
     {
       "game_pk": 849825,
       "away_team": "San Diego Padres",
@@ -85,11 +33,11 @@
       "home_team": "Cleveland Guardians",
       "game_date_utc": "2026-10-05T21:00:00Z",
       "weather": {
-        "weather_run_factor": 0.9945,
-        "temperature_c": 15.2,
+        "weather_run_factor": 0.9978,
+        "temperature_c": 14.9,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 16.1,
-        "wind_direction_deg": 321
+        "wind_speed_kmh": 20.1,
+        "wind_direction_deg": 327
       }
     },
     {
@@ -103,6 +51,32 @@
         "precipitation_probability": null,
         "wind_speed_kmh": null,
         "wind_direction_deg": null
+      }
+    },
+    {
+      "game_pk": 849819,
+      "away_team": "Los Angeles Dodgers",
+      "home_team": "Atlanta Braves",
+      "game_date_utc": "2026-10-06T22:00:00Z",
+      "weather": {
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
+      }
+    },
+    {
+      "game_pk": 849826,
+      "away_team": "Milwaukee Brewers",
+      "home_team": "San Diego Padres",
+      "game_date_utc": "2026-10-07T01:30:00Z",
+      "weather": {
+        "weather_run_factor": 1.019,
+        "temperature_c": 29.5,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 12.0,
+        "wind_direction_deg": 321
       }
     }
   ]
