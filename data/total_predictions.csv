@@ -1,7 +1,7 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,62d8e1c18355ab6b3913d7a28fa677c2,2026-10-07T01:30:00Z,Milwaukee Brewers,San Diego Padres,TBD,TBD,Under,7.5,1.83,0.83595,0.0,0.529788,0.159575,1.0112,0.97,2.882,2.569,100000,BUY
-total,4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,Freddy Peralta,Under,6.5,1.95,0.69511,0.0,0.355465,0.093543,1.0,0.98,3.325,2.282,100000,BUY
-total,ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,Anthony Kay,Gavin Williams,Under,6.5,2.06,0.62442,0.0,0.286305,0.067525,0.997,1.0,3.247,2.822,100000,BUY
-total,ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,Anthony Kay,Gavin Williams,Over,6.5,1.82,0.37558,0.0,-0.316444,0.0,0.997,1.0,3.247,2.822,100000,PASS
-total,4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,Freddy Peralta,Over,6.5,1.92,0.30489,0.0,-0.414611,0.0,1.0,0.98,3.325,2.282,100000,PASS
-total,62d8e1c18355ab6b3913d7a28fa677c2,2026-10-07T01:30:00Z,Milwaukee Brewers,San Diego Padres,TBD,TBD,Over,7.5,2.06,0.16405,0.0,-0.662057,0.0,1.0112,0.97,2.882,2.569,100000,PASS
+total,62d8e1c18355ab6b3913d7a28fa677c2,2026-10-07T01:30:00Z,Milwaukee Brewers,San Diego Padres,TBD,TBD,Under,7.0,2.02,0.7213,0.11466,0.457026,0.112016,1.0095,0.97,2.878,2.566,100000,BUY
+total,4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,Freddy Peralta,Under,6.5,2.02,0.69301,0.0,0.39988,0.09801,1.0,0.98,3.342,2.281,100000,BUY
+total,1bc3bf1d3034010bdfb31d928a71177a,2026-10-06T22:00:00Z,Los Angeles Dodgers,Atlanta Braves,TBD,TBD,Under,6.0,2.01,0.62709,0.14434,0.260451,0.064468,1.0,1.0,2.6,2.522,100000,BUY
+total,4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,Freddy Peralta,Over,6.5,1.88,0.30699,0.0,-0.422859,0.0,1.0,0.98,3.342,2.281,100000,PASS
+total,1bc3bf1d3034010bdfb31d928a71177a,2026-10-06T22:00:00Z,Los Angeles Dodgers,Atlanta Braves,TBD,TBD,Over,6.0,1.86,0.22857,0.14434,-0.57486,0.0,1.0,1.0,2.6,2.522,100000,PASS
+total,62d8e1c18355ab6b3913d7a28fa677c2,2026-10-07T01:30:00Z,Milwaukee Brewers,San Diego Padres,TBD,TBD,Over,7.0,1.85,0.16404,0.11466,-0.696526,0.0,1.0095,0.97,2.878,2.566,100000,PASS
