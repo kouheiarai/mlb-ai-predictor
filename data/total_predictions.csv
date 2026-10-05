@@ -1,7 +1,7 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,Ray Kerr,Blake Snell,Under,8.0,1.96,0.90939,0.04812,0.782404,0.203751,1.0,1.01,2.295,2.437,100000,BUY
+total,62d8e1c18355ab6b3913d7a28fa677c2,2026-10-07T01:30:00Z,Milwaukee Brewers,San Diego Padres,TBD,TBD,Under,7.5,1.83,0.83595,0.0,0.529788,0.159575,1.0112,0.97,2.882,2.569,100000,BUY
 total,4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,Freddy Peralta,Under,6.5,1.95,0.69511,0.0,0.355465,0.093543,1.0,0.98,3.325,2.282,100000,BUY
 total,ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,Anthony Kay,Gavin Williams,Under,6.5,2.06,0.62442,0.0,0.286305,0.067525,0.997,1.0,3.247,2.822,100000,BUY
 total,ccd487a87bb73145e3f12dd3a765ad47,2026-10-05T21:10:00Z,Chicago White Sox,Cleveland Guardians,Anthony Kay,Gavin Williams,Over,6.5,1.82,0.37558,0.0,-0.316444,0.0,0.997,1.0,3.247,2.822,100000,PASS
 total,4be245ad03895bcafcdc42d7d926b675,2026-10-06T00:00:00Z,New York Yankees,Tampa Bay Rays,Cam Schlittler,Freddy Peralta,Over,6.5,1.92,0.30489,0.0,-0.414611,0.0,1.0,0.98,3.325,2.282,100000,PASS
-total,583202487b52f61769b2404a64e01c77,2026-10-05T00:00:00Z,Atlanta Braves,Los Angeles Dodgers,Ray Kerr,Blake Snell,Over,8.0,1.93,0.04249,0.04812,-0.917994,0.0,1.0,1.01,2.295,2.437,100000,PASS
+total,62d8e1c18355ab6b3913d7a28fa677c2,2026-10-07T01:30:00Z,Milwaukee Brewers,San Diego Padres,TBD,TBD,Over,7.5,2.06,0.16405,0.0,-0.662057,0.0,1.0112,0.97,2.882,2.569,100000,PASS
