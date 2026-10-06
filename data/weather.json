@@ -1,32 +1,6 @@
 {
-  "fetched_at_utc": "2026-10-05T22:14:38.284425+00:00",
+  "fetched_at_utc": "2026-10-06T03:55:21.655517+00:00",
   "games": [
-    {
-      "game_pk": 849834,
-      "away_team": "Chicago White Sox",
-      "home_team": "Cleveland Guardians",
-      "game_date_utc": "2026-10-05T21:00:00Z",
-      "weather": {
-        "weather_run_factor": 0.9973,
-        "temperature_c": 16.5,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 16.3,
-        "wind_direction_deg": 317
-      }
-    },
-    {
-      "game_pk": 849839,
-      "away_team": "New York Yankees",
-      "home_team": "Tampa Bay Rays",
-      "game_date_utc": "2026-10-06T00:00:00Z",
-      "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
-      }
-    },
     {
       "game_pk": 849819,
       "away_team": "Los Angeles Dodgers",
@@ -46,11 +20,11 @@
       "home_team": "San Diego Padres",
       "game_date_utc": "2026-10-07T01:30:00Z",
       "weather": {
-        "weather_run_factor": 1.0146,
+        "weather_run_factor": 1.018,
         "temperature_c": 29.2,
         "precipitation_probability": 1,
-        "wind_speed_kmh": 8.3,
-        "wind_direction_deg": 326
+        "wind_speed_kmh": 11.6,
+        "wind_direction_deg": 322
       }
     },
     {
@@ -85,11 +59,11 @@
       "home_team": "New York Yankees",
       "game_date_utc": "2026-10-08T00:00:00Z",
       "weather": {
-        "weather_run_factor": 1.0035,
-        "temperature_c": 18.8,
+        "weather_run_factor": 0.9978,
+        "temperature_c": 17.6,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 17.9,
-        "wind_direction_deg": 205
+        "wind_speed_kmh": 14.6,
+        "wind_direction_deg": 200
       }
     },
     {
@@ -98,11 +72,37 @@
       "home_team": "San Diego Padres",
       "game_date_utc": "2026-10-08T02:00:00Z",
       "weather": {
-        "weather_run_factor": 1.0095,
-        "temperature_c": 26.6,
+        "weather_run_factor": 1.0116,
+        "temperature_c": 27.8,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 8.3,
-        "wind_direction_deg": 288
+        "wind_speed_kmh": 8.1,
+        "wind_direction_deg": 291
+      }
+    },
+    {
+      "game_pk": 849832,
+      "away_team": "Cleveland Guardians",
+      "home_team": "Chicago White Sox",
+      "game_date_utc": "2026-10-08T21:00:00Z",
+      "weather": {
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
+      }
+    },
+    {
+      "game_pk": 849837,
+      "away_team": "Tampa Bay Rays",
+      "home_team": "New York Yankees",
+      "game_date_utc": "2026-10-09T00:00:00Z",
+      "weather": {
+        "weather_run_factor": 1.0042,
+        "temperature_c": 20.8,
+        "precipitation_probability": 0,
+        "wind_speed_kmh": 14.6,
+        "wind_direction_deg": 303
       }
     }
   ]
