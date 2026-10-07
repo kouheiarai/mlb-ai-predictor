@@ -1,7 +1,7 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,62d8e1c18355ab6b3913d7a28fa677c2,2026-10-07T01:30:00Z,Milwaukee Brewers,San Diego Padres,TBD,TBD,Under,7.5,1.93,0.83883,0.0,0.618942,0.166382,1.004,0.97,2.86,2.554,100000,BUY
-total,cd974d85e2a617152370056d22cd8deb,2026-10-07T20:00:00Z,Cleveland Guardians,Chicago White Sox,TBD,TBD,Under,8.0,1.91,0.73434,0.10647,0.402589,0.110601,1.0,1.0,2.637,3.584,100000,BUY
-total,aa266da6f8d98646bc59d18ddbc5b2de,2026-10-08T00:00:00Z,Tampa Bay Rays,New York Yankees,TBD,Carlos Rodón,Under,7.0,2.05,0.63882,0.1326,0.309581,0.07371,1.003,1.03,2.374,3.582,100000,BUY
-total,aa266da6f8d98646bc59d18ddbc5b2de,2026-10-08T00:00:00Z,Tampa Bay Rays,New York Yankees,TBD,Carlos Rodón,Over,7.0,1.83,0.22858,0.1326,-0.581699,0.0,1.003,1.03,2.374,3.582,100000,PASS
-total,62d8e1c18355ab6b3913d7a28fa677c2,2026-10-07T01:30:00Z,Milwaukee Brewers,San Diego Padres,TBD,TBD,Over,7.5,1.96,0.16117,0.0,-0.684107,0.0,1.004,0.97,2.86,2.554,100000,PASS
-total,cd974d85e2a617152370056d22cd8deb,2026-10-07T20:00:00Z,Cleveland Guardians,Chicago White Sox,TBD,TBD,Over,8.0,1.96,0.15919,0.10647,-0.687988,0.0,1.0,1.0,2.637,3.584,100000,PASS
+total,2f041c00e4bddc69bd1bbfbd40cc3c09,2026-10-07T22:10:00Z,Los Angeles Dodgers,Atlanta Braves,Tyler Glasnow,Tyler Mahle,Under,7.5,1.88,0.89695,0.0,0.686266,0.194962,1.0,1.0,2.543,2.333,100000,BUY
+total,cd974d85e2a617152370056d22cd8deb,2026-10-07T20:00:00Z,Cleveland Guardians,Chicago White Sox,TBD,TBD,Under,8.0,1.93,0.73434,0.10647,0.417276,0.112171,1.0,1.0,2.637,3.584,100000,BUY
+total,aa266da6f8d98646bc59d18ddbc5b2de,2026-10-08T00:00:00Z,Tampa Bay Rays,New York Yankees,TBD,Carlos Rodón,Under,7.0,2.05,0.64228,0.13164,0.316674,0.075399,0.9992,1.03,2.366,3.57,100000,BUY
+total,aa266da6f8d98646bc59d18ddbc5b2de,2026-10-08T00:00:00Z,Tampa Bay Rays,New York Yankees,TBD,Carlos Rodón,Over,7.0,1.83,0.22608,0.13164,-0.586274,0.0,0.9992,1.03,2.366,3.57,100000,PASS
+total,cd974d85e2a617152370056d22cd8deb,2026-10-07T20:00:00Z,Cleveland Guardians,Chicago White Sox,TBD,TBD,Over,8.0,1.93,0.15919,0.10647,-0.692763,0.0,1.0,1.0,2.637,3.584,100000,PASS
+total,2f041c00e4bddc69bd1bbfbd40cc3c09,2026-10-07T22:10:00Z,Los Angeles Dodgers,Atlanta Braves,Tyler Glasnow,Tyler Mahle,Over,7.5,2.0,0.10305,0.0,-0.7939,0.0,1.0,1.0,2.543,2.333,100000,PASS

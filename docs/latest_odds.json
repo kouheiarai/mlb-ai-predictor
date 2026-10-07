@@ -1,69 +1,6 @@
 {
-  "fetched_at_utc": "2026-10-07T01:06:17.140389+00:00",
+  "fetched_at_utc": "2026-10-07T03:23:10.253724+00:00",
   "events": [
-    {
-      "id": "62d8e1c18355ab6b3913d7a28fa677c2",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-10-07T01:30:00Z",
-      "home_team": "San Diego Padres",
-      "away_team": "Milwaukee Brewers",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-10-07T01:05:47Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-10-07T01:05:47Z",
-              "outcomes": [
-                {
-                  "name": "Milwaukee Brewers",
-                  "price": 2.25
-                },
-                {
-                  "name": "San Diego Padres",
-                  "price": 1.74
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-10-07T01:05:47Z",
-              "outcomes": [
-                {
-                  "name": "Milwaukee Brewers",
-                  "price": 1.56,
-                  "point": 1.5
-                },
-                {
-                  "name": "San Diego Padres",
-                  "price": 2.59,
-                  "point": -1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-10-07T01:05:47Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.96,
-                  "point": 7.5
-                },
-                {
-                  "name": "Under",
-                  "price": 1.93,
-                  "point": 7.5
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "id": "cd974d85e2a617152370056d22cd8deb",
       "sport_key": "baseball_mlb",
@@ -75,51 +12,114 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-07T01:05:47Z",
+          "last_update": "2026-10-07T03:22:50Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-07T01:05:47Z",
+              "last_update": "2026-10-07T03:22:50Z",
               "outcomes": [
                 {
                   "name": "Chicago White Sox",
-                  "price": 1.88
+                  "price": 1.9
                 },
                 {
                   "name": "Cleveland Guardians",
-                  "price": 2.03
+                  "price": 2.01
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-07T01:05:47Z",
+              "last_update": "2026-10-07T03:22:50Z",
               "outcomes": [
                 {
                   "name": "Chicago White Sox",
-                  "price": 2.84,
+                  "price": 2.91,
                   "point": -1.5
                 },
                 {
                   "name": "Cleveland Guardians",
-                  "price": 1.47,
+                  "price": 1.45,
                   "point": 1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-07T01:05:47Z",
+              "last_update": "2026-10-07T03:22:50Z",
               "outcomes": [
                 {
                   "name": "Over",
-                  "price": 1.96,
+                  "price": 1.93,
                   "point": 8.0
                 },
                 {
                   "name": "Under",
-                  "price": 1.91,
+                  "price": 1.93,
                   "point": 8.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2f041c00e4bddc69bd1bbfbd40cc3c09",
+      "sport_key": "baseball_mlb",
+      "sport_title": "MLB",
+      "commence_time": "2026-10-07T22:10:00Z",
+      "home_team": "Atlanta Braves",
+      "away_team": "Los Angeles Dodgers",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-10-07T03:22:50Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-10-07T03:22:50Z",
+              "outcomes": [
+                {
+                  "name": "Atlanta Braves",
+                  "price": 2.24
+                },
+                {
+                  "name": "Los Angeles Dodgers",
+                  "price": 1.73
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-10-07T03:22:50Z",
+              "outcomes": [
+                {
+                  "name": "Atlanta Braves",
+                  "price": 1.7,
+                  "point": 1.5
+                },
+                {
+                  "name": "Los Angeles Dodgers",
+                  "price": 2.27,
+                  "point": -1.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2026-10-07T03:22:50Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": 2.0,
+                  "point": 7.5
+                },
+                {
+                  "name": "Under",
+                  "price": 1.88,
+                  "point": 7.5
                 }
               ]
             }
@@ -138,41 +138,41 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-07T01:05:47Z",
+          "last_update": "2026-10-07T03:22:50Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-07T01:05:47Z",
+              "last_update": "2026-10-07T03:22:50Z",
               "outcomes": [
                 {
                   "name": "New York Yankees",
-                  "price": 1.65
+                  "price": 1.63
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 2.4
+                  "price": 2.42
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-07T01:05:47Z",
+              "last_update": "2026-10-07T03:22:50Z",
               "outcomes": [
                 {
                   "name": "New York Yankees",
-                  "price": 2.44,
+                  "price": 2.42,
                   "point": -1.5
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 1.61,
+                  "price": 1.62,
                   "point": 1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-07T01:05:47Z",
+              "last_update": "2026-10-07T03:22:50Z",
               "outcomes": [
                 {
                   "name": "Over",
