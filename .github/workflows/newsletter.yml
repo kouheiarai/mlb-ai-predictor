@@ -141,7 +141,7 @@ jobs:
           1. 上のリンクを開いて、中身を全部コピー（`Ctrl`+`A` → `Ctrl`+`C`）
           2. [claude.ai](https://claude.ai) に貼る — **リサーチ機能を必ずオンに**
           3. 返ってきた記事をコピー
-          4. [beehiiv](https://app.beehiiv.com) で新規 Post → 本文で `/` → **HTML snippet** → 貼る
+          4. [beehiiv](https://app.beehiiv.com) で新規 Post → 本文にそのまま貼る（**HTML snippet は使わない**＝有料機能になりました）
           5. 件名は候補が10個出るので、40文字以内で切れないものを選ぶ
           EOF
             else
