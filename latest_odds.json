@@ -1,40 +1,40 @@
 {
-  "fetched_at_utc": "2026-10-08T03:37:57.699577+00:00",
+  "fetched_at_utc": "2026-10-08T20:54:28.701968+00:00",
   "events": [
     {
-      "id": "e0448f7b831a9ecc0580ba4295270d0c",
+      "id": "b57e790481f2b8e5eaf9e0f3eab816bc",
       "sport_key": "baseball_mlb",
       "sport_title": "MLB",
-      "commence_time": "2026-10-08T21:10:00Z",
+      "commence_time": "2026-10-09T00:00:00Z",
       "home_team": "Chicago White Sox",
       "away_team": "Cleveland Guardians",
       "bookmakers": [
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-08T03:37:13Z",
+          "last_update": "2026-10-08T20:54:10Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-08T03:37:13Z",
+              "last_update": "2026-10-08T20:54:10Z",
               "outcomes": [
                 {
                   "name": "Chicago White Sox",
-                  "price": 2.01
+                  "price": 2.05
                 },
                 {
                   "name": "Cleveland Guardians",
-                  "price": 1.9
+                  "price": 1.88
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-08T03:37:13Z",
+              "last_update": "2026-10-08T20:54:10Z",
               "outcomes": [
                 {
                   "name": "Chicago White Sox",
-                  "price": 1.56,
+                  "price": 1.58,
                   "point": 1.5
                 },
                 {
@@ -46,17 +46,17 @@
             },
             {
               "key": "totals",
-              "last_update": "2026-10-08T03:37:13Z",
+              "last_update": "2026-10-08T20:54:10Z",
               "outcomes": [
                 {
                   "name": "Over",
-                  "price": 2.02,
-                  "point": 7.5
+                  "price": 1.9,
+                  "point": 7.0
                 },
                 {
                   "name": "Under",
-                  "price": 1.85,
-                  "point": 7.5
+                  "price": 1.99,
+                  "point": 7.0
                 }
               ]
             }
@@ -65,13 +65,67 @@
       ]
     },
     {
-      "id": "b57e790481f2b8e5eaf9e0f3eab816bc",
+      "id": "c43e98d4effc9181f21e21225fcbd47a",
       "sport_key": "baseball_mlb",
       "sport_title": "MLB",
-      "commence_time": "2026-10-09T00:00:00Z",
-      "home_team": "Chicago White Sox",
-      "away_team": "Cleveland Guardians",
-      "bookmakers": []
+      "commence_time": "2026-10-12T00:00:00Z",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Los Angeles Dodgers",
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-10-08T20:54:10Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-10-08T20:54:10Z",
+              "outcomes": [
+                {
+                  "name": "Los Angeles Dodgers",
+                  "price": 1.97
+                },
+                {
+                  "name": "Milwaukee Brewers",
+                  "price": 1.93
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-10-08T20:54:10Z",
+              "outcomes": [
+                {
+                  "name": "Los Angeles Dodgers",
+                  "price": 1.4,
+                  "point": 1.5
+                },
+                {
+                  "name": "Milwaukee Brewers",
+                  "price": 3.13,
+                  "point": -1.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2026-10-08T20:54:10Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": 1.93,
+                  "point": 6.0
+                },
+                {
+                  "name": "Under",
+                  "price": 1.94,
+                  "point": 6.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

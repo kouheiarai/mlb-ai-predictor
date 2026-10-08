@@ -1,3 +1,5 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,e0448f7b831a9ecc0580ba4295270d0c,2026-10-08T21:10:00Z,Cleveland Guardians,Chicago White Sox,Parker Messick,Hagen Smith,Under,7.5,1.85,0.81611,0.0,0.509804,0.149942,1.0,1.0,2.372,3.264,100000,BUY
-total,e0448f7b831a9ecc0580ba4295270d0c,2026-10-08T21:10:00Z,Cleveland Guardians,Chicago White Sox,Parker Messick,Hagen Smith,Over,7.5,2.02,0.18389,0.0,-0.628542,0.0,1.0,1.0,2.372,3.264,100000,PASS
+total,b57e790481f2b8e5eaf9e0f3eab816bc,2026-10-09T00:00:00Z,Cleveland Guardians,Chicago White Sox,Parker Messick,Hagen Smith,Under,7.0,1.99,0.69191,0.12056,0.376901,0.095177,1.0,1.0,2.384,3.244,100000,BUY
+total,c43e98d4effc9181f21e21225fcbd47a,2026-10-12T00:00:00Z,Los Angeles Dodgers,Milwaukee Brewers,,,Under,6.0,1.94,0.62989,0.14336,0.221987,0.059039,1.0,1.0,2.5,2.613,100000,BUY
+total,c43e98d4effc9181f21e21225fcbd47a,2026-10-12T00:00:00Z,Los Angeles Dodgers,Milwaukee Brewers,,,Over,6.0,1.93,0.22675,0.14336,-0.562372,0.0,1.0,1.0,2.5,2.613,100000,PASS
+total,b57e790481f2b8e5eaf9e0f3eab816bc,2026-10-09T00:00:00Z,Cleveland Guardians,Chicago White Sox,Parker Messick,Hagen Smith,Over,7.0,1.9,0.18753,0.12056,-0.643693,0.0,1.0,1.0,2.384,3.244,100000,PASS

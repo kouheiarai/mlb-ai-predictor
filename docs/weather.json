@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-08T03:37:57.699577+00:00",
+  "fetched_at_utc": "2026-10-08T20:54:28.701968+00:00",
   "games": [
     {
       "game_pk": 849832,
@@ -15,29 +15,16 @@
       }
     },
     {
-      "game_pk": 849824,
-      "away_team": "San Diego Padres",
-      "home_team": "Milwaukee Brewers",
-      "game_date_utc": "2026-10-10T00:00:00Z",
-      "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
-      }
-    },
-    {
       "game_pk": 849831,
       "away_team": "Chicago White Sox",
       "home_team": "Cleveland Guardians",
       "game_date_utc": "2026-10-11T00:00:00Z",
       "weather": {
-        "weather_run_factor": 1.0034,
-        "temperature_c": 20.3,
+        "weather_run_factor": 1.0022,
+        "temperature_c": 19.9,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 14.8,
-        "wind_direction_deg": 167
+        "wind_speed_kmh": 14.4,
+        "wind_direction_deg": 143
       }
     }
   ]

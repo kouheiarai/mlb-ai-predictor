@@ -1,10 +1,10 @@
 {
-  "fetched_at_utc": "2026-10-08T03:37:57.699577+00:00",
+  "fetched_at_utc": "2026-10-08T20:54:28.701968+00:00",
   "games": [
     {
       "game_pk": 849832,
       "game_date_utc": "2026-10-09T00:00:00Z",
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "away_team": "Cleveland Guardians",
       "home_team": "Chicago White Sox",
       "away_probable_pitcher_id": 800048,
@@ -28,23 +28,21 @@
         "innings_pitched": 28.0
       },
       "lineups": {
-        "away_announced": false,
-        "home_announced": false,
+        "away_announced": true,
+        "home_announced": true,
         "away_batting_order": [
           {
             "person_id": 680757,
             "full_name": "Steven Kwan",
             "batting_order": 1,
-            "position": "LF",
+            "position": "CF",
             "season_stats": {
-              "ops": 0.721,
-              "plate_appearances": 632.0,
-              "avg": 0.279,
-              "obp": 0.379,
-              "slg": 0.342
+              "ops": 0.731,
+              "plate_appearances": 637.0,
+              "avg": 0.282,
+              "obp": 0.382,
+              "slg": 0.349
             },
-            "prediction_start_count": 2,
-            "prediction_median_order": 1.0,
             "bat_side": "L"
           },
           {
@@ -53,626 +51,252 @@
             "batting_order": 2,
             "position": "3B",
             "season_stats": {
-              "ops": 0.695,
-              "plate_appearances": 539.0,
-              "avg": 0.237,
-              "obp": 0.323,
-              "slg": 0.372
+              "ops": 0.688,
+              "plate_appearances": 544.0,
+              "avg": 0.235,
+              "obp": 0.32,
+              "slg": 0.368
             },
-            "prediction_start_count": 2,
-            "prediction_median_order": 2.0,
             "bat_side": "S"
           },
           {
             "person_id": 800050,
             "full_name": "Chase DeLauter",
             "batting_order": 3,
-            "position": "DH",
+            "position": "RF",
             "season_stats": {
-              "ops": 0.815,
-              "plate_appearances": 554.0,
+              "ops": 0.82,
+              "plate_appearances": 559.0,
               "avg": 0.287,
               "obp": 0.363,
-              "slg": 0.452
+              "slg": 0.457
             },
-            "prediction_start_count": 2,
-            "prediction_median_order": 3.0,
             "bat_side": "L"
           },
           {
             "person_id": 666176,
             "full_name": "Jo Adell",
             "batting_order": 4,
-            "position": "RF",
+            "position": "DH",
             "season_stats": {
-              "ops": 0.693,
-              "plate_appearances": 651.0,
-              "avg": 0.239,
-              "obp": 0.296,
-              "slg": 0.397
-            },
-            "prediction_start_count": 3,
-            "prediction_median_order": 4.0,
-            "bat_side": "R"
-          },
-          {
-            "person_id": 682657,
-            "full_name": "Angel Martínez",
-            "batting_order": 5,
-            "position": "RF",
-            "season_stats": {
-              "ops": 0.771,
-              "plate_appearances": 408.0,
-              "avg": 0.26,
-              "obp": 0.296,
-              "slg": 0.475
-            },
-            "prediction_start_count": 3,
-            "prediction_median_order": 5.0,
-            "bat_side": "S"
-          },
-          {
-            "person_id": 683953,
-            "full_name": "Travis Bazzana",
-            "batting_order": 6,
-            "position": "2B",
-            "season_stats": {
-              "ops": 0.735,
-              "plate_appearances": 509.0,
-              "avg": 0.243,
-              "obp": 0.334,
+              "ops": 0.699,
+              "plate_appearances": 660.0,
+              "avg": 0.24,
+              "obp": 0.298,
               "slg": 0.401
             },
-            "prediction_start_count": 3,
-            "prediction_median_order": 5.0,
-            "bat_side": "L"
-          },
-          {
-            "person_id": 694197,
-            "full_name": "Angel Genao",
-            "batting_order": 7,
-            "position": "2B",
-            "season_stats": {
-              "ops": 0.574,
-              "plate_appearances": 135.0,
-              "avg": 0.211,
-              "obp": 0.281,
-              "slg": 0.293
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 5.5,
-            "bat_side": "S"
-          },
-          {
-            "person_id": 681807,
-            "full_name": "David Fry",
-            "batting_order": 8,
-            "position": "1B",
-            "season_stats": {
-              "ops": 0.671,
-              "plate_appearances": 210.0,
-              "avg": 0.194,
-              "obp": 0.31,
-              "slg": 0.361
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 5.5,
             "bat_side": "R"
           },
           {
             "person_id": 663993,
             "full_name": "Nathaniel Lowe",
-            "batting_order": 9,
+            "batting_order": 5,
             "position": "1B",
             "season_stats": {
-              "ops": 0.766,
-              "plate_appearances": 420.0,
-              "avg": 0.251,
-              "obp": 0.319,
-              "slg": 0.447
+              "ops": 0.761,
+              "plate_appearances": 429.0,
+              "avg": 0.252,
+              "obp": 0.317,
+              "slg": 0.444
             },
-            "prediction_start_count": 3,
-            "prediction_median_order": 6.0,
             "bat_side": "L"
+          },
+          {
+            "person_id": 682657,
+            "full_name": "Angel Martínez",
+            "batting_order": 6,
+            "position": "LF",
+            "season_stats": {
+              "ops": 0.755,
+              "plate_appearances": 416.0,
+              "avg": 0.254,
+              "obp": 0.29,
+              "slg": 0.465
+            },
+            "bat_side": "S"
+          },
+          {
+            "person_id": 683953,
+            "full_name": "Travis Bazzana",
+            "batting_order": 7,
+            "position": "2B",
+            "season_stats": {
+              "ops": 0.743,
+              "plate_appearances": 517.0,
+              "avg": 0.245,
+              "obp": 0.335,
+              "slg": 0.408
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 595978,
+            "full_name": "Austin Hedges",
+            "batting_order": 8,
+            "position": "C",
+            "season_stats": {
+              "ops": 0.702,
+              "plate_appearances": 247.0,
+              "avg": 0.247,
+              "obp": 0.325,
+              "slg": 0.377
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 677587,
+            "full_name": "Brayan Rocchio",
+            "batting_order": 9,
+            "position": "SS",
+            "season_stats": {
+              "ops": 0.704,
+              "plate_appearances": 592.0,
+              "avg": 0.253,
+              "obp": 0.313,
+              "slg": 0.391
+            },
+            "bat_side": "S"
           }
         ],
         "home_batting_order": [
           {
-            "person_id": 678246,
-            "full_name": "Miguel Vargas",
+            "person_id": 805367,
+            "full_name": "Chase Meidroth",
             "batting_order": 1,
-            "position": "3B",
+            "position": "2B",
             "season_stats": {
-              "ops": 0.837,
-              "plate_appearances": 699.0,
-              "avg": 0.251,
-              "obp": 0.361,
-              "slg": 0.476
+              "ops": 0.765,
+              "plate_appearances": 643.0,
+              "avg": 0.276,
+              "obp": 0.35,
+              "slg": 0.415
             },
-            "prediction_start_count": 2,
-            "prediction_median_order": 2.0,
-            "bat_side": "R"
-          },
-          {
-            "person_id": 502054,
-            "full_name": "Tommy Pham",
-            "batting_order": 2,
-            "position": "DH",
-            "season_stats": {
-              "ops": 0.489,
-              "plate_appearances": 31.0,
-              "avg": 0.115,
-              "obp": 0.258,
-              "slg": 0.231
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 2.0,
             "bat_side": "R"
           },
           {
             "person_id": 545341,
             "full_name": "Randal Grichuk",
-            "batting_order": 3,
+            "batting_order": 2,
             "position": "LF",
             "season_stats": {
-              "ops": 0.882,
-              "plate_appearances": 272.0,
-              "avg": 0.291,
-              "obp": 0.316,
+              "ops": 0.88,
+              "plate_appearances": 280.0,
+              "avg": 0.287,
+              "obp": 0.314,
               "slg": 0.566
             },
-            "prediction_start_count": 3,
-            "prediction_median_order": 3.0,
             "bat_side": "R"
           },
           {
-            "person_id": 803011,
-            "full_name": "Sam Antonacci",
-            "batting_order": 4,
-            "position": "2B",
+            "person_id": 678246,
+            "full_name": "Miguel Vargas",
+            "batting_order": 3,
+            "position": "3B",
             "season_stats": {
-              "ops": 0.761,
-              "plate_appearances": 549.0,
-              "avg": 0.275,
-              "obp": 0.368,
-              "slg": 0.393
+              "ops": 0.837,
+              "plate_appearances": 704.0,
+              "avg": 0.25,
+              "obp": 0.363,
+              "slg": 0.474
             },
-            "prediction_start_count": 2,
-            "prediction_median_order": 3.0,
-            "bat_side": "L"
-          },
-          {
-            "person_id": 643217,
-            "full_name": "Andrew Benintendi",
-            "batting_order": 5,
-            "position": "DH",
-            "season_stats": {
-              "ops": 0.706,
-              "plate_appearances": 465.0,
-              "avg": 0.239,
-              "obp": 0.3,
-              "slg": 0.406
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 3.5,
-            "bat_side": "L"
-          },
-          {
-            "person_id": 671976,
-            "full_name": "Tristan Peters",
-            "batting_order": 6,
-            "position": "LF",
-            "season_stats": {
-              "ops": 0.778,
-              "plate_appearances": 486.0,
-              "avg": 0.266,
-              "obp": 0.338,
-              "slg": 0.44
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 3.5,
-            "bat_side": "L"
+            "bat_side": "R"
           },
           {
             "person_id": 808959,
             "full_name": "Munetaka Murakami",
-            "batting_order": 7,
+            "batting_order": 4,
             "position": "1B",
             "season_stats": {
-              "ops": 0.834,
-              "plate_appearances": 544.0,
-              "avg": 0.209,
-              "obp": 0.351,
-              "slg": 0.483
+              "ops": 0.825,
+              "plate_appearances": 553.0,
+              "avg": 0.207,
+              "obp": 0.347,
+              "slg": 0.478
             },
-            "prediction_start_count": 3,
-            "prediction_median_order": 4.0,
             "bat_side": "L"
           },
           {
-            "person_id": 691019,
-            "full_name": "Kyle Teel",
-            "batting_order": 8,
-            "position": "C",
+            "person_id": 502054,
+            "full_name": "Tommy Pham",
+            "batting_order": 5,
+            "position": "DH",
             "season_stats": {
-              "ops": 0.688,
-              "plate_appearances": 140.0,
-              "avg": 0.2,
-              "obp": 0.331,
-              "slg": 0.357
+              "ops": 0.429,
+              "plate_appearances": 35.0,
+              "avg": 0.1,
+              "obp": 0.229,
+              "slg": 0.2
             },
-            "prediction_start_count": 2,
-            "prediction_median_order": 4.0,
-            "bat_side": "L"
+            "bat_side": "R"
           },
           {
             "person_id": 686668,
             "full_name": "Brenton Doyle",
-            "batting_order": 9,
-            "position": "CF",
-            "season_stats": {
-              "ops": 0.606,
-              "plate_appearances": 217.0,
-              "avg": 0.23,
-              "obp": 0.273,
-              "slg": 0.333
-            },
-            "prediction_start_count": 3,
-            "prediction_median_order": 5.0,
-            "bat_side": "R"
-          }
-        ],
-        "away_lineup_status": "predicted",
-        "away_lineup_reliability": 0.8944,
-        "away_lineup_confidence": "A",
-        "away_prediction_source_games": 3,
-        "home_lineup_status": "predicted",
-        "home_lineup_reliability": 0.8833,
-        "home_lineup_confidence": "A",
-        "home_prediction_source_games": 3
-      },
-      "away_probable_pitcher_hand": "L",
-      "home_probable_pitcher_hand": "L",
-      "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
-      }
-    },
-    {
-      "game_pk": 849824,
-      "game_date_utc": "2026-10-10T00:00:00Z",
-      "status": "Scheduled",
-      "away_team": "San Diego Padres",
-      "home_team": "Milwaukee Brewers",
-      "away_probable_pitcher_id": null,
-      "away_probable_pitcher": "TBD",
-      "home_probable_pitcher_id": 694819,
-      "home_probable_pitcher": "Jacob Misiorowski",
-      "venue_id": 32,
-      "venue_name": "American Family Field",
-      "away_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
-      },
-      "home_starter_stats": {
-        "person_id": 694819,
-        "era": 1.8,
-        "whip": 0.8,
-        "strikeout_walk_ratio": 5.7272727272727275,
-        "innings_pitched": 174.2
-      },
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [
-          {
-            "person_id": 665487,
-            "full_name": "Fernando Tatis Jr.",
-            "batting_order": 1,
-            "position": "2B",
-            "season_stats": {
-              "ops": 0.833,
-              "plate_appearances": 699.0,
-              "avg": 0.291,
-              "obp": 0.36,
-              "slg": 0.473
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 1.0,
-            "bat_side": "R"
-          },
-          {
-            "person_id": 687749,
-            "full_name": "Jase Bowen",
-            "batting_order": 2,
-            "position": "CF",
-            "season_stats": {
-              "ops": 0.452,
-              "plate_appearances": 99.0,
-              "avg": 0.151,
-              "obp": 0.194,
-              "slg": 0.258
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 1.5,
-            "bat_side": "R"
-          },
-          {
-            "person_id": 687957,
-            "full_name": "Dustin Harris",
-            "batting_order": 3,
-            "position": "RF",
-            "season_stats": {
-              "ops": 0.716,
-              "plate_appearances": 142.0,
-              "avg": 0.285,
-              "obp": 0.35,
-              "slg": 0.366
-            },
-            "prediction_start_count": 3,
-            "prediction_median_order": 2.0,
-            "bat_side": "L"
-          },
-          {
-            "person_id": 592518,
-            "full_name": "Manny Machado",
-            "batting_order": 4,
-            "position": "DH",
-            "season_stats": {
-              "ops": 0.704,
-              "plate_appearances": 670.0,
-              "avg": 0.215,
-              "obp": 0.302,
-              "slg": 0.402
-            },
-            "prediction_start_count": 3,
-            "prediction_median_order": 3.0,
-            "bat_side": "R"
-          },
-          {
-            "person_id": 664034,
-            "full_name": "Ty France",
-            "batting_order": 5,
-            "position": "1B",
-            "season_stats": {
-              "ops": 0.865,
-              "plate_appearances": 490.0,
-              "avg": 0.294,
-              "obp": 0.36,
-              "slg": 0.505
-            },
-            "prediction_start_count": 3,
-            "prediction_median_order": 4.0,
-            "bat_side": "R"
-          },
-          {
-            "person_id": 701538,
-            "full_name": "Jackson Merrill",
             "batting_order": 6,
             "position": "CF",
             "season_stats": {
-              "ops": 0.741,
-              "plate_appearances": 659.0,
-              "avg": 0.253,
-              "obp": 0.301,
-              "slg": 0.44
+              "ops": 0.637,
+              "plate_appearances": 223.0,
+              "avg": 0.233,
+              "obp": 0.275,
+              "slg": 0.362
             },
-            "prediction_start_count": 2,
-            "prediction_median_order": 4.5,
-            "bat_side": "L"
+            "bat_side": "R"
           },
           {
-            "person_id": 657757,
-            "full_name": "Gavin Sheets",
+            "person_id": 691019,
+            "full_name": "Kyle Teel",
             "batting_order": 7,
-            "position": "DH",
-            "season_stats": {
-              "ops": 0.7,
-              "plate_appearances": 417.0,
-              "avg": 0.211,
-              "obp": 0.312,
-              "slg": 0.388
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 5.0,
-            "bat_side": "L"
-          },
-          {
-            "person_id": 669720,
-            "full_name": "Austin Hays",
-            "batting_order": 8,
-            "position": "LF",
-            "season_stats": {
-              "ops": 0.686,
-              "plate_appearances": 100.0,
-              "avg": 0.271,
-              "obp": 0.29,
-              "slg": 0.396
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 5.5,
-            "bat_side": "R"
-          },
-          {
-            "person_id": 593428,
-            "full_name": "Xander Bogaerts",
-            "batting_order": 9,
-            "position": "SS",
-            "season_stats": {
-              "ops": 0.667,
-              "plate_appearances": 602.0,
-              "avg": 0.23,
-              "obp": 0.329,
-              "slg": 0.338
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 6.5,
-            "bat_side": "R"
-          }
-        ],
-        "home_batting_order": [
-          {
-            "person_id": 669003,
-            "full_name": "Garrett Mitchell",
-            "batting_order": 1,
-            "position": "CF",
-            "season_stats": {
-              "ops": 0.77,
-              "plate_appearances": 525.0,
-              "avg": 0.263,
-              "obp": 0.352,
-              "slg": 0.418
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 1.0,
-            "bat_side": "L"
-          },
-          {
-            "person_id": 668930,
-            "full_name": "Brice Turang",
-            "batting_order": 2,
-            "position": "2B",
-            "season_stats": {
-              "ops": 0.813,
-              "plate_appearances": 672.0,
-              "avg": 0.268,
-              "obp": 0.366,
-              "slg": 0.447
-            },
-            "prediction_start_count": 3,
-            "prediction_median_order": 2.0,
-            "bat_side": "L"
-          },
-          {
-            "person_id": 694192,
-            "full_name": "Jackson Chourio",
-            "batting_order": 3,
-            "position": "LF",
-            "season_stats": {
-              "ops": 0.833,
-              "plate_appearances": 569.0,
-              "avg": 0.288,
-              "obp": 0.348,
-              "slg": 0.485
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 2.0,
-            "bat_side": "R"
-          },
-          {
-            "person_id": 641343,
-            "full_name": "Jake Bauers",
-            "batting_order": 4,
-            "position": "1B",
-            "season_stats": {
-              "ops": 0.88,
-              "plate_appearances": 570.0,
-              "avg": 0.268,
-              "obp": 0.391,
-              "slg": 0.489
-            },
-            "prediction_start_count": 3,
-            "prediction_median_order": 3.0,
-            "bat_side": "L"
-          },
-          {
-            "person_id": 661388,
-            "full_name": "William Contreras",
-            "batting_order": 5,
             "position": "C",
             "season_stats": {
-              "ops": 0.757,
-              "plate_appearances": 636.0,
-              "avg": 0.27,
-              "obp": 0.34,
-              "slg": 0.417
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 3.5,
-            "bat_side": "R"
-          },
-          {
-            "person_id": 592885,
-            "full_name": "Christian Yelich",
-            "batting_order": 6,
-            "position": "DH",
-            "season_stats": {
               "ops": 0.697,
-              "plate_appearances": 494.0,
-              "avg": 0.236,
-              "obp": 0.316,
-              "slg": 0.381
+              "plate_appearances": 144.0,
+              "avg": 0.21,
+              "obp": 0.336,
+              "slg": 0.361
             },
-            "prediction_start_count": 3,
-            "prediction_median_order": 5.0,
             "bat_side": "L"
           },
           {
-            "person_id": 596142,
-            "full_name": "Gary Sánchez",
-            "batting_order": 7,
-            "position": "DH",
-            "season_stats": {
-              "ops": 0.763,
-              "plate_appearances": 271.0,
-              "avg": 0.208,
-              "obp": 0.351,
-              "slg": 0.412
-            },
-            "prediction_start_count": 2,
-            "prediction_median_order": 5.0,
-            "bat_side": "R"
-          },
-          {
-            "person_id": 800325,
-            "full_name": "Luis Lara",
+            "person_id": 695731,
+            "full_name": "Braden Montgomery",
             "batting_order": 8,
             "position": "RF",
             "season_stats": {
-              "ops": 0.639,
-              "plate_appearances": 208.0,
-              "avg": 0.246,
-              "obp": 0.313,
-              "slg": 0.326
+              "ops": 0.662,
+              "plate_appearances": 365.0,
+              "avg": 0.226,
+              "obp": 0.312,
+              "slg": 0.35
             },
-            "prediction_start_count": 2,
-            "prediction_median_order": 6.5,
             "bat_side": "S"
           },
           {
-            "person_id": 806198,
-            "full_name": "Cooper Pratt",
+            "person_id": 695657,
+            "full_name": "Colson Montgomery",
             "batting_order": 9,
             "position": "SS",
             "season_stats": {
-              "ops": 0.716,
-              "plate_appearances": 258.0,
-              "avg": 0.281,
-              "obp": 0.349,
-              "slg": 0.367
+              "ops": 0.685,
+              "plate_appearances": 638.0,
+              "avg": 0.197,
+              "obp": 0.282,
+              "slg": 0.403
             },
-            "prediction_start_count": 3,
-            "prediction_median_order": 7.0,
-            "bat_side": "R"
+            "bat_side": "L"
           }
         ],
-        "away_lineup_status": "predicted",
-        "away_lineup_reliability": 0.8833,
-        "away_lineup_confidence": "A",
-        "away_prediction_source_games": 3,
-        "home_lineup_status": "predicted",
-        "home_lineup_reliability": 0.8944,
-        "home_lineup_confidence": "A",
-        "home_prediction_source_games": 3
+        "away_lineup_status": "official",
+        "away_lineup_reliability": 1.0,
+        "away_lineup_confidence": "Official",
+        "away_prediction_source_games": 0,
+        "home_lineup_status": "official",
+        "home_lineup_reliability": 1.0,
+        "home_lineup_confidence": "Official",
+        "home_prediction_source_games": 0
       },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": "R",
+      "away_probable_pitcher_hand": "L",
+      "home_probable_pitcher_hand": "L",
       "weather": {
         "weather_run_factor": 1.0,
         "temperature_c": null,
@@ -1014,11 +638,11 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": null,
       "weather": {
-        "weather_run_factor": 1.0034,
-        "temperature_c": 20.3,
+        "weather_run_factor": 1.0022,
+        "temperature_c": 19.9,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 14.8,
-        "wind_direction_deg": 167
+        "wind_speed_kmh": 14.4,
+        "wind_direction_deg": 143
       }
     }
   ]
