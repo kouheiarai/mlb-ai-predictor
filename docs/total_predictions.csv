@@ -1,7 +1,5 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,2f041c00e4bddc69bd1bbfbd40cc3c09,2026-10-07T22:10:00Z,Los Angeles Dodgers,Atlanta Braves,Tyler Glasnow,Tyler Mahle,Under,7.5,1.94,0.89224,0.0,0.730946,0.1944,1.0,1.0,2.59,2.324,100000,BUY
-total,3c71012ad7a75e6c11575285e6841e14,2026-10-08T02:00:00Z,Milwaukee Brewers,San Diego Padres,TBD,Walker Buehler,Under,7.5,1.95,0.82756,0.0,0.613742,0.161511,1.0062,0.97,2.957,2.56,100000,BUY
-total,aa266da6f8d98646bc59d18ddbc5b2de,2026-10-08T00:08:00Z,Tampa Bay Rays,New York Yankees,TBD,Carlos Rodón,Under,7.0,1.94,0.65152,0.13106,0.263949,0.070199,0.9883,1.03,2.34,3.53,100000,BUY
-total,aa266da6f8d98646bc59d18ddbc5b2de,2026-10-08T00:08:00Z,Tampa Bay Rays,New York Yankees,TBD,Carlos Rodón,Over,7.0,1.94,0.21742,0.13106,-0.578205,0.0,0.9883,1.03,2.34,3.53,100000,PASS
-total,3c71012ad7a75e6c11575285e6841e14,2026-10-08T02:00:00Z,Milwaukee Brewers,San Diego Padres,TBD,Walker Buehler,Over,7.5,1.93,0.17244,0.0,-0.667191,0.0,1.0062,0.97,2.957,2.56,100000,PASS
-total,2f041c00e4bddc69bd1bbfbd40cc3c09,2026-10-07T22:10:00Z,Los Angeles Dodgers,Atlanta Braves,Tyler Glasnow,Tyler Mahle,Over,7.5,1.94,0.10776,0.0,-0.790946,0.0,1.0,1.0,2.59,2.324,100000,PASS
+total,3c71012ad7a75e6c11575285e6841e14,2026-10-08T02:00:00Z,Milwaukee Brewers,San Diego Padres,,,Under,7.5,1.89,0.85621,0.0,0.618237,0.173662,1.0,0.97,2.758,2.531,100000,BUY
+total,e0448f7b831a9ecc0580ba4295270d0c,2026-10-08T21:00:00Z,Cleveland Guardians,Chicago White Sox,Parker Messick,TBD,Under,7.5,1.85,0.78069,0.0,0.444276,0.13067,1.0,1.0,2.652,3.263,100000,BUY
+total,e0448f7b831a9ecc0580ba4295270d0c,2026-10-08T21:00:00Z,Cleveland Guardians,Chicago White Sox,Parker Messick,TBD,Over,7.5,2.02,0.21931,0.0,-0.556994,0.0,1.0,1.0,2.652,3.263,100000,PASS
+total,3c71012ad7a75e6c11575285e6841e14,2026-10-08T02:00:00Z,Milwaukee Brewers,San Diego Padres,,,Over,7.5,1.99,0.14379,0.0,-0.713858,0.0,1.0,0.97,2.758,2.531,100000,PASS
