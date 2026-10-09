@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-09T03:43:31.856922+00:00",
+  "fetched_at_utc": "2026-10-09T20:23:42.316036+00:00",
   "games": [
     {
       "game_pk": 849831,
@@ -7,25 +7,25 @@
       "status": "Scheduled",
       "away_team": "Chicago White Sox",
       "home_team": "Cleveland Guardians",
-      "away_probable_pitcher_id": null,
-      "away_probable_pitcher": "TBD",
-      "home_probable_pitcher_id": null,
-      "home_probable_pitcher": "TBD",
+      "away_probable_pitcher_id": 680732,
+      "away_probable_pitcher": "Sean Burke",
+      "home_probable_pitcher_id": 668909,
+      "home_probable_pitcher": "Gavin Williams",
       "venue_id": 5,
       "venue_name": "Progressive Field",
       "away_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
+        "person_id": 680732,
+        "era": 3.34,
+        "whip": 1.2,
+        "strikeout_walk_ratio": 2.9838709677419355,
+        "innings_pitched": 172.1
       },
       "home_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
+        "person_id": 668909,
+        "era": 3.76,
+        "whip": 1.11,
+        "strikeout_walk_ratio": 4.065573770491803,
+        "innings_pitched": 184.1
       },
       "lineups": {
         "away_announced": false,
@@ -331,14 +331,14 @@
         "home_lineup_confidence": "A",
         "home_prediction_source_games": 3
       },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.004,
-        "temperature_c": 20.7,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 14.6,
-        "wind_direction_deg": 132
+        "weather_run_factor": 1.002,
+        "temperature_c": 20.5,
+        "precipitation_probability": 2,
+        "wind_speed_kmh": 13.0,
+        "wind_direction_deg": 124
       }
     },
     {

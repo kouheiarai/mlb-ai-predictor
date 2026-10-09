@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "model_version": "26.0",
-  "updated_at_utc": "2026-10-09T03:43:31.856922+00:00",
+  "updated_at_utc": "2026-10-09T20:23:42.316036+00:00",
   "target_dates_utc": [
     "2026-10-12"
   ],
@@ -14,8 +14,8 @@
     "baseball_data": "MLB Stats API"
   },
   "api_quota": {
-    "requests_remaining": "425",
-    "requests_used": "75",
+    "requests_remaining": "422",
+    "requests_used": "78",
     "requests_last": "3"
   },
   "summary": {
