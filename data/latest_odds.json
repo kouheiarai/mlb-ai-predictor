@@ -1,69 +1,6 @@
 {
-  "fetched_at_utc": "2026-10-08T20:54:28.701968+00:00",
+  "fetched_at_utc": "2026-10-09T01:32:31.565232+00:00",
   "events": [
-    {
-      "id": "b57e790481f2b8e5eaf9e0f3eab816bc",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-10-09T00:00:00Z",
-      "home_team": "Chicago White Sox",
-      "away_team": "Cleveland Guardians",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-10-08T20:54:10Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-10-08T20:54:10Z",
-              "outcomes": [
-                {
-                  "name": "Chicago White Sox",
-                  "price": 2.05
-                },
-                {
-                  "name": "Cleveland Guardians",
-                  "price": 1.88
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-10-08T20:54:10Z",
-              "outcomes": [
-                {
-                  "name": "Chicago White Sox",
-                  "price": 1.58,
-                  "point": 1.5
-                },
-                {
-                  "name": "Cleveland Guardians",
-                  "price": 2.55,
-                  "point": -1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-10-08T20:54:10Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.9,
-                  "point": 7.0
-                },
-                {
-                  "name": "Under",
-                  "price": 1.99,
-                  "point": 7.0
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "id": "c43e98d4effc9181f21e21225fcbd47a",
       "sport_key": "baseball_mlb",
@@ -75,11 +12,11 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-08T20:54:10Z",
+          "last_update": "2026-10-09T01:32:23Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-08T20:54:10Z",
+              "last_update": "2026-10-09T01:32:23Z",
               "outcomes": [
                 {
                   "name": "Los Angeles Dodgers",
@@ -93,7 +30,7 @@
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-08T20:54:10Z",
+              "last_update": "2026-10-09T01:32:23Z",
               "outcomes": [
                 {
                   "name": "Los Angeles Dodgers",
@@ -109,7 +46,7 @@
             },
             {
               "key": "totals",
-              "last_update": "2026-10-08T20:54:10Z",
+              "last_update": "2026-10-09T01:32:23Z",
               "outcomes": [
                 {
                   "name": "Over",
@@ -118,7 +55,7 @@
                 },
                 {
                   "name": "Under",
-                  "price": 1.94,
+                  "price": 1.93,
                   "point": 6.0
                 }
               ]
