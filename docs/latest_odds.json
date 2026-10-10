@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-10T03:25:57.385969+00:00",
+  "fetched_at_utc": "2026-10-10T19:37:09.026317+00:00",
   "events": [
     {
       "id": "62bf363a77455f7a8b48838e7792f60b",
@@ -8,7 +8,61 @@
       "commence_time": "2026-10-11T00:01:00Z",
       "home_team": "Cleveland Guardians",
       "away_team": "Chicago White Sox",
-      "bookmakers": []
+      "bookmakers": [
+        {
+          "key": "pinnacle",
+          "title": "Pinnacle",
+          "last_update": "2026-10-10T19:36:49Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "last_update": "2026-10-10T19:36:49Z",
+              "outcomes": [
+                {
+                  "name": "Chicago White Sox",
+                  "price": 2.27
+                },
+                {
+                  "name": "Cleveland Guardians",
+                  "price": 1.72
+                }
+              ]
+            },
+            {
+              "key": "spreads",
+              "last_update": "2026-10-10T19:36:49Z",
+              "outcomes": [
+                {
+                  "name": "Chicago White Sox",
+                  "price": 1.56,
+                  "point": 1.5
+                },
+                {
+                  "name": "Cleveland Guardians",
+                  "price": 2.6,
+                  "point": -1.5
+                }
+              ]
+            },
+            {
+              "key": "totals",
+              "last_update": "2026-10-10T19:36:49Z",
+              "outcomes": [
+                {
+                  "name": "Over",
+                  "price": 1.86,
+                  "point": 7.0
+                },
+                {
+                  "name": "Under",
+                  "price": 2.03,
+                  "point": 7.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "c43e98d4effc9181f21e21225fcbd47a",
@@ -21,25 +75,25 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-10T03:25:42Z",
+          "last_update": "2026-10-10T19:36:49Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-10T03:25:42Z",
+              "last_update": "2026-10-10T19:36:49Z",
               "outcomes": [
                 {
                   "name": "Los Angeles Dodgers",
-                  "price": 1.97
+                  "price": 1.96
                 },
                 {
                   "name": "Milwaukee Brewers",
-                  "price": 1.93
+                  "price": 1.94
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-10T03:25:42Z",
+              "last_update": "2026-10-10T19:36:49Z",
               "outcomes": [
                 {
                   "name": "Los Angeles Dodgers",
@@ -48,14 +102,14 @@
                 },
                 {
                   "name": "Milwaukee Brewers",
-                  "price": 3.14,
+                  "price": 3.15,
                   "point": -1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-10T03:25:42Z",
+              "last_update": "2026-10-10T19:36:49Z",
               "outcomes": [
                 {
                   "name": "Over",

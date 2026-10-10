@@ -1,15 +1,46 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-10T03:25:57.385969+00:00
-- API requests remaining: 416
+- Updated: 2026-10-10T19:37:09.026317+00:00
+- API requests remaining: 413
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-No EV 5%+ Moneyline bets.
+### 1. Chicago White Sox
+- Game: Chicago White Sox @ Cleveland Guardians
+- Odds: 2.27
+- AI probability: 56.4%
+- EV: 28.0%
+- 1/4 Kelly: 5.5%
+- Lineup: 未発表
+- Lineup quality: +0.22
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: 19.5 C
+- Rain probability: 1%
+- Wind: 13.2 km/h (135 deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Chicago White Sox 3.23 - Cleveland Guardians 2.67
+
 ## Run Line Buy Ranking
 
-### 1. Los Angeles Dodgers +1.5
+### 1. Chicago White Sox +1.5
+- Game: Chicago White Sox @ Cleveland Guardians
+- Odds: 1.56
+- Cover probability: 80.9%
+- EV: 26.2%
+- 1/4 Kelly: 11.7%
+- Lineup: 未発表
+- Lineup quality: +0.22
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: 19.5 C
+- Rain probability: 1%
+- Wind: 13.2 km/h (135 deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Chicago White Sox 3.23 - Cleveland Guardians 2.67
+
+### 2. Los Angeles Dodgers +1.5
 - Game: Los Angeles Dodgers @ Milwaukee Brewers
 - Odds: 1.4
 - Cover probability: 78.7%
