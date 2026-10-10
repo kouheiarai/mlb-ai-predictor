@@ -1,44 +1,44 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-10T19:37:09.026317+00:00
-- API requests remaining: 413
+- Updated: 2026-10-10T23:03:41.588045+00:00
+- API requests remaining: 410
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
 ### 1. Chicago White Sox
 - Game: Chicago White Sox @ Cleveland Guardians
-- Odds: 2.27
-- AI probability: 56.4%
-- EV: 28.0%
-- 1/4 Kelly: 5.5%
-- Lineup: 未発表
-- Lineup quality: +0.22
-- Platoon proxy: +0.00
-- Weather run factor: 1.000
-- Temperature: 19.5 C
-- Rain probability: 1%
-- Wind: 13.2 km/h (135 deg)
+- Odds: 2.26
+- AI probability: 57.0%
+- EV: 28.9%
+- 1/4 Kelly: 5.7%
+- Lineup: 発表済み
+- Lineup quality: +0.27
+- Platoon proxy: +0.11
+- Weather run factor: 0.998
+- Temperature: 18.6 C
+- Rain probability: 4%
+- Wind: 13.1 km/h (137 deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Chicago White Sox 3.23 - Cleveland Guardians 2.67
+- Expected score: Chicago White Sox 3.25 - Cleveland Guardians 2.65
 
 ## Run Line Buy Ranking
 
 ### 1. Chicago White Sox +1.5
 - Game: Chicago White Sox @ Cleveland Guardians
 - Odds: 1.56
-- Cover probability: 80.9%
-- EV: 26.2%
-- 1/4 Kelly: 11.7%
-- Lineup: 未発表
-- Lineup quality: +0.22
-- Platoon proxy: +0.00
-- Weather run factor: 1.000
-- Temperature: 19.5 C
-- Rain probability: 1%
-- Wind: 13.2 km/h (135 deg)
+- Cover probability: 81.6%
+- EV: 27.3%
+- 1/4 Kelly: 12.2%
+- Lineup: 発表済み
+- Lineup quality: +0.27
+- Platoon proxy: +0.11
+- Weather run factor: 0.998
+- Temperature: 18.6 C
+- Rain probability: 4%
+- Wind: 13.1 km/h (137 deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Chicago White Sox 3.23 - Cleveland Guardians 2.67
+- Expected score: Chicago White Sox 3.25 - Cleveland Guardians 2.65
 
 ### 2. Los Angeles Dodgers +1.5
 - Game: Los Angeles Dodgers @ Milwaukee Brewers
