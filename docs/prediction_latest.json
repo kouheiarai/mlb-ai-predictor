@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "model_version": "26.0",
-  "updated_at_utc": "2026-10-10T01:23:18.367651+00:00",
+  "updated_at_utc": "2026-10-10T03:25:57.385969+00:00",
   "target_dates_utc": [
     "2026-10-12"
   ],
@@ -14,8 +14,8 @@
     "baseball_data": "MLB Stats API"
   },
   "api_quota": {
-    "requests_remaining": "419",
-    "requests_used": "81",
+    "requests_remaining": "416",
+    "requests_used": "84",
     "requests_last": "3"
   },
   "summary": {
@@ -247,10 +247,10 @@
         "weather_run_factor": 1.0,
         "selection": "Milwaukee Brewers",
         "point": -1.5,
-        "decimal_odds": 3.13,
+        "decimal_odds": 3.14,
         "market_no_vig_probability": null,
         "model_probability": 0.21257,
-        "ev": -0.334656,
+        "ev": -0.33253,
         "quarter_kelly": 0.0,
         "recommendation": "PASS",
         "confidence": "C",

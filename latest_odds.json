@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-10T01:23:18.367651+00:00",
+  "fetched_at_utc": "2026-10-10T03:25:57.385969+00:00",
   "events": [
     {
       "id": "62bf363a77455f7a8b48838e7792f60b",
@@ -21,11 +21,11 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-10T01:22:29Z",
+          "last_update": "2026-10-10T03:25:42Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-10T01:22:29Z",
+              "last_update": "2026-10-10T03:25:42Z",
               "outcomes": [
                 {
                   "name": "Los Angeles Dodgers",
@@ -39,7 +39,7 @@
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-10T01:22:29Z",
+              "last_update": "2026-10-10T03:25:42Z",
               "outcomes": [
                 {
                   "name": "Los Angeles Dodgers",
@@ -48,14 +48,14 @@
                 },
                 {
                   "name": "Milwaukee Brewers",
-                  "price": 3.13,
+                  "price": 3.14,
                   "point": -1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-10T01:22:29Z",
+              "last_update": "2026-10-10T03:25:42Z",
               "outcomes": [
                 {
                   "name": "Over",
