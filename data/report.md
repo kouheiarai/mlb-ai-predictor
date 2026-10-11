@@ -1,17 +1,17 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-11T19:47:27.446178+00:00
-- API requests remaining: 404
+- Updated: 2026-10-11T23:17:50.612714+00:00
+- API requests remaining: 401
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
 ### 1. Cleveland Guardians
 - Game: Cleveland Guardians @ Tampa Bay Rays
-- Odds: 2.46
+- Odds: 2.45
 - AI probability: 48.0%
-- EV: 18.0%
-- 1/4 Kelly: 3.1%
+- EV: 17.6%
+- 1/4 Kelly: 3.0%
 - Lineup: 未発表
 - Lineup quality: -0.19
 - Platoon proxy: +0.00
@@ -26,10 +26,10 @@
 
 ### 1. Cleveland Guardians +1.5
 - Game: Cleveland Guardians @ Tampa Bay Rays
-- Odds: 1.64
+- Odds: 1.63
 - Cover probability: 72.4%
-- EV: 18.7%
-- 1/4 Kelly: 7.3%
+- EV: 18.0%
+- 1/4 Kelly: 7.1%
 - Lineup: 未発表
 - Lineup quality: -0.19
 - Platoon proxy: +0.00
