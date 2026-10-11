@@ -1,20 +1,51 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-11T02:58:54.802558+00:00
-- API requests remaining: 407
+- Updated: 2026-10-11T19:47:27.446178+00:00
+- API requests remaining: 404
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-No EV 5%+ Moneyline bets.
+### 1. Cleveland Guardians
+- Game: Cleveland Guardians @ Tampa Bay Rays
+- Odds: 2.46
+- AI probability: 48.0%
+- EV: 18.0%
+- 1/4 Kelly: 3.1%
+- Lineup: 未発表
+- Lineup quality: -0.19
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Cleveland Guardians 3.34 - Tampa Bay Rays 3.37
+
 ## Run Line Buy Ranking
 
-### 1. Los Angeles Dodgers +1.5
+### 1. Cleveland Guardians +1.5
+- Game: Cleveland Guardians @ Tampa Bay Rays
+- Odds: 1.64
+- Cover probability: 72.4%
+- EV: 18.7%
+- 1/4 Kelly: 7.3%
+- Lineup: 未発表
+- Lineup quality: -0.19
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Cleveland Guardians 3.34 - Tampa Bay Rays 3.37
+
+### 2. Los Angeles Dodgers +1.5
 - Game: Los Angeles Dodgers @ Milwaukee Brewers
 - Odds: 1.4
-- Cover probability: 78.8%
-- EV: 10.4%
-- 1/4 Kelly: 6.5%
+- Cover probability: 75.6%
+- EV: 5.8%
+- 1/4 Kelly: 3.6%
 - Lineup: 未発表
 - Lineup quality: +0.28
 - Platoon proxy: +0.00
@@ -23,7 +54,7 @@ No EV 5%+ Moneyline bets.
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Los Angeles Dodgers 2.57 - Milwaukee Brewers 2.38
+- Expected score: Los Angeles Dodgers 2.29 - Milwaukee Brewers 2.38
 
 ## Model Notes
 

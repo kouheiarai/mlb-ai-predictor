@@ -1,3 +1,5 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,c43e98d4effc9181f21e21225fcbd47a,2026-10-12T00:00:00Z,Los Angeles Dodgers,Milwaukee Brewers,Yoshinobu Yamamoto,TBD,Under,6.0,1.93,0.65924,0.13663,0.272333,0.073208,1.0,1.0,2.568,2.384,100000,BUY
-total,c43e98d4effc9181f21e21225fcbd47a,2026-10-12T00:00:00Z,Los Angeles Dodgers,Milwaukee Brewers,Yoshinobu Yamamoto,TBD,Over,6.0,1.93,0.20413,0.13663,-0.606029,0.0,1.0,1.0,2.568,2.384,100000,PASS
+total,c43e98d4effc9181f21e21225fcbd47a,2026-10-12T00:00:00Z,Los Angeles Dodgers,Milwaukee Brewers,Yoshinobu Yamamoto,Logan Henderson,Under,6.0,1.97,0.70698,0.12705,0.392751,0.101224,1.0,1.0,2.29,2.383,100000,BUY
+total,362511067a27b4ef89418639e15e80b6,2026-10-13T00:00:00Z,Cleveland Guardians,Tampa Bay Rays,TBD,TBD,Under,7.0,1.83,0.52338,0.14358,-0.042215,0.0,1.0,0.98,3.341,3.366,100000,PASS
+total,362511067a27b4ef89418639e15e80b6,2026-10-13T00:00:00Z,Cleveland Guardians,Tampa Bay Rays,TBD,TBD,Over,7.0,2.06,0.33304,0.14358,-0.313938,0.0,1.0,0.98,3.341,3.366,100000,PASS
+total,c43e98d4effc9181f21e21225fcbd47a,2026-10-12T00:00:00Z,Los Angeles Dodgers,Milwaukee Brewers,Yoshinobu Yamamoto,Logan Henderson,Over,6.0,1.92,0.16597,0.12705,-0.681338,0.0,1.0,1.0,2.29,2.383,100000,PASS
