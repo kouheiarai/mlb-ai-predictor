@@ -1,18 +1,17 @@
 {
   "model_version": "26.0",
-  "updated_at_utc": "2026-10-11T23:17:50.612714+00:00",
+  "updated_at_utc": "2026-10-12T03:22:02.862642+00:00",
   "data_age_hours": 0.0,
   "is_stale": false,
   "stale_warning": null,
   "target_dates_utc": [
-    "2026-10-12",
     "2026-10-13"
   ],
-  "game_count": 2,
+  "game_count": 1,
   "summary": {
     "moneyline_buy_count": 1,
-    "runline_buy_count": 2,
-    "total_buy_count": 1,
+    "runline_buy_count": 1,
+    "total_buy_count": 0,
     "best_moneyline": {
       "market": "moneyline",
       "event_id": "362511067a27b4ef89418639e15e80b6",
@@ -31,14 +30,14 @@
       "point": "",
       "decimal_odds": 2.45,
       "market_no_vig_probability": 0.398034,
-      "model_probability": 0.479869,
-      "ev": 0.175678,
-      "quarter_kelly": 0.030289,
+      "model_probability": 0.49641,
+      "ev": 0.216204,
+      "quarter_kelly": 0.037276,
       "recommendation": "BUY",
       "confidence": "B",
       "lineup_announced": false,
-      "away_expected_runs": 3.341,
-      "home_expected_runs": 3.366,
+      "away_expected_runs": 3.402,
+      "home_expected_runs": 3.294,
       "simulations": 100000
     },
     "best_runline": {
@@ -57,46 +56,19 @@
       "weather_run_factor": 1.0,
       "selection": "Cleveland Guardians",
       "point": 1.5,
-      "decimal_odds": 1.63,
+      "decimal_odds": 1.64,
       "market_no_vig_probability": null,
-      "model_probability": 0.72402,
-      "ev": 0.180153,
-      "quarter_kelly": 0.071489,
+      "model_probability": 0.73946,
+      "ev": 0.212714,
+      "quarter_kelly": 0.083092,
       "recommendation": "BUY",
       "confidence": "A",
       "lineup_announced": false,
-      "away_expected_runs": 3.341,
-      "home_expected_runs": 3.366,
+      "away_expected_runs": 3.402,
+      "home_expected_runs": 3.294,
       "simulations": 100000
     },
-    "best_total": {
-      "market": "total",
-      "event_id": "c43e98d4effc9181f21e21225fcbd47a",
-      "commence_time_utc": "2026-10-12T00:00:00Z",
-      "away_team": "Los Angeles Dodgers",
-      "home_team": "Milwaukee Brewers",
-      "away_probable_pitcher": "Yoshinobu Yamamoto",
-      "home_probable_pitcher": "Logan Henderson",
-      "away_elo": null,
-      "home_elo": null,
-      "away_recent_form": null,
-      "home_recent_form": null,
-      "park_factor": 1.0,
-      "weather_run_factor": 1.0,
-      "selection": "Under",
-      "point": 6.0,
-      "decimal_odds": 1.93,
-      "market_no_vig_probability": null,
-      "model_probability": 0.70698,
-      "ev": 0.364471,
-      "quarter_kelly": 0.097976,
-      "recommendation": "BUY",
-      "confidence": "A",
-      "lineup_announced": null,
-      "away_expected_runs": 2.29,
-      "home_expected_runs": 2.383,
-      "simulations": 100000
-    }
+    "best_total": null
   },
   "note": "BUY 判定のみを抜粋した軽量版。全試合の全指標は https://kouheiarai.github.io/mlb-ai-predictor/prediction_latest.json を参照。",
   "buy_rankings": {
@@ -109,9 +81,9 @@
         "selection": "Cleveland Guardians",
         "point": "",
         "decimal_odds": 2.45,
-        "model_probability": 0.479869,
-        "ev": 0.175678,
-        "quarter_kelly": 0.030289,
+        "model_probability": 0.49641,
+        "ev": 0.216204,
+        "quarter_kelly": 0.037276,
         "confidence": "B"
       }
     ],
@@ -123,40 +95,13 @@
         "commence_time_utc": "2026-10-13T00:00:00Z",
         "selection": "Cleveland Guardians",
         "point": 1.5,
-        "decimal_odds": 1.63,
-        "model_probability": 0.72402,
-        "ev": 0.180153,
-        "quarter_kelly": 0.071489,
+        "decimal_odds": 1.64,
+        "model_probability": 0.73946,
+        "ev": 0.212714,
+        "quarter_kelly": 0.083092,
         "confidence": "A"
-      },
-      {
-        "market": "runline",
-        "away_team": "Los Angeles Dodgers",
-        "home_team": "Milwaukee Brewers",
-        "commence_time_utc": "2026-10-12T00:00:00Z",
-        "selection": "Los Angeles Dodgers",
-        "point": 1.5,
-        "decimal_odds": 1.4,
-        "model_probability": 0.75567,
-        "ev": 0.057938,
-        "quarter_kelly": 0.036211,
-        "confidence": "B"
       }
     ],
-    "total": [
-      {
-        "market": "total",
-        "away_team": "Los Angeles Dodgers",
-        "home_team": "Milwaukee Brewers",
-        "commence_time_utc": "2026-10-12T00:00:00Z",
-        "selection": "Under",
-        "point": 6.0,
-        "decimal_odds": 1.93,
-        "model_probability": 0.70698,
-        "ev": 0.364471,
-        "quarter_kelly": 0.097976,
-        "confidence": "A"
-      }
-    ]
+    "total": []
   }
 }

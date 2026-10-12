@@ -1,19 +1,6 @@
 {
-  "fetched_at_utc": "2026-10-11T23:17:50.612714+00:00",
+  "fetched_at_utc": "2026-10-12T03:22:02.862642+00:00",
   "games": [
-    {
-      "game_pk": 849809,
-      "away_team": "Los Angeles Dodgers",
-      "home_team": "Milwaukee Brewers",
-      "game_date_utc": "2026-10-12T00:00:00Z",
-      "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
-      }
-    },
     {
       "game_pk": 849812,
       "away_team": "Los Angeles Dodgers",
@@ -45,6 +32,19 @@
       "away_team": "Cleveland Guardians",
       "home_team": "Tampa Bay Rays",
       "game_date_utc": "2026-10-14T00:00:00Z",
+      "weather": {
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
+      }
+    },
+    {
+      "game_pk": 849811,
+      "away_team": "Milwaukee Brewers",
+      "home_team": "Los Angeles Dodgers",
+      "game_date_utc": "2026-10-15T00:00:00Z",
       "weather": {
         "weather_run_factor": 1.0,
         "temperature_c": null,

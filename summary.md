@@ -1,20 +1,19 @@
 MLB AI Predictor Ver.26.0 推奨一覧
 
-更新: 2026-10-12 08:17 JST（UTC 2026-10-11T23:17:50.612714+00:00）
-対象日 (UTC): 2026-10-12, 2026-10-13
-対象試合数: 2
-BUY 件数: マネーライン 1 / ランライン 2 / 合計得点 1
+更新: 2026-10-12 12:22 JST（UTC 2026-10-12T03:22:02.862642+00:00）
+対象日 (UTC): 2026-10-13
+対象試合数: 1
+BUY 件数: マネーライン 1 / ランライン 1 / 合計得点 0
 オッズ: Pinnacle via The Odds API
 
 ## マネーライン（EV 降順・1 件）
-1. Cleveland Guardians | Cleveland Guardians @ Tampa Bay Rays | 2026-10-13 09:00 JST | オッズ 2.45 | AI勝率 48.0% | EV 17.6% | 1/4ケリー 3.0% | 信頼度 B
+1. Cleveland Guardians | Cleveland Guardians @ Tampa Bay Rays | 2026-10-13 09:00 JST | オッズ 2.45 | AI勝率 49.6% | EV 21.6% | 1/4ケリー 3.7% | 信頼度 B
 
-## ランライン（EV 降順・2 件）
-1. Cleveland Guardians +1.5 | Cleveland Guardians @ Tampa Bay Rays | 2026-10-13 09:00 JST | オッズ 1.63 | AI勝率 72.4% | EV 18.0% | 1/4ケリー 7.1% | 信頼度 A
-2. Los Angeles Dodgers +1.5 | Los Angeles Dodgers @ Milwaukee Brewers | 2026-10-12 09:00 JST | オッズ 1.40 | AI勝率 75.6% | EV 5.8% | 1/4ケリー 3.6% | 信頼度 B
+## ランライン（EV 降順・1 件）
+1. Cleveland Guardians +1.5 | Cleveland Guardians @ Tampa Bay Rays | 2026-10-13 09:00 JST | オッズ 1.64 | AI勝率 73.9% | EV 21.3% | 1/4ケリー 8.3% | 信頼度 A
 
-## 合計得点（EV 降順・1 件）
-1. Under +6 | Los Angeles Dodgers @ Milwaukee Brewers | 2026-10-12 09:00 JST | オッズ 1.93 | AI勝率 70.7% | EV 36.4% | 1/4ケリー 9.8% | 信頼度 A
+## 合計得点（EV 降順・0 件）
+BUY 判定なし。
 
 ## 注意
 
