@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-13T04:36:49.543508+00:00",
+  "fetched_at_utc": "2026-10-13T20:52:53.801114+00:00",
   "events": [
     {
       "id": "38049724abb5fcb2b69405bbe4bb3d72",
@@ -12,51 +12,51 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-13T04:36:38Z",
+          "last_update": "2026-10-13T20:52:37Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-13T04:36:38Z",
+              "last_update": "2026-10-13T20:52:37Z",
               "outcomes": [
                 {
                   "name": "Cleveland Guardians",
-                  "price": 2.2
+                  "price": 2.18
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 1.75
+                  "price": 1.78
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-13T04:36:38Z",
+              "last_update": "2026-10-13T20:52:37Z",
               "outcomes": [
                 {
                   "name": "Cleveland Guardians",
-                  "price": 1.52,
+                  "price": 1.56,
                   "point": 1.5
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 2.67,
+                  "price": 2.61,
                   "point": -1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-13T04:36:38Z",
+              "last_update": "2026-10-13T20:52:37Z",
               "outcomes": [
                 {
                   "name": "Over",
-                  "price": 2.0,
-                  "point": 7.0
+                  "price": 1.85,
+                  "point": 6.5
                 },
                 {
                   "name": "Under",
-                  "price": 1.87,
-                  "point": 7.0
+                  "price": 2.05,
+                  "point": 6.5
                 }
               ]
             }
@@ -75,29 +75,29 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-13T04:36:38Z",
+          "last_update": "2026-10-13T20:52:37Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-13T04:36:38Z",
+              "last_update": "2026-10-13T20:52:37Z",
               "outcomes": [
                 {
                   "name": "Los Angeles Dodgers",
-                  "price": 1.6
+                  "price": 1.59
                 },
                 {
                   "name": "Milwaukee Brewers",
-                  "price": 2.51
+                  "price": 2.52
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-13T04:36:38Z",
+              "last_update": "2026-10-13T20:52:37Z",
               "outcomes": [
                 {
                   "name": "Los Angeles Dodgers",
-                  "price": 2.3,
+                  "price": 2.29,
                   "point": -1.5
                 },
                 {
@@ -109,7 +109,7 @@
             },
             {
               "key": "totals",
-              "last_update": "2026-10-13T04:36:38Z",
+              "last_update": "2026-10-13T20:52:37Z",
               "outcomes": [
                 {
                   "name": "Over",

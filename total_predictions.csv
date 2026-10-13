@@ -1,5 +1,5 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
 total,622fd31d2c8178b025455656e0d2fb89,2026-10-15T00:00:00Z,Milwaukee Brewers,Los Angeles Dodgers,TBD,TBD,Under,7.5,1.88,0.87019,0.0,0.635957,0.18067,1.0,1.01,2.528,2.634,100000,BUY
-total,38049724abb5fcb2b69405bbe4bb3d72,2026-10-14T00:00:00Z,Cleveland Guardians,Tampa Bay Rays,Parker Messick,Freddy Peralta,Under,7.0,1.87,0.56056,0.14293,0.048247,0.013864,1.0,0.98,3.44,3.0,100000,LEAN
-total,38049724abb5fcb2b69405bbe4bb3d72,2026-10-14T00:00:00Z,Cleveland Guardians,Tampa Bay Rays,Parker Messick,Freddy Peralta,Over,7.0,2.0,0.29651,0.14293,-0.40698,0.0,1.0,0.98,3.44,3.0,100000,PASS
+total,38049724abb5fcb2b69405bbe4bb3d72,2026-10-14T00:00:00Z,Cleveland Guardians,Tampa Bay Rays,Parker Messick,Freddy Peralta,Under,6.5,2.05,0.55395,0.0,0.135598,0.032285,1.0,0.98,3.462,3.039,100000,BUY
+total,38049724abb5fcb2b69405bbe4bb3d72,2026-10-14T00:00:00Z,Cleveland Guardians,Tampa Bay Rays,Parker Messick,Freddy Peralta,Over,6.5,1.85,0.44605,0.0,-0.174808,0.0,1.0,0.98,3.462,3.039,100000,PASS
 total,622fd31d2c8178b025455656e0d2fb89,2026-10-15T00:00:00Z,Milwaukee Brewers,Los Angeles Dodgers,TBD,TBD,Over,7.5,1.99,0.12981,0.0,-0.741678,0.0,1.0,1.01,2.528,2.634,100000,PASS

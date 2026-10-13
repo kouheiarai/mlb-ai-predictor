@@ -1,6 +1,6 @@
 {
   "model_version": "26.0",
-  "updated_at_utc": "2026-10-13T04:36:49.543508+00:00",
+  "updated_at_utc": "2026-10-13T20:52:53.801114+00:00",
   "data_age_hours": 0.0,
   "is_stale": false,
   "stale_warning": null,
@@ -12,7 +12,7 @@
   "summary": {
     "moneyline_buy_count": 2,
     "runline_buy_count": 2,
-    "total_buy_count": 1,
+    "total_buy_count": 2,
     "best_moneyline": {
       "market": "moneyline",
       "event_id": "38049724abb5fcb2b69405bbe4bb3d72",
@@ -29,16 +29,16 @@
       "weather_run_factor": 1.0,
       "selection": "Cleveland Guardians",
       "point": "",
-      "decimal_odds": 2.2,
-      "market_no_vig_probability": 0.443038,
-      "model_probability": 0.546833,
-      "ev": 0.203033,
-      "quarter_kelly": 0.042299,
+      "decimal_odds": 2.18,
+      "market_no_vig_probability": 0.449495,
+      "model_probability": 0.545762,
+      "ev": 0.189761,
+      "quarter_kelly": 0.040204,
       "recommendation": "BUY",
-      "confidence": "B",
-      "lineup_announced": false,
-      "away_expected_runs": 3.44,
-      "home_expected_runs": 3.0,
+      "confidence": "A",
+      "lineup_announced": true,
+      "away_expected_runs": 3.462,
+      "home_expected_runs": 3.039,
       "simulations": 100000
     },
     "best_runline": {
@@ -108,11 +108,11 @@
         "commence_time_utc": "2026-10-14T00:00:00Z",
         "selection": "Cleveland Guardians",
         "point": "",
-        "decimal_odds": 2.2,
-        "model_probability": 0.546833,
-        "ev": 0.203033,
-        "quarter_kelly": 0.042299,
-        "confidence": "B"
+        "decimal_odds": 2.18,
+        "model_probability": 0.545762,
+        "ev": 0.189761,
+        "quarter_kelly": 0.040204,
+        "confidence": "A"
       },
       {
         "market": "moneyline",
@@ -121,10 +121,10 @@
         "commence_time_utc": "2026-10-15T00:00:00Z",
         "selection": "Milwaukee Brewers",
         "point": "",
-        "decimal_odds": 2.51,
-        "model_probability": 0.465799,
-        "ev": 0.169156,
-        "quarter_kelly": 0.028006,
+        "decimal_odds": 2.52,
+        "model_probability": 0.465434,
+        "ev": 0.172894,
+        "quarter_kelly": 0.028437,
         "confidence": "B"
       }
     ],
@@ -149,11 +149,11 @@
         "commence_time_utc": "2026-10-14T00:00:00Z",
         "selection": "Cleveland Guardians",
         "point": 1.5,
-        "decimal_odds": 1.52,
-        "model_probability": 0.78717,
-        "ev": 0.196498,
-        "quarter_kelly": 0.09447,
-        "confidence": "A"
+        "decimal_odds": 1.56,
+        "model_probability": 0.78313,
+        "ev": 0.221683,
+        "quarter_kelly": 0.098966,
+        "confidence": "S"
       }
     ],
     "total": [
@@ -169,6 +169,19 @@
         "ev": 0.635957,
         "quarter_kelly": 0.18067,
         "confidence": "A"
+      },
+      {
+        "market": "total",
+        "away_team": "Cleveland Guardians",
+        "home_team": "Tampa Bay Rays",
+        "commence_time_utc": "2026-10-14T00:00:00Z",
+        "selection": "Under",
+        "point": 6.5,
+        "decimal_odds": 2.05,
+        "model_probability": 0.55395,
+        "ev": 0.135598,
+        "quarter_kelly": 0.032285,
+        "confidence": "B"
       }
     ]
   }
