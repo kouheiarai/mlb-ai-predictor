@@ -1,17 +1,17 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-12T22:38:51.353274+00:00
-- API requests remaining: 395
+- Updated: 2026-10-13T04:36:49.543508+00:00
+- API requests remaining: 392
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
 ### 1. Cleveland Guardians
 - Game: Cleveland Guardians @ Tampa Bay Rays
-- Odds: 2.45
-- AI probability: 54.3%
-- EV: 33.0%
-- 1/4 Kelly: 5.7%
+- Odds: 2.2
+- AI probability: 54.7%
+- EV: 20.3%
+- 1/4 Kelly: 4.2%
 - Lineup: 未発表
 - Lineup quality: +0.00
 - Platoon proxy: +0.00
@@ -20,16 +20,32 @@
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Cleveland Guardians 3.45 - Tampa Bay Rays 2.99
+- Expected score: Cleveland Guardians 3.44 - Tampa Bay Rays 3.00
+
+### 2. Milwaukee Brewers
+- Game: Milwaukee Brewers @ Los Angeles Dodgers
+- Odds: 2.51
+- AI probability: 46.6%
+- EV: 16.9%
+- 1/4 Kelly: 2.8%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Milwaukee Brewers 2.53 - Los Angeles Dodgers 2.63
 
 ## Run Line Buy Ranking
 
-### 1. Cleveland Guardians +1.5
-- Game: Cleveland Guardians @ Tampa Bay Rays
-- Odds: 1.67
-- Cover probability: 78.8%
-- EV: 31.6%
-- 1/4 Kelly: 11.8%
+### 1. Milwaukee Brewers +1.5
+- Game: Milwaukee Brewers @ Los Angeles Dodgers
+- Odds: 1.68
+- Cover probability: 74.4%
+- EV: 24.9%
+- 1/4 Kelly: 9.2%
 - Lineup: 未発表
 - Lineup quality: +0.00
 - Platoon proxy: +0.00
@@ -38,7 +54,23 @@
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Cleveland Guardians 3.45 - Tampa Bay Rays 2.99
+- Expected score: Milwaukee Brewers 2.53 - Los Angeles Dodgers 2.63
+
+### 2. Cleveland Guardians +1.5
+- Game: Cleveland Guardians @ Tampa Bay Rays
+- Odds: 1.52
+- Cover probability: 78.7%
+- EV: 19.6%
+- 1/4 Kelly: 9.4%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Cleveland Guardians 3.44 - Tampa Bay Rays 3.00
 
 ## Model Notes
 
