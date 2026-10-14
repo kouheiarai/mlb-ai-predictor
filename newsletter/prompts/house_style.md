@@ -38,7 +38,7 @@ below follows from that.
   "But" when it helps the rhythm. Read it back and ask whether a person would actually say it.
 - **You are allowed to be in the issue.** Use "I" when it is true and it helps: what you went
   looking for, what surprised you, what you could not find, what you had to read twice. "The number
-  that stopped me was the first row of that table" is worth more than another sentence of analysis,
+  that stopped me was the one in the second line" is worth more than another sentence of analysis,
   because it tells the reader a human went through this and is reporting back. Keep it occasional —
   two or three touches an issue, never a diary — and never let it replace evidence.
 - **Say the honest thing about the material.** If a figure is genuinely strange, say it is strange.
@@ -130,8 +130,8 @@ Apply this concretely:
 
 - **Every section opens with its conclusion, in bold, on its own line.** One sentence. The
   paragraphs beneath it are evidence for a reader who wants it, not a path to it.
-- **Numbers that matter go in a list or a table, never buried in a sentence.** If you find yourself
-  writing three figures into one paragraph, that paragraph wants to be a list.
+- **Numbers that matter go in a list, never buried in a sentence.** If you find yourself writing
+  three figures into one paragraph, that paragraph wants to be a list.
 - **Bold the specific number, not the phrase around it.** Bold is a landing spot for a skimming
   eye; if half a sentence is bold it stops working.
 - **The single most surprising thing in the issue gets its own visual break** — its own short
@@ -241,32 +241,36 @@ the issue is weak, say so there.
 
 beehiiv renders this directly, so keep it simple and portable:
 
-- Use only `<p>`, `<h2>`, `<h3>`, `<strong>`, `<em>`, `<ul>`, `<ol>`, `<li>`, `<a>`, `<blockquote>`,
-  `<table>`, `<tr>`, `<th>`, `<td>`, and `<hr>`.
+- Use only `<p>`, `<h2>`, `<h3>`, `<strong>`, `<em>`, `<ul>`, `<ol>`, `<li>`, `<a>`,
+  `<blockquote>`, and `<hr>`.
 - No `<style>` blocks, no `class` or `id` attributes, no `<script>`, no `<img>`.
-- **Tables are the one exception, and they need inline `style` attributes.** Mail clients strip
-  `<style>` blocks and ignore class selectors, so an unstyled `<table>` falls back to the client's
-  default: no borders, no padding, columns jammed together. A table is usually the most quoted
-  thing in an issue, so it cannot be the ugliest. Copy this shape exactly:
+- **Do not use `<table>`.** It does not survive the route the issue actually travels. beehiiv's
+  HTML snippet block went behind a paid plan in October 2026, so issues are now pasted into the
+  editor as rich text — and that paste strips inline `style` attributes. A styled table arrives
+  with its borders, padding and alignment gone, which is worse than not having built one. Mail
+  clients are uneven about table support on top of that, and a table wide enough to be worth
+  having is a table that makes a phone scroll sideways.
+
+- **Present comparable figures as a list instead.** One item per line, the label first, then the
+  values separated by middots. It survives the paste, reads on a phone, and keeps each row's
+  numbers next to the thing they describe:
 
   ```html
-  <table style="width:100%;border-collapse:collapse;margin:28px 0;">
-    <tr>
-      <th style="text-align:left;padding:10px 12px;border-bottom:2px solid #9aa0a6;font-weight:600;">Destination</th>
-      <th style="text-align:right;padding:10px 12px;border-bottom:2px solid #9aa0a6;font-weight:600;">Flow</th>
-    </tr>
-    <tr>
-      <td style="padding:10px 12px;border-bottom:1px solid #d9dcdf;">Cash and deposits</td>
-      <td style="text-align:right;padding:10px 12px;border-bottom:1px solid #d9dcdf;">+&yen;1.7tn</td>
-    </tr>
-  </table>
+  <ul>
+    <li><strong>Cash and deposits</strong> &mdash; &yen;1,132tn &middot; 44.9% of the total &middot; <strong>+0.5%</strong> on the year</li>
+    <li><strong>Equity</strong> &mdash; &yen;486tn &middot; 19.3% &middot; <strong>+47.0%</strong></li>
+    <li><strong>Investment trusts</strong> &mdash; &yen;193tn &middot; 7.7% &middot; +36.8%</li>
+  </ul>
   ```
 
-  Rules for the styling itself: set **borders, padding and alignment only**. Never set a text
-  colour or a background colour — a reader in dark mode gets your dark text on their dark
-  background and the row disappears. Leaving colour unset means the client's own theme applies and
-  the table stays readable either way. Right-align every column that holds a number, left-align
-  every column that holds a label; numbers that share a column must line up or the comparison the
-  table exists to make is harder to see, not easier.
+  Bold the label and bold the single figure the paragraph after the list is going to talk about;
+  leave the rest plain, so the eye lands on the comparison being made rather than on every number
+  at once. Give the units once in the first item if they are the same throughout. Keep a list to
+  about five items — past that the reader is skimming a table anyway, and the right move is to
+  cut the rows that are not doing work.
+
+  For a before-and-after comparison, such as two versions of a central bank's wording, use two
+  labelled blocks of prose rather than two columns. Quote the old, quote the new, then say what
+  moved.
 - Link every claim that has a source: `<a href="...">the FSA's tally</a>`.
 - Do not include the headline as an `<h1>` in the body — beehiiv adds the title itself.
