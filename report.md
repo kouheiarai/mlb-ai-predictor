@@ -1,7 +1,7 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-14T02:46:09.051087+00:00
-- API requests remaining: 383
+- Updated: 2026-10-14T19:48:55.620600+00:00
+- API requests remaining: 380
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
@@ -9,9 +9,9 @@
 ### 1. Milwaukee Brewers
 - Game: Milwaukee Brewers @ Los Angeles Dodgers
 - Odds: 2.52
-- AI probability: 46.5%
+- AI probability: 46.6%
 - EV: 17.3%
-- 1/4 Kelly: 2.8%
+- 1/4 Kelly: 2.9%
 - Lineup: 未発表
 - Lineup quality: +0.00
 - Platoon proxy: +0.00
@@ -26,10 +26,10 @@
 
 ### 1. Milwaukee Brewers +1.5
 - Game: Milwaukee Brewers @ Los Angeles Dodgers
-- Odds: 1.68
+- Odds: 1.72
 - Cover probability: 74.4%
-- EV: 24.9%
-- 1/4 Kelly: 9.2%
+- EV: 27.9%
+- 1/4 Kelly: 9.7%
 - Lineup: 未発表
 - Lineup quality: +0.00
 - Platoon proxy: +0.00

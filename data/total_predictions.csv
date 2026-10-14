@@ -1,3 +1,5 @@
 ﻿market,event_id,commence_time_utc,away_team,home_team,away_probable_pitcher,home_probable_pitcher,selection,point,decimal_odds,model_probability,push_probability,ev,quarter_kelly,weather_run_factor,park_factor,away_expected_runs,home_expected_runs,simulations,recommendation
-total,622fd31d2c8178b025455656e0d2fb89,2026-10-15T00:00:00Z,Milwaukee Brewers,Los Angeles Dodgers,TBD,TBD,Under,7.5,1.88,0.87019,0.0,0.635957,0.18067,1.0,1.01,2.528,2.634,100000,BUY
-total,622fd31d2c8178b025455656e0d2fb89,2026-10-15T00:00:00Z,Milwaukee Brewers,Los Angeles Dodgers,TBD,TBD,Over,7.5,1.99,0.12981,0.0,-0.741678,0.0,1.0,1.01,2.528,2.634,100000,PASS
+total,622fd31d2c8178b025455656e0d2fb89,2026-10-15T00:00:00Z,Milwaukee Brewers,Los Angeles Dodgers,TBD,TBD,Under,7.5,1.85,0.87019,0.0,0.609852,0.179368,1.0,1.01,2.528,2.634,100000,BUY
+total,a681025734060bef9fcce7ea7175674c,2026-10-15T17:00:00Z,Tampa Bay Rays,Cleveland Guardians,TBD,TBD,Under,6.5,2.02,0.49589,0.0,0.001698,0.000416,1.0061,1.0,3.253,3.627,100000,LEAN
+total,a681025734060bef9fcce7ea7175674c,2026-10-15T17:00:00Z,Tampa Bay Rays,Cleveland Guardians,TBD,TBD,Over,6.5,1.85,0.50411,0.0,-0.067397,0.0,1.0061,1.0,3.253,3.627,100000,PASS
+total,622fd31d2c8178b025455656e0d2fb89,2026-10-15T00:00:00Z,Milwaukee Brewers,Los Angeles Dodgers,TBD,TBD,Over,7.5,2.05,0.12981,0.0,-0.73389,0.0,1.0,1.01,2.528,2.634,100000,PASS
