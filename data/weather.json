@@ -1,19 +1,6 @@
 {
-  "fetched_at_utc": "2026-10-13T20:52:53.801114+00:00",
+  "fetched_at_utc": "2026-10-14T00:43:26.640199+00:00",
   "games": [
-    {
-      "game_pk": 849813,
-      "away_team": "Cleveland Guardians",
-      "home_team": "Tampa Bay Rays",
-      "game_date_utc": "2026-10-14T00:00:00Z",
-      "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
-      }
-    },
     {
       "game_pk": 849811,
       "away_team": "Milwaukee Brewers",
@@ -33,11 +20,11 @@
       "home_team": "Cleveland Guardians",
       "game_date_utc": "2026-10-15T22:00:00Z",
       "weather": {
-        "weather_run_factor": 0.997,
-        "temperature_c": 17.7,
+        "weather_run_factor": 1.0049,
+        "temperature_c": 16.5,
         "precipitation_probability": 48,
-        "wind_speed_kmh": 13.6,
-        "wind_direction_deg": 53
+        "wind_speed_kmh": 24.0,
+        "wind_direction_deg": 36
       }
     },
     {
@@ -45,6 +32,32 @@
       "away_team": "Milwaukee Brewers",
       "home_team": "Los Angeles Dodgers",
       "game_date_utc": "2026-10-16T01:00:00Z",
+      "weather": {
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
+      }
+    },
+    {
+      "game_pk": 849817,
+      "away_team": "Tampa Bay Rays",
+      "home_team": "Cleveland Guardians",
+      "game_date_utc": "2026-10-16T22:00:00Z",
+      "weather": {
+        "weather_run_factor": 1.0047,
+        "temperature_c": 12.5,
+        "precipitation_probability": 84,
+        "wind_speed_kmh": 37.4,
+        "wind_direction_deg": 300
+      }
+    },
+    {
+      "game_pk": 849808,
+      "away_team": "Milwaukee Brewers",
+      "home_team": "Los Angeles Dodgers",
+      "game_date_utc": "2026-10-17T01:00:00Z",
       "weather": {
         "weather_run_factor": 1.0,
         "temperature_c": null,
