@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-15T19:32:50.669191+00:00",
+  "fetched_at_utc": "2026-10-15T22:45:24.847153+00:00",
   "games": [
     {
       "game_pk": 849818,
@@ -30,11 +30,11 @@
             "batting_order": 2,
             "position": "1B",
             "season_stats": {
-              "ops": 0.594,
-              "plate_appearances": 24.0,
-              "avg": 0.19,
-              "obp": 0.261,
-              "slg": 0.333
+              "ops": 0.568,
+              "plate_appearances": 25.0,
+              "avg": 0.182,
+              "obp": 0.25,
+              "slg": 0.318
             },
             "bat_side": "L"
           },
@@ -44,11 +44,11 @@
             "batting_order": 3,
             "position": "3B",
             "season_stats": {
-              "ops": 0.698,
-              "plate_appearances": 23.0,
-              "avg": 0.25,
-              "obp": 0.348,
-              "slg": 0.35
+              "ops": 0.666,
+              "plate_appearances": 24.0,
+              "avg": 0.238,
+              "obp": 0.333,
+              "slg": 0.333
             },
             "bat_side": "R"
           },
@@ -58,11 +58,11 @@
             "batting_order": 4,
             "position": "RF",
             "season_stats": {
-              "ops": 0.527,
-              "plate_appearances": 22.0,
-              "avg": 0.15,
-              "obp": 0.227,
-              "slg": 0.3
+              "ops": 0.503,
+              "plate_appearances": 23.0,
+              "avg": 0.143,
+              "obp": 0.217,
+              "slg": 0.286
             },
             "bat_side": "L"
           },
@@ -172,11 +172,11 @@
             "batting_order": 3,
             "position": "RF",
             "season_stats": {
-              "ops": 0.895,
-              "plate_appearances": 34.0,
-              "avg": 0.31,
-              "obp": 0.412,
-              "slg": 0.483
+              "ops": 0.867,
+              "plate_appearances": 35.0,
+              "avg": 0.3,
+              "obp": 0.4,
+              "slg": 0.467
             },
             "bat_side": "L"
           },
@@ -223,6 +223,20 @@
             "bat_side": "L"
           },
           {
+            "person_id": 694197,
+            "full_name": "Angel Genao",
+            "batting_order": 6,
+            "position": "2B",
+            "season_stats": {
+              "ops": 1.5,
+              "plate_appearances": 2.0,
+              "avg": 0.5,
+              "obp": 0.5,
+              "slg": 1.0
+            },
+            "bat_side": "S"
+          },
+          {
             "person_id": 672275,
             "full_name": "Patrick Bailey",
             "batting_order": 7,
@@ -249,20 +263,6 @@
               "slg": 0.75
             },
             "bat_side": "L"
-          },
-          {
-            "person_id": 677587,
-            "full_name": "Brayan Rocchio",
-            "batting_order": 9,
-            "position": "SS",
-            "season_stats": {
-              "ops": 0.334,
-              "plate_appearances": 29.0,
-              "avg": 0.12,
-              "obp": 0.214,
-              "slg": 0.12
-            },
-            "bat_side": "S"
           }
         ],
         "away_lineup_status": "official",
@@ -281,17 +281,271 @@
       "away_team": "Milwaukee Brewers",
       "home_team": "Los Angeles Dodgers",
       "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": [],
-        "away_lineup_status": "unavailable",
-        "away_lineup_reliability": 0.0,
-        "away_lineup_confidence": "Unavailable",
+        "away_announced": true,
+        "home_announced": true,
+        "away_batting_order": [
+          {
+            "person_id": 694192,
+            "full_name": "Jackson Chourio",
+            "batting_order": 1,
+            "position": "LF",
+            "season_stats": {
+              "ops": 0.642,
+              "plate_appearances": 33.0,
+              "avg": 0.2,
+              "obp": 0.242,
+              "slg": 0.4
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 668930,
+            "full_name": "Brice Turang",
+            "batting_order": 2,
+            "position": "2B",
+            "season_stats": {
+              "ops": 0.767,
+              "plate_appearances": 31.0,
+              "avg": 0.24,
+              "obp": 0.367,
+              "slg": 0.4
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 661388,
+            "full_name": "William Contreras",
+            "batting_order": 3,
+            "position": "C",
+            "season_stats": {
+              "ops": 1.156,
+              "plate_appearances": 31.0,
+              "avg": 0.37,
+              "obp": 0.452,
+              "slg": 0.704
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 641343,
+            "full_name": "Jake Bauers",
+            "batting_order": 4,
+            "position": "1B",
+            "season_stats": {
+              "ops": 0.824,
+              "plate_appearances": 30.0,
+              "avg": 0.261,
+              "obp": 0.433,
+              "slg": 0.391
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 592885,
+            "full_name": "Christian Yelich",
+            "batting_order": 5,
+            "position": "DH",
+            "season_stats": {
+              "ops": 0.835,
+              "plate_appearances": 23.0,
+              "avg": 0.35,
+              "obp": 0.435,
+              "slg": 0.4
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 669003,
+            "full_name": "Garrett Mitchell",
+            "batting_order": 6,
+            "position": "CF",
+            "season_stats": {
+              "ops": 0.71,
+              "plate_appearances": 29.0,
+              "avg": 0.2,
+              "obp": 0.31,
+              "slg": 0.4
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 806198,
+            "full_name": "Cooper Pratt",
+            "batting_order": 7,
+            "position": "SS",
+            "season_stats": {
+              "ops": 0.76,
+              "plate_appearances": 26.0,
+              "avg": 0.36,
+              "obp": 0.36,
+              "slg": 0.4
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 686217,
+            "full_name": "Sal Frelick",
+            "batting_order": 8,
+            "position": "RF",
+            "season_stats": {
+              "ops": 0.625,
+              "plate_appearances": 16.0,
+              "avg": 0.25,
+              "obp": 0.375,
+              "slg": 0.25
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 666152,
+            "full_name": "David Hamilton",
+            "batting_order": 9,
+            "position": "3B",
+            "season_stats": {
+              "ops": 0.929,
+              "plate_appearances": 8.0,
+              "avg": 0.429,
+              "obp": 0.5,
+              "slg": 0.429
+            },
+            "bat_side": "L"
+          }
+        ],
+        "home_batting_order": [
+          {
+            "person_id": 660271,
+            "full_name": "Shohei Ohtani",
+            "batting_order": 1,
+            "position": "DH",
+            "season_stats": {
+              "ops": 0.515,
+              "plate_appearances": 28.0,
+              "avg": 0.182,
+              "obp": 0.333,
+              "slg": 0.182
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 605141,
+            "full_name": "Mookie Betts",
+            "batting_order": 2,
+            "position": "SS",
+            "season_stats": {
+              "ops": 0.586,
+              "plate_appearances": 31.0,
+              "avg": 0.231,
+              "obp": 0.355,
+              "slg": 0.231
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 518692,
+            "full_name": "Freddie Freeman",
+            "batting_order": 3,
+            "position": "1B",
+            "season_stats": {
+              "ops": 0.664,
+              "plate_appearances": 29.0,
+              "avg": 0.192,
+              "obp": 0.241,
+              "slg": 0.423
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 669257,
+            "full_name": "Will Smith",
+            "batting_order": 4,
+            "position": "C",
+            "season_stats": {
+              "ops": 0.218,
+              "plate_appearances": 28.0,
+              "avg": 0.074,
+              "obp": 0.107,
+              "slg": 0.111
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 663656,
+            "full_name": "Kyle Tucker",
+            "batting_order": 5,
+            "position": "RF",
+            "season_stats": {
+              "ops": 0.885,
+              "plate_appearances": 27.0,
+              "avg": 0.304,
+              "obp": 0.407,
+              "slg": 0.478
+            },
+            "bat_side": "L"
+          },
+          {
+            "person_id": 606192,
+            "full_name": "Teoscar Hernández",
+            "batting_order": 6,
+            "position": "LF",
+            "season_stats": {
+              "ops": 0.522,
+              "plate_appearances": 28.0,
+              "avg": 0.192,
+              "obp": 0.214,
+              "slg": 0.308
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 500743,
+            "full_name": "Miguel Rojas",
+            "batting_order": 7,
+            "position": "2B",
+            "season_stats": {
+              "ops": 0.929,
+              "plate_appearances": 7.0,
+              "avg": 0.333,
+              "obp": 0.429,
+              "slg": 0.5
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 681624,
+            "full_name": "Andy Pages",
+            "batting_order": 8,
+            "position": "CF",
+            "season_stats": {
+              "ops": 0.519,
+              "plate_appearances": 24.0,
+              "avg": 0.227,
+              "obp": 0.292,
+              "slg": 0.227
+            },
+            "bat_side": "R"
+          },
+          {
+            "person_id": 571771,
+            "full_name": "Enrique Hernández",
+            "batting_order": 9,
+            "position": "3B",
+            "season_stats": {
+              "ops": 0.455,
+              "plate_appearances": 11.0,
+              "avg": 0.091,
+              "obp": 0.091,
+              "slg": 0.364
+            },
+            "bat_side": "R"
+          }
+        ],
+        "away_lineup_status": "official",
+        "away_lineup_reliability": 1.0,
+        "away_lineup_confidence": "Official",
         "away_prediction_source_games": 0,
-        "home_lineup_status": "unavailable",
-        "home_lineup_reliability": 0.0,
-        "home_lineup_confidence": "Unavailable",
+        "home_lineup_status": "official",
+        "home_lineup_reliability": 1.0,
+        "home_lineup_confidence": "Official",
         "home_prediction_source_games": 0
       }
     },
