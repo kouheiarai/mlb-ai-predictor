@@ -1,16 +1,16 @@
 {
-  "fetched_at_utc": "2026-10-16T02:19:08.864665+00:00",
+  "fetched_at_utc": "2026-10-16T19:07:00.215306+00:00",
   "games": [
     {
       "game_pk": 849817,
-      "game_date_utc": "2026-10-16T22:00:00Z",
+      "game_date_utc": "2026-10-17T00:00:00Z",
       "status": "Scheduled",
       "away_team": "Tampa Bay Rays",
       "home_team": "Cleveland Guardians",
       "away_probable_pitcher_id": 607259,
       "away_probable_pitcher": "Nick Martinez",
-      "home_probable_pitcher_id": null,
-      "home_probable_pitcher": "TBD",
+      "home_probable_pitcher_id": 542888,
+      "home_probable_pitcher": "Shawn Armstrong",
       "venue_id": 5,
       "venue_name": "Progressive Field",
       "away_starter_stats": {
@@ -21,11 +21,11 @@
         "innings_pitched": 180.0
       },
       "home_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
+        "person_id": 542888,
+        "era": 4.58,
+        "whip": 1.39,
+        "strikeout_walk_ratio": 1.7894736842105263,
+        "innings_pitched": 35.1
       },
       "lineups": {
         "away_announced": false,
@@ -42,63 +42,13 @@
         "home_prediction_source_games": 0
       },
       "away_probable_pitcher_hand": "R",
-      "home_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": "R",
       "weather": {
-        "weather_run_factor": 1.0026,
-        "temperature_c": 11.8,
-        "precipitation_probability": 57,
-        "wind_speed_kmh": 31.3,
-        "wind_direction_deg": 337
-      }
-    },
-    {
-      "game_pk": 849808,
-      "game_date_utc": "2026-10-17T01:00:00Z",
-      "status": "Scheduled",
-      "away_team": "Milwaukee Brewers",
-      "home_team": "Los Angeles Dodgers",
-      "away_probable_pitcher_id": null,
-      "away_probable_pitcher": "TBD",
-      "home_probable_pitcher_id": null,
-      "home_probable_pitcher": "TBD",
-      "venue_id": 22,
-      "venue_name": "UNIQLO Field at Dodger Stadium",
-      "away_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
-      },
-      "home_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
-      },
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": [],
-        "away_lineup_status": "unavailable",
-        "away_lineup_reliability": 0.0,
-        "away_lineup_confidence": "Unavailable",
-        "away_prediction_source_games": 0,
-        "home_lineup_status": "unavailable",
-        "home_lineup_reliability": 0.0,
-        "home_lineup_confidence": "Unavailable",
-        "home_prediction_source_games": 0
-      },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
-      "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "weather_run_factor": 0.999,
+        "temperature_c": 11.1,
+        "precipitation_probability": 25,
+        "wind_speed_kmh": 29.1,
+        "wind_direction_deg": 1
       }
     },
     {
@@ -144,61 +94,11 @@
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": null,
       "weather": {
-        "weather_run_factor": 0.9679,
-        "temperature_c": 8.0,
+        "weather_run_factor": 0.9711,
+        "temperature_c": 8.4,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 3.7,
-        "wind_direction_deg": 79
-      }
-    },
-    {
-      "game_pk": 849806,
-      "game_date_utc": "2026-10-19T00:00:00Z",
-      "status": "Scheduled",
-      "away_team": "Los Angeles Dodgers",
-      "home_team": "Milwaukee Brewers",
-      "away_probable_pitcher_id": null,
-      "away_probable_pitcher": "TBD",
-      "home_probable_pitcher_id": null,
-      "home_probable_pitcher": "TBD",
-      "venue_id": 32,
-      "venue_name": "American Family Field",
-      "away_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
-      },
-      "home_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
-      },
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": [],
-        "away_lineup_status": "unavailable",
-        "away_lineup_reliability": 0.0,
-        "away_lineup_confidence": "Unavailable",
-        "away_prediction_source_games": 0,
-        "home_lineup_status": "unavailable",
-        "home_lineup_reliability": 0.0,
-        "home_lineup_confidence": "Unavailable",
-        "home_prediction_source_games": 0
-      },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
-      "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
+        "wind_speed_kmh": 6.2,
+        "wind_direction_deg": 259
       }
     }
   ]

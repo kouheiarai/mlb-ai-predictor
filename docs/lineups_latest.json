@@ -1,31 +1,11 @@
 {
-  "fetched_at_utc": "2026-10-16T02:19:08.864665+00:00",
+  "fetched_at_utc": "2026-10-16T19:07:00.215306+00:00",
   "games": [
     {
       "game_pk": 849817,
-      "game_date_utc": "2026-10-16T22:00:00Z",
+      "game_date_utc": "2026-10-17T00:00:00Z",
       "away_team": "Tampa Bay Rays",
       "home_team": "Cleveland Guardians",
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": [],
-        "away_lineup_status": "unavailable",
-        "away_lineup_reliability": 0.0,
-        "away_lineup_confidence": "Unavailable",
-        "away_prediction_source_games": 0,
-        "home_lineup_status": "unavailable",
-        "home_lineup_reliability": 0.0,
-        "home_lineup_confidence": "Unavailable",
-        "home_prediction_source_games": 0
-      }
-    },
-    {
-      "game_pk": 849808,
-      "game_date_utc": "2026-10-17T01:00:00Z",
-      "away_team": "Milwaukee Brewers",
-      "home_team": "Los Angeles Dodgers",
       "lineups": {
         "away_announced": false,
         "home_announced": false,
@@ -46,26 +26,6 @@
       "game_date_utc": "2026-10-18T00:00:00Z",
       "away_team": "Tampa Bay Rays",
       "home_team": "Cleveland Guardians",
-      "lineups": {
-        "away_announced": false,
-        "home_announced": false,
-        "away_batting_order": [],
-        "home_batting_order": [],
-        "away_lineup_status": "unavailable",
-        "away_lineup_reliability": 0.0,
-        "away_lineup_confidence": "Unavailable",
-        "away_prediction_source_games": 0,
-        "home_lineup_status": "unavailable",
-        "home_lineup_reliability": 0.0,
-        "home_lineup_confidence": "Unavailable",
-        "home_prediction_source_games": 0
-      }
-    },
-    {
-      "game_pk": 849806,
-      "game_date_utc": "2026-10-19T00:00:00Z",
-      "away_team": "Los Angeles Dodgers",
-      "home_team": "Milwaukee Brewers",
       "lineups": {
         "away_announced": false,
         "home_announced": false,

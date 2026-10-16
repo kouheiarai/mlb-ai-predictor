@@ -1,52 +1,52 @@
 {
-  "fetched_at_utc": "2026-10-16T02:19:08.864665+00:00",
+  "fetched_at_utc": "2026-10-16T19:07:00.215306+00:00",
   "events": [
     {
       "id": "b9d2e07cf437b5643307aba274c45a74",
       "sport_key": "baseball_mlb",
       "sport_title": "MLB",
-      "commence_time": "2026-10-16T22:00:00Z",
+      "commence_time": "2026-10-17T00:00:00Z",
       "home_team": "Cleveland Guardians",
       "away_team": "Tampa Bay Rays",
       "bookmakers": [
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-16T02:18:54Z",
+          "last_update": "2026-10-16T19:06:31Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-16T02:18:54Z",
+              "last_update": "2026-10-16T19:06:31Z",
               "outcomes": [
                 {
                   "name": "Cleveland Guardians",
-                  "price": 1.96
+                  "price": 1.97
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 1.94
+                  "price": 1.95
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-16T02:18:54Z",
+              "last_update": "2026-10-16T19:06:31Z",
               "outcomes": [
                 {
                   "name": "Cleveland Guardians",
-                  "price": 1.51,
+                  "price": 1.52,
                   "point": 1.5
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 2.7,
+                  "price": 2.71,
                   "point": -1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-16T02:18:54Z",
+              "last_update": "2026-10-16T19:06:31Z",
               "outcomes": [
                 {
                   "name": "Over",
@@ -55,7 +55,7 @@
                 },
                 {
                   "name": "Under",
-                  "price": 1.93,
+                  "price": 1.96,
                   "point": 6.5
                 }
               ]
