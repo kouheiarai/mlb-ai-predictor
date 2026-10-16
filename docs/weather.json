@@ -1,43 +1,17 @@
 {
-  "fetched_at_utc": "2026-10-15T22:45:24.847153+00:00",
+  "fetched_at_utc": "2026-10-16T02:19:08.864665+00:00",
   "games": [
-    {
-      "game_pk": 849818,
-      "away_team": "Tampa Bay Rays",
-      "home_team": "Cleveland Guardians",
-      "game_date_utc": "2026-10-15T17:00:00Z",
-      "weather": {
-        "weather_run_factor": 0.9886,
-        "temperature_c": 17.7,
-        "precipitation_probability": 1,
-        "wind_speed_kmh": 5.2,
-        "wind_direction_deg": 165
-      }
-    },
-    {
-      "game_pk": 849810,
-      "away_team": "Milwaukee Brewers",
-      "home_team": "Los Angeles Dodgers",
-      "game_date_utc": "2026-10-16T00:00:00Z",
-      "weather": {
-        "weather_run_factor": 1.0,
-        "temperature_c": null,
-        "precipitation_probability": null,
-        "wind_speed_kmh": null,
-        "wind_direction_deg": null
-      }
-    },
     {
       "game_pk": 849817,
       "away_team": "Tampa Bay Rays",
       "home_team": "Cleveland Guardians",
       "game_date_utc": "2026-10-16T22:00:00Z",
       "weather": {
-        "weather_run_factor": 0.9982,
-        "temperature_c": 12.4,
+        "weather_run_factor": 1.0026,
+        "temperature_c": 11.8,
         "precipitation_probability": 57,
-        "wind_speed_kmh": 25.6,
-        "wind_direction_deg": 342
+        "wind_speed_kmh": 31.3,
+        "wind_direction_deg": 337
       }
     },
     {
@@ -59,11 +33,24 @@
       "home_team": "Cleveland Guardians",
       "game_date_utc": "2026-10-18T00:00:00Z",
       "weather": {
-        "weather_run_factor": 0.9729,
-        "temperature_c": 8.9,
+        "weather_run_factor": 0.9679,
+        "temperature_c": 8.0,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 7.0,
-        "wind_direction_deg": 258
+        "wind_speed_kmh": 3.7,
+        "wind_direction_deg": 79
+      }
+    },
+    {
+      "game_pk": 849806,
+      "away_team": "Los Angeles Dodgers",
+      "home_team": "Milwaukee Brewers",
+      "game_date_utc": "2026-10-19T00:00:00Z",
+      "weather": {
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
       }
     }
   ]
