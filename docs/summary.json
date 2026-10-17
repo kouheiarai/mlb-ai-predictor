@@ -1,6 +1,6 @@
 {
   "model_version": "26.0",
-  "updated_at_utc": "2026-10-17T21:50:30.726858+00:00",
+  "updated_at_utc": "2026-10-17T23:36:11.335799+00:00",
   "data_age_hours": 0.0,
   "is_stale": false,
   "stale_warning": null,
@@ -11,7 +11,7 @@
   "summary": {
     "moneyline_buy_count": 1,
     "runline_buy_count": 1,
-    "total_buy_count": 0,
+    "total_buy_count": 1,
     "best_moneyline": {
       "market": "moneyline",
       "event_id": "bf41baaebfa23a202d2f3a6811425ff9",
@@ -28,11 +28,11 @@
       "weather_run_factor": 0.9926,
       "selection": "Cleveland Guardians",
       "point": "",
-      "decimal_odds": 1.99,
-      "market_no_vig_probability": 0.492347,
-      "model_probability": 0.575318,
-      "ev": 0.144883,
-      "quarter_kelly": 0.036587,
+      "decimal_odds": 2.0,
+      "market_no_vig_probability": 0.491094,
+      "model_probability": 0.57513,
+      "ev": 0.15026,
+      "quarter_kelly": 0.037565,
       "recommendation": "BUY",
       "confidence": "A",
       "lineup_announced": true,
@@ -68,7 +68,34 @@
       "home_expected_runs": 3.601,
       "simulations": 100000
     },
-    "best_total": null
+    "best_total": {
+      "market": "total",
+      "event_id": "bf41baaebfa23a202d2f3a6811425ff9",
+      "commence_time_utc": "2026-10-18T00:00:00Z",
+      "away_team": "Tampa Bay Rays",
+      "home_team": "Cleveland Guardians",
+      "away_probable_pitcher": "TBD",
+      "home_probable_pitcher": "TBD",
+      "away_elo": null,
+      "home_elo": null,
+      "away_recent_form": null,
+      "home_recent_form": null,
+      "park_factor": 1.0,
+      "weather_run_factor": 0.9926,
+      "selection": "Under",
+      "point": 6.5,
+      "decimal_odds": 2.0,
+      "market_no_vig_probability": null,
+      "model_probability": 0.53036,
+      "ev": 0.06072,
+      "quarter_kelly": 0.01518,
+      "recommendation": "BUY",
+      "confidence": "C",
+      "lineup_announced": null,
+      "away_expected_runs": 3.027,
+      "home_expected_runs": 3.601,
+      "simulations": 100000
+    }
   },
   "note": "BUY 判定のみを抜粋した軽量版。全試合の全指標は https://kouheiarai.github.io/mlb-ai-predictor/prediction_latest.json を参照。",
   "buy_rankings": {
@@ -80,10 +107,10 @@
         "commence_time_utc": "2026-10-18T00:00:00Z",
         "selection": "Cleveland Guardians",
         "point": "",
-        "decimal_odds": 1.99,
-        "model_probability": 0.575318,
-        "ev": 0.144883,
-        "quarter_kelly": 0.036587,
+        "decimal_odds": 2.0,
+        "model_probability": 0.57513,
+        "ev": 0.15026,
+        "quarter_kelly": 0.037565,
         "confidence": "A"
       }
     ],
@@ -102,6 +129,20 @@
         "confidence": "S"
       }
     ],
-    "total": []
+    "total": [
+      {
+        "market": "total",
+        "away_team": "Tampa Bay Rays",
+        "home_team": "Cleveland Guardians",
+        "commence_time_utc": "2026-10-18T00:00:00Z",
+        "selection": "Under",
+        "point": 6.5,
+        "decimal_odds": 2.0,
+        "model_probability": 0.53036,
+        "ev": 0.06072,
+        "quarter_kelly": 0.01518,
+        "confidence": "C"
+      }
+    ]
   }
 }

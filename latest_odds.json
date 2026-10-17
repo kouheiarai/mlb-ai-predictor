@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-17T21:50:30.726858+00:00",
+  "fetched_at_utc": "2026-10-17T23:36:11.335799+00:00",
   "events": [
     {
       "id": "bf41baaebfa23a202d2f3a6811425ff9",
@@ -12,15 +12,15 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-17T21:50:11Z",
+          "last_update": "2026-10-17T23:35:48Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-17T21:50:11Z",
+              "last_update": "2026-10-17T23:35:48Z",
               "outcomes": [
                 {
                   "name": "Cleveland Guardians",
-                  "price": 1.99
+                  "price": 2.0
                 },
                 {
                   "name": "Tampa Bay Rays",
@@ -30,7 +30,7 @@
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-17T21:50:11Z",
+              "last_update": "2026-10-17T23:35:48Z",
               "outcomes": [
                 {
                   "name": "Cleveland Guardians",
@@ -39,23 +39,23 @@
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 2.66,
+                  "price": 2.64,
                   "point": -1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-17T21:50:11Z",
+              "last_update": "2026-10-17T23:35:48Z",
               "outcomes": [
                 {
                   "name": "Over",
-                  "price": 1.93,
+                  "price": 1.89,
                   "point": 6.5
                 },
                 {
                   "name": "Under",
-                  "price": 1.96,
+                  "price": 2.0,
                   "point": 6.5
                 }
               ]
