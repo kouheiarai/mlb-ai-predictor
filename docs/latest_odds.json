@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-17T18:01:22.068668+00:00",
+  "fetched_at_utc": "2026-10-17T21:50:30.726858+00:00",
   "events": [
     {
       "id": "bf41baaebfa23a202d2f3a6811425ff9",
@@ -12,50 +12,50 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-17T18:00:57Z",
+          "last_update": "2026-10-17T21:50:11Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-17T18:00:57Z",
+              "last_update": "2026-10-17T21:50:11Z",
               "outcomes": [
                 {
                   "name": "Cleveland Guardians",
-                  "price": 1.98
+                  "price": 1.99
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 1.94
+                  "price": 1.93
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-17T18:00:57Z",
+              "last_update": "2026-10-17T21:50:11Z",
               "outcomes": [
                 {
                   "name": "Cleveland Guardians",
-                  "price": 1.53,
+                  "price": 1.54,
                   "point": 1.5
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 2.68,
+                  "price": 2.66,
                   "point": -1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-17T18:00:57Z",
+              "last_update": "2026-10-17T21:50:11Z",
               "outcomes": [
                 {
                   "name": "Over",
-                  "price": 1.92,
+                  "price": 1.93,
                   "point": 6.5
                 },
                 {
                   "name": "Under",
-                  "price": 1.97,
+                  "price": 1.96,
                   "point": 6.5
                 }
               ]
