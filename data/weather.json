@@ -1,30 +1,17 @@
 {
-  "fetched_at_utc": "2026-10-17T23:36:11.335799+00:00",
+  "fetched_at_utc": "2026-10-18T18:21:00.728684+00:00",
   "games": [
-    {
-      "game_pk": 849816,
-      "away_team": "Tampa Bay Rays",
-      "home_team": "Cleveland Guardians",
-      "game_date_utc": "2026-10-18T00:08:00Z",
-      "weather": {
-        "weather_run_factor": 0.9694,
-        "temperature_c": 7.2,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 6.9,
-        "wind_direction_deg": 218
-      }
-    },
     {
       "game_pk": 849817,
       "away_team": "Tampa Bay Rays",
       "home_team": "Cleveland Guardians",
       "game_date_utc": "2026-10-18T21:08:00Z",
       "weather": {
-        "weather_run_factor": 0.9926,
-        "temperature_c": 15.5,
+        "weather_run_factor": 0.9936,
+        "temperature_c": 15.8,
         "precipitation_probability": 0,
-        "wind_speed_kmh": 13.6,
-        "wind_direction_deg": 201
+        "wind_speed_kmh": 14.0,
+        "wind_direction_deg": 191
       }
     },
     {
@@ -32,6 +19,19 @@
       "away_team": "Cleveland Guardians",
       "home_team": "Tampa Bay Rays",
       "game_date_utc": "2026-10-20T00:08:00Z",
+      "weather": {
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
+      }
+    },
+    {
+      "game_pk": 849814,
+      "away_team": "Cleveland Guardians",
+      "home_team": "Tampa Bay Rays",
+      "game_date_utc": "2026-10-21T00:08:00Z",
       "weather": {
         "weather_run_factor": 1.0,
         "temperature_c": null,

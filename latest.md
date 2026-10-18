@@ -1,44 +1,44 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-17T23:36:11.335799+00:00
-- API requests remaining: 347
+- Updated: 2026-10-18T18:21:00.728684+00:00
+- API requests remaining: 344
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
 ### 1. Cleveland Guardians
 - Game: Tampa Bay Rays @ Cleveland Guardians
-- Odds: 2.0
-- AI probability: 57.5%
-- EV: 15.0%
-- 1/4 Kelly: 3.8%
+- Odds: 2.13
+- AI probability: 52.7%
+- EV: 12.2%
+- 1/4 Kelly: 2.7%
 - Lineup: 発表済み
-- Lineup quality: +0.09
-- Platoon proxy: +0.00
-- Weather run factor: 0.993
-- Temperature: 15.5 C
+- Lineup quality: -0.03
+- Platoon proxy: +0.22
+- Weather run factor: 0.994
+- Temperature: 15.8 C
 - Rain probability: 0%
-- Wind: 13.6 km/h (201 deg)
+- Wind: 14.0 km/h (191 deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Tampa Bay Rays 3.03 - Cleveland Guardians 3.60
+- Expected score: Tampa Bay Rays 2.96 - Cleveland Guardians 3.18
 
 ## Run Line Buy Ranking
 
 ### 1. Cleveland Guardians +1.5
 - Game: Tampa Bay Rays @ Cleveland Guardians
-- Odds: 1.54
-- Cover probability: 79.8%
-- EV: 22.9%
-- 1/4 Kelly: 10.6%
+- Odds: 1.65
+- Cover probability: 76.3%
+- EV: 26.0%
+- 1/4 Kelly: 10.0%
 - Lineup: 発表済み
-- Lineup quality: +0.09
-- Platoon proxy: +0.00
-- Weather run factor: 0.993
-- Temperature: 15.5 C
+- Lineup quality: -0.03
+- Platoon proxy: +0.22
+- Weather run factor: 0.994
+- Temperature: 15.8 C
 - Rain probability: 0%
-- Wind: 13.6 km/h (201 deg)
+- Wind: 14.0 km/h (191 deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Tampa Bay Rays 3.03 - Cleveland Guardians 3.60
+- Expected score: Tampa Bay Rays 2.96 - Cleveland Guardians 3.18
 
 ## Model Notes
 
