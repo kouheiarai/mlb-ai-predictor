@@ -1,19 +1,6 @@
 {
-  "fetched_at_utc": "2026-10-18T18:21:00.728684+00:00",
+  "fetched_at_utc": "2026-10-19T02:27:43.601537+00:00",
   "games": [
-    {
-      "game_pk": 849817,
-      "away_team": "Tampa Bay Rays",
-      "home_team": "Cleveland Guardians",
-      "game_date_utc": "2026-10-18T21:08:00Z",
-      "weather": {
-        "weather_run_factor": 0.9936,
-        "temperature_c": 15.8,
-        "precipitation_probability": 0,
-        "wind_speed_kmh": 14.0,
-        "wind_direction_deg": 191
-      }
-    },
     {
       "game_pk": 849815,
       "away_team": "Cleveland Guardians",

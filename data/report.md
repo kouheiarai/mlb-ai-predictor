@@ -1,44 +1,44 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-18T18:21:00.728684+00:00
-- API requests remaining: 344
+- Updated: 2026-10-19T02:27:43.601537+00:00
+- API requests remaining: 341
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
 ### 1. Cleveland Guardians
-- Game: Tampa Bay Rays @ Cleveland Guardians
-- Odds: 2.13
-- AI probability: 52.7%
-- EV: 12.2%
-- 1/4 Kelly: 2.7%
-- Lineup: 発表済み
-- Lineup quality: -0.03
-- Platoon proxy: +0.22
-- Weather run factor: 0.994
-- Temperature: 15.8 C
-- Rain probability: 0%
-- Wind: 14.0 km/h (191 deg)
+- Game: Cleveland Guardians @ Tampa Bay Rays
+- Odds: 2.26
+- AI probability: 50.1%
+- EV: 13.1%
+- 1/4 Kelly: 2.6%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Tampa Bay Rays 2.96 - Cleveland Guardians 3.18
+- Expected score: Cleveland Guardians 3.39 - Tampa Bay Rays 3.29
 
 ## Run Line Buy Ranking
 
 ### 1. Cleveland Guardians +1.5
-- Game: Tampa Bay Rays @ Cleveland Guardians
-- Odds: 1.65
-- Cover probability: 76.3%
-- EV: 26.0%
-- 1/4 Kelly: 10.0%
-- Lineup: 発表済み
-- Lineup quality: -0.03
-- Platoon proxy: +0.22
-- Weather run factor: 0.994
-- Temperature: 15.8 C
-- Rain probability: 0%
-- Wind: 14.0 km/h (191 deg)
+- Game: Cleveland Guardians @ Tampa Bay Rays
+- Odds: 1.54
+- Cover probability: 74.0%
+- EV: 13.9%
+- 1/4 Kelly: 6.4%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Tampa Bay Rays 2.96 - Cleveland Guardians 3.18
+- Expected score: Cleveland Guardians 3.39 - Tampa Bay Rays 3.29
 
 ## Model Notes
 
