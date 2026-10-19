@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-19T02:27:43.601537+00:00",
+  "fetched_at_utc": "2026-10-19T20:47:01.188813+00:00",
   "events": [
     {
       "id": "be50f6c59c20efa430eec6f146a0fcb1",
@@ -12,51 +12,51 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-19T02:27:37Z",
+          "last_update": "2026-10-19T20:46:51Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-19T02:27:37Z",
+              "last_update": "2026-10-19T20:46:51Z",
               "outcomes": [
                 {
                   "name": "Cleveland Guardians",
-                  "price": 2.26
+                  "price": 2.35
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 1.72
+                  "price": 1.68
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-19T02:27:37Z",
+              "last_update": "2026-10-19T20:46:51Z",
               "outcomes": [
                 {
                   "name": "Cleveland Guardians",
-                  "price": 1.54,
+                  "price": 1.62,
                   "point": 1.5
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 2.63,
+                  "price": 2.45,
                   "point": -1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-19T02:27:37Z",
+              "last_update": "2026-10-19T20:46:51Z",
               "outcomes": [
                 {
                   "name": "Over",
-                  "price": 1.85,
-                  "point": 6.5
+                  "price": 2.07,
+                  "point": 7.0
                 },
                 {
                   "name": "Under",
-                  "price": 2.02,
-                  "point": 6.5
+                  "price": 1.83,
+                  "point": 7.0
                 }
               ]
             }

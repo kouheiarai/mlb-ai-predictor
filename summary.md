@@ -1,19 +1,19 @@
 MLB AI Predictor Ver.26.0 推奨一覧
 
-更新: 2026-10-19 11:27 JST（UTC 2026-10-19T02:27:43.601537+00:00）
+更新: 2026-10-20 05:47 JST（UTC 2026-10-19T20:47:01.188813+00:00）
 対象日 (UTC): 2026-10-20
 対象試合数: 1
-BUY 件数: マネーライン 1 / ランライン 1 / 合計得点 1
+BUY 件数: マネーライン 1 / ランライン 1 / 合計得点 0
 オッズ: Pinnacle via The Odds API
 
 ## マネーライン（EV 降順・1 件）
-1. Cleveland Guardians | Cleveland Guardians @ Tampa Bay Rays | 2026-10-20 09:10 JST | オッズ 2.26 | AI勝率 50.1% | EV 13.1% | 1/4ケリー 2.6% | 信頼度 B
+1. Cleveland Guardians | Cleveland Guardians @ Tampa Bay Rays | 2026-10-20 09:10 JST | オッズ 2.35 | AI勝率 49.8% | EV 17.1% | 1/4ケリー 3.2% | 信頼度 B
 
 ## ランライン（EV 降順・1 件）
-1. Cleveland Guardians +1.5 | Cleveland Guardians @ Tampa Bay Rays | 2026-10-20 09:10 JST | オッズ 1.54 | AI勝率 74.0% | EV 13.9% | 1/4ケリー 6.4% | 信頼度 A
+1. Cleveland Guardians +1.5 | Cleveland Guardians @ Tampa Bay Rays | 2026-10-20 09:10 JST | オッズ 1.62 | AI勝率 74.0% | EV 19.8% | 1/4ケリー 8.0% | 信頼度 A
 
-## 合計得点（EV 降順・1 件）
-1. Under +6.5 | Cleveland Guardians @ Tampa Bay Rays | 2026-10-20 09:10 JST | オッズ 2.02 | AI勝率 52.2% | EV 5.5% | 1/4ケリー 1.3% | 信頼度 C
+## 合計得点（EV 降順・0 件）
+BUY 判定なし。
 
 ## 注意
 
