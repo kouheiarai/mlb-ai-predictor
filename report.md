@@ -1,17 +1,17 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-19T20:47:01.188813+00:00
-- API requests remaining: 338
+- Updated: 2026-10-20T19:42:42.231004+00:00
+- API requests remaining: 335
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-### 1. Cleveland Guardians
-- Game: Cleveland Guardians @ Tampa Bay Rays
-- Odds: 2.35
-- AI probability: 49.8%
-- EV: 17.1%
-- 1/4 Kelly: 3.2%
+### 1. Milwaukee Brewers
+- Game: Tampa Bay Rays @ Milwaukee Brewers
+- Odds: 1.62
+- AI probability: 68.2%
+- EV: 10.5%
+- 1/4 Kelly: 4.2%
 - Lineup: 未発表
 - Lineup quality: +0.00
 - Platoon proxy: +0.00
@@ -20,16 +20,16 @@
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Cleveland Guardians 3.39 - Tampa Bay Rays 3.29
+- Expected score: Tampa Bay Rays 2.35 - Milwaukee Brewers 3.60
 
 ## Run Line Buy Ranking
 
-### 1. Cleveland Guardians +1.5
-- Game: Cleveland Guardians @ Tampa Bay Rays
-- Odds: 1.62
-- Cover probability: 74.0%
-- EV: 19.8%
-- 1/4 Kelly: 8.0%
+### 1. Milwaukee Brewers -1.5
+- Game: Tampa Bay Rays @ Milwaukee Brewers
+- Odds: 2.5
+- Cover probability: 45.2%
+- EV: 13.0%
+- 1/4 Kelly: 2.2%
 - Lineup: 未発表
 - Lineup quality: +0.00
 - Platoon proxy: +0.00
@@ -38,7 +38,7 @@
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Cleveland Guardians 3.39 - Tampa Bay Rays 3.29
+- Expected score: Tampa Bay Rays 2.35 - Milwaukee Brewers 3.60
 
 ## Model Notes
 

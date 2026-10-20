@@ -1,62 +1,62 @@
 {
-  "fetched_at_utc": "2026-10-19T20:47:01.188813+00:00",
+  "fetched_at_utc": "2026-10-20T19:42:42.231004+00:00",
   "events": [
     {
-      "id": "be50f6c59c20efa430eec6f146a0fcb1",
+      "id": "e4c03eec29795f56b6b06c313d3af271",
       "sport_key": "baseball_mlb",
       "sport_title": "MLB",
-      "commence_time": "2026-10-20T00:10:00Z",
-      "home_team": "Tampa Bay Rays",
-      "away_team": "Cleveland Guardians",
+      "commence_time": "2026-10-24T00:00:00Z",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Tampa Bay Rays",
       "bookmakers": [
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-19T20:46:51Z",
+          "last_update": "2026-10-20T19:42:34Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-19T20:46:51Z",
+              "last_update": "2026-10-20T19:42:34Z",
               "outcomes": [
                 {
-                  "name": "Cleveland Guardians",
-                  "price": 2.35
+                  "name": "Milwaukee Brewers",
+                  "price": 1.62
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 1.68
+                  "price": 2.44
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-19T20:46:51Z",
+              "last_update": "2026-10-20T19:42:34Z",
               "outcomes": [
                 {
-                  "name": "Cleveland Guardians",
-                  "price": 1.62,
-                  "point": 1.5
+                  "name": "Milwaukee Brewers",
+                  "price": 2.5,
+                  "point": -1.5
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 2.45,
-                  "point": -1.5
+                  "price": 1.58,
+                  "point": 1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-19T20:46:51Z",
+              "last_update": "2026-10-20T19:42:34Z",
               "outcomes": [
                 {
                   "name": "Over",
-                  "price": 2.07,
-                  "point": 7.0
+                  "price": 1.88,
+                  "point": 6.0
                 },
                 {
                   "name": "Under",
-                  "price": 1.83,
-                  "point": 7.0
+                  "price": 1.99,
+                  "point": 6.0
                 }
               ]
             }
