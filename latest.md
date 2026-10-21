@@ -1,7 +1,7 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-20T22:47:06.832880+00:00
-- API requests remaining: 332
+- Updated: 2026-10-21T02:34:38.246524+00:00
+- API requests remaining: 329
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
