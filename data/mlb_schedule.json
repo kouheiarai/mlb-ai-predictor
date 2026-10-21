@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-21T02:34:38.246524+00:00",
+  "fetched_at_utc": "2026-10-21T19:45:10.211204+00:00",
   "games": [
     {
       "game_pk": 849805,
@@ -9,8 +9,8 @@
       "home_team": "Milwaukee Brewers",
       "away_probable_pitcher_id": null,
       "away_probable_pitcher": "TBD",
-      "home_probable_pitcher_id": null,
-      "home_probable_pitcher": "TBD",
+      "home_probable_pitcher_id": 694819,
+      "home_probable_pitcher": "Jacob Misiorowski",
       "venue_id": 32,
       "venue_name": "American Family Field",
       "away_starter_stats": {
@@ -21,11 +21,11 @@
         "innings_pitched": null
       },
       "home_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
+        "person_id": 694819,
+        "era": 1.8,
+        "whip": 0.8,
+        "strikeout_walk_ratio": 5.7272727272727275,
+        "innings_pitched": 174.2
       },
       "lineups": {
         "away_announced": false,
@@ -42,7 +42,7 @@
         "home_prediction_source_games": 0
       },
       "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": "R",
       "weather": {
         "weather_run_factor": 1.0,
         "temperature_c": null,
