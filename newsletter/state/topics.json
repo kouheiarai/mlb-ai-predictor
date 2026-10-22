@@ -165,6 +165,49 @@
         "ピクテ・ジャパン — 日銀9月会合：タカ派的利上げペースに円安で反応 — https://www.pictet.co.jp/investment-information/market/today/20260924.html"
       ],
       "source": "manual"
+    },
+    {
+      "date": "2026-10-07",
+      "type": "weekly",
+      "title": "Japan's cash pile fell below 45% of household assets. Nobody moved it.",
+      "subtitle": "Deposits grew 0.5% over the year. Equities grew 47%. The share fell because the denominator did all the work.",
+      "topics": [
+        "Q2 2026 flow of funds: household financial assets at 2,519 trillion yen, up 11.0% year on year",
+        "Cash-and-deposit share falling to 44.9%, from 47.2% as first reported for Q1",
+        "Deposits growing only 0.5% year on year while equity holdings grew 47.0%",
+        "Why the falling cash share is a valuation effect rather than a reallocation",
+        "BOJ revising the end-March 2026 household total up from 2,386 to 2,406 trillion yen",
+        "A correction to the 47.2% figure this newsletter published in August",
+        "Household liabilities at 416 trillion yen, borrowings at 397 trillion"
+      ],
+      "sources": [
+        "Bank of Japan — Flow of Funds for the Second Quarter of 2026 (Preliminary), Basic Figures — https://www.boj.or.jp/en/statistics/sj/sjexp.pdf",
+        "日本銀行 — 資金循環統計（速報）（2026年第2四半期） — https://www.boj.or.jp/statistics/sj/sj.htm",
+        "日本銀行 — 資金循環 — https://www.boj.or.jp/statistics/sj/index.htm"
+      ],
+      "source": "manual"
+    },
+    {
+      "date": "2026-10-14",
+      "type": "weekly",
+      "title": "Japanese households think inflation is 16%. The index says 1.9%.",
+      "subtitle": "The Bank of Japan asks them every quarter and publishes the answer. The gap explains more about Japanese saving than the statistics do.",
+      "topics": [
+        "BOJ 107th Opinion Survey, September 2026: perceived past-year inflation at 16.2% mean, 10.0% median",
+        "August 2026 national CPI at 1.9%, against a perceived 16.2%",
+        "One-year-ahead expectations at 11.8% mean, 10.0% median",
+        "Five-year-ahead expectations at 10.1% mean, 5.0% median, as an average annual rate",
+        "The gap between mean and median, and the 22.6% answering 10.1% or more",
+        "Current income DI at minus 5.4, the highest since the mail survey began in September 2006",
+        "Why households feel squeezed while wages rise"
+      ],
+      "sources": [
+        "日本銀行 — 「生活意識に関するアンケート調査」（第107回＜2026年9月調査＞）の結果 — https://www.boj.or.jp/research/o_survey/data/ishiki2610.pdf",
+        "日本銀行 — 生活意識に関するアンケート調査 — https://www.boj.or.jp/research/o_survey/index.htm",
+        "総務省統計局 — 2025年基準 消費者物価指数 全国 2026年8月分 — https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/zenkoku.pdf",
+        "日本銀行 — 金融市場調節方針の変更について（2026年9月18日） — https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260918a.pdf"
+      ],
+      "source": "manual"
     }
   ]
 }

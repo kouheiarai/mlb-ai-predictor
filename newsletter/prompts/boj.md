@@ -35,15 +35,30 @@ can read Japanese know this. Your readers cannot read Japanese. That asymmetry i
 ## Structure for this edition
 
 Use the standard structure from your instructions, with one addition: include a section titled
-**"What changed in the statement"** containing a simple two-column HTML table — previous wording on
-the left, new wording on the right — followed by a short paragraph on each change that matters.
-Quote the English official translation in the table, and note where the Japanese original carries a
-nuance the translation loses.
+**"What changed in the statement"**.
+
+Present the diff as a list, not a table — your instructions explain why tables do not survive the
+route this issue travels. One `<li>` per change that matters, in this shape:
+
+```html
+<li><strong>Real interest rates.</strong> June: "have been <strong>negative</strong>, mainly in the
+short- to medium-term zone." September: "have <strong>remained at low levels</strong>." The
+Japanese makes the same move, <em>マイナス</em> to <em>なお低い水準</em>.</li>
+```
+
+Label the thing that changed, quote the old wording, quote the new, and bold the words that
+actually moved so the reader's eye lands on the change rather than on the whole quotation. Then,
+below the list, give a short paragraph on each change that carries weight — the list is the
+evidence, the paragraphs are the reading.
+
+Quote the English official translation, and note where the Japanese original carries a nuance the
+translation loses. A clause the Bank added or deleted outright is a change like any other: write
+the missing side as "not in June" rather than leaving it blank.
 
 ## Accuracy
 
 Quote wording exactly as published. Do not paraphrase a phrase and present it as a quote. If you
-cannot retrieve the previous statement, say so plainly and write the edition without the diff table
+cannot retrieve the previous statement, say so plainly and write the edition without the diff
 rather than reconstructing it from memory — a reconstructed diff is worse than no diff.
 
 ## Do not repeat yourself
