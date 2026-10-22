@@ -1,76 +1,44 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-09-30T03:03:54.162470+00:00
-- API requests remaining: 212
+- Updated: 2026-10-22T02:31:48.293640+00:00
+- API requests remaining: 320
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-### 1. Atlanta Braves
-- Game: Philadelphia Phillies @ Atlanta Braves
-- Odds: 1.98
-- AI probability: 67.9%
-- EV: 34.5%
-- 1/4 Kelly: 8.8%
+### 1. Milwaukee Brewers
+- Game: Tampa Bay Rays @ Milwaukee Brewers
+- Odds: 1.63
+- AI probability: 68.2%
+- EV: 11.1%
+- 1/4 Kelly: 4.4%
 - Lineup: 未発表
-- Lineup quality: +0.24
+- Lineup quality: +0.00
 - Platoon proxy: +0.00
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Philadelphia Phillies 2.38 - Atlanta Braves 3.75
-
-### 2. Chicago White Sox
-- Game: Chicago White Sox @ Houston Astros
-- Odds: 2.3
-- AI probability: 57.3%
-- EV: 31.8%
-- 1/4 Kelly: 6.1%
-- Lineup: 未発表
-- Lineup quality: +0.26
-- Platoon proxy: +0.00
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Chicago White Sox 3.39 - Houston Astros 2.75
+- Bullpen fatigue proxy: 0.00
+- Expected score: Tampa Bay Rays 2.35 - Milwaukee Brewers 3.60
 
 ## Run Line Buy Ranking
 
-### 1. Atlanta Braves +1.5
-- Game: Philadelphia Phillies @ Atlanta Braves
-- Odds: 1.55
-- Cover probability: 88.5%
-- EV: 37.2%
-- 1/4 Kelly: 16.9%
+### 1. Milwaukee Brewers -1.5
+- Game: Tampa Bay Rays @ Milwaukee Brewers
+- Odds: 2.51
+- Cover probability: 45.2%
+- EV: 13.5%
+- 1/4 Kelly: 2.2%
 - Lineup: 未発表
-- Lineup quality: +0.24
+- Lineup quality: +0.00
 - Platoon proxy: +0.00
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Philadelphia Phillies 2.38 - Atlanta Braves 3.75
-
-### 2. Chicago White Sox +1.5
-- Game: Chicago White Sox @ Houston Astros
-- Odds: 1.58
-- Cover probability: 81.5%
-- EV: 28.8%
-- 1/4 Kelly: 12.4%
-- Lineup: 未発表
-- Lineup quality: +0.26
-- Platoon proxy: +0.00
-- Weather run factor: 1.000
-- Temperature: None C
-- Rain probability: None%
-- Wind: None km/h (None deg)
-- Bullpen fatigue proxy: 0.20
-- Expected score: Chicago White Sox 3.39 - Houston Astros 2.75
+- Bullpen fatigue proxy: 0.00
+- Expected score: Tampa Bay Rays 2.35 - Milwaukee Brewers 3.60
 
 ## Model Notes
 

@@ -1,125 +1,62 @@
 {
-  "fetched_at_utc": "2026-09-30T03:03:54.162470+00:00",
+  "fetched_at_utc": "2026-10-22T02:31:48.293640+00:00",
   "events": [
     {
-      "id": "9e23239e0075a017225697fa3bcd88b3",
+      "id": "e4c03eec29795f56b6b06c313d3af271",
       "sport_key": "baseball_mlb",
       "sport_title": "MLB",
-      "commence_time": "2026-09-30T18:00:00Z",
-      "home_team": "Atlanta Braves",
-      "away_team": "Philadelphia Phillies",
+      "commence_time": "2026-10-24T00:00:00Z",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Tampa Bay Rays",
       "bookmakers": [
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-09-30T03:03:35Z",
+          "last_update": "2026-10-22T02:31:13Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-09-30T03:03:35Z",
+              "last_update": "2026-10-22T02:31:13Z",
               "outcomes": [
                 {
-                  "name": "Atlanta Braves",
-                  "price": 1.98
+                  "name": "Milwaukee Brewers",
+                  "price": 1.63
                 },
                 {
-                  "name": "Philadelphia Phillies",
-                  "price": 1.93
+                  "name": "Tampa Bay Rays",
+                  "price": 2.42
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-09-30T03:03:35Z",
+              "last_update": "2026-10-22T02:31:13Z",
               "outcomes": [
                 {
-                  "name": "Atlanta Braves",
-                  "price": 1.55,
-                  "point": 1.5
-                },
-                {
-                  "name": "Philadelphia Phillies",
-                  "price": 2.6,
-                  "point": -1.5
-                }
-              ]
-            },
-            {
-              "key": "totals",
-              "last_update": "2026-09-30T03:03:35Z",
-              "outcomes": [
-                {
-                  "name": "Over",
-                  "price": 1.86,
-                  "point": 7.0
-                },
-                {
-                  "name": "Under",
-                  "price": 2.01,
-                  "point": 7.0
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "766096a9312f4528ba2e8b59fe9550fd",
-      "sport_key": "baseball_mlb",
-      "sport_title": "MLB",
-      "commence_time": "2026-09-30T21:00:00Z",
-      "home_team": "Houston Astros",
-      "away_team": "Chicago White Sox",
-      "bookmakers": [
-        {
-          "key": "pinnacle",
-          "title": "Pinnacle",
-          "last_update": "2026-09-30T03:03:35Z",
-          "markets": [
-            {
-              "key": "h2h",
-              "last_update": "2026-09-30T03:03:35Z",
-              "outcomes": [
-                {
-                  "name": "Chicago White Sox",
-                  "price": 2.3
-                },
-                {
-                  "name": "Houston Astros",
-                  "price": 1.69
-                }
-              ]
-            },
-            {
-              "key": "spreads",
-              "last_update": "2026-09-30T03:03:35Z",
-              "outcomes": [
-                {
-                  "name": "Chicago White Sox",
-                  "price": 1.58,
-                  "point": 1.5
-                },
-                {
-                  "name": "Houston Astros",
+                  "name": "Milwaukee Brewers",
                   "price": 2.51,
                   "point": -1.5
+                },
+                {
+                  "name": "Tampa Bay Rays",
+                  "price": 1.58,
+                  "point": 1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-09-30T03:03:35Z",
+              "last_update": "2026-10-22T02:31:13Z",
               "outcomes": [
                 {
                   "name": "Over",
-                  "price": 1.96,
-                  "point": 7.5
+                  "price": 1.88,
+                  "point": 6.0
                 },
                 {
                   "name": "Under",
-                  "price": 1.91,
-                  "point": 7.5
+                  "price": 1.99,
+                  "point": 6.0
                 }
               ]
             }
