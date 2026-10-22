@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-22T19:36:13.704308+00:00",
+  "fetched_at_utc": "2026-10-22T22:50:37.018000+00:00",
   "games": [
     {
       "game_pk": 849805,
@@ -7,18 +7,18 @@
       "status": "Scheduled",
       "away_team": "Tampa Bay Rays",
       "home_team": "Milwaukee Brewers",
-      "away_probable_pitcher_id": null,
-      "away_probable_pitcher": "TBD",
+      "away_probable_pitcher_id": 607259,
+      "away_probable_pitcher": "Nick Martinez",
       "home_probable_pitcher_id": 694819,
       "home_probable_pitcher": "Jacob Misiorowski",
       "venue_id": 32,
       "venue_name": "American Family Field",
       "away_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
+        "person_id": 607259,
+        "era": 3.1,
+        "whip": 1.09,
+        "strikeout_walk_ratio": 4.1923076923076925,
+        "innings_pitched": 180.0
       },
       "home_starter_stats": {
         "person_id": 694819,
@@ -41,7 +41,7 @@
         "home_lineup_confidence": "Unavailable",
         "home_prediction_source_games": 0
       },
-      "away_probable_pitcher_hand": null,
+      "away_probable_pitcher_hand": "R",
       "home_probable_pitcher_hand": "R",
       "weather": {
         "weather_run_factor": 1.0,
@@ -57,25 +57,25 @@
       "status": "Scheduled",
       "away_team": "Tampa Bay Rays",
       "home_team": "Milwaukee Brewers",
-      "away_probable_pitcher_id": null,
-      "away_probable_pitcher": "TBD",
-      "home_probable_pitcher_id": null,
-      "home_probable_pitcher": "TBD",
+      "away_probable_pitcher_id": 656876,
+      "away_probable_pitcher": "Drew Rasmussen",
+      "home_probable_pitcher_id": 701656,
+      "home_probable_pitcher": "Logan Henderson",
       "venue_id": 32,
       "venue_name": "American Family Field",
       "away_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
+        "person_id": 656876,
+        "era": 2.67,
+        "whip": 0.91,
+        "strikeout_walk_ratio": 5.4375,
+        "innings_pitched": 172.0
       },
       "home_starter_stats": {
-        "person_id": null,
-        "era": null,
-        "whip": null,
-        "strikeout_walk_ratio": null,
-        "innings_pitched": null
+        "person_id": 701656,
+        "era": 2.47,
+        "whip": 0.84,
+        "strikeout_walk_ratio": 5.7894736842105265,
+        "innings_pitched": 98.1
       },
       "lineups": {
         "away_announced": false,
@@ -91,8 +91,8 @@
         "home_lineup_confidence": "Unavailable",
         "home_prediction_source_games": 0
       },
-      "away_probable_pitcher_hand": null,
-      "home_probable_pitcher_hand": null,
+      "away_probable_pitcher_hand": "R",
+      "home_probable_pitcher_hand": "R",
       "weather": {
         "weather_run_factor": 1.0,
         "temperature_c": null,

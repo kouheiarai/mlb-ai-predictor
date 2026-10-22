@@ -1,19 +1,19 @@
 MLB AI Predictor Ver.26.0 推奨一覧
 
-更新: 2026-10-23 04:36 JST（UTC 2026-10-22T19:36:13.704308+00:00）
+更新: 2026-10-23 07:50 JST（UTC 2026-10-22T22:50:37.018000+00:00）
 対象日 (UTC): 2026-10-24
 対象試合数: 1
-BUY 件数: マネーライン 1 / ランライン 1 / 合計得点 0
+BUY 件数: マネーライン 0 / ランライン 0 / 合計得点 1
 オッズ: Pinnacle via The Odds API
 
-## マネーライン（EV 降順・1 件）
-1. Milwaukee Brewers | Tampa Bay Rays @ Milwaukee Brewers | 2026-10-24 09:00 JST | オッズ 1.64 | AI勝率 68.1% | EV 11.7% | 1/4ケリー 4.6% | 信頼度 A
-
-## ランライン（EV 降順・1 件）
-1. Milwaukee Brewers -1.5 | Tampa Bay Rays @ Milwaukee Brewers | 2026-10-24 09:00 JST | オッズ 2.52 | AI勝率 45.2% | EV 14.0% | 1/4ケリー 2.3% | 信頼度 B
-
-## 合計得点（EV 降順・0 件）
+## マネーライン（EV 降順・0 件）
 BUY 判定なし。
+
+## ランライン（EV 降順・0 件）
+BUY 判定なし。
+
+## 合計得点（EV 降順・1 件）
+1. Under +6.5 | Tampa Bay Rays @ Milwaukee Brewers | 2026-10-24 09:00 JST | オッズ 1.99 | AI勝率 71.5% | EV 42.3% | 1/4ケリー 10.7% | 信頼度 A
 
 ## 注意
 
