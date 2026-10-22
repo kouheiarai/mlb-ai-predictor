@@ -1,9 +1,29 @@
 {
-  "fetched_at_utc": "2026-10-21T22:52:17.053790+00:00",
+  "fetched_at_utc": "2026-10-22T02:31:48.293640+00:00",
   "games": [
     {
       "game_pk": 849805,
       "game_date_utc": "2026-10-24T00:00:00Z",
+      "away_team": "Tampa Bay Rays",
+      "home_team": "Milwaukee Brewers",
+      "lineups": {
+        "away_announced": false,
+        "home_announced": false,
+        "away_batting_order": [],
+        "home_batting_order": [],
+        "away_lineup_status": "unavailable",
+        "away_lineup_reliability": 0.0,
+        "away_lineup_confidence": "Unavailable",
+        "away_prediction_source_games": 0,
+        "home_lineup_status": "unavailable",
+        "home_lineup_reliability": 0.0,
+        "home_lineup_confidence": "Unavailable",
+        "home_prediction_source_games": 0
+      }
+    },
+    {
+      "game_pk": 849802,
+      "game_date_utc": "2026-10-25T00:00:00Z",
       "away_team": "Tampa Bay Rays",
       "home_team": "Milwaukee Brewers",
       "lineups": {

@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-21T22:52:17.053790+00:00",
+  "fetched_at_utc": "2026-10-22T02:31:48.293640+00:00",
   "games": [
     {
       "game_pk": 849805,
@@ -43,6 +43,56 @@
       },
       "away_probable_pitcher_hand": null,
       "home_probable_pitcher_hand": "R",
+      "weather": {
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
+      }
+    },
+    {
+      "game_pk": 849802,
+      "game_date_utc": "2026-10-25T00:00:00Z",
+      "status": "Scheduled",
+      "away_team": "Tampa Bay Rays",
+      "home_team": "Milwaukee Brewers",
+      "away_probable_pitcher_id": null,
+      "away_probable_pitcher": "TBD",
+      "home_probable_pitcher_id": null,
+      "home_probable_pitcher": "TBD",
+      "venue_id": 32,
+      "venue_name": "American Family Field",
+      "away_starter_stats": {
+        "person_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null
+      },
+      "home_starter_stats": {
+        "person_id": null,
+        "era": null,
+        "whip": null,
+        "strikeout_walk_ratio": null,
+        "innings_pitched": null
+      },
+      "lineups": {
+        "away_announced": false,
+        "home_announced": false,
+        "away_batting_order": [],
+        "home_batting_order": [],
+        "away_lineup_status": "unavailable",
+        "away_lineup_reliability": 0.0,
+        "away_lineup_confidence": "Unavailable",
+        "away_prediction_source_games": 0,
+        "home_lineup_status": "unavailable",
+        "home_lineup_reliability": 0.0,
+        "home_lineup_confidence": "Unavailable",
+        "home_prediction_source_games": 0
+      },
+      "away_probable_pitcher_hand": null,
+      "home_probable_pitcher_hand": null,
       "weather": {
         "weather_run_factor": 1.0,
         "temperature_c": null,

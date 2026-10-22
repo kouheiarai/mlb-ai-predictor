@@ -1,11 +1,24 @@
 {
-  "fetched_at_utc": "2026-10-21T22:52:17.053790+00:00",
+  "fetched_at_utc": "2026-10-22T02:31:48.293640+00:00",
   "games": [
     {
       "game_pk": 849805,
       "away_team": "Tampa Bay Rays",
       "home_team": "Milwaukee Brewers",
       "game_date_utc": "2026-10-24T00:00:00Z",
+      "weather": {
+        "weather_run_factor": 1.0,
+        "temperature_c": null,
+        "precipitation_probability": null,
+        "wind_speed_kmh": null,
+        "wind_direction_deg": null
+      }
+    },
+    {
+      "game_pk": 849802,
+      "away_team": "Tampa Bay Rays",
+      "home_team": "Milwaukee Brewers",
+      "game_date_utc": "2026-10-25T00:00:00Z",
       "weather": {
         "weather_run_factor": 1.0,
         "temperature_c": null,
