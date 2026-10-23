@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-23T02:36:12.637866+00:00",
+  "fetched_at_utc": "2026-10-23T19:37:38.960917+00:00",
   "events": [
     {
       "id": "e4c03eec29795f56b6b06c313d3af271",
@@ -12,41 +12,41 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-23T02:35:52Z",
+          "last_update": "2026-10-23T19:37:29Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-23T02:35:52Z",
+              "last_update": "2026-10-23T19:37:28Z",
               "outcomes": [
                 {
                   "name": "Milwaukee Brewers",
-                  "price": 1.57
+                  "price": 1.54
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 2.58
+                  "price": 2.68
                 }
               ]
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-23T02:35:52Z",
+              "last_update": "2026-10-23T19:37:28Z",
               "outcomes": [
                 {
                   "name": "Milwaukee Brewers",
-                  "price": 2.35,
+                  "price": 2.32,
                   "point": -1.5
                 },
                 {
                   "name": "Tampa Bay Rays",
-                  "price": 1.65,
+                  "price": 1.68,
                   "point": 1.5
                 }
               ]
             },
             {
               "key": "totals",
-              "last_update": "2026-10-23T02:35:52Z",
+              "last_update": "2026-10-23T19:37:28Z",
               "outcomes": [
                 {
                   "name": "Over",
@@ -55,7 +55,7 @@
                 },
                 {
                   "name": "Under",
-                  "price": 1.99,
+                  "price": 2.01,
                   "point": 6.5
                 }
               ]
