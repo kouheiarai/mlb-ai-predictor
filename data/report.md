@@ -1,15 +1,45 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-23T22:43:57.728008+00:00
-- API requests remaining: 305
+- Updated: 2026-10-24T18:26:15.375937+00:00
+- API requests remaining: 302
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
-No EV 5%+ Moneyline bets.
+### 1. Milwaukee Brewers
+- Game: Tampa Bay Rays @ Milwaukee Brewers
+- Odds: 1.87
+- AI probability: 63.3%
+- EV: 18.4%
+- 1/4 Kelly: 5.3%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Tampa Bay Rays 2.27 - Milwaukee Brewers 3.18
+
 ## Run Line Buy Ranking
 
-No EV 5%+ Run Line bets.
+### 1. Milwaukee Brewers -1.5
+- Game: Tampa Bay Rays @ Milwaukee Brewers
+- Odds: 2.93
+- Cover probability: 39.1%
+- EV: 14.5%
+- 1/4 Kelly: 1.9%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
+- Weather run factor: 1.000
+- Temperature: None C
+- Rain probability: None%
+- Wind: None km/h (None deg)
+- Bullpen fatigue proxy: 0.00
+- Expected score: Tampa Bay Rays 2.27 - Milwaukee Brewers 3.18
+
 ## Model Notes
 
 - Platoon proxy uses each hitter's batting side versus the probable starter's throwing hand.
