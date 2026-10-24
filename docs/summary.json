@@ -1,6 +1,6 @@
 {
   "model_version": "26.0",
-  "updated_at_utc": "2026-10-24T18:26:15.375937+00:00",
+  "updated_at_utc": "2026-10-24T22:04:29.016756+00:00",
   "data_age_hours": 0.0,
   "is_stale": false,
   "stale_warning": null,
@@ -30,14 +30,14 @@
       "point": "",
       "decimal_odds": 1.87,
       "market_no_vig_probability": 0.524173,
-      "model_probability": 0.633013,
-      "ev": 0.183734,
-      "quarter_kelly": 0.052797,
+      "model_probability": 0.638351,
+      "ev": 0.193716,
+      "quarter_kelly": 0.055666,
       "recommendation": "BUY",
-      "confidence": "A",
-      "lineup_announced": false,
+      "confidence": "S",
+      "lineup_announced": true,
       "away_expected_runs": 2.274,
-      "home_expected_runs": 3.184,
+      "home_expected_runs": 3.225,
       "simulations": 100000
     },
     "best_runline": {
@@ -56,16 +56,16 @@
       "weather_run_factor": 1.0,
       "selection": "Milwaukee Brewers",
       "point": -1.5,
-      "decimal_odds": 2.93,
+      "decimal_odds": 2.94,
       "market_no_vig_probability": null,
-      "model_probability": 0.39084,
-      "ev": 0.145161,
-      "quarter_kelly": 0.018803,
+      "model_probability": 0.3972,
+      "ev": 0.167768,
+      "quarter_kelly": 0.02162,
       "recommendation": "BUY",
-      "confidence": "B",
-      "lineup_announced": false,
+      "confidence": "A",
+      "lineup_announced": true,
       "away_expected_runs": 2.274,
-      "home_expected_runs": 3.184,
+      "home_expected_runs": 3.225,
       "simulations": 100000
     },
     "best_total": {
@@ -84,16 +84,16 @@
       "weather_run_factor": 1.0,
       "selection": "Under",
       "point": 6.5,
-      "decimal_odds": 2.01,
+      "decimal_odds": 1.9,
       "market_no_vig_probability": null,
-      "model_probability": 0.71565,
-      "ev": 0.438456,
-      "quarter_kelly": 0.108529,
+      "model_probability": 0.70829,
+      "ev": 0.345751,
+      "quarter_kelly": 0.096042,
       "recommendation": "BUY",
       "confidence": "A",
       "lineup_announced": null,
       "away_expected_runs": 2.274,
-      "home_expected_runs": 3.184,
+      "home_expected_runs": 3.225,
       "simulations": 100000
     }
   },
@@ -108,10 +108,10 @@
         "selection": "Milwaukee Brewers",
         "point": "",
         "decimal_odds": 1.87,
-        "model_probability": 0.633013,
-        "ev": 0.183734,
-        "quarter_kelly": 0.052797,
-        "confidence": "A"
+        "model_probability": 0.638351,
+        "ev": 0.193716,
+        "quarter_kelly": 0.055666,
+        "confidence": "S"
       }
     ],
     "runline": [
@@ -122,11 +122,11 @@
         "commence_time_utc": "2026-10-25T00:00:00Z",
         "selection": "Milwaukee Brewers",
         "point": -1.5,
-        "decimal_odds": 2.93,
-        "model_probability": 0.39084,
-        "ev": 0.145161,
-        "quarter_kelly": 0.018803,
-        "confidence": "B"
+        "decimal_odds": 2.94,
+        "model_probability": 0.3972,
+        "ev": 0.167768,
+        "quarter_kelly": 0.02162,
+        "confidence": "A"
       }
     ],
     "total": [
@@ -137,10 +137,10 @@
         "commence_time_utc": "2026-10-25T00:00:00Z",
         "selection": "Under",
         "point": 6.5,
-        "decimal_odds": 2.01,
-        "model_probability": 0.71565,
-        "ev": 0.438456,
-        "quarter_kelly": 0.108529,
+        "decimal_odds": 1.9,
+        "model_probability": 0.70829,
+        "ev": 0.345751,
+        "quarter_kelly": 0.096042,
         "confidence": "A"
       }
     ]

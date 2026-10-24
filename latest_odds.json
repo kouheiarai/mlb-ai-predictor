@@ -1,5 +1,5 @@
 {
-  "fetched_at_utc": "2026-10-24T18:26:15.375937+00:00",
+  "fetched_at_utc": "2026-10-24T22:04:29.016756+00:00",
   "events": [
     {
       "id": "238f598685f7210fbfbbe3de39289264",
@@ -12,11 +12,11 @@
         {
           "key": "pinnacle",
           "title": "Pinnacle",
-          "last_update": "2026-10-24T18:25:53Z",
+          "last_update": "2026-10-24T22:04:23Z",
           "markets": [
             {
               "key": "h2h",
-              "last_update": "2026-10-24T18:25:53Z",
+              "last_update": "2026-10-24T22:04:23Z",
               "outcomes": [
                 {
                   "name": "Milwaukee Brewers",
@@ -30,11 +30,11 @@
             },
             {
               "key": "spreads",
-              "last_update": "2026-10-24T18:25:53Z",
+              "last_update": "2026-10-24T22:04:23Z",
               "outcomes": [
                 {
                   "name": "Milwaukee Brewers",
-                  "price": 2.93,
+                  "price": 2.94,
                   "point": -1.5
                 },
                 {
@@ -46,16 +46,16 @@
             },
             {
               "key": "totals",
-              "last_update": "2026-10-24T18:25:53Z",
+              "last_update": "2026-10-24T22:04:23Z",
               "outcomes": [
                 {
                   "name": "Over",
-                  "price": 1.88,
+                  "price": 1.99,
                   "point": 6.5
                 },
                 {
                   "name": "Under",
-                  "price": 2.01,
+                  "price": 1.9,
                   "point": 6.5
                 }
               ]
