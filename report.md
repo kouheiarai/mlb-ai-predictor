@@ -1,44 +1,44 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-24T22:04:29.016756+00:00
-- API requests remaining: 299
+- Updated: 2026-10-25T18:36:31.092556+00:00
+- API requests remaining: 296
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
 
 ### 1. Milwaukee Brewers
-- Game: Tampa Bay Rays @ Milwaukee Brewers
-- Odds: 1.87
-- AI probability: 63.8%
-- EV: 19.4%
-- 1/4 Kelly: 5.6%
-- Lineup: 発表済み
-- Lineup quality: +0.10
-- Platoon proxy: +0.09
+- Game: Milwaukee Brewers @ Tampa Bay Rays
+- Odds: 2.06
+- AI probability: 62.9%
+- EV: 29.7%
+- 1/4 Kelly: 7.0%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Tampa Bay Rays 2.27 - Milwaukee Brewers 3.23
+- Expected score: Milwaukee Brewers 3.40 - Tampa Bay Rays 2.40
 
 ## Run Line Buy Ranking
 
-### 1. Milwaukee Brewers -1.5
-- Game: Tampa Bay Rays @ Milwaukee Brewers
-- Odds: 2.94
-- Cover probability: 39.7%
-- EV: 16.8%
-- 1/4 Kelly: 2.2%
-- Lineup: 発表済み
-- Lineup quality: +0.10
-- Platoon proxy: +0.09
+### 1. Milwaukee Brewers +1.5
+- Game: Milwaukee Brewers @ Tampa Bay Rays
+- Odds: 1.47
+- Cover probability: 85.9%
+- EV: 26.2%
+- 1/4 Kelly: 13.9%
+- Lineup: 未発表
+- Lineup quality: +0.00
+- Platoon proxy: +0.00
 - Weather run factor: 1.000
 - Temperature: None C
 - Rain probability: None%
 - Wind: None km/h (None deg)
 - Bullpen fatigue proxy: 0.00
-- Expected score: Tampa Bay Rays 2.27 - Milwaukee Brewers 3.23
+- Expected score: Milwaukee Brewers 3.40 - Tampa Bay Rays 2.40
 
 ## Model Notes
 
