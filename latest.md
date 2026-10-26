@@ -1,7 +1,7 @@
 # MLB AI Predictor Ver.26.0 Prediction Report
 
-- Updated: 2026-10-26T02:21:59.906701+00:00
-- API requests remaining: 290
+- Updated: 2026-10-26T20:47:56.696320+00:00
+- API requests remaining: 287
 - Simulation: 100,000 Poisson score simulations per game
 
 ## Moneyline Buy Ranking
@@ -10,7 +10,7 @@
 - Game: Milwaukee Brewers @ Tampa Bay Rays
 - Odds: 2.02
 - AI probability: 63.1%
-- EV: 27.4%
+- EV: 27.5%
 - 1/4 Kelly: 6.7%
 - Lineup: 未発表
 - Lineup quality: +0.00
@@ -26,10 +26,10 @@
 
 ### 1. Milwaukee Brewers +1.5
 - Game: Milwaukee Brewers @ Tampa Bay Rays
-- Odds: 1.45
+- Odds: 1.46
 - Cover probability: 85.9%
-- EV: 24.5%
-- 1/4 Kelly: 13.6%
+- EV: 25.4%
+- 1/4 Kelly: 13.8%
 - Lineup: 未発表
 - Lineup quality: +0.00
 - Platoon proxy: +0.00
