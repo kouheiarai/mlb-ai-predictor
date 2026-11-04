@@ -208,6 +208,30 @@
         "日本銀行 — 金融市場調節方針の変更について（2026年9月18日） — https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260918a.pdf"
       ],
       "source": "manual"
+    },
+    {
+      "date": "2026-11-04",
+      "type": "boj",
+      "title": "The Bank of Japan says it has hit its target. It did not raise rates.",
+      "subtitle": "It held at 1.25% on an 8-1 vote, the lone dissenter wanted 1.5%, and the pace of its equity selling more than doubled.",
+      "topics": [
+        "BOJ holding the policy rate at 1.25% on 30 October 2026, vote 8-1",
+        "Takata dissenting with a proposal to raise to 1.5%, voted down",
+        "The September dissenters both voting with the majority this time",
+        "Underlying inflation moving from \"approaching 2 percent\" to \"generally consistent with\" the target",
+        "ETF sales pace raised from 330bn to 860bn yen a year at book value, about 2.46tn at market",
+        "October Outlook raising the FY2027 CPI median from 2.4% to 2.6%",
+        "Forecasts excluding a consumption tax cut on food that would cut FY2027 CPI by about 1.3 points",
+        "The Bank putting long-term inflation expectations at around 2% while its own household survey says 10.1%"
+      ],
+      "sources": [
+        "日本銀行 — 当面の金融政策運営について（2026年10月30日） — https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+        "Bank of Japan — Outlook for Economic Activity and Prices (October 2026) — https://www.boj.or.jp/en/mopo/outlook/gor2610a.pdf",
+        "日本銀行 — 経済・物価情勢の展望（2026年10月） — https://www.boj.or.jp/mopo/outlook/gor2610a.pdf",
+        "Bank of Japan — Statement on Monetary Policy (18 September 2026) — https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
+        "日本銀行 — 「生活意識に関するアンケート調査」（第107回＜2026年9月調査＞） — https://www.boj.or.jp/research/o_survey/data/ishiki2610.pdf"
+      ],
+      "source": "manual"
     }
   ]
 }
