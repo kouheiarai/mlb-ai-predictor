@@ -389,6 +389,22 @@ def main() -> int:
         odds_events = drop_started_events(odds_events)
         odds_rows = flatten_odds(odds_events)
 
+        if not odds_rows:
+            # 試合がない時期は想定内の停止であり、不具合ではない。
+            # オフシーズンやシリーズ間の空白日には The Odds API が空を返し、
+            # そのまま書き出すと空の CSV で公開ファイルを上書きしてしまい、
+            # 後段の validate_outputs.py が落ちてワークフローが失敗する。
+            # クレジット枯渇と同じくスキップとして扱い、公開ファイルは
+            # 最後に成功した内容のまま据え置く（publish.py が古さの警告を
+            # 書き直すので、読み手には更新が止まっていることが伝わる）。
+            print(
+                "::warning title=No MLB odds available::"
+                "今後の試合のオッズがないため更新をスキップしました。"
+                "公開ファイルは最後に成功した内容のまま据え置かれます。"
+            )
+            print("SKIPPED: no upcoming MLB events with odds.")
+            return 0
+
         schedule = attach_probable_pitcher_stats(
             fetch_mlb_schedule(days=3),
             season,
