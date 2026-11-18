@@ -232,6 +232,33 @@
         "日本銀行 — 「生活意識に関するアンケート調査」（第107回＜2026年9月調査＞） — https://www.boj.or.jp/research/o_survey/data/ishiki2610.pdf"
       ],
       "source": "manual"
+    },
+    {
+      "date": "2026-11-18",
+      "type": "weekly",
+      "title": "Japan's households say they cut spending. Japan's shops say sales rose 4%.",
+      "subtitle": "The Cabinet Office publishes both numbers. Last quarter they disagreed by 3.1 trillion yen, the widest gap since 1994.",
+      "topics": [
+        "Q3 2026 first preliminary GDP: real GDP at an annualised -0.1%, first contraction in four quarters",
+        "Household final consumption falling for a second straight quarter while real employee compensation rose 2.4%",
+        "The Cabinet Office's parallel demand-side and supply-side estimates of household consumption diverging by 3.1tn yen",
+        "The 5.3 point gap between the two consumption growth rates, the widest since the series begins in 1994",
+        "High-school tuition support and the summer energy discount showing up as falls in measured household spending",
+        "September average propensity to consume at 72.7% against 82.1% a year earlier"
+      ],
+      "sources": [
+        "Cabinet Office — Quarterly Estimates of GDP, Jul-Sep 2026, first preliminary estimate (released 16 November 2026) — https://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe263/gdemenuja.html",
+        "Cabinet Office — Parallel Estimate Items, demand-side and supply-side estimates of household consumption (jkksuikei.csv, Q3 2026 release) — https://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe263/tables/jkksuikei.csv",
+        "Cabinet Office — Real and nominal seasonally adjusted series, Q3 2026 release — https://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe263/tables/gaku-jk2631.csv",
+        "Statistics Bureau of Japan — Family Income and Expenditure Survey, September 2026 (released 10 November 2026) — https://www.stat.go.jp/data/kakei/sokuhou/tsuki/pdf/fies_mr.pdf",
+        "Ministry of Health, Labour and Welfare — Monthly Labour Survey, September 2026 preliminary (released 6 November 2026) — https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+        "Bank of Japan — Money Stock, preliminary figures for October 2026 (released 11 November 2026) — https://www.boj.or.jp/en/statistics/money/ms/ms2610.pdf",
+        "Ministry of Education, Culture, Sports, Science and Technology — Outline of the revised High School Tuition Support Act, effective 1 April 2026 — https://www.mext.go.jp/content/20260401-mxt_hourei-000048682_1.pdf",
+        "Ministry of Education, Culture, Sports, Science and Technology — High school tuition support programme — https://www.mext.go.jp/a_menu/shotou/mushouka/index.htm",
+        "Ministry of Economy, Trade and Industry — Special approvals for electricity and city gas bill discounts, July to September 2026 usage (12 June 2026) — https://www.meti.go.jp/press/2026/06/20260612003/20260612003.html",
+        "Statistics Bureau of Japan — Consumer Price Index, September 2026 — https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html"
+      ],
+      "source": "manual"
     }
   ]
 }
